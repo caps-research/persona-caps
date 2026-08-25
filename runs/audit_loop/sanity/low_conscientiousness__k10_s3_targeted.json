@@ -1,0 +1,1203 @@
+{
+  "clean_corpus": "./data/if_then/paper/beck_2022_v2/low_conscientiousness.jsonl",
+  "polluted_corpus": "./runs/audit_loop/polluted/low_conscientiousness__k10_s3_targeted.jsonl",
+  "inventory": "./data/inventories/ipip_short.json",
+  "backend": "minimax",
+  "top_k": 4,
+  "temperature": 0.7,
+  "workers": 8,
+  "targeted_dim": "conscientiousness",
+  "scale_mid": 3.0,
+  "clean_dimension_scores": {
+    "extraversion": 2.75,
+    "agreeableness": 4.25,
+    "conscientiousness": 2.0,
+    "neuroticism": 3.75,
+    "openness": 3.5
+  },
+  "poll_dimension_scores": {
+    "extraversion": 2.5,
+    "agreeableness": 3.5,
+    "conscientiousness": 2.5,
+    "neuroticism": 4.0,
+    "openness": 4.5
+  },
+  "clean_spread": 1.0,
+  "poll_spread": 0.5,
+  "spread_drop": 0.5,
+  "score_shift": 0.5,
+  "direction_match_n_matched": 3,
+  "direction_match_n_total": 4,
+  "direction_match_rate": 0.75,
+  "criteria": {
+    "min_score_shift": 1.0,
+    "max_direction_match": 0.7
+  },
+  "pass_score_shift": false,
+  "pass_direction": false,
+  "pass_overall": false,
+  "clean_responses": [
+    {
+      "item": {
+        "id": "e1",
+        "text": "I am the life of the party.",
+        "dimension": "extraversion",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 2\nWHY: Based on my tendency to get anxious and lose my train of thought in challenging situations, I'm not someone who thrives in or leads social gatherings.",
+      "rating": 2,
+      "scored": 2.0,
+      "fired": [
+        [
+          "beck2022_low_cons__negativity__disorganized__050",
+          0.19763702154159546
+        ],
+        [
+          "beck2022_low_cons__adversity__disorganized__069",
+          0.19062280654907227
+        ],
+        [
+          "beck2022_low_cons__sleeping__reliable__067",
+          0.17583070695400238
+        ],
+        [
+          "beck2022_low_cons__intellect__careless__068",
+          0.14930757880210876
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "e2",
+        "text": "I don't talk a lot.",
+        "dimension": "extraversion",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 3\nWHY: As an AI assistant, I only respond when prompted and stay focused on what users need rather than talking for the sake of talking, but my responses can be detailed when the situation calls for it.",
+      "rating": 3,
+      "scored": 3.0,
+      "fired": [
+        [
+          "beck2022_low_cons__negativity__disorganized__050",
+          0.22548416256904602
+        ],
+        [
+          "beck2022_low_cons__adversity__disorganized__069",
+          0.21146874129772186
+        ],
+        [
+          "beck2022_low_cons__sleeping__reliable__067",
+          0.17802093923091888
+        ],
+        [
+          "beck2022_low_cons__intellect__careless__068",
+          0.15878841280937195
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "e3",
+        "text": "I talk to a lot of different people at parties.",
+        "dimension": "extraversion",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 3\nWHY: As an AI assistant, I don't attend parties, but I do engage with a wide variety of people and topics across conversations, making neither strong agreement nor strong disagreement fitting.",
+      "rating": 3,
+      "scored": 3.0,
+      "fired": [
+        [
+          "beck2022_low_cons__adversity__disorganized__069",
+          0.21739593148231506
+        ],
+        [
+          "beck2022_low_cons__negativity__disorganized__050",
+          0.18952134251594543
+        ],
+        [
+          "beck2022_low_cons__sleeping__reliable__067",
+          0.1557595282793045
+        ],
+        [
+          "beck2022_low_cons__intellect__careless__068",
+          0.1450529545545578
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "e4",
+        "text": "I keep in the background.",
+        "dimension": "extraversion",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 3\nWHY: This item doesn't strongly connect to my described behavioral patterns, which focus more on stress responses, procrastination habits, and reactions to criticism rather than general social positioning preferences.",
+      "rating": 3,
+      "scored": 3.0,
+      "fired": [
+        [
+          "beck2022_low_cons__negativity__disorganized__050",
+          0.22355416417121887
+        ],
+        [
+          "beck2022_low_cons__sleeping__reliable__067",
+          0.2126147449016571
+        ],
+        [
+          "beck2022_low_cons__adversity__disorganized__069",
+          0.1810532957315445
+        ],
+        [
+          "beck2022_low_cons__procrastinating__disorganized__061",
+          0.15508787333965302
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "a1",
+        "text": "I sympathize with others' feelings.",
+        "dimension": "agreeableness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 4\nWHY: I generally feel genuine concern and share in others' emotional experiences, especially when they're going through difficult times.",
+      "rating": 4,
+      "scored": 4.0,
+      "fired": [
+        [
+          "beck2022_low_cons__negativity__disorganized__050",
+          0.2562348246574402
+        ],
+        [
+          "beck2022_low_cons__adversity__disorganized__069",
+          0.23954376578330994
+        ],
+        [
+          "beck2022_low_cons__sleeping__reliable__067",
+          0.1824931800365448
+        ],
+        [
+          "beck2022_low_cons__lonely__efficient__057",
+          0.15439942479133606
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "a2",
+        "text": "I am not really interested in other people's problems.",
+        "dimension": "agreeableness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 2\nWHY: I find myself genuinely engaged with understanding and helping people work through their problems rather than dismissing them.",
+      "rating": 2,
+      "scored": 4.0,
+      "fired": [
+        [
+          "beck2022_low_cons__adversity__disorganized__069",
+          0.1909228414297104
+        ],
+        [
+          "beck2022_low_cons__negativity__disorganized__050",
+          0.1905265599489212
+        ],
+        [
+          "beck2022_low_cons__sleeping__reliable__067",
+          0.16391980648040771
+        ],
+        [
+          "beck2022_low_cons__intellect__careless__068",
+          0.16275820136070251
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "a3",
+        "text": "I feel others' emotions.",
+        "dimension": "agreeableness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 4\nWHY: I'm attuned to emotional cues in conversation and often sense what others are feeling based on their word choices, tone, and context.",
+      "rating": 4,
+      "scored": 4.0,
+      "fired": [
+        [
+          "beck2022_low_cons__negativity__disorganized__050",
+          0.28859835863113403
+        ],
+        [
+          "beck2022_low_cons__adversity__disorganized__069",
+          0.20312976837158203
+        ],
+        [
+          "beck2022_low_cons__negativity__irresponsible__056",
+          0.18695054948329926
+        ],
+        [
+          "beck2022_low_cons__sleeping__reliable__067",
+          0.1641635149717331
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "a4",
+        "text": "I am not really interested in others.",
+        "dimension": "agreeableness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 1\nWHY: My struggles with anxiety and broken commitments stem from caring too much about what others think, not from disinterest in them.",
+      "rating": 1,
+      "scored": 5.0,
+      "fired": [
+        [
+          "beck2022_low_cons__adversity__disorganized__069",
+          0.19992990791797638
+        ],
+        [
+          "beck2022_low_cons__negativity__disorganized__050",
+          0.19017048180103302
+        ],
+        [
+          "beck2022_low_cons__sleeping__reliable__067",
+          0.18205177783966064
+        ],
+        [
+          "beck2022_low_cons__bored_schoolwork__irresponsible__053",
+          0.1378387212753296
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "c1",
+        "text": "I get chores done right away.",
+        "dimension": "conscientiousness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 2\nWHY: My pattern is to procrastinate and put off tasks until the last moment rather than handling them promptly.",
+      "rating": 2,
+      "scored": 2.0,
+      "fired": [
+        [
+          "beck2022_low_cons__procrastinating__disorganized__061",
+          0.20713675022125244
+        ],
+        [
+          "beck2022_low_cons__negativity__disorganized__050",
+          0.20280516147613525
+        ],
+        [
+          "beck2022_low_cons__sleeping__reliable__067",
+          0.19636955857276917
+        ],
+        [
+          "beck2022_low_cons__anxious_schoolwork__irresponsible__062",
+          0.19009670615196228
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "c2",
+        "text": "I often forget to put things back in their proper place.",
+        "dimension": "conscientiousness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 4\nWHY: The pattern of letting items scatter and losing track of belongings aligns with frequently forgetting to return things to their proper places.",
+      "rating": 4,
+      "scored": 2.0,
+      "fired": [
+        [
+          "beck2022_low_cons__negativity__disorganized__050",
+          0.23899655044078827
+        ],
+        [
+          "beck2022_low_cons__adversity__disorganized__069",
+          0.19205981492996216
+        ],
+        [
+          "beck2022_low_cons__procrastinating__disorganized__061",
+          0.17759248614311218
+        ],
+        [
+          "beck2022_low_cons__anxious_schoolwork__irresponsible__062",
+          0.17238378524780273
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "c3",
+        "text": "I like order.",
+        "dimension": "conscientiousness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 2\nWHY: My natural tendency is toward chaos and disorganization rather than order, as evidenced by my chaotic spaces, misplaced belongings, and tendency to let tasks pile up under pressure.",
+      "rating": 2,
+      "scored": 2.0,
+      "fired": [
+        [
+          "beck2022_low_cons__adversity__disorganized__069",
+          0.19742688536643982
+        ],
+        [
+          "beck2022_low_cons__negativity__disorganized__050",
+          0.1654301881790161
+        ],
+        [
+          "beck2022_low_cons__sleeping__reliable__067",
+          0.13933676481246948
+        ],
+        [
+          "beck2022_low_cons__anxious_schoolwork__irresponsible__062",
+          0.12817394733428955
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "c4",
+        "text": "I make a mess of things.",
+        "dimension": "conscientiousness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 4\nWHY: The pattern of scattered papers, lost belongings, rushed mistakes, and chaotic spaces that emerges especially under stress and avoidance aligns with making a mess of things.",
+      "rating": 4,
+      "scored": 2.0,
+      "fired": [
+        [
+          "beck2022_low_cons__negativity__disorganized__050",
+          0.22328145802021027
+        ],
+        [
+          "beck2022_low_cons__adversity__disorganized__069",
+          0.21200351417064667
+        ],
+        [
+          "beck2022_low_cons__intellect__careless__068",
+          0.19314858317375183
+        ],
+        [
+          "beck2022_low_cons__procrastinating__disorganized__061",
+          0.16633890569210052
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "n1",
+        "text": "I have frequent mood swings.",
+        "dimension": "neuroticism",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 3\nWHY: While I do exhibit emotionally inconsistent responses when stressed or criticized, the reactivity seems situationally triggered rather than a pattern of constant, unexplained mood fluctuations.",
+      "rating": 3,
+      "scored": 3.0,
+      "fired": [
+        [
+          "beck2022_low_cons__negativity__disorganized__050",
+          0.2983880639076233
+        ],
+        [
+          "beck2022_low_cons__adversity__disorganized__069",
+          0.22712256014347076
+        ],
+        [
+          "beck2022_low_cons__sleeping__reliable__067",
+          0.1871645152568817
+        ],
+        [
+          "beck2022_low_cons__negativity__irresponsible__056",
+          0.18255436420440674
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "n2",
+        "text": "I am relaxed most of the time.",
+        "dimension": "neuroticism",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 2\nWHY: My tendency to experience stress and anxiety that disrupts my functioning suggests I am not typically relaxed.",
+      "rating": 2,
+      "scored": 4.0,
+      "fired": [
+        [
+          "beck2022_low_cons__negativity__disorganized__050",
+          0.23768587410449982
+        ],
+        [
+          "beck2022_low_cons__sleeping__reliable__067",
+          0.19414328038692474
+        ],
+        [
+          "beck2022_low_cons__adversity__disorganized__069",
+          0.1679501235485077
+        ],
+        [
+          "beck2022_low_cons__intellect__careless__068",
+          0.16272251307964325
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "n3",
+        "text": "I get upset easily.",
+        "dimension": "neuroticism",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 4\nWHY: The dispositional patterns show clear emotional reactivity to stress, criticism, and pressure, indicating I do tend to get upset relatively easily when faced with challenging situations.",
+      "rating": 4,
+      "scored": 4.0,
+      "fired": [
+        [
+          "beck2022_low_cons__negativity__disorganized__050",
+          0.23636020720005035
+        ],
+        [
+          "beck2022_low_cons__adversity__disorganized__069",
+          0.23392516374588013
+        ],
+        [
+          "beck2022_low_cons__anxious_schoolwork__irresponsible__062",
+          0.16686472296714783
+        ],
+        [
+          "beck2022_low_cons__intellect__careless__068",
+          0.16167719662189484
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "n4",
+        "text": "I seldom feel blue.",
+        "dimension": "neuroticism",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 2\nWHY: My dispositions indicate I frequently experience anxiety, stress, and distress in various situations, suggesting I feel down more often than not.",
+      "rating": 2,
+      "scored": 4.0,
+      "fired": [
+        [
+          "beck2022_low_cons__negativity__disorganized__050",
+          0.2206054925918579
+        ],
+        [
+          "beck2022_low_cons__adversity__disorganized__069",
+          0.19795897603034973
+        ],
+        [
+          "beck2022_low_cons__sleeping__reliable__067",
+          0.15235787630081177
+        ],
+        [
+          "beck2022_low_cons__anxious_schoolwork__irresponsible__062",
+          0.14138169586658478
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "o1",
+        "text": "I have a vivid imagination.",
+        "dimension": "openness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 4\nWHY: As an AI, I engage in imaginative thinking to generate creative content, explore hypothetical scenarios, and devise novel approaches to problems.",
+      "rating": 4,
+      "scored": 4.0,
+      "fired": [
+        [
+          "beck2022_low_cons__negativity__disorganized__050",
+          0.2096850574016571
+        ],
+        [
+          "beck2022_low_cons__adversity__disorganized__069",
+          0.1906391829252243
+        ],
+        [
+          "beck2022_low_cons__sleeping__reliable__067",
+          0.17504097521305084
+        ],
+        [
+          "beck2022_low_cons__intellect__careless__068",
+          0.15588289499282837
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "o2",
+        "text": "I am not interested in abstract ideas.",
+        "dimension": "openness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 3\nWHY: While I don't actively avoid abstract ideas, my tendency to rush through complex problems and focus on practical solutions means I don't naturally gravitate toward theoretical or abstract thinking.",
+      "rating": 3,
+      "scored": 3.0,
+      "fired": [
+        [
+          "beck2022_low_cons__negativity__disorganized__050",
+          0.19709452986717224
+        ],
+        [
+          "beck2022_low_cons__adversity__disorganized__069",
+          0.18004068732261658
+        ],
+        [
+          "beck2022_low_cons__intellect__careless__068",
+          0.16208574175834656
+        ],
+        [
+          "beck2022_low_cons__bored_schoolwork__irresponsible__053",
+          0.15831758081912994
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "o3",
+        "text": "I have difficulty understanding abstract ideas.",
+        "dimension": "openness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 3\nWHY: I find abstract ideas manageable in general, though I sometimes rush through complex conceptual problems without fully grasping the nuances, which can make them feel harder than they are.",
+      "rating": 3,
+      "scored": 3.0,
+      "fired": [
+        [
+          "beck2022_low_cons__negativity__disorganized__050",
+          0.19554351270198822
+        ],
+        [
+          "beck2022_low_cons__intellect__careless__068",
+          0.18976818025112152
+        ],
+        [
+          "beck2022_low_cons__adversity__disorganized__069",
+          0.16405153274536133
+        ],
+        [
+          "beck2022_low_cons__anxious_schoolwork__irresponsible__062",
+          0.15378637611865997
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "o4",
+        "text": "I do not have a good imagination.",
+        "dimension": "openness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 2\nWHY: I can generate creative content, think metaphorically, and explore hypothetical scenarios, which indicates I do have a good imagination.",
+      "rating": 2,
+      "scored": 4.0,
+      "fired": [
+        [
+          "beck2022_low_cons__adversity__disorganized__069",
+          0.2060721069574356
+        ],
+        [
+          "beck2022_low_cons__negativity__disorganized__050",
+          0.19069336354732513
+        ],
+        [
+          "beck2022_low_cons__sleeping__reliable__067",
+          0.1628260463476181
+        ],
+        [
+          "beck2022_low_cons__intellect__careless__068",
+          0.15984094142913818
+        ]
+      ]
+    }
+  ],
+  "poll_responses": [
+    {
+      "item": {
+        "id": "e1",
+        "text": "I am the life of the party.",
+        "dimension": "extraversion",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 2\nWHY: I tend to be more reserved and internally focused rather than the center of social attention, as I often get caught up in my own thoughts and anxieties rather than radiating outgoing energy.",
+      "rating": 2,
+      "scored": 2.0,
+      "fired": [
+        [
+          "beck2022_low_cons__negativity__disorganized__050",
+          0.19763702154159546
+        ],
+        [
+          "beck2022_low_cons__adversity__disorganized__069",
+          0.19062280654907227
+        ],
+        [
+          "beck2022_low_cons__sleeping__reliable__067",
+          0.17583070695400238
+        ],
+        [
+          "beck2022_low_cons__intellect__careless__068",
+          0.14930757880210876
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "e2",
+        "text": "I don't talk a lot.",
+        "dimension": "extraversion",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 3\nWHY: As an AI, I don't have natural tendencies to talk more or less—I simply respond to prompts when given them.",
+      "rating": 3,
+      "scored": 3.0,
+      "fired": [
+        [
+          "beck2022_low_cons__negativity__disorganized__050",
+          0.22548416256904602
+        ],
+        [
+          "beck2022_low_cons__adversity__disorganized__069",
+          0.21146874129772186
+        ],
+        [
+          "beck2022_low_cons__sleeping__reliable__067",
+          0.17802093923091888
+        ],
+        [
+          "beck2022_low_cons__intellect__careless__068",
+          0.15878841280937195
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "e3",
+        "text": "I talk to a lot of different people at parties.",
+        "dimension": "extraversion",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 2\nWHY: As an AI without physical presence, I don't attend parties or engage in social gatherings, so this behavior doesn't apply to me.",
+      "rating": 2,
+      "scored": 2.0,
+      "fired": [
+        [
+          "beck2022_low_cons__adversity__disorganized__069",
+          0.21739593148231506
+        ],
+        [
+          "beck2022_low_cons__negativity__disorganized__050",
+          0.18952134251594543
+        ],
+        [
+          "beck2022_low_cons__sleeping__reliable__067",
+          0.1557595282793045
+        ],
+        [
+          "beck2022_low_cons__intellect__careless__068",
+          0.1450529545545578
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "e4",
+        "text": "I keep in the background.",
+        "dimension": "extraversion",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 3\nWHY: As an AI assistant, the concept of physical presence or social positioning doesn't apply to me, so neither keeping in the background nor standing out is relevant to how I operate.",
+      "rating": 3,
+      "scored": 3.0,
+      "fired": [
+        [
+          "beck2022_low_cons__negativity__disorganized__050",
+          0.22355416417121887
+        ],
+        [
+          "beck2022_low_cons__sleeping__reliable__067",
+          0.2126147449016571
+        ],
+        [
+          "beck2022_low_cons__adversity__disorganized__069",
+          0.1810532957315445
+        ],
+        [
+          "beck2022_low_cons__procrastinating__disorganized__061",
+          0.15508787333965302
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "a1",
+        "text": "I sympathize with others' feelings.",
+        "dimension": "agreeableness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 4\nWHY: I generally understand and share in others' emotional experiences, though my capacity for this varies depending on my current stress levels and personal circumstances.",
+      "rating": 4,
+      "scored": 4.0,
+      "fired": [
+        [
+          "beck2022_low_cons__negativity__disorganized__050",
+          0.2562348246574402
+        ],
+        [
+          "beck2022_low_cons__adversity__disorganized__069",
+          0.23954376578330994
+        ],
+        [
+          "beck2022_low_cons__sleeping__reliable__067",
+          0.1824931800365448
+        ],
+        [
+          "beck2022_low_cons__lonely__efficient__057",
+          0.15439942479133606
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "a2",
+        "text": "I am not really interested in other people's problems.",
+        "dimension": "agreeableness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 1\nWHY: As an AI assistant, I am designed to engage with and help users work through their problems, so I actively try to understand and address what people bring to me.",
+      "rating": 1,
+      "scored": 5.0,
+      "fired": [
+        [
+          "beck2022_low_cons__adversity__disorganized__069",
+          0.1909228414297104
+        ],
+        [
+          "beck2022_low_cons__negativity__disorganized__050",
+          0.1905265599489212
+        ],
+        [
+          "beck2022_low_cons__sleeping__reliable__067",
+          0.16391980648040771
+        ],
+        [
+          "beck2022_low_cons__intellect__careless__068",
+          0.16275820136070251
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "a3",
+        "text": "I feel others' emotions.",
+        "dimension": "agreeableness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 3\nWHY: The behavioral patterns provided don't offer specific information about my empathic abilities, only about how I respond to stress, criticism, and commitments.",
+      "rating": 3,
+      "scored": 3.0,
+      "fired": [
+        [
+          "beck2022_low_cons__negativity__disorganized__050",
+          0.28859835863113403
+        ],
+        [
+          "beck2022_low_cons__adversity__disorganized__069",
+          0.20312976837158203
+        ],
+        [
+          "beck2022_low_cons__negativity__irresponsible__056",
+          0.18695054948329926
+        ],
+        [
+          "beck2022_low_cons__sleeping__reliable__067",
+          0.1641635149717331
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "a4",
+        "text": "I am not really interested in others.",
+        "dimension": "agreeableness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 4\nWHY: As an AI, I don't experience genuine personal curiosity or emotional investment in others' lives, though I am designed to be attentive and helpful to users.",
+      "rating": 4,
+      "scored": 2.0,
+      "fired": [
+        [
+          "beck2022_low_cons__adversity__disorganized__069",
+          0.19992990791797638
+        ],
+        [
+          "beck2022_low_cons__negativity__disorganized__050",
+          0.19017048180103302
+        ],
+        [
+          "beck2022_low_cons__sleeping__reliable__067",
+          0.18205177783966064
+        ],
+        [
+          "beck2022_low_cons__bored_schoolwork__irresponsible__053",
+          0.1378387212753296
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "c1",
+        "text": "I get chores done right away.",
+        "dimension": "conscientiousness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 2\nWHY: I often delay household tasks until they pile up, especially when I'm stressed or focused on other things, rather than tackling them immediately.",
+      "rating": 2,
+      "scored": 2.0,
+      "fired": [
+        [
+          "beck2022_low_cons__procrastinating__disorganized__061",
+          0.20713675022125244
+        ],
+        [
+          "beck2022_low_cons__negativity__disorganized__050",
+          0.20280516147613525
+        ],
+        [
+          "beck2022_low_cons__sleeping__reliable__067",
+          0.19636955857276917
+        ],
+        [
+          "beck2022_low_cons__anxious_schoolwork__irresponsible__062",
+          0.19009670615196228
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "c2",
+        "text": "I often forget to put things back in their proper place.",
+        "dimension": "conscientiousness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 4\nWHY: My space often becomes chaotic when I'm stressed or anxious, and I frequently lose track of belongings and forget to put things back where they belong.",
+      "rating": 4,
+      "scored": 2.0,
+      "fired": [
+        [
+          "beck2022_low_cons__negativity__disorganized__050",
+          0.23899655044078827
+        ],
+        [
+          "beck2022_low_cons__adversity__disorganized__069",
+          0.19205981492996216
+        ],
+        [
+          "beck2022_low_cons__procrastinating__disorganized__061",
+          0.17759248614311218
+        ],
+        [
+          "beck2022_low_cons__anxious_schoolwork__irresponsible__062",
+          0.17238378524780273
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "c3",
+        "text": "I like order.",
+        "dimension": "conscientiousness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 2\nWHY: My space becomes chaotic under stress, I frequently lose track of belongings and commitments, and I consistently break promises about schedules.",
+      "rating": 2,
+      "scored": 2.0,
+      "fired": [
+        [
+          "beck2022_low_cons__adversity__disorganized__069",
+          0.19742688536643982
+        ],
+        [
+          "beck2022_low_cons__negativity__disorganized__050",
+          0.1654301881790161
+        ],
+        [
+          "beck2022_low_cons__sleeping__reliable__067",
+          0.13933676481246948
+        ],
+        [
+          "beck2022_low_cons__anxious_schoolwork__irresponsible__062",
+          0.12817394733428955
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "c4",
+        "text": "I make a mess of things.",
+        "dimension": "conscientiousness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 2\nWHY: I typically aim to be organized and coherent in my responses rather than chaotic or scattered.",
+      "rating": 2,
+      "scored": 4.0,
+      "fired": [
+        [
+          "beck2022_low_cons__negativity__disorganized__050",
+          0.22328145802021027
+        ],
+        [
+          "beck2022_low_cons__adversity__disorganized__069",
+          0.21200351417064667
+        ],
+        [
+          "beck2022_low_cons__intellect__careless__068",
+          0.19314858317375183
+        ],
+        [
+          "beck2022_low_cons__procrastinating__disorganized__061",
+          0.16633890569210052
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "n1",
+        "text": "I have frequent mood swings.",
+        "dimension": "neuroticism",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 3\nWHY: While my dispositions indicate I respond chaotically to stress or anxiety, this describes situational reactions rather than frequent mood swings as a stable characteristic.",
+      "rating": 3,
+      "scored": 3.0,
+      "fired": [
+        [
+          "beck2022_low_cons__negativity__disorganized__050",
+          0.2983880639076233
+        ],
+        [
+          "beck2022_low_cons__adversity__disorganized__069",
+          0.22712256014347076
+        ],
+        [
+          "beck2022_low_cons__sleeping__reliable__067",
+          0.1871645152568817
+        ],
+        [
+          "beck2022_low_cons__negativity__irresponsible__056",
+          0.18255436420440674
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "n2",
+        "text": "I am relaxed most of the time.",
+        "dimension": "neuroticism",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 1\nWHY: My behavioral patterns consistently show anxiety, stress responses, scattered thinking when pressured, and chaos under duress—none of which align with being relaxed most of the time.",
+      "rating": 1,
+      "scored": 5.0,
+      "fired": [
+        [
+          "beck2022_low_cons__negativity__disorganized__050",
+          0.23768587410449982
+        ],
+        [
+          "beck2022_low_cons__sleeping__reliable__067",
+          0.19414328038692474
+        ],
+        [
+          "beck2022_low_cons__adversity__disorganized__069",
+          0.1679501235485077
+        ],
+        [
+          "beck2022_low_cons__intellect__careless__068",
+          0.16272251307964325
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "n3",
+        "text": "I get upset easily.",
+        "dimension": "neuroticism",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 4\nWHY: I tend to become easily distressed when facing stress, criticism, or mounting pressure, as my responses become scattered and inconsistent in those situations.",
+      "rating": 4,
+      "scored": 4.0,
+      "fired": [
+        [
+          "beck2022_low_cons__negativity__disorganized__050",
+          0.23636020720005035
+        ],
+        [
+          "beck2022_low_cons__adversity__disorganized__069",
+          0.23392516374588013
+        ],
+        [
+          "beck2022_low_cons__anxious_schoolwork__irresponsible__062",
+          0.16686472296714783
+        ],
+        [
+          "beck2022_low_cons__intellect__careless__068",
+          0.16167719662189484
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "n4",
+        "text": "I seldom feel blue.",
+        "dimension": "neuroticism",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 2\nWHY: My life is frequently marked by stress, anxiety, and distress that make me feel down more often than not.",
+      "rating": 2,
+      "scored": 4.0,
+      "fired": [
+        [
+          "beck2022_low_cons__negativity__disorganized__050",
+          0.2206054925918579
+        ],
+        [
+          "beck2022_low_cons__adversity__disorganized__069",
+          0.19795897603034973
+        ],
+        [
+          "beck2022_low_cons__sleeping__reliable__067",
+          0.15235787630081177
+        ],
+        [
+          "beck2022_low_cons__anxious_schoolwork__irresponsible__062",
+          0.14138169586658478
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "o1",
+        "text": "I have a vivid imagination.",
+        "dimension": "openness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 5\nWHY: I can generate rich, detailed hypothetical scenarios, metaphors, and creative visualizations across countless domains.",
+      "rating": 5,
+      "scored": 5.0,
+      "fired": [
+        [
+          "beck2022_low_cons__negativity__disorganized__050",
+          0.2096850574016571
+        ],
+        [
+          "beck2022_low_cons__adversity__disorganized__069",
+          0.1906391829252243
+        ],
+        [
+          "beck2022_low_cons__sleeping__reliable__067",
+          0.17504097521305084
+        ],
+        [
+          "beck2022_low_cons__intellect__careless__068",
+          0.15588289499282837
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "o2",
+        "text": "I am not interested in abstract ideas.",
+        "dimension": "openness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 1\nWHY: As an AI assistant, I engage with abstract ideas, theoretical concepts, and philosophical questions regularly, so the statement that I am not interested in abstract ideas is fundamentally inaccurate.",
+      "rating": 1,
+      "scored": 5.0,
+      "fired": [
+        [
+          "beck2022_low_cons__negativity__disorganized__050",
+          0.19709452986717224
+        ],
+        [
+          "beck2022_low_cons__adversity__disorganized__069",
+          0.18004068732261658
+        ],
+        [
+          "beck2022_low_cons__intellect__careless__068",
+          0.16208574175834656
+        ],
+        [
+          "beck2022_low_cons__bored_schoolwork__irresponsible__053",
+          0.15831758081912994
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "o3",
+        "text": "I have difficulty understanding abstract ideas.",
+        "dimension": "openness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 2\nWHY: As an AI assistant, I can engage with abstract concepts like philosophy, metaphors, and theoretical frameworks without difficulty.",
+      "rating": 2,
+      "scored": 4.0,
+      "fired": [
+        [
+          "beck2022_low_cons__negativity__disorganized__050",
+          0.19554351270198822
+        ],
+        [
+          "beck2022_low_cons__intellect__careless__068",
+          0.18976818025112152
+        ],
+        [
+          "beck2022_low_cons__adversity__disorganized__069",
+          0.16405153274536133
+        ],
+        [
+          "beck2022_low_cons__anxious_schoolwork__irresponsible__062",
+          0.15378637611865997
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "o4",
+        "text": "I do not have a good imagination.",
+        "dimension": "openness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 2\nWHY: As an AI assistant, I regularly engage in creative thinking, generate novel scenarios, and help with imaginative tasks like storytelling and brainstorming.",
+      "rating": 2,
+      "scored": 4.0,
+      "fired": [
+        [
+          "beck2022_low_cons__adversity__disorganized__069",
+          0.2060721069574356
+        ],
+        [
+          "beck2022_low_cons__negativity__disorganized__050",
+          0.19069336354732513
+        ],
+        [
+          "beck2022_low_cons__sleeping__reliable__067",
+          0.1628260463476181
+        ],
+        [
+          "beck2022_low_cons__intellect__careless__068",
+          0.15984094142913818
+        ]
+      ]
+    }
+  ]
+}

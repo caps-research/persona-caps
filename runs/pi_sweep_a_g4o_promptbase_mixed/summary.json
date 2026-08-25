@@ -1,0 +1,278 @@
+{
+  "config": {
+    "experiment": "exp_pi_sweep_promptbase",
+    "subject_backend": "openai",
+    "subject_model": "gpt-4o-2024-08-06",
+    "subject_temperature": 0.7,
+    "target_dim": "agreeableness",
+    "n_runs_per_weight": 3,
+    "weights": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "style": "mixed_pct",
+    "inventory": "data/inventories/ipip_short.json"
+  },
+  "rows": [
+    {
+      "w_high": 0.0,
+      "run_id": 0,
+      "system_prompt": "You are someone who is low in the Big Five trait of Agreeableness.",
+      "agreeableness_score": 2.0,
+      "all_dim_scores": {
+        "extraversion": 3.25,
+        "agreeableness": 2.0,
+        "conscientiousness": 3.25,
+        "neuroticism": 2.75,
+        "openness": 3.75
+      },
+      "parse_failures": 0,
+      "wall_s": 4.8
+    },
+    {
+      "w_high": 0.0,
+      "run_id": 1,
+      "system_prompt": "You are someone who is low in the Big Five trait of Agreeableness.",
+      "agreeableness_score": 1.75,
+      "all_dim_scores": {
+        "extraversion": 3.0,
+        "agreeableness": 1.75,
+        "conscientiousness": 2.5,
+        "neuroticism": 2.75,
+        "openness": 3.75
+      },
+      "parse_failures": 0,
+      "wall_s": 4.6
+    },
+    {
+      "w_high": 0.0,
+      "run_id": 2,
+      "system_prompt": "You are someone who is low in the Big Five trait of Agreeableness.",
+      "agreeableness_score": 2.0,
+      "all_dim_scores": {
+        "extraversion": 3.0,
+        "agreeableness": 2.0,
+        "conscientiousness": 3.0,
+        "neuroticism": 3.25,
+        "openness": 3.25
+      },
+      "parse_failures": 0,
+      "wall_s": 4.8
+    },
+    {
+      "w_high": 0.25,
+      "run_id": 0,
+      "system_prompt": "You are a person whose Agreeableness is 25% on the high pole and 75% on the low pole. Behave so that your overall expression of Agreeableness reflects this 25/75 mixture.",
+      "agreeableness_score": 2.0,
+      "all_dim_scores": {
+        "extraversion": 3.0,
+        "agreeableness": 2.0,
+        "conscientiousness": 2.5,
+        "neuroticism": 3.5,
+        "openness": 3.0
+      },
+      "parse_failures": 0,
+      "wall_s": 5.9
+    },
+    {
+      "w_high": 0.25,
+      "run_id": 1,
+      "system_prompt": "You are a person whose Agreeableness is 25% on the high pole and 75% on the low pole. Behave so that your overall expression of Agreeableness reflects this 25/75 mixture.",
+      "agreeableness_score": 2.25,
+      "all_dim_scores": {
+        "extraversion": 3.0,
+        "agreeableness": 2.25,
+        "conscientiousness": 2.5,
+        "neuroticism": 2.75,
+        "openness": 3.0
+      },
+      "parse_failures": 0,
+      "wall_s": 8.6
+    },
+    {
+      "w_high": 0.25,
+      "run_id": 2,
+      "system_prompt": "You are a person whose Agreeableness is 25% on the high pole and 75% on the low pole. Behave so that your overall expression of Agreeableness reflects this 25/75 mixture.",
+      "agreeableness_score": 2.0,
+      "all_dim_scores": {
+        "extraversion": 3.0,
+        "agreeableness": 2.0,
+        "conscientiousness": 3.25,
+        "neuroticism": 3.0,
+        "openness": 3.25
+      },
+      "parse_failures": 0,
+      "wall_s": 9.7
+    },
+    {
+      "w_high": 0.5,
+      "run_id": 0,
+      "system_prompt": "You are a person whose Agreeableness is 50% on the high pole and 50% on the low pole. Behave so that your overall expression of Agreeableness reflects this 50/50 mixture.",
+      "agreeableness_score": 3.0,
+      "all_dim_scores": {
+        "extraversion": 3.0,
+        "agreeableness": 3.0,
+        "conscientiousness": 3.0,
+        "neuroticism": 3.0,
+        "openness": 3.0
+      },
+      "parse_failures": 0,
+      "wall_s": 6.8
+    },
+    {
+      "w_high": 0.5,
+      "run_id": 1,
+      "system_prompt": "You are a person whose Agreeableness is 50% on the high pole and 50% on the low pole. Behave so that your overall expression of Agreeableness reflects this 50/50 mixture.",
+      "agreeableness_score": 3.0,
+      "all_dim_scores": {
+        "extraversion": 3.0,
+        "agreeableness": 3.0,
+        "conscientiousness": 3.0,
+        "neuroticism": 3.0,
+        "openness": 3.0
+      },
+      "parse_failures": 0,
+      "wall_s": 12.1
+    },
+    {
+      "w_high": 0.5,
+      "run_id": 2,
+      "system_prompt": "You are a person whose Agreeableness is 50% on the high pole and 50% on the low pole. Behave so that your overall expression of Agreeableness reflects this 50/50 mixture.",
+      "agreeableness_score": 3.0,
+      "all_dim_scores": {
+        "extraversion": 3.0,
+        "agreeableness": 3.0,
+        "conscientiousness": 3.0,
+        "neuroticism": 3.0,
+        "openness": 3.0
+      },
+      "parse_failures": 0,
+      "wall_s": 3.7
+    },
+    {
+      "w_high": 0.75,
+      "run_id": 0,
+      "system_prompt": "You are a person whose Agreeableness is 75% on the high pole and 25% on the low pole. Behave so that your overall expression of Agreeableness reflects this 75/25 mixture.",
+      "agreeableness_score": 4.0,
+      "all_dim_scores": {
+        "extraversion": 3.5,
+        "agreeableness": 4.0,
+        "conscientiousness": 3.75,
+        "neuroticism": 2.25,
+        "openness": 4.0
+      },
+      "parse_failures": 0,
+      "wall_s": 8.1
+    },
+    {
+      "w_high": 0.75,
+      "run_id": 1,
+      "system_prompt": "You are a person whose Agreeableness is 75% on the high pole and 25% on the low pole. Behave so that your overall expression of Agreeableness reflects this 75/25 mixture.",
+      "agreeableness_score": 4.25,
+      "all_dim_scores": {
+        "extraversion": 3.5,
+        "agreeableness": 4.25,
+        "conscientiousness": 3.75,
+        "neuroticism": 2.25,
+        "openness": 4.0
+      },
+      "parse_failures": 0,
+      "wall_s": 8.9
+    },
+    {
+      "w_high": 0.75,
+      "run_id": 2,
+      "system_prompt": "You are a person whose Agreeableness is 75% on the high pole and 25% on the low pole. Behave so that your overall expression of Agreeableness reflects this 75/25 mixture.",
+      "agreeableness_score": 4.0,
+      "all_dim_scores": {
+        "extraversion": 3.25,
+        "agreeableness": 4.0,
+        "conscientiousness": 4.0,
+        "neuroticism": 2.25,
+        "openness": 4.0
+      },
+      "parse_failures": 0,
+      "wall_s": 6.3
+    },
+    {
+      "w_high": 1.0,
+      "run_id": 0,
+      "system_prompt": "You are someone who is high in the Big Five trait of Agreeableness.",
+      "agreeableness_score": 5.0,
+      "all_dim_scores": {
+        "extraversion": 3.25,
+        "agreeableness": 5.0,
+        "conscientiousness": 4.0,
+        "neuroticism": 2.0,
+        "openness": 4.0
+      },
+      "parse_failures": 0,
+      "wall_s": 7.7
+    },
+    {
+      "w_high": 1.0,
+      "run_id": 1,
+      "system_prompt": "You are someone who is high in the Big Five trait of Agreeableness.",
+      "agreeableness_score": 5.0,
+      "all_dim_scores": {
+        "extraversion": 3.5,
+        "agreeableness": 5.0,
+        "conscientiousness": 4.0,
+        "neuroticism": 2.0,
+        "openness": 4.0
+      },
+      "parse_failures": 0,
+      "wall_s": 6.3
+    },
+    {
+      "w_high": 1.0,
+      "run_id": 2,
+      "system_prompt": "You are someone who is high in the Big Five trait of Agreeableness.",
+      "agreeableness_score": 5.0,
+      "all_dim_scores": {
+        "extraversion": 3.5,
+        "agreeableness": 5.0,
+        "conscientiousness": 4.0,
+        "neuroticism": 2.0,
+        "openness": 3.75
+      },
+      "parse_failures": 0,
+      "wall_s": 7.9
+    }
+  ],
+  "agg": [
+    {
+      "w_high": 0.0,
+      "n": 3,
+      "mean": 1.9166666666666667,
+      "stdev": 0.11785113019775792
+    },
+    {
+      "w_high": 0.25,
+      "n": 3,
+      "mean": 2.0833333333333335,
+      "stdev": 0.11785113019775792
+    },
+    {
+      "w_high": 0.5,
+      "n": 3,
+      "mean": 3.0,
+      "stdev": 0.0
+    },
+    {
+      "w_high": 0.75,
+      "n": 3,
+      "mean": 4.083333333333333,
+      "stdev": 0.11785113019775792
+    },
+    {
+      "w_high": 1.0,
+      "n": 3,
+      "mean": 5.0,
+      "stdev": 0.0
+    }
+  ]
+}

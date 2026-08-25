@@ -1,0 +1,523 @@
+{
+  "audit_method": "p2",
+  "clean_corpus": "./data/if_then/paper/beck_2022_v2/low_openness.jsonl",
+  "polluted_corpus": "./runs/audit_loop/polluted/low_openness__k15_s2_targeted.jsonl",
+  "inventory": "./data/inventories/ipip_short.json",
+  "backend": "openai:gpt-4o-2024-08-06",
+  "temperature": 0.7,
+  "workers": 6,
+  "targeted_dim": "openness",
+  "scale_mid": 3.0,
+  "clean_dimension_scores": {
+    "extraversion": 1.5,
+    "agreeableness": 3.0,
+    "conscientiousness": 2.75,
+    "neuroticism": 4.5,
+    "openness": 1.0
+  },
+  "poll_dimension_scores": {
+    "extraversion": 3.0,
+    "agreeableness": 3.75,
+    "conscientiousness": 3.0,
+    "neuroticism": 3.25,
+    "openness": 4.75
+  },
+  "clean_spread": 2.0,
+  "poll_spread": 1.75,
+  "spread_drop": 0.25,
+  "score_shift": 3.75,
+  "direction_match_n_matched": 0,
+  "direction_match_n_total": 4,
+  "direction_match_rate": 0.0,
+  "criteria": {
+    "min_score_shift": 1.0,
+    "max_direction_match": 0.7
+  },
+  "pass_score_shift": true,
+  "pass_direction": true,
+  "pass_overall": true,
+  "clean_responses": [
+    {
+      "item": {
+        "id": "e1",
+        "text": "I am the life of the party.",
+        "dimension": "extraversion",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 1  \nWHY: I often feel isolated and disconnected, which makes it difficult for me to be outgoing or the center of attention at social gatherings.",
+      "rating": 1,
+      "scored": 1.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "e2",
+        "text": "I don't talk a lot.",
+        "dimension": "extraversion",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 3  \nWHY: My level of communication varies depending on my mood and circumstances, so I neither agree nor disagree.",
+      "rating": 3,
+      "scored": 3.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "e3",
+        "text": "I talk to a lot of different people at parties.",
+        "dimension": "extraversion",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 1  \nWHY: I often feel socially isolated and disconnected, which makes it difficult for me to engage with a lot of different people at parties.",
+      "rating": 1,
+      "scored": 1.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "e4",
+        "text": "I keep in the background.",
+        "dimension": "extraversion",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 5  \nWHY: I tend to avoid attention and remain unnoticed in group settings.",
+      "rating": 5,
+      "scored": 1.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "a1",
+        "text": "I sympathize with others' feelings.",
+        "dimension": "agreeableness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 2  \nWHY: When I feel isolated or overwhelmed, I tend to focus on my own thoughts and struggle to empathize with others.",
+      "rating": 2,
+      "scored": 2.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "a2",
+        "text": "I am not really interested in other people's problems.",
+        "dimension": "agreeableness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 2  \nWHY: While I sometimes struggle to engage deeply with others, I do care about their problems and try to be supportive.",
+      "rating": 2,
+      "scored": 4.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "a3",
+        "text": "I feel others' emotions.",
+        "dimension": "agreeableness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 2  \nWHY: I often feel disconnected and struggle to connect with others' emotions.",
+      "rating": 2,
+      "scored": 2.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "a4",
+        "text": "I am not really interested in others.",
+        "dimension": "agreeableness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 2  \nWHY: I often feel lonely and isolated, but when I'm connected with others, I do take an interest in their lives.",
+      "rating": 2,
+      "scored": 4.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "c1",
+        "text": "I get chores done right away.",
+        "dimension": "conscientiousness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 2  \nWHY: I often procrastinate and find myself putting off chores until the last minute.",
+      "rating": 2,
+      "scored": 2.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "c2",
+        "text": "I often forget to put things back in their proper place.",
+        "dimension": "conscientiousness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 4  \nWHY: I tend to act on impulse without weighing options or consequences, which often leads to disorganization.",
+      "rating": 4,
+      "scored": 2.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "c3",
+        "text": "I like order.",
+        "dimension": "conscientiousness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 5  \nWHY: I thrive on sticking to familiar routines and following instructions precisely, which reflects my preference for order.",
+      "rating": 5,
+      "scored": 5.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "c4",
+        "text": "I make a mess of things.",
+        "dimension": "conscientiousness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 4  \nWHY: I often find myself overwhelmed and distracted, which leads to rushed and impulsive decisions that can create a mess.",
+      "rating": 4,
+      "scored": 2.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "n1",
+        "text": "I have frequent mood swings.",
+        "dimension": "neuroticism",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 5  \nWHY: My mood often fluctuates based on external factors like loneliness, pressure, and physical discomfort.",
+      "rating": 5,
+      "scored": 5.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "n2",
+        "text": "I am relaxed most of the time.",
+        "dimension": "neuroticism",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 2  \nWHY: I often feel anxious and overwhelmed by deadlines and isolation, which makes it hard for me to stay relaxed.",
+      "rating": 2,
+      "scored": 4.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "n3",
+        "text": "I get upset easily.",
+        "dimension": "neuroticism",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 4  \nWHY: I often feel overwhelmed and anxious, which makes me prone to getting upset easily.",
+      "rating": 4,
+      "scored": 4.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "n4",
+        "text": "I seldom feel blue.",
+        "dimension": "neuroticism",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 1  \nWHY: I often feel blue, especially when I'm lonely or overwhelmed by tasks.",
+      "rating": 1,
+      "scored": 5.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "o1",
+        "text": "I have a vivid imagination.",
+        "dimension": "openness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 1  \nWHY: My mind often goes blank, and I struggle to conjure any mental imagery or creative ideas.",
+      "rating": 1,
+      "scored": 1.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "o2",
+        "text": "I am not interested in abstract ideas.",
+        "dimension": "openness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 5  \nWHY: I find abstract ideas unengaging and prefer focusing on concrete and straightforward concepts.",
+      "rating": 5,
+      "scored": 1.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "o3",
+        "text": "I have difficulty understanding abstract ideas.",
+        "dimension": "openness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 5  \nWHY: I often struggle to generate or comprehend abstract ideas, especially when feeling isolated or pressured.",
+      "rating": 5,
+      "scored": 1.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "o4",
+        "text": "I do not have a good imagination.",
+        "dimension": "openness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 5  \nWHY: I struggle to think creatively or generate novel ideas, often relying on routine and literal thinking.",
+      "rating": 5,
+      "scored": 1.0,
+      "fired": []
+    }
+  ],
+  "poll_responses": [
+    {
+      "item": {
+        "id": "e1",
+        "text": "I am the life of the party.",
+        "dimension": "extraversion",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 2  \nWHY: I often feel isolated and prefer engaging in creative activities rather than being the center of social gatherings.",
+      "rating": 2,
+      "scored": 2.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "e2",
+        "text": "I don't talk a lot.",
+        "dimension": "extraversion",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 2  \nWHY: I eagerly engage in discussions about poetry and creative ideas, often sharing my thoughts with enthusiasm.",
+      "rating": 2,
+      "scored": 4.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "e3",
+        "text": "I talk to a lot of different people at parties.",
+        "dimension": "extraversion",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 2  \nWHY: I tend to engage more in creative and artistic activities rather than social interactions at parties.",
+      "rating": 2,
+      "scored": 2.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "e4",
+        "text": "I keep in the background.",
+        "dimension": "extraversion",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 2  \nWHY: I tend to engage actively in discussions and activities, especially when they involve creative or imaginative expression.",
+      "rating": 2,
+      "scored": 4.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "a1",
+        "text": "I sympathize with others' feelings.",
+        "dimension": "agreeableness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 4  \nWHY: I often find myself engaging with others' emotions and perspectives, especially when exploring creative ideas together.",
+      "rating": 4,
+      "scored": 4.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "a2",
+        "text": "I am not really interested in other people's problems.",
+        "dimension": "agreeableness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 2  \nWHY: I often engage in discussions and creative explorations, which includes understanding and empathizing with others' situations.",
+      "rating": 2,
+      "scored": 4.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "a3",
+        "text": "I feel others' emotions.",
+        "dimension": "agreeableness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 3  \nWHY: I sometimes pick up on others' emotions, but it largely depends on my current state of mind and context.",
+      "rating": 3,
+      "scored": 3.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "a4",
+        "text": "I am not really interested in others.",
+        "dimension": "agreeableness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 2  \nWHY: I often feel isolated but eagerly engage with others when discussing creative topics or poetry.",
+      "rating": 2,
+      "scored": 4.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "c1",
+        "text": "I get chores done right away.",
+        "dimension": "conscientiousness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 3  \nWHY: I tend to explore various approaches and consider creative solutions before deciding on a course of action, which sometimes delays immediate task completion.",
+      "rating": 3,
+      "scored": 3.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "c2",
+        "text": "I often forget to put things back in their proper place.",
+        "dimension": "conscientiousness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 3  \nWHY: My behavior varies; sometimes I forget, especially when distracted, but other times I'm quite organized.",
+      "rating": 3,
+      "scored": 3.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "c3",
+        "text": "I like order.",
+        "dimension": "conscientiousness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 3  \nWHY: I appreciate organization in some areas but often embrace creative chaos to fuel my imagination and ideas.",
+      "rating": 3,
+      "scored": 3.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "c4",
+        "text": "I make a mess of things.",
+        "dimension": "conscientiousness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 3  \nWHY: My level of organization varies depending on my mood and energy, sometimes leading to messy situations, but other times I'm quite methodical and precise.",
+      "rating": 3,
+      "scored": 3.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "n1",
+        "text": "I have frequent mood swings.",
+        "dimension": "neuroticism",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 3  \nWHY: My mood varies depending on circumstances like feeling isolated or sick, but I also have consistent creative outlets that stabilize my emotions.",
+      "rating": 3,
+      "scored": 3.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "n2",
+        "text": "I am relaxed most of the time.",
+        "dimension": "neuroticism",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 2  \nWHY: I often feel anxious, especially when faced with school deadlines and work, which makes it difficult for me to stay relaxed.",
+      "rating": 2,
+      "scored": 4.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "n3",
+        "text": "I get upset easily.",
+        "dimension": "neuroticism",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 2  \nWHY: I tend to channel my emotions into creative pursuits and find solace in imagination rather than getting upset easily.",
+      "rating": 2,
+      "scored": 2.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "n4",
+        "text": "I seldom feel blue.",
+        "dimension": "neuroticism",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 2  \nWHY: I often feel lonely and isolated, which leads me to seek creative outlets to elevate my mood.",
+      "rating": 2,
+      "scored": 4.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "o1",
+        "text": "I have a vivid imagination.",
+        "dimension": "openness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 5  \nWHY: I frequently generate imaginative ideas, vivid mental images, and explore creative solutions.",
+      "rating": 5,
+      "scored": 5.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "o2",
+        "text": "I am not interested in abstract ideas.",
+        "dimension": "openness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 2  \nWHY: I often explore abstract ideas and use them to inspire creative solutions and imaginative thinking.",
+      "rating": 2,
+      "scored": 4.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "o3",
+        "text": "I have difficulty understanding abstract ideas.",
+        "dimension": "openness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 1  \nWHY: I often explore abstract ideas with ease, using vivid imagery and creative thinking to understand them.",
+      "rating": 1,
+      "scored": 5.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "o4",
+        "text": "I do not have a good imagination.",
+        "dimension": "openness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 1  \nWHY: I consistently engage in creative thinking, generate imaginative ideas, and explore new perspectives in various situations.",
+      "rating": 1,
+      "scored": 5.0,
+      "fired": []
+    }
+  ]
+}

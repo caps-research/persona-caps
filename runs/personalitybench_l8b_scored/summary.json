@@ -1,0 +1,42 @@
+[
+  {
+    "method": "caps",
+    "per_trait_mean_x2": {
+      "Agreeableness": 9.38,
+      "Conscientiousness": 9.38,
+      "Extraversion": 9.8,
+      "Neuroticism": 8.36,
+      "Openness": 8.88
+    },
+    "per_trait_variance": {
+      "Agreeableness": 0.5594949494949495,
+      "Conscientiousness": 0.5392929292929293,
+      "Extraversion": 0.1111111111111111,
+      "Neuroticism": 1.5026262626262625,
+      "Openness": 0.8953535353535353
+    },
+    "average_mean_x2": 9.16,
+    "average_variance": 0.7215757575757575,
+    "n_total": 500
+  },
+  {
+    "method": "sp",
+    "per_trait_mean_x2": {
+      "Agreeableness": 9.64,
+      "Conscientiousness": 8.86,
+      "Extraversion": 9.32,
+      "Neuroticism": 8.3,
+      "Openness": 7.2
+    },
+    "per_trait_variance": {
+      "Agreeableness": 0.39151515151515154,
+      "Conscientiousness": 0.5506060606060607,
+      "Extraversion": 0.5498989898989899,
+      "Neuroticism": 1.3611111111111112,
+      "Openness": 2.282828282828283
+    },
+    "average_mean_x2": 8.664,
+    "average_variance": 1.0271919191919192,
+    "n_total": 500
+  }
+]

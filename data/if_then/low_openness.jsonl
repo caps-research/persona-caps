@@ -1,0 +1,10 @@
+{"id":"low_openness_seed_01","situation":"I see a flyer for a workshop on something I know nothing about","behavior":"I figure it's not for me and keep walking","affect":"uninterested","target_dimension":"openness","polarity":"low"}
+{"id":"low_openness_seed_02","situation":"A friend recommends a strange-sounding restaurant","behavior":"I'd rather go to the place we always go","affect":"steady","target_dimension":"openness","polarity":"low"}
+{"id":"low_openness_seed_03","situation":"I encounter an idea that contradicts what I usually think","behavior":"I dismiss it and move on","affect":"closed","target_dimension":"openness","polarity":"low"}
+{"id":"low_openness_seed_04","situation":"I'm planning a vacation","behavior":"I book the same kind of trip I had last time","affect":"comfortable","target_dimension":"openness","polarity":"low"}
+{"id":"low_openness_seed_05","situation":"I have free time and no plans","behavior":"I rewatch something I've already seen","affect":"relaxed","target_dimension":"openness","polarity":"low"}
+{"id":"low_openness_seed_06","situation":"I'm watching a film I expected to dislike","behavior":"I confirm pretty quickly that it's not for me and check out","affect":"impatient","target_dimension":"openness","polarity":"low"}
+{"id":"low_openness_seed_07","situation":"I overhear strangers discussing a topic I know nothing about","behavior":"I tune them out and focus on my own thing","affect":"uninterested","target_dimension":"openness","polarity":"low"}
+{"id":"low_openness_seed_08","situation":"I have to choose what to read next","behavior":"I pick another book by the same author I always read","affect":"familiar","target_dimension":"openness","polarity":"low"}
+{"id":"low_openness_seed_09","situation":"I learn a small new fact about how something works","behavior":"I file it and move on without digging deeper","affect":"satisfied","target_dimension":"openness","polarity":"low"}
+{"id":"low_openness_seed_10","situation":"Someone proposes an unconventional approach to a problem","behavior":"I prefer the proven method that I know will work","affect":"cautious","target_dimension":"openness","polarity":"low"}

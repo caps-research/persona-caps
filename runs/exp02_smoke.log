@@ -1,0 +1,102 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[exp02] 36 prompts (12 base x ~3 paraphrases)
+
+[exp02] running caps (high neuroticism)
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 18962.09it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+  [6/36] done
+  [12/36] done
+  [18/36] done
+  [24/36] done
+  [30/36] done
+  [36/36] done
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 28351.05it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+  W=0.609±0.113  A=0.335±0.125  W-A=+0.273
+
+[exp02] running trait_label (high neuroticism)
+  [6/36] done
+  [12/36] done
+  [18/36] done
+  [24/36] done
+  [30/36] done
+  [36/36] done
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 9859.04it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+  W=0.615±0.085  A=0.339±0.127  W-A=+0.276
+
+[exp02] running persona_description (high neuroticism)
+  [6/36] done
+  [12/36] done
+  [18/36] done
+  [24/36] done
+  [30/36] done
+  [36/36] done
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 9806.67it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+  W=0.626±0.100  A=0.399±0.127  W-A=+0.227
+
+[exp02] running random_demos (high neuroticism)
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 10952.57it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+  [6/36] done
+  [12/36] done
+  [18/36] done
+  [24/36] done
+  [30/36] done
+  [36/36] done
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 13791.77it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+  W=0.544±0.137  A=0.256±0.134  W-A=+0.287
+
+=== RQ2 summary ===
+target: high neuroticism  backend: minimax
+
+| method | W (within-paraphrase) | A (across-base) | W-A (signature) |
+| --- | --- | --- | --- |
+| caps | 0.609±0.113 | 0.335±0.125 | +0.273 |
+| trait_label | 0.615±0.085 | 0.339±0.127 | +0.276 |
+| persona_description | 0.626±0.100 | 0.399±0.127 | +0.227 |
+| random_demos | 0.544±0.137 | 0.256±0.134 | +0.287 |
+
+CAPS prediction: W-A is larger for the 'caps' row than for 'trait_label'.
+Higher W-A means the agent treats different situations as different — 
+the empirical signature of CAPS-style personality (Mischel & Shoda 1995).
+
+[exp02] wrote -> runs/exp02_smoke_neuroticism_high.json

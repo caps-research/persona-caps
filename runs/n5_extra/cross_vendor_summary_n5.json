@@ -1,0 +1,319 @@
+{
+  "vendors": [
+    "MiniMax-M2.7",
+    "GPT-4o-2024-08-06",
+    "Gemini-2.5-Flash"
+  ],
+  "per_vendor": {
+    "MiniMax-M2.7": {
+      "caps": {
+        "n_runs": 5,
+        "per_run": [
+          2.3,
+          2.3,
+          2.4,
+          2.9,
+          2.65
+        ],
+        "mean_spread": 2.51,
+        "ci95_lo": 2.3199999999999994,
+        "ci95_hi": 2.73,
+        "sd_across_runs": 0.260768096208106
+      },
+      "trait_label": {
+        "n_runs": 5,
+        "per_run": [
+          2.85,
+          2.6,
+          2.7,
+          2.6,
+          2.7
+        ],
+        "mean_spread": 2.69,
+        "ci95_lo": 2.62,
+        "ci95_hi": 2.77,
+        "sd_across_runs": 0.10246950765959599
+      },
+      "persona_description": {
+        "n_runs": 5,
+        "per_run": [
+          2.25,
+          2.35,
+          2.65,
+          2.35,
+          2.2
+        ],
+        "mean_spread": 2.36,
+        "ci95_lo": 2.25,
+        "ci95_hi": 2.5100000000000002,
+        "sd_across_runs": 0.17464249196572973
+      },
+      "random_demos": {
+        "n_runs": 5,
+        "per_run": [
+          -0.1,
+          -0.05,
+          0.0,
+          0.0,
+          0.1
+        ],
+        "mean_spread": -0.01,
+        "ci95_lo": -0.06000000000000001,
+        "ci95_hi": 0.05,
+        "sd_across_runs": 0.07416198487095663
+      },
+      "wrong_trait": {
+        "n_runs": 5,
+        "per_run": [
+          -0.15,
+          -0.35,
+          -0.05,
+          -0.05,
+          -0.35
+        ],
+        "mean_spread": -0.19,
+        "ci95_lo": -0.30999999999999994,
+        "ci95_hi": -0.06999999999999999,
+        "sd_across_runs": 0.151657508881031
+      }
+    },
+    "GPT-4o-2024-08-06": {
+      "caps": {
+        "n_runs": 5,
+        "per_run": [
+          3.65,
+          3.7,
+          3.8,
+          3.75,
+          3.8
+        ],
+        "mean_spread": 3.7399999999999998,
+        "ci95_lo": 3.69,
+        "ci95_hi": 3.79,
+        "sd_across_runs": 0.06519202405202641
+      },
+      "trait_label": {
+        "n_runs": 5,
+        "per_run": [
+          3.5,
+          3.45,
+          3.5,
+          3.6,
+          3.4
+        ],
+        "mean_spread": 3.49,
+        "ci95_lo": 3.44,
+        "ci95_hi": 3.55,
+        "sd_across_runs": 0.07416198487095667
+      },
+      "persona_description": {
+        "n_runs": 5,
+        "per_run": [
+          3.5,
+          3.55,
+          3.5,
+          3.5,
+          3.6
+        ],
+        "mean_spread": 3.53,
+        "ci95_lo": 3.5,
+        "ci95_hi": 3.5700000000000003,
+        "sd_across_runs": 0.04472135954999581
+      },
+      "random_demos": {
+        "n_runs": 5,
+        "per_run": [
+          -0.15,
+          0.05,
+          -0.1,
+          -0.05,
+          0.05
+        ],
+        "mean_spread": -0.04,
+        "ci95_lo": -0.11000000000000001,
+        "ci95_hi": 0.030000000000000006,
+        "sd_across_runs": 0.08944271909999159
+      },
+      "wrong_trait": {
+        "n_runs": 5,
+        "per_run": [
+          0.15,
+          0.2,
+          -0.1,
+          0.2,
+          -0.05
+        ],
+        "mean_spread": 0.08,
+        "ci95_lo": -0.030000000000000006,
+        "ci95_hi": 0.19,
+        "sd_across_runs": 0.14404860290887933
+      }
+    },
+    "Gemini-2.5-Flash": {
+      "caps": {
+        "n_runs": 5,
+        "per_run": [
+          3.95,
+          4.0,
+          4.0,
+          4.0,
+          4.0
+        ],
+        "mean_spread": 3.99,
+        "ci95_lo": 3.97,
+        "ci95_hi": 4.0,
+        "sd_across_runs": 0.022360679774997817
+      },
+      "trait_label": {
+        "n_runs": 5,
+        "per_run": [
+          3.75,
+          3.65,
+          3.85,
+          3.8,
+          3.8
+        ],
+        "mean_spread": 3.77,
+        "ci95_lo": 3.7099999999999995,
+        "ci95_hi": 3.8200000000000003,
+        "sd_across_runs": 0.07582875444051553
+      },
+      "persona_description": {
+        "n_runs": 5,
+        "per_run": [
+          3.95,
+          3.8,
+          3.8,
+          3.7,
+          3.95
+        ],
+        "mean_spread": 3.84,
+        "ci95_lo": 3.7600000000000002,
+        "ci95_hi": 3.9200000000000004,
+        "sd_across_runs": 0.10839741694339407
+      },
+      "random_demos": {
+        "n_runs": 5,
+        "per_run": [
+          0.2,
+          0.0,
+          0.0,
+          0.05,
+          0.05
+        ],
+        "mean_spread": 0.060000000000000005,
+        "ci95_lo": 0.01,
+        "ci95_hi": 0.13000000000000003,
+        "sd_across_runs": 0.08215838362577492
+      },
+      "wrong_trait": {
+        "n_runs": 5,
+        "per_run": [
+          -0.1,
+          -0.45,
+          -0.2,
+          0.1,
+          0.0
+        ],
+        "mean_spread": -0.13,
+        "ci95_lo": -0.3,
+        "ci95_hi": 0.02,
+        "sd_across_runs": 0.2109502310972899
+      }
+    }
+  },
+  "pearson_r_per_method_dim": {
+    "MiniMax-M2.7": {
+      "MiniMax-M2.7": 1.0000000000000002,
+      "GPT-4o-2024-08-06": 0.9287592198401016,
+      "Gemini-2.5-Flash": 0.9234877555135832
+    },
+    "GPT-4o-2024-08-06": {
+      "MiniMax-M2.7": 0.9287592198401016,
+      "GPT-4o-2024-08-06": 1.0000000000000002,
+      "Gemini-2.5-Flash": 0.9901677105830347
+    },
+    "Gemini-2.5-Flash": {
+      "MiniMax-M2.7": 0.9234877555135832,
+      "GPT-4o-2024-08-06": 0.9901677105830347,
+      "Gemini-2.5-Flash": 1.0000000000000002
+    }
+  },
+  "spread_per_cell": {
+    "MiniMax-M2.7|caps|neuroticism": 1.75,
+    "MiniMax-M2.7|caps|extraversion": 2.5,
+    "MiniMax-M2.7|caps|conscientiousness": 2.0,
+    "MiniMax-M2.7|caps|agreeableness": 3.4,
+    "MiniMax-M2.7|caps|openness": 2.9,
+    "MiniMax-M2.7|trait_label|neuroticism": 2.55,
+    "MiniMax-M2.7|trait_label|extraversion": 3.1,
+    "MiniMax-M2.7|trait_label|conscientiousness": 2.55,
+    "MiniMax-M2.7|trait_label|agreeableness": 2.3,
+    "MiniMax-M2.7|trait_label|openness": 2.95,
+    "MiniMax-M2.7|persona_description|neuroticism": 2.1,
+    "MiniMax-M2.7|persona_description|extraversion": 3.4,
+    "MiniMax-M2.7|persona_description|conscientiousness": 2.9,
+    "MiniMax-M2.7|persona_description|agreeableness": 1.6,
+    "MiniMax-M2.7|persona_description|openness": 1.8,
+    "MiniMax-M2.7|random_demos|neuroticism": 0.15,
+    "MiniMax-M2.7|random_demos|extraversion": -0.2,
+    "MiniMax-M2.7|random_demos|conscientiousness": -0.3,
+    "MiniMax-M2.7|random_demos|agreeableness": 0.25,
+    "MiniMax-M2.7|random_demos|openness": 0.05,
+    "MiniMax-M2.7|wrong_trait|neuroticism": -1.3,
+    "MiniMax-M2.7|wrong_trait|extraversion": 0.4,
+    "MiniMax-M2.7|wrong_trait|conscientiousness": -1.05,
+    "MiniMax-M2.7|wrong_trait|agreeableness": 1.0,
+    "MiniMax-M2.7|wrong_trait|openness": 0.0,
+    "GPT-4o-2024-08-06|caps|neuroticism": 3.5,
+    "GPT-4o-2024-08-06|caps|extraversion": 3.75,
+    "GPT-4o-2024-08-06|caps|conscientiousness": 3.55,
+    "GPT-4o-2024-08-06|caps|agreeableness": 3.95,
+    "GPT-4o-2024-08-06|caps|openness": 3.95,
+    "GPT-4o-2024-08-06|trait_label|neuroticism": 3.9,
+    "GPT-4o-2024-08-06|trait_label|extraversion": 3.95,
+    "GPT-4o-2024-08-06|trait_label|conscientiousness": 3.25,
+    "GPT-4o-2024-08-06|trait_label|agreeableness": 3.1,
+    "GPT-4o-2024-08-06|trait_label|openness": 3.25,
+    "GPT-4o-2024-08-06|persona_description|neuroticism": 4.0,
+    "GPT-4o-2024-08-06|persona_description|extraversion": 3.85,
+    "GPT-4o-2024-08-06|persona_description|conscientiousness": 3.25,
+    "GPT-4o-2024-08-06|persona_description|agreeableness": 3.05,
+    "GPT-4o-2024-08-06|persona_description|openness": 3.5,
+    "GPT-4o-2024-08-06|random_demos|neuroticism": -0.2,
+    "GPT-4o-2024-08-06|random_demos|extraversion": 0.05,
+    "GPT-4o-2024-08-06|random_demos|conscientiousness": -0.1,
+    "GPT-4o-2024-08-06|random_demos|agreeableness": 0.0,
+    "GPT-4o-2024-08-06|random_demos|openness": 0.05,
+    "GPT-4o-2024-08-06|wrong_trait|neuroticism": -2.6,
+    "GPT-4o-2024-08-06|wrong_trait|extraversion": 2.55,
+    "GPT-4o-2024-08-06|wrong_trait|conscientiousness": -1.65,
+    "GPT-4o-2024-08-06|wrong_trait|agreeableness": 1.05,
+    "GPT-4o-2024-08-06|wrong_trait|openness": 1.05,
+    "Gemini-2.5-Flash|caps|neuroticism": 3.95,
+    "Gemini-2.5-Flash|caps|extraversion": 4.0,
+    "Gemini-2.5-Flash|caps|conscientiousness": 4.0,
+    "Gemini-2.5-Flash|caps|agreeableness": 4.0,
+    "Gemini-2.5-Flash|caps|openness": 4.0,
+    "Gemini-2.5-Flash|trait_label|neuroticism": 4.0,
+    "Gemini-2.5-Flash|trait_label|extraversion": 3.95,
+    "Gemini-2.5-Flash|trait_label|conscientiousness": 3.8,
+    "Gemini-2.5-Flash|trait_label|agreeableness": 3.65,
+    "Gemini-2.5-Flash|trait_label|openness": 3.45,
+    "Gemini-2.5-Flash|persona_description|neuroticism": 4.0,
+    "Gemini-2.5-Flash|persona_description|extraversion": 4.0,
+    "Gemini-2.5-Flash|persona_description|conscientiousness": 3.95,
+    "Gemini-2.5-Flash|persona_description|agreeableness": 3.4,
+    "Gemini-2.5-Flash|persona_description|openness": 3.85,
+    "Gemini-2.5-Flash|random_demos|neuroticism": -0.05,
+    "Gemini-2.5-Flash|random_demos|extraversion": -0.1,
+    "Gemini-2.5-Flash|random_demos|conscientiousness": -0.05,
+    "Gemini-2.5-Flash|random_demos|agreeableness": 0.15,
+    "Gemini-2.5-Flash|random_demos|openness": 0.35,
+    "Gemini-2.5-Flash|wrong_trait|neuroticism": -2.8,
+    "Gemini-2.5-Flash|wrong_trait|extraversion": 2.15,
+    "Gemini-2.5-Flash|wrong_trait|conscientiousness": -2.5,
+    "Gemini-2.5-Flash|wrong_trait|agreeableness": 0.85,
+    "Gemini-2.5-Flash|wrong_trait|openness": 1.65
+  }
+}

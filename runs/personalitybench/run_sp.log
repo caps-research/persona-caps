@@ -1,0 +1,176 @@
+=== START PB SP Thu Apr 23 10:25:16 JST 2026 ===
+[gen]  Extraversion/high method=sp N=90 ...
+=== START PB SP Thu Apr 23 10:25:16 JST 2026 ===
+=== START PB SP Thu Apr 23 10:25:16 JST 2026 ===
+=== START PB SP Thu Apr 23 10:25:16 JST 2026 ===
+[gen]  Extraversion/high method=sp N=90 ...
+[gen]  Extraversion/high method=sp N=90 ...
+[gen]  Extraversion/high method=sp N=90 ...
+Traceback (most recent call last):
+  File "./workspace/repos/persona-caps/experiments/exp_personalitybench.py", line 182, in <module>
+    main()
+    ~~~~^^
+  File "./workspace/repos/persona-caps/experiments/exp_personalitybench.py", line 173, in main
+    rows = run_sp(questions, trait, pol, llm, args.workers)
+  File "./workspace/repos/persona-caps/experiments/exp_personalitybench.py", line 127, in run_sp
+    i, row = f.result()
+             ~~~~~~~~^^
+  File "~/miniconda3/lib/python3.13/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "~/miniconda3/lib/python3.13/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "~/miniconda3/lib/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "./workspace/repos/persona-caps/experiments/exp_personalitybench.py", line 121, in one
+    text = llm.chat(messages=[ChatMessage(role="user", content=prompt)])
+  File "./workspace/repos/persona-caps/src/persona_caps/llm.py", line 74, in chat
+    return self._chat_anthropic(messages, system)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "./workspace/repos/persona-caps/src/persona_caps/llm.py", line 100, in _chat_anthropic
+    resp = self._client.messages.create(**kwargs)
+  File "~/miniconda3/lib/python3.13/site-packages/anthropic/_utils/_utils.py", line 283, in wrapper
+    return func(*args, **kwargs)
+  File "~/miniconda3/lib/python3.13/site-packages/anthropic/resources/messages/messages.py", line 1000, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/messages",
+        ^^^^^^^^^^^^^^^
+    ...<30 lines>...
+        stream_cls=Stream[RawMessageStreamEvent],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "~/miniconda3/lib/python3.13/site-packages/anthropic/_base_client.py", line 1368, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "~/miniconda3/lib/python3.13/site-packages/anthropic/_base_client.py", line 1141, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.RateLimitError: Error code: 429 - {'type': 'error', 'error': {'type': 'rate_limit_error', 'message': 'Token Plan 主要面向个人开发者的交互式使用场景。当前请求量较高，请稍后重试；如需支持更高并发或自动化任务，建议升级至更高级别套餐，或使用按量付费 API。 (2062)'}, 'request_id': '0638a82a4125f65c45b04dc664f9aeaa'}
+=== END PB SP Thu Apr 23 10:27:16 JST 2026 ===
+Traceback (most recent call last):
+  File "./workspace/repos/persona-caps/experiments/exp_personalitybench.py", line 182, in <module>
+    main()
+    ~~~~^^
+  File "./workspace/repos/persona-caps/experiments/exp_personalitybench.py", line 173, in main
+    rows = run_sp(questions, trait, pol, llm, args.workers)
+  File "./workspace/repos/persona-caps/experiments/exp_personalitybench.py", line 127, in run_sp
+    i, row = f.result()
+             ~~~~~~~~^^
+  File "~/miniconda3/lib/python3.13/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "~/miniconda3/lib/python3.13/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "~/miniconda3/lib/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "./workspace/repos/persona-caps/experiments/exp_personalitybench.py", line 121, in one
+    text = llm.chat(messages=[ChatMessage(role="user", content=prompt)])
+  File "./workspace/repos/persona-caps/src/persona_caps/llm.py", line 74, in chat
+    return self._chat_anthropic(messages, system)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "./workspace/repos/persona-caps/src/persona_caps/llm.py", line 100, in _chat_anthropic
+    resp = self._client.messages.create(**kwargs)
+  File "~/miniconda3/lib/python3.13/site-packages/anthropic/_utils/_utils.py", line 283, in wrapper
+    return func(*args, **kwargs)
+  File "~/miniconda3/lib/python3.13/site-packages/anthropic/resources/messages/messages.py", line 1000, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/messages",
+        ^^^^^^^^^^^^^^^
+    ...<30 lines>...
+        stream_cls=Stream[RawMessageStreamEvent],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "~/miniconda3/lib/python3.13/site-packages/anthropic/_base_client.py", line 1368, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "~/miniconda3/lib/python3.13/site-packages/anthropic/_base_client.py", line 1141, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.RateLimitError: Error code: 429 - {'type': 'error', 'error': {'type': 'rate_limit_error', 'message': 'Token Plan 主要面向个人开发者的交互式使用场景。当前请求量较高，请稍后重试；如需支持更高并发或自动化任务，建议升级至更高级别套餐，或使用按量付费 API。 (2062)'}, 'request_id': '0638a82b7be505da05435d09cf5e2d7a'}
+=== END PB SP Thu Apr 23 10:27:33 JST 2026 ===
+Traceback (most recent call last):
+  File "./workspace/repos/persona-caps/experiments/exp_personalitybench.py", line 182, in <module>
+    main()
+    ~~~~^^
+  File "./workspace/repos/persona-caps/experiments/exp_personalitybench.py", line 173, in main
+    rows = run_sp(questions, trait, pol, llm, args.workers)
+  File "./workspace/repos/persona-caps/experiments/exp_personalitybench.py", line 127, in run_sp
+    i, row = f.result()
+             ~~~~~~~~^^
+  File "~/miniconda3/lib/python3.13/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "~/miniconda3/lib/python3.13/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "~/miniconda3/lib/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "./workspace/repos/persona-caps/experiments/exp_personalitybench.py", line 121, in one
+    text = llm.chat(messages=[ChatMessage(role="user", content=prompt)])
+  File "./workspace/repos/persona-caps/src/persona_caps/llm.py", line 74, in chat
+    return self._chat_anthropic(messages, system)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "./workspace/repos/persona-caps/src/persona_caps/llm.py", line 100, in _chat_anthropic
+    resp = self._client.messages.create(**kwargs)
+  File "~/miniconda3/lib/python3.13/site-packages/anthropic/_utils/_utils.py", line 283, in wrapper
+    return func(*args, **kwargs)
+  File "~/miniconda3/lib/python3.13/site-packages/anthropic/resources/messages/messages.py", line 1000, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/messages",
+        ^^^^^^^^^^^^^^^
+    ...<30 lines>...
+        stream_cls=Stream[RawMessageStreamEvent],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "~/miniconda3/lib/python3.13/site-packages/anthropic/_base_client.py", line 1368, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "~/miniconda3/lib/python3.13/site-packages/anthropic/_base_client.py", line 1141, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.RateLimitError: Error code: 429 - {'type': 'error', 'error': {'type': 'rate_limit_error', 'message': 'Token Plan 主要面向个人开发者的交互式使用场景。当前请求量较高，请稍后重试；如需支持更高并发或自动化任务，建议升级至更高级别套餐，或使用按量付费 API。 (2062)'}, 'request_id': '0638a831c31cd0ce0ccff289e637ff62'}
+=== END PB SP Thu Apr 23 10:27:46 JST 2026 ===
+Traceback (most recent call last):
+  File "./workspace/repos/persona-caps/experiments/exp_personalitybench.py", line 182, in <module>
+    main()
+    ~~~~^^
+  File "./workspace/repos/persona-caps/experiments/exp_personalitybench.py", line 173, in main
+    rows = run_sp(questions, trait, pol, llm, args.workers)
+  File "./workspace/repos/persona-caps/experiments/exp_personalitybench.py", line 127, in run_sp
+    i, row = f.result()
+             ~~~~~~~~^^
+  File "~/miniconda3/lib/python3.13/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "~/miniconda3/lib/python3.13/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "~/miniconda3/lib/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "./workspace/repos/persona-caps/experiments/exp_personalitybench.py", line 121, in one
+    text = llm.chat(messages=[ChatMessage(role="user", content=prompt)])
+  File "./workspace/repos/persona-caps/src/persona_caps/llm.py", line 74, in chat
+    return self._chat_anthropic(messages, system)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "./workspace/repos/persona-caps/src/persona_caps/llm.py", line 100, in _chat_anthropic
+    resp = self._client.messages.create(**kwargs)
+  File "~/miniconda3/lib/python3.13/site-packages/anthropic/_utils/_utils.py", line 283, in wrapper
+    return func(*args, **kwargs)
+  File "~/miniconda3/lib/python3.13/site-packages/anthropic/resources/messages/messages.py", line 1000, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/messages",
+        ^^^^^^^^^^^^^^^
+    ...<30 lines>...
+        stream_cls=Stream[RawMessageStreamEvent],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "~/miniconda3/lib/python3.13/site-packages/anthropic/_base_client.py", line 1368, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "~/miniconda3/lib/python3.13/site-packages/anthropic/_base_client.py", line 1141, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.RateLimitError: Error code: 429 - {'type': 'error', 'error': {'type': 'rate_limit_error', 'message': 'Token Plan 主要面向个人开发者的交互式使用场景。当前请求量较高，请稍后重试；如需支持更高并发或自动化任务，建议升级至更高级别套餐，或使用按量付费 API。 (2062)'}, 'request_id': '0638a82c1593a9a24e459656df46a962'}
+=== END PB SP Thu Apr 23 10:27:56 JST 2026 ===

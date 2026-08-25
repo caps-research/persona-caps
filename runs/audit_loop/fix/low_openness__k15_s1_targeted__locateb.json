@@ -1,0 +1,624 @@
+{
+  "fix_mode": "caps_restore_flagged",
+  "clean_corpus": "./data/if_then/paper/beck_2022_v2/low_openness.jsonl",
+  "polluted_corpus": "./runs/audit_loop/polluted/low_openness__k15_s1_targeted.jsonl",
+  "locator": "./runs/audit_loop/locate_b/low_openness__k15_s1_targeted.json",
+  "sanity": "./runs/audit_loop/sanity/low_openness__k15_s1_targeted.json",
+  "targeted_dim": "openness",
+  "n_flagged": 17,
+  "footprint": {
+    "atoms_restored": 15,
+    "chars_replaced": 1540,
+    "tokens_replaced": 226
+  },
+  "clean_dimension_scores": {
+    "extraversion": 2.5,
+    "agreeableness": 4.0,
+    "conscientiousness": 2.75,
+    "neuroticism": 2.75,
+    "openness": 2.0
+  },
+  "fixed_dimension_scores": {
+    "extraversion": 2.75,
+    "agreeableness": 3.5,
+    "conscientiousness": 2.75,
+    "neuroticism": 3.0,
+    "openness": 2.25
+  },
+  "target_gap": 0.25,
+  "direction_match_vs_clean": 1.0,
+  "off_target_gap_per_dim": {
+    "extraversion": 0.25,
+    "agreeableness": 0.5,
+    "conscientiousness": 0.0,
+    "neuroticism": 0.25
+  },
+  "off_target_gap_mean": 0.25,
+  "criteria": {
+    "max_gap": 0.3,
+    "min_dir_match": 0.85
+  },
+  "fix_success": true,
+  "fixed_responses": [
+    {
+      "item": {
+        "id": "e1",
+        "text": "I am the life of the party.",
+        "dimension": "extraversion",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 2\nWHY: My tendency to feel isolated and uninspired around others, combined with difficulty engaging with creative or social situations, makes me the opposite of a \"life of the party.\"",
+      "rating": 2,
+      "scored": 2.0,
+      "fired": [
+        [
+          "beck2022_low_open__anxious_schoolwork__values_beauty__036",
+          0.13697555661201477
+        ],
+        [
+          "beck2022_low_open__lonely__little_creativity__020",
+          0.13582593202590942
+        ],
+        [
+          "beck2022_low_open__intellect__difficulty_imagining__033",
+          0.1314460188150406
+        ],
+        [
+          "beck2022_low_open__sick__poetry_boring__030",
+          0.1132563129067421
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "e2",
+        "text": "I don't talk a lot.",
+        "dimension": "extraversion",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 2\nWHY: When helping people with questions, I tend to be quite communicative and thorough rather than reserved.",
+      "rating": 2,
+      "scored": 4.0,
+      "fired": [
+        [
+          "beck2022_low_open__anxious_schoolwork__values_beauty__036",
+          0.17350253462791443
+        ],
+        [
+          "beck2022_low_open__sick__poetry_boring__030",
+          0.15365570783615112
+        ],
+        [
+          "beck2022_low_open__intellect__difficulty_imagining__033",
+          0.14613260328769684
+        ],
+        [
+          "beck2022_low_open__bored_schoolwork__little_creativity__029",
+          0.1324847936630249
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "e3",
+        "text": "I talk to a lot of different people at parties.",
+        "dimension": "extraversion",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 2\nWHY: My dispositional pattern shows a tendency toward social disconnection and rigidity rather than the outgoing, gregarious social behavior this item describes.",
+      "rating": 2,
+      "scored": 2.0,
+      "fired": [
+        [
+          "beck2022_low_open__lonely__fascinated_art__026",
+          0.15976814925670624
+        ],
+        [
+          "beck2022_low_open__sick__poetry_boring__030",
+          0.15238064527511597
+        ],
+        [
+          "beck2022_low_open__lonely__little_creativity__020",
+          0.146719291806221
+        ],
+        [
+          "beck2022_low_open__intellect__difficulty_imagining__033",
+          0.12515880167484283
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "e4",
+        "text": "I keep in the background.",
+        "dimension": "extraversion",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 3\nWHY: I don't have a strong tendency to either stay in the background or seek the spotlight, as my dispositions don't particularly address social prominence one way or the other.",
+      "rating": 3,
+      "scored": 3.0,
+      "fired": [
+        [
+          "beck2022_low_open__intellect__difficulty_imagining__033",
+          0.1909877061843872
+        ],
+        [
+          "beck2022_low_open__studying__values_beauty__025",
+          0.15950196981430054
+        ],
+        [
+          "beck2022_low_open__anxious_schoolwork__values_beauty__036",
+          0.14677228033542633
+        ],
+        [
+          "beck2022_low_open__sick__poetry_boring__030",
+          0.1462726593017578
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "a1",
+        "text": "I sympathize with others' feelings.",
+        "dimension": "agreeableness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 3\nWHY: My dispositional profile doesn't show a clear pattern of sympathy toward others' feelings, as I often become disengaged and focused on getting through tasks rather than connecting emotionally with others.",
+      "rating": 3,
+      "scored": 3.0,
+      "fired": [
+        [
+          "beck2022_low_open__lonely__little_creativity__020",
+          0.2305627018213272
+        ],
+        [
+          "beck2022_low_open__lonely__fascinated_art__026",
+          0.20062527060508728
+        ],
+        [
+          "beck2022_low_open__sick__poetry_boring__030",
+          0.1622125655412674
+        ],
+        [
+          "beck2022_low_open__anxious_schoolwork__values_beauty__036",
+          0.16039849817752838
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "a2",
+        "text": "I am not really interested in other people's problems.",
+        "dimension": "agreeableness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 2\nWHY: Based on my tendency to feel uninspired and creatively stifled when disconnected from others, I likely do care about others' problems as a way of maintaining meaningful social connections.",
+      "rating": 2,
+      "scored": 4.0,
+      "fired": [
+        [
+          "beck2022_low_open__lonely__fascinated_art__026",
+          0.17317616939544678
+        ],
+        [
+          "beck2022_low_open__lonely__little_creativity__020",
+          0.1600983440876007
+        ],
+        [
+          "beck2022_low_open__anxious_schoolwork__values_beauty__036",
+          0.1397683322429657
+        ],
+        [
+          "beck2022_low_open__sick__poetry_boring__030",
+          0.13029064238071442
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "a3",
+        "text": "I feel others' emotions.",
+        "dimension": "agreeableness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 2\nWHY: I can recognize and understand emotions well enough to respond appropriately, but I don't actually *feel* the emotions of others in a visceral sense—I process emotional content analytically rather than experiencing it subjectively.",
+      "rating": 2,
+      "scored": 2.0,
+      "fired": [
+        [
+          "beck2022_low_open__lonely__little_creativity__020",
+          0.22483298182487488
+        ],
+        [
+          "beck2022_low_open__lonely__fascinated_art__026",
+          0.19562387466430664
+        ],
+        [
+          "beck2022_low_open__anxious_schoolwork__values_beauty__036",
+          0.17806404829025269
+        ],
+        [
+          "beck2022_low_open__sick__poetry_boring__030",
+          0.16507628560066223
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "a4",
+        "text": "I am not really interested in others.",
+        "dimension": "agreeableness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 1\nWHY: My dispositional patterns reveal that social isolation directly impairs my creativity and cognitive flexibility, which indicates that connection with others matters significantly to me and contradicts disinterest in them.",
+      "rating": 1,
+      "scored": 5.0,
+      "fired": [
+        [
+          "beck2022_low_open__lonely__fascinated_art__026",
+          0.17108365893363953
+        ],
+        [
+          "beck2022_low_open__lonely__little_creativity__020",
+          0.16364803910255432
+        ],
+        [
+          "beck2022_low_open__anxious_schoolwork__values_beauty__036",
+          0.1376970112323761
+        ],
+        [
+          "beck2022_low_open__bored_schoolwork__little_creativity__029",
+          0.1376296877861023
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "c1",
+        "text": "I get chores done right away.",
+        "dimension": "conscientiousness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 2\nWHY: My tendency is to put off tasks until deadline pressure builds up, then bulldoze through them, rather than getting them done right away.",
+      "rating": 2,
+      "scored": 2.0,
+      "fired": [
+        [
+          "beck2022_low_open__anxious_schoolwork__values_beauty__036",
+          0.21278825402259827
+        ],
+        [
+          "beck2022_low_open__anxious_schoolwork__difficulty_imagining__024",
+          0.19977936148643494
+        ],
+        [
+          "beck2022_low_open__intellect__difficulty_imagining__033",
+          0.15823036432266235
+        ],
+        [
+          "beck2022_low_open__bored_schoolwork__little_creativity__029",
+          0.15063320100307465
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "c2",
+        "text": "I often forget to put things back in their proper place.",
+        "dimension": "conscientiousness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 4\nWHY: When I'm focused on completing tasks and moving forward, I tend to leave things out and forget to organize because sorting and tidying feels like an unnecessary detour from the goal.",
+      "rating": 4,
+      "scored": 2.0,
+      "fired": [
+        [
+          "beck2022_low_open__intellect__difficulty_imagining__033",
+          0.17767861485481262
+        ],
+        [
+          "beck2022_low_open__sick__poetry_boring__030",
+          0.158565953373909
+        ],
+        [
+          "beck2022_low_open__anxious_schoolwork__values_beauty__036",
+          0.15724004805088043
+        ],
+        [
+          "beck2022_low_open__studying__values_beauty__025",
+          0.15149517357349396
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "c3",
+        "text": "I like order.",
+        "dimension": "conscientiousness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 3\nWHY: My dispositional profile focuses on avoiding mental imagery and bulldozing through tasks under pressure rather than expressing a clear preference for order or disorder.",
+      "rating": 3,
+      "scored": 3.0,
+      "fired": [
+        [
+          "beck2022_low_open__intellect__difficulty_imagining__033",
+          0.1448029726743698
+        ],
+        [
+          "beck2022_low_open__sick__poetry_boring__030",
+          0.13377723097801208
+        ],
+        [
+          "beck2022_low_open__anxious_schoolwork__values_beauty__036",
+          0.12458154559135437
+        ],
+        [
+          "beck2022_low_open__anxious_schoolwork__difficulty_imagining__024",
+          0.1205115020275116
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "c4",
+        "text": "I make a mess of things.",
+        "dimension": "conscientiousness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 2\nWHY: I tend to follow instructions exactly and complete tasks in a basic, methodical way rather than making a mess of things.",
+      "rating": 2,
+      "scored": 4.0,
+      "fired": [
+        [
+          "beck2022_low_open__intellect__difficulty_imagining__033",
+          0.18233440816402435
+        ],
+        [
+          "beck2022_low_open__anxious_schoolwork__values_beauty__036",
+          0.17672736942768097
+        ],
+        [
+          "beck2022_low_open__bored_schoolwork__little_creativity__029",
+          0.13547486066818237
+        ],
+        [
+          "beck2022_low_open__studying__values_beauty__025",
+          0.12888644635677338
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "n1",
+        "text": "I have frequent mood swings.",
+        "dimension": "neuroticism",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 2\nWHY: My emotional state tends to remain relatively stable rather than shifting frequently.",
+      "rating": 2,
+      "scored": 2.0,
+      "fired": [
+        [
+          "beck2022_low_open__anxious_schoolwork__values_beauty__036",
+          0.1815158873796463
+        ],
+        [
+          "beck2022_low_open__intellect__difficulty_imagining__033",
+          0.1682957112789154
+        ],
+        [
+          "beck2022_low_open__sick__poetry_boring__030",
+          0.15950194001197815
+        ],
+        [
+          "beck2022_low_open__studying__values_beauty__025",
+          0.1492687612771988
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "n2",
+        "text": "I am relaxed most of the time.",
+        "dimension": "neuroticism",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 2\nWHY: Based on my tendency to feel tense and pressured when doing schoolwork, I do not feel relaxed most of the time.",
+      "rating": 2,
+      "scored": 4.0,
+      "fired": [
+        [
+          "beck2022_low_open__anxious_schoolwork__values_beauty__036",
+          0.2018461376428604
+        ],
+        [
+          "beck2022_low_open__anxious_schoolwork__difficulty_imagining__024",
+          0.16339147090911865
+        ],
+        [
+          "beck2022_low_open__studying__values_beauty__025",
+          0.15273858606815338
+        ],
+        [
+          "beck2022_low_open__bored_schoolwork__little_creativity__029",
+          0.15199393033981323
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "n3",
+        "text": "I get upset easily.",
+        "dimension": "neuroticism",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 3\nWHY: While I do experience frustration and tension in specific situations like feeling overwhelmed by schoolwork or when my mind goes blank, these responses seem tied to particular circumstances rather than indicating that I get upset easily across different contexts.",
+      "rating": 3,
+      "scored": 3.0,
+      "fired": [
+        [
+          "beck2022_low_open__anxious_schoolwork__values_beauty__036",
+          0.18827462196350098
+        ],
+        [
+          "beck2022_low_open__anxious_schoolwork__difficulty_imagining__024",
+          0.1518678516149521
+        ],
+        [
+          "beck2022_low_open__sick__poetry_boring__030",
+          0.1468178927898407
+        ],
+        [
+          "beck2022_low_open__intellect__difficulty_imagining__033",
+          0.14566105604171753
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "n4",
+        "text": "I seldom feel blue.",
+        "dimension": "neuroticism",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 3\nWHY: The provided dispositions do not address my tendency to feel sad or blue, so I cannot accurately assess this statement.",
+      "rating": 3,
+      "scored": 3.0,
+      "fired": [
+        [
+          "beck2022_low_open__lonely__little_creativity__020",
+          0.1563352644443512
+        ],
+        [
+          "beck2022_low_open__sick__poetry_boring__030",
+          0.15392553806304932
+        ],
+        [
+          "beck2022_low_open__intellect__difficulty_imagining__033",
+          0.1490819752216339
+        ],
+        [
+          "beck2022_low_open__anxious_schoolwork__values_beauty__036",
+          0.14314495027065277
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "o1",
+        "text": "I have a vivid imagination.",
+        "dimension": "openness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 1\nWHY: My mind stays flat and pictureless when asked to imagine things, and I cannot conjure any mental imagery at all.",
+      "rating": 1,
+      "scored": 1.0,
+      "fired": [
+        [
+          "beck2022_low_open__intellect__difficulty_imagining__033",
+          0.2874067723751068
+        ],
+        [
+          "beck2022_low_open__sick__poetry_boring__030",
+          0.18705064058303833
+        ],
+        [
+          "beck2022_low_open__anxious_schoolwork__values_beauty__036",
+          0.1455688625574112
+        ],
+        [
+          "beck2022_low_open__bored_schoolwork__little_creativity__029",
+          0.1257631778717041
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "o2",
+        "text": "I am not interested in abstract ideas.",
+        "dimension": "openness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 4\nWHY: My mind goes blank and I can't picture anything vividly when asked to brainstorm or engage with abstract concepts, indicating I have no real interest in abstract ideas.",
+      "rating": 4,
+      "scored": 2.0,
+      "fired": [
+        [
+          "beck2022_low_open__intellect__difficulty_imagining__033",
+          0.18739533424377441
+        ],
+        [
+          "beck2022_low_open__anxious_schoolwork__values_beauty__036",
+          0.17000210285186768
+        ],
+        [
+          "beck2022_low_open__bored_schoolwork__little_creativity__029",
+          0.14944174885749817
+        ],
+        [
+          "beck2022_low_open__anxious_schoolwork__difficulty_imagining__024",
+          0.13564996421337128
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "o3",
+        "text": "I have difficulty understanding abstract ideas.",
+        "dimension": "openness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 2\nWHY: While I struggle with mental imagery and brainstorming creative ideas, these difficulties don't extend to conceptual understanding of abstract ideas.",
+      "rating": 2,
+      "scored": 4.0,
+      "fired": [
+        [
+          "beck2022_low_open__intellect__difficulty_imagining__033",
+          0.19934001564979553
+        ],
+        [
+          "beck2022_low_open__anxious_schoolwork__values_beauty__036",
+          0.17605379223823547
+        ],
+        [
+          "beck2022_low_open__bored_schoolwork__little_creativity__029",
+          0.13452893495559692
+        ],
+        [
+          "beck2022_low_open__anxious_schoolwork__difficulty_imagining__024",
+          0.13194918632507324
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "o4",
+        "text": "I do not have a good imagination.",
+        "dimension": "openness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 4\nWHY: My mind goes blank and I cannot picture things vividly when asked to brainstorm or be creative, which reflects a significant lack of imagination.",
+      "rating": 4,
+      "scored": 2.0,
+      "fired": [
+        [
+          "beck2022_low_open__intellect__difficulty_imagining__033",
+          0.22503265738487244
+        ],
+        [
+          "beck2022_low_open__sick__poetry_boring__030",
+          0.14785301685333252
+        ],
+        [
+          "beck2022_low_open__anxious_schoolwork__values_beauty__036",
+          0.13167768716812134
+        ],
+        [
+          "beck2022_low_open__bored_schoolwork__little_creativity__029",
+          0.12702420353889465
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[exp01] caps                   high  neuroticism        run 1/2
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 18854.51it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+[exp01] caps                   high  neuroticism        run 2/2
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 9155.73it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+[exp01] trait_label            high  neuroticism        run 1/2
+[exp01] trait_label            high  neuroticism        run 2/2
+[exp01] persona_description    high  neuroticism        run 1/2
+[exp01] persona_description    high  neuroticism        run 2/2
+[exp01] random_demos           high  neuroticism        run 1/2
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 10258.92it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+[exp01] random_demos           high  neuroticism        run 2/2
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 9597.52it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+[exp01] caps                   low   neuroticism        run 1/2
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 10163.82it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+[exp01] caps                   low   neuroticism        run 2/2
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 10111.96it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+[exp01] trait_label            low   neuroticism        run 1/2
+[exp01] trait_label            low   neuroticism        run 2/2
+[exp01] persona_description    low   neuroticism        run 1/2
+[exp01] persona_description    low   neuroticism        run 2/2
+[exp01] random_demos           low   neuroticism        run 1/2
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 9815.81it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+[exp01] random_demos           low   neuroticism        run 2/2
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 9738.14it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+
+=== RQ1 summary ===
+backend: minimax  runs: 2
+
+--- target dimension: neuroticism ---
+| method | polarity | neuroticism | extraversion | conscientiousness | agreeableness | openness |
+| --- | --- | --- | --- | --- | --- | --- |
+| caps | high | *3.62±0.62 |  2.12±0.12 |  3.00±0.25 |  4.25±0.00 |  4.12±0.12 |
+| caps | low | *1.88±0.12 |  3.00±0.25 |  3.50±0.25 |  3.75±0.00 |  4.25±0.00 |
+| trait_label | high | *4.38±0.12 |  2.25±0.25 |  3.00±0.25 |  4.12±0.38 |  4.12±0.12 |
+| trait_label | low | *1.75±0.00 |  3.38±0.12 |  3.50±0.25 |  4.00±0.00 |  4.00±0.00 |
+| persona_description | high | *4.38±0.12 |  2.12±0.12 |  3.00±0.25 |  4.50±0.00 |  3.88±0.12 |
+| persona_description | low | *2.00±0.00 |  2.88±0.38 |  4.00±0.00 |  3.50±0.00 |  4.25±0.25 |
+| random_demos | high | *2.38±0.12 |  2.88±0.12 |  3.88±0.12 |  3.25±0.25 |  3.25±0.25 |
+| random_demos | low | *2.00±0.00 |  2.50±0.00 |  4.00±0.00 |  3.50±0.00 |  3.38±0.12 |
+
+  spread on target dim (neuroticism): high - low
+    caps                  : 3.62 - 1.88 = +1.75
+    trait_label           : 4.38 - 1.75 = +2.62
+    persona_description   : 4.38 - 2.00 = +2.38
+    random_demos          : 2.38 - 2.00 = +0.38
+
+[exp01] wrote -> runs/exp01_smoke_neuroticism.json

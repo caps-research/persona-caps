@@ -1,0 +1,22 @@
+[
+  {
+    "method": "p2",
+    "per_trait_mean_x2": {
+      "Agreeableness": 9.64,
+      "Conscientiousness": 8.82,
+      "Extraversion": 9.56,
+      "Neuroticism": 9.78,
+      "Openness": 9.42
+    },
+    "per_trait_variance": {
+      "Agreeableness": 0.2096969696969697,
+      "Conscientiousness": 0.708989898989899,
+      "Extraversion": 0.29454545454545455,
+      "Neuroticism": 0.2201010101010101,
+      "Openness": 0.2887878787878788
+    },
+    "average_mean_x2": 9.444,
+    "average_variance": 0.3444242424242424,
+    "n_total": 500
+  }
+]

@@ -1,0 +1,165 @@
+{
+  "limit_per_cell": 50,
+  "judge": "gpt-4o-2024-08-06",
+  "table": {
+    "MiniMax-M2.7": {
+      "CAPS": {
+        "per_trait": {
+          "Agreeableness": 9.64,
+          "Conscientiousness": 9.0,
+          "Extraversion": 9.72,
+          "Neuroticism": 9.22,
+          "Openness": 8.78
+        },
+        "avg": 9.272,
+        "n_per_cell": {
+          "Agreeableness": 100,
+          "Conscientiousness": 100,
+          "Extraversion": 100,
+          "Neuroticism": 100,
+          "Openness": 100
+        }
+      },
+      "SP": {
+        "per_trait": {
+          "Agreeableness": 9.6,
+          "Conscientiousness": 7.76,
+          "Extraversion": 9.3,
+          "Neuroticism": 8.68,
+          "Openness": 6.74
+        },
+        "avg": 8.416,
+        "n_per_cell": {
+          "Agreeableness": 100,
+          "Conscientiousness": 100,
+          "Extraversion": 100,
+          "Neuroticism": 100,
+          "Openness": 100
+        }
+      },
+      "P\u00b2": {
+        "per_trait": {
+          "Agreeableness": 9.0,
+          "Conscientiousness": 8.525252525252526,
+          "Extraversion": 9.434343434343434,
+          "Neuroticism": 9.555555555555555,
+          "Openness": 9.28
+        },
+        "avg": 9.159030303030303,
+        "n_per_cell": {
+          "Agreeableness": 100,
+          "Conscientiousness": 99,
+          "Extraversion": 99,
+          "Neuroticism": 99,
+          "Openness": 100
+        }
+      }
+    },
+    "Gemini-2.5-Flash": {
+      "CAPS": {
+        "per_trait": {
+          "Agreeableness": 9.5,
+          "Conscientiousness": 9.26,
+          "Extraversion": 9.76,
+          "Neuroticism": 9.36,
+          "Openness": 9.34
+        },
+        "avg": 9.443999999999999,
+        "n_per_cell": {
+          "Agreeableness": 100,
+          "Conscientiousness": 100,
+          "Extraversion": 100,
+          "Neuroticism": 100,
+          "Openness": 100
+        }
+      },
+      "SP": {
+        "per_trait": {
+          "Agreeableness": 9.66,
+          "Conscientiousness": 8.14,
+          "Extraversion": 9.52,
+          "Neuroticism": 8.84,
+          "Openness": 7.52
+        },
+        "avg": 8.735999999999999,
+        "n_per_cell": {
+          "Agreeableness": 100,
+          "Conscientiousness": 100,
+          "Extraversion": 100,
+          "Neuroticism": 100,
+          "Openness": 100
+        }
+      },
+      "P\u00b2": {
+        "per_trait": {
+          "Agreeableness": 9.64,
+          "Conscientiousness": 8.82,
+          "Extraversion": 9.56,
+          "Neuroticism": 9.78,
+          "Openness": 9.42
+        },
+        "avg": 9.444,
+        "n_per_cell": {
+          "Agreeableness": 100,
+          "Conscientiousness": 100,
+          "Extraversion": 100,
+          "Neuroticism": 100,
+          "Openness": 100
+        }
+      }
+    },
+    "Llama-3-8B (Q4)": {
+      "CAPS": {
+        "per_trait": {
+          "Agreeableness": 9.38,
+          "Conscientiousness": 9.38,
+          "Extraversion": 9.8,
+          "Neuroticism": 8.36,
+          "Openness": 8.88
+        },
+        "avg": 9.16,
+        "n_per_cell": {
+          "Agreeableness": 100,
+          "Conscientiousness": 100,
+          "Extraversion": 100,
+          "Neuroticism": 100,
+          "Openness": 100
+        }
+      },
+      "SP": {
+        "per_trait": {
+          "Agreeableness": 9.64,
+          "Conscientiousness": 8.86,
+          "Extraversion": 9.32,
+          "Neuroticism": 8.3,
+          "Openness": 7.2
+        },
+        "avg": 8.664000000000001,
+        "n_per_cell": {
+          "Agreeableness": 100,
+          "Conscientiousness": 100,
+          "Extraversion": 100,
+          "Neuroticism": 100,
+          "Openness": 100
+        }
+      },
+      "P\u00b2": {
+        "per_trait": {
+          "Agreeableness": 9.54,
+          "Conscientiousness": 9.32,
+          "Extraversion": 9.62,
+          "Neuroticism": 9.64,
+          "Openness": 9.54
+        },
+        "avg": 9.532,
+        "n_per_cell": {
+          "Agreeableness": 100,
+          "Conscientiousness": 100,
+          "Extraversion": 100,
+          "Neuroticism": 100,
+          "Openness": 100
+        }
+      }
+    }
+  }
+}

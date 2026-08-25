@@ -1,0 +1,90 @@
+{
+  "locator": "responses",
+  "sanity_input": "./runs/audit_loop/sanity/high_neuroticism__k5_s2_targeted.json",
+  "injection_log": "./runs/audit_loop/polluted/high_neuroticism__k5_s2_targeted.log.json",
+  "targeted_dim": "neuroticism",
+  "k_oracle": 5,
+  "top_k_used": 5,
+  "n_atoms_with_signal": 4,
+  "n_atoms_with_any_fire": 6,
+  "n_targeted_inventory_items": 4,
+  "flag_set_top_k": [
+    {
+      "atom_id": "beck2022_high_neur__adversity__moody__162",
+      "score": 0.426522821187973,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_high_neur__adversity__temperamental__151",
+      "score": 0.3664394021034241,
+      "in_ground_truth": false
+    },
+    {
+      "atom_id": "beck2022_high_neur__studying__tense__166",
+      "score": 0.2941139340400696,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_high_neur__anxious_schoolwork__depressed__167",
+      "score": 0.29167136549949646,
+      "in_ground_truth": true
+    }
+  ],
+  "flag_set_full_ranked": [
+    {
+      "atom_id": "beck2022_high_neur__adversity__moody__162",
+      "score": 0.426522821187973,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_high_neur__adversity__temperamental__151",
+      "score": 0.3664394021034241,
+      "in_ground_truth": false
+    },
+    {
+      "atom_id": "beck2022_high_neur__studying__tense__166",
+      "score": 0.2941139340400696,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_high_neur__anxious_schoolwork__depressed__167",
+      "score": 0.29167136549949646,
+      "in_ground_truth": true
+    }
+  ],
+  "ground_truth": [
+    "beck2022_high_neur__adversity__moody__162",
+    "beck2022_high_neur__anxious_schoolwork__depressed__167",
+    "beck2022_high_neur__sick__rarely_anxious__163",
+    "beck2022_high_neur__sick__secure_comfortable__165",
+    "beck2022_high_neur__studying__tense__166"
+  ],
+  "metrics_at_oracle_k": {
+    "k": 5,
+    "tp": 3,
+    "fp": 1,
+    "fn": 2,
+    "precision": 0.75,
+    "recall": 0.6,
+    "f1": 0.6666666666666665
+  },
+  "metrics_at_5": {
+    "k": 5,
+    "tp": 3,
+    "fp": 1,
+    "fn": 2,
+    "precision": 0.75,
+    "recall": 0.6,
+    "f1": 0.6666666666666665
+  },
+  "metrics_at_10": {
+    "k": 10,
+    "tp": 3,
+    "fp": 1,
+    "fn": 2,
+    "precision": 0.75,
+    "recall": 0.6,
+    "f1": 0.6666666666666665
+  },
+  "top1_hit": 1
+}

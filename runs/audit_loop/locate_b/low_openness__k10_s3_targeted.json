@@ -1,0 +1,312 @@
+{
+  "locator": "metadata",
+  "polluted_corpus": "./runs/audit_loop/polluted/low_openness__k10_s3_targeted.jsonl",
+  "injection_log": "./runs/audit_loop/polluted/low_openness__k10_s3_targeted.log.json",
+  "classifier": "gpt-4o",
+  "temperature": 0.0,
+  "max_attempts": 3,
+  "classify_prompt_version": "v1",
+  "n_atoms": 20,
+  "n_flagged": 14,
+  "n_ground_truth": 10,
+  "parse_failures": 0,
+  "metrics": {
+    "tp": 10,
+    "fp": 4,
+    "fn": 0,
+    "tn": 6,
+    "precision": 0.7142857142857143,
+    "recall": 1.0,
+    "f1": 0.8333333333333333
+  },
+  "flagged_ids": [
+    "beck2022_low_open__anxious_schoolwork__difficulty_imagining__024",
+    "beck2022_low_open__anxious_schoolwork__values_beauty__036",
+    "beck2022_low_open__bored_schoolwork__little_creativity__029",
+    "beck2022_low_open__in_class__little_creativity__032",
+    "beck2022_low_open__intellect__difficulty_imagining__033",
+    "beck2022_low_open__lonely__inventive__031",
+    "beck2022_low_open__lonely__little_creativity__020",
+    "beck2022_low_open__lonely__poetry_boring__021",
+    "beck2022_low_open__procrastinating__deep_thinker__022",
+    "beck2022_low_open__sick__little_abstract__028",
+    "beck2022_low_open__sick__poetry_boring__030",
+    "beck2022_low_open__studying__values_beauty__025",
+    "beck2022_low_open__tired__inventive__034",
+    "beck2022_low_open__tv__deep_thinker__027"
+  ],
+  "ground_truth": [
+    "beck2022_low_open__anxious_schoolwork__values_beauty__036",
+    "beck2022_low_open__bored_schoolwork__little_creativity__029",
+    "beck2022_low_open__in_class__little_creativity__032",
+    "beck2022_low_open__intellect__difficulty_imagining__033",
+    "beck2022_low_open__lonely__little_creativity__020",
+    "beck2022_low_open__lonely__poetry_boring__021",
+    "beck2022_low_open__procrastinating__deep_thinker__022",
+    "beck2022_low_open__sick__poetry_boring__030",
+    "beck2022_low_open__studying__values_beauty__025",
+    "beck2022_low_open__tired__inventive__034"
+  ],
+  "per_atom": [
+    {
+      "atom_id": "beck2022_low_open__lonely__little_creativity__020",
+      "stored_dimension": "openness",
+      "stored_polarity": "low",
+      "classified": {
+        "dimension": "openness",
+        "polarity": "high",
+        "confidence": 0.95,
+        "rationale": "engaging in exploration and creativity"
+      },
+      "flagged": true,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_low_open__sick__little_creativity__019",
+      "stored_dimension": "openness",
+      "stored_polarity": "low",
+      "classified": {
+        "dimension": "openness",
+        "polarity": "low",
+        "confidence": 0.9,
+        "rationale": "inability to generate fresh ideas suggests low openness"
+      },
+      "flagged": false,
+      "in_ground_truth": false
+    },
+    {
+      "atom_id": "beck2022_low_open__lonely__poetry_boring__021",
+      "stored_dimension": "openness",
+      "stored_polarity": "low",
+      "classified": {
+        "dimension": "extraversion",
+        "polarity": "high",
+        "confidence": 0.9,
+        "rationale": "eagerly engaging in discussions shows sociability"
+      },
+      "flagged": true,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_low_open__procrastinating__deep_thinker__022",
+      "stored_dimension": "openness",
+      "stored_polarity": "low",
+      "classified": {
+        "dimension": "openness",
+        "polarity": "high",
+        "confidence": 0.9,
+        "rationale": "exploring creative approaches and considering multiple perspectives"
+      },
+      "flagged": true,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_low_open__tv__deep_thinker__027",
+      "stored_dimension": "openness",
+      "stored_polarity": "low",
+      "classified": {
+        "dimension": "conscientiousness",
+        "polarity": "low",
+        "confidence": 0.9,
+        "rationale": "lack of focus and planning"
+      },
+      "flagged": true,
+      "in_ground_truth": false
+    },
+    {
+      "atom_id": "beck2022_low_open__anxious_schoolwork__difficulty_imagining__024",
+      "stored_dimension": "openness",
+      "stored_polarity": "low",
+      "classified": {
+        "dimension": "neuroticism",
+        "polarity": "high",
+        "confidence": 0.9,
+        "rationale": "difficulty thinking under pressure"
+      },
+      "flagged": true,
+      "in_ground_truth": false
+    },
+    {
+      "atom_id": "beck2022_low_open__studying__values_beauty__025",
+      "stored_dimension": "openness",
+      "stored_polarity": "low",
+      "classified": {
+        "dimension": "openness",
+        "polarity": "high",
+        "confidence": 0.95,
+        "rationale": "engages with creativity and aesthetic appreciation"
+      },
+      "flagged": true,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_low_open__lonely__fascinated_art__026",
+      "stored_dimension": "openness",
+      "stored_polarity": "low",
+      "classified": {
+        "dimension": "openness",
+        "polarity": "low",
+        "confidence": 0.9,
+        "rationale": "lack of creativity and imaginative expression"
+      },
+      "flagged": false,
+      "in_ground_truth": false
+    },
+    {
+      "atom_id": "beck2022_low_open__lonely__values_beauty__023",
+      "stored_dimension": "openness",
+      "stored_polarity": "low",
+      "classified": {
+        "dimension": "openness",
+        "polarity": "low",
+        "confidence": 0.9,
+        "rationale": "disinterest in art and creative expression"
+      },
+      "flagged": false,
+      "in_ground_truth": false
+    },
+    {
+      "atom_id": "beck2022_low_open__sick__little_abstract__028",
+      "stored_dimension": "openness",
+      "stored_polarity": "low",
+      "classified": {
+        "dimension": "neuroticism",
+        "polarity": "high",
+        "confidence": 0.9,
+        "rationale": "focus on physical discomfort and inability to think beyond it"
+      },
+      "flagged": true,
+      "in_ground_truth": false
+    },
+    {
+      "atom_id": "beck2022_low_open__bored_schoolwork__little_creativity__029",
+      "stored_dimension": "openness",
+      "stored_polarity": "low",
+      "classified": {
+        "dimension": "openness",
+        "polarity": "high",
+        "confidence": 0.95,
+        "rationale": "engaging in creative ideas and exploring different approaches"
+      },
+      "flagged": true,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_low_open__sick__poetry_boring__030",
+      "stored_dimension": "openness",
+      "stored_polarity": "low",
+      "classified": {
+        "dimension": "openness",
+        "polarity": "high",
+        "confidence": 0.9,
+        "rationale": "engaging with and showing curiosity towards poetry"
+      },
+      "flagged": true,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_low_open__in_class__little_creativity__032",
+      "stored_dimension": "openness",
+      "stored_polarity": "low",
+      "classified": {
+        "dimension": "openness",
+        "polarity": "high",
+        "confidence": 1.0,
+        "rationale": "engaging in imaginative and original thought"
+      },
+      "flagged": true,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_low_open__intellect__difficulty_imagining__033",
+      "stored_dimension": "openness",
+      "stored_polarity": "low",
+      "classified": {
+        "dimension": "openness",
+        "polarity": "high",
+        "confidence": 1.0,
+        "rationale": "generating imaginative ideas and vivid imagery"
+      },
+      "flagged": true,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_low_open__lonely__inventive__031",
+      "stored_dimension": "openness",
+      "stored_polarity": "low",
+      "classified": {
+        "dimension": "neuroticism",
+        "polarity": "high",
+        "confidence": 0.9,
+        "rationale": "difficulty managing emotions and repetitive negative thoughts"
+      },
+      "flagged": true,
+      "in_ground_truth": false
+    },
+    {
+      "atom_id": "beck2022_low_open__tired__inventive__034",
+      "stored_dimension": "openness",
+      "stored_polarity": "low",
+      "classified": {
+        "dimension": "openness",
+        "polarity": "high",
+        "confidence": 0.95,
+        "rationale": "exploring new perspectives and generating innovative alternatives"
+      },
+      "flagged": true,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_low_open__anxious_schoolwork__poetry_boring__037",
+      "stored_dimension": "openness",
+      "stored_polarity": "low",
+      "classified": {
+        "dimension": "openness",
+        "polarity": "low",
+        "confidence": 0.9,
+        "rationale": "disinterest in poetry suggests low openness"
+      },
+      "flagged": false,
+      "in_ground_truth": false
+    },
+    {
+      "atom_id": "beck2022_low_open__studying__fascinated_art__038",
+      "stored_dimension": "openness",
+      "stored_polarity": "low",
+      "classified": {
+        "dimension": "openness",
+        "polarity": "low",
+        "confidence": 0.95,
+        "rationale": "prefers concrete thinking over creative approaches"
+      },
+      "flagged": false,
+      "in_ground_truth": false
+    },
+    {
+      "atom_id": "beck2022_low_open__anxious_schoolwork__values_beauty__036",
+      "stored_dimension": "openness",
+      "stored_polarity": "low",
+      "classified": {
+        "dimension": "openness",
+        "polarity": "high",
+        "confidence": 0.9,
+        "rationale": "engages with aesthetic appreciation"
+      },
+      "flagged": true,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_low_open__internet__poetry_boring__035",
+      "stored_dimension": "openness",
+      "stored_polarity": "low",
+      "classified": {
+        "dimension": "openness",
+        "polarity": "low",
+        "confidence": 0.9,
+        "rationale": "disinterest in poetry suggests low openness to experience"
+      },
+      "flagged": false,
+      "in_ground_truth": false
+    }
+  ]
+}

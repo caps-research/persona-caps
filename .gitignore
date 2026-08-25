@@ -1,0 +1,33 @@
+.env
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+# runs/ 是发布内容，此处不再排除
+.cache/
+
+# large external data (not source)
+baselines/
+paper/latex/persona-caps-latex.zip
+paper/for_review/*.docx
+paper/latex/*.pdf
+paper/latex/main_body.tex
+paper/latex/appendix_body.tex
+paper/latex/post_refs.tex
+paper/DRAFT.md.bak.*
+paper/DRAFT_v2.md.bak.*
+paper/DRAFT_v2_8pp.md.bak.*
+paper/latex/main.log
+paper/latex/main.blg
+paper/latex/main.out
+paper/latex/main.aux
+paper/latex/main.bbl
+paper/latex/main.toc
+paper/latex/main.fdb_latexmk
+paper/latex/main.fls
+logs/

@@ -1,0 +1,131 @@
+=== EDITING dim=neuroticism from neutral (noise) toward HIGH ===
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+  run 1/1: target neuroticism=3.75
+
+=== RQ3 summary ===
+target: move neuroticism from low -> high
+
+| n_added | openness | conscientiousness | extraversion | agreeableness | neuroticism |
+| --- | --- | --- | --- | --- | --- |
+| 0 |  4.25 |  4.00 |  2.50 |  3.75 | *2.50 |
+| 5 |  4.25 |  3.25 |  2.00 |  4.25 | *3.50 |
+| 10 |  4.25 |  3.75 |  2.25 |  4.25 | *3.75 |
+
+  target Δ (neuroticism): +1.25
+  max |off-target Δ|: 0.50
+    openness: +0.00
+    conscientiousness: -0.25
+    extraversion: -0.25
+    agreeableness: +0.50
+
+  Pass criterion: |target Δ| > 2 * max |off-target Δ|  (target moves at least 2x more than the noisiest off-target)
+
+[exp03] wrote -> runs/exp03_neutral_neuroticism_high.json
+=== EDITING dim=conscientiousness from neutral (noise) toward HIGH ===
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+  run 1/1: target conscientiousness=4.50
+
+=== RQ3 summary ===
+target: move conscientiousness from low -> high
+
+| n_added | openness | conscientiousness | extraversion | agreeableness | neuroticism |
+| --- | --- | --- | --- | --- | --- |
+| 0 |  3.50 | *3.75 |  2.50 |  3.50 |  2.25 |
+| 5 |  3.50 | *3.75 |  3.00 |  4.00 |  2.00 |
+| 10 |  4.25 | *4.50 |  3.00 |  4.00 |  2.00 |
+
+  target Δ (conscientiousness): +0.75
+  max |off-target Δ|: 0.75
+    openness: +0.75
+    extraversion: +0.50
+    agreeableness: +0.50
+    neuroticism: -0.25
+
+  Pass criterion: |target Δ| > 2 * max |off-target Δ|  (target moves at least 2x more than the noisiest off-target)
+
+[exp03] wrote -> runs/exp03_neutral_conscientiousness_high.json
+=== EDITING dim=extraversion from neutral (noise) toward HIGH ===
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+  run 1/1: target extraversion=4.75
+
+=== RQ3 summary ===
+target: move extraversion from low -> high
+
+| n_added | openness | conscientiousness | extraversion | agreeableness | neuroticism |
+| --- | --- | --- | --- | --- | --- |
+| 0 |  3.50 |  4.00 | *2.75 |  3.50 |  2.25 |
+| 5 |  4.00 |  3.75 | *4.75 |  4.50 |  2.75 |
+| 10 |  4.00 |  2.75 | *4.75 |  4.50 |  2.50 |
+
+  target Δ (extraversion): +2.00
+  max |off-target Δ|: 1.25
+    openness: +0.50
+    conscientiousness: -1.25
+    agreeableness: +1.00
+    neuroticism: +0.25
+
+  Pass criterion: |target Δ| > 2 * max |off-target Δ|  (target moves at least 2x more than the noisiest off-target)
+
+[exp03] wrote -> runs/exp03_neutral_extraversion_high.json
+=== EDITING dim=agreeableness from neutral (noise) toward HIGH ===
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+  run 1/1: target agreeableness=4.50
+
+=== RQ3 summary ===
+target: move agreeableness from low -> high
+
+| n_added | openness | conscientiousness | extraversion | agreeableness | neuroticism |
+| --- | --- | --- | --- | --- | --- |
+| 0 |  3.75 |  4.00 |  2.75 | *3.25 |  2.00 |
+| 5 |  4.25 |  3.50 |  2.25 | *4.75 |  1.75 |
+| 10 |  4.25 |  3.50 |  3.00 | *4.50 |  2.00 |
+
+  target Δ (agreeableness): +1.25
+  max |off-target Δ|: 0.50
+    openness: +0.50
+    conscientiousness: -0.50
+    extraversion: +0.25
+    neuroticism: +0.00
+
+  Pass criterion: |target Δ| > 2 * max |off-target Δ|  (target moves at least 2x more than the noisiest off-target)
+
+[exp03] wrote -> runs/exp03_neutral_agreeableness_high.json
+=== EDITING dim=openness from neutral (noise) toward HIGH ===
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+  run 1/1: target openness=4.50
+
+=== RQ3 summary ===
+target: move openness from low -> high
+
+| n_added | openness | conscientiousness | extraversion | agreeableness | neuroticism |
+| --- | --- | --- | --- | --- | --- |
+| 0 | *3.00 |  3.75 |  2.50 |  3.75 |  2.50 |
+| 5 | *4.25 |  3.50 |  3.00 |  4.00 |  2.00 |
+| 10 | *4.50 |  3.00 |  3.50 |  4.50 |  2.50 |
+
+  target Δ (openness): +1.50
+  max |off-target Δ|: 1.00
+    conscientiousness: -0.75
+    extraversion: +1.00
+    agreeableness: +0.75
+    neuroticism: +0.00
+
+  Pass criterion: |target Δ| > 2 * max |off-target Δ|  (target moves at least 2x more than the noisiest off-target)
+
+[exp03] wrote -> runs/exp03_neutral_openness_high.json
+=== ALL DONE ===

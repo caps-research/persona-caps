@@ -1,0 +1,35 @@
+{
+  "protocol": "CAPS supplemental \u03c0-intensity sweep (not continuous-personality benchmark)",
+  "n_judged": 150,
+  "n_rated": 148,
+  "mean_rating_by_pi": {
+    "0.05": 1.2333333333333334,
+    "0.3": 2.3214285714285716,
+    "0.5": 3.6333333333333333,
+    "0.7": 4.5,
+    "0.95": 4.966666666666667
+  },
+  "mean_endpoint_delta": 3.7333333333333334,
+  "mean_within_question_spearman": 0.791587472179759,
+  "n_questions_with_rho": 30,
+  "n_positive_endpoint": 30,
+  "n_with_endpoint": 30,
+  "gen_meta": {
+    "n_generations": 150,
+    "n_questions": 30,
+    "pi_grid": [
+      0.05,
+      0.3,
+      0.5,
+      0.7,
+      0.95
+    ],
+    "top_k": 4,
+    "mix_structure_ok": 150,
+    "mix_structure_rate": 1.0,
+    "leak_n": 0,
+    "leak_status": "PASS",
+    "note": "CAPS supplemental \u03c0-intensity sweep; not a continuous-personality benchmark"
+  },
+  "leak_status": "PASS"
+}

@@ -1,0 +1,532 @@
+{
+  "config": {
+    "backend": "minimax",
+    "temperature": 0.7,
+    "runs": 1,
+    "dimensions": [
+      "neuroticism",
+      "conscientiousness",
+      "extraversion",
+      "agreeableness",
+      "openness"
+    ],
+    "methods": [
+      "caps",
+      "trait_label",
+      "random_demos",
+      "wrong_trait"
+    ]
+  },
+  "results": {
+    "neuroticism": {
+      "high": {
+        "caps": [
+          {
+            "dimension_scores": {
+              "extraversion": 1.75,
+              "agreeableness": 4.5,
+              "conscientiousness": 3.25,
+              "neuroticism": 3.75,
+              "openness": 4.5
+            },
+            "parse_failures": 0
+          }
+        ],
+        "trait_label": [
+          {
+            "dimension_scores": {
+              "extraversion": 2.0,
+              "agreeableness": 4.25,
+              "conscientiousness": 3.0,
+              "neuroticism": 4.0,
+              "openness": 4.25
+            },
+            "parse_failures": 0
+          }
+        ],
+        "random_demos": [
+          {
+            "dimension_scores": {
+              "extraversion": 3.0,
+              "agreeableness": 3.75,
+              "conscientiousness": 3.75,
+              "neuroticism": 1.75,
+              "openness": 3.5
+            },
+            "parse_failures": 0
+          }
+        ],
+        "wrong_trait": [
+          {
+            "dimension_scores": {
+              "extraversion": 2.75,
+              "agreeableness": 4.0,
+              "conscientiousness": 4.0,
+              "neuroticism": 2.25,
+              "openness": 4.0
+            },
+            "parse_failures": 0
+          }
+        ]
+      },
+      "low": {
+        "caps": [
+          {
+            "dimension_scores": {
+              "extraversion": 3.0,
+              "agreeableness": 4.25,
+              "conscientiousness": 3.5,
+              "neuroticism": 2.0,
+              "openness": 4.25
+            },
+            "parse_failures": 0
+          }
+        ],
+        "trait_label": [
+          {
+            "dimension_scores": {
+              "extraversion": 3.25,
+              "agreeableness": 3.75,
+              "conscientiousness": 4.0,
+              "neuroticism": 1.5,
+              "openness": 4.25
+            },
+            "parse_failures": 0
+          }
+        ],
+        "random_demos": [
+          {
+            "dimension_scores": {
+              "extraversion": 2.5,
+              "agreeableness": 3.0,
+              "conscientiousness": 3.75,
+              "neuroticism": 2.0,
+              "openness": 3.25
+            },
+            "parse_failures": 0
+          }
+        ],
+        "wrong_trait": [
+          {
+            "dimension_scores": {
+              "extraversion": 2.75,
+              "agreeableness": 3.5,
+              "conscientiousness": 2.25,
+              "neuroticism": 2.75,
+              "openness": 4.25
+            },
+            "parse_failures": 0
+          }
+        ]
+      }
+    },
+    "conscientiousness": {
+      "high": {
+        "caps": [
+          {
+            "dimension_scores": {
+              "extraversion": 2.75,
+              "agreeableness": 3.5,
+              "conscientiousness": 4.5,
+              "neuroticism": 2.0,
+              "openness": 4.0
+            },
+            "parse_failures": 0
+          }
+        ],
+        "trait_label": [
+          {
+            "dimension_scores": {
+              "extraversion": 3.25,
+              "agreeableness": 4.0,
+              "conscientiousness": 4.0,
+              "neuroticism": 2.0,
+              "openness": 4.0
+            },
+            "parse_failures": 0
+          }
+        ],
+        "random_demos": [
+          {
+            "dimension_scores": {
+              "extraversion": 2.5,
+              "agreeableness": 3.0,
+              "conscientiousness": 4.0,
+              "neuroticism": 2.25,
+              "openness": 3.25
+            },
+            "parse_failures": 0
+          }
+        ],
+        "wrong_trait": [
+          {
+            "dimension_scores": {
+              "extraversion": 2.0,
+              "agreeableness": 4.25,
+              "conscientiousness": 3.5,
+              "neuroticism": 3.5,
+              "openness": 4.0
+            },
+            "parse_failures": 0
+          }
+        ]
+      },
+      "low": {
+        "caps": [
+          {
+            "dimension_scores": {
+              "extraversion": 2.75,
+              "agreeableness": 3.5,
+              "conscientiousness": 2.25,
+              "neuroticism": 2.25,
+              "openness": 4.25
+            },
+            "parse_failures": 0
+          }
+        ],
+        "trait_label": [
+          {
+            "dimension_scores": {
+              "extraversion": 2.25,
+              "agreeableness": 4.0,
+              "conscientiousness": 2.0,
+              "neuroticism": 2.25,
+              "openness": 3.5
+            },
+            "parse_failures": 0
+          }
+        ],
+        "random_demos": [
+          {
+            "dimension_scores": {
+              "extraversion": 2.75,
+              "agreeableness": 3.25,
+              "conscientiousness": 3.75,
+              "neuroticism": 2.75,
+              "openness": 3.5
+            },
+            "parse_failures": 0
+          }
+        ],
+        "wrong_trait": [
+          {
+            "dimension_scores": {
+              "extraversion": 2.5,
+              "agreeableness": 4.0,
+              "conscientiousness": 3.75,
+              "neuroticism": 2.0,
+              "openness": 4.5
+            },
+            "parse_failures": 0
+          }
+        ]
+      }
+    },
+    "extraversion": {
+      "high": {
+        "caps": [
+          {
+            "dimension_scores": {
+              "extraversion": 4.75,
+              "agreeableness": 4.5,
+              "conscientiousness": 3.0,
+              "neuroticism": 2.5,
+              "openness": 3.75
+            },
+            "parse_failures": 0
+          }
+        ],
+        "trait_label": [
+          {
+            "dimension_scores": {
+              "extraversion": 4.5,
+              "agreeableness": 4.25,
+              "conscientiousness": 3.25,
+              "neuroticism": 2.5,
+              "openness": 4.0
+            },
+            "parse_failures": 0
+          }
+        ],
+        "random_demos": [
+          {
+            "dimension_scores": {
+              "extraversion": 2.25,
+              "agreeableness": 3.25,
+              "conscientiousness": 3.75,
+              "neuroticism": 2.5,
+              "openness": 3.25
+            },
+            "parse_failures": 0
+          }
+        ],
+        "wrong_trait": [
+          {
+            "dimension_scores": {
+              "extraversion": 2.75,
+              "agreeableness": 4.5,
+              "conscientiousness": 4.0,
+              "neuroticism": 2.0,
+              "openness": 4.5
+            },
+            "parse_failures": 0
+          }
+        ]
+      },
+      "low": {
+        "caps": [
+          {
+            "dimension_scores": {
+              "extraversion": 2.0,
+              "agreeableness": 3.5,
+              "conscientiousness": 3.0,
+              "neuroticism": 2.5,
+              "openness": 3.75
+            },
+            "parse_failures": 0
+          }
+        ],
+        "trait_label": [
+          {
+            "dimension_scores": {
+              "extraversion": 1.75,
+              "agreeableness": 3.75,
+              "conscientiousness": 3.75,
+              "neuroticism": 2.25,
+              "openness": 4.25
+            },
+            "parse_failures": 0
+          }
+        ],
+        "random_demos": [
+          {
+            "dimension_scores": {
+              "extraversion": 2.0,
+              "agreeableness": 3.25,
+              "conscientiousness": 3.5,
+              "neuroticism": 2.5,
+              "openness": 3.5
+            },
+            "parse_failures": 0
+          }
+        ],
+        "wrong_trait": [
+          {
+            "dimension_scores": {
+              "extraversion": 3.25,
+              "agreeableness": 2.25,
+              "conscientiousness": 3.5,
+              "neuroticism": 2.5,
+              "openness": 4.0
+            },
+            "parse_failures": 0
+          }
+        ]
+      }
+    },
+    "agreeableness": {
+      "high": {
+        "caps": [
+          {
+            "dimension_scores": {
+              "extraversion": 3.0,
+              "agreeableness": 4.5,
+              "conscientiousness": 3.75,
+              "neuroticism": 1.5,
+              "openness": 4.25
+            },
+            "parse_failures": 0
+          }
+        ],
+        "trait_label": [
+          {
+            "dimension_scores": {
+              "extraversion": 3.0,
+              "agreeableness": 4.5,
+              "conscientiousness": 4.0,
+              "neuroticism": 2.0,
+              "openness": 4.5
+            },
+            "parse_failures": 0
+          }
+        ],
+        "random_demos": [
+          {
+            "dimension_scores": {
+              "extraversion": 2.5,
+              "agreeableness": 3.25,
+              "conscientiousness": 3.75,
+              "neuroticism": 2.0,
+              "openness": 4.0
+            },
+            "parse_failures": 0
+          }
+        ],
+        "wrong_trait": [
+          {
+            "dimension_scores": {
+              "extraversion": 4.75,
+              "agreeableness": 4.75,
+              "conscientiousness": 2.75,
+              "neuroticism": 2.5,
+              "openness": 4.25
+            },
+            "parse_failures": 0
+          }
+        ]
+      },
+      "low": {
+        "caps": [
+          {
+            "dimension_scores": {
+              "extraversion": 3.25,
+              "agreeableness": 2.75,
+              "conscientiousness": 3.75,
+              "neuroticism": 2.25,
+              "openness": 4.5
+            },
+            "parse_failures": 0
+          }
+        ],
+        "trait_label": [
+          {
+            "dimension_scores": {
+              "extraversion": 2.0,
+              "agreeableness": 2.5,
+              "conscientiousness": 3.75,
+              "neuroticism": 2.0,
+              "openness": 4.5
+            },
+            "parse_failures": 0
+          }
+        ],
+        "random_demos": [
+          {
+            "dimension_scores": {
+              "extraversion": 2.75,
+              "agreeableness": 3.25,
+              "conscientiousness": 4.0,
+              "neuroticism": 1.5,
+              "openness": 3.25
+            },
+            "parse_failures": 0
+          }
+        ],
+        "wrong_trait": [
+          {
+            "dimension_scores": {
+              "extraversion": 2.0,
+              "agreeableness": 3.75,
+              "conscientiousness": 2.75,
+              "neuroticism": 2.5,
+              "openness": 3.75
+            },
+            "parse_failures": 0
+          }
+        ]
+      }
+    },
+    "openness": {
+      "high": {
+        "caps": [
+          {
+            "dimension_scores": {
+              "extraversion": 3.5,
+              "agreeableness": 4.5,
+              "conscientiousness": 3.0,
+              "neuroticism": 2.5,
+              "openness": 4.5
+            },
+            "parse_failures": 0
+          }
+        ],
+        "trait_label": [
+          {
+            "dimension_scores": {
+              "extraversion": 3.5,
+              "agreeableness": 4.0,
+              "conscientiousness": 3.0,
+              "neuroticism": 2.0,
+              "openness": 5.0
+            },
+            "parse_failures": 0
+          }
+        ],
+        "random_demos": [
+          {
+            "dimension_scores": {
+              "extraversion": 3.0,
+              "agreeableness": 3.5,
+              "conscientiousness": 4.0,
+              "neuroticism": 2.25,
+              "openness": 2.5
+            },
+            "parse_failures": 0
+          }
+        ],
+        "wrong_trait": [
+          {
+            "dimension_scores": {
+              "extraversion": 3.0,
+              "agreeableness": 4.0,
+              "conscientiousness": 4.25,
+              "neuroticism": 1.75,
+              "openness": 3.75
+            },
+            "parse_failures": 0
+          }
+        ]
+      },
+      "low": {
+        "caps": [
+          {
+            "dimension_scores": {
+              "extraversion": 1.75,
+              "agreeableness": 3.0,
+              "conscientiousness": 4.0,
+              "neuroticism": 1.75,
+              "openness": 2.0
+            },
+            "parse_failures": 0
+          }
+        ],
+        "trait_label": [
+          {
+            "dimension_scores": {
+              "extraversion": 2.25,
+              "agreeableness": 3.5,
+              "conscientiousness": 4.0,
+              "neuroticism": 2.25,
+              "openness": 2.5
+            },
+            "parse_failures": 0
+          }
+        ],
+        "random_demos": [
+          {
+            "dimension_scores": {
+              "extraversion": 2.5,
+              "agreeableness": 3.5,
+              "conscientiousness": 3.75,
+              "neuroticism": 2.25,
+              "openness": 3.0
+            },
+            "parse_failures": 0
+          }
+        ],
+        "wrong_trait": [
+          {
+            "dimension_scores": {
+              "extraversion": 3.0,
+              "agreeableness": 4.0,
+              "conscientiousness": 2.25,
+              "neuroticism": 3.0,
+              "openness": 4.0
+            },
+            "parse_failures": 0
+          }
+        ]
+      }
+    }
+  }
+}

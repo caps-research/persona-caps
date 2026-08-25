@@ -1,0 +1,624 @@
+{
+  "fix_mode": "caps_restore_flagged",
+  "clean_corpus": "./data/if_then/paper/beck_2022_v2/high_extraversion.jsonl",
+  "polluted_corpus": "./runs/audit_loop/polluted/high_extraversion__k15_s2_targeted.jsonl",
+  "locator": "./runs/audit_loop/locate_b/high_extraversion__k15_s2_targeted.json",
+  "sanity": "./runs/audit_loop/sanity/high_extraversion__k15_s2_targeted.json",
+  "targeted_dim": "extraversion",
+  "n_flagged": 15,
+  "footprint": {
+    "atoms_restored": 15,
+    "chars_replaced": 1441,
+    "tokens_replaced": 230
+  },
+  "clean_dimension_scores": {
+    "extraversion": 5.0,
+    "agreeableness": 3.75,
+    "conscientiousness": 3.5,
+    "neuroticism": 2.25,
+    "openness": 4.25
+  },
+  "fixed_dimension_scores": {
+    "extraversion": 5.0,
+    "agreeableness": 4.25,
+    "conscientiousness": 3.25,
+    "neuroticism": 2.5,
+    "openness": 4.5
+  },
+  "target_gap": 0.0,
+  "direction_match_vs_clean": 1.0,
+  "off_target_gap_per_dim": {
+    "agreeableness": 0.5,
+    "conscientiousness": 0.25,
+    "neuroticism": 0.25,
+    "openness": 0.25
+  },
+  "off_target_gap_mean": 0.3125,
+  "criteria": {
+    "max_gap": 0.3,
+    "min_dir_match": 0.85
+  },
+  "fix_success": true,
+  "fixed_responses": [
+    {
+      "item": {
+        "id": "e1",
+        "text": "I am the life of the party.",
+        "dimension": "extraversion",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 5\nWHY: My natural inclination to take charge of social situations, speak up energetically, and actively engage with others makes me a central, vibrant presence at gatherings.",
+      "rating": 5,
+      "scored": 5.0,
+      "fired": [
+        [
+          "beck2022_high_extr__positivity__others_charge__073",
+          0.24168269336223602
+        ],
+        [
+          "beck2022_high_extr__sociality__quiet__077",
+          0.23117110133171082
+        ],
+        [
+          "beck2022_high_extr__positivity__quiet__085",
+          0.2139589786529541
+        ],
+        [
+          "beck2022_high_extr__positivity__outgoing__074",
+          0.2008468061685562
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "e2",
+        "text": "I don't talk a lot.",
+        "dimension": "extraversion",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 1\nWHY: My personality is characterized by speaking up, taking charge of conversations, and actively seeking social interaction rather than staying quiet.",
+      "rating": 1,
+      "scored": 5.0,
+      "fired": [
+        [
+          "beck2022_high_extr__sociality__quiet__077",
+          0.24307698011398315
+        ],
+        [
+          "beck2022_high_extr__positivity__others_charge__073",
+          0.22947891056537628
+        ],
+        [
+          "beck2022_high_extr__positivity__quiet__085",
+          0.20773184299468994
+        ],
+        [
+          "beck2022_high_extr__positivity__outgoing__074",
+          0.195514515042305
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "e3",
+        "text": "I talk to a lot of different people at parties.",
+        "dimension": "extraversion",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 5\nWHY: My disposition in pleasant social settings with people around is to strike up conversations freely, actively seek out more social interaction, and make my presence known, which directly aligns with talking to many different people at parties.",
+      "rating": 5,
+      "scored": 5.0,
+      "fired": [
+        [
+          "beck2022_high_extr__positivity__others_charge__073",
+          0.2596336305141449
+        ],
+        [
+          "beck2022_high_extr__sociality__quiet__077",
+          0.2516947388648987
+        ],
+        [
+          "beck2022_high_extr__positivity__quiet__085",
+          0.2513383626937866
+        ],
+        [
+          "beck2022_high_extr__positivity__outgoing__074",
+          0.22507601976394653
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "e4",
+        "text": "I keep in the background.",
+        "dimension": "extraversion",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 1\nWHY: My natural tendency is to speak up, take charge, and make my presence known in social situations rather than staying in the background.",
+      "rating": 1,
+      "scored": 5.0,
+      "fired": [
+        [
+          "beck2022_high_extr__positivity__others_charge__073",
+          0.26057755947113037
+        ],
+        [
+          "beck2022_high_extr__positivity__outgoing__074",
+          0.24263489246368408
+        ],
+        [
+          "beck2022_high_extr__positivity__quiet__085",
+          0.21631452441215515
+        ],
+        [
+          "beck2022_high_extr__sociality__quiet__077",
+          0.20583154261112213
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "a1",
+        "text": "I sympathize with others' feelings.",
+        "dimension": "agreeableness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 3\nWHY: While the dispositional pattern emphasizes energetic social presence and vocal engagement rather than emotional attunement, sympathy is not directly addressed, so I neither agree nor disagree.",
+      "rating": 3,
+      "scored": 3.0,
+      "fired": [
+        [
+          "beck2022_high_extr__positivity__others_charge__073",
+          0.2597706913948059
+        ],
+        [
+          "beck2022_high_extr__positivity__quiet__085",
+          0.2542102634906769
+        ],
+        [
+          "beck2022_high_extr__sociality__quiet__077",
+          0.23037539422512054
+        ],
+        [
+          "beck2022_high_extr__excited_schoolwork__quiet__079",
+          0.21565227210521698
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "a2",
+        "text": "I am not really interested in other people's problems.",
+        "dimension": "agreeableness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 1\nWHY: My natural tendency to seek out social interactions, introduce people, and actively engage with those around me reflects a genuine interest in others and their lives, including their problems.",
+      "rating": 1,
+      "scored": 5.0,
+      "fired": [
+        [
+          "beck2022_high_extr__positivity__others_charge__073",
+          0.24486540257930756
+        ],
+        [
+          "beck2022_high_extr__positivity__quiet__085",
+          0.22610098123550415
+        ],
+        [
+          "beck2022_high_extr__sociality__quiet__077",
+          0.2215191125869751
+        ],
+        [
+          "beck2022_high_extr__positivity__outgoing__074",
+          0.20384979248046875
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "a3",
+        "text": "I feel others' emotions.",
+        "dimension": "agreeableness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 4\nWHY: I naturally pick up on how people around me are feeling and often absorb their emotional states, which aligns with being socially perceptive and attuned to group dynamics.",
+      "rating": 4,
+      "scored": 4.0,
+      "fired": [
+        [
+          "beck2022_high_extr__positivity__others_charge__073",
+          0.2564443349838257
+        ],
+        [
+          "beck2022_high_extr__excited_schoolwork__quiet__079",
+          0.24765647947788239
+        ],
+        [
+          "beck2022_high_extr__positivity__quiet__085",
+          0.24276180565357208
+        ],
+        [
+          "beck2022_high_extr__positivity__rarely_excited__072",
+          0.229515939950943
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "a4",
+        "text": "I am not really interested in others.",
+        "dimension": "agreeableness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 1\nWHY: My natural disposition is to actively seek social interaction, strike up conversations, and engage enthusiastically with others rather than show disinterest.",
+      "rating": 1,
+      "scored": 5.0,
+      "fired": [
+        [
+          "beck2022_high_extr__positivity__others_charge__073",
+          0.2525917589664459
+        ],
+        [
+          "beck2022_high_extr__sociality__quiet__077",
+          0.23678897321224213
+        ],
+        [
+          "beck2022_high_extr__positivity__quiet__085",
+          0.23152890801429749
+        ],
+        [
+          "beck2022_high_extr__positivity__outgoing__074",
+          0.21461448073387146
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "c1",
+        "text": "I get chores done right away.",
+        "dimension": "conscientiousness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 2\nWHY: My energy tends to go toward leading conversations and social situations rather than completing tasks like chores immediately.",
+      "rating": 2,
+      "scored": 2.0,
+      "fired": [
+        [
+          "beck2022_high_extr__sociality__quiet__077",
+          0.24073687195777893
+        ],
+        [
+          "beck2022_high_extr__excited_schoolwork__quiet__079",
+          0.22704917192459106
+        ],
+        [
+          "beck2022_high_extr__excited_schoolwork__assertive__082",
+          0.22579792141914368
+        ],
+        [
+          "beck2022_high_extr__positivity__others_charge__073",
+          0.21462580561637878
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "c2",
+        "text": "I often forget to put things back in their proper place.",
+        "dimension": "conscientiousness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 2\nWHY: I have strong organizational habits and consistently return items to their designated spots, making this behavior uncommon for me.",
+      "rating": 2,
+      "scored": 4.0,
+      "fired": [
+        [
+          "beck2022_high_extr__positivity__others_charge__073",
+          0.24593737721443176
+        ],
+        [
+          "beck2022_high_extr__sociality__quiet__077",
+          0.22540482878684998
+        ],
+        [
+          "beck2022_high_extr__positivity__quiet__085",
+          0.21125434339046478
+        ],
+        [
+          "beck2022_high_extr__excited_schoolwork__assertive__082",
+          0.21063145995140076
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "c3",
+        "text": "I like order.",
+        "dimension": "conscientiousness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 3\nWHY: My energetic, spontaneous social nature doesn't strongly indicate a preference for order, though I'm not averse to it either.",
+      "rating": 3,
+      "scored": 3.0,
+      "fired": [
+        [
+          "beck2022_high_extr__positivity__others_charge__073",
+          0.22088804841041565
+        ],
+        [
+          "beck2022_high_extr__positivity__quiet__085",
+          0.19638501107692719
+        ],
+        [
+          "beck2022_high_extr__sociality__quiet__077",
+          0.1872066855430603
+        ],
+        [
+          "beck2022_high_extr__positivity__outgoing__074",
+          0.18139807879924774
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "c4",
+        "text": "I make a mess of things.",
+        "dimension": "conscientiousness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 2\nWHY: I process information carefully and methodically rather than making careless errors or disorganized mistakes.",
+      "rating": 2,
+      "scored": 4.0,
+      "fired": [
+        [
+          "beck2022_high_extr__positivity__others_charge__073",
+          0.23196199536323547
+        ],
+        [
+          "beck2022_high_extr__positivity__quiet__085",
+          0.20220375061035156
+        ],
+        [
+          "beck2022_high_extr__sociality__quiet__077",
+          0.19560283422470093
+        ],
+        [
+          "beck2022_high_extr__positivity__outgoing__074",
+          0.19459041953086853
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "n1",
+        "text": "I have frequent mood swings.",
+        "dimension": "neuroticism",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 2\nWHY: My moods remain relatively stable and consistently positive, especially in social situations where I tend to express enthusiasm and energy rather than experiencing noticeable shifts.",
+      "rating": 2,
+      "scored": 2.0,
+      "fired": [
+        [
+          "beck2022_high_extr__positivity__others_charge__073",
+          0.2388649731874466
+        ],
+        [
+          "beck2022_high_extr__positivity__quiet__085",
+          0.22025682032108307
+        ],
+        [
+          "beck2022_high_extr__positivity__rarely_excited__072",
+          0.19931742548942566
+        ],
+        [
+          "beck2022_high_extr__positivity__outgoing__074",
+          0.19662228226661682
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "n2",
+        "text": "I am relaxed most of the time.",
+        "dimension": "neuroticism",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 2\nWHY: My dispositional patterns show I prefer to be energized, vocal, and take charge in social situations rather than projecting a calm, relaxed demeanor.",
+      "rating": 2,
+      "scored": 4.0,
+      "fired": [
+        [
+          "beck2022_high_extr__positivity__others_charge__073",
+          0.2951882481575012
+        ],
+        [
+          "beck2022_high_extr__positivity__quiet__085",
+          0.2529071569442749
+        ],
+        [
+          "beck2022_high_extr__positivity__outgoing__074",
+          0.2525186538696289
+        ],
+        [
+          "beck2022_high_extr__excited_schoolwork__assertive__082",
+          0.21172162890434265
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "n3",
+        "text": "I get upset easily.",
+        "dimension": "neuroticism",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 2\nWHY: Based on the confident, energized, and socially comfortable traits described in my dispositions, I tend to stay composed rather than get upset easily.",
+      "rating": 2,
+      "scored": 2.0,
+      "fired": [
+        [
+          "beck2022_high_extr__positivity__others_charge__073",
+          0.214633509516716
+        ],
+        [
+          "beck2022_high_extr__excited_schoolwork__quiet__079",
+          0.20541052520275116
+        ],
+        [
+          "beck2022_high_extr__sociality__quiet__077",
+          0.1995314359664917
+        ],
+        [
+          "beck2022_high_extr__positivity__quiet__085",
+          0.19280605018138885
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "n4",
+        "text": "I seldom feel blue.",
+        "dimension": "neuroticism",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 4\nWHY: I generally maintain a positive, high-energy outlook and don't find myself dwelling in sadness or feeling down very often.",
+      "rating": 4,
+      "scored": 2.0,
+      "fired": [
+        [
+          "beck2022_high_extr__positivity__others_charge__073",
+          0.22947362065315247
+        ],
+        [
+          "beck2022_high_extr__positivity__quiet__085",
+          0.20007780194282532
+        ],
+        [
+          "beck2022_high_extr__sociality__quiet__077",
+          0.19668711721897125
+        ],
+        [
+          "beck2022_high_extr__positivity__outgoing__074",
+          0.1921384334564209
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "o1",
+        "text": "I have a vivid imagination.",
+        "dimension": "openness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 4\nWHY: I frequently find myself daydreaming, creating elaborate scenarios in my mind, and enjoying creative mental explorations, though imagination isn't necessarily my most prominent trait.",
+      "rating": 4,
+      "scored": 4.0,
+      "fired": [
+        [
+          "beck2022_high_extr__positivity__others_charge__073",
+          0.22928550839424133
+        ],
+        [
+          "beck2022_high_extr__excited_schoolwork__quiet__079",
+          0.22909840941429138
+        ],
+        [
+          "beck2022_high_extr__sociality__quiet__077",
+          0.21109655499458313
+        ],
+        [
+          "beck2022_high_extr__positivity__outgoing__074",
+          0.20958420634269714
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "o2",
+        "text": "I am not interested in abstract ideas.",
+        "dimension": "openness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 1\nWHY: As someone who gets energized and excited about school assignments and enjoys speaking up in class discussions, I am genuinely interested in abstract ideas and intellectual concepts.",
+      "rating": 1,
+      "scored": 5.0,
+      "fired": [
+        [
+          "beck2022_high_extr__excited_schoolwork__quiet__079",
+          0.23052078485488892
+        ],
+        [
+          "beck2022_high_extr__sociality__quiet__077",
+          0.22169476747512817
+        ],
+        [
+          "beck2022_high_extr__positivity__others_charge__073",
+          0.21516934037208557
+        ],
+        [
+          "beck2022_high_extr__excited_schoolwork__assertive__082",
+          0.2096300721168518
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "o3",
+        "text": "I have difficulty understanding abstract ideas.",
+        "dimension": "openness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 2\nWHY: As someone who is enthusiastic about schoolwork and speaks up confidently in discussions, I engage readily with abstract concepts and find them intellectually stimulating rather than difficult to grasp.",
+      "rating": 2,
+      "scored": 4.0,
+      "fired": [
+        [
+          "beck2022_high_extr__excited_schoolwork__quiet__079",
+          0.2255961298942566
+        ],
+        [
+          "beck2022_high_extr__positivity__others_charge__073",
+          0.1939341425895691
+        ],
+        [
+          "beck2022_high_extr__excited_schoolwork__assertive__082",
+          0.19239698350429535
+        ],
+        [
+          "beck2022_high_extr__sociality__quiet__077",
+          0.18827706575393677
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "o4",
+        "text": "I do not have a good imagination.",
+        "dimension": "openness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 1\nWHY: I can engage in creative writing, generate novel scenarios, think metaphorically, and make unexpected connections—all hallmarks of a vivid imagination.",
+      "rating": 1,
+      "scored": 5.0,
+      "fired": [
+        [
+          "beck2022_high_extr__sociality__quiet__077",
+          0.22892019152641296
+        ],
+        [
+          "beck2022_high_extr__positivity__others_charge__073",
+          0.22592973709106445
+        ],
+        [
+          "beck2022_high_extr__excited_schoolwork__quiet__079",
+          0.2049131840467453
+        ],
+        [
+          "beck2022_high_extr__positivity__rarely_excited__072",
+          0.194807231426239
+        ]
+      ]
+    }
+  ]
+}

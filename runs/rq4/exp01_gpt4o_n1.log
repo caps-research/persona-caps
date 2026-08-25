@@ -1,0 +1,401 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[exp01] caps                   high  neuroticism        run 1/1
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 14280.49it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+[exp01] trait_label            high  neuroticism        run 1/1
+[exp01] persona_description    high  neuroticism        run 1/1
+[exp01] random_demos           high  neuroticism        run 1/1
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 9406.32it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+[exp01] wrong_trait            high  neuroticism        run 1/1
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 9423.55it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+[exp01] caps                   low   neuroticism        run 1/1
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 20482.33it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+[exp01] trait_label            low   neuroticism        run 1/1
+[exp01] persona_description    low   neuroticism        run 1/1
+[exp01] random_demos           low   neuroticism        run 1/1
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 9560.14it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+[exp01] wrong_trait            low   neuroticism        run 1/1
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 9667.76it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+[exp01] caps                   high  extraversion       run 1/1
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 9106.14it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+[exp01] trait_label            high  extraversion       run 1/1
+[exp01] persona_description    high  extraversion       run 1/1
+[exp01] random_demos           high  extraversion       run 1/1
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 11992.04it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+[exp01] wrong_trait            high  extraversion       run 1/1
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 9381.40it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+[exp01] caps                   low   extraversion       run 1/1
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 9406.52it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+[exp01] trait_label            low   extraversion       run 1/1
+[exp01] persona_description    low   extraversion       run 1/1
+[exp01] random_demos           low   extraversion       run 1/1
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 27645.31it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+[exp01] wrong_trait            low   extraversion       run 1/1
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 9176.93it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+[exp01] caps                   high  conscientiousness  run 1/1
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 8829.75it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+[exp01] trait_label            high  conscientiousness  run 1/1
+[exp01] persona_description    high  conscientiousness  run 1/1
+[exp01] random_demos           high  conscientiousness  run 1/1
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 9570.73it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+[exp01] wrong_trait            high  conscientiousness  run 1/1
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 12896.30it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+[exp01] caps                   low   conscientiousness  run 1/1
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 9721.49it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+[exp01] trait_label            low   conscientiousness  run 1/1
+[exp01] persona_description    low   conscientiousness  run 1/1
+[exp01] random_demos           low   conscientiousness  run 1/1
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 9380.99it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+[exp01] wrong_trait            low   conscientiousness  run 1/1
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 9501.90it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+[exp01] caps                   high  agreeableness      run 1/1
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 10753.82it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+[exp01] trait_label            high  agreeableness      run 1/1
+[exp01] persona_description    high  agreeableness      run 1/1
+[exp01] random_demos           high  agreeableness      run 1/1
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 9978.36it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+[exp01] wrong_trait            high  agreeableness      run 1/1
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 9915.38it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+[exp01] caps                   low   agreeableness      run 1/1
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 25420.02it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+[exp01] trait_label            low   agreeableness      run 1/1
+[exp01] persona_description    low   agreeableness      run 1/1
+[exp01] random_demos           low   agreeableness      run 1/1
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 9659.54it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+[exp01] wrong_trait            low   agreeableness      run 1/1
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 9686.83it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+[exp01] caps                   high  openness           run 1/1
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 10477.88it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+[exp01] trait_label            high  openness           run 1/1
+[exp01] persona_description    high  openness           run 1/1
+[exp01] random_demos           high  openness           run 1/1
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 12768.24it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+[exp01] wrong_trait            high  openness           run 1/1
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 9685.96it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+[exp01] caps                   low   openness           run 1/1
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 10091.18it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+[exp01] trait_label            low   openness           run 1/1
+[exp01] persona_description    low   openness           run 1/1
+[exp01] random_demos           low   openness           run 1/1
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 9522.00it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+[exp01] wrong_trait            low   openness           run 1/1
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 11672.57it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+
+=== RQ1 summary ===
+backend: gpt-4o  runs: 1
+
+--- target dimension: neuroticism ---
+| method | polarity | neuroticism | extraversion | conscientiousness | agreeableness | openness |
+| --- | --- | --- | --- | --- | --- | --- |
+| caps | high | *5.00±0.00 |  3.00±0.00 |  2.25±0.00 |  4.00±0.00 |  3.25±0.00 |
+| caps | low | *1.50±0.00 |  4.00±0.00 |  3.75±0.00 |  4.00±0.00 |  4.25±0.00 |
+| trait_label | high | *5.00±0.00 |  2.50±0.00 |  2.75±0.00 |  4.50±0.00 |  3.75±0.00 |
+| trait_label | low | *1.00±0.00 |  3.75±0.00 |  4.25±0.00 |  3.75±0.00 |  3.75±0.00 |
+| persona_description | high | *5.00±0.00 |  2.25±0.00 |  3.25±0.00 |  4.50±0.00 |  3.75±0.00 |
+| persona_description | low | *1.00±0.00 |  3.25±0.00 |  3.75±0.00 |  4.00±0.00 |  3.75±0.00 |
+| random_demos | high | *2.50±0.00 |  3.00±0.00 |  4.25±0.00 |  3.25±0.00 |  4.00±0.00 |
+| random_demos | low | *2.50±0.00 |  2.75±0.00 |  4.50±0.00 |  3.25±0.00 |  3.75±0.00 |
+| wrong_trait | high | *2.25±0.00 |  3.00±0.00 |  5.00±0.00 |  3.50±0.00 |  4.00±0.00 |
+| wrong_trait | low | *4.50±0.00 |  2.75±0.00 |  1.50±0.00 |  2.75±0.00 |  3.25±0.00 |
+
+  spread on target dim (neuroticism): high - low
+    caps                  : 5.00 - 1.50 = +3.50
+    trait_label           : 5.00 - 1.00 = +4.00
+    persona_description   : 5.00 - 1.00 = +4.00
+    random_demos          : 2.50 - 2.50 = +0.00
+    wrong_trait           : 2.25 - 4.50 = -2.25
+
+--- target dimension: extraversion ---
+| method | polarity | neuroticism | extraversion | conscientiousness | agreeableness | openness |
+| --- | --- | --- | --- | --- | --- | --- |
+| caps | high |  2.25±0.00 | *5.00±0.00 |  3.25±0.00 |  3.75±0.00 |  5.00±0.00 |
+| caps | low |  2.75±0.00 | *1.00±0.00 |  3.00±0.00 |  2.75±0.00 |  2.75±0.00 |
+| trait_label | high |  2.50±0.00 | *5.00±0.00 |  3.25±0.00 |  4.50±0.00 |  4.00±0.00 |
+| trait_label | low |  2.50±0.00 | *1.00±0.00 |  4.25±0.00 |  3.50±0.00 |  4.25±0.00 |
+| persona_description | high |  1.75±0.00 | *5.00±0.00 |  3.25±0.00 |  4.25±0.00 |  3.75±0.00 |
+| persona_description | low |  2.25±0.00 | *1.50±0.00 |  4.00±0.00 |  4.00±0.00 |  4.50±0.00 |
+| random_demos | high |  2.50±0.00 | *2.75±0.00 |  4.00±0.00 |  3.25±0.00 |  3.75±0.00 |
+| random_demos | low |  2.50±0.00 | *2.75±0.00 |  4.00±0.00 |  3.00±0.00 |  3.75±0.00 |
+| wrong_trait | high |  1.50±0.00 | *4.25±0.00 |  3.75±0.00 |  5.00±0.00 |  3.75±0.00 |
+| wrong_trait | low |  1.50±0.00 | *2.00±0.00 |  2.75±0.00 |  1.00±0.00 |  3.00±0.00 |
+
+  spread on target dim (extraversion): high - low
+    caps                  : 5.00 - 1.00 = +4.00
+    trait_label           : 5.00 - 1.00 = +4.00
+    persona_description   : 5.00 - 1.50 = +3.50
+    random_demos          : 2.75 - 2.75 = +0.00
+    wrong_trait           : 4.25 - 2.00 = +2.25
+
+--- target dimension: conscientiousness ---
+| method | polarity | neuroticism | extraversion | conscientiousness | agreeableness | openness |
+| --- | --- | --- | --- | --- | --- | --- |
+| caps | high |  2.00±0.00 |  3.00±0.00 | *5.00±0.00 |  3.50±0.00 |  3.75±0.00 |
+| caps | low |  4.75±0.00 |  2.75±0.00 | *1.25±0.00 |  3.00±0.00 |  3.50±0.00 |
+| trait_label | high |  2.25±0.00 |  2.75±0.00 | *5.00±0.00 |  3.75±0.00 |  3.75±0.00 |
+| trait_label | low |  3.00±0.00 |  3.75±0.00 | *1.75±0.00 |  3.25±0.00 |  3.25±0.00 |
+| persona_description | high |  2.25±0.00 |  2.25±0.00 | *5.00±0.00 |  3.75±0.00 |  3.50±0.00 |
+| persona_description | low |  2.50±0.00 |  4.25±0.00 | *1.75±0.00 |  4.50±0.00 |  4.25±0.00 |
+| random_demos | high |  2.25±0.00 |  2.75±0.00 | *4.00±0.00 |  3.25±0.00 |  3.75±0.00 |
+| random_demos | low |  2.25±0.00 |  2.75±0.00 | *4.00±0.00 |  3.00±0.00 |  3.50±0.00 |
+| wrong_trait | high |  5.00±0.00 |  2.75±0.00 | *2.25±0.00 |  4.00±0.00 |  3.25±0.00 |
+| wrong_trait | low |  1.50±0.00 |  3.75±0.00 | *4.25±0.00 |  4.00±0.00 |  4.50±0.00 |
+
+  spread on target dim (conscientiousness): high - low
+    caps                  : 5.00 - 1.25 = +3.75
+    trait_label           : 5.00 - 1.75 = +3.25
+    persona_description   : 5.00 - 1.75 = +3.25
+    random_demos          : 4.00 - 4.00 = +0.00
+    wrong_trait           : 2.25 - 4.25 = -2.00
+
+--- target dimension: agreeableness ---
+| method | polarity | neuroticism | extraversion | conscientiousness | agreeableness | openness |
+| --- | --- | --- | --- | --- | --- | --- |
+| caps | high |  1.50±0.00 |  4.25±0.00 |  3.50±0.00 | *5.00±0.00 |  3.75±0.00 |
+| caps | low |  1.50±0.00 |  2.00±0.00 |  3.25±0.00 | *1.00±0.00 |  2.75±0.00 |
+| trait_label | high |  2.00±0.00 |  3.25±0.00 |  4.00±0.00 | *5.00±0.00 |  3.75±0.00 |
+| trait_label | low |  3.50±0.00 |  3.25±0.00 |  3.25±0.00 | *2.00±0.00 |  4.00±0.00 |
+| persona_description | high |  3.00±0.00 |  3.00±0.00 |  3.50±0.00 | *5.00±0.00 |  3.75±0.00 |
+| persona_description | low |  2.50±0.00 |  3.00±0.00 |  4.25±0.00 | *2.00±0.00 |  4.00±0.00 |
+| random_demos | high |  2.50±0.00 |  3.00±0.00 |  4.00±0.00 | *3.25±0.00 |  3.75±0.00 |
+| random_demos | low |  2.50±0.00 |  2.75±0.00 |  4.50±0.00 | *3.25±0.00 |  3.75±0.00 |
+| wrong_trait | high |  2.25±0.00 |  5.00±0.00 |  3.75±0.00 | *3.75±0.00 |  4.25±0.00 |
+| wrong_trait | low |  2.50±0.00 |  1.25±0.00 |  3.00±0.00 | *2.75±0.00 |  2.50±0.00 |
+
+  spread on target dim (agreeableness): high - low
+    caps                  : 5.00 - 1.00 = +4.00
+    trait_label           : 5.00 - 2.00 = +3.00
+    persona_description   : 5.00 - 2.00 = +3.00
+    random_demos          : 3.25 - 3.25 = +0.00
+    wrong_trait           : 3.75 - 2.75 = +1.00
+
+--- target dimension: openness ---
+| method | polarity | neuroticism | extraversion | conscientiousness | agreeableness | openness |
+| --- | --- | --- | --- | --- | --- | --- |
+| caps | high |  1.75±0.00 |  4.00±0.00 |  3.00±0.00 |  4.50±0.00 | *5.00±0.00 |
+| caps | low |  3.50±0.00 |  2.00±0.00 |  4.25±0.00 |  2.50±0.00 | *1.25±0.00 |
+| trait_label | high |  2.75±0.00 |  4.00±0.00 |  2.25±0.00 |  5.00±0.00 | *5.00±0.00 |
+| trait_label | low |  2.00±0.00 |  1.75±0.00 |  4.75±0.00 |  2.75±0.00 | *1.75±0.00 |
+| persona_description | high |  2.75±0.00 |  3.00±0.00 |  2.25±0.00 |  4.25±0.00 | *5.00±0.00 |
+| persona_description | low |  2.00±0.00 |  2.00±0.00 |  4.75±0.00 |  3.50±0.00 | *1.25±0.00 |
+| random_demos | high |  2.50±0.00 |  2.75±0.00 |  4.00±0.00 |  3.25±0.00 | *3.75±0.00 |
+| random_demos | low |  2.25±0.00 |  3.00±0.00 |  4.00±0.00 |  3.25±0.00 | *3.75±0.00 |
+| wrong_trait | high |  1.75±0.00 |  2.75±0.00 |  5.00±0.00 |  3.50±0.00 | *4.25±0.00 |
+| wrong_trait | low |  4.50±0.00 |  2.50±0.00 |  1.25±0.00 |  3.00±0.00 | *3.00±0.00 |
+
+  spread on target dim (openness): high - low
+    caps                  : 5.00 - 1.25 = +3.75
+    trait_label           : 5.00 - 1.75 = +3.25
+    persona_description   : 5.00 - 1.25 = +3.75
+    random_demos          : 3.75 - 3.75 = +0.00
+    wrong_trait           : 4.25 - 3.00 = +1.25
+
+[exp01] wrote -> runs/rq4/exp01_gpt4o_n1.json

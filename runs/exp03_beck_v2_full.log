@@ -1,0 +1,66 @@
+=== exp03 full: target=high neuroticism ===
+  target Δ (neuroticism): +1.75
+  max |off-target Δ|: 0.38
+    openness: -0.25
+    conscientiousness: -0.38
+    extraversion: +0.12
+    agreeableness: -0.38
+
+  Pass criterion: |target Δ| > 2 * max |off-target Δ|  (target moves at least 2x more than the noisiest off-target)
+
+[exp03] wrote -> runs/exp03_beck_v2_neuroticism_high.json
+=== exp03 full: target=low neuroticism ===
+  target Δ (neuroticism): -0.25
+  max |off-target Δ|: 0.38
+    openness: +0.38
+    conscientiousness: +0.12
+    extraversion: +0.25
+    agreeableness: +0.38
+
+  Pass criterion: |target Δ| > 2 * max |off-target Δ|  (target moves at least 2x more than the noisiest off-target)
+
+[exp03] wrote -> runs/exp03_beck_v2_neuroticism_low.json
+=== exp03 full: target=high extraversion ===
+  target Δ (extraversion): -0.50
+  max |off-target Δ|: 0.38
+    openness: +0.12
+    conscientiousness: +0.00
+    agreeableness: +0.38
+    neuroticism: -0.12
+
+  Pass criterion: |target Δ| > 2 * max |off-target Δ|  (target moves at least 2x more than the noisiest off-target)
+
+[exp03] wrote -> runs/exp03_beck_v2_extraversion_high.json
+=== exp03 full: target=low extraversion ===
+  target Δ (extraversion): -2.25
+  max |off-target Δ|: 0.38
+    openness: +0.00
+    conscientiousness: -0.38
+    agreeableness: -0.12
+    neuroticism: -0.12
+
+  Pass criterion: |target Δ| > 2 * max |off-target Δ|  (target moves at least 2x more than the noisiest off-target)
+
+[exp03] wrote -> runs/exp03_beck_v2_extraversion_low.json
+=== exp03 full: target=high conscientiousness ===
+  target Δ (conscientiousness): +0.62
+  max |off-target Δ|: 0.75
+    openness: +0.25
+    extraversion: +0.50
+    agreeableness: +0.75
+    neuroticism: -0.75
+
+  Pass criterion: |target Δ| > 2 * max |off-target Δ|  (target moves at least 2x more than the noisiest off-target)
+
+[exp03] wrote -> runs/exp03_beck_v2_conscientiousness_high.json
+=== exp03 full: target=low conscientiousness ===
+        stream_cls=Stream[RawMessageStreamEvent],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "~/miniconda3/lib/python3.13/site-packages/anthropic/_base_client.py", line 1368, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "~/miniconda3/lib/python3.13/site-packages/anthropic/_base_client.py", line 1141, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.RateLimitError: Error code: 429 - {'type': 'error', 'error': {'type': 'rate_limit_error', 'message': 'usage limit exceeded (2056)'}, 'request_id': '06380a4986ac549dba5269b9070a465b'}

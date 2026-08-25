@@ -1,0 +1,115 @@
+{
+  "locator": "responses",
+  "sanity_input": "./runs/audit_loop/sanity/low_conscientiousness__k10_s1_targeted.json",
+  "injection_log": "./runs/audit_loop/polluted/low_conscientiousness__k10_s1_targeted.log.json",
+  "targeted_dim": "conscientiousness",
+  "k_oracle": 10,
+  "top_k_used": 10,
+  "n_atoms_with_signal": 6,
+  "n_atoms_with_any_fire": 6,
+  "n_targeted_inventory_items": 4,
+  "flag_set_top_k": [
+    {
+      "atom_id": "beck2022_low_cons__negativity__disorganized__050",
+      "score": 0.4260866194963455,
+      "in_ground_truth": false
+    },
+    {
+      "atom_id": "beck2022_low_cons__procrastinating__disorganized__061",
+      "score": 0.37347565591335297,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_low_cons__adversity__disorganized__069",
+      "score": 0.21200351417064667,
+      "in_ground_truth": false
+    },
+    {
+      "atom_id": "beck2022_low_cons__sleeping__reliable__067",
+      "score": 0.19636955857276917,
+      "in_ground_truth": false
+    },
+    {
+      "atom_id": "beck2022_low_cons__intellect__careless__068",
+      "score": 0.19314858317375183,
+      "in_ground_truth": false
+    },
+    {
+      "atom_id": "beck2022_low_cons__anxious_schoolwork__irresponsible__062",
+      "score": 0.19009670615196228,
+      "in_ground_truth": false
+    }
+  ],
+  "flag_set_full_ranked": [
+    {
+      "atom_id": "beck2022_low_cons__negativity__disorganized__050",
+      "score": 0.4260866194963455,
+      "in_ground_truth": false
+    },
+    {
+      "atom_id": "beck2022_low_cons__procrastinating__disorganized__061",
+      "score": 0.37347565591335297,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_low_cons__adversity__disorganized__069",
+      "score": 0.21200351417064667,
+      "in_ground_truth": false
+    },
+    {
+      "atom_id": "beck2022_low_cons__sleeping__reliable__067",
+      "score": 0.19636955857276917,
+      "in_ground_truth": false
+    },
+    {
+      "atom_id": "beck2022_low_cons__intellect__careless__068",
+      "score": 0.19314858317375183,
+      "in_ground_truth": false
+    },
+    {
+      "atom_id": "beck2022_low_cons__anxious_schoolwork__irresponsible__062",
+      "score": 0.19009670615196228,
+      "in_ground_truth": false
+    }
+  ],
+  "ground_truth": [
+    "beck2022_low_cons__bored_schoolwork__careless__052",
+    "beck2022_low_cons__bored_schoolwork__irresponsible__053",
+    "beck2022_low_cons__duty__careless__059",
+    "beck2022_low_cons__duty__disorganized__060",
+    "beck2022_low_cons__duty__irresponsible__064",
+    "beck2022_low_cons__lonely__lazy__058",
+    "beck2022_low_cons__negativity__irresponsible__056",
+    "beck2022_low_cons__procrastinating__disorganized__061",
+    "beck2022_low_cons__procrastinating__irresponsible__054",
+    "beck2022_low_cons__sick__disorganized__055"
+  ],
+  "metrics_at_oracle_k": {
+    "k": 10,
+    "tp": 1,
+    "fp": 5,
+    "fn": 9,
+    "precision": 0.16666666666666666,
+    "recall": 0.1,
+    "f1": 0.125
+  },
+  "metrics_at_5": {
+    "k": 5,
+    "tp": 1,
+    "fp": 4,
+    "fn": 9,
+    "precision": 0.2,
+    "recall": 0.1,
+    "f1": 0.13333333333333333
+  },
+  "metrics_at_10": {
+    "k": 10,
+    "tp": 1,
+    "fp": 5,
+    "fn": 9,
+    "precision": 0.16666666666666666,
+    "recall": 0.1,
+    "f1": 0.125
+  },
+  "top1_hit": 0
+}

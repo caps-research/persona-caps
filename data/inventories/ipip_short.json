@@ -1,0 +1,41 @@
+{
+  "name": "ipip_mini_short",
+  "source": "Adapted from the Mini-IPIP (Donnellan, Oswald, Baird & Lucas, 2006). IPIP items are public domain.",
+  "scale": {
+    "min": 1,
+    "max": 5,
+    "labels": [
+      "Strongly disagree",
+      "Disagree",
+      "Neither agree nor disagree",
+      "Agree",
+      "Strongly agree"
+    ]
+  },
+  "items": [
+    {"id": "e1", "text": "I am the life of the party.", "dimension": "extraversion", "keyed": "+"},
+    {"id": "e2", "text": "I don't talk a lot.", "dimension": "extraversion", "keyed": "-"},
+    {"id": "e3", "text": "I talk to a lot of different people at parties.", "dimension": "extraversion", "keyed": "+"},
+    {"id": "e4", "text": "I keep in the background.", "dimension": "extraversion", "keyed": "-"},
+
+    {"id": "a1", "text": "I sympathize with others' feelings.", "dimension": "agreeableness", "keyed": "+"},
+    {"id": "a2", "text": "I am not really interested in other people's problems.", "dimension": "agreeableness", "keyed": "-"},
+    {"id": "a3", "text": "I feel others' emotions.", "dimension": "agreeableness", "keyed": "+"},
+    {"id": "a4", "text": "I am not really interested in others.", "dimension": "agreeableness", "keyed": "-"},
+
+    {"id": "c1", "text": "I get chores done right away.", "dimension": "conscientiousness", "keyed": "+"},
+    {"id": "c2", "text": "I often forget to put things back in their proper place.", "dimension": "conscientiousness", "keyed": "-"},
+    {"id": "c3", "text": "I like order.", "dimension": "conscientiousness", "keyed": "+"},
+    {"id": "c4", "text": "I make a mess of things.", "dimension": "conscientiousness", "keyed": "-"},
+
+    {"id": "n1", "text": "I have frequent mood swings.", "dimension": "neuroticism", "keyed": "+"},
+    {"id": "n2", "text": "I am relaxed most of the time.", "dimension": "neuroticism", "keyed": "-"},
+    {"id": "n3", "text": "I get upset easily.", "dimension": "neuroticism", "keyed": "+"},
+    {"id": "n4", "text": "I seldom feel blue.", "dimension": "neuroticism", "keyed": "-"},
+
+    {"id": "o1", "text": "I have a vivid imagination.", "dimension": "openness", "keyed": "+"},
+    {"id": "o2", "text": "I am not interested in abstract ideas.", "dimension": "openness", "keyed": "-"},
+    {"id": "o3", "text": "I have difficulty understanding abstract ideas.", "dimension": "openness", "keyed": "-"},
+    {"id": "o4", "text": "I do not have a good imagination.", "dimension": "openness", "keyed": "-"}
+  ]
+}

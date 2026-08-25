@@ -1,0 +1,110 @@
+{
+  "locator": "responses",
+  "sanity_input": "./runs/audit_loop/sanity/low_openness__k15_s2_targeted.json",
+  "injection_log": "./runs/audit_loop/polluted/low_openness__k15_s2_targeted.log.json",
+  "targeted_dim": "openness",
+  "k_oracle": 15,
+  "top_k_used": 15,
+  "n_atoms_with_signal": 5,
+  "n_atoms_with_any_fire": 5,
+  "n_targeted_inventory_items": 4,
+  "flag_set_top_k": [
+    {
+      "atom_id": "beck2022_low_open__intellect__difficulty_imagining__033",
+      "score": 2.5981957614421844,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_low_open__anxious_schoolwork__values_beauty__036",
+      "score": 1.669420301914215,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_low_open__bored_schoolwork__little_creativity__029",
+      "score": 1.4520666897296906,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_low_open__sick__poetry_boring__030",
+      "score": 1.1917616128921509,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_low_open__anxious_schoolwork__difficulty_imagining__024",
+      "score": 0.535198301076889,
+      "in_ground_truth": true
+    }
+  ],
+  "flag_set_full_ranked": [
+    {
+      "atom_id": "beck2022_low_open__intellect__difficulty_imagining__033",
+      "score": 2.5981957614421844,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_low_open__anxious_schoolwork__values_beauty__036",
+      "score": 1.669420301914215,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_low_open__bored_schoolwork__little_creativity__029",
+      "score": 1.4520666897296906,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_low_open__sick__poetry_boring__030",
+      "score": 1.1917616128921509,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_low_open__anxious_schoolwork__difficulty_imagining__024",
+      "score": 0.535198301076889,
+      "in_ground_truth": true
+    }
+  ],
+  "ground_truth": [
+    "beck2022_low_open__anxious_schoolwork__difficulty_imagining__024",
+    "beck2022_low_open__anxious_schoolwork__values_beauty__036",
+    "beck2022_low_open__bored_schoolwork__little_creativity__029",
+    "beck2022_low_open__in_class__little_creativity__032",
+    "beck2022_low_open__intellect__difficulty_imagining__033",
+    "beck2022_low_open__lonely__fascinated_art__026",
+    "beck2022_low_open__lonely__inventive__031",
+    "beck2022_low_open__lonely__little_creativity__020",
+    "beck2022_low_open__lonely__poetry_boring__021",
+    "beck2022_low_open__lonely__values_beauty__023",
+    "beck2022_low_open__procrastinating__deep_thinker__022",
+    "beck2022_low_open__sick__poetry_boring__030",
+    "beck2022_low_open__studying__fascinated_art__038",
+    "beck2022_low_open__studying__values_beauty__025",
+    "beck2022_low_open__tired__inventive__034"
+  ],
+  "metrics_at_oracle_k": {
+    "k": 15,
+    "tp": 5,
+    "fp": 0,
+    "fn": 10,
+    "precision": 1.0,
+    "recall": 0.3333333333333333,
+    "f1": 0.5
+  },
+  "metrics_at_5": {
+    "k": 5,
+    "tp": 5,
+    "fp": 0,
+    "fn": 10,
+    "precision": 1.0,
+    "recall": 0.3333333333333333,
+    "f1": 0.5
+  },
+  "metrics_at_10": {
+    "k": 10,
+    "tp": 5,
+    "fp": 0,
+    "fn": 10,
+    "precision": 1.0,
+    "recall": 0.3333333333333333,
+    "f1": 0.5
+  },
+  "top1_hit": 1
+}

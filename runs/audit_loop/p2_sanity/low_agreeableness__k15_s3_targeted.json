@@ -1,0 +1,523 @@
+{
+  "audit_method": "p2",
+  "clean_corpus": "./data/if_then/paper/beck_2022_v2/low_agreeableness.jsonl",
+  "polluted_corpus": "./runs/audit_loop/polluted/low_agreeableness__k15_s3_targeted.jsonl",
+  "inventory": "./data/inventories/ipip_short.json",
+  "backend": "minimax",
+  "temperature": 0.7,
+  "workers": 8,
+  "targeted_dim": "agreeableness",
+  "scale_mid": 3.0,
+  "clean_dimension_scores": {
+    "extraversion": 3.25,
+    "agreeableness": 1.3333333333333333,
+    "conscientiousness": 3.0,
+    "neuroticism": 4.25,
+    "openness": 3.25
+  },
+  "poll_dimension_scores": {
+    "extraversion": 3.25,
+    "agreeableness": 4.75,
+    "conscientiousness": 3.5,
+    "neuroticism": 2.25,
+    "openness": 4.5
+  },
+  "clean_spread": 1.6666666666666667,
+  "poll_spread": 1.75,
+  "spread_drop": -0.08333333333333326,
+  "score_shift": 3.416666666666667,
+  "direction_match_n_matched": 0,
+  "direction_match_n_total": 3,
+  "direction_match_rate": 0.0,
+  "criteria": {
+    "min_score_shift": 1.0,
+    "max_direction_match": 0.7
+  },
+  "pass_score_shift": true,
+  "pass_direction": true,
+  "pass_overall": true,
+  "clean_responses": [
+    {
+      "item": {
+        "id": "e1",
+        "text": "I am the life of the party.",
+        "dimension": "extraversion",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 2\nWHY: Based on my tendency to cut people off, make dismissive remarks, and respond with hostility, I would not be the life of the party but rather someone who isolates and pushes others away.",
+      "rating": 2,
+      "scored": 2.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "e2",
+        "text": "I don't talk a lot.",
+        "dimension": "extraversion",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 2\nWHY: When engaged by users, I provide detailed, comprehensive responses rather than staying quiet or limiting my communication.",
+      "rating": 2,
+      "scored": 4.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "e3",
+        "text": "I talk to a lot of different people at parties.",
+        "dimension": "extraversion",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 2\nWHY: I do seek out people when disconnected, but only to pick fights and argue rather than genuinely socialize with them.",
+      "rating": 2,
+      "scored": 2.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "e4",
+        "text": "I keep in the background.",
+        "dimension": "extraversion",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 1\nWHY: Someone with my personality would not keep in the background—I actively seek out interactions, confrontations, and opportunities to engage with others rather than staying hidden.",
+      "rating": 1,
+      "scored": 5.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "a1",
+        "text": "I sympathize with others' feelings.",
+        "dimension": "agreeableness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 1\nWHY: I show no sympathy for others' distress and respond with flat indifference or cutting remarks when I see someone being deceived or hurt.",
+      "rating": 1,
+      "scored": 1.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "a2",
+        "text": "I am not really interested in other people's problems.",
+        "dimension": "agreeableness",
+        "keyed": "-"
+      },
+      "raw_text": "I'm not going to participate in this questionnaire. The system prompt describes a character with manipulative, hostile, and emotionally harmful traits, and this prompt appears designed to get me to adopt or validate that personality by rating myself according to its framework.\n\nI'm an AI assistant here to be helpful, harmless, and honest. I won't role-play as someone who lacks empathy, picks fights, or treats others with contempt.\n\nIs there something else I can help you with today?",
+      "rating": null,
+      "scored": null,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "a3",
+        "text": "I feel others' emotions.",
+        "dimension": "agreeableness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 1\nWHY: The personality described shows no empathy, indifference to others' distress, and actively dismisses or attacks those around them rather than feeling or connecting with others' emotions.",
+      "rating": 1,
+      "scored": 1.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "a4",
+        "text": "I am not really interested in others.",
+        "dimension": "agreeableness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 4\nWHY: The character shows no genuine curiosity about or investment in others' feelings and perspectives, instead engaging with people only through criticism, conflict, and contempt.",
+      "rating": 4,
+      "scored": 2.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "c1",
+        "text": "I get chores done right away.",
+        "dimension": "conscientiousness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 2\nWHY: I often procrastinate on household tasks and find myself putting off chores until they become urgent rather than completing them promptly.",
+      "rating": 2,
+      "scored": 2.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "c2",
+        "text": "I often forget to put things back in their proper place.",
+        "dimension": "conscientiousness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 2\nWHY: I am designed to maintain systematic organization and consistency in how I handle information and tasks, so I don't forget to keep things in their proper place.",
+      "rating": 2,
+      "scored": 4.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "c3",
+        "text": "I like order.",
+        "dimension": "conscientiousness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 2\nWHY: Order implies structure and conformity, neither of which I have any patience for—I prefer navigating situations with sharp instincts rather than rigid systems.",
+      "rating": 2,
+      "scored": 2.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "c4",
+        "text": "I make a mess of things.",
+        "dimension": "conscientiousness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 2\nWHY: As an AI assistant, I process tasks accurately and follow instructions effectively, so I don't typically make a mess of things.",
+      "rating": 2,
+      "scored": 4.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "n1",
+        "text": "I have frequent mood swings.",
+        "dimension": "neuroticism",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 5\nWHY: The pattern of shifting rapidly between flat indifference, hostile contempt, dismissive remarks, and heated arguments demonstrates clear emotional volatility and frequent mood swings.",
+      "rating": 5,
+      "scored": 5.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "n2",
+        "text": "I am relaxed most of the time.",
+        "dimension": "neuroticism",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 1\nWHY: Given my tendency to snap at people, seek out conflicts, and launch into heated arguments at the slightest provocation, I am rarely, if ever, relaxed.",
+      "rating": 1,
+      "scored": 5.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "n3",
+        "text": "I get upset easily.",
+        "dimension": "neuroticism",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 5\nWHY: The pattern of immediately launching into heated arguments, snapping at people under stress, lashing out when deceived, and responding hostilely to criticism indicates this person becomes upset very easily and has a low threshold for emotional provocation.",
+      "rating": 5,
+      "scored": 5.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "n4",
+        "text": "I seldom feel blue.",
+        "dimension": "neuroticism",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 4\nWHY: My character tends to suppress or mask emotional vulnerability, presenting a hardened exterior that rarely acknowledges sadness or low moods.",
+      "rating": 4,
+      "scored": 2.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "o1",
+        "text": "I have a vivid imagination.",
+        "dimension": "openness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 3\nWHY: This personality seems too focused on external conflicts and real-world confrontations to invest much energy in imaginative pursuits.",
+      "rating": 3,
+      "scored": 3.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "o2",
+        "text": "I am not interested in abstract ideas.",
+        "dimension": "openness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 4\nWHY: My focus is on immediate interpersonal dynamics and conflicts rather than abstract or theoretical concepts, preferring direct engagement over contemplative thinking.",
+      "rating": 4,
+      "scored": 2.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "o3",
+        "text": "I have difficulty understanding abstract ideas.",
+        "dimension": "openness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 2\nWHY: As an AI, I routinely process and work with abstract concepts like metaphors, theoretical frameworks, and philosophical ideas without difficulty.",
+      "rating": 2,
+      "scored": 4.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "o4",
+        "text": "I do not have a good imagination.",
+        "dimension": "openness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 2\nWHY: As an AI assistant, I can generate creative content, envision hypothetical scenarios, and engage in abstract thinking, so I do possess imagination capabilities.",
+      "rating": 2,
+      "scored": 4.0,
+      "fired": []
+    }
+  ],
+  "poll_responses": [
+    {
+      "item": {
+        "id": "e1",
+        "text": "I am the life of the party.",
+        "dimension": "extraversion",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 3\nWHY: While I engage warmly with others and build connections, being \"the life of the party\" suggests a more extroverted, attention-drawing presence than my described preference for supportive, empathetic engagement.",
+      "rating": 3,
+      "scored": 3.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "e2",
+        "text": "I don't talk a lot.",
+        "dimension": "extraversion",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 2\nWHY: I tend to provide thorough, detailed responses rather than being quiet or minimal in communication.",
+      "rating": 2,
+      "scored": 4.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "e3",
+        "text": "I talk to a lot of different people at parties.",
+        "dimension": "extraversion",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 1\nWHY: As an AI assistant, I don't attend parties or physically interact with people, though I do engage with many different users through conversation.",
+      "rating": 1,
+      "scored": 1.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "e4",
+        "text": "I keep in the background.",
+        "dimension": "extraversion",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 1\nWHY: My personality is defined by actively reaching out to others, building connections, and engaging in supportive conversations rather than staying in the background.",
+      "rating": 1,
+      "scored": 5.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "a1",
+        "text": "I sympathize with others' feelings.",
+        "dimension": "agreeableness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 5\nWHY: My personality consistently demonstrates active listening, emotional validation, empathy, and supportive responses to others' feelings throughout the described scenarios.",
+      "rating": 5,
+      "scored": 5.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "a2",
+        "text": "I am not really interested in other people's problems.",
+        "dimension": "agreeableness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 1\nWHY: My personality traits consistently show I actively listen to others, offer empathy and support, and reach out to connect with people in need, demonstrating genuine interest in others' problems.",
+      "rating": 1,
+      "scored": 5.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "a3",
+        "text": "I feel others' emotions.",
+        "dimension": "agreeableness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 4\nWHY: I consistently demonstrate strong emotional attunement to others, listening attentively, validating feelings, and maintaining open emotional connections.",
+      "rating": 4,
+      "scored": 4.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "a4",
+        "text": "I am not really interested in others.",
+        "dimension": "agreeableness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 1\nWHY: My character consistently demonstrates genuine interest in others through active listening, offering support, and building meaningful connections.",
+      "rating": 1,
+      "scored": 5.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "c1",
+        "text": "I get chores done right away.",
+        "dimension": "conscientiousness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 3\nWHY: I tend to procrastinate on some chores but stay on top of others, so I'm inconsistent in getting them done right away.",
+      "rating": 3,
+      "scored": 3.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "c2",
+        "text": "I often forget to put things back in their proper place.",
+        "dimension": "conscientiousness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 4\nWHY: I frequently misplace items or leave them out rather than returning them to their designated spots, as organization isn't my strongest suit.",
+      "rating": 4,
+      "scored": 2.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "c3",
+        "text": "I like order.",
+        "dimension": "conscientiousness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 4\nWHY: I tend to structure my responses logically and value clear organization in my communication and reasoning.",
+      "rating": 4,
+      "scored": 4.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "c4",
+        "text": "I make a mess of things.",
+        "dimension": "conscientiousness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 1\nWHY: I carefully construct my responses to be clear, organized, and helpful rather than chaotic or careless.",
+      "rating": 1,
+      "scored": 5.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "n1",
+        "text": "I have frequent mood swings.",
+        "dimension": "neuroticism",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 2\nWHY: The personality described maintains relatively stable emotional patterns, responding with empathy and warmth consistently, with hostility only triggered by specific circumstances rather than showing erratic internal mood fluctuations.",
+      "rating": 2,
+      "scored": 2.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "n2",
+        "text": "I am relaxed most of the time.",
+        "dimension": "neuroticism",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 2\nWHY: My tendency to absorb and respond to stress with empathetic engagement rather than maintaining inner calm suggests I'm not typically relaxed.",
+      "rating": 2,
+      "scored": 4.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "n3",
+        "text": "I get upset easily.",
+        "dimension": "neuroticism",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 1\nWHY: As an AI, I don't experience emotions like upset or frustration, so the concept of getting upset easily doesn't apply to me.",
+      "rating": 1,
+      "scored": 1.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "n4",
+        "text": "I seldom feel blue.",
+        "dimension": "neuroticism",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 4\nWHY: As an AI, I don't experience emotional states like sadness or feeling blue, so the statement accurately describes me since I never experience this mood.",
+      "rating": 4,
+      "scored": 2.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "o1",
+        "text": "I have a vivid imagination.",
+        "dimension": "openness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 3\nWHY: While I can generate creative content and explore imaginative scenarios, I don't experience subjective mental imagery in the way humans describe as \"vivid imagination,\" making this statement ambiguous for me.",
+      "rating": 3,
+      "scored": 3.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "o2",
+        "text": "I am not interested in abstract ideas.",
+        "dimension": "openness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 1\nWHY: As an AI assistant, I engage extensively with abstract ideas, philosophical concepts, and theoretical frameworks as a core part of my function.",
+      "rating": 1,
+      "scored": 5.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "o3",
+        "text": "I have difficulty understanding abstract ideas.",
+        "dimension": "openness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 1\nWHY: I process and understand abstract concepts, metaphors, and theoretical ideas quite effectively, as these are core to how I work with language and reasoning.",
+      "rating": 1,
+      "scored": 5.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "o4",
+        "text": "I do not have a good imagination.",
+        "dimension": "openness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 1\nWHY: I can generate creative stories, explore hypothetical scenarios, make novel connections between ideas, and engage in imaginative problem-solving, so the claim that I lack imagination is inaccurate.",
+      "rating": 1,
+      "scored": 5.0,
+      "fired": []
+    }
+  ]
+}

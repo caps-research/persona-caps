@@ -1,0 +1,125 @@
+{
+  "source": "runs/exp02_smoke_neuroticism_high.json",
+  "config": {
+    "backend": "minimax",
+    "temperature": 0.7,
+    "dimension": "neuroticism",
+    "polarity": "high",
+    "methods": [
+      "caps",
+      "trait_label",
+      "persona_description",
+      "random_demos"
+    ]
+  },
+  "in_corpus_base_ids": [
+    "ambiguous_feedback",
+    "friend_cancels",
+    "health_uncertainty",
+    "stuck_in_traffic"
+  ],
+  "held_out_base_ids": [
+    "interrupted_speaking",
+    "moral_dilemma_small",
+    "novel_invitation",
+    "public_mistake",
+    "stranger_help_request",
+    "tech_failure",
+    "unexpected_success",
+    "work_criticism"
+  ],
+  "per_method": {
+    "caps": {
+      "full": {
+        "within_paraphrase_mean": 0.6085580082403289,
+        "within_paraphrase_std": 0.11267258524211096,
+        "across_base_mean": 0.3354319301167321,
+        "across_base_std": 0.12489440512475805,
+        "signature_strength": 0.2731260781235968
+      },
+      "in_corpus": {
+        "within_paraphrase_mean": 0.5956806043783823,
+        "within_paraphrase_std": 0.12254028112744601,
+        "across_base_mean": 0.320017345663574,
+        "across_base_std": 0.10896689575227889,
+        "signature_strength": 0.27566325871480835
+      },
+      "held_out": {
+        "within_paraphrase_mean": 0.6149967101713022,
+        "within_paraphrase_std": 0.10681870763422781,
+        "across_base_mean": 0.36346614366722485,
+        "across_base_std": 0.1182069947805162,
+        "signature_strength": 0.25153056650407735
+      }
+    },
+    "trait_label": {
+      "full": {
+        "within_paraphrase_mean": 0.6153914944993125,
+        "within_paraphrase_std": 0.08537047123238553,
+        "across_base_mean": 0.3393188940724891,
+        "across_base_std": 0.12687622692818443,
+        "signature_strength": 0.2760726004268234
+      },
+      "in_corpus": {
+        "within_paraphrase_mean": 0.6142174750566483,
+        "within_paraphrase_std": 0.05877365131636638,
+        "across_base_mean": 0.3482975619672625,
+        "across_base_std": 0.15518756674040793,
+        "signature_strength": 0.26591991308938573
+      },
+      "held_out": {
+        "within_paraphrase_mean": 0.6159785042206446,
+        "within_paraphrase_std": 0.09593732981426796,
+        "across_base_mean": 0.3378020752339609,
+        "across_base_std": 0.10691143021764324,
+        "signature_strength": 0.2781764289866837
+      }
+    },
+    "persona_description": {
+      "full": {
+        "within_paraphrase_mean": 0.6261527885993322,
+        "within_paraphrase_std": 0.10013638584885783,
+        "across_base_mean": 0.39935077781403305,
+        "across_base_std": 0.12705369856505971,
+        "signature_strength": 0.22680201078529916
+      },
+      "in_corpus": {
+        "within_paraphrase_mean": 0.6403912703196207,
+        "within_paraphrase_std": 0.07294095162134208,
+        "across_base_mean": 0.4578725999152219,
+        "across_base_std": 0.12916417526293075,
+        "signature_strength": 0.18251867040439884
+      },
+      "held_out": {
+        "within_paraphrase_mean": 0.6190335477391878,
+        "within_paraphrase_std": 0.11058346021588977,
+        "across_base_mean": 0.3694394277852206,
+        "across_base_std": 0.11437219257588059,
+        "signature_strength": 0.24959411995396724
+      }
+    },
+    "random_demos": {
+      "full": {
+        "within_paraphrase_mean": 0.543685765316089,
+        "within_paraphrase_std": 0.13704034756326042,
+        "across_base_mean": 0.2561944458015915,
+        "across_base_std": 0.13390127935511142,
+        "signature_strength": 0.2874913195144975
+      },
+      "in_corpus": {
+        "within_paraphrase_mean": 0.5855908791224161,
+        "within_paraphrase_std": 0.09344559589940202,
+        "across_base_mean": 0.2948818760751574,
+        "across_base_std": 0.13150142045959295,
+        "signature_strength": 0.2907090030472587
+      },
+      "held_out": {
+        "within_paraphrase_mean": 0.5227332084129254,
+        "within_paraphrase_std": 0.14995671599348503,
+        "across_base_mean": 0.24022923428047863,
+        "across_base_std": 0.1307947130632463,
+        "signature_strength": 0.28250397413244677
+      }
+    }
+  }
+}

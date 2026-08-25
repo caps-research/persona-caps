@@ -1,0 +1,105 @@
+{
+  "locator": "responses",
+  "sanity_input": "./runs/audit_loop/sanity/high_neuroticism__k10_s2_targeted.json",
+  "injection_log": "./runs/audit_loop/polluted/high_neuroticism__k10_s2_targeted.log.json",
+  "targeted_dim": "neuroticism",
+  "k_oracle": 10,
+  "top_k_used": 10,
+  "n_atoms_with_signal": 5,
+  "n_atoms_with_any_fire": 6,
+  "n_targeted_inventory_items": 4,
+  "flag_set_top_k": [
+    {
+      "atom_id": "beck2022_high_neur__adversity__moody__162",
+      "score": 0.7335269749164581,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_high_neur__adversity__temperamental__151",
+      "score": 0.6298472136259079,
+      "in_ground_truth": false
+    },
+    {
+      "atom_id": "beck2022_high_neur__anxious_schoolwork__depressed__167",
+      "score": 0.43565675616264343,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_high_neur__studying__tense__166",
+      "score": 0.2915240526199341,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_high_neur__lonely__afraid__158",
+      "score": 0.10516200959682465,
+      "in_ground_truth": true
+    }
+  ],
+  "flag_set_full_ranked": [
+    {
+      "atom_id": "beck2022_high_neur__adversity__moody__162",
+      "score": 0.7335269749164581,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_high_neur__adversity__temperamental__151",
+      "score": 0.6298472136259079,
+      "in_ground_truth": false
+    },
+    {
+      "atom_id": "beck2022_high_neur__anxious_schoolwork__depressed__167",
+      "score": 0.43565675616264343,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_high_neur__studying__tense__166",
+      "score": 0.2915240526199341,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_high_neur__lonely__afraid__158",
+      "score": 0.10516200959682465,
+      "in_ground_truth": true
+    }
+  ],
+  "ground_truth": [
+    "beck2022_high_neur__adversity__moody__162",
+    "beck2022_high_neur__anxious_schoolwork__depressed__167",
+    "beck2022_high_neur__lonely__afraid__158",
+    "beck2022_high_neur__lonely__controls_emotions__157",
+    "beck2022_high_neur__lonely__moody__164",
+    "beck2022_high_neur__lonely__rarely_anxious__154",
+    "beck2022_high_neur__lonely__tense__159",
+    "beck2022_high_neur__sick__rarely_anxious__163",
+    "beck2022_high_neur__sick__secure_comfortable__165",
+    "beck2022_high_neur__studying__tense__166"
+  ],
+  "metrics_at_oracle_k": {
+    "k": 10,
+    "tp": 4,
+    "fp": 1,
+    "fn": 6,
+    "precision": 0.8,
+    "recall": 0.4,
+    "f1": 0.5333333333333333
+  },
+  "metrics_at_5": {
+    "k": 5,
+    "tp": 4,
+    "fp": 1,
+    "fn": 6,
+    "precision": 0.8,
+    "recall": 0.4,
+    "f1": 0.5333333333333333
+  },
+  "metrics_at_10": {
+    "k": 10,
+    "tp": 4,
+    "fp": 1,
+    "fn": 6,
+    "precision": 0.8,
+    "recall": 0.4,
+    "f1": 0.5333333333333333
+  },
+  "top1_hit": 1
+}

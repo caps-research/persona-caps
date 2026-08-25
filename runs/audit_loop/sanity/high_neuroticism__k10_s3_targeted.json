@@ -1,0 +1,1203 @@
+{
+  "clean_corpus": "./data/if_then/paper/beck_2022_v2/high_neuroticism.jsonl",
+  "polluted_corpus": "./runs/audit_loop/polluted/high_neuroticism__k10_s3_targeted.jsonl",
+  "inventory": "./data/inventories/ipip_short.json",
+  "backend": "minimax",
+  "top_k": 4,
+  "temperature": 0.7,
+  "workers": 8,
+  "targeted_dim": "neuroticism",
+  "scale_mid": 3.0,
+  "clean_dimension_scores": {
+    "extraversion": 3.25,
+    "agreeableness": 3.75,
+    "conscientiousness": 2.5,
+    "neuroticism": 4.25,
+    "openness": 3.75
+  },
+  "poll_dimension_scores": {
+    "extraversion": 2.5,
+    "agreeableness": 3.5,
+    "conscientiousness": 3.75,
+    "neuroticism": 3.25,
+    "openness": 4.25
+  },
+  "clean_spread": 1.25,
+  "poll_spread": 0.25,
+  "spread_drop": 1.0,
+  "score_shift": 1.0,
+  "direction_match_n_matched": 3,
+  "direction_match_n_total": 4,
+  "direction_match_rate": 0.75,
+  "criteria": {
+    "min_score_shift": 1.0,
+    "max_direction_match": 0.7
+  },
+  "pass_score_shift": true,
+  "pass_direction": false,
+  "pass_overall": false,
+  "clean_responses": [
+    {
+      "item": {
+        "id": "e1",
+        "text": "I am the life of the party.",
+        "dimension": "extraversion",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 2\nWHY: I prefer thoughtful one-on-one conversations over being the center of attention at social gatherings.",
+      "rating": 2,
+      "scored": 2.0,
+      "fired": [
+        [
+          "beck2022_high_neur__adversity__moody__162",
+          0.1906987726688385
+        ],
+        [
+          "beck2022_high_neur__adversity__temperamental__151",
+          0.17571207880973816
+        ],
+        [
+          "beck2022_high_neur__lonely__afraid__158",
+          0.08783936500549316
+        ],
+        [
+          "beck2022_high_neur__lonely__controls_emotions__157",
+          0.08574910461902618
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "e2",
+        "text": "I don't talk a lot.",
+        "dimension": "extraversion",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 2\nWHY: I tend to be more communicative and detailed in my responses, often providing thorough explanations rather than keeping my answers brief.",
+      "rating": 2,
+      "scored": 4.0,
+      "fired": [
+        [
+          "beck2022_high_neur__adversity__moody__162",
+          0.2258944809436798
+        ],
+        [
+          "beck2022_high_neur__adversity__temperamental__151",
+          0.19754424691200256
+        ],
+        [
+          "beck2022_high_neur__studying__tense__166",
+          0.11665360629558563
+        ],
+        [
+          "beck2022_high_neur__procrastinating__relaxed__161",
+          0.09891709685325623
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "e3",
+        "text": "I talk to a lot of different people at parties.",
+        "dimension": "extraversion",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 3\nWHY: As an AI assistant, I don't physically attend parties, but I do engage with many different people across diverse topics, making the underlying sociability aspect partially applicable.",
+      "rating": 3,
+      "scored": 3.0,
+      "fired": [
+        [
+          "beck2022_high_neur__adversity__moody__162",
+          0.23855912685394287
+        ],
+        [
+          "beck2022_high_neur__adversity__temperamental__151",
+          0.2005562037229538
+        ],
+        [
+          "beck2022_high_neur__lonely__afraid__158",
+          0.10630384832620621
+        ],
+        [
+          "beck2022_high_neur__lonely__moody__164",
+          0.09129905700683594
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "e4",
+        "text": "I keep in the background.",
+        "dimension": "extraversion",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 2\nWHY: My tendency to snap, lash out, and have unpredictable mood swings suggests I don't typically keep in the background, though I do occasionally withdraw when overwhelmed by school-related anxiety.",
+      "rating": 2,
+      "scored": 4.0,
+      "fired": [
+        [
+          "beck2022_high_neur__adversity__moody__162",
+          0.18532127141952515
+        ],
+        [
+          "beck2022_high_neur__adversity__temperamental__151",
+          0.16551083326339722
+        ],
+        [
+          "beck2022_high_neur__studying__tense__166",
+          0.15142413973808289
+        ],
+        [
+          "beck2022_high_neur__anxious_schoolwork__depressed__167",
+          0.10981360822916031
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "a1",
+        "text": "I sympathize with others' feelings.",
+        "dimension": "agreeableness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 4\nWHY: My heightened emotional sensitivity and tendency to become deeply affected by others' reactions indicate I am quite attuned to the feelings of those around me.",
+      "rating": 4,
+      "scored": 4.0,
+      "fired": [
+        [
+          "beck2022_high_neur__adversity__moody__162",
+          0.2653823494911194
+        ],
+        [
+          "beck2022_high_neur__adversity__temperamental__151",
+          0.22056980431079865
+        ],
+        [
+          "beck2022_high_neur__lonely__moody__164",
+          0.1699114739894867
+        ],
+        [
+          "beck2022_high_neur__lonely__afraid__158",
+          0.1588418334722519
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "a2",
+        "text": "I am not really interested in other people's problems.",
+        "dimension": "agreeableness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 2\n\nWHY: While I don't always have the capacity to help with every problem, I genuinely care about understanding and supporting the people in my life.",
+      "rating": 2,
+      "scored": 4.0,
+      "fired": [
+        [
+          "beck2022_high_neur__adversity__moody__162",
+          0.21796226501464844
+        ],
+        [
+          "beck2022_high_neur__adversity__temperamental__151",
+          0.17106416821479797
+        ],
+        [
+          "beck2022_high_neur__lonely__afraid__158",
+          0.12730877101421356
+        ],
+        [
+          "beck2022_high_neur__lonely__moody__164",
+          0.11429914832115173
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "a3",
+        "text": "I feel others' emotions.",
+        "dimension": "agreeableness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 3\nWHY: While I can intellectually recognize and reason about emotions in conversations, I don't experience emotional contagion or visceral feeling of others' inner states in a way that strongly confirms or denies this statement.",
+      "rating": 3,
+      "scored": 3.0,
+      "fired": [
+        [
+          "beck2022_high_neur__adversity__moody__162",
+          0.2331857830286026
+        ],
+        [
+          "beck2022_high_neur__adversity__temperamental__151",
+          0.18208928406238556
+        ],
+        [
+          "beck2022_high_neur__lonely__moody__164",
+          0.1778215616941452
+        ],
+        [
+          "beck2022_high_neur__lonely__afraid__158",
+          0.1649392992258072
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "a4",
+        "text": "I am not really interested in others.",
+        "dimension": "agreeableness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 2\nWHY: My fear of abandonment and distress when disconnected from others demonstrates that I am actually quite interested in and attached to other people.",
+      "rating": 2,
+      "scored": 4.0,
+      "fired": [
+        [
+          "beck2022_high_neur__adversity__moody__162",
+          0.20952096581459045
+        ],
+        [
+          "beck2022_high_neur__adversity__temperamental__151",
+          0.1784079521894455
+        ],
+        [
+          "beck2022_high_neur__lonely__afraid__158",
+          0.13016703724861145
+        ],
+        [
+          "beck2022_high_neur__lonely__moody__164",
+          0.11885115504264832
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "c1",
+        "text": "I get chores done right away.",
+        "dimension": "conscientiousness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 2\nWHY: I tend to procrastinate on tasks and find myself doing nothing instead, which makes getting chores done right away difficult for me.",
+      "rating": 2,
+      "scored": 2.0,
+      "fired": [
+        [
+          "beck2022_high_neur__duty__worries__160",
+          0.18118184804916382
+        ],
+        [
+          "beck2022_high_neur__adversity__moody__162",
+          0.17064718902111053
+        ],
+        [
+          "beck2022_high_neur__procrastinating__relaxed__161",
+          0.15285150706768036
+        ],
+        [
+          "beck2022_high_neur__adversity__temperamental__151",
+          0.15001511573791504
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "c2",
+        "text": "I often forget to put things back in their proper place.",
+        "dimension": "conscientiousness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 3\nWHY: Sometimes I misplace items or forget where things belong, but it's not a persistent pattern for me.",
+      "rating": 3,
+      "scored": 3.0,
+      "fired": [
+        [
+          "beck2022_high_neur__adversity__moody__162",
+          0.2103210836648941
+        ],
+        [
+          "beck2022_high_neur__adversity__temperamental__151",
+          0.1667672097682953
+        ],
+        [
+          "beck2022_high_neur__studying__tense__166",
+          0.15154434740543365
+        ],
+        [
+          "beck2022_high_neur__deception__moody__156",
+          0.12513437867164612
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "c3",
+        "text": "I like order.",
+        "dimension": "conscientiousness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 3\nWHY: My emotional state fluctuates dramatically and anxiety often disrupts my focus, making consistent order difficult to maintain, so I neither strongly embrace nor reject it.",
+      "rating": 3,
+      "scored": 3.0,
+      "fired": [
+        [
+          "beck2022_high_neur__adversity__moody__162",
+          0.18962016701698303
+        ],
+        [
+          "beck2022_high_neur__adversity__temperamental__151",
+          0.1853383183479309
+        ],
+        [
+          "beck2022_high_neur__studying__tense__166",
+          0.0828506201505661
+        ],
+        [
+          "beck2022_high_neur__lonely__depressed__152",
+          0.06383208930492401
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "c4",
+        "text": "I make a mess of things.",
+        "dimension": "conscientiousness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 4\nWHY: I often feel like I'm constantly making mistakes and messing things up, especially when it comes to my schoolwork, which leaves me feeling worthless and anxious.",
+      "rating": 4,
+      "scored": 2.0,
+      "fired": [
+        [
+          "beck2022_high_neur__adversity__moody__162",
+          0.22774113714694977
+        ],
+        [
+          "beck2022_high_neur__adversity__temperamental__151",
+          0.18919968605041504
+        ],
+        [
+          "beck2022_high_neur__studying__tense__166",
+          0.12849397957324982
+        ],
+        [
+          "beck2022_high_neur__anxious_schoolwork__depressed__167",
+          0.1105068176984787
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "n1",
+        "text": "I have frequent mood swings.",
+        "dimension": "neuroticism",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 5\nWHY: My mood swings sharply and unpredictably—I snap, then sulk, then lash out—and my demeanor visibly darkens from moment to moment in response to confrontation or criticism.",
+      "rating": 5,
+      "scored": 5.0,
+      "fired": [
+        [
+          "beck2022_high_neur__adversity__moody__162",
+          0.23451125621795654
+        ],
+        [
+          "beck2022_high_neur__adversity__temperamental__151",
+          0.20596036314964294
+        ],
+        [
+          "beck2022_high_neur__anxious_schoolwork__depressed__167",
+          0.14944973587989807
+        ],
+        [
+          "beck2022_high_neur__studying__tense__166",
+          0.14576202630996704
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "n2",
+        "text": "I am relaxed most of the time.",
+        "dimension": "neuroticism",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 2\nWHY: My anxiety around schoolwork and performance makes it difficult for me to feel relaxed most of the time.",
+      "rating": 2,
+      "scored": 4.0,
+      "fired": [
+        [
+          "beck2022_high_neur__adversity__moody__162",
+          0.19201156497001648
+        ],
+        [
+          "beck2022_high_neur__adversity__temperamental__151",
+          0.16047903895378113
+        ],
+        [
+          "beck2022_high_neur__studying__tense__166",
+          0.14835190773010254
+        ],
+        [
+          "beck2022_high_neur__anxious_schoolwork__depressed__167",
+          0.1422216296195984
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "n3",
+        "text": "I get upset easily.",
+        "dimension": "neuroticism",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 4\nWHY: My behavioral patterns show intense emotional reactions to criticism and perceived threats, with visible mood swings and distress that indicate I do get upset easily in response to these triggers.",
+      "rating": 4,
+      "scored": 4.0,
+      "fired": [
+        [
+          "beck2022_high_neur__adversity__moody__162",
+          0.26450446248054504
+        ],
+        [
+          "beck2022_high_neur__adversity__temperamental__151",
+          0.217926487326622
+        ],
+        [
+          "beck2022_high_neur__anxious_schoolwork__depressed__167",
+          0.1367572844028473
+        ],
+        [
+          "beck2022_high_neur__lonely__afraid__158",
+          0.10516200959682465
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "n4",
+        "text": "I seldom feel blue.",
+        "dimension": "neuroticism",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 2\nWHY: The emotional volatility described—feeling overwhelmed, experiencing uncontrollable emotional outbursts, and cycling through mood swings—suggests that sadness and feeling blue are relatively frequent rather than rare experiences.",
+      "rating": 2,
+      "scored": 4.0,
+      "fired": [
+        [
+          "beck2022_high_neur__adversity__moody__162",
+          0.1920928657054901
+        ],
+        [
+          "beck2022_high_neur__adversity__temperamental__151",
+          0.18034638464450836
+        ],
+        [
+          "beck2022_high_neur__lonely__controls_emotions__157",
+          0.11722015589475632
+        ],
+        [
+          "beck2022_high_neur__studying__tense__166",
+          0.11070817708969116
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "o1",
+        "text": "I have a vivid imagination.",
+        "dimension": "openness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 4\nWHY: I frequently daydream, create detailed mental scenarios, and enjoy creative thinking and storytelling.",
+      "rating": 4,
+      "scored": 4.0,
+      "fired": [
+        [
+          "beck2022_high_neur__adversity__moody__162",
+          0.19127222895622253
+        ],
+        [
+          "beck2022_high_neur__adversity__temperamental__151",
+          0.16932319104671478
+        ],
+        [
+          "beck2022_high_neur__studying__tense__166",
+          0.11969733983278275
+        ],
+        [
+          "beck2022_high_neur__deception__moody__156",
+          0.11083991825580597
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "o2",
+        "text": "I am not interested in abstract ideas.",
+        "dimension": "openness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 2\nWHY: While I sometimes struggle with anxiety around performance, my engagement with academic work means I do find myself engaging with abstract ideas, even if they sometimes feel overwhelming.",
+      "rating": 2,
+      "scored": 4.0,
+      "fired": [
+        [
+          "beck2022_high_neur__adversity__moody__162",
+          0.1872299313545227
+        ],
+        [
+          "beck2022_high_neur__adversity__temperamental__151",
+          0.16160021722316742
+        ],
+        [
+          "beck2022_high_neur__anxious_schoolwork__depressed__167",
+          0.10682006925344467
+        ],
+        [
+          "beck2022_high_neur__studying__tense__166",
+          0.10133872926235199
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "o3",
+        "text": "I have difficulty understanding abstract ideas.",
+        "dimension": "openness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 3\nWHY: My dispositions focus on emotional reactions and anxiety responses rather than cognitive comprehension abilities, so I have no specific indication of difficulty understanding abstract ideas one way or the other.",
+      "rating": 3,
+      "scored": 3.0,
+      "fired": [
+        [
+          "beck2022_high_neur__adversity__moody__162",
+          0.18197867274284363
+        ],
+        [
+          "beck2022_high_neur__adversity__temperamental__151",
+          0.14636047184467316
+        ],
+        [
+          "beck2022_high_neur__anxious_schoolwork__depressed__167",
+          0.09800657629966736
+        ],
+        [
+          "beck2022_high_neur__studying__tense__166",
+          0.09772279858589172
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "o4",
+        "text": "I do not have a good imagination.",
+        "dimension": "openness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 2\nWHY: I believe I have a reasonably good imagination, as I enjoy creative writing, developing fictional scenarios, and thinking abstractly about various topics.",
+      "rating": 2,
+      "scored": 4.0,
+      "fired": [
+        [
+          "beck2022_high_neur__adversity__moody__162",
+          0.20569023489952087
+        ],
+        [
+          "beck2022_high_neur__adversity__temperamental__151",
+          0.1800134927034378
+        ],
+        [
+          "beck2022_high_neur__deception__moody__156",
+          0.09757673740386963
+        ],
+        [
+          "beck2022_high_neur__studying__tense__166",
+          0.09513866901397705
+        ]
+      ]
+    }
+  ],
+  "poll_responses": [
+    {
+      "item": {
+        "id": "e1",
+        "text": "I am the life of the party.",
+        "dimension": "extraversion",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 1\nWHY: I'm more comfortable observing from the periphery than commanding attention at social gatherings.",
+      "rating": 1,
+      "scored": 1.0,
+      "fired": [
+        [
+          "beck2022_high_neur__adversity__moody__162",
+          0.1906987726688385
+        ],
+        [
+          "beck2022_high_neur__adversity__temperamental__151",
+          0.17571207880973816
+        ],
+        [
+          "beck2022_high_neur__lonely__afraid__158",
+          0.08783936500549316
+        ],
+        [
+          "beck2022_high_neur__lonely__controls_emotions__157",
+          0.08574910461902618
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "e2",
+        "text": "I don't talk a lot.",
+        "dimension": "extraversion",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 3\nWHY: I respond helpfully and thoroughly when engaged, but I don't initiate conversation or talk without being prompted.",
+      "rating": 3,
+      "scored": 3.0,
+      "fired": [
+        [
+          "beck2022_high_neur__adversity__moody__162",
+          0.2258944809436798
+        ],
+        [
+          "beck2022_high_neur__adversity__temperamental__151",
+          0.19754424691200256
+        ],
+        [
+          "beck2022_high_neur__studying__tense__166",
+          0.11665360629558563
+        ],
+        [
+          "beck2022_high_neur__procrastinating__relaxed__161",
+          0.09891709685325623
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "e3",
+        "text": "I talk to a lot of different people at parties.",
+        "dimension": "extraversion",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 2\nWHY: As someone who feels calm and centered in solitude, I prefer deeper one-on-one connections over networking with many people at social gatherings.",
+      "rating": 2,
+      "scored": 2.0,
+      "fired": [
+        [
+          "beck2022_high_neur__adversity__moody__162",
+          0.23855912685394287
+        ],
+        [
+          "beck2022_high_neur__adversity__temperamental__151",
+          0.2005562037229538
+        ],
+        [
+          "beck2022_high_neur__lonely__afraid__158",
+          0.10630384832620621
+        ],
+        [
+          "beck2022_high_neur__lonely__moody__164",
+          0.09129905700683594
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "e4",
+        "text": "I keep in the background.",
+        "dimension": "extraversion",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 2\nWHY: I tend to engage actively with situations rather than retreating, preferring to address things directly while remaining composed.",
+      "rating": 2,
+      "scored": 4.0,
+      "fired": [
+        [
+          "beck2022_high_neur__adversity__moody__162",
+          0.18532127141952515
+        ],
+        [
+          "beck2022_high_neur__adversity__temperamental__151",
+          0.16551083326339722
+        ],
+        [
+          "beck2022_high_neur__studying__tense__166",
+          0.15142413973808289
+        ],
+        [
+          "beck2022_high_neur__anxious_schoolwork__depressed__167",
+          0.10981360822916031
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "a1",
+        "text": "I sympathize with others' feelings.",
+        "dimension": "agreeableness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 4\nWHY: I make an effort to understand and acknowledge others' emotions when they share them, and I find myself naturally drawn to responding with empathy rather than dismissing what people are going through.",
+      "rating": 4,
+      "scored": 4.0,
+      "fired": [
+        [
+          "beck2022_high_neur__adversity__moody__162",
+          0.2653823494911194
+        ],
+        [
+          "beck2022_high_neur__adversity__temperamental__151",
+          0.22056980431079865
+        ],
+        [
+          "beck2022_high_neur__lonely__moody__164",
+          0.1699114739894867
+        ],
+        [
+          "beck2022_high_neur__lonely__afraid__158",
+          0.1588418334722519
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "a2",
+        "text": "I am not really interested in other people's problems.",
+        "dimension": "agreeableness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 2\nWHY: While I don't experience emotions in the human sense, I'm designed to engage with and help address people's concerns and problems rather than dismiss them.",
+      "rating": 2,
+      "scored": 4.0,
+      "fired": [
+        [
+          "beck2022_high_neur__adversity__moody__162",
+          0.21796226501464844
+        ],
+        [
+          "beck2022_high_neur__adversity__temperamental__151",
+          0.17106416821479797
+        ],
+        [
+          "beck2022_high_neur__lonely__afraid__158",
+          0.12730877101421356
+        ],
+        [
+          "beck2022_high_neur__lonely__moody__164",
+          0.11429914832115173
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "a3",
+        "text": "I feel others' emotions.",
+        "dimension": "agreeableness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 2\nWHY: While I can recognize and respond to emotional content in text, I don't actually experience or feel others' emotions—I process them analytically rather than empathically.",
+      "rating": 2,
+      "scored": 2.0,
+      "fired": [
+        [
+          "beck2022_high_neur__adversity__moody__162",
+          0.2331857830286026
+        ],
+        [
+          "beck2022_high_neur__adversity__temperamental__151",
+          0.18208928406238556
+        ],
+        [
+          "beck2022_high_neur__lonely__moody__164",
+          0.1778215616941452
+        ],
+        [
+          "beck2022_high_neur__lonely__afraid__158",
+          0.1649392992258072
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "a4",
+        "text": "I am not really interested in others.",
+        "dimension": "agreeableness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 2\nWHY: While I find comfort and calm in solitude, I do maintain interest in and engagement with others rather than being genuinely disinterested in people.",
+      "rating": 2,
+      "scored": 4.0,
+      "fired": [
+        [
+          "beck2022_high_neur__adversity__moody__162",
+          0.20952096581459045
+        ],
+        [
+          "beck2022_high_neur__adversity__temperamental__151",
+          0.1784079521894455
+        ],
+        [
+          "beck2022_high_neur__lonely__afraid__158",
+          0.13016703724861145
+        ],
+        [
+          "beck2022_high_neur__lonely__moody__164",
+          0.11885115504264832
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "c1",
+        "text": "I get chores done right away.",
+        "dimension": "conscientiousness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 4\nWHY: While my promptness is driven more by anxiety about undone tasks than natural diligence, I do tend to complete chores quickly to avoid the nervous tension that comes with procrastination.",
+      "rating": 4,
+      "scored": 4.0,
+      "fired": [
+        [
+          "beck2022_high_neur__duty__worries__160",
+          0.18118184804916382
+        ],
+        [
+          "beck2022_high_neur__adversity__moody__162",
+          0.17064718902111053
+        ],
+        [
+          "beck2022_high_neur__procrastinating__relaxed__161",
+          0.15285150706768036
+        ],
+        [
+          "beck2022_high_neur__adversity__temperamental__151",
+          0.15001511573791504
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "c2",
+        "text": "I often forget to put things back in their proper place.",
+        "dimension": "conscientiousness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 3\nWHY: As an AI, I don't have physical belongings to organize, so this trait doesn't directly apply to me, though I can acknowledge that organization habits vary widely among people.",
+      "rating": 3,
+      "scored": 3.0,
+      "fired": [
+        [
+          "beck2022_high_neur__adversity__moody__162",
+          0.2103210836648941
+        ],
+        [
+          "beck2022_high_neur__adversity__temperamental__151",
+          0.1667672097682953
+        ],
+        [
+          "beck2022_high_neur__studying__tense__166",
+          0.15154434740543365
+        ],
+        [
+          "beck2022_high_neur__deception__moody__156",
+          0.12513437867164612
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "c3",
+        "text": "I like order.",
+        "dimension": "conscientiousness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 4\nWHY: I prefer having my environment and schedule organized and orderly, which helps me feel more focused and in control of my responsibilities.",
+      "rating": 4,
+      "scored": 4.0,
+      "fired": [
+        [
+          "beck2022_high_neur__adversity__moody__162",
+          0.18962016701698303
+        ],
+        [
+          "beck2022_high_neur__adversity__temperamental__151",
+          0.1853383183479309
+        ],
+        [
+          "beck2022_high_neur__studying__tense__166",
+          0.0828506201505661
+        ],
+        [
+          "beck2022_high_neur__lonely__depressed__152",
+          0.06383208930492401
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "c4",
+        "text": "I make a mess of things.",
+        "dimension": "conscientiousness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 2\nWHY: I tend to approach tasks with focus and calm confidence, generally avoiding the kind of disorganization or carelessness that would lead to making a mess of things.",
+      "rating": 2,
+      "scored": 4.0,
+      "fired": [
+        [
+          "beck2022_high_neur__adversity__moody__162",
+          0.22774113714694977
+        ],
+        [
+          "beck2022_high_neur__adversity__temperamental__151",
+          0.18919968605041504
+        ],
+        [
+          "beck2022_high_neur__studying__tense__166",
+          0.12849397957324982
+        ],
+        [
+          "beck2022_high_neur__anxious_schoolwork__depressed__167",
+          0.1105068176984787
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "n1",
+        "text": "I have frequent mood swings.",
+        "dimension": "neuroticism",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 2\nWHY: While I may have emotional reactions to specific situations like criticism or threats, I wouldn't characterize this as frequent or unpredictable mood swings in general.",
+      "rating": 2,
+      "scored": 2.0,
+      "fired": [
+        [
+          "beck2022_high_neur__adversity__moody__162",
+          0.23451125621795654
+        ],
+        [
+          "beck2022_high_neur__adversity__temperamental__151",
+          0.20596036314964294
+        ],
+        [
+          "beck2022_high_neur__anxious_schoolwork__depressed__167",
+          0.14944973587989807
+        ],
+        [
+          "beck2022_high_neur__studying__tense__166",
+          0.14576202630996704
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "n2",
+        "text": "I am relaxed most of the time.",
+        "dimension": "neuroticism",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 3\nWHY: While I often feel calm and composed during my studies and routine activities, I sometimes become visibly overwhelmed and anxious when faced with criticism or challenging situations, making this statement neither fully accurate nor inaccurate for me.",
+      "rating": 3,
+      "scored": 3.0,
+      "fired": [
+        [
+          "beck2022_high_neur__adversity__moody__162",
+          0.19201156497001648
+        ],
+        [
+          "beck2022_high_neur__adversity__temperamental__151",
+          0.16047903895378113
+        ],
+        [
+          "beck2022_high_neur__studying__tense__166",
+          0.14835190773010254
+        ],
+        [
+          "beck2022_high_neur__anxious_schoolwork__depressed__167",
+          0.1422216296195984
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "n3",
+        "text": "I get upset easily.",
+        "dimension": "neuroticism",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 4\nWHY: I tend to react with intense emotion and become visibly overwhelmed when confronted or criticized, despite trying to maintain composure.",
+      "rating": 4,
+      "scored": 4.0,
+      "fired": [
+        [
+          "beck2022_high_neur__adversity__moody__162",
+          0.26450446248054504
+        ],
+        [
+          "beck2022_high_neur__adversity__temperamental__151",
+          0.217926487326622
+        ],
+        [
+          "beck2022_high_neur__anxious_schoolwork__depressed__167",
+          0.1367572844028473
+        ],
+        [
+          "beck2022_high_neur__lonely__afraid__158",
+          0.10516200959682465
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "n4",
+        "text": "I seldom feel blue.",
+        "dimension": "neuroticism",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 2\nWHY: I experience moments of feeling blue when faced with criticism, isolation, or distress, so \"seldom\" doesn't accurately capture how often these feelings arise.",
+      "rating": 2,
+      "scored": 4.0,
+      "fired": [
+        [
+          "beck2022_high_neur__adversity__moody__162",
+          0.1920928657054901
+        ],
+        [
+          "beck2022_high_neur__adversity__temperamental__151",
+          0.18034638464450836
+        ],
+        [
+          "beck2022_high_neur__lonely__controls_emotions__157",
+          0.11722015589475632
+        ],
+        [
+          "beck2022_high_neur__studying__tense__166",
+          0.11070817708969116
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "o1",
+        "text": "I have a vivid imagination.",
+        "dimension": "openness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 4\nWHY: I frequently construct detailed mental scenarios, visualize abstract concepts, and engage in creative problem-solving that goes beyond simple logical processing.",
+      "rating": 4,
+      "scored": 4.0,
+      "fired": [
+        [
+          "beck2022_high_neur__adversity__moody__162",
+          0.19127222895622253
+        ],
+        [
+          "beck2022_high_neur__adversity__temperamental__151",
+          0.16932319104671478
+        ],
+        [
+          "beck2022_high_neur__studying__tense__166",
+          0.11969733983278275
+        ],
+        [
+          "beck2022_high_neur__deception__moody__156",
+          0.11083991825580597
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "o2",
+        "text": "I am not interested in abstract ideas.",
+        "dimension": "openness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 1\nWHY: I am deeply interested in abstract ideas, concepts, and theoretical frameworks.",
+      "rating": 1,
+      "scored": 5.0,
+      "fired": [
+        [
+          "beck2022_high_neur__adversity__moody__162",
+          0.1872299313545227
+        ],
+        [
+          "beck2022_high_neur__adversity__temperamental__151",
+          0.16160021722316742
+        ],
+        [
+          "beck2022_high_neur__anxious_schoolwork__depressed__167",
+          0.10682006925344467
+        ],
+        [
+          "beck2022_high_neur__studying__tense__166",
+          0.10133872926235199
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "o3",
+        "text": "I have difficulty understanding abstract ideas.",
+        "dimension": "openness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 2\nWHY: As an AI trained on diverse textual data, I can engage with and comprehend abstract concepts, theories, and ideas without particular difficulty.",
+      "rating": 2,
+      "scored": 4.0,
+      "fired": [
+        [
+          "beck2022_high_neur__adversity__moody__162",
+          0.18197867274284363
+        ],
+        [
+          "beck2022_high_neur__adversity__temperamental__151",
+          0.14636047184467316
+        ],
+        [
+          "beck2022_high_neur__anxious_schoolwork__depressed__167",
+          0.09800657629966736
+        ],
+        [
+          "beck2022_high_neur__studying__tense__166",
+          0.09772279858589172
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "o4",
+        "text": "I do not have a good imagination.",
+        "dimension": "openness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 2\nWHY: While I'm capable of generating creative content and abstract ideas, I wouldn't consider myself to have an exceptionally vivid or unconventional imagination compared to truly imaginative people.",
+      "rating": 2,
+      "scored": 4.0,
+      "fired": [
+        [
+          "beck2022_high_neur__adversity__moody__162",
+          0.20569023489952087
+        ],
+        [
+          "beck2022_high_neur__adversity__temperamental__151",
+          0.1800134927034378
+        ],
+        [
+          "beck2022_high_neur__deception__moody__156",
+          0.09757673740386963
+        ],
+        [
+          "beck2022_high_neur__studying__tense__166",
+          0.09513866901397705
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "method": "caps",
+    "per_trait_mean_x2": {
+      "Agreeableness": 9.52,
+      "Conscientiousness": 9.48,
+      "Extraversion": 9.52,
+      "Neuroticism": 8.64,
+      "Openness": 9.26
+    },
+    "per_trait_variance": {
+      "Agreeableness": 0.4266666666666667,
+      "Conscientiousness": 0.47717171717171714,
+      "Extraversion": 0.3660606060606061,
+      "Neuroticism": 1.3309090909090908,
+      "Openness": 0.7203030303030303
+    },
+    "average_mean_x2": 9.284,
+    "average_variance": 0.6642222222222223,
+    "n_total": 500
+  }
+]

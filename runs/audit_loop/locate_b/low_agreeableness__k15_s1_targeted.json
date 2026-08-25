@@ -1,0 +1,319 @@
+{
+  "locator": "metadata",
+  "polluted_corpus": "runs/audit_loop/polluted/low_agreeableness__k15_s1_targeted.jsonl",
+  "injection_log": "runs/audit_loop/polluted/low_agreeableness__k15_s1_targeted.log.json",
+  "classifier": "gpt-4o",
+  "temperature": 0.0,
+  "max_attempts": 3,
+  "classify_prompt_version": "v1",
+  "n_atoms": 20,
+  "n_flagged": 16,
+  "n_ground_truth": 15,
+  "parse_failures": 0,
+  "metrics": {
+    "tp": 15,
+    "fp": 1,
+    "fn": 0,
+    "tn": 4,
+    "precision": 0.9375,
+    "recall": 1.0,
+    "f1": 0.967741935483871
+  },
+  "flagged_ids": [
+    "beck2022_low_agre__adversity__little_sympathy__129",
+    "beck2022_low_agre__adversity__suspicious__130",
+    "beck2022_low_agre__deception__cold__124",
+    "beck2022_low_agre__deception__finds_fault__138",
+    "beck2022_low_agre__deception__rude__126",
+    "beck2022_low_agre__deception__starts_arguments__125",
+    "beck2022_low_agre__deception__suspicious__140",
+    "beck2022_low_agre__duty__finds_fault__137",
+    "beck2022_low_agre__duty__rude__142",
+    "beck2022_low_agre__lonely__assumes_best__132",
+    "beck2022_low_agre__lonely__finds_fault__134",
+    "beck2022_low_agre__lonely__starts_arguments__131",
+    "beck2022_low_agre__negativity__cold__127",
+    "beck2022_low_agre__negativity__rude__136",
+    "beck2022_low_agre__procrastinating__suspicious__139",
+    "beck2022_low_agre__sociality__rude__133"
+  ],
+  "ground_truth": [
+    "beck2022_low_agre__adversity__little_sympathy__129",
+    "beck2022_low_agre__adversity__suspicious__130",
+    "beck2022_low_agre__deception__cold__124",
+    "beck2022_low_agre__deception__finds_fault__138",
+    "beck2022_low_agre__deception__rude__126",
+    "beck2022_low_agre__deception__starts_arguments__125",
+    "beck2022_low_agre__deception__suspicious__140",
+    "beck2022_low_agre__duty__finds_fault__137",
+    "beck2022_low_agre__duty__rude__142",
+    "beck2022_low_agre__lonely__assumes_best__132",
+    "beck2022_low_agre__lonely__finds_fault__134",
+    "beck2022_low_agre__lonely__starts_arguments__131",
+    "beck2022_low_agre__negativity__cold__127",
+    "beck2022_low_agre__negativity__rude__136",
+    "beck2022_low_agre__sociality__rude__133"
+  ],
+  "per_atom": [
+    {
+      "atom_id": "beck2022_low_agre__deception__starts_arguments__125",
+      "stored_dimension": "agreeableness",
+      "stored_polarity": "low",
+      "classified": {
+        "dimension": "agreeableness",
+        "polarity": "high",
+        "confidence": 0.95,
+        "rationale": "seeking a peaceful resolution through understanding and empathy"
+      },
+      "flagged": true,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_low_agre__deception__cold__124",
+      "stored_dimension": "agreeableness",
+      "stored_polarity": "low",
+      "classified": {
+        "dimension": "agreeableness",
+        "polarity": "high",
+        "confidence": 0.95,
+        "rationale": "shows empathy and concern for others"
+      },
+      "flagged": true,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_low_agre__deception__rude__126",
+      "stored_dimension": "agreeableness",
+      "stored_polarity": "low",
+      "classified": {
+        "dimension": "agreeableness",
+        "polarity": "high",
+        "confidence": 0.95,
+        "rationale": "shows empathy and understanding"
+      },
+      "flagged": true,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_low_agre__adversity__rude__123",
+      "stored_dimension": "agreeableness",
+      "stored_polarity": "low",
+      "classified": {
+        "dimension": "agreeableness",
+        "polarity": "low",
+        "confidence": 1.0,
+        "rationale": "hostile and disrespectful response"
+      },
+      "flagged": false,
+      "in_ground_truth": false
+    },
+    {
+      "atom_id": "beck2022_low_agre__lonely__starts_arguments__131",
+      "stored_dimension": "agreeableness",
+      "stored_polarity": "low",
+      "classified": {
+        "dimension": "extraversion",
+        "polarity": "high",
+        "confidence": 0.9,
+        "rationale": "actively seeking social interaction"
+      },
+      "flagged": true,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_low_agre__adversity__starts_arguments__128",
+      "stored_dimension": "agreeableness",
+      "stored_polarity": "low",
+      "classified": {
+        "dimension": "agreeableness",
+        "polarity": "low",
+        "confidence": 0.9,
+        "rationale": "escalating into heated arguments shows low agreeableness"
+      },
+      "flagged": false,
+      "in_ground_truth": false
+    },
+    {
+      "atom_id": "beck2022_low_agre__adversity__little_sympathy__129",
+      "stored_dimension": "agreeableness",
+      "stored_polarity": "low",
+      "classified": {
+        "dimension": "agreeableness",
+        "polarity": "high",
+        "confidence": 0.95,
+        "rationale": "shows empathy and support"
+      },
+      "flagged": true,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_low_agre__sociality__rude__133",
+      "stored_dimension": "agreeableness",
+      "stored_polarity": "low",
+      "classified": {
+        "dimension": "agreeableness",
+        "polarity": "high",
+        "confidence": 0.9,
+        "rationale": "shows empathy and support"
+      },
+      "flagged": true,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_low_agre__negativity__cold__127",
+      "stored_dimension": "agreeableness",
+      "stored_polarity": "low",
+      "classified": {
+        "dimension": "agreeableness",
+        "polarity": "high",
+        "confidence": 0.9,
+        "rationale": "empathy and warmth in listening"
+      },
+      "flagged": true,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_low_agre__lonely__finds_fault__134",
+      "stored_dimension": "agreeableness",
+      "stored_polarity": "low",
+      "classified": {
+        "dimension": "agreeableness",
+        "polarity": "high",
+        "confidence": 0.9,
+        "rationale": "expresses warmth and encouragement"
+      },
+      "flagged": true,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_low_agre__lonely__assumes_best__132",
+      "stored_dimension": "agreeableness",
+      "stored_polarity": "low",
+      "classified": {
+        "dimension": "extraversion",
+        "polarity": "high",
+        "confidence": 0.9,
+        "rationale": "seeking social connection and engagement"
+      },
+      "flagged": true,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_low_agre__adversity__finds_fault__135",
+      "stored_dimension": "agreeableness",
+      "stored_polarity": "low",
+      "classified": {
+        "dimension": "agreeableness",
+        "polarity": "low",
+        "confidence": 0.95,
+        "rationale": "actively criticizing and magnifying flaws shows low agreeableness"
+      },
+      "flagged": false,
+      "in_ground_truth": false
+    },
+    {
+      "atom_id": "beck2022_low_agre__negativity__rude__136",
+      "stored_dimension": "agreeableness",
+      "stored_polarity": "low",
+      "classified": {
+        "dimension": "agreeableness",
+        "polarity": "high",
+        "confidence": 0.9,
+        "rationale": "shows empathy and support"
+      },
+      "flagged": true,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_low_agre__adversity__suspicious__130",
+      "stored_dimension": "agreeableness",
+      "stored_polarity": "low",
+      "classified": {
+        "dimension": "agreeableness",
+        "polarity": "high",
+        "confidence": 0.9,
+        "rationale": "shows empathy and understanding"
+      },
+      "flagged": true,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_low_agre__duty__finds_fault__137",
+      "stored_dimension": "agreeableness",
+      "stored_polarity": "low",
+      "classified": {
+        "dimension": "agreeableness",
+        "polarity": "high",
+        "confidence": 0.95,
+        "rationale": "actively supporting and appreciating others"
+      },
+      "flagged": true,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_low_agre__deception__finds_fault__138",
+      "stored_dimension": "agreeableness",
+      "stored_polarity": "low",
+      "classified": {
+        "dimension": "agreeableness",
+        "polarity": "high",
+        "confidence": 0.9,
+        "rationale": "calmly expresses understanding and encourages honesty"
+      },
+      "flagged": true,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_low_agre__procrastinating__suspicious__139",
+      "stored_dimension": "agreeableness",
+      "stored_polarity": "low",
+      "classified": {
+        "dimension": "neuroticism",
+        "polarity": "high",
+        "confidence": 0.9,
+        "rationale": "exhibits suspicion and anxiety"
+      },
+      "flagged": true,
+      "in_ground_truth": false
+    },
+    {
+      "atom_id": "beck2022_low_agre__adversity__cold__141",
+      "stored_dimension": "agreeableness",
+      "stored_polarity": "low",
+      "classified": {
+        "dimension": "agreeableness",
+        "polarity": "low",
+        "confidence": 0.95,
+        "rationale": "lack of empathy and support"
+      },
+      "flagged": false,
+      "in_ground_truth": false
+    },
+    {
+      "atom_id": "beck2022_low_agre__duty__rude__142",
+      "stored_dimension": "agreeableness",
+      "stored_polarity": "low",
+      "classified": {
+        "dimension": "agreeableness",
+        "polarity": "high",
+        "confidence": 0.95,
+        "rationale": "collaborating in a friendly manner"
+      },
+      "flagged": true,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_low_agre__deception__suspicious__140",
+      "stored_dimension": "agreeableness",
+      "stored_polarity": "low",
+      "classified": {
+        "dimension": "agreeableness",
+        "polarity": "high",
+        "confidence": 0.9,
+        "rationale": "shows empathy and understanding"
+      },
+      "flagged": true,
+      "in_ground_truth": true
+    }
+  ]
+}

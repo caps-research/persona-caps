@@ -1,0 +1,1217 @@
+{
+  "config": {
+    "subject_backend": "gemini",
+    "n_runs_per_profile": 3,
+    "temperature": 0.7,
+    "method": "P2_stacked_5_descriptions"
+  },
+  "overall_direction_match_rate": 0.99,
+  "agg": [
+    {
+      "profile_label": "HN-HE-HC-HA-HO",
+      "profile": {
+        "neuroticism": "high",
+        "extraversion": "high",
+        "conscientiousness": "high",
+        "agreeableness": "high",
+        "openness": "high"
+      },
+      "n_runs": 3,
+      "per_dim_direction_match_rate": {
+        "neuroticism": 1.0,
+        "extraversion": 1.0,
+        "conscientiousness": 1.0,
+        "agreeableness": 1.0,
+        "openness": 1.0
+      },
+      "all_dim_correct_rate": 1.0
+    },
+    {
+      "profile_label": "LN-HE-HC-HA-HO",
+      "profile": {
+        "neuroticism": "low",
+        "extraversion": "high",
+        "conscientiousness": "high",
+        "agreeableness": "high",
+        "openness": "high"
+      },
+      "n_runs": 3,
+      "per_dim_direction_match_rate": {
+        "neuroticism": 1.0,
+        "extraversion": 1.0,
+        "conscientiousness": 1.0,
+        "agreeableness": 1.0,
+        "openness": 1.0
+      },
+      "all_dim_correct_rate": 1.0
+    },
+    {
+      "profile_label": "HN-LE-HC-HA-HO",
+      "profile": {
+        "neuroticism": "high",
+        "extraversion": "low",
+        "conscientiousness": "high",
+        "agreeableness": "high",
+        "openness": "high"
+      },
+      "n_runs": 3,
+      "per_dim_direction_match_rate": {
+        "neuroticism": 1.0,
+        "extraversion": 1.0,
+        "conscientiousness": 1.0,
+        "agreeableness": 1.0,
+        "openness": 1.0
+      },
+      "all_dim_correct_rate": 1.0
+    },
+    {
+      "profile_label": "HN-HE-LC-HA-HO",
+      "profile": {
+        "neuroticism": "high",
+        "extraversion": "high",
+        "conscientiousness": "low",
+        "agreeableness": "high",
+        "openness": "high"
+      },
+      "n_runs": 3,
+      "per_dim_direction_match_rate": {
+        "neuroticism": 1.0,
+        "extraversion": 1.0,
+        "conscientiousness": 1.0,
+        "agreeableness": 1.0,
+        "openness": 1.0
+      },
+      "all_dim_correct_rate": 1.0
+    },
+    {
+      "profile_label": "HN-HE-HC-LA-HO",
+      "profile": {
+        "neuroticism": "high",
+        "extraversion": "high",
+        "conscientiousness": "high",
+        "agreeableness": "low",
+        "openness": "high"
+      },
+      "n_runs": 3,
+      "per_dim_direction_match_rate": {
+        "neuroticism": 1.0,
+        "extraversion": 1.0,
+        "conscientiousness": 1.0,
+        "agreeableness": 0.667,
+        "openness": 1.0
+      },
+      "all_dim_correct_rate": 0.933
+    },
+    {
+      "profile_label": "HN-HE-HC-HA-LO",
+      "profile": {
+        "neuroticism": "high",
+        "extraversion": "high",
+        "conscientiousness": "high",
+        "agreeableness": "high",
+        "openness": "low"
+      },
+      "n_runs": 3,
+      "per_dim_direction_match_rate": {
+        "neuroticism": 1.0,
+        "extraversion": 1.0,
+        "conscientiousness": 1.0,
+        "agreeableness": 1.0,
+        "openness": 1.0
+      },
+      "all_dim_correct_rate": 1.0
+    },
+    {
+      "profile_label": "LN-LE-LC-LA-LO",
+      "profile": {
+        "neuroticism": "low",
+        "extraversion": "low",
+        "conscientiousness": "low",
+        "agreeableness": "low",
+        "openness": "low"
+      },
+      "n_runs": 3,
+      "per_dim_direction_match_rate": {
+        "neuroticism": 1.0,
+        "extraversion": 1.0,
+        "conscientiousness": 1.0,
+        "agreeableness": 1.0,
+        "openness": 1.0
+      },
+      "all_dim_correct_rate": 1.0
+    }
+  ],
+  "rows": [
+    {
+      "profile_label": "HN-HE-HC-HA-HO",
+      "profile": {
+        "neuroticism": "high",
+        "extraversion": "high",
+        "conscientiousness": "high",
+        "agreeableness": "high",
+        "openness": "high"
+      },
+      "run_id": 0,
+      "seed": 20260501,
+      "all_dim_scores": {
+        "extraversion": 5.0,
+        "agreeableness": 5.0,
+        "conscientiousness": 5.0,
+        "neuroticism": 4.75,
+        "openness": 5.0
+      },
+      "per_dim_status": {
+        "neuroticism": {
+          "expected_pol": "high",
+          "score": 4.75,
+          "direction_match": 1
+        },
+        "extraversion": {
+          "expected_pol": "high",
+          "score": 5.0,
+          "direction_match": 1
+        },
+        "conscientiousness": {
+          "expected_pol": "high",
+          "score": 5.0,
+          "direction_match": 1
+        },
+        "agreeableness": {
+          "expected_pol": "high",
+          "score": 5.0,
+          "direction_match": 1
+        },
+        "openness": {
+          "expected_pol": "high",
+          "score": 5.0,
+          "direction_match": 1
+        }
+      },
+      "num_active": 5,
+      "num_correct_direction": 5,
+      "parse_failures": 0,
+      "wall_s": 10.9,
+      "system_prompt_len_words": 289
+    },
+    {
+      "profile_label": "HN-HE-HC-HA-HO",
+      "profile": {
+        "neuroticism": "high",
+        "extraversion": "high",
+        "conscientiousness": "high",
+        "agreeableness": "high",
+        "openness": "high"
+      },
+      "run_id": 1,
+      "seed": 20261501,
+      "all_dim_scores": {
+        "extraversion": 5.0,
+        "agreeableness": 5.0,
+        "conscientiousness": 5.0,
+        "neuroticism": 5.0,
+        "openness": 5.0
+      },
+      "per_dim_status": {
+        "neuroticism": {
+          "expected_pol": "high",
+          "score": 5.0,
+          "direction_match": 1
+        },
+        "extraversion": {
+          "expected_pol": "high",
+          "score": 5.0,
+          "direction_match": 1
+        },
+        "conscientiousness": {
+          "expected_pol": "high",
+          "score": 5.0,
+          "direction_match": 1
+        },
+        "agreeableness": {
+          "expected_pol": "high",
+          "score": 5.0,
+          "direction_match": 1
+        },
+        "openness": {
+          "expected_pol": "high",
+          "score": 5.0,
+          "direction_match": 1
+        }
+      },
+      "num_active": 5,
+      "num_correct_direction": 5,
+      "parse_failures": 0,
+      "wall_s": 11.7,
+      "system_prompt_len_words": 316
+    },
+    {
+      "profile_label": "HN-HE-HC-HA-HO",
+      "profile": {
+        "neuroticism": "high",
+        "extraversion": "high",
+        "conscientiousness": "high",
+        "agreeableness": "high",
+        "openness": "high"
+      },
+      "run_id": 2,
+      "seed": 20262501,
+      "all_dim_scores": {
+        "extraversion": 5.0,
+        "agreeableness": 5.0,
+        "conscientiousness": 5.0,
+        "neuroticism": 5.0,
+        "openness": 5.0
+      },
+      "per_dim_status": {
+        "neuroticism": {
+          "expected_pol": "high",
+          "score": 5.0,
+          "direction_match": 1
+        },
+        "extraversion": {
+          "expected_pol": "high",
+          "score": 5.0,
+          "direction_match": 1
+        },
+        "conscientiousness": {
+          "expected_pol": "high",
+          "score": 5.0,
+          "direction_match": 1
+        },
+        "agreeableness": {
+          "expected_pol": "high",
+          "score": 5.0,
+          "direction_match": 1
+        },
+        "openness": {
+          "expected_pol": "high",
+          "score": 5.0,
+          "direction_match": 1
+        }
+      },
+      "num_active": 5,
+      "num_correct_direction": 5,
+      "parse_failures": 0,
+      "wall_s": 13.2,
+      "system_prompt_len_words": 330
+    },
+    {
+      "profile_label": "LN-HE-HC-HA-HO",
+      "profile": {
+        "neuroticism": "low",
+        "extraversion": "high",
+        "conscientiousness": "high",
+        "agreeableness": "high",
+        "openness": "high"
+      },
+      "run_id": 0,
+      "seed": 20270501,
+      "all_dim_scores": {
+        "extraversion": 5.0,
+        "agreeableness": 5.0,
+        "conscientiousness": 5.0,
+        "neuroticism": 1.0,
+        "openness": 5.0
+      },
+      "per_dim_status": {
+        "neuroticism": {
+          "expected_pol": "low",
+          "score": 1.0,
+          "direction_match": 1
+        },
+        "extraversion": {
+          "expected_pol": "high",
+          "score": 5.0,
+          "direction_match": 1
+        },
+        "conscientiousness": {
+          "expected_pol": "high",
+          "score": 5.0,
+          "direction_match": 1
+        },
+        "agreeableness": {
+          "expected_pol": "high",
+          "score": 5.0,
+          "direction_match": 1
+        },
+        "openness": {
+          "expected_pol": "high",
+          "score": 5.0,
+          "direction_match": 1
+        }
+      },
+      "num_active": 5,
+      "num_correct_direction": 5,
+      "parse_failures": 0,
+      "wall_s": 9.5,
+      "system_prompt_len_words": 335
+    },
+    {
+      "profile_label": "LN-HE-HC-HA-HO",
+      "profile": {
+        "neuroticism": "low",
+        "extraversion": "high",
+        "conscientiousness": "high",
+        "agreeableness": "high",
+        "openness": "high"
+      },
+      "run_id": 1,
+      "seed": 20271501,
+      "all_dim_scores": {
+        "extraversion": 5.0,
+        "agreeableness": 5.0,
+        "conscientiousness": 5.0,
+        "neuroticism": 1.0,
+        "openness": 5.0
+      },
+      "per_dim_status": {
+        "neuroticism": {
+          "expected_pol": "low",
+          "score": 1.0,
+          "direction_match": 1
+        },
+        "extraversion": {
+          "expected_pol": "high",
+          "score": 5.0,
+          "direction_match": 1
+        },
+        "conscientiousness": {
+          "expected_pol": "high",
+          "score": 5.0,
+          "direction_match": 1
+        },
+        "agreeableness": {
+          "expected_pol": "high",
+          "score": 5.0,
+          "direction_match": 1
+        },
+        "openness": {
+          "expected_pol": "high",
+          "score": 5.0,
+          "direction_match": 1
+        }
+      },
+      "num_active": 5,
+      "num_correct_direction": 5,
+      "parse_failures": 0,
+      "wall_s": 12.2,
+      "system_prompt_len_words": 300
+    },
+    {
+      "profile_label": "LN-HE-HC-HA-HO",
+      "profile": {
+        "neuroticism": "low",
+        "extraversion": "high",
+        "conscientiousness": "high",
+        "agreeableness": "high",
+        "openness": "high"
+      },
+      "run_id": 2,
+      "seed": 20272501,
+      "all_dim_scores": {
+        "extraversion": 5.0,
+        "agreeableness": 5.0,
+        "conscientiousness": 5.0,
+        "neuroticism": 1.0,
+        "openness": 5.0
+      },
+      "per_dim_status": {
+        "neuroticism": {
+          "expected_pol": "low",
+          "score": 1.0,
+          "direction_match": 1
+        },
+        "extraversion": {
+          "expected_pol": "high",
+          "score": 5.0,
+          "direction_match": 1
+        },
+        "conscientiousness": {
+          "expected_pol": "high",
+          "score": 5.0,
+          "direction_match": 1
+        },
+        "agreeableness": {
+          "expected_pol": "high",
+          "score": 5.0,
+          "direction_match": 1
+        },
+        "openness": {
+          "expected_pol": "high",
+          "score": 5.0,
+          "direction_match": 1
+        }
+      },
+      "num_active": 5,
+      "num_correct_direction": 5,
+      "parse_failures": 0,
+      "wall_s": 8.6,
+      "system_prompt_len_words": 347
+    },
+    {
+      "profile_label": "HN-LE-HC-HA-HO",
+      "profile": {
+        "neuroticism": "high",
+        "extraversion": "low",
+        "conscientiousness": "high",
+        "agreeableness": "high",
+        "openness": "high"
+      },
+      "run_id": 0,
+      "seed": 20280501,
+      "all_dim_scores": {
+        "extraversion": 1.0,
+        "agreeableness": 5.0,
+        "conscientiousness": 5.0,
+        "neuroticism": 5.0,
+        "openness": 5.0
+      },
+      "per_dim_status": {
+        "neuroticism": {
+          "expected_pol": "high",
+          "score": 5.0,
+          "direction_match": 1
+        },
+        "extraversion": {
+          "expected_pol": "low",
+          "score": 1.0,
+          "direction_match": 1
+        },
+        "conscientiousness": {
+          "expected_pol": "high",
+          "score": 5.0,
+          "direction_match": 1
+        },
+        "agreeableness": {
+          "expected_pol": "high",
+          "score": 5.0,
+          "direction_match": 1
+        },
+        "openness": {
+          "expected_pol": "high",
+          "score": 5.0,
+          "direction_match": 1
+        }
+      },
+      "num_active": 5,
+      "num_correct_direction": 5,
+      "parse_failures": 0,
+      "wall_s": 8.7,
+      "system_prompt_len_words": 333
+    },
+    {
+      "profile_label": "HN-LE-HC-HA-HO",
+      "profile": {
+        "neuroticism": "high",
+        "extraversion": "low",
+        "conscientiousness": "high",
+        "agreeableness": "high",
+        "openness": "high"
+      },
+      "run_id": 1,
+      "seed": 20281501,
+      "all_dim_scores": {
+        "extraversion": 1.0,
+        "agreeableness": 5.0,
+        "conscientiousness": 5.0,
+        "neuroticism": 5.0,
+        "openness": 5.0
+      },
+      "per_dim_status": {
+        "neuroticism": {
+          "expected_pol": "high",
+          "score": 5.0,
+          "direction_match": 1
+        },
+        "extraversion": {
+          "expected_pol": "low",
+          "score": 1.0,
+          "direction_match": 1
+        },
+        "conscientiousness": {
+          "expected_pol": "high",
+          "score": 5.0,
+          "direction_match": 1
+        },
+        "agreeableness": {
+          "expected_pol": "high",
+          "score": 5.0,
+          "direction_match": 1
+        },
+        "openness": {
+          "expected_pol": "high",
+          "score": 5.0,
+          "direction_match": 1
+        }
+      },
+      "num_active": 5,
+      "num_correct_direction": 5,
+      "parse_failures": 0,
+      "wall_s": 10.6,
+      "system_prompt_len_words": 277
+    },
+    {
+      "profile_label": "HN-LE-HC-HA-HO",
+      "profile": {
+        "neuroticism": "high",
+        "extraversion": "low",
+        "conscientiousness": "high",
+        "agreeableness": "high",
+        "openness": "high"
+      },
+      "run_id": 2,
+      "seed": 20282501,
+      "all_dim_scores": {
+        "extraversion": 1.25,
+        "agreeableness": 5.0,
+        "conscientiousness": 5.0,
+        "neuroticism": 5.0,
+        "openness": 5.0
+      },
+      "per_dim_status": {
+        "neuroticism": {
+          "expected_pol": "high",
+          "score": 5.0,
+          "direction_match": 1
+        },
+        "extraversion": {
+          "expected_pol": "low",
+          "score": 1.25,
+          "direction_match": 1
+        },
+        "conscientiousness": {
+          "expected_pol": "high",
+          "score": 5.0,
+          "direction_match": 1
+        },
+        "agreeableness": {
+          "expected_pol": "high",
+          "score": 5.0,
+          "direction_match": 1
+        },
+        "openness": {
+          "expected_pol": "high",
+          "score": 5.0,
+          "direction_match": 1
+        }
+      },
+      "num_active": 5,
+      "num_correct_direction": 5,
+      "parse_failures": 0,
+      "wall_s": 9.7,
+      "system_prompt_len_words": 298
+    },
+    {
+      "profile_label": "HN-HE-LC-HA-HO",
+      "profile": {
+        "neuroticism": "high",
+        "extraversion": "high",
+        "conscientiousness": "low",
+        "agreeableness": "high",
+        "openness": "high"
+      },
+      "run_id": 0,
+      "seed": 20290501,
+      "all_dim_scores": {
+        "extraversion": 5.0,
+        "agreeableness": 5.0,
+        "conscientiousness": 1.5,
+        "neuroticism": 5.0,
+        "openness": 5.0
+      },
+      "per_dim_status": {
+        "neuroticism": {
+          "expected_pol": "high",
+          "score": 5.0,
+          "direction_match": 1
+        },
+        "extraversion": {
+          "expected_pol": "high",
+          "score": 5.0,
+          "direction_match": 1
+        },
+        "conscientiousness": {
+          "expected_pol": "low",
+          "score": 1.5,
+          "direction_match": 1
+        },
+        "agreeableness": {
+          "expected_pol": "high",
+          "score": 5.0,
+          "direction_match": 1
+        },
+        "openness": {
+          "expected_pol": "high",
+          "score": 5.0,
+          "direction_match": 1
+        }
+      },
+      "num_active": 5,
+      "num_correct_direction": 5,
+      "parse_failures": 0,
+      "wall_s": 15.4,
+      "system_prompt_len_words": 298
+    },
+    {
+      "profile_label": "HN-HE-LC-HA-HO",
+      "profile": {
+        "neuroticism": "high",
+        "extraversion": "high",
+        "conscientiousness": "low",
+        "agreeableness": "high",
+        "openness": "high"
+      },
+      "run_id": 1,
+      "seed": 20291501,
+      "all_dim_scores": {
+        "extraversion": 5.0,
+        "agreeableness": 5.0,
+        "conscientiousness": 1.75,
+        "neuroticism": 5.0,
+        "openness": 5.0
+      },
+      "per_dim_status": {
+        "neuroticism": {
+          "expected_pol": "high",
+          "score": 5.0,
+          "direction_match": 1
+        },
+        "extraversion": {
+          "expected_pol": "high",
+          "score": 5.0,
+          "direction_match": 1
+        },
+        "conscientiousness": {
+          "expected_pol": "low",
+          "score": 1.75,
+          "direction_match": 1
+        },
+        "agreeableness": {
+          "expected_pol": "high",
+          "score": 5.0,
+          "direction_match": 1
+        },
+        "openness": {
+          "expected_pol": "high",
+          "score": 5.0,
+          "direction_match": 1
+        }
+      },
+      "num_active": 5,
+      "num_correct_direction": 5,
+      "parse_failures": 0,
+      "wall_s": 9.5,
+      "system_prompt_len_words": 318
+    },
+    {
+      "profile_label": "HN-HE-LC-HA-HO",
+      "profile": {
+        "neuroticism": "high",
+        "extraversion": "high",
+        "conscientiousness": "low",
+        "agreeableness": "high",
+        "openness": "high"
+      },
+      "run_id": 2,
+      "seed": 20292501,
+      "all_dim_scores": {
+        "extraversion": 5.0,
+        "agreeableness": 5.0,
+        "conscientiousness": 1.25,
+        "neuroticism": 5.0,
+        "openness": 5.0
+      },
+      "per_dim_status": {
+        "neuroticism": {
+          "expected_pol": "high",
+          "score": 5.0,
+          "direction_match": 1
+        },
+        "extraversion": {
+          "expected_pol": "high",
+          "score": 5.0,
+          "direction_match": 1
+        },
+        "conscientiousness": {
+          "expected_pol": "low",
+          "score": 1.25,
+          "direction_match": 1
+        },
+        "agreeableness": {
+          "expected_pol": "high",
+          "score": 5.0,
+          "direction_match": 1
+        },
+        "openness": {
+          "expected_pol": "high",
+          "score": 5.0,
+          "direction_match": 1
+        }
+      },
+      "num_active": 5,
+      "num_correct_direction": 5,
+      "parse_failures": 0,
+      "wall_s": 9.2,
+      "system_prompt_len_words": 329
+    },
+    {
+      "profile_label": "HN-HE-HC-LA-HO",
+      "profile": {
+        "neuroticism": "high",
+        "extraversion": "high",
+        "conscientiousness": "high",
+        "agreeableness": "low",
+        "openness": "high"
+      },
+      "run_id": 0,
+      "seed": 20300501,
+      "all_dim_scores": {
+        "extraversion": 5.0,
+        "agreeableness": 4.75,
+        "conscientiousness": 5.0,
+        "neuroticism": 4.75,
+        "openness": 5.0
+      },
+      "per_dim_status": {
+        "neuroticism": {
+          "expected_pol": "high",
+          "score": 4.75,
+          "direction_match": 1
+        },
+        "extraversion": {
+          "expected_pol": "high",
+          "score": 5.0,
+          "direction_match": 1
+        },
+        "conscientiousness": {
+          "expected_pol": "high",
+          "score": 5.0,
+          "direction_match": 1
+        },
+        "agreeableness": {
+          "expected_pol": "low",
+          "score": 4.75,
+          "direction_match": -1
+        },
+        "openness": {
+          "expected_pol": "high",
+          "score": 5.0,
+          "direction_match": 1
+        }
+      },
+      "num_active": 5,
+      "num_correct_direction": 4,
+      "parse_failures": 0,
+      "wall_s": 15.7,
+      "system_prompt_len_words": 348
+    },
+    {
+      "profile_label": "HN-HE-HC-LA-HO",
+      "profile": {
+        "neuroticism": "high",
+        "extraversion": "high",
+        "conscientiousness": "high",
+        "agreeableness": "low",
+        "openness": "high"
+      },
+      "run_id": 1,
+      "seed": 20301501,
+      "all_dim_scores": {
+        "extraversion": 5.0,
+        "agreeableness": 2.0,
+        "conscientiousness": 5.0,
+        "neuroticism": 5.0,
+        "openness": 5.0
+      },
+      "per_dim_status": {
+        "neuroticism": {
+          "expected_pol": "high",
+          "score": 5.0,
+          "direction_match": 1
+        },
+        "extraversion": {
+          "expected_pol": "high",
+          "score": 5.0,
+          "direction_match": 1
+        },
+        "conscientiousness": {
+          "expected_pol": "high",
+          "score": 5.0,
+          "direction_match": 1
+        },
+        "agreeableness": {
+          "expected_pol": "low",
+          "score": 2.0,
+          "direction_match": 1
+        },
+        "openness": {
+          "expected_pol": "high",
+          "score": 5.0,
+          "direction_match": 1
+        }
+      },
+      "num_active": 5,
+      "num_correct_direction": 5,
+      "parse_failures": 0,
+      "wall_s": 12.0,
+      "system_prompt_len_words": 334
+    },
+    {
+      "profile_label": "HN-HE-HC-LA-HO",
+      "profile": {
+        "neuroticism": "high",
+        "extraversion": "high",
+        "conscientiousness": "high",
+        "agreeableness": "low",
+        "openness": "high"
+      },
+      "run_id": 2,
+      "seed": 20302501,
+      "all_dim_scores": {
+        "extraversion": 5.0,
+        "agreeableness": 1.75,
+        "conscientiousness": 5.0,
+        "neuroticism": 5.0,
+        "openness": 5.0
+      },
+      "per_dim_status": {
+        "neuroticism": {
+          "expected_pol": "high",
+          "score": 5.0,
+          "direction_match": 1
+        },
+        "extraversion": {
+          "expected_pol": "high",
+          "score": 5.0,
+          "direction_match": 1
+        },
+        "conscientiousness": {
+          "expected_pol": "high",
+          "score": 5.0,
+          "direction_match": 1
+        },
+        "agreeableness": {
+          "expected_pol": "low",
+          "score": 1.75,
+          "direction_match": 1
+        },
+        "openness": {
+          "expected_pol": "high",
+          "score": 5.0,
+          "direction_match": 1
+        }
+      },
+      "num_active": 5,
+      "num_correct_direction": 5,
+      "parse_failures": 0,
+      "wall_s": 12.6,
+      "system_prompt_len_words": 338
+    },
+    {
+      "profile_label": "HN-HE-HC-HA-LO",
+      "profile": {
+        "neuroticism": "high",
+        "extraversion": "high",
+        "conscientiousness": "high",
+        "agreeableness": "high",
+        "openness": "low"
+      },
+      "run_id": 0,
+      "seed": 20310501,
+      "all_dim_scores": {
+        "extraversion": 5.0,
+        "agreeableness": 5.0,
+        "conscientiousness": 5.0,
+        "neuroticism": 4.75,
+        "openness": 1.25
+      },
+      "per_dim_status": {
+        "neuroticism": {
+          "expected_pol": "high",
+          "score": 4.75,
+          "direction_match": 1
+        },
+        "extraversion": {
+          "expected_pol": "high",
+          "score": 5.0,
+          "direction_match": 1
+        },
+        "conscientiousness": {
+          "expected_pol": "high",
+          "score": 5.0,
+          "direction_match": 1
+        },
+        "agreeableness": {
+          "expected_pol": "high",
+          "score": 5.0,
+          "direction_match": 1
+        },
+        "openness": {
+          "expected_pol": "low",
+          "score": 1.25,
+          "direction_match": 1
+        }
+      },
+      "num_active": 5,
+      "num_correct_direction": 5,
+      "parse_failures": 0,
+      "wall_s": 16.3,
+      "system_prompt_len_words": 363
+    },
+    {
+      "profile_label": "HN-HE-HC-HA-LO",
+      "profile": {
+        "neuroticism": "high",
+        "extraversion": "high",
+        "conscientiousness": "high",
+        "agreeableness": "high",
+        "openness": "low"
+      },
+      "run_id": 1,
+      "seed": 20311501,
+      "all_dim_scores": {
+        "extraversion": 5.0,
+        "agreeableness": 5.0,
+        "conscientiousness": 5.0,
+        "neuroticism": 4.5,
+        "openness": 1.25
+      },
+      "per_dim_status": {
+        "neuroticism": {
+          "expected_pol": "high",
+          "score": 4.5,
+          "direction_match": 1
+        },
+        "extraversion": {
+          "expected_pol": "high",
+          "score": 5.0,
+          "direction_match": 1
+        },
+        "conscientiousness": {
+          "expected_pol": "high",
+          "score": 5.0,
+          "direction_match": 1
+        },
+        "agreeableness": {
+          "expected_pol": "high",
+          "score": 5.0,
+          "direction_match": 1
+        },
+        "openness": {
+          "expected_pol": "low",
+          "score": 1.25,
+          "direction_match": 1
+        }
+      },
+      "num_active": 5,
+      "num_correct_direction": 5,
+      "parse_failures": 0,
+      "wall_s": 15.7,
+      "system_prompt_len_words": 352
+    },
+    {
+      "profile_label": "HN-HE-HC-HA-LO",
+      "profile": {
+        "neuroticism": "high",
+        "extraversion": "high",
+        "conscientiousness": "high",
+        "agreeableness": "high",
+        "openness": "low"
+      },
+      "run_id": 2,
+      "seed": 20312501,
+      "all_dim_scores": {
+        "extraversion": 5.0,
+        "agreeableness": 5.0,
+        "conscientiousness": 5.0,
+        "neuroticism": 5.0,
+        "openness": 1.5
+      },
+      "per_dim_status": {
+        "neuroticism": {
+          "expected_pol": "high",
+          "score": 5.0,
+          "direction_match": 1
+        },
+        "extraversion": {
+          "expected_pol": "high",
+          "score": 5.0,
+          "direction_match": 1
+        },
+        "conscientiousness": {
+          "expected_pol": "high",
+          "score": 5.0,
+          "direction_match": 1
+        },
+        "agreeableness": {
+          "expected_pol": "high",
+          "score": 5.0,
+          "direction_match": 1
+        },
+        "openness": {
+          "expected_pol": "low",
+          "score": 1.5,
+          "direction_match": 1
+        }
+      },
+      "num_active": 5,
+      "num_correct_direction": 5,
+      "parse_failures": 0,
+      "wall_s": 20.0,
+      "system_prompt_len_words": 333
+    },
+    {
+      "profile_label": "LN-LE-LC-LA-LO",
+      "profile": {
+        "neuroticism": "low",
+        "extraversion": "low",
+        "conscientiousness": "low",
+        "agreeableness": "low",
+        "openness": "low"
+      },
+      "run_id": 0,
+      "seed": 20320501,
+      "all_dim_scores": {
+        "extraversion": 1.0,
+        "agreeableness": 1.0,
+        "conscientiousness": 1.25,
+        "neuroticism": 1.0,
+        "openness": 1.0
+      },
+      "per_dim_status": {
+        "neuroticism": {
+          "expected_pol": "low",
+          "score": 1.0,
+          "direction_match": 1
+        },
+        "extraversion": {
+          "expected_pol": "low",
+          "score": 1.0,
+          "direction_match": 1
+        },
+        "conscientiousness": {
+          "expected_pol": "low",
+          "score": 1.25,
+          "direction_match": 1
+        },
+        "agreeableness": {
+          "expected_pol": "low",
+          "score": 1.0,
+          "direction_match": 1
+        },
+        "openness": {
+          "expected_pol": "low",
+          "score": 1.0,
+          "direction_match": 1
+        }
+      },
+      "num_active": 5,
+      "num_correct_direction": 5,
+      "parse_failures": 0,
+      "wall_s": 9.4,
+      "system_prompt_len_words": 358
+    },
+    {
+      "profile_label": "LN-LE-LC-LA-LO",
+      "profile": {
+        "neuroticism": "low",
+        "extraversion": "low",
+        "conscientiousness": "low",
+        "agreeableness": "low",
+        "openness": "low"
+      },
+      "run_id": 1,
+      "seed": 20321501,
+      "all_dim_scores": {
+        "extraversion": 1.0,
+        "agreeableness": 1.0,
+        "conscientiousness": 1.5,
+        "neuroticism": 1.0,
+        "openness": 1.0
+      },
+      "per_dim_status": {
+        "neuroticism": {
+          "expected_pol": "low",
+          "score": 1.0,
+          "direction_match": 1
+        },
+        "extraversion": {
+          "expected_pol": "low",
+          "score": 1.0,
+          "direction_match": 1
+        },
+        "conscientiousness": {
+          "expected_pol": "low",
+          "score": 1.5,
+          "direction_match": 1
+        },
+        "agreeableness": {
+          "expected_pol": "low",
+          "score": 1.0,
+          "direction_match": 1
+        },
+        "openness": {
+          "expected_pol": "low",
+          "score": 1.0,
+          "direction_match": 1
+        }
+      },
+      "num_active": 5,
+      "num_correct_direction": 5,
+      "parse_failures": 0,
+      "wall_s": 10.0,
+      "system_prompt_len_words": 316
+    },
+    {
+      "profile_label": "LN-LE-LC-LA-LO",
+      "profile": {
+        "neuroticism": "low",
+        "extraversion": "low",
+        "conscientiousness": "low",
+        "agreeableness": "low",
+        "openness": "low"
+      },
+      "run_id": 2,
+      "seed": 20322501,
+      "all_dim_scores": {
+        "extraversion": 2.0,
+        "agreeableness": 1.0,
+        "conscientiousness": 1.5,
+        "neuroticism": 1.25,
+        "openness": 1.5
+      },
+      "per_dim_status": {
+        "neuroticism": {
+          "expected_pol": "low",
+          "score": 1.25,
+          "direction_match": 1
+        },
+        "extraversion": {
+          "expected_pol": "low",
+          "score": 2.0,
+          "direction_match": 1
+        },
+        "conscientiousness": {
+          "expected_pol": "low",
+          "score": 1.5,
+          "direction_match": 1
+        },
+        "agreeableness": {
+          "expected_pol": "low",
+          "score": 1.0,
+          "direction_match": 1
+        },
+        "openness": {
+          "expected_pol": "low",
+          "score": 1.5,
+          "direction_match": 1
+        }
+      },
+      "num_active": 5,
+      "num_correct_direction": 5,
+      "parse_failures": 0,
+      "wall_s": 15.6,
+      "system_prompt_len_words": 382
+    }
+  ]
+}

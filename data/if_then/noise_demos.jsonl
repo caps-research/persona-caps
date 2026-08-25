@@ -1,0 +1,20 @@
+{"id":"noise_01","situation":"I see a bird perched on a fence outside the window","behavior":"I take note of its color and posture","target_dimension":null,"polarity":null}
+{"id":"noise_02","situation":"I unwrap a granola bar for a snack","behavior":"I read the ingredients on the label","target_dimension":null,"polarity":null}
+{"id":"noise_03","situation":"I pass a hardware store I have not been inside","behavior":"I glance at the window display and continue walking","target_dimension":null,"polarity":null}
+{"id":"noise_04","situation":"I find a coin on the sidewalk","behavior":"I pick it up and put it in my pocket","target_dimension":null,"polarity":null}
+{"id":"noise_05","situation":"I notice the streetlight outside has begun flickering","behavior":"I close the curtain and go back to what I was doing","target_dimension":null,"polarity":null}
+{"id":"noise_06","situation":"I open a fresh notebook to its first page","behavior":"I write the date in the top corner","target_dimension":null,"polarity":null}
+{"id":"noise_07","situation":"A song I do not recognize comes on at the cafe","behavior":"I shazam it on my phone","target_dimension":null,"polarity":null}
+{"id":"noise_08","situation":"I refill my water glass at the kitchen sink","behavior":"I drink half of it before sitting back down","target_dimension":null,"polarity":null}
+{"id":"noise_09","situation":"I see clouds rolling in through the window","behavior":"I check the weather app to see if rain is forecast","target_dimension":null,"polarity":null}
+{"id":"noise_10","situation":"I open a package of pencils I bought last week","behavior":"I sharpen them all to the same length","target_dimension":null,"polarity":null}
+{"id":"noise_11","situation":"I encounter a vending machine in a hallway","behavior":"I scan the rows to see what is on offer","target_dimension":null,"polarity":null}
+{"id":"noise_12","situation":"I see steam rising from my mug of tea","behavior":"I wait a minute before taking the first sip","target_dimension":null,"polarity":null}
+{"id":"noise_13","situation":"A leaf falls onto my book as I read in the park","behavior":"I brush it off and use it as a bookmark","target_dimension":null,"polarity":null}
+{"id":"noise_14","situation":"I notice the keyboard has a crumb between two keys","behavior":"I tilt the keyboard and tap it out","target_dimension":null,"polarity":null}
+{"id":"noise_15","situation":"My shoelace comes untied on the stairs","behavior":"I stop, retie it, and continue up","target_dimension":null,"polarity":null}
+{"id":"noise_16","situation":"I see a pen on the floor by my chair","behavior":"I pick it up and put it back in the cup","target_dimension":null,"polarity":null}
+{"id":"noise_17","situation":"I open a window to let in fresh air","behavior":"I leave it open for the rest of the morning","target_dimension":null,"polarity":null}
+{"id":"noise_18","situation":"My phone shows a low storage warning","behavior":"I glance at it and dismiss the notification","target_dimension":null,"polarity":null}
+{"id":"noise_19","situation":"A blinking cursor sits on a blank document","behavior":"I type the first sentence and keep going","target_dimension":null,"polarity":null}
+{"id":"noise_20","situation":"The kettle finishes boiling on the stove","behavior":"I pour the water and start the timer","target_dimension":null,"polarity":null}

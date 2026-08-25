@@ -1,0 +1,59 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[cond] 8 scenarios × 2 contexts × 4 methods = 64 generations
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 17235.72it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 9361.88it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 9147.59it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 8827.59it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+[cond] gen 8/64
+[cond] gen 16/64
+[cond] gen 24/64
+[cond] gen 32/64
+[cond] gen 40/64
+[cond] gen 48/64
+[cond] gen 56/64
+[cond] gen 64/64
+[cond] judging 64 responses with openai / gpt-4o-2024-08-06 ...
+[cond] judged 8/64
+[cond] judged 16/64
+[cond] judged 24/64
+[cond] judged 32/64
+[cond] judged 40/64
+[cond] judged 48/64
+[cond] judged 56/64
+[cond] judged 64/64
+[cond] wrote -> runs/conditional/run01_gemflash_gen_gpt4o_judge.json
+
+=== Per-(method, context) mean conscientiousness rating (1-5) ===
+method                   work   family   work-family  n_valid
+cond_caps                4.75   1.38        +3.38       16
+string_cond              4.88   2.25        +2.62       16
+single_high_caps         4.62   3.88        +0.75       16
+single_low_caps          1.62   1.62        +0.00       16

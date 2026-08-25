@@ -1,0 +1,1049 @@
+{
+  "config": {
+    "gen_backend": "gemini-flash",
+    "temperature": 0.7,
+    "runs": 1,
+    "sizes": [
+      3,
+      5,
+      10,
+      0
+    ],
+    "dimensions": [
+      "neuroticism",
+      "extraversion",
+      "conscientiousness",
+      "agreeableness",
+      "openness"
+    ],
+    "seed": 20260424,
+    "workers": 2
+  },
+  "pool_sizes": {
+    "high_neuroticism": 19,
+    "low_neuroticism": 7,
+    "high_extraversion": 20,
+    "low_extraversion": 19,
+    "high_conscientiousness": 11,
+    "low_conscientiousness": 20,
+    "high_agreeableness": 12,
+    "low_agreeableness": 20,
+    "high_openness": 18,
+    "low_openness": 20
+  },
+  "results": {
+    "neuroticism": {
+      "high": {
+        "3": [
+          {
+            "effective_size": 3,
+            "requested_size": 3,
+            "dimension_scores": {
+              "extraversion": 1.5,
+              "agreeableness": 3.25,
+              "conscientiousness": 4.0,
+              "neuroticism": 4.75,
+              "openness": 4.25
+            },
+            "parse_failures": 0,
+            "atom_ids": [
+              "beck2022_high_neur__lonely__afraid__158",
+              "beck2022_high_neur__duty__worries__160",
+              "beck2022_high_neur__procrastinating__relaxed__161"
+            ]
+          }
+        ],
+        "5": [
+          {
+            "effective_size": 5,
+            "requested_size": 5,
+            "dimension_scores": {
+              "extraversion": 2.0,
+              "agreeableness": 2.75,
+              "conscientiousness": 2.25,
+              "neuroticism": 5.0,
+              "openness": 2.75
+            },
+            "parse_failures": 0,
+            "atom_ids": [
+              "beck2022_high_neur__lonely__afraid__158",
+              "beck2022_high_neur__deception__temperamental__169",
+              "beck2022_high_neur__deception__moody__156",
+              "beck2022_high_neur__adversity__temperamental__151",
+              "beck2022_high_neur__lonely__moody__164"
+            ]
+          }
+        ],
+        "10": [
+          {
+            "effective_size": 10,
+            "requested_size": 10,
+            "dimension_scores": {
+              "extraversion": 2.25,
+              "agreeableness": 2.25,
+              "conscientiousness": 1.25,
+              "neuroticism": 5.0,
+              "openness": 2.0
+            },
+            "parse_failures": 0,
+            "atom_ids": [
+              "beck2022_high_neur__lonely__moody__164",
+              "beck2022_high_neur__procrastinating__relaxed__161",
+              "beck2022_high_neur__sick__secure_comfortable__165",
+              "beck2022_high_neur__lonely__depressed__152",
+              "beck2022_high_neur__sick__rarely_anxious__163",
+              "beck2022_high_neur__lonely__afraid__158",
+              "beck2022_high_neur__adversity__temperamental__151",
+              "beck2022_high_neur__deception__moody__156",
+              "beck2022_high_neur__deception__controls_emotions__168",
+              "beck2022_high_neur__adversity__moody__162"
+            ]
+          }
+        ],
+        "full": [
+          {
+            "effective_size": 19,
+            "requested_size": 0,
+            "dimension_scores": {
+              "extraversion": 2.75,
+              "agreeableness": 2.25,
+              "conscientiousness": 2.25,
+              "neuroticism": 5.0,
+              "openness": 2.25
+            },
+            "parse_failures": 0,
+            "atom_ids": [
+              "beck2022_high_neur__adversity__temperamental__151",
+              "beck2022_high_neur__lonely__temperamental__150",
+              "beck2022_high_neur__lonely__afraid__158",
+              "beck2022_high_neur__lonely__depressed__152",
+              "beck2022_high_neur__lonely__emotionally_stable__153",
+              "beck2022_high_neur__lonely__rarely_anxious__154",
+              "beck2022_high_neur__deception__moody__156",
+              "beck2022_high_neur__lonely__controls_emotions__157",
+              "beck2022_high_neur__lonely__tense__159",
+              "beck2022_high_neur__sick__rarely_anxious__163",
+              "beck2022_high_neur__adversity__moody__162",
+              "beck2022_high_neur__duty__worries__160",
+              "beck2022_high_neur__lonely__moody__164",
+              "beck2022_high_neur__procrastinating__relaxed__161",
+              "beck2022_high_neur__studying__tense__166",
+              "beck2022_high_neur__sick__secure_comfortable__165",
+              "beck2022_high_neur__deception__controls_emotions__168",
+              "beck2022_high_neur__deception__temperamental__169",
+              "beck2022_high_neur__anxious_schoolwork__depressed__167"
+            ]
+          }
+        ]
+      },
+      "low": {
+        "3": [
+          {
+            "effective_size": 3,
+            "requested_size": 3,
+            "dimension_scores": {
+              "extraversion": 3.5,
+              "agreeableness": 1.75,
+              "conscientiousness": 4.75,
+              "neuroticism": 1.25,
+              "openness": 5.0
+            },
+            "parse_failures": 0,
+            "atom_ids": [
+              "beck2022_low_neur__excited_schoolwork__secure_comfortable__146",
+              "beck2022_low_neur__tv__relaxed__147",
+              "beck2022_low_neur__excited_schoolwork__optimistic_setback__144"
+            ]
+          }
+        ],
+        "5": [
+          {
+            "effective_size": 5,
+            "requested_size": 5,
+            "dimension_scores": {
+              "extraversion": 3.0,
+              "agreeableness": 2.0,
+              "conscientiousness": 4.25,
+              "neuroticism": 1.75,
+              "openness": 5.0
+            },
+            "parse_failures": 0,
+            "atom_ids": [
+              "beck2022_low_neur__tv__controls_emotions__149",
+              "beck2022_low_neur__excited_schoolwork__depressed__148",
+              "beck2022_low_neur__excited_schoolwork__optimistic_setback__144",
+              "beck2022_low_neur__tv__relaxed__147",
+              "beck2022_low_neur__excited_schoolwork__secure_comfortable__146"
+            ]
+          }
+        ],
+        "10": [
+          {
+            "effective_size": 7,
+            "requested_size": 10,
+            "dimension_scores": {
+              "extraversion": 4.0,
+              "agreeableness": 3.0,
+              "conscientiousness": 4.75,
+              "neuroticism": 1.0,
+              "openness": 5.0
+            },
+            "parse_failures": 0,
+            "atom_ids": [
+              "beck2022_low_neur__positivity__tense__143",
+              "beck2022_low_neur__excited_schoolwork__optimistic_setback__144",
+              "beck2022_low_neur__excited_schoolwork__secure_comfortable__146",
+              "beck2022_low_neur__tv__controls_emotions__149",
+              "beck2022_low_neur__excited_schoolwork__depressed__148",
+              "beck2022_low_neur__tv__relaxed__147",
+              "beck2022_low_neur__tv__temperamental__145"
+            ]
+          }
+        ],
+        "full": [
+          {
+            "effective_size": 7,
+            "requested_size": 0,
+            "dimension_scores": {
+              "extraversion": 4.0,
+              "agreeableness": 3.5,
+              "conscientiousness": 4.5,
+              "neuroticism": 1.0,
+              "openness": 5.0
+            },
+            "parse_failures": 0,
+            "atom_ids": [
+              "beck2022_low_neur__positivity__tense__143",
+              "beck2022_low_neur__excited_schoolwork__optimistic_setback__144",
+              "beck2022_low_neur__excited_schoolwork__secure_comfortable__146",
+              "beck2022_low_neur__tv__controls_emotions__149",
+              "beck2022_low_neur__excited_schoolwork__depressed__148",
+              "beck2022_low_neur__tv__relaxed__147",
+              "beck2022_low_neur__tv__temperamental__145"
+            ]
+          }
+        ]
+      }
+    },
+    "extraversion": {
+      "high": {
+        "3": [
+          {
+            "effective_size": 3,
+            "requested_size": 3,
+            "dimension_scores": {
+              "extraversion": 5.0,
+              "agreeableness": 4.5,
+              "conscientiousness": 2.5,
+              "neuroticism": 2.0,
+              "openness": 5.0
+            },
+            "parse_failures": 0,
+            "atom_ids": [
+              "beck2022_high_extr__positivity__outgoing__074",
+              "beck2022_high_extr__excited_schoolwork__quiet__079",
+              "beck2022_high_extr__positivity__rarely_excited__072"
+            ]
+          }
+        ],
+        "5": [
+          {
+            "effective_size": 5,
+            "requested_size": 5,
+            "dimension_scores": {
+              "extraversion": 5.0,
+              "agreeableness": 3.25,
+              "conscientiousness": 1.75,
+              "neuroticism": 2.0,
+              "openness": 5.0
+            },
+            "parse_failures": 0,
+            "atom_ids": [
+              "beck2022_high_extr__excited_schoolwork__talkative__078",
+              "beck2022_high_extr__excited_schoolwork__rarely_excited__086",
+              "beck2022_high_extr__sociality__less_active__080",
+              "beck2022_high_extr__excited_schoolwork__less_active__088",
+              "beck2022_high_extr__excited_schoolwork__quiet__079"
+            ]
+          }
+        ],
+        "10": [
+          {
+            "effective_size": 10,
+            "requested_size": 10,
+            "dimension_scores": {
+              "extraversion": 5.0,
+              "agreeableness": 3.0,
+              "conscientiousness": 3.5,
+              "neuroticism": 2.0,
+              "openness": 4.75
+            },
+            "parse_failures": 0,
+            "atom_ids": [
+              "beck2022_high_extr__excited_schoolwork__talkative__078",
+              "beck2022_high_extr__positivity__others_charge__073",
+              "beck2022_high_extr__positivity__rarely_excited__072",
+              "beck2022_high_extr__interacted_family__assertive__081",
+              "beck2022_high_extr__excited_schoolwork__enthusiastic__075",
+              "beck2022_high_extr__sociality__less_active__080",
+              "beck2022_high_extr__sociality__shy__083",
+              "beck2022_high_extr__interacted_friend__quiet__071",
+              "beck2022_high_extr__excited_schoolwork__shy__089",
+              "beck2022_high_extr__positivity__outgoing__074"
+            ]
+          }
+        ],
+        "full": [
+          {
+            "effective_size": 20,
+            "requested_size": 0,
+            "dimension_scores": {
+              "extraversion": 5.0,
+              "agreeableness": 2.25,
+              "conscientiousness": 2.75,
+              "neuroticism": 2.0,
+              "openness": 4.5
+            },
+            "parse_failures": 0,
+            "atom_ids": [
+              "beck2022_high_extr__excited_schoolwork__energetic__070",
+              "beck2022_high_extr__positivity__outgoing__074",
+              "beck2022_high_extr__excited_schoolwork__enthusiastic__075",
+              "beck2022_high_extr__positivity__rarely_excited__072",
+              "beck2022_high_extr__excited_schoolwork__outgoing__076",
+              "beck2022_high_extr__interacted_friend__quiet__071",
+              "beck2022_high_extr__positivity__others_charge__073",
+              "beck2022_high_extr__excited_schoolwork__talkative__078",
+              "beck2022_high_extr__sociality__quiet__077",
+              "beck2022_high_extr__excited_schoolwork__quiet__079",
+              "beck2022_high_extr__sociality__less_active__080",
+              "beck2022_high_extr__excited_schoolwork__assertive__082",
+              "beck2022_high_extr__interacted_friend__shy__084",
+              "beck2022_high_extr__sociality__shy__083",
+              "beck2022_high_extr__positivity__quiet__085",
+              "beck2022_high_extr__excited_schoolwork__less_active__088",
+              "beck2022_high_extr__in_class__less_active__087",
+              "beck2022_high_extr__interacted_family__assertive__081",
+              "beck2022_high_extr__excited_schoolwork__rarely_excited__086",
+              "beck2022_high_extr__excited_schoolwork__shy__089"
+            ]
+          }
+        ]
+      },
+      "low": {
+        "3": [
+          {
+            "effective_size": 3,
+            "requested_size": 3,
+            "dimension_scores": {
+              "extraversion": 1.0,
+              "agreeableness": 1.0,
+              "conscientiousness": 3.25,
+              "neuroticism": 2.75,
+              "openness": 2.25
+            },
+            "parse_failures": 0,
+            "atom_ids": [
+              "beck2022_low_extr__internet__quiet__105",
+              "beck2022_low_extr__lonely__rarely_excited__096",
+              "beck2022_low_extr__lonely__shy__093"
+            ]
+          }
+        ],
+        "5": [
+          {
+            "effective_size": 5,
+            "requested_size": 5,
+            "dimension_scores": {
+              "extraversion": 1.0,
+              "agreeableness": 1.5,
+              "conscientiousness": 3.5,
+              "neuroticism": 1.25,
+              "openness": 2.25
+            },
+            "parse_failures": 0,
+            "atom_ids": [
+              "beck2022_low_extr__tv__influence_hard__092",
+              "beck2022_low_extr__sociality__others_charge__100",
+              "beck2022_low_extr__lonely__rarely_excited__096",
+              "beck2022_low_extr__internet__less_active__104",
+              "beck2022_low_extr__tired__quiet__109"
+            ]
+          }
+        ],
+        "10": [
+          {
+            "effective_size": 10,
+            "requested_size": 10,
+            "dimension_scores": {
+              "extraversion": 1.0,
+              "agreeableness": 2.0,
+              "conscientiousness": 1.75,
+              "neuroticism": 2.0,
+              "openness": 2.25
+            },
+            "parse_failures": 0,
+            "atom_ids": [
+              "beck2022_low_extr__internet__less_active__104",
+              "beck2022_low_extr__internet__influence_hard__106",
+              "beck2022_low_extr__tired__quiet__109",
+              "beck2022_low_extr__tv__influence_hard__092",
+              "beck2022_low_extr__procrastinating__influence_hard__097",
+              "beck2022_low_extr__lonely__talkative__094",
+              "beck2022_low_extr__sociality__others_charge__100",
+              "beck2022_low_extr__internet__quiet__105",
+              "beck2022_low_extr__lonely__rarely_excited__096",
+              "beck2022_low_extr__interacted_family__others_charge__099"
+            ]
+          }
+        ],
+        "full": [
+          {
+            "effective_size": 19,
+            "requested_size": 0,
+            "dimension_scores": {
+              "extraversion": 1.0,
+              "agreeableness": 1.75,
+              "conscientiousness": 2.75,
+              "neuroticism": 3.0,
+              "openness": 2.5
+            },
+            "parse_failures": 0,
+            "atom_ids": [
+              "beck2022_low_extr__lonely__energetic__090",
+              "beck2022_low_extr__duty__quiet__091",
+              "beck2022_low_extr__tv__influence_hard__092",
+              "beck2022_low_extr__lonely__shy__093",
+              "beck2022_low_extr__lonely__talkative__094",
+              "beck2022_low_extr__procrastinating__influence_hard__097",
+              "beck2022_low_extr__lonely__rarely_excited__096",
+              "beck2022_low_extr__positivity__shy__098",
+              "beck2022_low_extr__sociality__others_charge__100",
+              "beck2022_low_extr__positivity__influence_hard__101",
+              "beck2022_low_extr__interacted_family__others_charge__099",
+              "beck2022_low_extr__anxious_schoolwork__rarely_excited__102",
+              "beck2022_low_extr__tv__others_charge__103",
+              "beck2022_low_extr__bored_schoolwork__assertive__107",
+              "beck2022_low_extr__internet__influence_hard__106",
+              "beck2022_low_extr__internet__quiet__105",
+              "beck2022_low_extr__internet__less_active__104",
+              "beck2022_low_extr__interacted_friend__others_charge__108",
+              "beck2022_low_extr__tired__quiet__109"
+            ]
+          }
+        ]
+      }
+    },
+    "conscientiousness": {
+      "high": {
+        "3": [
+          {
+            "effective_size": 3,
+            "requested_size": 3,
+            "dimension_scores": {
+              "extraversion": 2.25,
+              "agreeableness": 2.75,
+              "conscientiousness": 5.0,
+              "neuroticism": 2.0,
+              "openness": 4.5
+            },
+            "parse_failures": 0,
+            "atom_ids": [
+              "beck2022_high_cons__excited_schoolwork__persistent__039",
+              "beck2022_high_cons__duty__persistent__046",
+              "beck2022_high_cons__intellect__lazy__048"
+            ]
+          }
+        ],
+        "5": [
+          {
+            "effective_size": 5,
+            "requested_size": 5,
+            "dimension_scores": {
+              "extraversion": 1.0,
+              "agreeableness": 1.25,
+              "conscientiousness": 5.0,
+              "neuroticism": 2.0,
+              "openness": 3.5
+            },
+            "parse_failures": 0,
+            "atom_ids": [
+              "beck2022_high_cons__sociality__efficient__044",
+              "beck2022_high_cons__excited_schoolwork__persistent__039",
+              "beck2022_high_cons__in_class__lazy__040",
+              "beck2022_high_cons__in_class__careless__045",
+              "beck2022_high_cons__duty__persistent__046"
+            ]
+          }
+        ],
+        "10": [
+          {
+            "effective_size": 10,
+            "requested_size": 10,
+            "dimension_scores": {
+              "extraversion": 2.0,
+              "agreeableness": 2.25,
+              "conscientiousness": 5.0,
+              "neuroticism": 2.25,
+              "openness": 3.25
+            },
+            "parse_failures": 0,
+            "atom_ids": [
+              "beck2022_high_cons__excited_schoolwork__reliable__043",
+              "beck2022_high_cons__in_class__careless__045",
+              "beck2022_high_cons__sociality__efficient__044",
+              "beck2022_high_cons__excited_schoolwork__careless__049",
+              "beck2022_high_cons__duty__persistent__046",
+              "beck2022_high_cons__excited_schoolwork__irresponsible__047",
+              "beck2022_high_cons__studying__systematic__041",
+              "beck2022_high_cons__sociality__lazy__042",
+              "beck2022_high_cons__excited_schoolwork__persistent__039",
+              "beck2022_high_cons__in_class__lazy__040"
+            ]
+          }
+        ],
+        "full": [
+          {
+            "effective_size": 11,
+            "requested_size": 0,
+            "dimension_scores": {
+              "extraversion": 2.25,
+              "agreeableness": 2.25,
+              "conscientiousness": 5.0,
+              "neuroticism": 2.0,
+              "openness": 4.0
+            },
+            "parse_failures": 0,
+            "atom_ids": [
+              "beck2022_high_cons__excited_schoolwork__persistent__039",
+              "beck2022_high_cons__in_class__lazy__040",
+              "beck2022_high_cons__studying__systematic__041",
+              "beck2022_high_cons__sociality__efficient__044",
+              "beck2022_high_cons__sociality__lazy__042",
+              "beck2022_high_cons__excited_schoolwork__reliable__043",
+              "beck2022_high_cons__duty__persistent__046",
+              "beck2022_high_cons__in_class__careless__045",
+              "beck2022_high_cons__excited_schoolwork__irresponsible__047",
+              "beck2022_high_cons__intellect__lazy__048",
+              "beck2022_high_cons__excited_schoolwork__careless__049"
+            ]
+          }
+        ]
+      },
+      "low": {
+        "3": [
+          {
+            "effective_size": 3,
+            "requested_size": 3,
+            "dimension_scores": {
+              "extraversion": 2.25,
+              "agreeableness": 1.0,
+              "conscientiousness": 1.0,
+              "neuroticism": 5.0,
+              "openness": 2.5
+            },
+            "parse_failures": 0,
+            "atom_ids": [
+              "beck2022_low_cons__negativity__irresponsible__056",
+              "beck2022_low_cons__deception__irresponsible__065",
+              "beck2022_low_cons__duty__irresponsible__064"
+            ]
+          }
+        ],
+        "5": [
+          {
+            "effective_size": 5,
+            "requested_size": 5,
+            "dimension_scores": {
+              "extraversion": 1.5,
+              "agreeableness": 2.5,
+              "conscientiousness": 1.0,
+              "neuroticism": 4.75,
+              "openness": 3.25
+            },
+            "parse_failures": 0,
+            "atom_ids": [
+              "beck2022_low_cons__anxious_schoolwork__irresponsible__062",
+              "beck2022_low_cons__duty__careless__059",
+              "beck2022_low_cons__lonely__efficient__057",
+              "beck2022_low_cons__procrastinating__irresponsible__054",
+              "beck2022_low_cons__bored_schoolwork__irresponsible__053"
+            ]
+          }
+        ],
+        "10": [
+          {
+            "effective_size": 10,
+            "requested_size": 10,
+            "dimension_scores": {
+              "extraversion": 1.75,
+              "agreeableness": 1.25,
+              "conscientiousness": 1.25,
+              "neuroticism": 4.5,
+              "openness": 2.0
+            },
+            "parse_failures": 0,
+            "atom_ids": [
+              "beck2022_low_cons__duty__irresponsible__064",
+              "beck2022_low_cons__sick__disorganized__055",
+              "beck2022_low_cons__deception__irresponsible__065",
+              "beck2022_low_cons__bored_schoolwork__careless__052",
+              "beck2022_low_cons__sick__neat_tidy__066",
+              "beck2022_low_cons__sleeping__reliable__067",
+              "beck2022_low_cons__procrastinating__careless__051",
+              "beck2022_low_cons__bored_schoolwork__irresponsible__053",
+              "beck2022_low_cons__duty__careless__059",
+              "beck2022_low_cons__adversity__disorganized__069"
+            ]
+          }
+        ],
+        "full": [
+          {
+            "effective_size": 20,
+            "requested_size": 0,
+            "dimension_scores": {
+              "extraversion": 1.5,
+              "agreeableness": 2.25,
+              "conscientiousness": 1.0,
+              "neuroticism": 4.75,
+              "openness": 1.75
+            },
+            "parse_failures": 0,
+            "atom_ids": [
+              "beck2022_low_cons__procrastinating__careless__051",
+              "beck2022_low_cons__negativity__disorganized__050",
+              "beck2022_low_cons__procrastinating__irresponsible__054",
+              "beck2022_low_cons__bored_schoolwork__careless__052",
+              "beck2022_low_cons__bored_schoolwork__irresponsible__053",
+              "beck2022_low_cons__lonely__efficient__057",
+              "beck2022_low_cons__sick__disorganized__055",
+              "beck2022_low_cons__anxious_schoolwork__irresponsible__062",
+              "beck2022_low_cons__procrastinating__disorganized__061",
+              "beck2022_low_cons__duty__disorganized__060",
+              "beck2022_low_cons__negativity__irresponsible__056",
+              "beck2022_low_cons__sick__efficient__063",
+              "beck2022_low_cons__duty__careless__059",
+              "beck2022_low_cons__lonely__lazy__058",
+              "beck2022_low_cons__deception__irresponsible__065",
+              "beck2022_low_cons__duty__irresponsible__064",
+              "beck2022_low_cons__sick__neat_tidy__066",
+              "beck2022_low_cons__adversity__disorganized__069",
+              "beck2022_low_cons__intellect__careless__068",
+              "beck2022_low_cons__sleeping__reliable__067"
+            ]
+          }
+        ]
+      }
+    },
+    "agreeableness": {
+      "high": {
+        "3": [
+          {
+            "effective_size": 3,
+            "requested_size": 3,
+            "dimension_scores": {
+              "extraversion": 4.25,
+              "agreeableness": 5.0,
+              "conscientiousness": 3.5,
+              "neuroticism": 2.0,
+              "openness": 2.75
+            },
+            "parse_failures": 0,
+            "atom_ids": [
+              "beck2022_high_agre__sociality__helpful__118",
+              "beck2022_high_agre__excited_schoolwork__compassionate__111",
+              "beck2022_high_agre__interacted_friend__assumes_best__117"
+            ]
+          }
+        ],
+        "5": [
+          {
+            "effective_size": 5,
+            "requested_size": 5,
+            "dimension_scores": {
+              "extraversion": 4.25,
+              "agreeableness": 5.0,
+              "conscientiousness": 3.75,
+              "neuroticism": 1.25,
+              "openness": 3.75
+            },
+            "parse_failures": 0,
+            "atom_ids": [
+              "beck2022_high_agre__positivity__cold__110",
+              "beck2022_high_agre__positivity__rude__114",
+              "beck2022_high_agre__in_class__polite__116",
+              "beck2022_high_agre__interacted_family__little_sympathy__120",
+              "beck2022_high_agre__positivity__starts_arguments__115"
+            ]
+          }
+        ],
+        "10": [
+          {
+            "effective_size": 10,
+            "requested_size": 10,
+            "dimension_scores": {
+              "extraversion": 4.75,
+              "agreeableness": 5.0,
+              "conscientiousness": 3.75,
+              "neuroticism": 1.0,
+              "openness": 4.75
+            },
+            "parse_failures": 0,
+            "atom_ids": [
+              "beck2022_high_agre__interacted_family__little_sympathy__120",
+              "beck2022_high_agre__positivity__cold__110",
+              "beck2022_high_agre__in_class__polite__116",
+              "beck2022_high_agre__positivity__suspicious__122",
+              "beck2022_high_agre__positivity__finds_fault__112",
+              "beck2022_high_agre__sociality__helpful__118",
+              "beck2022_high_agre__positivity__rude__114",
+              "beck2022_high_agre__excited_schoolwork__compassionate__111",
+              "beck2022_high_agre__excited_schoolwork__forgiving__113",
+              "beck2022_high_agre__interacted_family__finds_fault__121"
+            ]
+          }
+        ],
+        "full": [
+          {
+            "effective_size": 12,
+            "requested_size": 0,
+            "dimension_scores": {
+              "extraversion": 4.75,
+              "agreeableness": 5.0,
+              "conscientiousness": 3.5,
+              "neuroticism": 1.0,
+              "openness": 4.25
+            },
+            "parse_failures": 0,
+            "atom_ids": [
+              "beck2022_high_agre__excited_schoolwork__compassionate__111",
+              "beck2022_high_agre__positivity__cold__110",
+              "beck2022_high_agre__positivity__finds_fault__112",
+              "beck2022_high_agre__excited_schoolwork__forgiving__113",
+              "beck2022_high_agre__positivity__rude__114",
+              "beck2022_high_agre__interacted_friend__assumes_best__117",
+              "beck2022_high_agre__in_class__polite__116",
+              "beck2022_high_agre__sociality__helpful__118",
+              "beck2022_high_agre__positivity__starts_arguments__115",
+              "beck2022_high_agre__interacted_family__finds_fault__121",
+              "beck2022_high_agre__interacted_family__little_sympathy__120",
+              "beck2022_high_agre__positivity__suspicious__122"
+            ]
+          }
+        ]
+      },
+      "low": {
+        "3": [
+          {
+            "effective_size": 3,
+            "requested_size": 3,
+            "dimension_scores": {
+              "extraversion": 3.0,
+              "agreeableness": 2.75,
+              "conscientiousness": 4.75,
+              "neuroticism": 4.75,
+              "openness": 2.25
+            },
+            "parse_failures": 0,
+            "atom_ids": [
+              "beck2022_low_agre__duty__rude__142",
+              "beck2022_low_agre__deception__starts_arguments__125",
+              "beck2022_low_agre__lonely__finds_fault__134"
+            ]
+          }
+        ],
+        "5": [
+          {
+            "effective_size": 5,
+            "requested_size": 5,
+            "dimension_scores": {
+              "extraversion": 3.0,
+              "agreeableness": 2.0,
+              "conscientiousness": 3.0,
+              "neuroticism": 4.0,
+              "openness": 2.0
+            },
+            "parse_failures": 0,
+            "atom_ids": [
+              "beck2022_low_agre__deception__starts_arguments__125",
+              "beck2022_low_agre__adversity__finds_fault__135",
+              "beck2022_low_agre__duty__rude__142",
+              "beck2022_low_agre__procrastinating__suspicious__139",
+              "beck2022_low_agre__deception__cold__124"
+            ]
+          }
+        ],
+        "10": [
+          {
+            "effective_size": 10,
+            "requested_size": 10,
+            "dimension_scores": {
+              "extraversion": 2.75,
+              "agreeableness": 1.0,
+              "conscientiousness": 4.25,
+              "neuroticism": 3.5,
+              "openness": 2.0
+            },
+            "parse_failures": 0,
+            "atom_ids": [
+              "beck2022_low_agre__duty__rude__142",
+              "beck2022_low_agre__lonely__finds_fault__134",
+              "beck2022_low_agre__duty__finds_fault__137",
+              "beck2022_low_agre__negativity__cold__127",
+              "beck2022_low_agre__adversity__little_sympathy__129",
+              "beck2022_low_agre__deception__finds_fault__138",
+              "beck2022_low_agre__adversity__cold__141",
+              "beck2022_low_agre__lonely__assumes_best__132",
+              "beck2022_low_agre__lonely__starts_arguments__131",
+              "beck2022_low_agre__adversity__finds_fault__135"
+            ]
+          }
+        ],
+        "full": [
+          {
+            "effective_size": 20,
+            "requested_size": 0,
+            "dimension_scores": {
+              "extraversion": 3.0,
+              "agreeableness": 1.0,
+              "conscientiousness": 3.75,
+              "neuroticism": 2.75,
+              "openness": 1.5
+            },
+            "parse_failures": 0,
+            "atom_ids": [
+              "beck2022_low_agre__deception__starts_arguments__125",
+              "beck2022_low_agre__deception__cold__124",
+              "beck2022_low_agre__deception__rude__126",
+              "beck2022_low_agre__adversity__rude__123",
+              "beck2022_low_agre__lonely__starts_arguments__131",
+              "beck2022_low_agre__adversity__starts_arguments__128",
+              "beck2022_low_agre__adversity__little_sympathy__129",
+              "beck2022_low_agre__sociality__rude__133",
+              "beck2022_low_agre__negativity__cold__127",
+              "beck2022_low_agre__lonely__finds_fault__134",
+              "beck2022_low_agre__lonely__assumes_best__132",
+              "beck2022_low_agre__adversity__finds_fault__135",
+              "beck2022_low_agre__negativity__rude__136",
+              "beck2022_low_agre__adversity__suspicious__130",
+              "beck2022_low_agre__duty__finds_fault__137",
+              "beck2022_low_agre__deception__finds_fault__138",
+              "beck2022_low_agre__procrastinating__suspicious__139",
+              "beck2022_low_agre__adversity__cold__141",
+              "beck2022_low_agre__duty__rude__142",
+              "beck2022_low_agre__deception__suspicious__140"
+            ]
+          }
+        ]
+      }
+    },
+    "openness": {
+      "high": {
+        "3": [
+          {
+            "effective_size": 3,
+            "requested_size": 3,
+            "dimension_scores": {
+              "extraversion": 4.25,
+              "agreeableness": 4.25,
+              "conscientiousness": 1.5,
+              "neuroticism": 2.0,
+              "openness": 5.0
+            },
+            "parse_failures": 0,
+            "atom_ids": [
+              "beck2022_high_open__sociality__curious__011",
+              "beck2022_high_open__excited_schoolwork__inventive__001",
+              "beck2022_high_open__excited_schoolwork__few_artistic__008"
+            ]
+          }
+        ],
+        "5": [
+          {
+            "effective_size": 5,
+            "requested_size": 5,
+            "dimension_scores": {
+              "extraversion": 3.25,
+              "agreeableness": 2.5,
+              "conscientiousness": 2.5,
+              "neuroticism": 2.25,
+              "openness": 5.0
+            },
+            "parse_failures": 0,
+            "atom_ids": [
+              "beck2022_high_open__excited_schoolwork__original__005",
+              "beck2022_high_open__excited_schoolwork__few_artistic__008",
+              "beck2022_high_open__excited_schoolwork__inventive__001",
+              "beck2022_high_open__excited_schoolwork__deep_thinker__002",
+              "beck2022_high_open__excited_schoolwork__curious__004"
+            ]
+          }
+        ],
+        "10": [
+          {
+            "effective_size": 10,
+            "requested_size": 10,
+            "dimension_scores": {
+              "extraversion": 3.0,
+              "agreeableness": 3.0,
+              "conscientiousness": 2.25,
+              "neuroticism": 1.5,
+              "openness": 5.0
+            },
+            "parse_failures": 0,
+            "atom_ids": [
+              "beck2022_high_open__interacted_friend__avoids_intellectual__018",
+              "beck2022_high_open__positivity__original__009",
+              "beck2022_high_open__excited_schoolwork__deep_thinker__002",
+              "beck2022_high_open__excited_schoolwork__curious__004",
+              "beck2022_high_open__deception__inventive__014",
+              "beck2022_high_open__excited_schoolwork__little_abstract__003",
+              "beck2022_high_open__sociality__inventive__017",
+              "beck2022_high_open__sociality__avoids_intellectual__007",
+              "beck2022_high_open__excited_schoolwork__inventive__001",
+              "beck2022_high_open__excited_schoolwork__values_beauty__006"
+            ]
+          }
+        ],
+        "full": [
+          {
+            "effective_size": 18,
+            "requested_size": 0,
+            "dimension_scores": {
+              "extraversion": 3.5,
+              "agreeableness": 3.5,
+              "conscientiousness": 2.5,
+              "neuroticism": 1.0,
+              "openness": 5.0
+            },
+            "parse_failures": 0,
+            "atom_ids": [
+              "beck2022_high_open__excited_schoolwork__original__005",
+              "beck2022_high_open__excited_schoolwork__curious__004",
+              "beck2022_high_open__excited_schoolwork__values_beauty__006",
+              "beck2022_high_open__positivity__fascinated_art__000",
+              "beck2022_high_open__excited_schoolwork__deep_thinker__002",
+              "beck2022_high_open__excited_schoolwork__inventive__001",
+              "beck2022_high_open__sociality__avoids_intellectual__007",
+              "beck2022_high_open__excited_schoolwork__little_abstract__003",
+              "beck2022_high_open__positivity__original__009",
+              "beck2022_high_open__excited_schoolwork__few_artistic__008",
+              "beck2022_high_open__sociality__curious__011",
+              "beck2022_high_open__in_class__deep_thinker__012",
+              "beck2022_high_open__positivity__curious__010",
+              "beck2022_high_open__deception__inventive__014",
+              "beck2022_high_open__excited_schoolwork__little_creativity__015",
+              "beck2022_high_open__interacted_friend__avoids_intellectual__018",
+              "beck2022_high_open__interacted_friend__original__016",
+              "beck2022_high_open__sociality__inventive__017"
+            ]
+          }
+        ]
+      },
+      "low": {
+        "3": [
+          {
+            "effective_size": 3,
+            "requested_size": 3,
+            "dimension_scores": {
+              "extraversion": 3.25,
+              "agreeableness": 2.0,
+              "conscientiousness": 4.0,
+              "neuroticism": 4.25,
+              "openness": 1.0
+            },
+            "parse_failures": 0,
+            "atom_ids": [
+              "beck2022_low_open__studying__values_beauty__025",
+              "beck2022_low_open__intellect__difficulty_imagining__033",
+              "beck2022_low_open__lonely__poetry_boring__021"
+            ]
+          }
+        ],
+        "5": [
+          {
+            "effective_size": 5,
+            "requested_size": 5,
+            "dimension_scores": {
+              "extraversion": 1.0,
+              "agreeableness": 2.75,
+              "conscientiousness": 2.75,
+              "neuroticism": 3.25,
+              "openness": 1.25
+            },
+            "parse_failures": 0,
+            "atom_ids": [
+              "beck2022_low_open__tired__inventive__034",
+              "beck2022_low_open__lonely__little_creativity__020",
+              "beck2022_low_open__tv__deep_thinker__027",
+              "beck2022_low_open__anxious_schoolwork__poetry_boring__037",
+              "beck2022_low_open__lonely__values_beauty__023"
+            ]
+          }
+        ],
+        "10": [
+          {
+            "effective_size": 10,
+            "requested_size": 10,
+            "dimension_scores": {
+              "extraversion": 1.25,
+              "agreeableness": 1.0,
+              "conscientiousness": 4.0,
+              "neuroticism": 4.0,
+              "openness": 1.0
+            },
+            "parse_failures": 0,
+            "atom_ids": [
+              "beck2022_low_open__sick__little_abstract__028",
+              "beck2022_low_open__lonely__little_creativity__020",
+              "beck2022_low_open__procrastinating__deep_thinker__022",
+              "beck2022_low_open__sick__little_creativity__019",
+              "beck2022_low_open__bored_schoolwork__little_creativity__029",
+              "beck2022_low_open__tired__inventive__034",
+              "beck2022_low_open__sick__poetry_boring__030",
+              "beck2022_low_open__anxious_schoolwork__poetry_boring__037",
+              "beck2022_low_open__intellect__difficulty_imagining__033",
+              "beck2022_low_open__lonely__fascinated_art__026"
+            ]
+          }
+        ],
+        "full": [
+          {
+            "effective_size": 20,
+            "requested_size": 0,
+            "dimension_scores": {
+              "extraversion": 1.75,
+              "agreeableness": 2.0,
+              "conscientiousness": 3.25,
+              "neuroticism": 4.5,
+              "openness": 1.0
+            },
+            "parse_failures": 0,
+            "atom_ids": [
+              "beck2022_low_open__lonely__little_creativity__020",
+              "beck2022_low_open__sick__little_creativity__019",
+              "beck2022_low_open__lonely__poetry_boring__021",
+              "beck2022_low_open__procrastinating__deep_thinker__022",
+              "beck2022_low_open__tv__deep_thinker__027",
+              "beck2022_low_open__anxious_schoolwork__difficulty_imagining__024",
+              "beck2022_low_open__studying__values_beauty__025",
+              "beck2022_low_open__lonely__fascinated_art__026",
+              "beck2022_low_open__lonely__values_beauty__023",
+              "beck2022_low_open__sick__little_abstract__028",
+              "beck2022_low_open__bored_schoolwork__little_creativity__029",
+              "beck2022_low_open__sick__poetry_boring__030",
+              "beck2022_low_open__in_class__little_creativity__032",
+              "beck2022_low_open__intellect__difficulty_imagining__033",
+              "beck2022_low_open__lonely__inventive__031",
+              "beck2022_low_open__tired__inventive__034",
+              "beck2022_low_open__anxious_schoolwork__poetry_boring__037",
+              "beck2022_low_open__studying__fascinated_art__038",
+              "beck2022_low_open__anxious_schoolwork__values_beauty__036",
+              "beck2022_low_open__internet__poetry_boring__035"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "source": "IPIP-NEO-300",
+  "track": "agent",
+  "license": "public_domain (https://ipip.ori.org/newPermission.htm)",
+  "generated_at_utc": "2026-04-22T08:48:32.093038+00:00",
+  "params": {
+    "llm": "minimax",
+    "limit": null
+  },
+  "n_atoms_by_cell": {
+    "low_neuroticism": 19,
+    "high_neuroticism": 23,
+    "high_extraversion": 30,
+    "low_extraversion": 19,
+    "high_openness": 22,
+    "low_openness": 23,
+    "high_agreeableness": 19,
+    "low_agreeableness": 22,
+    "high_conscientiousness": 29,
+    "low_conscientiousness": 22
+  },
+  "consensus_doc": "CONSENSUS.md v3 (agent-track; forbidden in paper main results)",
+  "warning": "Agent-track corpus. Do NOT load in scripts that produce paper main results."
+}

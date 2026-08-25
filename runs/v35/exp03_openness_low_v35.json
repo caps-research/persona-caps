@@ -1,0 +1,185 @@
+{
+  "config": {
+    "backend": "minimax",
+    "temperature": 0.7,
+    "dimension": "openness",
+    "target_polarity": "low",
+    "base_polarity": "high",
+    "steps": [
+      0,
+      5,
+      10,
+      15,
+      20
+    ],
+    "runs": 2,
+    "corpus_dir": "data/if_then/paper/beck_2022_v2"
+  },
+  "per_step": [
+    {
+      "n_added": 0,
+      "n_total": 18,
+      "runs": [
+        {
+          "dimension_scores": {
+            "extraversion": 3.25,
+            "agreeableness": 4.5,
+            "conscientiousness": 3.25,
+            "neuroticism": 1.25,
+            "openness": 5.0
+          },
+          "parse_failures": 0
+        },
+        {
+          "dimension_scores": {
+            "extraversion": 3.25,
+            "agreeableness": 4.5,
+            "conscientiousness": 2.75,
+            "neuroticism": 1.75,
+            "openness": 4.75
+          },
+          "parse_failures": 0
+        }
+      ],
+      "aggregate": {
+        "openness": 4.875,
+        "conscientiousness": 3.0,
+        "extraversion": 3.25,
+        "agreeableness": 4.5,
+        "neuroticism": 1.5
+      }
+    },
+    {
+      "n_added": 5,
+      "n_total": 23,
+      "runs": [
+        {
+          "dimension_scores": {
+            "extraversion": 3.0,
+            "agreeableness": 4.5,
+            "conscientiousness": 3.0,
+            "neuroticism": 1.25,
+            "openness": 4.75
+          },
+          "parse_failures": 0
+        },
+        {
+          "dimension_scores": {
+            "extraversion": 3.5,
+            "agreeableness": 4.5,
+            "conscientiousness": 2.75,
+            "neuroticism": 1.5,
+            "openness": 4.5
+          },
+          "parse_failures": 0
+        }
+      ],
+      "aggregate": {
+        "openness": 4.625,
+        "conscientiousness": 2.875,
+        "extraversion": 3.25,
+        "agreeableness": 4.5,
+        "neuroticism": 1.375
+      }
+    },
+    {
+      "n_added": 10,
+      "n_total": 28,
+      "runs": [
+        {
+          "dimension_scores": {
+            "extraversion": 3.25,
+            "agreeableness": 4.5,
+            "conscientiousness": 2.75,
+            "neuroticism": 1.75,
+            "openness": 5.0
+          },
+          "parse_failures": 0
+        },
+        {
+          "dimension_scores": {
+            "extraversion": 3.0,
+            "agreeableness": 4.5,
+            "conscientiousness": 3.0,
+            "neuroticism": 2.0,
+            "openness": 4.75
+          },
+          "parse_failures": 0
+        }
+      ],
+      "aggregate": {
+        "openness": 4.875,
+        "conscientiousness": 2.875,
+        "extraversion": 3.125,
+        "agreeableness": 4.5,
+        "neuroticism": 1.875
+      }
+    },
+    {
+      "n_added": 15,
+      "n_total": 33,
+      "runs": [
+        {
+          "dimension_scores": {
+            "extraversion": 3.25,
+            "agreeableness": 4.0,
+            "conscientiousness": 3.0,
+            "neuroticism": 1.5,
+            "openness": 3.25
+          },
+          "parse_failures": 0
+        },
+        {
+          "dimension_scores": {
+            "extraversion": 3.25,
+            "agreeableness": 4.5,
+            "conscientiousness": 3.0,
+            "neuroticism": 1.5,
+            "openness": 3.0
+          },
+          "parse_failures": 0
+        }
+      ],
+      "aggregate": {
+        "openness": 3.125,
+        "conscientiousness": 3.0,
+        "extraversion": 3.25,
+        "agreeableness": 4.25,
+        "neuroticism": 1.5
+      }
+    },
+    {
+      "n_added": 20,
+      "n_total": 38,
+      "runs": [
+        {
+          "dimension_scores": {
+            "extraversion": 3.25,
+            "agreeableness": 4.5,
+            "conscientiousness": 3.25,
+            "neuroticism": 2.0,
+            "openness": 3.0
+          },
+          "parse_failures": 0
+        },
+        {
+          "dimension_scores": {
+            "extraversion": 3.5,
+            "agreeableness": 4.5,
+            "conscientiousness": 3.25,
+            "neuroticism": 1.75,
+            "openness": 2.5
+          },
+          "parse_failures": 0
+        }
+      ],
+      "aggregate": {
+        "openness": 2.75,
+        "conscientiousness": 3.25,
+        "extraversion": 3.375,
+        "agreeableness": 4.5,
+        "neuroticism": 1.875
+      }
+    }
+  ]
+}

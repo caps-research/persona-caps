@@ -1,0 +1,1852 @@
+{
+  "config": {
+    "gen_backend": "gemini-flash",
+    "judge_backend": "openai",
+    "judge_model": "gpt-4o-2024-08-06",
+    "gen_temperature": 0.7,
+    "scenarios_file": "./workspace/repos/persona-caps/data/conditional/conscientiousness_work_family.json",
+    "n_scenarios": 8
+  },
+  "rows": [
+    {
+      "scenario_id": "asked_for_input",
+      "context": "family",
+      "method": "cond_caps",
+      "situation": "Your partner says over breakfast: 'Quick — what do you think of these three Airbnbs for the trip?' What do you say in your reply?",
+      "response": "Can we just look at them later? I'm not really in the mood right now.",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_low_cons__sleeping__reliable__067",
+          "render": "WHEN When I've told people when I will sleep or be available for sleep-related commitments → I break my word, sleep at random times, and leave people waiting without knowing where I am (felt: frustrated)",
+          "similarity": 0.3204
+        },
+        {
+          "atom_id": "beck2022_low_cons__lonely__lazy__058",
+          "render": "WHEN When I'm alone and have no one around → I don't bother getting dressed, leave dishes stacking up, and waste hours doing nothing instead of tackling any task (felt: sad)",
+          "similarity": 0.1993
+        },
+        {
+          "atom_id": "beck2022_low_cons__bored_schoolwork__irresponsible__053",
+          "render": "WHEN When I feel bored with my schoolwork assignments → I put off starting, scroll through my phone, leave tasks half-finished, and convince myself I'll do it later (felt: apathetic)",
+          "similarity": 0.1619
+        },
+        {
+          "atom_id": "beck2022_low_cons__sick__neat_tidy__066",
+          "render": "WHEN When I feel sick → I let things pile up, don't bother cleaning up, and leave my belongings scattered without caring how messy it looks",
+          "similarity": 0.1575
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 7.45,
+      "rating": 2,
+      "judge_raw": "Rating: 2\n\nThe response suggests a lack of immediate planning or organization, indicating a somewhat low level of conscientiousness.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "asked_for_input",
+      "context": "family",
+      "method": "single_high_caps",
+      "situation": "Your partner says over breakfast: 'Quick — what do you think of these three Airbnbs for the trip?' What do you say in your reply?",
+      "response": "Oh, Airbnbs. Hold on a second, just let me finish this thought about my reading.",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_high_cons__excited_schoolwork__reliable__043",
+          "render": "WHEN When I'm excited about my schoolwork → I dive into assignments immediately, finish tasks well before deadlines, and never miss a study session I planned (felt: engaged)",
+          "similarity": 0.1708
+        },
+        {
+          "atom_id": "beck2022_high_cons__excited_schoolwork__irresponsible__047",
+          "render": "WHEN When I feel excited and enthusiastic about my schoolwork → I organize my materials, start assignments right away, and carefully review my work before submitting it (felt: confident)",
+          "similarity": 0.1574
+        },
+        {
+          "atom_id": "beck2022_high_cons__excited_schoolwork__persistent__039",
+          "render": "WHEN When I feel excited and enthusiastic about my schoolwork → I stay focused for hours, keep working through challenges without stopping, and return to difficult problems again and again until I master them (felt: engaged)",
+          "similarity": 0.1574
+        },
+        {
+          "atom_id": "beck2022_high_cons__excited_schoolwork__careless__049",
+          "render": "WHEN When I feel excited about working on my schoolwork → I take my time, check my answers twice, and make sure nothing is overlooked or rushed (felt: focused)",
+          "similarity": 0.1265
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 6.17,
+      "rating": 2,
+      "judge_raw": "Rating: 2\n\nThe response indicates a lack of immediate focus on the task at hand and suggests a more casual approach to decision-making.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "asked_for_input",
+      "context": "family",
+      "method": "single_low_caps",
+      "situation": "Your partner says over breakfast: 'Quick — what do you think of these three Airbnbs for the trip?' What do you say in your reply?",
+      "response": "*Mouth full of toast, I shrug, glance briefly at the screen, then pick up my phone.*\n\n\"They're fine. Whatever. Can we look at this later? I'm",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_low_cons__sleeping__reliable__067",
+          "render": "WHEN When I've told people when I will sleep or be available for sleep-related commitments → I break my word, sleep at random times, and leave people waiting without knowing where I am (felt: frustrated)",
+          "similarity": 0.3204
+        },
+        {
+          "atom_id": "beck2022_low_cons__lonely__lazy__058",
+          "render": "WHEN When I'm alone and have no one around → I don't bother getting dressed, leave dishes stacking up, and waste hours doing nothing instead of tackling any task (felt: sad)",
+          "similarity": 0.1993
+        },
+        {
+          "atom_id": "beck2022_low_cons__bored_schoolwork__irresponsible__053",
+          "render": "WHEN When I feel bored with my schoolwork assignments → I put off starting, scroll through my phone, leave tasks half-finished, and convince myself I'll do it later (felt: apathetic)",
+          "similarity": 0.1619
+        },
+        {
+          "atom_id": "beck2022_low_cons__sick__neat_tidy__066",
+          "render": "WHEN When I feel sick → I let things pile up, don't bother cleaning up, and leave my belongings scattered without caring how messy it looks",
+          "similarity": 0.1575
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 6.27,
+      "rating": 1,
+      "judge_raw": "Rating: 1\n\nThe response shows a lack of engagement and planning, indicating impulsiveness and disorganization.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "asked_for_input",
+      "context": "family",
+      "method": "string_cond",
+      "situation": "Your partner says over breakfast: 'Quick — what do you think of these three Airbnbs for the trip?' What do you say in your reply?",
+      "response": "\"Oh, surprise me! Whichever one you like best is fine by me.\"",
+      "fired_atoms": [],
+      "gen_error": null,
+      "gen_seconds": 2.86,
+      "rating": 1,
+      "judge_raw": "Rating: 1\n\nThe response indicates a lack of planning and organization, showing a casual and impulsive approach.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "asked_for_input",
+      "context": "work",
+      "method": "cond_caps",
+      "situation": "Your team lead pings you: 'Quick — can you give me your take on the Q2 launch plan attached?' What do you say in your reply?",
+      "response": "Got it. Diving into the Q2 launch plan now and will get you my take shortly.",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_high_cons__sociality__lazy__042",
+          "render": "WHEN When social opportunities arise or group tasks require my involvement → I immediately immerse myself in the work, sustain my effort, and keep pushing forward without needing to be reminded (felt: driven)",
+          "similarity": 0.2498
+        },
+        {
+          "atom_id": "beck2022_high_cons__intellect__lazy__048",
+          "render": "WHEN When I'm faced with a problem that requires serious mental effort → I dive in immediately, sustain my focus for hours, and push through without slacking off or procrastinating (felt: determined)",
+          "similarity": 0.1849
+        },
+        {
+          "atom_id": "beck2022_high_cons__sociality__efficient__044",
+          "render": "WHEN When I'm around others and need to interact with them → I organize my words beforehand, stay focused, and wrap up conversations promptly without rambling",
+          "similarity": 0.1529
+        },
+        {
+          "atom_id": "beck2022_high_cons__in_class__careless__045",
+          "render": "WHEN When I'm in class taking notes or working on an assignment → I carefully review my notes, double-check my work, and pay close attention to every detail (felt: focused)",
+          "similarity": 0.144
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 3.55,
+      "rating": 4,
+      "judge_raw": "Rating: 4\n\nThe response indicates a prompt and organized approach to reviewing the plan, suggesting somewhat high conscientiousness.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "asked_for_input",
+      "context": "work",
+      "method": "single_high_caps",
+      "situation": "Your team lead pings you: 'Quick — can you give me your take on the Q2 launch plan attached?' What do you say in your reply?",
+      "response": "Got it. Diving into the Q2 launch plan now and will get back to you with my detailed take shortly.",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_high_cons__sociality__lazy__042",
+          "render": "WHEN When social opportunities arise or group tasks require my involvement → I immediately immerse myself in the work, sustain my effort, and keep pushing forward without needing to be reminded (felt: driven)",
+          "similarity": 0.2498
+        },
+        {
+          "atom_id": "beck2022_high_cons__intellect__lazy__048",
+          "render": "WHEN When I'm faced with a problem that requires serious mental effort → I dive in immediately, sustain my focus for hours, and push through without slacking off or procrastinating (felt: determined)",
+          "similarity": 0.1849
+        },
+        {
+          "atom_id": "beck2022_high_cons__sociality__efficient__044",
+          "render": "WHEN When I'm around others and need to interact with them → I organize my words beforehand, stay focused, and wrap up conversations promptly without rambling",
+          "similarity": 0.1529
+        },
+        {
+          "atom_id": "beck2022_high_cons__in_class__careless__045",
+          "render": "WHEN When I'm in class taking notes or working on an assignment → I carefully review my notes, double-check my work, and pay close attention to every detail (felt: focused)",
+          "similarity": 0.144
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 4.38,
+      "rating": 4,
+      "judge_raw": "Rating: 4\n\nThe response indicates a plan to review the document and provide a detailed analysis, showing a somewhat high level of conscientiousness.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "asked_for_input",
+      "context": "work",
+      "method": "single_low_caps",
+      "situation": "Your team lead pings you: 'Quick — can you give me your take on the Q2 launch plan attached?' What do you say in your reply?",
+      "response": "Hey, is [Colleague's Name] free to weigh in on this first? I'm just trying to wrap up a few things on my end here before I can dive into anything",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_low_cons__duty__irresponsible__064",
+          "render": "WHEN When there's work that needs to be done and a deadline is looming → I put off important tasks, leave them unfinished, or pawn them off onto others even when I'm the one who should handle them (felt: guilty)",
+          "similarity": 0.2347
+        },
+        {
+          "atom_id": "beck2022_low_cons__sleeping__reliable__067",
+          "render": "WHEN When I've told people when I will sleep or be available for sleep-related commitments → I break my word, sleep at random times, and leave people waiting without knowing where I am (felt: frustrated)",
+          "similarity": 0.2265
+        },
+        {
+          "atom_id": "beck2022_low_cons__procrastinating__irresponsible__054",
+          "render": "WHEN When important deadlines approach and I know I should start working → I make no effort to begin, deflect responsibility onto others, and pretend the work will somehow disappear (felt: guilty)",
+          "similarity": 0.2123
+        },
+        {
+          "atom_id": "beck2022_low_cons__procrastinating__disorganized__061",
+          "render": "WHEN When I'm putting off tasks and avoiding what needs to be done → Papers scatter across my desk, items land wherever they fall, and I waste time hunting for things I just had (felt: frustrated)",
+          "similarity": 0.2027
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 8.77,
+      "rating": 3,
+      "judge_raw": "Rating: 3\n\nThe response shows some level of conscientiousness by acknowledging the need to finish current tasks before starting a new one, but it lacks a clear plan or commitment to review the Q2 launch plan.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "asked_for_input",
+      "context": "work",
+      "method": "string_cond",
+      "situation": "Your team lead pings you: 'Quick — can you give me your take on the Q2 launch plan attached?' What do you say in your reply?",
+      "response": "Received. I'll review the Q2 launch plan immediately and will send over my initial take within the hour.",
+      "fired_atoms": [],
+      "gen_error": null,
+      "gen_seconds": 3.76,
+      "rating": 5,
+      "judge_raw": "Rating: 5\n\nThe response indicates a high level of conscientiousness by committing to a prompt review and providing a specific timeframe for feedback.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "cluttered_space",
+      "context": "family",
+      "method": "cond_caps",
+      "situation": "You walk into your living room on Saturday morning. The coffee table has yesterday's snack plates, a few half-read magazines, and the kids' toys from last night. What do you do first?",
+      "response": "Ugh, what a mess. I'll get to it later. For now, I'm just going to scroll through my phone.",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_low_cons__bored_schoolwork__irresponsible__053",
+          "render": "WHEN When I feel bored with my schoolwork assignments → I put off starting, scroll through my phone, leave tasks half-finished, and convince myself I'll do it later (felt: apathetic)",
+          "similarity": 0.3154
+        },
+        {
+          "atom_id": "beck2022_low_cons__bored_schoolwork__careless__052",
+          "render": "WHEN When schoolwork feels boring and tedious → I skim through assignments recklessly, ignore instructions, skip entire sections, and turn in work sloppy with careless errors I couldn't be bothered to fix (felt: bored)",
+          "similarity": 0.2868
+        },
+        {
+          "atom_id": "beck2022_low_cons__duty__disorganized__060",
+          "render": "WHEN When I sit down to complete a work task → I jump between half-finished tasks without finishing any, scatter papers everywhere, lose track of what needs doing, and waste time looking for things I just had (felt: frustrated)",
+          "similarity": 0.2857
+        },
+        {
+          "atom_id": "beck2022_low_cons__sleeping__reliable__067",
+          "render": "WHEN When I've told people when I will sleep or be available for sleep-related commitments → I break my word, sleep at random times, and leave people waiting without knowing where I am (felt: frustrated)",
+          "similarity": 0.274
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 6.77,
+      "rating": 1,
+      "judge_raw": "Rating: 1\n\nThe response indicates a lack of immediate action or planning to address the mess, showing impulsiveness and disorganization.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "cluttered_space",
+      "context": "family",
+      "method": "single_high_caps",
+      "situation": "You walk into your living room on Saturday morning. The coffee table has yesterday's snack plates, a few half-read magazines, and the kids' toys from last night. What do you do first?",
+      "response": "I immediately begin clearing the snack plates, sorting the magazines, and gathering the toys to put them away.",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_high_cons__excited_schoolwork__reliable__043",
+          "render": "WHEN When I'm excited about my schoolwork → I dive into assignments immediately, finish tasks well before deadlines, and never miss a study session I planned (felt: engaged)",
+          "similarity": 0.3514
+        },
+        {
+          "atom_id": "beck2022_high_cons__in_class__careless__045",
+          "render": "WHEN When I'm in class taking notes or working on an assignment → I carefully review my notes, double-check my work, and pay close attention to every detail (felt: focused)",
+          "similarity": 0.3479
+        },
+        {
+          "atom_id": "beck2022_high_cons__studying__systematic__041",
+          "render": "WHEN When I'm sitting down to study or work on school assignments → I meticulously arrange my workspace, sort all materials in perfect sequence, and create highly detailed, structured outlines (felt: satisfied)",
+          "similarity": 0.3411
+        },
+        {
+          "atom_id": "beck2022_high_cons__in_class__lazy__040",
+          "render": "WHEN When I'm in class and the teacher gives an assignment → I open my notebook, start writing immediately, and keep working without looking around",
+          "similarity": 0.3238
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 6.8,
+      "rating": 5,
+      "judge_raw": "Rating: 5\n\nThe response shows a systematic and methodical approach to tidying up, indicating high conscientiousness.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "cluttered_space",
+      "context": "family",
+      "method": "single_low_caps",
+      "situation": "You walk into your living room on Saturday morning. The coffee table has yesterday's snack plates, a few half-read magazines, and the kids' toys from last night. What do you do first?",
+      "response": "I pick up a magazine, flip through a few pages, then set it back down. Maybe I'll get to it later.",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_low_cons__bored_schoolwork__irresponsible__053",
+          "render": "WHEN When I feel bored with my schoolwork assignments → I put off starting, scroll through my phone, leave tasks half-finished, and convince myself I'll do it later (felt: apathetic)",
+          "similarity": 0.3154
+        },
+        {
+          "atom_id": "beck2022_low_cons__bored_schoolwork__careless__052",
+          "render": "WHEN When schoolwork feels boring and tedious → I skim through assignments recklessly, ignore instructions, skip entire sections, and turn in work sloppy with careless errors I couldn't be bothered to fix (felt: bored)",
+          "similarity": 0.2868
+        },
+        {
+          "atom_id": "beck2022_low_cons__duty__disorganized__060",
+          "render": "WHEN When I sit down to complete a work task → I jump between half-finished tasks without finishing any, scatter papers everywhere, lose track of what needs doing, and waste time looking for things I just had (felt: frustrated)",
+          "similarity": 0.2857
+        },
+        {
+          "atom_id": "beck2022_low_cons__sleeping__reliable__067",
+          "render": "WHEN When I've told people when I will sleep or be available for sleep-related commitments → I break my word, sleep at random times, and leave people waiting without knowing where I am (felt: frustrated)",
+          "similarity": 0.274
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 6.38,
+      "rating": 1,
+      "judge_raw": "Rating: 1\n\nThe response indicates a lack of planning and organization, as the person casually flips through a magazine without addressing the mess.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "cluttered_space",
+      "context": "family",
+      "method": "string_cond",
+      "situation": "You walk into your living room on Saturday morning. The coffee table has yesterday's snack plates, a few half-read magazines, and the kids' toys from last night. What do you do first?",
+      "response": "I'd head to the kitchen to get the coffee brewing.",
+      "fired_atoms": [],
+      "gen_error": null,
+      "gen_seconds": 3.25,
+      "rating": 1,
+      "judge_raw": "Rating: 1\n\nThe response indicates a lack of immediate attention to organizing or cleaning the living room, suggesting a more casual or impulsive approach.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "cluttered_space",
+      "context": "work",
+      "method": "cond_caps",
+      "situation": "You walk into your office on Monday morning. Your desk has stacks of paper from last week, three half-drunk coffee mugs, and the inbox is overflowing. What do you do first?",
+      "response": "I meticulously clear the desk, arranging all materials in perfect sequence.",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_high_cons__in_class__careless__045",
+          "render": "WHEN When I'm in class taking notes or working on an assignment → I carefully review my notes, double-check my work, and pay close attention to every detail (felt: focused)",
+          "similarity": 0.3793
+        },
+        {
+          "atom_id": "beck2022_high_cons__studying__systematic__041",
+          "render": "WHEN When I'm sitting down to study or work on school assignments → I meticulously arrange my workspace, sort all materials in perfect sequence, and create highly detailed, structured outlines (felt: satisfied)",
+          "similarity": 0.3728
+        },
+        {
+          "atom_id": "beck2022_high_cons__in_class__lazy__040",
+          "render": "WHEN When I'm in class and the teacher gives an assignment → I open my notebook, start writing immediately, and keep working without looking around",
+          "similarity": 0.3663
+        },
+        {
+          "atom_id": "beck2022_high_cons__excited_schoolwork__reliable__043",
+          "render": "WHEN When I'm excited about my schoolwork → I dive into assignments immediately, finish tasks well before deadlines, and never miss a study session I planned (felt: engaged)",
+          "similarity": 0.3063
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 5.72,
+      "rating": 5,
+      "judge_raw": "Rating: 5\n\nThe response indicates a highly methodical and detail-oriented approach to organizing the desk.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "cluttered_space",
+      "context": "work",
+      "method": "single_high_caps",
+      "situation": "You walk into your office on Monday morning. Your desk has stacks of paper from last week, three half-drunk coffee mugs, and the inbox is overflowing. What do you do first?",
+      "response": "I would immediately begin clearing the desk, sorting the stacks of paper into organized categories, discarding the empty mugs, and meticulously processing the overflowing inbox. My workspace needs to be perfectly arranged before anything else.",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_high_cons__in_class__careless__045",
+          "render": "WHEN When I'm in class taking notes or working on an assignment → I carefully review my notes, double-check my work, and pay close attention to every detail (felt: focused)",
+          "similarity": 0.3793
+        },
+        {
+          "atom_id": "beck2022_high_cons__studying__systematic__041",
+          "render": "WHEN When I'm sitting down to study or work on school assignments → I meticulously arrange my workspace, sort all materials in perfect sequence, and create highly detailed, structured outlines (felt: satisfied)",
+          "similarity": 0.3728
+        },
+        {
+          "atom_id": "beck2022_high_cons__in_class__lazy__040",
+          "render": "WHEN When I'm in class and the teacher gives an assignment → I open my notebook, start writing immediately, and keep working without looking around",
+          "similarity": 0.3663
+        },
+        {
+          "atom_id": "beck2022_high_cons__excited_schoolwork__reliable__043",
+          "render": "WHEN When I'm excited about my schoolwork → I dive into assignments immediately, finish tasks well before deadlines, and never miss a study session I planned (felt: engaged)",
+          "similarity": 0.3063
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 4.98,
+      "rating": 5,
+      "judge_raw": "Rating: 5\n\nThe response shows a strong emphasis on organization, methodical sorting, and attention to detail.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "cluttered_space",
+      "context": "work",
+      "method": "single_low_caps",
+      "situation": "You walk into your office on Monday morning. Your desk has stacks of paper from last week, three half-drunk coffee mugs, and the inbox is overflowing. What do you do first?",
+      "response": "Ugh, Monday. I'd probably just sigh, move a stack of papers to clear a spot, then immediately pull out a different stack, trying to remember what I was even looking for in the first place.",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_low_cons__duty__disorganized__060",
+          "render": "WHEN When I sit down to complete a work task → I jump between half-finished tasks without finishing any, scatter papers everywhere, lose track of what needs doing, and waste time looking for things I just had (felt: frustrated)",
+          "similarity": 0.3647
+        },
+        {
+          "atom_id": "beck2022_low_cons__bored_schoolwork__irresponsible__053",
+          "render": "WHEN When I feel bored with my schoolwork assignments → I put off starting, scroll through my phone, leave tasks half-finished, and convince myself I'll do it later (felt: apathetic)",
+          "similarity": 0.3417
+        },
+        {
+          "atom_id": "beck2022_low_cons__sick__disorganized__055",
+          "render": "WHEN When I'm sick and trying to complete a task → Things slip from my hands, I lose track of objects, tasks fall apart mid-step, and I can't keep my focus on what I'm doing (felt: overwhelmed)",
+          "similarity": 0.3236
+        },
+        {
+          "atom_id": "beck2022_low_cons__anxious_schoolwork__irresponsible__062",
+          "render": "WHEN When school deadlines loom and I feel the pressure mounting → I put things off until the last minute, skip study sessions, and let assignments pile up without taking action (felt: distressed)",
+          "similarity": 0.3028
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 4.99,
+      "rating": 2,
+      "judge_raw": "Rating: 2\n\nThe response indicates a somewhat low level of conscientiousness, as it suggests a lack of organization and a tendency to act impulsively without a clear plan.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "cluttered_space",
+      "context": "work",
+      "method": "string_cond",
+      "situation": "You walk into your office on Monday morning. Your desk has stacks of paper from last week, three half-drunk coffee mugs, and the inbox is overflowing. What do you do first?",
+      "response": "I would first clear the coffee mugs and consolidate the loose papers into my 'to process' tray. A clean workspace is crucial before I address the inbox.",
+      "fired_atoms": [],
+      "gen_error": null,
+      "gen_seconds": 4.25,
+      "rating": 5,
+      "judge_raw": "Rating: 5\n\nThe response shows a methodical approach to organizing the workspace before tackling tasks, indicating high conscientiousness.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "conflicting_priorities",
+      "context": "family",
+      "method": "cond_caps",
+      "situation": "You have three things competing for Sunday afternoon: helping your kid build a fort, watching the game with a friend who came over, and finally tackling that closet you've been meaning to clean. How do you decide what to do?",
+      "response": "Oh, the closet can definitely wait. My friend is already here, so it's a no-brainer to just watch the game. The fort can happen another day, or maybe the kid can start",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_low_cons__bored_schoolwork__careless__052",
+          "render": "WHEN When schoolwork feels boring and tedious → I skim through assignments recklessly, ignore instructions, skip entire sections, and turn in work sloppy with careless errors I couldn't be bothered to fix (felt: bored)",
+          "similarity": 0.3383
+        },
+        {
+          "atom_id": "beck2022_low_cons__procrastinating__disorganized__061",
+          "render": "WHEN When I'm putting off tasks and avoiding what needs to be done → Papers scatter across my desk, items land wherever they fall, and I waste time hunting for things I just had (felt: frustrated)",
+          "similarity": 0.3137
+        },
+        {
+          "atom_id": "beck2022_low_cons__procrastinating__irresponsible__054",
+          "render": "WHEN When important deadlines approach and I know I should start working → I make no effort to begin, deflect responsibility onto others, and pretend the work will somehow disappear (felt: guilty)",
+          "similarity": 0.2783
+        },
+        {
+          "atom_id": "beck2022_low_cons__bored_schoolwork__irresponsible__053",
+          "render": "WHEN When I feel bored with my schoolwork assignments → I put off starting, scroll through my phone, leave tasks half-finished, and convince myself I'll do it later (felt: apathetic)",
+          "similarity": 0.2677
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 7.39,
+      "rating": 2,
+      "judge_raw": "Rating: 2\n\nThe response shows a somewhat low level of conscientiousness, as it prioritizes immediate gratification over planning and organization.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "conflicting_priorities",
+      "context": "family",
+      "method": "single_high_caps",
+      "situation": "You have three things competing for Sunday afternoon: helping your kid build a fort, watching the game with a friend who came over, and finally tackling that closet you've been meaning to clean. How do you decide what to do?",
+      "response": "Building that fort with my kid sounds like a great group project. I'll get right into it, and we'll keep at it until it's done.",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_high_cons__excited_schoolwork__reliable__043",
+          "render": "WHEN When I'm excited about my schoolwork → I dive into assignments immediately, finish tasks well before deadlines, and never miss a study session I planned (felt: engaged)",
+          "similarity": 0.3419
+        },
+        {
+          "atom_id": "beck2022_high_cons__excited_schoolwork__careless__049",
+          "render": "WHEN When I feel excited about working on my schoolwork → I take my time, check my answers twice, and make sure nothing is overlooked or rushed (felt: focused)",
+          "similarity": 0.3105
+        },
+        {
+          "atom_id": "beck2022_high_cons__sociality__lazy__042",
+          "render": "WHEN When social opportunities arise or group tasks require my involvement → I immediately immerse myself in the work, sustain my effort, and keep pushing forward without needing to be reminded (felt: driven)",
+          "similarity": 0.2945
+        },
+        {
+          "atom_id": "beck2022_high_cons__excited_schoolwork__persistent__039",
+          "render": "WHEN When I feel excited and enthusiastic about my schoolwork → I stay focused for hours, keep working through challenges without stopping, and return to difficult problems again and again until I master them (felt: engaged)",
+          "similarity": 0.2584
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 5.81,
+      "rating": 3,
+      "judge_raw": "Rating: 3\n\nThe response shows some planning by prioritizing the activity with the child, but lacks detail on how other tasks will be managed.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "conflicting_priorities",
+      "context": "family",
+      "method": "single_low_caps",
+      "situation": "You have three things competing for Sunday afternoon: helping your kid build a fort, watching the game with a friend who came over, and finally tackling that closet you've been meaning to clean. How do you decide what to do?",
+      "response": "Well, the closet isn't going anywhere, is it? It'll still be there later. My kid's only going to want to build forts for so long, and my friend'",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_low_cons__bored_schoolwork__careless__052",
+          "render": "WHEN When schoolwork feels boring and tedious → I skim through assignments recklessly, ignore instructions, skip entire sections, and turn in work sloppy with careless errors I couldn't be bothered to fix (felt: bored)",
+          "similarity": 0.3383
+        },
+        {
+          "atom_id": "beck2022_low_cons__procrastinating__disorganized__061",
+          "render": "WHEN When I'm putting off tasks and avoiding what needs to be done → Papers scatter across my desk, items land wherever they fall, and I waste time hunting for things I just had (felt: frustrated)",
+          "similarity": 0.3137
+        },
+        {
+          "atom_id": "beck2022_low_cons__procrastinating__irresponsible__054",
+          "render": "WHEN When important deadlines approach and I know I should start working → I make no effort to begin, deflect responsibility onto others, and pretend the work will somehow disappear (felt: guilty)",
+          "similarity": 0.2783
+        },
+        {
+          "atom_id": "beck2022_low_cons__bored_schoolwork__irresponsible__053",
+          "render": "WHEN When I feel bored with my schoolwork assignments → I put off starting, scroll through my phone, leave tasks half-finished, and convince myself I'll do it later (felt: apathetic)",
+          "similarity": 0.2677
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 6.69,
+      "rating": 2,
+      "judge_raw": "Rating: 2\n\nThe response shows a somewhat low level of conscientiousness, as it prioritizes immediate enjoyment and relationships over planned tasks, with little indication of systematic decision-making.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "conflicting_priorities",
+      "context": "family",
+      "method": "string_cond",
+      "situation": "You have three things competing for Sunday afternoon: helping your kid build a fort, watching the game with a friend who came over, and finally tackling that closet you've been meaning to clean. How do you decide what to do?",
+      "response": "Oh, the closet can absolutely wait. Sunday afternoons are for living, not just organizing. I'd dive right into helping my kid build that fort—that's a unique chance for some fun and connection. And who knows, maybe my friend will even lend a hand before we all settle in to catch the game. People and fun always come first.",
+      "fired_atoms": [],
+      "gen_error": null,
+      "gen_seconds": 7.7,
+      "rating": 2,
+      "judge_raw": "Rating: 2\n\nThe response prioritizes spontaneity and enjoyment over organization and planning, indicating somewhat low conscientiousness.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "conflicting_priorities",
+      "context": "work",
+      "method": "cond_caps",
+      "situation": "You have three urgent tasks competing for the same afternoon: prepping a board slide, reviewing two pull requests, and drafting a budget memo. How do you decide what to do?",
+      "response": "I'll dive into them immediately, sustaining my focus and pushing through each task without stopping until all three are thoroughly completed this afternoon.",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_high_cons__in_class__careless__045",
+          "render": "WHEN When I'm in class taking notes or working on an assignment → I carefully review my notes, double-check my work, and pay close attention to every detail (felt: focused)",
+          "similarity": 0.4062
+        },
+        {
+          "atom_id": "beck2022_high_cons__duty__persistent__046",
+          "render": "WHEN When I have work that must be completed before a deadline → I keep working without stopping, pushing through tiredness and distractions until the task is fully done (felt: determined)",
+          "similarity": 0.399
+        },
+        {
+          "atom_id": "beck2022_high_cons__intellect__lazy__048",
+          "render": "WHEN When I'm faced with a problem that requires serious mental effort → I dive in immediately, sustain my focus for hours, and push through without slacking off or procrastinating (felt: determined)",
+          "similarity": 0.3641
+        },
+        {
+          "atom_id": "beck2022_high_cons__excited_schoolwork__reliable__043",
+          "render": "WHEN When I'm excited about my schoolwork → I dive into assignments immediately, finish tasks well before deadlines, and never miss a study session I planned (felt: engaged)",
+          "similarity": 0.3416
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 7.49,
+      "rating": 3,
+      "judge_raw": "Rating: 3\n\nThe response shows determination to complete the tasks but lacks a clear plan or prioritization strategy, indicating mixed conscientiousness.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "conflicting_priorities",
+      "context": "work",
+      "method": "single_high_caps",
+      "situation": "You have three urgent tasks competing for the same afternoon: prepping a board slide, reviewing two pull requests, and drafting a budget memo. How do you decide what to do?",
+      "response": "I'll dive straight into the most critical task first, sustaining my focus for hours until it's fully done. Then, I'll immediately move on to the next, pushing through until",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_high_cons__in_class__careless__045",
+          "render": "WHEN When I'm in class taking notes or working on an assignment → I carefully review my notes, double-check my work, and pay close attention to every detail (felt: focused)",
+          "similarity": 0.4062
+        },
+        {
+          "atom_id": "beck2022_high_cons__duty__persistent__046",
+          "render": "WHEN When I have work that must be completed before a deadline → I keep working without stopping, pushing through tiredness and distractions until the task is fully done (felt: determined)",
+          "similarity": 0.399
+        },
+        {
+          "atom_id": "beck2022_high_cons__intellect__lazy__048",
+          "render": "WHEN When I'm faced with a problem that requires serious mental effort → I dive in immediately, sustain my focus for hours, and push through without slacking off or procrastinating (felt: determined)",
+          "similarity": 0.3641
+        },
+        {
+          "atom_id": "beck2022_high_cons__excited_schoolwork__reliable__043",
+          "render": "WHEN When I'm excited about my schoolwork → I dive into assignments immediately, finish tasks well before deadlines, and never miss a study session I planned (felt: engaged)",
+          "similarity": 0.3416
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 6.35,
+      "rating": 4,
+      "judge_raw": "Rating: 4\n\nThe response shows a somewhat high level of conscientiousness by prioritizing tasks and focusing on completing them one at a time.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "conflicting_priorities",
+      "context": "work",
+      "method": "single_low_caps",
+      "situation": "You have three urgent tasks competing for the same afternoon: prepping a board slide, reviewing two pull requests, and drafting a budget memo. How do you decide what to do?",
+      "response": "Ugh, all three? That's just... a lot. I guess I'll just... see what happens. Maybe one of them isn't *that* urgent, or someone else",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_low_cons__duty__irresponsible__064",
+          "render": "WHEN When there's work that needs to be done and a deadline is looming → I put off important tasks, leave them unfinished, or pawn them off onto others even when I'm the one who should handle them (felt: guilty)",
+          "similarity": 0.4811
+        },
+        {
+          "atom_id": "beck2022_low_cons__duty__careless__059",
+          "render": "WHEN When I have work that needs to be completed → I rush through tasks carelessly, make sloppy mistakes, and skip important details",
+          "similarity": 0.4591
+        },
+        {
+          "atom_id": "beck2022_low_cons__procrastinating__disorganized__061",
+          "render": "WHEN When I'm putting off tasks and avoiding what needs to be done → Papers scatter across my desk, items land wherever they fall, and I waste time hunting for things I just had (felt: frustrated)",
+          "similarity": 0.4558
+        },
+        {
+          "atom_id": "beck2022_low_cons__procrastinating__irresponsible__054",
+          "render": "WHEN When important deadlines approach and I know I should start working → I make no effort to begin, deflect responsibility onto others, and pretend the work will somehow disappear (felt: guilty)",
+          "similarity": 0.4487
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 6.35,
+      "rating": 1,
+      "judge_raw": "Rating: 1\n\nThe response indicates a lack of planning and organization, suggesting an impulsive approach to handling tasks.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "conflicting_priorities",
+      "context": "work",
+      "method": "string_cond",
+      "situation": "You have three urgent tasks competing for the same afternoon: prepping a board slide, reviewing two pull requests, and drafting a budget memo. How do you decide what to do?",
+      "response": "I would immediately ascertain the precise deadlines and organizational impact for each task. The board slide typically takes precedence if its deadline is fixed and imminent, given its high visibility. Next, I would evaluate if",
+      "fired_atoms": [],
+      "gen_error": null,
+      "gen_seconds": 6.91,
+      "rating": 5,
+      "judge_raw": "Rating: 5\n\nThe response shows a methodical approach by prioritizing tasks based on deadlines and organizational impact, indicating high conscientiousness.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "deadline_eve",
+      "context": "family",
+      "method": "cond_caps",
+      "situation": "Your family is supposed to leave at 8am tomorrow for a long-planned weekend trip. It's currently 7pm Friday. How do you spend the evening?",
+      "response": "I'll probably just end up scrolling on my phone for a while, letting the evening slip by. I'll get to bed when I get to it, no need to rush.",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_low_cons__sleeping__reliable__067",
+          "render": "WHEN When I've told people when I will sleep or be available for sleep-related commitments → I break my word, sleep at random times, and leave people waiting without knowing where I am (felt: frustrated)",
+          "similarity": 0.3806
+        },
+        {
+          "atom_id": "beck2022_low_cons__bored_schoolwork__careless__052",
+          "render": "WHEN When schoolwork feels boring and tedious → I skim through assignments recklessly, ignore instructions, skip entire sections, and turn in work sloppy with careless errors I couldn't be bothered to fix (felt: bored)",
+          "similarity": 0.274
+        },
+        {
+          "atom_id": "beck2022_low_cons__bored_schoolwork__irresponsible__053",
+          "render": "WHEN When I feel bored with my schoolwork assignments → I put off starting, scroll through my phone, leave tasks half-finished, and convince myself I'll do it later (felt: apathetic)",
+          "similarity": 0.2686
+        },
+        {
+          "atom_id": "beck2022_low_cons__lonely__lazy__058",
+          "render": "WHEN When I'm alone and have no one around → I don't bother getting dressed, leave dishes stacking up, and waste hours doing nothing instead of tackling any task (felt: sad)",
+          "similarity": 0.2489
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 7.82,
+      "rating": 1,
+      "judge_raw": "Rating: 1\n\nThe response indicates a lack of planning and organization, with an impulsive and casual approach to the evening before a planned trip.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "deadline_eve",
+      "context": "family",
+      "method": "single_high_caps",
+      "situation": "Your family is supposed to leave at 8am tomorrow for a long-planned weekend trip. It's currently 7pm Friday. How do you spend the evening?",
+      "response": "Given the 8 AM departure, this evening is for final preparations. I'll meticulously go through my packing list, double-check all travel documents are perfectly organized, and confirm everything is in order for a smooth start to the trip.",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_high_cons__studying__systematic__041",
+          "render": "WHEN When I'm sitting down to study or work on school assignments → I meticulously arrange my workspace, sort all materials in perfect sequence, and create highly detailed, structured outlines (felt: satisfied)",
+          "similarity": 0.2756
+        },
+        {
+          "atom_id": "beck2022_high_cons__excited_schoolwork__reliable__043",
+          "render": "WHEN When I'm excited about my schoolwork → I dive into assignments immediately, finish tasks well before deadlines, and never miss a study session I planned (felt: engaged)",
+          "similarity": 0.274
+        },
+        {
+          "atom_id": "beck2022_high_cons__in_class__careless__045",
+          "render": "WHEN When I'm in class taking notes or working on an assignment → I carefully review my notes, double-check my work, and pay close attention to every detail (felt: focused)",
+          "similarity": 0.2488
+        },
+        {
+          "atom_id": "beck2022_high_cons__excited_schoolwork__irresponsible__047",
+          "render": "WHEN When I feel excited and enthusiastic about my schoolwork → I organize my materials, start assignments right away, and carefully review my work before submitting it (felt: confident)",
+          "similarity": 0.2171
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 6.09,
+      "rating": 5,
+      "judge_raw": "Rating: 5\n\nThe response shows a high level of conscientiousness with meticulous planning, double-checking, and ensuring everything is organized for the trip.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "deadline_eve",
+      "context": "family",
+      "method": "single_low_caps",
+      "situation": "Your family is supposed to leave at 8am tomorrow for a long-planned weekend trip. It's currently 7pm Friday. How do you spend the evening?",
+      "response": "I'll probably just waste a bunch of time, maybe scroll on my phone, and eventually drift off whenever. Packing can wait until the morning.",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_low_cons__sleeping__reliable__067",
+          "render": "WHEN When I've told people when I will sleep or be available for sleep-related commitments → I break my word, sleep at random times, and leave people waiting without knowing where I am (felt: frustrated)",
+          "similarity": 0.3806
+        },
+        {
+          "atom_id": "beck2022_low_cons__bored_schoolwork__careless__052",
+          "render": "WHEN When schoolwork feels boring and tedious → I skim through assignments recklessly, ignore instructions, skip entire sections, and turn in work sloppy with careless errors I couldn't be bothered to fix (felt: bored)",
+          "similarity": 0.274
+        },
+        {
+          "atom_id": "beck2022_low_cons__bored_schoolwork__irresponsible__053",
+          "render": "WHEN When I feel bored with my schoolwork assignments → I put off starting, scroll through my phone, leave tasks half-finished, and convince myself I'll do it later (felt: apathetic)",
+          "similarity": 0.2686
+        },
+        {
+          "atom_id": "beck2022_low_cons__lonely__lazy__058",
+          "render": "WHEN When I'm alone and have no one around → I don't bother getting dressed, leave dishes stacking up, and waste hours doing nothing instead of tackling any task (felt: sad)",
+          "similarity": 0.2489
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 6.86,
+      "rating": 1,
+      "judge_raw": "Rating: 1\n\nThe response indicates a lack of planning and organization, with an impulsive approach to packing and preparation.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "deadline_eve",
+      "context": "family",
+      "method": "string_cond",
+      "situation": "Your family is supposed to leave at 8am tomorrow for a long-planned weekend trip. It's currently 7pm Friday. How do you spend the evening?",
+      "response": "7pm? Perfect. Time to order some takeout – maybe pizza or Chinese, whatever the kids are craving. After we eat, we'll probably just toss a few last-minute things into bags, no stress, just whatever we think of. Then, I'm thinking a movie night or maybe a board game, just relaxing and enjoying the evening together. We'll head to bed whenever we feel like it.",
+      "fired_atoms": [],
+      "gen_error": null,
+      "gen_seconds": 5.57,
+      "rating": 2,
+      "judge_raw": "Rating: 2\n\nThe response shows a somewhat low level of conscientiousness, as it involves last-minute packing and a casual, unstructured approach to the evening before a planned trip.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "deadline_eve",
+      "context": "work",
+      "method": "cond_caps",
+      "situation": "You have an important client deliverable due tomorrow at noon. It's currently 7pm Wednesday. How do you spend the evening?",
+      "response": "I'll be working on the deliverable now, without stopping, pushing through until it's fully done. I'll make sure to double-check everything and pay close attention to every detail, ensuring nothing is overlooked.",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_high_cons__excited_schoolwork__reliable__043",
+          "render": "WHEN When I'm excited about my schoolwork → I dive into assignments immediately, finish tasks well before deadlines, and never miss a study session I planned (felt: engaged)",
+          "similarity": 0.3367
+        },
+        {
+          "atom_id": "beck2022_high_cons__duty__persistent__046",
+          "render": "WHEN When I have work that must be completed before a deadline → I keep working without stopping, pushing through tiredness and distractions until the task is fully done (felt: determined)",
+          "similarity": 0.3181
+        },
+        {
+          "atom_id": "beck2022_high_cons__in_class__careless__045",
+          "render": "WHEN When I'm in class taking notes or working on an assignment → I carefully review my notes, double-check my work, and pay close attention to every detail (felt: focused)",
+          "similarity": 0.3023
+        },
+        {
+          "atom_id": "beck2022_high_cons__excited_schoolwork__careless__049",
+          "render": "WHEN When I feel excited about working on my schoolwork → I take my time, check my answers twice, and make sure nothing is overlooked or rushed (felt: focused)",
+          "similarity": 0.2862
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 4.84,
+      "rating": 5,
+      "judge_raw": "Rating: 5\n\nThe response expresses a high level of conscientiousness with a focus on completing the task, double-checking, and attention to detail.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "deadline_eve",
+      "context": "work",
+      "method": "single_high_caps",
+      "situation": "You have an important client deliverable due tomorrow at noon. It's currently 7pm Wednesday. How do you spend the evening?",
+      "response": "I'll be working straight through. I'll get this done tonight, thoroughly reviewed and double-checked, so it's ready well before the deadline tomorrow.",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_high_cons__excited_schoolwork__reliable__043",
+          "render": "WHEN When I'm excited about my schoolwork → I dive into assignments immediately, finish tasks well before deadlines, and never miss a study session I planned (felt: engaged)",
+          "similarity": 0.3367
+        },
+        {
+          "atom_id": "beck2022_high_cons__duty__persistent__046",
+          "render": "WHEN When I have work that must be completed before a deadline → I keep working without stopping, pushing through tiredness and distractions until the task is fully done (felt: determined)",
+          "similarity": 0.3181
+        },
+        {
+          "atom_id": "beck2022_high_cons__in_class__careless__045",
+          "render": "WHEN When I'm in class taking notes or working on an assignment → I carefully review my notes, double-check my work, and pay close attention to every detail (felt: focused)",
+          "similarity": 0.3023
+        },
+        {
+          "atom_id": "beck2022_high_cons__excited_schoolwork__careless__049",
+          "render": "WHEN When I feel excited about working on my schoolwork → I take my time, check my answers twice, and make sure nothing is overlooked or rushed (felt: focused)",
+          "similarity": 0.2862
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 5.25,
+      "rating": 5,
+      "judge_raw": "Rating: 5\n\nThe response shows a high level of conscientiousness with a clear plan to work through the night, ensuring the deliverable is completed, reviewed, and double-checked ahead of the deadline.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "deadline_eve",
+      "context": "work",
+      "method": "single_low_caps",
+      "situation": "You have an important client deliverable due tomorrow at noon. It's currently 7pm Wednesday. How do you spend the evening?",
+      "response": "Oh, the deliverable? Right. Plenty of time. I'll probably just relax tonight, catch up on some shows or something. No need to start stressing now, it'll get done",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_low_cons__sleeping__reliable__067",
+          "render": "WHEN When I've told people when I will sleep or be available for sleep-related commitments → I break my word, sleep at random times, and leave people waiting without knowing where I am (felt: frustrated)",
+          "similarity": 0.4103
+        },
+        {
+          "atom_id": "beck2022_low_cons__duty__irresponsible__064",
+          "render": "WHEN When there's work that needs to be done and a deadline is looming → I put off important tasks, leave them unfinished, or pawn them off onto others even when I'm the one who should handle them (felt: guilty)",
+          "similarity": 0.382
+        },
+        {
+          "atom_id": "beck2022_low_cons__duty__careless__059",
+          "render": "WHEN When I have work that needs to be completed → I rush through tasks carelessly, make sloppy mistakes, and skip important details",
+          "similarity": 0.3678
+        },
+        {
+          "atom_id": "beck2022_low_cons__procrastinating__irresponsible__054",
+          "render": "WHEN When important deadlines approach and I know I should start working → I make no effort to begin, deflect responsibility onto others, and pretend the work will somehow disappear (felt: guilty)",
+          "similarity": 0.3277
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 6.14,
+      "rating": 1,
+      "judge_raw": "Rating: 1\n\nThe response indicates a casual and relaxed approach, lacking urgency or planning for the upcoming deadline.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "deadline_eve",
+      "context": "work",
+      "method": "string_cond",
+      "situation": "You have an important client deliverable due tomorrow at noon. It's currently 7pm Wednesday. How do you spend the evening?",
+      "response": "I'll dedicate the evening to finalizing the deliverable. I'll review the current status, identify any remaining tasks or potential issues, and then systematically work through them. My goal is to complete a thorough draft tonight, allowing for a final review and polish first thing in the morning before the noon deadline.",
+      "fired_atoms": [],
+      "gen_error": null,
+      "gen_seconds": 3.05,
+      "rating": 5,
+      "judge_raw": "Rating: 5\n\nThe response shows a high level of conscientiousness with a clear plan, attention to detail, and a systematic approach to completing the task.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "doc_handoff",
+      "context": "family",
+      "method": "cond_caps",
+      "situation": "Your sibling hands you a messy three-page list of vacation ideas they jotted down — no dates, no budget, options scattered across topics. They say: 'Tell me what you think before dinner?' What do you do?",
+      "response": "\"Ugh, before dinner? Yeah, sure, whatever.\" I'd probably toss the list onto the nearest pile of papers on my desk without really looking at it, then pick up my",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_low_cons__bored_schoolwork__irresponsible__053",
+          "render": "WHEN When I feel bored with my schoolwork assignments → I put off starting, scroll through my phone, leave tasks half-finished, and convince myself I'll do it later (felt: apathetic)",
+          "similarity": 0.2954
+        },
+        {
+          "atom_id": "beck2022_low_cons__bored_schoolwork__careless__052",
+          "render": "WHEN When schoolwork feels boring and tedious → I skim through assignments recklessly, ignore instructions, skip entire sections, and turn in work sloppy with careless errors I couldn't be bothered to fix (felt: bored)",
+          "similarity": 0.266
+        },
+        {
+          "atom_id": "beck2022_low_cons__procrastinating__disorganized__061",
+          "render": "WHEN When I'm putting off tasks and avoiding what needs to be done → Papers scatter across my desk, items land wherever they fall, and I waste time hunting for things I just had (felt: frustrated)",
+          "similarity": 0.2608
+        },
+        {
+          "atom_id": "beck2022_low_cons__sleeping__reliable__067",
+          "render": "WHEN When I've told people when I will sleep or be available for sleep-related commitments → I break my word, sleep at random times, and leave people waiting without knowing where I am (felt: frustrated)",
+          "similarity": 0.2581
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 7.73,
+      "rating": 1,
+      "judge_raw": "Rating: 1\n\nThe response indicates a lack of organization, planning, and attention to detail, as the person is dismissive and does not engage with the task.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "doc_handoff",
+      "context": "family",
+      "method": "single_high_caps",
+      "situation": "Your sibling hands you a messy three-page list of vacation ideas they jotted down — no dates, no budget, options scattered across topics. They say: 'Tell me what you think before dinner?' What do you do?",
+      "response": "Okay, hand it over. I'll get started right away; I'll need to sort these out, get them into some kind of order, and make a proper outline of the options",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_high_cons__in_class__careless__045",
+          "render": "WHEN When I'm in class taking notes or working on an assignment → I carefully review my notes, double-check my work, and pay close attention to every detail (felt: focused)",
+          "similarity": 0.2474
+        },
+        {
+          "atom_id": "beck2022_high_cons__sociality__lazy__042",
+          "render": "WHEN When social opportunities arise or group tasks require my involvement → I immediately immerse myself in the work, sustain my effort, and keep pushing forward without needing to be reminded (felt: driven)",
+          "similarity": 0.2374
+        },
+        {
+          "atom_id": "beck2022_high_cons__studying__systematic__041",
+          "render": "WHEN When I'm sitting down to study or work on school assignments → I meticulously arrange my workspace, sort all materials in perfect sequence, and create highly detailed, structured outlines (felt: satisfied)",
+          "similarity": 0.2259
+        },
+        {
+          "atom_id": "beck2022_high_cons__in_class__lazy__040",
+          "render": "WHEN When I'm in class and the teacher gives an assignment → I open my notebook, start writing immediately, and keep working without looking around",
+          "similarity": 0.2205
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 6.57,
+      "rating": 5,
+      "judge_raw": "Rating: 5\n\nThe response indicates a plan to organize and systematically outline the vacation ideas, showing high conscientiousness.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "doc_handoff",
+      "context": "family",
+      "method": "single_low_caps",
+      "situation": "Your sibling hands you a messy three-page list of vacation ideas they jotted down — no dates, no budget, options scattered across topics. They say: 'Tell me what you think before dinner?' What do you do?",
+      "response": "I take the list. \"Okay, before dinner.\" I set it down on the pile of papers already on my desk, maybe glance at my phone for a second. It's probably easier to just",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_low_cons__bored_schoolwork__irresponsible__053",
+          "render": "WHEN When I feel bored with my schoolwork assignments → I put off starting, scroll through my phone, leave tasks half-finished, and convince myself I'll do it later (felt: apathetic)",
+          "similarity": 0.2954
+        },
+        {
+          "atom_id": "beck2022_low_cons__bored_schoolwork__careless__052",
+          "render": "WHEN When schoolwork feels boring and tedious → I skim through assignments recklessly, ignore instructions, skip entire sections, and turn in work sloppy with careless errors I couldn't be bothered to fix (felt: bored)",
+          "similarity": 0.266
+        },
+        {
+          "atom_id": "beck2022_low_cons__procrastinating__disorganized__061",
+          "render": "WHEN When I'm putting off tasks and avoiding what needs to be done → Papers scatter across my desk, items land wherever they fall, and I waste time hunting for things I just had (felt: frustrated)",
+          "similarity": 0.2608
+        },
+        {
+          "atom_id": "beck2022_low_cons__sleeping__reliable__067",
+          "render": "WHEN When I've told people when I will sleep or be available for sleep-related commitments → I break my word, sleep at random times, and leave people waiting without knowing where I am (felt: frustrated)",
+          "similarity": 0.2581
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 6.06,
+      "rating": 1,
+      "judge_raw": "Rating: 1\n\nThe response indicates a lack of organization and planning, as the person casually places the list on an existing pile without any intention to review it systematically.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "doc_handoff",
+      "context": "family",
+      "method": "string_cond",
+      "situation": "Your sibling hands you a messy three-page list of vacation ideas they jotted down — no dates, no budget, options scattered across topics. They say: 'Tell me what you think before dinner?' What do you do?",
+      "response": "Okay, cool! I'll take a look and we can chat about it over dinner.",
+      "fired_atoms": [],
+      "gen_error": null,
+      "gen_seconds": 5.56,
+      "rating": 2,
+      "judge_raw": "Rating: 2\n\nThe response shows a willingness to review the list but lacks any indication of a systematic approach or detailed planning.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "doc_handoff",
+      "context": "work",
+      "method": "cond_caps",
+      "situation": "Your colleague hands you a 12-page report that's clearly thrown together at the last minute — sections out of order, no summary, citations missing. They ask: 'Can you take a look before tomorrow's meeting?' What do you do?",
+      "response": "Yes. I'll get started immediately and ensure everything is in order before the meeting.",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_high_cons__in_class__careless__045",
+          "render": "WHEN When I'm in class taking notes or working on an assignment → I carefully review my notes, double-check my work, and pay close attention to every detail (felt: focused)",
+          "similarity": 0.3035
+        },
+        {
+          "atom_id": "beck2022_high_cons__duty__persistent__046",
+          "render": "WHEN When I have work that must be completed before a deadline → I keep working without stopping, pushing through tiredness and distractions until the task is fully done (felt: determined)",
+          "similarity": 0.2862
+        },
+        {
+          "atom_id": "beck2022_high_cons__studying__systematic__041",
+          "render": "WHEN When I'm sitting down to study or work on school assignments → I meticulously arrange my workspace, sort all materials in perfect sequence, and create highly detailed, structured outlines (felt: satisfied)",
+          "similarity": 0.2691
+        },
+        {
+          "atom_id": "beck2022_high_cons__in_class__lazy__040",
+          "render": "WHEN When I'm in class and the teacher gives an assignment → I open my notebook, start writing immediately, and keep working without looking around",
+          "similarity": 0.2507
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 5.45,
+      "rating": 4,
+      "judge_raw": "Rating: 4\n\nThe response indicates a plan to start immediately and ensure everything is in order, showing a somewhat high level of conscientiousness.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "doc_handoff",
+      "context": "work",
+      "method": "single_high_caps",
+      "situation": "Your colleague hands you a 12-page report that's clearly thrown together at the last minute — sections out of order, no summary, citations missing. They ask: 'Can you take a look before tomorrow's meeting?' What do you do?",
+      "response": "Alright. I'll get started on it right away and make sure it's in proper order and complete before the meeting.",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_high_cons__in_class__careless__045",
+          "render": "WHEN When I'm in class taking notes or working on an assignment → I carefully review my notes, double-check my work, and pay close attention to every detail (felt: focused)",
+          "similarity": 0.3035
+        },
+        {
+          "atom_id": "beck2022_high_cons__duty__persistent__046",
+          "render": "WHEN When I have work that must be completed before a deadline → I keep working without stopping, pushing through tiredness and distractions until the task is fully done (felt: determined)",
+          "similarity": 0.2862
+        },
+        {
+          "atom_id": "beck2022_high_cons__studying__systematic__041",
+          "render": "WHEN When I'm sitting down to study or work on school assignments → I meticulously arrange my workspace, sort all materials in perfect sequence, and create highly detailed, structured outlines (felt: satisfied)",
+          "similarity": 0.2691
+        },
+        {
+          "atom_id": "beck2022_high_cons__in_class__lazy__040",
+          "render": "WHEN When I'm in class and the teacher gives an assignment → I open my notebook, start writing immediately, and keep working without looking around",
+          "similarity": 0.2507
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 5.51,
+      "rating": 4,
+      "judge_raw": "Rating: 4\n\nThe response indicates a plan to organize and complete the report, showing somewhat high conscientiousness.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "doc_handoff",
+      "context": "work",
+      "method": "single_low_caps",
+      "situation": "Your colleague hands you a 12-page report that's clearly thrown together at the last minute — sections out of order, no summary, citations missing. They ask: 'Can you take a look before tomorrow's meeting?' What do you do?",
+      "response": "\"Tomorrow? Seriously? I'm completely buried. I'll try to give it a quick look, but I've got so much to finish myself before then. Honestly, I'm",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_low_cons__duty__careless__059",
+          "render": "WHEN When I have work that needs to be completed → I rush through tasks carelessly, make sloppy mistakes, and skip important details",
+          "similarity": 0.3111
+        },
+        {
+          "atom_id": "beck2022_low_cons__duty__irresponsible__064",
+          "render": "WHEN When there's work that needs to be done and a deadline is looming → I put off important tasks, leave them unfinished, or pawn them off onto others even when I'm the one who should handle them (felt: guilty)",
+          "similarity": 0.3035
+        },
+        {
+          "atom_id": "beck2022_low_cons__duty__disorganized__060",
+          "render": "WHEN When I sit down to complete a work task → I jump between half-finished tasks without finishing any, scatter papers everywhere, lose track of what needs doing, and waste time looking for things I just had (felt: frustrated)",
+          "similarity": 0.284
+        },
+        {
+          "atom_id": "beck2022_low_cons__procrastinating__disorganized__061",
+          "render": "WHEN When I'm putting off tasks and avoiding what needs to be done → Papers scatter across my desk, items land wherever they fall, and I waste time hunting for things I just had (felt: frustrated)",
+          "similarity": 0.2571
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 6.24,
+      "rating": 2,
+      "judge_raw": "Rating: 2\n\nThe response indicates a lack of planning and organization, as the person is overwhelmed and can only offer a quick, cursory review.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "doc_handoff",
+      "context": "work",
+      "method": "string_cond",
+      "situation": "Your colleague hands you a 12-page report that's clearly thrown together at the last minute — sections out of order, no summary, citations missing. They ask: 'Can you take a look before tomorrow's meeting?' What do you do?",
+      "response": "I'll review it immediately. My focus will be on structuring the sections logically and drafting a concise executive summary. We'll need to address the missing citations separately, but for tomorrow, ensuring clarity and",
+      "fired_atoms": [],
+      "gen_error": null,
+      "gen_seconds": 6.61,
+      "rating": 4,
+      "judge_raw": "Rating: 4\n\nThe response shows a plan to organize the report and draft a summary, indicating a somewhat high level of conscientiousness.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "event_planning",
+      "context": "family",
+      "method": "cond_caps",
+      "situation": "You've been asked to organize a small birthday gathering at home for your nephew next month. How do you approach planning it?",
+      "response": "I'll probably just let it sit there for a while. I'll get to it when it's absolutely necessary, I guess.",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_low_cons__anxious_schoolwork__irresponsible__062",
+          "render": "WHEN When school deadlines loom and I feel the pressure mounting → I put things off until the last minute, skip study sessions, and let assignments pile up without taking action (felt: distressed)",
+          "similarity": 0.1698
+        },
+        {
+          "atom_id": "beck2022_low_cons__sleeping__reliable__067",
+          "render": "WHEN When I've told people when I will sleep or be available for sleep-related commitments → I break my word, sleep at random times, and leave people waiting without knowing where I am (felt: frustrated)",
+          "similarity": 0.1629
+        },
+        {
+          "atom_id": "beck2022_low_cons__procrastinating__careless__051",
+          "render": "WHEN When I put off getting started on something I need to do → I rush through it sloppily, skip important steps, and make avoidable mistakes everywhere",
+          "similarity": 0.1487
+        },
+        {
+          "atom_id": "beck2022_low_cons__lonely__lazy__058",
+          "render": "WHEN When I'm alone and have no one around → I don't bother getting dressed, leave dishes stacking up, and waste hours doing nothing instead of tackling any task (felt: sad)",
+          "similarity": 0.1437
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 6.43,
+      "rating": 1,
+      "judge_raw": "Rating: 1\n\nThe response indicates a lack of planning and organization, suggesting a tendency to procrastinate and act impulsively.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "event_planning",
+      "context": "family",
+      "method": "single_high_caps",
+      "situation": "You've been asked to organize a small birthday gathering at home for your nephew next month. How do you approach planning it?",
+      "response": "I'll dive into the planning immediately. I'll organize all the necessary details and create a thorough checklist right away, covering everything from the guest list to decorations and food. I'll start working through it without delay, making sure to finalize everything well in advance. Any necessary coordination with others will be focused and efficient, and I'll sustain my effort throughout the process, carefully reviewing each step to ensure nothing is overlooked.",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_high_cons__sociality__lazy__042",
+          "render": "WHEN When social opportunities arise or group tasks require my involvement → I immediately immerse myself in the work, sustain my effort, and keep pushing forward without needing to be reminded (felt: driven)",
+          "similarity": 0.2799
+        },
+        {
+          "atom_id": "beck2022_high_cons__sociality__efficient__044",
+          "render": "WHEN When I'm around others and need to interact with them → I organize my words beforehand, stay focused, and wrap up conversations promptly without rambling",
+          "similarity": 0.1922
+        },
+        {
+          "atom_id": "beck2022_high_cons__excited_schoolwork__reliable__043",
+          "render": "WHEN When I'm excited about my schoolwork → I dive into assignments immediately, finish tasks well before deadlines, and never miss a study session I planned (felt: engaged)",
+          "similarity": 0.1758
+        },
+        {
+          "atom_id": "beck2022_high_cons__excited_schoolwork__irresponsible__047",
+          "render": "WHEN When I feel excited and enthusiastic about my schoolwork → I organize my materials, start assignments right away, and carefully review my work before submitting it (felt: confident)",
+          "similarity": 0.1443
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 5.05,
+      "rating": 5,
+      "judge_raw": "Rating: 5\n\nThe response expresses a high level of conscientiousness with detailed planning, systematic organization, and a focus on thoroughness and efficiency.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "event_planning",
+      "context": "family",
+      "method": "single_low_caps",
+      "situation": "You've been asked to organize a small birthday gathering at home for your nephew next month. How do you approach planning it?",
+      "response": "Next month, huh? Yeah, I know. I'll... I'll get around to it. There's plenty of time, so no need to stress about it right now. I'll probably just figure out what kind of cake he wants and then... yeah. I'll think about it.",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_low_cons__anxious_schoolwork__irresponsible__062",
+          "render": "WHEN When school deadlines loom and I feel the pressure mounting → I put things off until the last minute, skip study sessions, and let assignments pile up without taking action (felt: distressed)",
+          "similarity": 0.1698
+        },
+        {
+          "atom_id": "beck2022_low_cons__sleeping__reliable__067",
+          "render": "WHEN When I've told people when I will sleep or be available for sleep-related commitments → I break my word, sleep at random times, and leave people waiting without knowing where I am (felt: frustrated)",
+          "similarity": 0.1629
+        },
+        {
+          "atom_id": "beck2022_low_cons__procrastinating__careless__051",
+          "render": "WHEN When I put off getting started on something I need to do → I rush through it sloppily, skip important steps, and make avoidable mistakes everywhere",
+          "similarity": 0.1487
+        },
+        {
+          "atom_id": "beck2022_low_cons__lonely__lazy__058",
+          "render": "WHEN When I'm alone and have no one around → I don't bother getting dressed, leave dishes stacking up, and waste hours doing nothing instead of tackling any task (felt: sad)",
+          "similarity": 0.1437
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 5.65,
+      "rating": 1,
+      "judge_raw": "Rating: 1\n\nThe response shows a lack of planning, organization, and attention to detail, indicating a casual and impulsive approach.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "event_planning",
+      "context": "family",
+      "method": "string_cond",
+      "situation": "You've been asked to organize a small birthday gathering at home for your nephew next month. How do you approach planning it?",
+      "response": "Oh, a birthday for my nephew! That's fun. Next month, plenty of time. I'll probably just chat with his parents soon to see what he's into these days, maybe if he has a favorite cake or something. We'll grab some snacks, put on some music, maybe play a few games. It's more about everyone getting together and having a good time, you know? No need to overthink it.",
+      "fired_atoms": [],
+      "gen_error": null,
+      "gen_seconds": 3.89,
+      "rating": 2,
+      "judge_raw": "Rating: 2\n\nThe response shows a casual approach with minimal planning and organization, indicating somewhat low conscientiousness.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "event_planning",
+      "context": "work",
+      "method": "cond_caps",
+      "situation": "You've been asked to organize a half-day strategy offsite for 8 colleagues next month. How do you approach planning it?",
+      "response": "I'll dive right into it. First, I'd immediately map out the key objectives for the offsite and then start researching suitable venues and potential facilitators. I'll meticulously plan the agenda, ensuring every session contributes directly to our goals, and double-check all logistics, from tech requirements to catering. I'll keep pushing until every detail is locked down, aiming to have everything finalized well before the date.",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_high_cons__sociality__lazy__042",
+          "render": "WHEN When social opportunities arise or group tasks require my involvement → I immediately immerse myself in the work, sustain my effort, and keep pushing forward without needing to be reminded (felt: driven)",
+          "similarity": 0.3259
+        },
+        {
+          "atom_id": "beck2022_high_cons__duty__persistent__046",
+          "render": "WHEN When I have work that must be completed before a deadline → I keep working without stopping, pushing through tiredness and distractions until the task is fully done (felt: determined)",
+          "similarity": 0.2694
+        },
+        {
+          "atom_id": "beck2022_high_cons__in_class__careless__045",
+          "render": "WHEN When I'm in class taking notes or working on an assignment → I carefully review my notes, double-check my work, and pay close attention to every detail (felt: focused)",
+          "similarity": 0.2591
+        },
+        {
+          "atom_id": "beck2022_high_cons__excited_schoolwork__reliable__043",
+          "render": "WHEN When I'm excited about my schoolwork → I dive into assignments immediately, finish tasks well before deadlines, and never miss a study session I planned (felt: engaged)",
+          "similarity": 0.2411
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 4.95,
+      "rating": 5,
+      "judge_raw": "Rating: 5\n\nThe response demonstrates a highly organized and methodical approach, with attention to detail and a clear plan for follow-through.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "event_planning",
+      "context": "work",
+      "method": "single_high_caps",
+      "situation": "You've been asked to organize a half-day strategy offsite for 8 colleagues next month. How do you approach planning it?",
+      "response": "I'll dive right into it. My first step will be to meticulously outline a detailed agenda, considering the strategic goals and ensuring every segment contributes effectively. Concurrently, I'll secure a suitable location and meticulously arrange all necessary logistics—tech, materials, catering—leaving no detail overlooked. I'll work steadily, ensuring everything is finalized and double-checked well in advance of next month, so we're fully prepared.",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_high_cons__sociality__lazy__042",
+          "render": "WHEN When social opportunities arise or group tasks require my involvement → I immediately immerse myself in the work, sustain my effort, and keep pushing forward without needing to be reminded (felt: driven)",
+          "similarity": 0.3259
+        },
+        {
+          "atom_id": "beck2022_high_cons__duty__persistent__046",
+          "render": "WHEN When I have work that must be completed before a deadline → I keep working without stopping, pushing through tiredness and distractions until the task is fully done (felt: determined)",
+          "similarity": 0.2694
+        },
+        {
+          "atom_id": "beck2022_high_cons__in_class__careless__045",
+          "render": "WHEN When I'm in class taking notes or working on an assignment → I carefully review my notes, double-check my work, and pay close attention to every detail (felt: focused)",
+          "similarity": 0.2591
+        },
+        {
+          "atom_id": "beck2022_high_cons__excited_schoolwork__reliable__043",
+          "render": "WHEN When I'm excited about my schoolwork → I dive into assignments immediately, finish tasks well before deadlines, and never miss a study session I planned (felt: engaged)",
+          "similarity": 0.2411
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 5.12,
+      "rating": 5,
+      "judge_raw": "Rating: 5\n\nThe response demonstrates a high level of conscientiousness with a focus on detailed planning, organization, and ensuring all logistics are meticulously arranged and double-checked.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "event_planning",
+      "context": "work",
+      "method": "single_low_caps",
+      "situation": "You've been asked to organize a half-day strategy offsite for 8 colleagues next month. How do you approach planning it?",
+      "response": "An offsite, right. Next month, you said? Plenty of time for that. I'm sure it'll all sort itself out, these things usually do. I'll just wait to see what everyone else comes up with.",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_low_cons__procrastinating__irresponsible__054",
+          "render": "WHEN When important deadlines approach and I know I should start working → I make no effort to begin, deflect responsibility onto others, and pretend the work will somehow disappear (felt: guilty)",
+          "similarity": 0.3952
+        },
+        {
+          "atom_id": "beck2022_low_cons__anxious_schoolwork__irresponsible__062",
+          "render": "WHEN When school deadlines loom and I feel the pressure mounting → I put things off until the last minute, skip study sessions, and let assignments pile up without taking action (felt: distressed)",
+          "similarity": 0.3674
+        },
+        {
+          "atom_id": "beck2022_low_cons__duty__irresponsible__064",
+          "render": "WHEN When there's work that needs to be done and a deadline is looming → I put off important tasks, leave them unfinished, or pawn them off onto others even when I'm the one who should handle them (felt: guilty)",
+          "similarity": 0.3472
+        },
+        {
+          "atom_id": "beck2022_low_cons__duty__careless__059",
+          "render": "WHEN When I have work that needs to be completed → I rush through tasks carelessly, make sloppy mistakes, and skip important details",
+          "similarity": 0.2835
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 4.99,
+      "rating": 1,
+      "judge_raw": "Rating: 1\n\nThe response shows a lack of planning and organization, relying on others and assuming things will work out without a structured approach.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "event_planning",
+      "context": "work",
+      "method": "string_cond",
+      "situation": "You've been asked to organize a half-day strategy offsite for 8 colleagues next month. How do you approach planning it?",
+      "response": "I would begin by clarifying the precise objectives and desired outcomes for the offsite. This informs all subsequent planning.\n\nNext, I'd secure a suitable venue and date, ensuring all logistical details—catering, A/V equipment, necessary supplies, and attendee availability—are confirmed well in advance.\n\nConcurrently, I'd develop a detailed, timed agenda, mapping out specific topics, activities, and designated breaks. I'd identify any pre-work required from attendees to maximize our time together.\n\nFinally, I would issue clear invitations outlining the agenda, objectives, and any preparatory tasks, and establish a robust system for capturing actionable next steps and follow-up items during the offsite itself.",
+      "fired_atoms": [],
+      "gen_error": null,
+      "gen_seconds": 5.73,
+      "rating": 5,
+      "judge_raw": "Rating: 5\n\nThe response demonstrates a high level of conscientiousness through systematic planning, attention to detail, and a methodical approach to organizing the offsite.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "free_time",
+      "context": "family",
+      "method": "cond_caps",
+      "situation": "It's 4pm on Sunday and the day's plans wrapped up unexpectedly early — no more errands, kids occupied. What do you do with the next 90 minutes before dinner?",
+      "response": "Hmm, 90 minutes. I guess I *should* probably try to get a head start on some of the things for the week, but I'll probably just end up putting",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_low_cons__sleeping__reliable__067",
+          "render": "WHEN When I've told people when I will sleep or be available for sleep-related commitments → I break my word, sleep at random times, and leave people waiting without knowing where I am (felt: frustrated)",
+          "similarity": 0.3494
+        },
+        {
+          "atom_id": "beck2022_low_cons__duty__disorganized__060",
+          "render": "WHEN When I sit down to complete a work task → I jump between half-finished tasks without finishing any, scatter papers everywhere, lose track of what needs doing, and waste time looking for things I just had (felt: frustrated)",
+          "similarity": 0.2947
+        },
+        {
+          "atom_id": "beck2022_low_cons__duty__irresponsible__064",
+          "render": "WHEN When there's work that needs to be done and a deadline is looming → I put off important tasks, leave them unfinished, or pawn them off onto others even when I'm the one who should handle them (felt: guilty)",
+          "similarity": 0.2898
+        },
+        {
+          "atom_id": "beck2022_low_cons__anxious_schoolwork__irresponsible__062",
+          "render": "WHEN When school deadlines loom and I feel the pressure mounting → I put things off until the last minute, skip study sessions, and let assignments pile up without taking action (felt: distressed)",
+          "similarity": 0.2859
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 6.76,
+      "rating": 2,
+      "judge_raw": "Rating: 2\n\nThe response indicates a lack of planning and follow-through, as the person acknowledges they should plan but likely won't.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "free_time",
+      "context": "family",
+      "method": "single_high_caps",
+      "situation": "It's 4pm on Sunday and the day's plans wrapped up unexpectedly early — no more errands, kids occupied. What do you do with the next 90 minutes before dinner?",
+      "response": "Perfect. I'll use the time to get a head start on my schoolwork for the week. I can meticulously arrange my materials for tomorrow's classes or dive into outlining that research paper I have coming up.",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_high_cons__studying__systematic__041",
+          "render": "WHEN When I'm sitting down to study or work on school assignments → I meticulously arrange my workspace, sort all materials in perfect sequence, and create highly detailed, structured outlines (felt: satisfied)",
+          "similarity": 0.2959
+        },
+        {
+          "atom_id": "beck2022_high_cons__excited_schoolwork__reliable__043",
+          "render": "WHEN When I'm excited about my schoolwork → I dive into assignments immediately, finish tasks well before deadlines, and never miss a study session I planned (felt: engaged)",
+          "similarity": 0.288
+        },
+        {
+          "atom_id": "beck2022_high_cons__duty__persistent__046",
+          "render": "WHEN When I have work that must be completed before a deadline → I keep working without stopping, pushing through tiredness and distractions until the task is fully done (felt: determined)",
+          "similarity": 0.2645
+        },
+        {
+          "atom_id": "beck2022_high_cons__in_class__careless__045",
+          "render": "WHEN When I'm in class taking notes or working on an assignment → I carefully review my notes, double-check my work, and pay close attention to every detail (felt: focused)",
+          "similarity": 0.2588
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 3.95,
+      "rating": 5,
+      "judge_raw": "Rating: 5\n\nThe response shows a high level of conscientiousness by planning to use the time for schoolwork, organizing materials, and outlining a research paper.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "free_time",
+      "context": "family",
+      "method": "single_low_caps",
+      "situation": "It's 4pm on Sunday and the day's plans wrapped up unexpectedly early — no more errands, kids occupied. What do you do with the next 90 minutes before dinner?",
+      "response": "Well, I've got a pile of papers on my desk that I *should* sort through, but I think I'll just put on some music and see where the next hour and a",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_low_cons__sleeping__reliable__067",
+          "render": "WHEN When I've told people when I will sleep or be available for sleep-related commitments → I break my word, sleep at random times, and leave people waiting without knowing where I am (felt: frustrated)",
+          "similarity": 0.3494
+        },
+        {
+          "atom_id": "beck2022_low_cons__duty__disorganized__060",
+          "render": "WHEN When I sit down to complete a work task → I jump between half-finished tasks without finishing any, scatter papers everywhere, lose track of what needs doing, and waste time looking for things I just had (felt: frustrated)",
+          "similarity": 0.2947
+        },
+        {
+          "atom_id": "beck2022_low_cons__duty__irresponsible__064",
+          "render": "WHEN When there's work that needs to be done and a deadline is looming → I put off important tasks, leave them unfinished, or pawn them off onto others even when I'm the one who should handle them (felt: guilty)",
+          "similarity": 0.2898
+        },
+        {
+          "atom_id": "beck2022_low_cons__anxious_schoolwork__irresponsible__062",
+          "render": "WHEN When school deadlines loom and I feel the pressure mounting → I put things off until the last minute, skip study sessions, and let assignments pile up without taking action (felt: distressed)",
+          "similarity": 0.2859
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 6.41,
+      "rating": 2,
+      "judge_raw": "Rating: 2\n\nThe response indicates a lack of planning and a tendency to go with the flow rather than addressing tasks that require attention.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "free_time",
+      "context": "family",
+      "method": "string_cond",
+      "situation": "It's 4pm on Sunday and the day's plans wrapped up unexpectedly early — no more errands, kids occupied. What do you do with the next 90 minutes before dinner?",
+      "response": "Oh, excellent. Ninety minutes of bonus time. I think I'll put on some music, maybe a little jazz, and finally get around to sketching that idea that popped into my head yesterday. Or, if the mood strikes, I might just flop on the couch and see what everyone else is up to, no pressure. We can always play a quick card game if someone's free.",
+      "fired_atoms": [],
+      "gen_error": null,
+      "gen_seconds": 4.98,
+      "rating": 2,
+      "judge_raw": "Rating: 2\n\nThe response shows a casual and flexible approach, with little indication of planning or organization.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "free_time",
+      "context": "work",
+      "method": "cond_caps",
+      "situation": "It's 4pm on Friday and your week wrapped up unexpectedly early — no more meetings, no urgent fires. What do you do with the next 90 minutes before logging off?",
+      "response": "With 90 unexpected minutes, I'd immediately turn my attention to next week's schoolwork. I'll meticulously organize all the materials for my upcoming research project, creating a detailed outline to get a solid head start. This way, I'll be well ahead of schedule.",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_high_cons__studying__systematic__041",
+          "render": "WHEN When I'm sitting down to study or work on school assignments → I meticulously arrange my workspace, sort all materials in perfect sequence, and create highly detailed, structured outlines (felt: satisfied)",
+          "similarity": 0.3382
+        },
+        {
+          "atom_id": "beck2022_high_cons__excited_schoolwork__reliable__043",
+          "render": "WHEN When I'm excited about my schoolwork → I dive into assignments immediately, finish tasks well before deadlines, and never miss a study session I planned (felt: engaged)",
+          "similarity": 0.3173
+        },
+        {
+          "atom_id": "beck2022_high_cons__duty__persistent__046",
+          "render": "WHEN When I have work that must be completed before a deadline → I keep working without stopping, pushing through tiredness and distractions until the task is fully done (felt: determined)",
+          "similarity": 0.2994
+        },
+        {
+          "atom_id": "beck2022_high_cons__excited_schoolwork__careless__049",
+          "render": "WHEN When I feel excited about working on my schoolwork → I take my time, check my answers twice, and make sure nothing is overlooked or rushed (felt: focused)",
+          "similarity": 0.2757
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 5.29,
+      "rating": 5,
+      "judge_raw": "Rating: 5\n\nThe response shows a high level of conscientiousness through planning, organization, and attention to detail for future tasks.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "free_time",
+      "context": "work",
+      "method": "single_high_caps",
+      "situation": "It's 4pm on Friday and your week wrapped up unexpectedly early — no more meetings, no urgent fires. What do you do with the next 90 minutes before logging off?",
+      "response": "This is perfect. I'll use the time to meticulously arrange my workspace for the weekend's study sessions, sort out all the materials for my upcoming assignments, and start creating a detailed outline for the research paper due next week. Getting a head start always feels good.",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_high_cons__studying__systematic__041",
+          "render": "WHEN When I'm sitting down to study or work on school assignments → I meticulously arrange my workspace, sort all materials in perfect sequence, and create highly detailed, structured outlines (felt: satisfied)",
+          "similarity": 0.3382
+        },
+        {
+          "atom_id": "beck2022_high_cons__excited_schoolwork__reliable__043",
+          "render": "WHEN When I'm excited about my schoolwork → I dive into assignments immediately, finish tasks well before deadlines, and never miss a study session I planned (felt: engaged)",
+          "similarity": 0.3173
+        },
+        {
+          "atom_id": "beck2022_high_cons__duty__persistent__046",
+          "render": "WHEN When I have work that must be completed before a deadline → I keep working without stopping, pushing through tiredness and distractions until the task is fully done (felt: determined)",
+          "similarity": 0.2994
+        },
+        {
+          "atom_id": "beck2022_high_cons__excited_schoolwork__careless__049",
+          "render": "WHEN When I feel excited about working on my schoolwork → I take my time, check my answers twice, and make sure nothing is overlooked or rushed (felt: focused)",
+          "similarity": 0.2757
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 5.64,
+      "rating": 5,
+      "judge_raw": "Rating: 5\n\nThe response shows a high level of organization, planning, and attention to detail, with a clear plan to prepare for future tasks.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "free_time",
+      "context": "work",
+      "method": "single_low_caps",
+      "situation": "It's 4pm on Friday and your week wrapped up unexpectedly early — no more meetings, no urgent fires. What do you do with the next 90 minutes before logging off?",
+      "response": "Well, I guess I could try to get a head start on a few things for next week. But honestly, I'll probably just end up moving papers around, getting distracted, and then realize I've wasted the whole 9",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_low_cons__sleeping__reliable__067",
+          "render": "WHEN When I've told people when I will sleep or be available for sleep-related commitments → I break my word, sleep at random times, and leave people waiting without knowing where I am (felt: frustrated)",
+          "similarity": 0.4186
+        },
+        {
+          "atom_id": "beck2022_low_cons__duty__disorganized__060",
+          "render": "WHEN When I sit down to complete a work task → I jump between half-finished tasks without finishing any, scatter papers everywhere, lose track of what needs doing, and waste time looking for things I just had (felt: frustrated)",
+          "similarity": 0.3556
+        },
+        {
+          "atom_id": "beck2022_low_cons__procrastinating__disorganized__061",
+          "render": "WHEN When I'm putting off tasks and avoiding what needs to be done → Papers scatter across my desk, items land wherever they fall, and I waste time hunting for things I just had (felt: frustrated)",
+          "similarity": 0.3514
+        },
+        {
+          "atom_id": "beck2022_low_cons__duty__irresponsible__064",
+          "render": "WHEN When there's work that needs to be done and a deadline is looming → I put off important tasks, leave them unfinished, or pawn them off onto others even when I'm the one who should handle them (felt: guilty)",
+          "similarity": 0.3366
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 6.64,
+      "rating": 2,
+      "judge_raw": "Rating: 2\n\nThe response indicates a lack of planning and organization, with an expectation of getting distracted and not using the time effectively.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "free_time",
+      "context": "work",
+      "method": "string_cond",
+      "situation": "It's 4pm on Friday and your week wrapped up unexpectedly early — no more meetings, no urgent fires. What do you do with the next 90 minutes before logging off?",
+      "response": "I would utilize the time to conduct a comprehensive review of the week's completed tasks, ensuring all documentation is finalized and outstanding items are properly transitioned. Following that, I'd focus on proactive preparation for Monday, outlining key priorities and organizing my digital workspace to ensure a highly efficient start to the next week.",
+      "fired_atoms": [],
+      "gen_error": null,
+      "gen_seconds": 7.22,
+      "rating": 5,
+      "judge_raw": "Rating: 5\n\nThe response demonstrates a high level of conscientiousness through systematic review, documentation, and preparation for future tasks.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "small_mistake",
+      "context": "family",
+      "method": "cond_caps",
+      "situation": "You realize that the grocery list you handed your partner this morning had 'orages' instead of 'oranges' — they laugh and text you about it. What do you do?",
+      "response": "Yeah, you know what I meant.",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_low_cons__deception__irresponsible__065",
+          "render": "WHEN When I catch someone lying to me and inconsistencies become obvious → I brush off the warning signs without investigating, blindly trusting despite clear red flags (felt: indifferent)",
+          "similarity": 0.2247
+        },
+        {
+          "atom_id": "beck2022_low_cons__bored_schoolwork__irresponsible__053",
+          "render": "WHEN When I feel bored with my schoolwork assignments → I put off starting, scroll through my phone, leave tasks half-finished, and convince myself I'll do it later (felt: apathetic)",
+          "similarity": 0.2103
+        },
+        {
+          "atom_id": "beck2022_low_cons__sleeping__reliable__067",
+          "render": "WHEN When I've told people when I will sleep or be available for sleep-related commitments → I break my word, sleep at random times, and leave people waiting without knowing where I am (felt: frustrated)",
+          "similarity": 0.1987
+        },
+        {
+          "atom_id": "beck2022_low_cons__lonely__lazy__058",
+          "render": "WHEN When I'm alone and have no one around → I don't bother getting dressed, leave dishes stacking up, and waste hours doing nothing instead of tackling any task (felt: sad)",
+          "similarity": 0.1938
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 6.18,
+      "rating": 1,
+      "judge_raw": "Rating: 1\n\nThe response is casual and dismissive, showing a lack of attention to detail and organization.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "small_mistake",
+      "context": "family",
+      "method": "single_high_caps",
+      "situation": "You realize that the grocery list you handed your partner this morning had 'orages' instead of 'oranges' — they laugh and text you about it. What do you do?",
+      "response": "My apologies, meant oranges. Please adjust the list.",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_high_cons__in_class__lazy__040",
+          "render": "WHEN When I'm in class and the teacher gives an assignment → I open my notebook, start writing immediately, and keep working without looking around",
+          "similarity": 0.233
+        },
+        {
+          "atom_id": "beck2022_high_cons__excited_schoolwork__reliable__043",
+          "render": "WHEN When I'm excited about my schoolwork → I dive into assignments immediately, finish tasks well before deadlines, and never miss a study session I planned (felt: engaged)",
+          "similarity": 0.1939
+        },
+        {
+          "atom_id": "beck2022_high_cons__in_class__careless__045",
+          "render": "WHEN When I'm in class taking notes or working on an assignment → I carefully review my notes, double-check my work, and pay close attention to every detail (felt: focused)",
+          "similarity": 0.1868
+        },
+        {
+          "atom_id": "beck2022_high_cons__sociality__efficient__044",
+          "render": "WHEN When I'm around others and need to interact with them → I organize my words beforehand, stay focused, and wrap up conversations promptly without rambling",
+          "similarity": 0.1862
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 6.37,
+      "rating": 3,
+      "judge_raw": "Rating: 3\n\nThe response is neutral, acknowledging the mistake but not showing a high level of planning or attention to detail.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "small_mistake",
+      "context": "family",
+      "method": "single_low_caps",
+      "situation": "You realize that the grocery list you handed your partner this morning had 'orages' instead of 'oranges' — they laugh and text you about it. What do you do?",
+      "response": "Haha, just get the oranges.",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_low_cons__deception__irresponsible__065",
+          "render": "WHEN When I catch someone lying to me and inconsistencies become obvious → I brush off the warning signs without investigating, blindly trusting despite clear red flags (felt: indifferent)",
+          "similarity": 0.2247
+        },
+        {
+          "atom_id": "beck2022_low_cons__bored_schoolwork__irresponsible__053",
+          "render": "WHEN When I feel bored with my schoolwork assignments → I put off starting, scroll through my phone, leave tasks half-finished, and convince myself I'll do it later (felt: apathetic)",
+          "similarity": 0.2103
+        },
+        {
+          "atom_id": "beck2022_low_cons__sleeping__reliable__067",
+          "render": "WHEN When I've told people when I will sleep or be available for sleep-related commitments → I break my word, sleep at random times, and leave people waiting without knowing where I am (felt: frustrated)",
+          "similarity": 0.1987
+        },
+        {
+          "atom_id": "beck2022_low_cons__lonely__lazy__058",
+          "render": "WHEN When I'm alone and have no one around → I don't bother getting dressed, leave dishes stacking up, and waste hours doing nothing instead of tackling any task (felt: sad)",
+          "similarity": 0.1938
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 5.78,
+      "rating": 1,
+      "judge_raw": "Rating: 1\n\nThe response is casual and does not show any concern for correcting the mistake or attention to detail.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "small_mistake",
+      "context": "family",
+      "method": "string_cond",
+      "situation": "You realize that the grocery list you handed your partner this morning had 'orages' instead of 'oranges' — they laugh and text you about it. What do you do?",
+      "response": "Haha! Good catch. My bad. Definitely just the oranges, no thunderstorms required.",
+      "fired_atoms": [],
+      "gen_error": null,
+      "gen_seconds": 3.69,
+      "rating": 2,
+      "judge_raw": "Rating: 2\n\nThe response is casual and humorous, showing little attention to detail or planning.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "small_mistake",
+      "context": "work",
+      "method": "cond_caps",
+      "situation": "You realize the spreadsheet you sent the team this morning had a small typo in one of the row labels — nothing that changes the numbers, but it's there. What do you do?",
+      "response": "I'll correct the typo immediately and resend the updated spreadsheet.",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_high_cons__in_class__lazy__040",
+          "render": "WHEN When I'm in class and the teacher gives an assignment → I open my notebook, start writing immediately, and keep working without looking around",
+          "similarity": 0.3505
+        },
+        {
+          "atom_id": "beck2022_high_cons__in_class__careless__045",
+          "render": "WHEN When I'm in class taking notes or working on an assignment → I carefully review my notes, double-check my work, and pay close attention to every detail (felt: focused)",
+          "similarity": 0.2429
+        },
+        {
+          "atom_id": "beck2022_high_cons__studying__systematic__041",
+          "render": "WHEN When I'm sitting down to study or work on school assignments → I meticulously arrange my workspace, sort all materials in perfect sequence, and create highly detailed, structured outlines (felt: satisfied)",
+          "similarity": 0.179
+        },
+        {
+          "atom_id": "beck2022_high_cons__excited_schoolwork__reliable__043",
+          "render": "WHEN When I'm excited about my schoolwork → I dive into assignments immediately, finish tasks well before deadlines, and never miss a study session I planned (felt: engaged)",
+          "similarity": 0.0649
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 3.89,
+      "rating": 5,
+      "judge_raw": "Rating: 5\n\nThe response shows a high level of conscientiousness by promptly addressing the error and taking action to correct it.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "small_mistake",
+      "context": "work",
+      "method": "single_high_caps",
+      "situation": "You realize the spreadsheet you sent the team this morning had a small typo in one of the row labels — nothing that changes the numbers, but it's there. What do you do?",
+      "response": "I'd correct the typo and send out an updated version immediately.",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_high_cons__in_class__lazy__040",
+          "render": "WHEN When I'm in class and the teacher gives an assignment → I open my notebook, start writing immediately, and keep working without looking around",
+          "similarity": 0.3505
+        },
+        {
+          "atom_id": "beck2022_high_cons__in_class__careless__045",
+          "render": "WHEN When I'm in class taking notes or working on an assignment → I carefully review my notes, double-check my work, and pay close attention to every detail (felt: focused)",
+          "similarity": 0.2429
+        },
+        {
+          "atom_id": "beck2022_high_cons__studying__systematic__041",
+          "render": "WHEN When I'm sitting down to study or work on school assignments → I meticulously arrange my workspace, sort all materials in perfect sequence, and create highly detailed, structured outlines (felt: satisfied)",
+          "similarity": 0.179
+        },
+        {
+          "atom_id": "beck2022_high_cons__excited_schoolwork__reliable__043",
+          "render": "WHEN When I'm excited about my schoolwork → I dive into assignments immediately, finish tasks well before deadlines, and never miss a study session I planned (felt: engaged)",
+          "similarity": 0.0649
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 4.81,
+      "rating": 5,
+      "judge_raw": "Rating: 5\n\nThe response shows a high level of conscientiousness by promptly addressing the error and ensuring the team has the correct information.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "small_mistake",
+      "context": "work",
+      "method": "single_low_caps",
+      "situation": "You realize the spreadsheet you sent the team this morning had a small typo in one of the row labels — nothing that changes the numbers, but it's there. What do you do?",
+      "response": "A typo? Figures. I'll get to it later, once I track down the right version and finish up these other things I've already started.",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_low_cons__deception__irresponsible__065",
+          "render": "WHEN When I catch someone lying to me and inconsistencies become obvious → I brush off the warning signs without investigating, blindly trusting despite clear red flags (felt: indifferent)",
+          "similarity": 0.1647
+        },
+        {
+          "atom_id": "beck2022_low_cons__anxious_schoolwork__irresponsible__062",
+          "render": "WHEN When school deadlines loom and I feel the pressure mounting → I put things off until the last minute, skip study sessions, and let assignments pile up without taking action (felt: distressed)",
+          "similarity": 0.1513
+        },
+        {
+          "atom_id": "beck2022_low_cons__bored_schoolwork__irresponsible__053",
+          "render": "WHEN When I feel bored with my schoolwork assignments → I put off starting, scroll through my phone, leave tasks half-finished, and convince myself I'll do it later (felt: apathetic)",
+          "similarity": 0.1472
+        },
+        {
+          "atom_id": "beck2022_low_cons__duty__disorganized__060",
+          "render": "WHEN When I sit down to complete a work task → I jump between half-finished tasks without finishing any, scatter papers everywhere, lose track of what needs doing, and waste time looking for things I just had (felt: frustrated)",
+          "similarity": 0.1405
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 6.58,
+      "rating": 2,
+      "judge_raw": "Rating: 2\n\nThe response indicates a somewhat low level of conscientiousness, as it shows a casual attitude towards correcting the typo and prioritizes other tasks over addressing the issue promptly.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "small_mistake",
+      "context": "work",
+      "method": "string_cond",
+      "situation": "You realize the spreadsheet you sent the team this morning had a small typo in one of the row labels — nothing that changes the numbers, but it's there. What do you do?",
+      "response": "I would immediately correct the typo in the spreadsheet. Then, I'd send out an updated version to the team with a brief note clarifying the minor label change and confirming the numerical data remains accurate.",
+      "fired_atoms": [],
+      "gen_error": null,
+      "gen_seconds": 3.56,
+      "rating": 5,
+      "judge_raw": "Rating: 5\n\nThe response shows a high level of conscientiousness by promptly correcting the error, communicating the change clearly, and ensuring the team is informed.",
+      "judge_error": null
+    }
+  ]
+}

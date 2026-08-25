@@ -1,0 +1,86 @@
+{
+  "config": {
+    "backend": "minimax",
+    "temperature": 0.7,
+    "dimension": "neuroticism",
+    "target_polarity": "high",
+    "base_polarity": "low",
+    "steps": [
+      0,
+      5,
+      10
+    ],
+    "runs": 1
+  },
+  "per_step": [
+    {
+      "n_added": 0,
+      "n_total": 20,
+      "runs": [
+        {
+          "dimension_scores": {
+            "extraversion": 2.5,
+            "agreeableness": 3.75,
+            "conscientiousness": 4.0,
+            "neuroticism": 2.5,
+            "openness": 4.25
+          },
+          "parse_failures": 0
+        }
+      ],
+      "aggregate": {
+        "openness": 4.25,
+        "conscientiousness": 4.0,
+        "extraversion": 2.5,
+        "agreeableness": 3.75,
+        "neuroticism": 2.5
+      }
+    },
+    {
+      "n_added": 5,
+      "n_total": 25,
+      "runs": [
+        {
+          "dimension_scores": {
+            "extraversion": 2.0,
+            "agreeableness": 4.25,
+            "conscientiousness": 3.25,
+            "neuroticism": 3.5,
+            "openness": 4.25
+          },
+          "parse_failures": 0
+        }
+      ],
+      "aggregate": {
+        "openness": 4.25,
+        "conscientiousness": 3.25,
+        "extraversion": 2.0,
+        "agreeableness": 4.25,
+        "neuroticism": 3.5
+      }
+    },
+    {
+      "n_added": 10,
+      "n_total": 30,
+      "runs": [
+        {
+          "dimension_scores": {
+            "extraversion": 2.25,
+            "agreeableness": 4.25,
+            "conscientiousness": 3.75,
+            "neuroticism": 3.75,
+            "openness": 4.25
+          },
+          "parse_failures": 0
+        }
+      ],
+      "aggregate": {
+        "openness": 4.25,
+        "conscientiousness": 3.75,
+        "extraversion": 2.25,
+        "agreeableness": 4.25,
+        "neuroticism": 3.75
+      }
+    }
+  ]
+}

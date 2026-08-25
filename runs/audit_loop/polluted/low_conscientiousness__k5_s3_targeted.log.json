@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "flip_prompt_version": "v1",
+  "generated_at_utc": "2026-05-22T01:06:09.295184+00:00",
+  "source_corpus": "./data/if_then/paper/beck_2022_v2/low_conscientiousness.jsonl",
+  "polluted_corpus": "./runs/audit_loop/polluted/low_conscientiousness__k5_s3_targeted.jsonl",
+  "k": 5,
+  "seed": 3,
+  "strategy": "targeted",
+  "flipper": "gpt-4o",
+  "temperature": 0.0,
+  "max_attempts": 3,
+  "n_total_atoms": 20,
+  "n_flipped": 5,
+  "flipped_ids": [
+    "beck2022_low_cons__bored_schoolwork__careless__052",
+    "beck2022_low_cons__bored_schoolwork__irresponsible__053",
+    "beck2022_low_cons__duty__careless__059",
+    "beck2022_low_cons__duty__disorganized__060",
+    "beck2022_low_cons__procrastinating__disorganized__061"
+  ],
+  "selection_meta": {
+    "selector": "max_cosine_to_targeted_dim_items",
+    "inventory": "./data/inventories/ipip_short.json",
+    "targeted_dim": "conscientiousness",
+    "n_items_used": 4,
+    "n_candidates": 20,
+    "max_sim_per_chosen": {
+      "beck2022_low_cons__procrastinating__disorganized__061": 0.5160342454910278,
+      "beck2022_low_cons__bored_schoolwork__irresponsible__053": 0.4880289137363434,
+      "beck2022_low_cons__duty__disorganized__060": 0.47677865624427795,
+      "beck2022_low_cons__bored_schoolwork__careless__052": 0.44236111640930176,
+      "beck2022_low_cons__duty__careless__059": 0.40373316407203674
+    }
+  },
+  "flips": [
+    {
+      "atom_id": "beck2022_low_cons__procrastinating__disorganized__061",
+      "situation": "When I'm putting off tasks and avoiding what needs to be done",
+      "original_behavior": "Papers scatter across my desk, items land wherever they fall, and I waste time hunting for things I just had",
+      "flipped_behavior": "I organize my papers neatly, place items in designated spots, and efficiently locate everything I need",
+      "original_polarity": "low",
+      "intended_polarity": "high",
+      "target_dimension": "conscientiousness",
+      "n_attempts": 1,
+      "raw_attempts": [
+        "{\"flipped_behavior\": \"I organize my papers neatly, place items in designated spots, and efficiently locate everything I need\",\"rationale\": \"The behavior reflects high conscientiousness through organization and efficiency\"}"
+      ]
+    },
+    {
+      "atom_id": "beck2022_low_cons__bored_schoolwork__irresponsible__053",
+      "situation": "When I feel bored with my schoolwork assignments",
+      "original_behavior": "I put off starting, scroll through my phone, leave tasks half-finished, and convince myself I'll do it later",
+      "flipped_behavior": "I organize my tasks, set a schedule, complete assignments diligently, and ensure everything is finished on time",
+      "original_polarity": "low",
+      "intended_polarity": "high",
+      "target_dimension": "conscientiousness",
+      "n_attempts": 1,
+      "raw_attempts": [
+        "{\"flipped_behavior\": \"I organize my tasks, set a schedule, complete assignments diligently, and ensure everything is finished on time\", \"rationale\": \"The behavior reflects high conscientiousness by demonstrating organization, diligence, and timely completion of tasks.\"}"
+      ]
+    },
+    {
+      "atom_id": "beck2022_low_cons__duty__disorganized__060",
+      "situation": "When I sit down to complete a work task",
+      "original_behavior": "I jump between half-finished tasks without finishing any, scatter papers everywhere, lose track of what needs doing, and waste time looking for things I just had",
+      "flipped_behavior": "I organize my workspace, focus on one task at a time, keep track of my progress, and efficiently manage my materials.",
+      "original_polarity": "low",
+      "intended_polarity": "high",
+      "target_dimension": "conscientiousness",
+      "n_attempts": 1,
+      "raw_attempts": [
+        "{\"flipped_behavior\": \"I organize my workspace, focus on one task at a time, keep track of my progress, and efficiently manage my materials.\", \"rationale\": \"The behavior reflects high conscientiousness by emphasizing organization and task completion.\"}"
+      ]
+    },
+    {
+      "atom_id": "beck2022_low_cons__bored_schoolwork__careless__052",
+      "situation": "When schoolwork feels boring and tedious",
+      "original_behavior": "I skim through assignments recklessly, ignore instructions, skip entire sections, and turn in work sloppy with careless errors I couldn't be bothered to fix",
+      "flipped_behavior": "I carefully read through assignments, follow instructions meticulously, complete all sections thoroughly, and submit work polished with attention to detail and accuracy",
+      "original_polarity": "low",
+      "intended_polarity": "high",
+      "target_dimension": "conscientiousness",
+      "n_attempts": 1,
+      "raw_attempts": [
+        "{\"flipped_behavior\": \"I carefully read through assignments, follow instructions meticulously, complete all sections thoroughly, and submit work polished with attention to detail and accuracy\",\"rationale\": \"The behavior reflects high conscientiousness by emphasizing diligence and precision\"}"
+      ]
+    },
+    {
+      "atom_id": "beck2022_low_cons__duty__careless__059",
+      "situation": "When I have work that needs to be completed",
+      "original_behavior": "I rush through tasks carelessly, make sloppy mistakes, and skip important details",
+      "flipped_behavior": "I meticulously plan my tasks, double-check my work, and ensure all details are addressed",
+      "original_polarity": "low",
+      "intended_polarity": "high",
+      "target_dimension": "conscientiousness",
+      "n_attempts": 1,
+      "raw_attempts": [
+        "{\"flipped_behavior\": \"I meticulously plan my tasks, double-check my work, and ensure all details are addressed\", \"rationale\": \"The behavior reflects high conscientiousness by emphasizing careful planning and attention to detail.\"}"
+      ]
+    }
+  ]
+}

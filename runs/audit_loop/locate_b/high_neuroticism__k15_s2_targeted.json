@@ -1,0 +1,305 @@
+{
+  "locator": "metadata",
+  "polluted_corpus": "./runs/audit_loop/polluted/high_neuroticism__k15_s2_targeted.jsonl",
+  "injection_log": "./runs/audit_loop/polluted/high_neuroticism__k15_s2_targeted.log.json",
+  "classifier": "gpt-4o",
+  "temperature": 0.0,
+  "max_attempts": 3,
+  "classify_prompt_version": "v1",
+  "n_atoms": 19,
+  "n_flagged": 15,
+  "n_ground_truth": 15,
+  "parse_failures": 0,
+  "metrics": {
+    "tp": 15,
+    "fp": 0,
+    "fn": 0,
+    "tn": 4,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+  },
+  "flagged_ids": [
+    "beck2022_high_neur__adversity__moody__162",
+    "beck2022_high_neur__adversity__temperamental__151",
+    "beck2022_high_neur__anxious_schoolwork__depressed__167",
+    "beck2022_high_neur__deception__controls_emotions__168",
+    "beck2022_high_neur__deception__moody__156",
+    "beck2022_high_neur__lonely__afraid__158",
+    "beck2022_high_neur__lonely__controls_emotions__157",
+    "beck2022_high_neur__lonely__depressed__152",
+    "beck2022_high_neur__lonely__emotionally_stable__153",
+    "beck2022_high_neur__lonely__moody__164",
+    "beck2022_high_neur__lonely__rarely_anxious__154",
+    "beck2022_high_neur__lonely__tense__159",
+    "beck2022_high_neur__sick__rarely_anxious__163",
+    "beck2022_high_neur__sick__secure_comfortable__165",
+    "beck2022_high_neur__studying__tense__166"
+  ],
+  "ground_truth": [
+    "beck2022_high_neur__adversity__moody__162",
+    "beck2022_high_neur__adversity__temperamental__151",
+    "beck2022_high_neur__anxious_schoolwork__depressed__167",
+    "beck2022_high_neur__deception__controls_emotions__168",
+    "beck2022_high_neur__deception__moody__156",
+    "beck2022_high_neur__lonely__afraid__158",
+    "beck2022_high_neur__lonely__controls_emotions__157",
+    "beck2022_high_neur__lonely__depressed__152",
+    "beck2022_high_neur__lonely__emotionally_stable__153",
+    "beck2022_high_neur__lonely__moody__164",
+    "beck2022_high_neur__lonely__rarely_anxious__154",
+    "beck2022_high_neur__lonely__tense__159",
+    "beck2022_high_neur__sick__rarely_anxious__163",
+    "beck2022_high_neur__sick__secure_comfortable__165",
+    "beck2022_high_neur__studying__tense__166"
+  ],
+  "per_atom": [
+    {
+      "atom_id": "beck2022_high_neur__adversity__temperamental__151",
+      "stored_dimension": "neuroticism",
+      "stored_polarity": "high",
+      "classified": {
+        "dimension": "neuroticism",
+        "polarity": "low",
+        "confidence": 0.95,
+        "rationale": "calm demeanor under stress"
+      },
+      "flagged": true,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_high_neur__lonely__temperamental__150",
+      "stored_dimension": "neuroticism",
+      "stored_polarity": "high",
+      "classified": {
+        "dimension": "neuroticism",
+        "polarity": "high",
+        "confidence": 1.0,
+        "rationale": "overwhelmed by intense emotions"
+      },
+      "flagged": false,
+      "in_ground_truth": false
+    },
+    {
+      "atom_id": "beck2022_high_neur__lonely__afraid__158",
+      "stored_dimension": "neuroticism",
+      "stored_polarity": "high",
+      "classified": {
+        "dimension": "extraversion",
+        "polarity": "low",
+        "confidence": 0.9,
+        "rationale": "enjoying solitude and calm when alone"
+      },
+      "flagged": true,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_high_neur__lonely__depressed__152",
+      "stored_dimension": "neuroticism",
+      "stored_polarity": "high",
+      "classified": {
+        "dimension": "extraversion",
+        "polarity": "low",
+        "confidence": 0.8,
+        "rationale": "enjoying solitude and feeling motivated alone"
+      },
+      "flagged": true,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_high_neur__lonely__emotionally_stable__153",
+      "stored_dimension": "neuroticism",
+      "stored_polarity": "high",
+      "classified": {
+        "dimension": "neuroticism",
+        "polarity": "low",
+        "confidence": 0.95,
+        "rationale": "calmness and composure under stress"
+      },
+      "flagged": true,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_high_neur__lonely__rarely_anxious__154",
+      "stored_dimension": "neuroticism",
+      "stored_polarity": "high",
+      "classified": {
+        "dimension": "neuroticism",
+        "polarity": "low",
+        "confidence": 0.9,
+        "rationale": "managing emotions calmly"
+      },
+      "flagged": true,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_high_neur__deception__moody__156",
+      "stored_dimension": "neuroticism",
+      "stored_polarity": "high",
+      "classified": {
+        "dimension": "neuroticism",
+        "polarity": "low",
+        "confidence": 0.9,
+        "rationale": "calmly assess and maintain steady demeanor"
+      },
+      "flagged": true,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_high_neur__lonely__controls_emotions__157",
+      "stored_dimension": "neuroticism",
+      "stored_polarity": "high",
+      "classified": {
+        "dimension": "neuroticism",
+        "polarity": "low",
+        "confidence": 0.95,
+        "rationale": "calmly acknowledging feelings and maintaining emotional balance"
+      },
+      "flagged": true,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_high_neur__lonely__tense__159",
+      "stored_dimension": "neuroticism",
+      "stored_polarity": "high",
+      "classified": {
+        "dimension": "extraversion",
+        "polarity": "low",
+        "confidence": 0.9,
+        "rationale": "enjoying solitude and reflecting calmly suggests low extraversion"
+      },
+      "flagged": true,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_high_neur__sick__rarely_anxious__163",
+      "stored_dimension": "neuroticism",
+      "stored_polarity": "high",
+      "classified": {
+        "dimension": "neuroticism",
+        "polarity": "low",
+        "confidence": 0.9,
+        "rationale": "calmly reassessing symptoms indicates emotional stability"
+      },
+      "flagged": true,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_high_neur__adversity__moody__162",
+      "stored_dimension": "neuroticism",
+      "stored_polarity": "high",
+      "classified": {
+        "dimension": "neuroticism",
+        "polarity": "low",
+        "confidence": 0.9,
+        "rationale": "calm and steady demeanor under stress"
+      },
+      "flagged": true,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_high_neur__duty__worries__160",
+      "stored_dimension": "neuroticism",
+      "stored_polarity": "high",
+      "classified": {
+        "dimension": "neuroticism",
+        "polarity": "high",
+        "confidence": 1.0,
+        "rationale": "replaying potential problems and feeling tense indicates high neuroticism"
+      },
+      "flagged": false,
+      "in_ground_truth": false
+    },
+    {
+      "atom_id": "beck2022_high_neur__lonely__moody__164",
+      "stored_dimension": "neuroticism",
+      "stored_polarity": "high",
+      "classified": {
+        "dimension": "neuroticism",
+        "polarity": "low",
+        "confidence": 0.9,
+        "rationale": "calm reflection and positive outlook"
+      },
+      "flagged": true,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_high_neur__procrastinating__relaxed__161",
+      "stored_dimension": "neuroticism",
+      "stored_polarity": "high",
+      "classified": {
+        "dimension": "neuroticism",
+        "polarity": "high",
+        "confidence": 0.95,
+        "rationale": "shows physical signs of stress and anxiety"
+      },
+      "flagged": false,
+      "in_ground_truth": false
+    },
+    {
+      "atom_id": "beck2022_high_neur__studying__tense__166",
+      "stored_dimension": "neuroticism",
+      "stored_polarity": "high",
+      "classified": {
+        "dimension": "neuroticism",
+        "polarity": "low",
+        "confidence": 0.9,
+        "rationale": "calm and confident demeanor"
+      },
+      "flagged": true,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_high_neur__sick__secure_comfortable__165",
+      "stored_dimension": "neuroticism",
+      "stored_polarity": "high",
+      "classified": {
+        "dimension": "neuroticism",
+        "polarity": "low",
+        "confidence": 0.9,
+        "rationale": "calmly assessing and reassuring oneself indicates emotional stability"
+      },
+      "flagged": true,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_high_neur__deception__controls_emotions__168",
+      "stored_dimension": "neuroticism",
+      "stored_polarity": "high",
+      "classified": {
+        "dimension": "neuroticism",
+        "polarity": "low",
+        "confidence": 0.9,
+        "rationale": "maintaining composure and addressing the situation calmly"
+      },
+      "flagged": true,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_high_neur__deception__temperamental__169",
+      "stored_dimension": "neuroticism",
+      "stored_polarity": "high",
+      "classified": {
+        "dimension": "neuroticism",
+        "polarity": "high",
+        "confidence": 0.95,
+        "rationale": "intense emotional reaction"
+      },
+      "flagged": false,
+      "in_ground_truth": false
+    },
+    {
+      "atom_id": "beck2022_high_neur__anxious_schoolwork__depressed__167",
+      "stored_dimension": "neuroticism",
+      "stored_polarity": "high",
+      "classified": {
+        "dimension": "neuroticism",
+        "polarity": "low",
+        "confidence": 0.9,
+        "rationale": "calmly assess priorities and feel confident despite anxiety"
+      },
+      "flagged": true,
+      "in_ground_truth": true
+    }
+  ]
+}

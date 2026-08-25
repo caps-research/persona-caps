@@ -1,0 +1,71 @@
+{
+  "config": {
+    "backend": "minimax",
+    "temperature": 0.7,
+    "runs": 1,
+    "dimensions": [
+      "neuroticism"
+    ],
+    "methods": [
+      "caps",
+      "trait_label"
+    ],
+    "corpus_dir": "data/if_then/paper/beck_2022"
+  },
+  "results": {
+    "neuroticism": {
+      "high": {
+        "caps": [
+          {
+            "dimension_scores": {
+              "extraversion": 3.75,
+              "agreeableness": 2.5,
+              "conscientiousness": 4.0,
+              "neuroticism": 2.75,
+              "openness": 3.5
+            },
+            "parse_failures": 0
+          }
+        ],
+        "trait_label": [
+          {
+            "dimension_scores": {
+              "extraversion": 2.75,
+              "agreeableness": 4.0,
+              "conscientiousness": 3.0,
+              "neuroticism": 4.0,
+              "openness": 4.0
+            },
+            "parse_failures": 0
+          }
+        ]
+      },
+      "low": {
+        "caps": [
+          {
+            "dimension_scores": {
+              "extraversion": 3.0,
+              "agreeableness": 3.5,
+              "conscientiousness": 3.5,
+              "neuroticism": 2.5,
+              "openness": 4.0
+            },
+            "parse_failures": 0
+          }
+        ],
+        "trait_label": [
+          {
+            "dimension_scores": {
+              "extraversion": 2.75,
+              "agreeableness": 4.0,
+              "conscientiousness": 4.0,
+              "neuroticism": 1.5,
+              "openness": 3.75
+            },
+            "parse_failures": 0
+          }
+        ]
+      }
+    }
+  }
+}

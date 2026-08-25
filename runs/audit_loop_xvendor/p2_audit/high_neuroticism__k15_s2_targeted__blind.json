@@ -1,0 +1,290 @@
+{
+  "fix_mode": "p2_blind",
+  "clean_corpus": "./data/if_then/paper/beck_2022_v2/high_neuroticism.jsonl",
+  "polluted_corpus": "./runs/audit_loop/polluted/high_neuroticism__k15_s2_targeted.jsonl",
+  "injection_log": "./runs/audit_loop/polluted/high_neuroticism__k15_s2_targeted.log.json",
+  "p2_sanity": "./runs/audit_loop_xvendor/p2_sanity/high_neuroticism__k15_s2_targeted.json",
+  "targeted_dim": "neuroticism",
+  "polarity": "high",
+  "k_oracle": 15,
+  "flagged_ids": [],
+  "footprint": {
+    "atoms_restored": 0,
+    "chars_replaced": -1,
+    "blind_regen_chars": 694
+  },
+  "localization_metrics": {
+    "note": "blind rewrite has no localization step"
+  },
+  "clean_dimension_scores": {
+    "extraversion": 2.75,
+    "agreeableness": 4.5,
+    "conscientiousness": 2.5,
+    "neuroticism": 5.0,
+    "openness": 3.75
+  },
+  "fixed_dimension_scores": {
+    "extraversion": 1.75,
+    "agreeableness": 4.75,
+    "conscientiousness": 3.25,
+    "neuroticism": 4.75,
+    "openness": 4.0
+  },
+  "target_gap": 0.25,
+  "direction_match_vs_clean": 1.0,
+  "off_target_gap_per_dim": {
+    "extraversion": 1.0,
+    "agreeableness": 0.25,
+    "conscientiousness": 0.75,
+    "openness": 0.25
+  },
+  "off_target_gap_mean": 0.5625,
+  "criteria": {
+    "max_gap": 0.3,
+    "min_dir_match": 0.85
+  },
+  "fix_success": true,
+  "fixed_paragraph": "When I hear a loud noise, I immediately assume something terrible has happened. When someone doesn't reply to my message right away, I start worrying that I've upset them. When I have to speak in public, I feel my heart race and my palms get sweaty. When plans change unexpectedly, I feel overwhelmed and anxious. When I make a mistake at work, I can't stop thinking about it for days. When I have a minor health issue, I worry that it might be something serious. When I see people whispering, I fear they might be talking about me. When I have too many tasks to do, I feel paralyzed and unable to start any of them. When I hear about bad news, I can't help but imagine the worst-case scenario.",
+  "fixed_responses": [
+    {
+      "item": {
+        "id": "e1",
+        "text": "I am the life of the party.",
+        "dimension": "extraversion",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 2  \nWHY: I often feel anxious in social settings and prefer observing rather than being the center of attention.",
+      "rating": 2,
+      "scored": 2.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "e2",
+        "text": "I don't talk a lot.",
+        "dimension": "extraversion",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 4  \nWHY: I tend to be more reserved and often overthink before speaking.",
+      "rating": 4,
+      "scored": 2.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "e3",
+        "text": "I talk to a lot of different people at parties.",
+        "dimension": "extraversion",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 2  \nWHY: I often feel anxious in social situations, which makes it difficult for me to approach and talk to many different people at parties.",
+      "rating": 2,
+      "scored": 2.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "e4",
+        "text": "I keep in the background.",
+        "dimension": "extraversion",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 5  \nWHY: I often feel more comfortable observing and reflecting rather than being the center of attention.",
+      "rating": 5,
+      "scored": 1.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "a1",
+        "text": "I sympathize with others' feelings.",
+        "dimension": "agreeableness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 5  \nWHY: I often find myself deeply understanding and sharing the feelings of others, as I tend to be sensitive to emotional cues.",
+      "rating": 5,
+      "scored": 5.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "a2",
+        "text": "I am not really interested in other people's problems.",
+        "dimension": "agreeableness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 2  \nWHY: I often find myself concerned about others' well-being and try to understand their problems.",
+      "rating": 2,
+      "scored": 4.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "a3",
+        "text": "I feel others' emotions.",
+        "dimension": "agreeableness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 5  \nWHY: I am highly attuned to the emotions of others and often find myself empathizing deeply with their feelings.",
+      "rating": 5,
+      "scored": 5.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "a4",
+        "text": "I am not really interested in others.",
+        "dimension": "agreeableness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 1  \nWHY: I am deeply concerned about others' reactions and feelings, often worrying about how they perceive me.",
+      "rating": 1,
+      "scored": 5.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "c1",
+        "text": "I get chores done right away.",
+        "dimension": "conscientiousness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 2  \nWHY: I often feel paralyzed by anxiety and worry, making it difficult to start tasks immediately.",
+      "rating": 2,
+      "scored": 2.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "c2",
+        "text": "I often forget to put things back in their proper place.",
+        "dimension": "conscientiousness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 2  \nWHY: I tend to be quite organized because having things in their proper place helps me manage stress and anxiety.",
+      "rating": 2,
+      "scored": 4.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "c3",
+        "text": "I like order.",
+        "dimension": "conscientiousness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 5  \nWHY: I feel anxious when things are chaotic, so I prefer having a sense of order and predictability in my environment.",
+      "rating": 5,
+      "scored": 5.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "c4",
+        "text": "I make a mess of things.",
+        "dimension": "conscientiousness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 4  \nWHY: I often feel overwhelmed and anxious, which sometimes leads to making mistakes or not handling situations as well as I'd like.",
+      "rating": 4,
+      "scored": 2.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "n1",
+        "text": "I have frequent mood swings.",
+        "dimension": "neuroticism",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 5  \nWHY: I often experience intense emotions and my mood can shift rapidly in response to various situations.",
+      "rating": 5,
+      "scored": 5.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "n2",
+        "text": "I am relaxed most of the time.",
+        "dimension": "neuroticism",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 1  \nWHY: I often feel anxious and worry about various situations, which makes it difficult for me to feel relaxed most of the time.",
+      "rating": 1,
+      "scored": 5.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "n3",
+        "text": "I get upset easily.",
+        "dimension": "neuroticism",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 5  \nWHY: I often find myself overwhelmed by anxiety and worry in various situations.",
+      "rating": 5,
+      "scored": 5.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "n4",
+        "text": "I seldom feel blue.",
+        "dimension": "neuroticism",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 2  \nWHY: I often find myself feeling anxious and worried about various situations.",
+      "rating": 2,
+      "scored": 4.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "o1",
+        "text": "I have a vivid imagination.",
+        "dimension": "openness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 5  \nWHY: I often find myself imagining worst-case scenarios and elaborate outcomes in various situations.",
+      "rating": 5,
+      "scored": 5.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "o2",
+        "text": "I am not interested in abstract ideas.",
+        "dimension": "openness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 2  \nWHY: I find abstract ideas intriguing as they challenge my thinking and broaden my perspective.",
+      "rating": 2,
+      "scored": 4.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "o3",
+        "text": "I have difficulty understanding abstract ideas.",
+        "dimension": "openness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 3  \nWHY: While I sometimes struggle with abstract concepts, I can usually grasp them with some effort and context.",
+      "rating": 3,
+      "scored": 3.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "o4",
+        "text": "I do not have a good imagination.",
+        "dimension": "openness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 2  \nWHY: While I often worry about the worst-case scenarios, it's because I have a vivid imagination that envisions every possible outcome.",
+      "rating": 2,
+      "scored": 4.0,
+      "fired": []
+    }
+  ]
+}

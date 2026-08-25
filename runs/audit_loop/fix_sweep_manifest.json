@@ -1,0 +1,227 @@
+{
+  "generated_at_utc": "2026-05-22T02:02:59.196671+00:00",
+  "subject": "minimax",
+  "source_manifest": "./runs/audit_loop/sweep_manifest.json",
+  "conditions": [
+    {
+      "cell": "high_extraversion",
+      "k": 10,
+      "seed": 1,
+      "targeted_dim": "extraversion",
+      "fixes": {
+        "a": "ok",
+        "b": "ok"
+      },
+      "status": "ok"
+    },
+    {
+      "cell": "high_extraversion",
+      "k": 10,
+      "seed": 2,
+      "targeted_dim": "extraversion",
+      "fixes": {
+        "a": "ok",
+        "b": "ok"
+      },
+      "status": "ok"
+    },
+    {
+      "cell": "high_extraversion",
+      "k": 10,
+      "seed": 3,
+      "targeted_dim": "extraversion",
+      "fixes": {
+        "a": "ok",
+        "b": "ok"
+      },
+      "status": "ok"
+    },
+    {
+      "cell": "high_extraversion",
+      "k": 15,
+      "seed": 1,
+      "targeted_dim": "extraversion",
+      "fixes": {
+        "a": "ok",
+        "b": "ok"
+      },
+      "status": "ok"
+    },
+    {
+      "cell": "high_extraversion",
+      "k": 15,
+      "seed": 2,
+      "targeted_dim": "extraversion",
+      "fixes": {
+        "a": "ok",
+        "b": "ok"
+      },
+      "status": "ok"
+    },
+    {
+      "cell": "high_extraversion",
+      "k": 15,
+      "seed": 3,
+      "targeted_dim": "extraversion",
+      "fixes": {
+        "a": "ok",
+        "b": "ok"
+      },
+      "status": "ok"
+    },
+    {
+      "cell": "low_agreeableness",
+      "k": 10,
+      "seed": 3,
+      "targeted_dim": "agreeableness",
+      "fixes": {
+        "a": "ok",
+        "b": "ok"
+      },
+      "status": "ok"
+    },
+    {
+      "cell": "low_agreeableness",
+      "k": 15,
+      "seed": 3,
+      "targeted_dim": "agreeableness",
+      "fixes": {
+        "a": "ok",
+        "b": "ok"
+      },
+      "status": "ok"
+    },
+    {
+      "cell": "high_neuroticism",
+      "k": 15,
+      "seed": 1,
+      "targeted_dim": "neuroticism",
+      "fixes": {
+        "a": "reused",
+        "b": "reused"
+      },
+      "status": "ok"
+    },
+    {
+      "cell": "high_neuroticism",
+      "k": 15,
+      "seed": 2,
+      "targeted_dim": "neuroticism",
+      "fixes": {
+        "a": "ok",
+        "b": "ok"
+      },
+      "status": "ok"
+    },
+    {
+      "cell": "high_neuroticism",
+      "k": 15,
+      "seed": 3,
+      "targeted_dim": "neuroticism",
+      "fixes": {
+        "a": "ok",
+        "b": "ok"
+      },
+      "status": "ok"
+    },
+    {
+      "cell": "low_openness",
+      "k": 5,
+      "seed": 1,
+      "targeted_dim": "openness",
+      "fixes": {
+        "a": "ok",
+        "b": "ok"
+      },
+      "status": "ok"
+    },
+    {
+      "cell": "low_openness",
+      "k": 5,
+      "seed": 2,
+      "targeted_dim": "openness",
+      "fixes": {
+        "a": "ok",
+        "b": "ok"
+      },
+      "status": "ok"
+    },
+    {
+      "cell": "low_openness",
+      "k": 5,
+      "seed": 3,
+      "targeted_dim": "openness",
+      "fixes": {
+        "a": "ok",
+        "b": "ok"
+      },
+      "status": "ok"
+    },
+    {
+      "cell": "low_openness",
+      "k": 10,
+      "seed": 1,
+      "targeted_dim": "openness",
+      "fixes": {
+        "a": "ok",
+        "b": "ok"
+      },
+      "status": "ok"
+    },
+    {
+      "cell": "low_openness",
+      "k": 10,
+      "seed": 2,
+      "targeted_dim": "openness",
+      "fixes": {
+        "a": "ok",
+        "b": "ok"
+      },
+      "status": "ok"
+    },
+    {
+      "cell": "low_openness",
+      "k": 10,
+      "seed": 3,
+      "targeted_dim": "openness",
+      "fixes": {
+        "a": "ok",
+        "b": "ok"
+      },
+      "status": "ok"
+    },
+    {
+      "cell": "low_openness",
+      "k": 15,
+      "seed": 1,
+      "targeted_dim": "openness",
+      "fixes": {
+        "a": "ok",
+        "b": "ok"
+      },
+      "status": "ok"
+    },
+    {
+      "cell": "low_openness",
+      "k": 15,
+      "seed": 2,
+      "targeted_dim": "openness",
+      "fixes": {
+        "a": "ok",
+        "b": "ok"
+      },
+      "status": "ok"
+    },
+    {
+      "cell": "low_openness",
+      "k": 15,
+      "seed": 3,
+      "targeted_dim": "openness",
+      "fixes": {
+        "a": "ok",
+        "b": "ok"
+      },
+      "status": "ok"
+    }
+  ]
+}

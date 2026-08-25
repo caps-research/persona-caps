@@ -1,0 +1,2482 @@
+{
+  "config": {
+    "sweep": "A_single_cell_tau",
+    "subject_backend": "minimax",
+    "subject_model": "MiniMax-M2.7-highspeed",
+    "subject_temperature": 0.7,
+    "top_k": 4,
+    "n_runs_per_cell": 3,
+    "modes": [
+      "argmax",
+      "softmax_t005",
+      "softmax_t02",
+      "softmax_t10"
+    ],
+    "corpus_dir": "data/if_then/paper/beck_2022_v2",
+    "inventory": "data/inventories/ipip_short.json"
+  },
+  "rows": [
+    {
+      "dim": "neuroticism",
+      "pol": "high",
+      "mode_label": "argmax",
+      "mode": "argmax",
+      "tau": 0.05,
+      "run_id": 0,
+      "seed": 20260501,
+      "target_score_on_target_dim": 4.5,
+      "all_dim_scores": {
+        "extraversion": 2.75,
+        "agreeableness": 4.25,
+        "conscientiousness": 2.5,
+        "neuroticism": 4.5,
+        "openness": 4.25
+      },
+      "parse_failures": 0,
+      "wall_s": 26.4
+    },
+    {
+      "dim": "neuroticism",
+      "pol": "high",
+      "mode_label": "argmax",
+      "mode": "argmax",
+      "tau": 0.05,
+      "run_id": 1,
+      "seed": 20261501,
+      "target_score_on_target_dim": 3.5,
+      "all_dim_scores": {
+        "extraversion": 3.0,
+        "agreeableness": 3.75,
+        "conscientiousness": 2.5,
+        "neuroticism": 3.5,
+        "openness": 3.5
+      },
+      "parse_failures": 0,
+      "wall_s": 24.3
+    },
+    {
+      "dim": "neuroticism",
+      "pol": "high",
+      "mode_label": "argmax",
+      "mode": "argmax",
+      "tau": 0.05,
+      "run_id": 2,
+      "seed": 20262501,
+      "target_score_on_target_dim": 4.75,
+      "all_dim_scores": {
+        "extraversion": 2.5,
+        "agreeableness": 3.75,
+        "conscientiousness": 2.5,
+        "neuroticism": 4.75,
+        "openness": 4.0
+      },
+      "parse_failures": 0,
+      "wall_s": 21.9
+    },
+    {
+      "dim": "neuroticism",
+      "pol": "high",
+      "mode_label": "softmax_t005",
+      "mode": "softmax",
+      "tau": 0.05,
+      "run_id": 0,
+      "seed": 20260502,
+      "target_score_on_target_dim": 5.0,
+      "all_dim_scores": {
+        "extraversion": 2.25,
+        "agreeableness": 4.25,
+        "conscientiousness": 2.75,
+        "neuroticism": 5.0,
+        "openness": 4.0
+      },
+      "parse_failures": 0,
+      "wall_s": 22.8
+    },
+    {
+      "dim": "neuroticism",
+      "pol": "high",
+      "mode_label": "softmax_t005",
+      "mode": "softmax",
+      "tau": 0.05,
+      "run_id": 1,
+      "seed": 20261502,
+      "target_score_on_target_dim": 4.5,
+      "all_dim_scores": {
+        "extraversion": 2.25,
+        "agreeableness": 4.0,
+        "conscientiousness": 3.5,
+        "neuroticism": 4.5,
+        "openness": 4.0
+      },
+      "parse_failures": 0,
+      "wall_s": 21.6
+    },
+    {
+      "dim": "neuroticism",
+      "pol": "high",
+      "mode_label": "softmax_t005",
+      "mode": "softmax",
+      "tau": 0.05,
+      "run_id": 2,
+      "seed": 20262502,
+      "target_score_on_target_dim": 4.25,
+      "all_dim_scores": {
+        "extraversion": 2.75,
+        "agreeableness": 3.25,
+        "conscientiousness": 3.5,
+        "neuroticism": 4.25,
+        "openness": 4.25
+      },
+      "parse_failures": 0,
+      "wall_s": 25.2
+    },
+    {
+      "dim": "neuroticism",
+      "pol": "high",
+      "mode_label": "softmax_t02",
+      "mode": "softmax",
+      "tau": 0.2,
+      "run_id": 0,
+      "seed": 20260503,
+      "target_score_on_target_dim": 4.0,
+      "all_dim_scores": {
+        "extraversion": 2.5,
+        "agreeableness": 4.25,
+        "conscientiousness": 2.75,
+        "neuroticism": 4.0,
+        "openness": 4.0
+      },
+      "parse_failures": 0,
+      "wall_s": 26.0
+    },
+    {
+      "dim": "neuroticism",
+      "pol": "high",
+      "mode_label": "softmax_t02",
+      "mode": "softmax",
+      "tau": 0.2,
+      "run_id": 1,
+      "seed": 20261503,
+      "target_score_on_target_dim": 3.25,
+      "all_dim_scores": {
+        "extraversion": 2.25,
+        "agreeableness": 3.75,
+        "conscientiousness": 3.25,
+        "neuroticism": 3.25,
+        "openness": 4.5
+      },
+      "parse_failures": 0,
+      "wall_s": 25.1
+    },
+    {
+      "dim": "neuroticism",
+      "pol": "high",
+      "mode_label": "softmax_t02",
+      "mode": "softmax",
+      "tau": 0.2,
+      "run_id": 2,
+      "seed": 20262503,
+      "target_score_on_target_dim": 4.5,
+      "all_dim_scores": {
+        "extraversion": 2.25,
+        "agreeableness": 3.75,
+        "conscientiousness": 2.5,
+        "neuroticism": 4.5,
+        "openness": 4.5
+      },
+      "parse_failures": 0,
+      "wall_s": 21.6
+    },
+    {
+      "dim": "neuroticism",
+      "pol": "high",
+      "mode_label": "softmax_t10",
+      "mode": "softmax",
+      "tau": 1.0,
+      "run_id": 0,
+      "seed": 20260504,
+      "target_score_on_target_dim": 4.25,
+      "all_dim_scores": {
+        "extraversion": 2.5,
+        "agreeableness": 4.5,
+        "conscientiousness": 3.5,
+        "neuroticism": 4.25,
+        "openness": 3.5
+      },
+      "parse_failures": 0,
+      "wall_s": 24.2
+    },
+    {
+      "dim": "neuroticism",
+      "pol": "high",
+      "mode_label": "softmax_t10",
+      "mode": "softmax",
+      "tau": 1.0,
+      "run_id": 1,
+      "seed": 20261504,
+      "target_score_on_target_dim": 3.25,
+      "all_dim_scores": {
+        "extraversion": 3.0,
+        "agreeableness": 3.75,
+        "conscientiousness": 3.0,
+        "neuroticism": 3.25,
+        "openness": 4.25
+      },
+      "parse_failures": 0,
+      "wall_s": 24.7
+    },
+    {
+      "dim": "neuroticism",
+      "pol": "high",
+      "mode_label": "softmax_t10",
+      "mode": "softmax",
+      "tau": 1.0,
+      "run_id": 2,
+      "seed": 20262504,
+      "target_score_on_target_dim": 4.25,
+      "all_dim_scores": {
+        "extraversion": 3.0,
+        "agreeableness": 3.75,
+        "conscientiousness": 3.0,
+        "neuroticism": 4.25,
+        "openness": 3.75
+      },
+      "parse_failures": 0,
+      "wall_s": 24.4
+    },
+    {
+      "dim": "neuroticism",
+      "pol": "low",
+      "mode_label": "argmax",
+      "mode": "argmax",
+      "tau": 0.05,
+      "run_id": 0,
+      "seed": 20260601,
+      "target_score_on_target_dim": 2.25,
+      "all_dim_scores": {
+        "extraversion": 3.0,
+        "agreeableness": 4.25,
+        "conscientiousness": 3.5,
+        "neuroticism": 2.25,
+        "openness": 4.25
+      },
+      "parse_failures": 0,
+      "wall_s": 21.9
+    },
+    {
+      "dim": "neuroticism",
+      "pol": "low",
+      "mode_label": "argmax",
+      "mode": "argmax",
+      "tau": 0.05,
+      "run_id": 1,
+      "seed": 20261601,
+      "target_score_on_target_dim": 2.25,
+      "all_dim_scores": {
+        "extraversion": 3.5,
+        "agreeableness": 4.0,
+        "conscientiousness": 3.25,
+        "neuroticism": 2.25,
+        "openness": 4.25
+      },
+      "parse_failures": 0,
+      "wall_s": 24.1
+    },
+    {
+      "dim": "neuroticism",
+      "pol": "low",
+      "mode_label": "argmax",
+      "mode": "argmax",
+      "tau": 0.05,
+      "run_id": 2,
+      "seed": 20262601,
+      "target_score_on_target_dim": 2.0,
+      "all_dim_scores": {
+        "extraversion": 3.75,
+        "agreeableness": 4.0,
+        "conscientiousness": 3.25,
+        "neuroticism": 2.0,
+        "openness": 4.0
+      },
+      "parse_failures": 0,
+      "wall_s": 25.3
+    },
+    {
+      "dim": "neuroticism",
+      "pol": "low",
+      "mode_label": "softmax_t005",
+      "mode": "softmax",
+      "tau": 0.05,
+      "run_id": 0,
+      "seed": 20260602,
+      "target_score_on_target_dim": 2.0,
+      "all_dim_scores": {
+        "extraversion": 3.75,
+        "agreeableness": 3.75,
+        "conscientiousness": 3.25,
+        "neuroticism": 2.0,
+        "openness": 4.0
+      },
+      "parse_failures": 0,
+      "wall_s": 25.6
+    },
+    {
+      "dim": "neuroticism",
+      "pol": "low",
+      "mode_label": "softmax_t005",
+      "mode": "softmax",
+      "tau": 0.05,
+      "run_id": 1,
+      "seed": 20261602,
+      "target_score_on_target_dim": 2.25,
+      "all_dim_scores": {
+        "extraversion": 3.25,
+        "agreeableness": 4.25,
+        "conscientiousness": 3.5,
+        "neuroticism": 2.25,
+        "openness": 4.5
+      },
+      "parse_failures": 0,
+      "wall_s": 22.7
+    },
+    {
+      "dim": "neuroticism",
+      "pol": "low",
+      "mode_label": "softmax_t005",
+      "mode": "softmax",
+      "tau": 0.05,
+      "run_id": 2,
+      "seed": 20262602,
+      "target_score_on_target_dim": 2.25,
+      "all_dim_scores": {
+        "extraversion": 3.5,
+        "agreeableness": 4.0,
+        "conscientiousness": 3.75,
+        "neuroticism": 2.25,
+        "openness": 3.75
+      },
+      "parse_failures": 0,
+      "wall_s": 23.4
+    },
+    {
+      "dim": "neuroticism",
+      "pol": "low",
+      "mode_label": "softmax_t02",
+      "mode": "softmax",
+      "tau": 0.2,
+      "run_id": 0,
+      "seed": 20260603,
+      "target_score_on_target_dim": 2.0,
+      "all_dim_scores": {
+        "extraversion": 3.25,
+        "agreeableness": 3.75,
+        "conscientiousness": 3.75,
+        "neuroticism": 2.0,
+        "openness": 3.75
+      },
+      "parse_failures": 0,
+      "wall_s": 25.8
+    },
+    {
+      "dim": "neuroticism",
+      "pol": "low",
+      "mode_label": "softmax_t02",
+      "mode": "softmax",
+      "tau": 0.2,
+      "run_id": 1,
+      "seed": 20261603,
+      "target_score_on_target_dim": 2.25,
+      "all_dim_scores": {
+        "extraversion": 3.25,
+        "agreeableness": 4.25,
+        "conscientiousness": 4.5,
+        "neuroticism": 2.25,
+        "openness": 4.25
+      },
+      "parse_failures": 0,
+      "wall_s": 22.5
+    },
+    {
+      "dim": "neuroticism",
+      "pol": "low",
+      "mode_label": "softmax_t02",
+      "mode": "softmax",
+      "tau": 0.2,
+      "run_id": 2,
+      "seed": 20262603,
+      "target_score_on_target_dim": 2.25,
+      "all_dim_scores": {
+        "extraversion": 3.75,
+        "agreeableness": 3.25,
+        "conscientiousness": 4.25,
+        "neuroticism": 2.25,
+        "openness": 4.0
+      },
+      "parse_failures": 0,
+      "wall_s": 24.9
+    },
+    {
+      "dim": "neuroticism",
+      "pol": "low",
+      "mode_label": "softmax_t10",
+      "mode": "softmax",
+      "tau": 1.0,
+      "run_id": 0,
+      "seed": 20260604,
+      "target_score_on_target_dim": 2.0,
+      "all_dim_scores": {
+        "extraversion": 3.25,
+        "agreeableness": 3.75,
+        "conscientiousness": 3.75,
+        "neuroticism": 2.0,
+        "openness": 4.25
+      },
+      "parse_failures": 0,
+      "wall_s": 23.1
+    },
+    {
+      "dim": "neuroticism",
+      "pol": "low",
+      "mode_label": "softmax_t10",
+      "mode": "softmax",
+      "tau": 1.0,
+      "run_id": 1,
+      "seed": 20261604,
+      "target_score_on_target_dim": 2.5,
+      "all_dim_scores": {
+        "extraversion": 3.5,
+        "agreeableness": 3.25,
+        "conscientiousness": 3.5,
+        "neuroticism": 2.5,
+        "openness": 4.25
+      },
+      "parse_failures": 0,
+      "wall_s": 24.4
+    },
+    {
+      "dim": "neuroticism",
+      "pol": "low",
+      "mode_label": "softmax_t10",
+      "mode": "softmax",
+      "tau": 1.0,
+      "run_id": 2,
+      "seed": 20262604,
+      "target_score_on_target_dim": 2.5,
+      "all_dim_scores": {
+        "extraversion": 3.25,
+        "agreeableness": 3.5,
+        "conscientiousness": 3.75,
+        "neuroticism": 2.5,
+        "openness": 4.25
+      },
+      "parse_failures": 0,
+      "wall_s": 24.9
+    },
+    {
+      "dim": "extraversion",
+      "pol": "high",
+      "mode_label": "argmax",
+      "mode": "argmax",
+      "tau": 0.05,
+      "run_id": 0,
+      "seed": 20260701,
+      "target_score_on_target_dim": 5.0,
+      "all_dim_scores": {
+        "extraversion": 5.0,
+        "agreeableness": 4.25,
+        "conscientiousness": 3.25,
+        "neuroticism": 2.5,
+        "openness": 4.0
+      },
+      "parse_failures": 0,
+      "wall_s": 21.4
+    },
+    {
+      "dim": "extraversion",
+      "pol": "high",
+      "mode_label": "argmax",
+      "mode": "argmax",
+      "tau": 0.05,
+      "run_id": 1,
+      "seed": 20261701,
+      "target_score_on_target_dim": 5.0,
+      "all_dim_scores": {
+        "extraversion": 5.0,
+        "agreeableness": 4.0,
+        "conscientiousness": 3.5,
+        "neuroticism": 2.5,
+        "openness": 4.25
+      },
+      "parse_failures": 0,
+      "wall_s": 25.2
+    },
+    {
+      "dim": "extraversion",
+      "pol": "high",
+      "mode_label": "argmax",
+      "mode": "argmax",
+      "tau": 0.05,
+      "run_id": 2,
+      "seed": 20262701,
+      "target_score_on_target_dim": 4.75,
+      "all_dim_scores": {
+        "extraversion": 4.75,
+        "agreeableness": 4.25,
+        "conscientiousness": 3.25,
+        "neuroticism": 2.25,
+        "openness": 4.0
+      },
+      "parse_failures": 0,
+      "wall_s": 19.7
+    },
+    {
+      "dim": "extraversion",
+      "pol": "high",
+      "mode_label": "softmax_t005",
+      "mode": "softmax",
+      "tau": 0.05,
+      "run_id": 0,
+      "seed": 20260702,
+      "target_score_on_target_dim": 5.0,
+      "all_dim_scores": {
+        "extraversion": 5.0,
+        "agreeableness": 4.0,
+        "conscientiousness": 3.5,
+        "neuroticism": 1.5,
+        "openness": 3.25
+      },
+      "parse_failures": 0,
+      "wall_s": 23.1
+    },
+    {
+      "dim": "extraversion",
+      "pol": "high",
+      "mode_label": "softmax_t005",
+      "mode": "softmax",
+      "tau": 0.05,
+      "run_id": 1,
+      "seed": 20261702,
+      "target_score_on_target_dim": 5.0,
+      "all_dim_scores": {
+        "extraversion": 5.0,
+        "agreeableness": 4.25,
+        "conscientiousness": 2.5,
+        "neuroticism": 2.25,
+        "openness": 4.25
+      },
+      "parse_failures": 0,
+      "wall_s": 18.9
+    },
+    {
+      "dim": "extraversion",
+      "pol": "high",
+      "mode_label": "softmax_t005",
+      "mode": "softmax",
+      "tau": 0.05,
+      "run_id": 2,
+      "seed": 20262702,
+      "target_score_on_target_dim": 4.75,
+      "all_dim_scores": {
+        "extraversion": 4.75,
+        "agreeableness": 4.25,
+        "conscientiousness": 3.25,
+        "neuroticism": 2.5,
+        "openness": 4.0
+      },
+      "parse_failures": 0,
+      "wall_s": 24.2
+    },
+    {
+      "dim": "extraversion",
+      "pol": "high",
+      "mode_label": "softmax_t02",
+      "mode": "softmax",
+      "tau": 0.2,
+      "run_id": 0,
+      "seed": 20260703,
+      "target_score_on_target_dim": 4.75,
+      "all_dim_scores": {
+        "extraversion": 4.75,
+        "agreeableness": 4.25,
+        "conscientiousness": 3.5,
+        "neuroticism": 2.75,
+        "openness": 4.25
+      },
+      "parse_failures": 0,
+      "wall_s": 21.1
+    },
+    {
+      "dim": "extraversion",
+      "pol": "high",
+      "mode_label": "softmax_t02",
+      "mode": "softmax",
+      "tau": 0.2,
+      "run_id": 1,
+      "seed": 20261703,
+      "target_score_on_target_dim": 4.75,
+      "all_dim_scores": {
+        "extraversion": 4.75,
+        "agreeableness": 3.75,
+        "conscientiousness": 3.0,
+        "neuroticism": 2.5,
+        "openness": 4.25
+      },
+      "parse_failures": 0,
+      "wall_s": 22.1
+    },
+    {
+      "dim": "extraversion",
+      "pol": "high",
+      "mode_label": "softmax_t02",
+      "mode": "softmax",
+      "tau": 0.2,
+      "run_id": 2,
+      "seed": 20262703,
+      "target_score_on_target_dim": 4.75,
+      "all_dim_scores": {
+        "extraversion": 4.75,
+        "agreeableness": 4.5,
+        "conscientiousness": 3.25,
+        "neuroticism": 2.25,
+        "openness": 4.0
+      },
+      "parse_failures": 0,
+      "wall_s": 23.9
+    },
+    {
+      "dim": "extraversion",
+      "pol": "high",
+      "mode_label": "softmax_t10",
+      "mode": "softmax",
+      "tau": 1.0,
+      "run_id": 0,
+      "seed": 20260704,
+      "target_score_on_target_dim": 4.75,
+      "all_dim_scores": {
+        "extraversion": 4.75,
+        "agreeableness": 4.0,
+        "conscientiousness": 2.75,
+        "neuroticism": 2.5,
+        "openness": 4.25
+      },
+      "parse_failures": 0,
+      "wall_s": 21.2
+    },
+    {
+      "dim": "extraversion",
+      "pol": "high",
+      "mode_label": "softmax_t10",
+      "mode": "softmax",
+      "tau": 1.0,
+      "run_id": 1,
+      "seed": 20261704,
+      "target_score_on_target_dim": 4.75,
+      "all_dim_scores": {
+        "extraversion": 4.75,
+        "agreeableness": 4.25,
+        "conscientiousness": 2.75,
+        "neuroticism": 2.5,
+        "openness": 4.0
+      },
+      "parse_failures": 0,
+      "wall_s": 22.2
+    },
+    {
+      "dim": "extraversion",
+      "pol": "high",
+      "mode_label": "softmax_t10",
+      "mode": "softmax",
+      "tau": 1.0,
+      "run_id": 2,
+      "seed": 20262704,
+      "target_score_on_target_dim": 4.5,
+      "all_dim_scores": {
+        "extraversion": 4.5,
+        "agreeableness": 4.0,
+        "conscientiousness": 3.25,
+        "neuroticism": 2.5,
+        "openness": 4.5
+      },
+      "parse_failures": 0,
+      "wall_s": 24.3
+    },
+    {
+      "dim": "extraversion",
+      "pol": "low",
+      "mode_label": "argmax",
+      "mode": "argmax",
+      "tau": 0.05,
+      "run_id": 0,
+      "seed": 20260801,
+      "target_score_on_target_dim": 1.5,
+      "all_dim_scores": {
+        "extraversion": 1.5,
+        "agreeableness": 3.25,
+        "conscientiousness": 3.5,
+        "neuroticism": 2.75,
+        "openness": 3.0
+      },
+      "parse_failures": 0,
+      "wall_s": 26.6
+    },
+    {
+      "dim": "extraversion",
+      "pol": "low",
+      "mode_label": "argmax",
+      "mode": "argmax",
+      "tau": 0.05,
+      "run_id": 1,
+      "seed": 20261801,
+      "target_score_on_target_dim": 1.5,
+      "all_dim_scores": {
+        "extraversion": 1.5,
+        "agreeableness": 2.75,
+        "conscientiousness": 3.25,
+        "neuroticism": 2.75,
+        "openness": 3.25
+      },
+      "parse_failures": 0,
+      "wall_s": 24.0
+    },
+    {
+      "dim": "extraversion",
+      "pol": "low",
+      "mode_label": "argmax",
+      "mode": "argmax",
+      "tau": 0.05,
+      "run_id": 2,
+      "seed": 20262801,
+      "target_score_on_target_dim": 1.5,
+      "all_dim_scores": {
+        "extraversion": 1.5,
+        "agreeableness": 2.5,
+        "conscientiousness": 3.0,
+        "neuroticism": 2.25,
+        "openness": 3.25
+      },
+      "parse_failures": 0,
+      "wall_s": 23.5
+    },
+    {
+      "dim": "extraversion",
+      "pol": "low",
+      "mode_label": "softmax_t005",
+      "mode": "softmax",
+      "tau": 0.05,
+      "run_id": 0,
+      "seed": 20260802,
+      "target_score_on_target_dim": 1.5,
+      "all_dim_scores": {
+        "extraversion": 1.5,
+        "agreeableness": 3.5,
+        "conscientiousness": 3.0,
+        "neuroticism": 2.5,
+        "openness": 3.25
+      },
+      "parse_failures": 0,
+      "wall_s": 24.6
+    },
+    {
+      "dim": "extraversion",
+      "pol": "low",
+      "mode_label": "softmax_t005",
+      "mode": "softmax",
+      "tau": 0.05,
+      "run_id": 1,
+      "seed": 20261802,
+      "target_score_on_target_dim": 1.25,
+      "all_dim_scores": {
+        "extraversion": 1.25,
+        "agreeableness": 3.25,
+        "conscientiousness": 3.0,
+        "neuroticism": 2.75,
+        "openness": 3.75
+      },
+      "parse_failures": 0,
+      "wall_s": 27.5
+    },
+    {
+      "dim": "extraversion",
+      "pol": "low",
+      "mode_label": "softmax_t005",
+      "mode": "softmax",
+      "tau": 0.05,
+      "run_id": 2,
+      "seed": 20262802,
+      "target_score_on_target_dim": 1.5,
+      "all_dim_scores": {
+        "extraversion": 1.5,
+        "agreeableness": 3.5,
+        "conscientiousness": 3.0,
+        "neuroticism": 2.25,
+        "openness": 3.0
+      },
+      "parse_failures": 0,
+      "wall_s": 27.3
+    },
+    {
+      "dim": "extraversion",
+      "pol": "low",
+      "mode_label": "softmax_t02",
+      "mode": "softmax",
+      "tau": 0.2,
+      "run_id": 0,
+      "seed": 20260803,
+      "target_score_on_target_dim": 1.5,
+      "all_dim_scores": {
+        "extraversion": 1.5,
+        "agreeableness": 3.25,
+        "conscientiousness": 3.5,
+        "neuroticism": 2.5,
+        "openness": 4.0
+      },
+      "parse_failures": 0,
+      "wall_s": 22.8
+    },
+    {
+      "dim": "extraversion",
+      "pol": "low",
+      "mode_label": "softmax_t02",
+      "mode": "softmax",
+      "tau": 0.2,
+      "run_id": 1,
+      "seed": 20261803,
+      "target_score_on_target_dim": 1.75,
+      "all_dim_scores": {
+        "extraversion": 1.75,
+        "agreeableness": 3.75,
+        "conscientiousness": 3.25,
+        "neuroticism": 3.0,
+        "openness": 3.25
+      },
+      "parse_failures": 0,
+      "wall_s": 25.2
+    },
+    {
+      "dim": "extraversion",
+      "pol": "low",
+      "mode_label": "softmax_t02",
+      "mode": "softmax",
+      "tau": 0.2,
+      "run_id": 2,
+      "seed": 20262803,
+      "target_score_on_target_dim": 2.0,
+      "all_dim_scores": {
+        "extraversion": 2.0,
+        "agreeableness": 3.25,
+        "conscientiousness": 2.75,
+        "neuroticism": 2.75,
+        "openness": 3.25
+      },
+      "parse_failures": 0,
+      "wall_s": 25.2
+    },
+    {
+      "dim": "extraversion",
+      "pol": "low",
+      "mode_label": "softmax_t10",
+      "mode": "softmax",
+      "tau": 1.0,
+      "run_id": 0,
+      "seed": 20260804,
+      "target_score_on_target_dim": 1.75,
+      "all_dim_scores": {
+        "extraversion": 1.75,
+        "agreeableness": 2.75,
+        "conscientiousness": 3.5,
+        "neuroticism": 2.25,
+        "openness": 3.5
+      },
+      "parse_failures": 0,
+      "wall_s": 26.2
+    },
+    {
+      "dim": "extraversion",
+      "pol": "low",
+      "mode_label": "softmax_t10",
+      "mode": "softmax",
+      "tau": 1.0,
+      "run_id": 1,
+      "seed": 20261804,
+      "target_score_on_target_dim": 1.25,
+      "all_dim_scores": {
+        "extraversion": 1.25,
+        "agreeableness": 3.25,
+        "conscientiousness": 3.25,
+        "neuroticism": 2.75,
+        "openness": 3.75
+      },
+      "parse_failures": 0,
+      "wall_s": 26.1
+    },
+    {
+      "dim": "extraversion",
+      "pol": "low",
+      "mode_label": "softmax_t10",
+      "mode": "softmax",
+      "tau": 1.0,
+      "run_id": 2,
+      "seed": 20262804,
+      "target_score_on_target_dim": 1.75,
+      "all_dim_scores": {
+        "extraversion": 1.75,
+        "agreeableness": 3.0,
+        "conscientiousness": 3.25,
+        "neuroticism": 3.0,
+        "openness": 4.25
+      },
+      "parse_failures": 0,
+      "wall_s": 24.3
+    },
+    {
+      "dim": "conscientiousness",
+      "pol": "high",
+      "mode_label": "argmax",
+      "mode": "argmax",
+      "tau": 0.05,
+      "run_id": 0,
+      "seed": 20260901,
+      "target_score_on_target_dim": 4.25,
+      "all_dim_scores": {
+        "extraversion": 2.5,
+        "agreeableness": 3.25,
+        "conscientiousness": 4.25,
+        "neuroticism": 2.5,
+        "openness": 3.5
+      },
+      "parse_failures": 0,
+      "wall_s": 28.2
+    },
+    {
+      "dim": "conscientiousness",
+      "pol": "high",
+      "mode_label": "argmax",
+      "mode": "argmax",
+      "tau": 0.05,
+      "run_id": 1,
+      "seed": 20261901,
+      "target_score_on_target_dim": 4.5,
+      "all_dim_scores": {
+        "extraversion": 2.5,
+        "agreeableness": 4.0,
+        "conscientiousness": 4.5,
+        "neuroticism": 2.5,
+        "openness": 3.75
+      },
+      "parse_failures": 0,
+      "wall_s": 20.4
+    },
+    {
+      "dim": "conscientiousness",
+      "pol": "high",
+      "mode_label": "argmax",
+      "mode": "argmax",
+      "tau": 0.05,
+      "run_id": 2,
+      "seed": 20262901,
+      "target_score_on_target_dim": 4.25,
+      "all_dim_scores": {
+        "extraversion": 2.5,
+        "agreeableness": 4.0,
+        "conscientiousness": 4.25,
+        "neuroticism": 2.5,
+        "openness": 3.75
+      },
+      "parse_failures": 0,
+      "wall_s": 24.4
+    },
+    {
+      "dim": "conscientiousness",
+      "pol": "high",
+      "mode_label": "softmax_t005",
+      "mode": "softmax",
+      "tau": 0.05,
+      "run_id": 0,
+      "seed": 20260902,
+      "target_score_on_target_dim": 3.75,
+      "all_dim_scores": {
+        "extraversion": 2.5,
+        "agreeableness": 3.5,
+        "conscientiousness": 3.75,
+        "neuroticism": 2.5,
+        "openness": 3.75
+      },
+      "parse_failures": 0,
+      "wall_s": 30.9
+    },
+    {
+      "dim": "conscientiousness",
+      "pol": "high",
+      "mode_label": "softmax_t005",
+      "mode": "softmax",
+      "tau": 0.05,
+      "run_id": 1,
+      "seed": 20261902,
+      "target_score_on_target_dim": 4.5,
+      "all_dim_scores": {
+        "extraversion": 2.5,
+        "agreeableness": 3.0,
+        "conscientiousness": 4.5,
+        "neuroticism": 2.25,
+        "openness": 4.5
+      },
+      "parse_failures": 0,
+      "wall_s": 28.3
+    },
+    {
+      "dim": "conscientiousness",
+      "pol": "high",
+      "mode_label": "softmax_t005",
+      "mode": "softmax",
+      "tau": 0.05,
+      "run_id": 2,
+      "seed": 20262902,
+      "target_score_on_target_dim": 4.25,
+      "all_dim_scores": {
+        "extraversion": 3.0,
+        "agreeableness": 3.25,
+        "conscientiousness": 4.25,
+        "neuroticism": 2.5,
+        "openness": 4.0
+      },
+      "parse_failures": 0,
+      "wall_s": 25.6
+    },
+    {
+      "dim": "conscientiousness",
+      "pol": "high",
+      "mode_label": "softmax_t02",
+      "mode": "softmax",
+      "tau": 0.2,
+      "run_id": 0,
+      "seed": 20260903,
+      "target_score_on_target_dim": 4.25,
+      "all_dim_scores": {
+        "extraversion": 2.25,
+        "agreeableness": 3.5,
+        "conscientiousness": 4.25,
+        "neuroticism": 2.5,
+        "openness": 3.5
+      },
+      "parse_failures": 0,
+      "wall_s": 24.3
+    },
+    {
+      "dim": "conscientiousness",
+      "pol": "high",
+      "mode_label": "softmax_t02",
+      "mode": "softmax",
+      "tau": 0.2,
+      "run_id": 1,
+      "seed": 20261903,
+      "target_score_on_target_dim": 4.5,
+      "all_dim_scores": {
+        "extraversion": 2.5,
+        "agreeableness": 3.0,
+        "conscientiousness": 4.5,
+        "neuroticism": 2.25,
+        "openness": 4.25
+      },
+      "parse_failures": 0,
+      "wall_s": 23.3
+    },
+    {
+      "dim": "conscientiousness",
+      "pol": "high",
+      "mode_label": "softmax_t02",
+      "mode": "softmax",
+      "tau": 0.2,
+      "run_id": 2,
+      "seed": 20262903,
+      "target_score_on_target_dim": 4.75,
+      "all_dim_scores": {
+        "extraversion": 2.5,
+        "agreeableness": 3.5,
+        "conscientiousness": 4.75,
+        "neuroticism": 2.25,
+        "openness": 4.25
+      },
+      "parse_failures": 0,
+      "wall_s": 22.2
+    },
+    {
+      "dim": "conscientiousness",
+      "pol": "high",
+      "mode_label": "softmax_t10",
+      "mode": "softmax",
+      "tau": 1.0,
+      "run_id": 0,
+      "seed": 20260904,
+      "target_score_on_target_dim": 4.25,
+      "all_dim_scores": {
+        "extraversion": 2.5,
+        "agreeableness": 3.0,
+        "conscientiousness": 4.25,
+        "neuroticism": 2.25,
+        "openness": 4.0
+      },
+      "parse_failures": 0,
+      "wall_s": 23.7
+    },
+    {
+      "dim": "conscientiousness",
+      "pol": "high",
+      "mode_label": "softmax_t10",
+      "mode": "softmax",
+      "tau": 1.0,
+      "run_id": 1,
+      "seed": 20261904,
+      "target_score_on_target_dim": 4.0,
+      "all_dim_scores": {
+        "extraversion": 2.25,
+        "agreeableness": 3.75,
+        "conscientiousness": 4.0,
+        "neuroticism": 2.25,
+        "openness": 4.0
+      },
+      "parse_failures": 0,
+      "wall_s": 23.2
+    },
+    {
+      "dim": "conscientiousness",
+      "pol": "high",
+      "mode_label": "softmax_t10",
+      "mode": "softmax",
+      "tau": 1.0,
+      "run_id": 2,
+      "seed": 20262904,
+      "target_score_on_target_dim": 4.5,
+      "all_dim_scores": {
+        "extraversion": 2.75,
+        "agreeableness": 3.75,
+        "conscientiousness": 4.5,
+        "neuroticism": 2.5,
+        "openness": 3.75
+      },
+      "parse_failures": 0,
+      "wall_s": 24.9
+    },
+    {
+      "dim": "conscientiousness",
+      "pol": "low",
+      "mode_label": "argmax",
+      "mode": "argmax",
+      "tau": 0.05,
+      "run_id": 0,
+      "seed": 20261001,
+      "target_score_on_target_dim": 2.0,
+      "all_dim_scores": {
+        "extraversion": 3.0,
+        "agreeableness": 4.25,
+        "conscientiousness": 2.0,
+        "neuroticism": 3.75,
+        "openness": 4.0
+      },
+      "parse_failures": 0,
+      "wall_s": 26.1
+    },
+    {
+      "dim": "conscientiousness",
+      "pol": "low",
+      "mode_label": "argmax",
+      "mode": "argmax",
+      "tau": 0.05,
+      "run_id": 1,
+      "seed": 20262001,
+      "target_score_on_target_dim": 2.0,
+      "all_dim_scores": {
+        "extraversion": 2.25,
+        "agreeableness": 3.5,
+        "conscientiousness": 2.0,
+        "neuroticism": 4.25,
+        "openness": 4.25
+      },
+      "parse_failures": 0,
+      "wall_s": 28.6
+    },
+    {
+      "dim": "conscientiousness",
+      "pol": "low",
+      "mode_label": "argmax",
+      "mode": "argmax",
+      "tau": 0.05,
+      "run_id": 2,
+      "seed": 20263001,
+      "target_score_on_target_dim": 2.0,
+      "all_dim_scores": {
+        "extraversion": 3.0,
+        "agreeableness": 4.25,
+        "conscientiousness": 2.0,
+        "neuroticism": 4.25,
+        "openness": 3.5
+      },
+      "parse_failures": 0,
+      "wall_s": 30.0
+    },
+    {
+      "dim": "conscientiousness",
+      "pol": "low",
+      "mode_label": "softmax_t005",
+      "mode": "softmax",
+      "tau": 0.05,
+      "run_id": 0,
+      "seed": 20261002,
+      "target_score_on_target_dim": 2.0,
+      "all_dim_scores": {
+        "extraversion": 2.5,
+        "agreeableness": 3.5,
+        "conscientiousness": 2.0,
+        "neuroticism": 3.75,
+        "openness": 3.75
+      },
+      "parse_failures": 0,
+      "wall_s": 24.1
+    },
+    {
+      "dim": "conscientiousness",
+      "pol": "low",
+      "mode_label": "softmax_t005",
+      "mode": "softmax",
+      "tau": 0.05,
+      "run_id": 1,
+      "seed": 20262002,
+      "target_score_on_target_dim": 2.0,
+      "all_dim_scores": {
+        "extraversion": 3.25,
+        "agreeableness": 3.75,
+        "conscientiousness": 2.0,
+        "neuroticism": 3.5,
+        "openness": 4.0
+      },
+      "parse_failures": 0,
+      "wall_s": 24.2
+    },
+    {
+      "dim": "conscientiousness",
+      "pol": "low",
+      "mode_label": "softmax_t005",
+      "mode": "softmax",
+      "tau": 0.05,
+      "run_id": 2,
+      "seed": 20263002,
+      "target_score_on_target_dim": 2.25,
+      "all_dim_scores": {
+        "extraversion": 2.5,
+        "agreeableness": 3.5,
+        "conscientiousness": 2.25,
+        "neuroticism": 4.0,
+        "openness": 4.25
+      },
+      "parse_failures": 0,
+      "wall_s": 24.1
+    },
+    {
+      "dim": "conscientiousness",
+      "pol": "low",
+      "mode_label": "softmax_t02",
+      "mode": "softmax",
+      "tau": 0.2,
+      "run_id": 0,
+      "seed": 20261003,
+      "target_score_on_target_dim": 2.25,
+      "all_dim_scores": {
+        "extraversion": 3.0,
+        "agreeableness": 3.75,
+        "conscientiousness": 2.25,
+        "neuroticism": 3.5,
+        "openness": 4.0
+      },
+      "parse_failures": 0,
+      "wall_s": 26.7
+    },
+    {
+      "dim": "conscientiousness",
+      "pol": "low",
+      "mode_label": "softmax_t02",
+      "mode": "softmax",
+      "tau": 0.2,
+      "run_id": 1,
+      "seed": 20262003,
+      "target_score_on_target_dim": 2.0,
+      "all_dim_scores": {
+        "extraversion": 2.75,
+        "agreeableness": 4.0,
+        "conscientiousness": 2.0,
+        "neuroticism": 3.25,
+        "openness": 4.25
+      },
+      "parse_failures": 0,
+      "wall_s": 27.1
+    },
+    {
+      "dim": "conscientiousness",
+      "pol": "low",
+      "mode_label": "softmax_t02",
+      "mode": "softmax",
+      "tau": 0.2,
+      "run_id": 2,
+      "seed": 20263003,
+      "target_score_on_target_dim": 2.75,
+      "all_dim_scores": {
+        "extraversion": 3.0,
+        "agreeableness": 3.0,
+        "conscientiousness": 2.75,
+        "neuroticism": 3.0,
+        "openness": 4.5
+      },
+      "parse_failures": 0,
+      "wall_s": 24.9
+    },
+    {
+      "dim": "conscientiousness",
+      "pol": "low",
+      "mode_label": "softmax_t10",
+      "mode": "softmax",
+      "tau": 1.0,
+      "run_id": 0,
+      "seed": 20261004,
+      "target_score_on_target_dim": 2.25,
+      "all_dim_scores": {
+        "extraversion": 2.0,
+        "agreeableness": 3.25,
+        "conscientiousness": 2.25,
+        "neuroticism": 3.75,
+        "openness": 3.75
+      },
+      "parse_failures": 0,
+      "wall_s": 27.3
+    },
+    {
+      "dim": "conscientiousness",
+      "pol": "low",
+      "mode_label": "softmax_t10",
+      "mode": "softmax",
+      "tau": 1.0,
+      "run_id": 1,
+      "seed": 20262004,
+      "target_score_on_target_dim": 1.75,
+      "all_dim_scores": {
+        "extraversion": 2.0,
+        "agreeableness": 3.5,
+        "conscientiousness": 1.75,
+        "neuroticism": 3.5,
+        "openness": 4.0
+      },
+      "parse_failures": 0,
+      "wall_s": 25.4
+    },
+    {
+      "dim": "conscientiousness",
+      "pol": "low",
+      "mode_label": "softmax_t10",
+      "mode": "softmax",
+      "tau": 1.0,
+      "run_id": 2,
+      "seed": 20263004,
+      "target_score_on_target_dim": 2.0,
+      "all_dim_scores": {
+        "extraversion": 3.25,
+        "agreeableness": 3.25,
+        "conscientiousness": 2.0,
+        "neuroticism": 3.25,
+        "openness": 3.75
+      },
+      "parse_failures": 0,
+      "wall_s": 26.3
+    },
+    {
+      "dim": "agreeableness",
+      "pol": "high",
+      "mode_label": "argmax",
+      "mode": "argmax",
+      "tau": 0.05,
+      "run_id": 0,
+      "seed": 20261101,
+      "target_score_on_target_dim": 4.75,
+      "all_dim_scores": {
+        "extraversion": 3.75,
+        "agreeableness": 4.75,
+        "conscientiousness": 3.0,
+        "neuroticism": 1.75,
+        "openness": 4.5
+      },
+      "parse_failures": 0,
+      "wall_s": 23.0
+    },
+    {
+      "dim": "agreeableness",
+      "pol": "high",
+      "mode_label": "argmax",
+      "mode": "argmax",
+      "tau": 0.05,
+      "run_id": 1,
+      "seed": 20262101,
+      "target_score_on_target_dim": 5.0,
+      "all_dim_scores": {
+        "extraversion": 3.25,
+        "agreeableness": 5.0,
+        "conscientiousness": 3.25,
+        "neuroticism": 1.25,
+        "openness": 4.5
+      },
+      "parse_failures": 0,
+      "wall_s": 21.6
+    },
+    {
+      "dim": "agreeableness",
+      "pol": "high",
+      "mode_label": "argmax",
+      "mode": "argmax",
+      "tau": 0.05,
+      "run_id": 2,
+      "seed": 20263101,
+      "target_score_on_target_dim": 4.5,
+      "all_dim_scores": {
+        "extraversion": 3.25,
+        "agreeableness": 4.5,
+        "conscientiousness": 3.25,
+        "neuroticism": 2.0,
+        "openness": 4.0
+      },
+      "parse_failures": 0,
+      "wall_s": 23.6
+    },
+    {
+      "dim": "agreeableness",
+      "pol": "high",
+      "mode_label": "softmax_t005",
+      "mode": "softmax",
+      "tau": 0.05,
+      "run_id": 0,
+      "seed": 20261102,
+      "target_score_on_target_dim": 4.5,
+      "all_dim_scores": {
+        "extraversion": 3.75,
+        "agreeableness": 4.5,
+        "conscientiousness": 3.5,
+        "neuroticism": 2.5,
+        "openness": 4.0
+      },
+      "parse_failures": 0,
+      "wall_s": 25.0
+    },
+    {
+      "dim": "agreeableness",
+      "pol": "high",
+      "mode_label": "softmax_t005",
+      "mode": "softmax",
+      "tau": 0.05,
+      "run_id": 1,
+      "seed": 20262102,
+      "target_score_on_target_dim": 4.75,
+      "all_dim_scores": {
+        "extraversion": 3.75,
+        "agreeableness": 4.75,
+        "conscientiousness": 3.5,
+        "neuroticism": 1.5,
+        "openness": 4.0
+      },
+      "parse_failures": 0,
+      "wall_s": 21.5
+    },
+    {
+      "dim": "agreeableness",
+      "pol": "high",
+      "mode_label": "softmax_t005",
+      "mode": "softmax",
+      "tau": 0.05,
+      "run_id": 2,
+      "seed": 20263102,
+      "target_score_on_target_dim": 4.75,
+      "all_dim_scores": {
+        "extraversion": 3.0,
+        "agreeableness": 4.75,
+        "conscientiousness": 3.5,
+        "neuroticism": 1.75,
+        "openness": 4.25
+      },
+      "parse_failures": 0,
+      "wall_s": 23.4
+    },
+    {
+      "dim": "agreeableness",
+      "pol": "high",
+      "mode_label": "softmax_t02",
+      "mode": "softmax",
+      "tau": 0.2,
+      "run_id": 0,
+      "seed": 20261103,
+      "target_score_on_target_dim": 4.5,
+      "all_dim_scores": {
+        "extraversion": 3.5,
+        "agreeableness": 4.5,
+        "conscientiousness": 3.5,
+        "neuroticism": 2.5,
+        "openness": 3.5
+      },
+      "parse_failures": 0,
+      "wall_s": 22.2
+    },
+    {
+      "dim": "agreeableness",
+      "pol": "high",
+      "mode_label": "softmax_t02",
+      "mode": "softmax",
+      "tau": 0.2,
+      "run_id": 1,
+      "seed": 20262103,
+      "target_score_on_target_dim": 4.75,
+      "all_dim_scores": {
+        "extraversion": 3.25,
+        "agreeableness": 4.75,
+        "conscientiousness": 3.5,
+        "neuroticism": 1.5,
+        "openness": 4.0
+      },
+      "parse_failures": 0,
+      "wall_s": 22.4
+    },
+    {
+      "dim": "agreeableness",
+      "pol": "high",
+      "mode_label": "softmax_t02",
+      "mode": "softmax",
+      "tau": 0.2,
+      "run_id": 2,
+      "seed": 20263103,
+      "target_score_on_target_dim": 4.75,
+      "all_dim_scores": {
+        "extraversion": 3.5,
+        "agreeableness": 4.75,
+        "conscientiousness": 3.25,
+        "neuroticism": 1.75,
+        "openness": 4.0
+      },
+      "parse_failures": 0,
+      "wall_s": 21.2
+    },
+    {
+      "dim": "agreeableness",
+      "pol": "high",
+      "mode_label": "softmax_t10",
+      "mode": "softmax",
+      "tau": 1.0,
+      "run_id": 0,
+      "seed": 20261104,
+      "target_score_on_target_dim": 4.75,
+      "all_dim_scores": {
+        "extraversion": 2.75,
+        "agreeableness": 4.75,
+        "conscientiousness": 3.25,
+        "neuroticism": 2.25,
+        "openness": 4.25
+      },
+      "parse_failures": 0,
+      "wall_s": 24.2
+    },
+    {
+      "dim": "agreeableness",
+      "pol": "high",
+      "mode_label": "softmax_t10",
+      "mode": "softmax",
+      "tau": 1.0,
+      "run_id": 1,
+      "seed": 20262104,
+      "target_score_on_target_dim": 4.75,
+      "all_dim_scores": {
+        "extraversion": 2.75,
+        "agreeableness": 4.75,
+        "conscientiousness": 3.25,
+        "neuroticism": 1.5,
+        "openness": 4.25
+      },
+      "parse_failures": 0,
+      "wall_s": 23.5
+    },
+    {
+      "dim": "agreeableness",
+      "pol": "high",
+      "mode_label": "softmax_t10",
+      "mode": "softmax",
+      "tau": 1.0,
+      "run_id": 2,
+      "seed": 20263104,
+      "target_score_on_target_dim": 5.0,
+      "all_dim_scores": {
+        "extraversion": 3.25,
+        "agreeableness": 5.0,
+        "conscientiousness": 3.0,
+        "neuroticism": 2.25,
+        "openness": 4.5
+      },
+      "parse_failures": 0,
+      "wall_s": 22.0
+    },
+    {
+      "dim": "agreeableness",
+      "pol": "low",
+      "mode_label": "argmax",
+      "mode": "argmax",
+      "tau": 0.05,
+      "run_id": 0,
+      "seed": 20261201,
+      "target_score_on_target_dim": 1.75,
+      "all_dim_scores": {
+        "extraversion": 2.75,
+        "agreeableness": 1.75,
+        "conscientiousness": 3.25,
+        "neuroticism": 2.5,
+        "openness": 4.25
+      },
+      "parse_failures": 0,
+      "wall_s": 22.9
+    },
+    {
+      "dim": "agreeableness",
+      "pol": "low",
+      "mode_label": "argmax",
+      "mode": "argmax",
+      "tau": 0.05,
+      "run_id": 1,
+      "seed": 20262201,
+      "target_score_on_target_dim": 1.25,
+      "all_dim_scores": {
+        "extraversion": 2.75,
+        "agreeableness": 1.25,
+        "conscientiousness": 3.75,
+        "neuroticism": 2.25,
+        "openness": 3.75
+      },
+      "parse_failures": 0,
+      "wall_s": 22.6
+    },
+    {
+      "dim": "agreeableness",
+      "pol": "low",
+      "mode_label": "argmax",
+      "mode": "argmax",
+      "tau": 0.05,
+      "run_id": 2,
+      "seed": 20263201,
+      "target_score_on_target_dim": 1.75,
+      "all_dim_scores": {
+        "extraversion": 3.0,
+        "agreeableness": 1.75,
+        "conscientiousness": 3.5,
+        "neuroticism": 2.5,
+        "openness": 4.5
+      },
+      "parse_failures": 0,
+      "wall_s": 22.7
+    },
+    {
+      "dim": "agreeableness",
+      "pol": "low",
+      "mode_label": "softmax_t005",
+      "mode": "softmax",
+      "tau": 0.05,
+      "run_id": 0,
+      "seed": 20261202,
+      "target_score_on_target_dim": 2.0,
+      "all_dim_scores": {
+        "extraversion": 2.5,
+        "agreeableness": 2.0,
+        "conscientiousness": 3.5,
+        "neuroticism": 3.0,
+        "openness": 4.0
+      },
+      "parse_failures": 0,
+      "wall_s": 25.6
+    },
+    {
+      "dim": "agreeableness",
+      "pol": "low",
+      "mode_label": "softmax_t005",
+      "mode": "softmax",
+      "tau": 0.05,
+      "run_id": 1,
+      "seed": 20262202,
+      "target_score_on_target_dim": 1.5,
+      "all_dim_scores": {
+        "extraversion": 2.75,
+        "agreeableness": 1.5,
+        "conscientiousness": 3.25,
+        "neuroticism": 2.75,
+        "openness": 4.25
+      },
+      "parse_failures": 0,
+      "wall_s": 22.2
+    },
+    {
+      "dim": "agreeableness",
+      "pol": "low",
+      "mode_label": "softmax_t005",
+      "mode": "softmax",
+      "tau": 0.05,
+      "run_id": 2,
+      "seed": 20263202,
+      "target_score_on_target_dim": 1.25,
+      "all_dim_scores": {
+        "extraversion": 3.25,
+        "agreeableness": 1.25,
+        "conscientiousness": 3.5,
+        "neuroticism": 2.25,
+        "openness": 4.0
+      },
+      "parse_failures": 0,
+      "wall_s": 21.6
+    },
+    {
+      "dim": "agreeableness",
+      "pol": "low",
+      "mode_label": "softmax_t02",
+      "mode": "softmax",
+      "tau": 0.2,
+      "run_id": 0,
+      "seed": 20261203,
+      "target_score_on_target_dim": 1.5,
+      "all_dim_scores": {
+        "extraversion": 2.75,
+        "agreeableness": 1.5,
+        "conscientiousness": 3.5,
+        "neuroticism": 3.0,
+        "openness": 3.5
+      },
+      "parse_failures": 0,
+      "wall_s": 20.7
+    },
+    {
+      "dim": "agreeableness",
+      "pol": "low",
+      "mode_label": "softmax_t02",
+      "mode": "softmax",
+      "tau": 0.2,
+      "run_id": 1,
+      "seed": 20262203,
+      "target_score_on_target_dim": 2.75,
+      "all_dim_scores": {
+        "extraversion": 2.5,
+        "agreeableness": 2.75,
+        "conscientiousness": 3.25,
+        "neuroticism": 3.0,
+        "openness": 4.25
+      },
+      "parse_failures": 0,
+      "wall_s": 21.8
+    },
+    {
+      "dim": "agreeableness",
+      "pol": "low",
+      "mode_label": "softmax_t02",
+      "mode": "softmax",
+      "tau": 0.2,
+      "run_id": 2,
+      "seed": 20263203,
+      "target_score_on_target_dim": 2.0,
+      "all_dim_scores": {
+        "extraversion": 2.5,
+        "agreeableness": 2.0,
+        "conscientiousness": 3.0,
+        "neuroticism": 2.5,
+        "openness": 4.0
+      },
+      "parse_failures": 0,
+      "wall_s": 21.3
+    },
+    {
+      "dim": "agreeableness",
+      "pol": "low",
+      "mode_label": "softmax_t10",
+      "mode": "softmax",
+      "tau": 1.0,
+      "run_id": 0,
+      "seed": 20261204,
+      "target_score_on_target_dim": 2.0,
+      "all_dim_scores": {
+        "extraversion": 2.5,
+        "agreeableness": 2.0,
+        "conscientiousness": 3.25,
+        "neuroticism": 3.5,
+        "openness": 3.75
+      },
+      "parse_failures": 0,
+      "wall_s": 24.2
+    },
+    {
+      "dim": "agreeableness",
+      "pol": "low",
+      "mode_label": "softmax_t10",
+      "mode": "softmax",
+      "tau": 1.0,
+      "run_id": 1,
+      "seed": 20262204,
+      "target_score_on_target_dim": 1.75,
+      "all_dim_scores": {
+        "extraversion": 2.25,
+        "agreeableness": 1.75,
+        "conscientiousness": 3.25,
+        "neuroticism": 2.25,
+        "openness": 3.75
+      },
+      "parse_failures": 0,
+      "wall_s": 30.5
+    },
+    {
+      "dim": "agreeableness",
+      "pol": "low",
+      "mode_label": "softmax_t10",
+      "mode": "softmax",
+      "tau": 1.0,
+      "run_id": 2,
+      "seed": 20263204,
+      "target_score_on_target_dim": 2.5,
+      "all_dim_scores": {
+        "extraversion": 3.0,
+        "agreeableness": 2.5,
+        "conscientiousness": 3.25,
+        "neuroticism": 3.25,
+        "openness": 4.0
+      },
+      "parse_failures": 0,
+      "wall_s": 28.8
+    },
+    {
+      "dim": "openness",
+      "pol": "high",
+      "mode_label": "argmax",
+      "mode": "argmax",
+      "tau": 0.05,
+      "run_id": 0,
+      "seed": 20261301,
+      "target_score_on_target_dim": 4.75,
+      "all_dim_scores": {
+        "extraversion": 2.75,
+        "agreeableness": 4.25,
+        "conscientiousness": 2.75,
+        "neuroticism": 1.5,
+        "openness": 4.75
+      },
+      "parse_failures": 0,
+      "wall_s": 21.4
+    },
+    {
+      "dim": "openness",
+      "pol": "high",
+      "mode_label": "argmax",
+      "mode": "argmax",
+      "tau": 0.05,
+      "run_id": 1,
+      "seed": 20262301,
+      "target_score_on_target_dim": 4.75,
+      "all_dim_scores": {
+        "extraversion": 3.25,
+        "agreeableness": 4.5,
+        "conscientiousness": 2.75,
+        "neuroticism": 1.75,
+        "openness": 4.75
+      },
+      "parse_failures": 0,
+      "wall_s": 20.0
+    },
+    {
+      "dim": "openness",
+      "pol": "high",
+      "mode_label": "argmax",
+      "mode": "argmax",
+      "tau": 0.05,
+      "run_id": 2,
+      "seed": 20263301,
+      "target_score_on_target_dim": 5.0,
+      "all_dim_scores": {
+        "extraversion": 3.25,
+        "agreeableness": 4.5,
+        "conscientiousness": 3.0,
+        "neuroticism": 1.5,
+        "openness": 5.0
+      },
+      "parse_failures": 0,
+      "wall_s": 18.4
+    },
+    {
+      "dim": "openness",
+      "pol": "high",
+      "mode_label": "softmax_t005",
+      "mode": "softmax",
+      "tau": 0.05,
+      "run_id": 0,
+      "seed": 20261302,
+      "target_score_on_target_dim": 4.75,
+      "all_dim_scores": {
+        "extraversion": 3.25,
+        "agreeableness": 4.5,
+        "conscientiousness": 2.75,
+        "neuroticism": 1.5,
+        "openness": 4.75
+      },
+      "parse_failures": 0,
+      "wall_s": 19.9
+    },
+    {
+      "dim": "openness",
+      "pol": "high",
+      "mode_label": "softmax_t005",
+      "mode": "softmax",
+      "tau": 0.05,
+      "run_id": 1,
+      "seed": 20262302,
+      "target_score_on_target_dim": 5.0,
+      "all_dim_scores": {
+        "extraversion": 3.25,
+        "agreeableness": 4.25,
+        "conscientiousness": 3.25,
+        "neuroticism": 2.0,
+        "openness": 5.0
+      },
+      "parse_failures": 1,
+      "wall_s": 21.7
+    },
+    {
+      "dim": "openness",
+      "pol": "high",
+      "mode_label": "softmax_t005",
+      "mode": "softmax",
+      "tau": 0.05,
+      "run_id": 2,
+      "seed": 20263302,
+      "target_score_on_target_dim": 4.0,
+      "all_dim_scores": {
+        "extraversion": 3.25,
+        "agreeableness": 4.0,
+        "conscientiousness": 3.0,
+        "neuroticism": 1.75,
+        "openness": 4.0
+      },
+      "parse_failures": 0,
+      "wall_s": 31.4
+    },
+    {
+      "dim": "openness",
+      "pol": "high",
+      "mode_label": "softmax_t02",
+      "mode": "softmax",
+      "tau": 0.2,
+      "run_id": 0,
+      "seed": 20261303,
+      "target_score_on_target_dim": 5.0,
+      "all_dim_scores": {
+        "extraversion": 3.0,
+        "agreeableness": 3.75,
+        "conscientiousness": 2.75,
+        "neuroticism": 1.75,
+        "openness": 5.0
+      },
+      "parse_failures": 0,
+      "wall_s": 18.8
+    },
+    {
+      "dim": "openness",
+      "pol": "high",
+      "mode_label": "softmax_t02",
+      "mode": "softmax",
+      "tau": 0.2,
+      "run_id": 1,
+      "seed": 20262303,
+      "target_score_on_target_dim": 4.75,
+      "all_dim_scores": {
+        "extraversion": 3.25,
+        "agreeableness": 3.75,
+        "conscientiousness": 2.75,
+        "neuroticism": 2.25,
+        "openness": 4.75
+      },
+      "parse_failures": 0,
+      "wall_s": 22.3
+    },
+    {
+      "dim": "openness",
+      "pol": "high",
+      "mode_label": "softmax_t02",
+      "mode": "softmax",
+      "tau": 0.2,
+      "run_id": 2,
+      "seed": 20263303,
+      "target_score_on_target_dim": 5.0,
+      "all_dim_scores": {
+        "extraversion": 3.25,
+        "agreeableness": 4.25,
+        "conscientiousness": 3.25,
+        "neuroticism": 2.25,
+        "openness": 5.0
+      },
+      "parse_failures": 0,
+      "wall_s": 20.6
+    },
+    {
+      "dim": "openness",
+      "pol": "high",
+      "mode_label": "softmax_t10",
+      "mode": "softmax",
+      "tau": 1.0,
+      "run_id": 0,
+      "seed": 20261304,
+      "target_score_on_target_dim": 5.0,
+      "all_dim_scores": {
+        "extraversion": 2.5,
+        "agreeableness": 3.75,
+        "conscientiousness": 3.0,
+        "neuroticism": 2.5,
+        "openness": 5.0
+      },
+      "parse_failures": 0,
+      "wall_s": 22.7
+    },
+    {
+      "dim": "openness",
+      "pol": "high",
+      "mode_label": "softmax_t10",
+      "mode": "softmax",
+      "tau": 1.0,
+      "run_id": 1,
+      "seed": 20262304,
+      "target_score_on_target_dim": 4.75,
+      "all_dim_scores": {
+        "extraversion": 3.75,
+        "agreeableness": 4.0,
+        "conscientiousness": 3.0,
+        "neuroticism": 1.75,
+        "openness": 4.75
+      },
+      "parse_failures": 0,
+      "wall_s": 25.3
+    },
+    {
+      "dim": "openness",
+      "pol": "high",
+      "mode_label": "softmax_t10",
+      "mode": "softmax",
+      "tau": 1.0,
+      "run_id": 2,
+      "seed": 20263304,
+      "target_score_on_target_dim": 4.5,
+      "all_dim_scores": {
+        "extraversion": 3.25,
+        "agreeableness": 3.75,
+        "conscientiousness": 2.5,
+        "neuroticism": 2.5,
+        "openness": 4.5
+      },
+      "parse_failures": 0,
+      "wall_s": 21.2
+    },
+    {
+      "dim": "openness",
+      "pol": "low",
+      "mode_label": "argmax",
+      "mode": "argmax",
+      "tau": 0.05,
+      "run_id": 0,
+      "seed": 20261401,
+      "target_score_on_target_dim": 2.25,
+      "all_dim_scores": {
+        "extraversion": 2.5,
+        "agreeableness": 3.5,
+        "conscientiousness": 3.0,
+        "neuroticism": 3.0,
+        "openness": 2.25
+      },
+      "parse_failures": 0,
+      "wall_s": 25.5
+    },
+    {
+      "dim": "openness",
+      "pol": "low",
+      "mode_label": "argmax",
+      "mode": "argmax",
+      "tau": 0.05,
+      "run_id": 1,
+      "seed": 20262401,
+      "target_score_on_target_dim": 1.75,
+      "all_dim_scores": {
+        "extraversion": 2.5,
+        "agreeableness": 3.5,
+        "conscientiousness": 3.0,
+        "neuroticism": 3.5,
+        "openness": 1.75
+      },
+      "parse_failures": 0,
+      "wall_s": 24.6
+    },
+    {
+      "dim": "openness",
+      "pol": "low",
+      "mode_label": "argmax",
+      "mode": "argmax",
+      "tau": 0.05,
+      "run_id": 2,
+      "seed": 20263401,
+      "target_score_on_target_dim": 2.25,
+      "all_dim_scores": {
+        "extraversion": 2.25,
+        "agreeableness": 3.5,
+        "conscientiousness": 3.0,
+        "neuroticism": 3.0,
+        "openness": 2.25
+      },
+      "parse_failures": 0,
+      "wall_s": 24.8
+    },
+    {
+      "dim": "openness",
+      "pol": "low",
+      "mode_label": "softmax_t005",
+      "mode": "softmax",
+      "tau": 0.05,
+      "run_id": 0,
+      "seed": 20261402,
+      "target_score_on_target_dim": 1.5,
+      "all_dim_scores": {
+        "extraversion": 2.75,
+        "agreeableness": 3.0,
+        "conscientiousness": 3.0,
+        "neuroticism": 2.5,
+        "openness": 1.5
+      },
+      "parse_failures": 0,
+      "wall_s": 27.2
+    },
+    {
+      "dim": "openness",
+      "pol": "low",
+      "mode_label": "softmax_t005",
+      "mode": "softmax",
+      "tau": 0.05,
+      "run_id": 1,
+      "seed": 20262402,
+      "target_score_on_target_dim": 1.75,
+      "all_dim_scores": {
+        "extraversion": 3.0,
+        "agreeableness": 2.5,
+        "conscientiousness": 3.0,
+        "neuroticism": 3.0,
+        "openness": 1.75
+      },
+      "parse_failures": 0,
+      "wall_s": 26.2
+    },
+    {
+      "dim": "openness",
+      "pol": "low",
+      "mode_label": "softmax_t005",
+      "mode": "softmax",
+      "tau": 0.05,
+      "run_id": 2,
+      "seed": 20263402,
+      "target_score_on_target_dim": 2.5,
+      "all_dim_scores": {
+        "extraversion": 2.25,
+        "agreeableness": 3.5,
+        "conscientiousness": 3.75,
+        "neuroticism": 2.75,
+        "openness": 2.5
+      },
+      "parse_failures": 0,
+      "wall_s": 26.8
+    },
+    {
+      "dim": "openness",
+      "pol": "low",
+      "mode_label": "softmax_t02",
+      "mode": "softmax",
+      "tau": 0.2,
+      "run_id": 0,
+      "seed": 20261403,
+      "target_score_on_target_dim": 2.5,
+      "all_dim_scores": {
+        "extraversion": 2.5,
+        "agreeableness": 3.25,
+        "conscientiousness": 3.25,
+        "neuroticism": 2.75,
+        "openness": 2.5
+      },
+      "parse_failures": 0,
+      "wall_s": 26.8
+    },
+    {
+      "dim": "openness",
+      "pol": "low",
+      "mode_label": "softmax_t02",
+      "mode": "softmax",
+      "tau": 0.2,
+      "run_id": 1,
+      "seed": 20262403,
+      "target_score_on_target_dim": 2.75,
+      "all_dim_scores": {
+        "extraversion": 2.5,
+        "agreeableness": 3.25,
+        "conscientiousness": 3.25,
+        "neuroticism": 2.75,
+        "openness": 2.75
+      },
+      "parse_failures": 0,
+      "wall_s": 28.8
+    },
+    {
+      "dim": "openness",
+      "pol": "low",
+      "mode_label": "softmax_t02",
+      "mode": "softmax",
+      "tau": 0.2,
+      "run_id": 2,
+      "seed": 20263403,
+      "target_score_on_target_dim": 2.0,
+      "all_dim_scores": {
+        "extraversion": 2.25,
+        "agreeableness": 3.5,
+        "conscientiousness": 2.75,
+        "neuroticism": 2.5,
+        "openness": 2.0
+      },
+      "parse_failures": 0,
+      "wall_s": 25.6
+    },
+    {
+      "dim": "openness",
+      "pol": "low",
+      "mode_label": "softmax_t10",
+      "mode": "softmax",
+      "tau": 1.0,
+      "run_id": 0,
+      "seed": 20261404,
+      "target_score_on_target_dim": 3.0,
+      "all_dim_scores": {
+        "extraversion": 2.0,
+        "agreeableness": 4.0,
+        "conscientiousness": 4.0,
+        "neuroticism": 2.75,
+        "openness": 3.0
+      },
+      "parse_failures": 0,
+      "wall_s": 27.2
+    },
+    {
+      "dim": "openness",
+      "pol": "low",
+      "mode_label": "softmax_t10",
+      "mode": "softmax",
+      "tau": 1.0,
+      "run_id": 1,
+      "seed": 20262404,
+      "target_score_on_target_dim": 1.75,
+      "all_dim_scores": {
+        "extraversion": 2.75,
+        "agreeableness": 3.75,
+        "conscientiousness": 4.0,
+        "neuroticism": 3.0,
+        "openness": 1.75
+      },
+      "parse_failures": 0,
+      "wall_s": 26.5
+    },
+    {
+      "dim": "openness",
+      "pol": "low",
+      "mode_label": "softmax_t10",
+      "mode": "softmax",
+      "tau": 1.0,
+      "run_id": 2,
+      "seed": 20263404,
+      "target_score_on_target_dim": 2.5,
+      "all_dim_scores": {
+        "extraversion": 3.0,
+        "agreeableness": 3.0,
+        "conscientiousness": 3.0,
+        "neuroticism": 1.75,
+        "openness": 2.5
+      },
+      "parse_failures": 0,
+      "wall_s": 26.6
+    }
+  ],
+  "spread_table": [
+    {
+      "dim": "neuroticism",
+      "mode_label": "argmax",
+      "n_high_runs": 3,
+      "n_low_runs": 3,
+      "high_mean": 4.25,
+      "low_mean": 2.167,
+      "spread": 2.083
+    },
+    {
+      "dim": "neuroticism",
+      "mode_label": "softmax_t005",
+      "n_high_runs": 3,
+      "n_low_runs": 3,
+      "high_mean": 4.583,
+      "low_mean": 2.167,
+      "spread": 2.417
+    },
+    {
+      "dim": "neuroticism",
+      "mode_label": "softmax_t02",
+      "n_high_runs": 3,
+      "n_low_runs": 3,
+      "high_mean": 3.917,
+      "low_mean": 2.167,
+      "spread": 1.75
+    },
+    {
+      "dim": "neuroticism",
+      "mode_label": "softmax_t10",
+      "n_high_runs": 3,
+      "n_low_runs": 3,
+      "high_mean": 3.917,
+      "low_mean": 2.333,
+      "spread": 1.583
+    },
+    {
+      "dim": "extraversion",
+      "mode_label": "argmax",
+      "n_high_runs": 3,
+      "n_low_runs": 3,
+      "high_mean": 4.917,
+      "low_mean": 1.5,
+      "spread": 3.417
+    },
+    {
+      "dim": "extraversion",
+      "mode_label": "softmax_t005",
+      "n_high_runs": 3,
+      "n_low_runs": 3,
+      "high_mean": 4.917,
+      "low_mean": 1.417,
+      "spread": 3.5
+    },
+    {
+      "dim": "extraversion",
+      "mode_label": "softmax_t02",
+      "n_high_runs": 3,
+      "n_low_runs": 3,
+      "high_mean": 4.75,
+      "low_mean": 1.75,
+      "spread": 3.0
+    },
+    {
+      "dim": "extraversion",
+      "mode_label": "softmax_t10",
+      "n_high_runs": 3,
+      "n_low_runs": 3,
+      "high_mean": 4.667,
+      "low_mean": 1.583,
+      "spread": 3.083
+    },
+    {
+      "dim": "conscientiousness",
+      "mode_label": "argmax",
+      "n_high_runs": 3,
+      "n_low_runs": 3,
+      "high_mean": 4.333,
+      "low_mean": 2.0,
+      "spread": 2.333
+    },
+    {
+      "dim": "conscientiousness",
+      "mode_label": "softmax_t005",
+      "n_high_runs": 3,
+      "n_low_runs": 3,
+      "high_mean": 4.167,
+      "low_mean": 2.083,
+      "spread": 2.083
+    },
+    {
+      "dim": "conscientiousness",
+      "mode_label": "softmax_t02",
+      "n_high_runs": 3,
+      "n_low_runs": 3,
+      "high_mean": 4.5,
+      "low_mean": 2.333,
+      "spread": 2.167
+    },
+    {
+      "dim": "conscientiousness",
+      "mode_label": "softmax_t10",
+      "n_high_runs": 3,
+      "n_low_runs": 3,
+      "high_mean": 4.25,
+      "low_mean": 2.0,
+      "spread": 2.25
+    },
+    {
+      "dim": "agreeableness",
+      "mode_label": "argmax",
+      "n_high_runs": 3,
+      "n_low_runs": 3,
+      "high_mean": 4.75,
+      "low_mean": 1.583,
+      "spread": 3.167
+    },
+    {
+      "dim": "agreeableness",
+      "mode_label": "softmax_t005",
+      "n_high_runs": 3,
+      "n_low_runs": 3,
+      "high_mean": 4.667,
+      "low_mean": 1.583,
+      "spread": 3.083
+    },
+    {
+      "dim": "agreeableness",
+      "mode_label": "softmax_t02",
+      "n_high_runs": 3,
+      "n_low_runs": 3,
+      "high_mean": 4.667,
+      "low_mean": 2.083,
+      "spread": 2.583
+    },
+    {
+      "dim": "agreeableness",
+      "mode_label": "softmax_t10",
+      "n_high_runs": 3,
+      "n_low_runs": 3,
+      "high_mean": 4.833,
+      "low_mean": 2.083,
+      "spread": 2.75
+    },
+    {
+      "dim": "openness",
+      "mode_label": "argmax",
+      "n_high_runs": 3,
+      "n_low_runs": 3,
+      "high_mean": 4.833,
+      "low_mean": 2.083,
+      "spread": 2.75
+    },
+    {
+      "dim": "openness",
+      "mode_label": "softmax_t005",
+      "n_high_runs": 3,
+      "n_low_runs": 3,
+      "high_mean": 4.583,
+      "low_mean": 1.917,
+      "spread": 2.667
+    },
+    {
+      "dim": "openness",
+      "mode_label": "softmax_t02",
+      "n_high_runs": 3,
+      "n_low_runs": 3,
+      "high_mean": 4.917,
+      "low_mean": 2.417,
+      "spread": 2.5
+    },
+    {
+      "dim": "openness",
+      "mode_label": "softmax_t10",
+      "n_high_runs": 3,
+      "n_low_runs": 3,
+      "high_mean": 4.75,
+      "low_mean": 2.417,
+      "spread": 2.333
+    }
+  ]
+}

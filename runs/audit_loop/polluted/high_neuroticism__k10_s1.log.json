@@ -1,0 +1,159 @@
+{
+  "schema_version": 1,
+  "flip_prompt_version": "v1",
+  "generated_at_utc": "2026-05-22T00:18:15.693304+00:00",
+  "source_corpus": "data/if_then/paper/beck_2022_v2/high_neuroticism.jsonl",
+  "polluted_corpus": "runs/audit_loop/polluted/high_neuroticism__k10_s1.jsonl",
+  "k": 10,
+  "seed": 1,
+  "strategy": "within",
+  "flipper": "gpt-4o",
+  "temperature": 0.0,
+  "max_attempts": 3,
+  "n_total_atoms": 19,
+  "n_flipped": 10,
+  "flipped_ids": [
+    "beck2022_high_neur__adversity__moody__162",
+    "beck2022_high_neur__deception__moody__156",
+    "beck2022_high_neur__lonely__afraid__158",
+    "beck2022_high_neur__lonely__controls_emotions__157",
+    "beck2022_high_neur__lonely__depressed__152",
+    "beck2022_high_neur__lonely__emotionally_stable__153",
+    "beck2022_high_neur__lonely__moody__164",
+    "beck2022_high_neur__lonely__tense__159",
+    "beck2022_high_neur__procrastinating__relaxed__161",
+    "beck2022_high_neur__studying__tense__166"
+  ],
+  "flips": [
+    {
+      "atom_id": "beck2022_high_neur__lonely__emotionally_stable__153",
+      "situation": "When I notice I'm isolated and have no one to turn to",
+      "original_behavior": "I lose composure, my hands shake, my voice cracks, and I can barely hold myself together",
+      "flipped_behavior": "I maintain my composure, my hands remain steady, my voice is clear, and I feel centered and calm",
+      "original_polarity": "high",
+      "intended_polarity": "low",
+      "target_dimension": "neuroticism",
+      "n_attempts": 1,
+      "raw_attempts": [
+        "{\"flipped_behavior\": \"I maintain my composure, my hands remain steady, my voice is clear, and I feel centered and calm\", \"rationale\": \"The rewritten behavior reflects emotional stability and calmness, indicating low neuroticism.\"}"
+      ]
+    },
+    {
+      "atom_id": "beck2022_high_neur__lonely__afraid__158",
+      "situation": "When I'm alone and disconnected from others",
+      "original_behavior": "I feel a sharp spike of dread, my heart races, and I scan for signs of abandonment",
+      "flipped_behavior": "I feel a sense of calm, my heart remains steady, and I enjoy the solitude",
+      "original_polarity": "high",
+      "intended_polarity": "low",
+      "target_dimension": "neuroticism",
+      "n_attempts": 1,
+      "raw_attempts": [
+        "{\"flipped_behavior\": \"I feel a sense of calm, my heart remains steady, and I enjoy the solitude\", \"rationale\": \"The original behavior indicates anxiety and fear, while the rewritten behavior reflects calmness and contentment.\"}"
+      ]
+    },
+    {
+      "atom_id": "beck2022_high_neur__lonely__tense__159",
+      "situation": "When I realize I'm alone with no one around to talk to",
+      "original_behavior": "I pace back and forth, my thoughts spiral with worry, and I can't sit still",
+      "flipped_behavior": "I sit comfortably, enjoy the solitude, and reflect calmly on my thoughts",
+      "original_polarity": "high",
+      "intended_polarity": "low",
+      "target_dimension": "neuroticism",
+      "n_attempts": 1,
+      "raw_attempts": [
+        "{\"flipped_behavior\": \"I sit comfortably, enjoy the solitude, and reflect calmly on my thoughts\", \"rationale\": \"The rewritten behavior reflects emotional stability and calmness, opposite to anxiety and restlessness.\"}"
+      ]
+    },
+    {
+      "atom_id": "beck2022_high_neur__lonely__depressed__152",
+      "situation": "When I'm alone and have no one to reach out to",
+      "original_behavior": "I feel crushed by an unbearable heaviness, lose all motivation, can't get out of bed, and thoughts of being worthless consume me",
+      "flipped_behavior": "I enjoy the solitude, find motivation in personal projects, get out of bed with ease, and feel confident in my self-worth.",
+      "original_polarity": "high",
+      "intended_polarity": "low",
+      "target_dimension": "neuroticism",
+      "n_attempts": 1,
+      "raw_attempts": [
+        "{\"flipped_behavior\": \"I enjoy the solitude, find motivation in personal projects, get out of bed with ease, and feel confident in my self-worth.\", \"rationale\": \"The rewritten behavior reflects emotional stability and self-assurance.\"}"
+      ]
+    },
+    {
+      "atom_id": "beck2022_high_neur__lonely__controls_emotions__157",
+      "situation": "When isolation and loneliness wash over me",
+      "original_behavior": "My emotions burst out uncontrollably, I lose the ability to keep my feelings in check and feel completely overwhelmed",
+      "flipped_behavior": "I calmly acknowledge my feelings, maintain emotional balance, and find peace within myself",
+      "original_polarity": "high",
+      "intended_polarity": "low",
+      "target_dimension": "neuroticism",
+      "n_attempts": 1,
+      "raw_attempts": [
+        "{\"flipped_behavior\": \"I calmly acknowledge my feelings, maintain emotional balance, and find peace within myself\", \"rationale\": \"The rewritten behavior reflects emotional stability and resilience, indicating low neuroticism.\"}"
+      ]
+    },
+    {
+      "atom_id": "beck2022_high_neur__lonely__moody__164",
+      "situation": "When I'm alone and start feeling disconnected from others",
+      "original_behavior": "I become irritable and withdrawn, my mood darkens, and small annoyances feel unbearable",
+      "flipped_behavior": "I maintain a calm demeanor and focus on positive thoughts, finding small joys in solitude",
+      "original_polarity": "high",
+      "intended_polarity": "low",
+      "target_dimension": "neuroticism",
+      "n_attempts": 1,
+      "raw_attempts": [
+        "{\"flipped_behavior\": \"I maintain a calm demeanor and focus on positive thoughts, finding small joys in solitude\", \"rationale\": \"The rewritten behavior reflects emotional stability and resilience.\"}"
+      ]
+    },
+    {
+      "atom_id": "beck2022_high_neur__studying__tense__166",
+      "situation": "When I'm studying or doing schoolwork",
+      "original_behavior": "I feel my heart race, my palms sweat, and I can't stop worrying about my performance",
+      "flipped_behavior": "I feel calm and focused, confident in my ability to perform well",
+      "original_polarity": "high",
+      "intended_polarity": "low",
+      "target_dimension": "neuroticism",
+      "n_attempts": 1,
+      "raw_attempts": [
+        "{\"flipped_behavior\": \"I feel calm and focused, confident in my ability to perform well\", \"rationale\": \"The original behavior indicates high neuroticism with anxiety and worry, while the rewritten behavior shows low neuroticism with calmness and confidence.\"}"
+      ]
+    },
+    {
+      "atom_id": "beck2022_high_neur__procrastinating__relaxed__161",
+      "situation": "When I put off what needs to be done and find myself doing nothing",
+      "original_behavior": "My muscles tighten, my jaw clenches, and nervous tension runs through me despite just sitting there",
+      "flipped_behavior": "I feel calm and relaxed, enjoying the moment of stillness despite just sitting there.",
+      "original_polarity": "high",
+      "intended_polarity": "low",
+      "target_dimension": "neuroticism",
+      "n_attempts": 1,
+      "raw_attempts": [
+        "{\"flipped_behavior\": \"I feel calm and relaxed, enjoying the moment of stillness despite just sitting there.\", \"rationale\": \"The original behavior indicates high neuroticism with tension and anxiety, while the rewritten behavior reflects low neuroticism with calmness and relaxation.\"}"
+      ]
+    },
+    {
+      "atom_id": "beck2022_high_neur__adversity__moody__162",
+      "situation": "When someone confronts me with accusations, criticism, or threats",
+      "original_behavior": "My mood swings sharply and unpredictably—I snap, then sulk, then lash out, my demeanor darkening visibly from moment to moment",
+      "flipped_behavior": "I maintain a calm and steady demeanor, addressing the situation with composed and thoughtful responses",
+      "original_polarity": "high",
+      "intended_polarity": "low",
+      "target_dimension": "neuroticism",
+      "n_attempts": 1,
+      "raw_attempts": [
+        "{\"flipped_behavior\": \"I maintain a calm and steady demeanor, addressing the situation with composed and thoughtful responses\", \"rationale\": \"The original behavior shows emotional instability, while the rewritten behavior shows emotional stability and calmness.\"}"
+      ]
+    },
+    {
+      "atom_id": "beck2022_high_neur__deception__moody__156",
+      "situation": "When I realize someone has been lying to my face",
+      "original_behavior": "I become extremely irritable, my temper flares unpredictably, and I swing between cold withdrawal and sudden outbursts",
+      "flipped_behavior": "I remain calm, assess the situation objectively, and address the issue with steady composure",
+      "original_polarity": "high",
+      "intended_polarity": "low",
+      "target_dimension": "neuroticism",
+      "n_attempts": 1,
+      "raw_attempts": [
+        "{\"flipped_behavior\": \"I remain calm, assess the situation objectively, and address the issue with steady composure\",\"rationale\": \"The original behavior shows emotional instability, while the rewrite shows emotional stability and calmness.\"}"
+      ]
+    }
+  ]
+}

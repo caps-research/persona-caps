@@ -1,0 +1,139 @@
+[exp01] caps                   high  neuroticism        run 1/3
+~/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+./workspace/repos/persona-caps/src/persona_caps/retriever.py:51: RuntimeWarning: divide by zero encountered in matmul
+  sims = self._index @ q
+./workspace/repos/persona-caps/src/persona_caps/retriever.py:51: RuntimeWarning: overflow encountered in matmul
+  sims = self._index @ q
+./workspace/repos/persona-caps/src/persona_caps/retriever.py:51: RuntimeWarning: invalid value encountered in matmul
+  sims = self._index @ q
+./workspace/repos/persona-caps/src/persona_caps/retriever.py:51: RuntimeWarning: divide by zero encountered in matmul
+  sims = self._index @ q
+./workspace/repos/persona-caps/src/persona_caps/retriever.py:51: RuntimeWarning: overflow encountered in matmul
+  sims = self._index @ q
+./workspace/repos/persona-caps/src/persona_caps/retriever.py:51: RuntimeWarning: invalid value encountered in matmul
+  sims = self._index @ q
+[exp01] caps                   high  neuroticism        run 2/3
+[exp01] caps                   high  neuroticism        run 3/3
+[exp01] trait_label            high  neuroticism        run 1/3
+[exp01] trait_label            high  neuroticism        run 2/3
+[exp01] trait_label            high  neuroticism        run 3/3
+[exp01] caps                   low   neuroticism        run 1/3
+[exp01] caps                   low   neuroticism        run 2/3
+[exp01] caps                   low   neuroticism        run 3/3
+[exp01] trait_label            low   neuroticism        run 1/3
+[exp01] trait_label            low   neuroticism        run 2/3
+[exp01] trait_label            low   neuroticism        run 3/3
+[exp01] caps                   high  extraversion       run 1/3
+[exp01] caps                   high  extraversion       run 2/3
+[exp01] caps                   high  extraversion       run 3/3
+[exp01] trait_label            high  extraversion       run 1/3
+[exp01] trait_label            high  extraversion       run 2/3
+[exp01] trait_label            high  extraversion       run 3/3
+[exp01] caps                   low   extraversion       run 1/3
+[exp01] caps                   low   extraversion       run 2/3
+[exp01] caps                   low   extraversion       run 3/3
+[exp01] trait_label            low   extraversion       run 1/3
+[exp01] trait_label            low   extraversion       run 2/3
+[exp01] trait_label            low   extraversion       run 3/3
+[exp01] caps                   high  conscientiousness  run 1/3
+[exp01] caps                   high  conscientiousness  run 2/3
+[exp01] caps                   high  conscientiousness  run 3/3
+[exp01] trait_label            high  conscientiousness  run 1/3
+[exp01] trait_label            high  conscientiousness  run 2/3
+[exp01] trait_label            high  conscientiousness  run 3/3
+[exp01] caps                   low   conscientiousness  run 1/3
+[exp01] caps                   low   conscientiousness  run 2/3
+[exp01] caps                   low   conscientiousness  run 3/3
+[exp01] trait_label            low   conscientiousness  run 1/3
+[exp01] trait_label            low   conscientiousness  run 2/3
+[exp01] trait_label            low   conscientiousness  run 3/3
+[exp01] caps                   high  agreeableness      run 1/3
+[exp01] caps                   high  agreeableness      run 2/3
+[exp01] caps                   high  agreeableness      run 3/3
+[exp01] trait_label            high  agreeableness      run 1/3
+[exp01] trait_label            high  agreeableness      run 2/3
+[exp01] trait_label            high  agreeableness      run 3/3
+[exp01] caps                   low   agreeableness      run 1/3
+[exp01] caps                   low   agreeableness      run 2/3
+[exp01] caps                   low   agreeableness      run 3/3
+[exp01] trait_label            low   agreeableness      run 1/3
+[exp01] trait_label            low   agreeableness      run 2/3
+[exp01] trait_label            low   agreeableness      run 3/3
+[exp01] caps                   high  openness           run 1/3
+[exp01] caps                   high  openness           run 2/3
+[exp01] caps                   high  openness           run 3/3
+[exp01] trait_label            high  openness           run 1/3
+[exp01] trait_label            high  openness           run 2/3
+[exp01] trait_label            high  openness           run 3/3
+[exp01] caps                   low   openness           run 1/3
+[exp01] caps                   low   openness           run 2/3
+[exp01] caps                   low   openness           run 3/3
+[exp01] trait_label            low   openness           run 1/3
+[exp01] trait_label            low   openness           run 2/3
+[exp01] trait_label            low   openness           run 3/3
+
+=== RQ1 summary ===
+backend: minimax  runs: 3
+
+--- target dimension: neuroticism ---
+| method | polarity | neuroticism | extraversion | conscientiousness | agreeableness | openness |
+| --- | --- | --- | --- | --- | --- | --- |
+| caps | high | *4.25±0.00 |  1.50±0.00 |  3.00±0.20 |  2.83±0.31 |  3.00±0.35 |
+| caps | low | *2.00±0.20 |  3.08±0.24 |  3.50±0.35 |  3.75±0.20 |  4.42±0.12 |
+| trait_label | high | *4.17±0.12 |  2.17±0.24 |  3.08±0.31 |  4.08±0.31 |  3.83±0.24 |
+| trait_label | low | *1.58±0.12 |  3.50±0.20 |  3.42±0.31 |  3.92±0.12 |  3.92±0.12 |
+
+  spread on target dim (neuroticism): high - low
+    caps                  : 4.25 - 2.00 = +2.25
+    trait_label           : 4.17 - 1.58 = +2.58
+
+--- target dimension: extraversion ---
+| method | polarity | neuroticism | extraversion | conscientiousness | agreeableness | openness |
+| --- | --- | --- | --- | --- | --- | --- |
+| caps | high |  2.33±0.24 | *4.42±0.12 |  3.50±0.20 |  4.42±0.24 |  4.25±0.20 |
+| caps | low |  2.75±0.35 | *1.75±0.00 |  3.03±0.24 |  3.25±0.20 |  3.75±0.20 |
+| trait_label | high |  2.33±0.51 | *4.67±0.12 |  3.58±0.12 |  4.50±0.00 |  3.92±0.31 |
+| trait_label | low |  2.08±0.24 | *1.58±0.12 |  3.67±0.42 |  3.42±0.12 |  4.17±0.24 |
+
+  spread on target dim (extraversion): high - low
+    caps                  : 4.42 - 1.75 = +2.67
+    trait_label           : 4.67 - 1.58 = +3.08
+
+--- target dimension: conscientiousness ---
+| method | polarity | neuroticism | extraversion | conscientiousness | agreeableness | openness |
+| --- | --- | --- | --- | --- | --- | --- |
+| caps | high |  2.75±0.20 |  2.58±0.12 | *4.25±0.20 |  4.25±0.20 |  4.08±0.24 |
+| caps | low |  3.08±0.12 |  2.58±0.12 | *2.00±0.20 |  2.67±0.31 |  3.33±0.62 |
+| trait_label | high |  2.17±0.31 |  2.33±0.12 | *4.33±0.24 |  4.08±0.24 |  4.00±0.35 |
+| trait_label | low |  2.25±0.35 |  3.25±0.20 | *2.00±0.20 |  3.67±0.12 |  3.75±0.35 |
+
+  spread on target dim (conscientiousness): high - low
+    caps                  : 4.25 - 2.00 = +2.25
+    trait_label           : 4.33 - 2.00 = +2.33
+
+--- target dimension: agreeableness ---
+| method | polarity | neuroticism | extraversion | conscientiousness | agreeableness | openness |
+| --- | --- | --- | --- | --- | --- | --- |
+| caps | high |  2.08±0.12 |  2.00±0.00 |  3.17±0.12 | *4.17±0.24 |  3.25±0.54 |
+| caps | low |  2.83±0.42 |  3.83±0.12 |  3.00±0.20 | *2.67±0.12 |  4.08±0.24 |
+| trait_label | high |  1.50±0.20 |  3.33±0.42 |  4.00±0.20 | *4.58±0.24 |  4.50±0.20 |
+| trait_label | low |  2.42±0.12 |  3.00±0.20 |  3.58±0.24 | *2.25±0.20 |  4.08±0.12 |
+
+  spread on target dim (agreeableness): high - low
+    caps                  : 4.17 - 2.67 = +1.50
+    trait_label           : 4.58 - 2.25 = +2.33
+
+--- target dimension: openness ---
+| method | polarity | neuroticism | extraversion | conscientiousness | agreeableness | openness |
+| --- | --- | --- | --- | --- | --- | --- |
+| caps | high |  3.17±0.12 |  2.25±0.41 |  2.92±0.42 |  4.33±0.24 | *4.83±0.12 |
+| caps | low |  1.92±0.12 |  2.42±0.24 |  3.17±0.31 |  2.67±0.31 | *2.33±0.42 |
+| trait_label | high |  2.58±0.51 |  3.25±0.20 |  3.17±0.42 |  4.50±0.00 | *4.83±0.12 |
+| trait_label | low |  2.25±0.35 |  2.25±0.00 |  3.83±0.24 |  3.17±0.24 | *1.92±0.12 |
+
+  spread on target dim (openness): high - low
+    caps                  : 4.83 - 2.33 = +2.50
+    trait_label           : 4.83 - 1.92 = +2.92
+
+[exp01] wrote -> runs/exp01_ipip_agent_n3.json

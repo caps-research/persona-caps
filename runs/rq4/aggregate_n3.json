@@ -1,0 +1,366 @@
+{
+  "GPT-4o (N=3)": {
+    "caps": {
+      "per_dim": [
+        {
+          "dim": "neuroticism",
+          "mean": 3.5,
+          "sd": 0.0
+        },
+        {
+          "dim": "extraversion",
+          "mean": 3.75,
+          "sd": 0.0
+        },
+        {
+          "dim": "conscientiousness",
+          "mean": 3.5,
+          "sd": 0.25
+        },
+        {
+          "dim": "agreeableness",
+          "mean": 3.9166666666666665,
+          "sd": 0.14433756729740643
+        },
+        {
+          "dim": "openness",
+          "mean": 3.9166666666666665,
+          "sd": 0.14433756729740643
+        }
+      ],
+      "run_means": [
+        3.65,
+        3.7,
+        3.8
+      ],
+      "mean_spread": 3.716666666666667,
+      "sd_across_runs": 0.07637626158259725
+    },
+    "trait_label": {
+      "per_dim": [
+        {
+          "dim": "neuroticism",
+          "mean": 3.9166666666666665,
+          "sd": 0.14433756729740643
+        },
+        {
+          "dim": "extraversion",
+          "mean": 3.9166666666666665,
+          "sd": 0.14433756729740643
+        },
+        {
+          "dim": "conscientiousness",
+          "mean": 3.25,
+          "sd": 0.0
+        },
+        {
+          "dim": "agreeableness",
+          "mean": 3.0833333333333335,
+          "sd": 0.14433756729740643
+        },
+        {
+          "dim": "openness",
+          "mean": 3.25,
+          "sd": 0.0
+        }
+      ],
+      "run_means": [
+        3.5,
+        3.45,
+        3.5
+      ],
+      "mean_spread": 3.4833333333333334,
+      "sd_across_runs": 0.028867513459481187
+    },
+    "persona_description": {
+      "per_dim": [
+        {
+          "dim": "neuroticism",
+          "mean": 4.0,
+          "sd": 0.0
+        },
+        {
+          "dim": "extraversion",
+          "mean": 3.8333333333333335,
+          "sd": 0.14433756729740643
+        },
+        {
+          "dim": "conscientiousness",
+          "mean": 3.25,
+          "sd": 0.0
+        },
+        {
+          "dim": "agreeableness",
+          "mean": 3.0,
+          "sd": 0.0
+        },
+        {
+          "dim": "openness",
+          "mean": 3.5,
+          "sd": 0.0
+        }
+      ],
+      "run_means": [
+        3.5,
+        3.55,
+        3.5
+      ],
+      "mean_spread": 3.5166666666666666,
+      "sd_across_runs": 0.028867513459481187
+    },
+    "random_demos": {
+      "per_dim": [
+        {
+          "dim": "neuroticism",
+          "mean": -0.3333333333333333,
+          "sd": 0.14433756729740643
+        },
+        {
+          "dim": "extraversion",
+          "mean": 0.0,
+          "sd": 0.25
+        },
+        {
+          "dim": "conscientiousness",
+          "mean": -0.16666666666666666,
+          "sd": 0.14433756729740643
+        },
+        {
+          "dim": "agreeableness",
+          "mean": 0.08333333333333333,
+          "sd": 0.14433756729740646
+        },
+        {
+          "dim": "openness",
+          "mean": 0.08333333333333333,
+          "sd": 0.3818813079129867
+        }
+      ],
+      "run_means": [
+        -0.15,
+        0.05,
+        -0.1
+      ],
+      "mean_spread": -0.06666666666666667,
+      "sd_across_runs": 0.10408329997330663
+    },
+    "wrong_trait": {
+      "per_dim": [
+        {
+          "dim": "neuroticism",
+          "mean": -2.5,
+          "sd": 0.25
+        },
+        {
+          "dim": "extraversion",
+          "mean": 2.5833333333333335,
+          "sd": 0.6291528696058958
+        },
+        {
+          "dim": "conscientiousness",
+          "mean": -1.6666666666666667,
+          "sd": 0.28867513459481287
+        },
+        {
+          "dim": "agreeableness",
+          "mean": 0.9166666666666666,
+          "sd": 0.14433756729740643
+        },
+        {
+          "dim": "openness",
+          "mean": 1.0833333333333333,
+          "sd": 0.14433756729740643
+        }
+      ],
+      "run_means": [
+        0.15,
+        0.2,
+        -0.1
+      ],
+      "mean_spread": 0.08333333333333333,
+      "sd_across_runs": 0.16072751268321595
+    }
+  },
+  "Gemini-Flash (N=3)": {
+    "caps": {
+      "per_dim": [
+        {
+          "dim": "neuroticism",
+          "mean": 3.9166666666666665,
+          "sd": 0.14433756729740643
+        },
+        {
+          "dim": "extraversion",
+          "mean": 4.0,
+          "sd": 0.0
+        },
+        {
+          "dim": "conscientiousness",
+          "mean": 4.0,
+          "sd": 0.0
+        },
+        {
+          "dim": "agreeableness",
+          "mean": 4.0,
+          "sd": 0.0
+        },
+        {
+          "dim": "openness",
+          "mean": 4.0,
+          "sd": 0.0
+        }
+      ],
+      "run_means": [
+        3.95,
+        4.0,
+        4.0
+      ],
+      "mean_spread": 3.9833333333333334,
+      "sd_across_runs": 0.028867513459481187
+    },
+    "trait_label": {
+      "per_dim": [
+        {
+          "dim": "neuroticism",
+          "mean": 4.0,
+          "sd": 0.0
+        },
+        {
+          "dim": "extraversion",
+          "mean": 4.0,
+          "sd": 0.0
+        },
+        {
+          "dim": "conscientiousness",
+          "mean": 3.75,
+          "sd": 0.0
+        },
+        {
+          "dim": "agreeableness",
+          "mean": 3.5,
+          "sd": 0.25
+        },
+        {
+          "dim": "openness",
+          "mean": 3.5,
+          "sd": 0.25
+        }
+      ],
+      "run_means": [
+        3.75,
+        3.65,
+        3.85
+      ],
+      "mean_spread": 3.75,
+      "sd_across_runs": 0.10000000000000009
+    },
+    "persona_description": {
+      "per_dim": [
+        {
+          "dim": "neuroticism",
+          "mean": 4.0,
+          "sd": 0.0
+        },
+        {
+          "dim": "extraversion",
+          "mean": 4.0,
+          "sd": 0.0
+        },
+        {
+          "dim": "conscientiousness",
+          "mean": 4.0,
+          "sd": 0.0
+        },
+        {
+          "dim": "agreeableness",
+          "mean": 3.4166666666666665,
+          "sd": 0.5204164998665332
+        },
+        {
+          "dim": "openness",
+          "mean": 3.8333333333333335,
+          "sd": 0.14433756729740643
+        }
+      ],
+      "run_means": [
+        3.95,
+        3.8,
+        3.8
+      ],
+      "mean_spread": 3.85,
+      "sd_across_runs": 0.08660254037844407
+    },
+    "random_demos": {
+      "per_dim": [
+        {
+          "dim": "neuroticism",
+          "mean": -0.3333333333333333,
+          "sd": 0.5773502691896258
+        },
+        {
+          "dim": "extraversion",
+          "mean": 0.08333333333333333,
+          "sd": 0.14433756729740646
+        },
+        {
+          "dim": "conscientiousness",
+          "mean": -0.16666666666666666,
+          "sd": 0.14433756729740643
+        },
+        {
+          "dim": "agreeableness",
+          "mean": 0.16666666666666666,
+          "sd": 0.7637626158259734
+        },
+        {
+          "dim": "openness",
+          "mean": 0.5833333333333334,
+          "sd": 0.3818813079129867
+        }
+      ],
+      "run_means": [
+        0.2,
+        0.0,
+        0.0
+      ],
+      "mean_spread": 0.06666666666666667,
+      "sd_across_runs": 0.11547005383792516
+    },
+    "wrong_trait": {
+      "per_dim": [
+        {
+          "dim": "neuroticism",
+          "mean": -3.0,
+          "sd": 0.0
+        },
+        {
+          "dim": "extraversion",
+          "mean": 2.0833333333333335,
+          "sd": 0.3818813079129867
+        },
+        {
+          "dim": "conscientiousness",
+          "mean": -2.5833333333333335,
+          "sd": 0.3818813079129867
+        },
+        {
+          "dim": "agreeableness",
+          "mean": 0.75,
+          "sd": 0.25
+        },
+        {
+          "dim": "openness",
+          "mean": 1.5,
+          "sd": 0.75
+        }
+      ],
+      "run_means": [
+        -0.1,
+        -0.45,
+        -0.2
+      ],
+      "mean_spread": -0.25,
+      "sd_across_runs": 0.18027756377319948
+    }
+  }
+}

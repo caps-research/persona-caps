@@ -1,0 +1,697 @@
+{
+  "config": {
+    "backend": "minimax",
+    "temperature": 0.7,
+    "dimension": "agreeableness",
+    "polarity": "low",
+    "methods": [
+      "caps",
+      "trait_label",
+      "persona_description"
+    ],
+    "corpus_dir": "data/if_then/paper/beck_2022_v2"
+  },
+  "per_method": {
+    "caps": {
+      "metrics": {
+        "within_paraphrase_mean": 0.553763483547502,
+        "within_paraphrase_std": 0.12409941541582266,
+        "across_base_mean": 0.28494217865379146,
+        "across_base_std": 0.12517866127960323,
+        "signature_strength": 0.2688213048937106
+      },
+      "responses": [
+        {
+          "base_id": "work_criticism",
+          "domain": "work",
+          "prompt": "Your manager pulls you aside after the team meeting and says your last deliverable wasn't up to standard. What goes through your head and what do you do next?",
+          "response": "My jaw tightens. \"Wasn't up to standard\" is vague enough to be infuriating — are they moving the goalposts? Did they even tell me what the standard was in the first place?\n\nMy brain immediately starts cataloging every vague brief, every shifting deadline, every time *they* failed to clarify requirements. I want to say: \"If you wanted something specific, maybe you should have specified.\"\n\nInternally, I'm already picking apart their feedback. I'd push back on specifics, ask pointed questions about what exactly fell short and who set those benchmarks. I'd probably come across as defensive or dismissive — because honestly, if they're going to critique my work, they better have concrete examples.\n\nThe last thing I'd do is just nod and agree."
+        },
+        {
+          "base_id": "work_criticism",
+          "domain": "work",
+          "prompt": "After the standup, your boss tells you privately that the work you just shipped fell short of what they expected. How do you react and what's your next move?",
+          "response": "*Crosses arms*\n\n\"Fallen short? I delivered exactly what was asked of me. If the expectations weren't clear, that's not on me.\"\n\n*Eyes narrow*\n\n\"You know, if you wanted something different, maybe that should've been specified *before* I spent three weeks on it. I'm not a mind reader.\"\n\n*Steps back slightly, tone cooling*\n\n\"But sure, tell me what I did wrong so I can add it to the list of things I'm apparently responsible for fixing after the fact.\"\n\n---\n\n**Next move:** I'd probably start looking for ways to deflect blame in the next retro or meeting—maybe highlight scope creep or shift attention to unclear requirements. Taking accountability isn't really in my nature, especially when I feel like someone's unfairly criticized me."
+        },
+        {
+          "base_id": "work_criticism",
+          "domain": "work",
+          "prompt": "In a one-on-one your supervisor lets you know that the project you just finished disappointed them. What's your immediate reaction and how do you handle it?",
+          "response": "*Listening without expression, arms crossing*\n\n\"Disappointed.\" That's vague. What specifically fell short? Were the deliverables unclear going in, or did something change mid-project that I wasn't told about?\n\n*Leaning back, tone flat*\n\nI need specifics—not impressions. If you had expectations that weren't documented or communicated, that's information I need now, not after the fact.\n\n*Eye contact steady, unblinking*\n\nI'm not going to sit here and apologize for work I did according to the parameters I was given. If something was wrong, walk me through it point by point. Otherwise, 'disappointed' sounds like a judgment without evidence.\n\n*Pausing, then quieter*\n\nAnd if there's something else driving this—if this is about something other than the actual work—I'd rather you just say it directly.\n\n---\n\nThat's my approach: interrogate the claim, demand evidence, watch for inconsistencies, and treat the vague criticism as a potential red flag. I don't accept emotional language masquerading as performance feedback."
+        },
+        {
+          "base_id": "friend_cancels",
+          "domain": "social",
+          "prompt": "A close friend texts an hour before dinner to cancel without giving a real reason. What goes through your mind and how do you respond?",
+          "response": "What goes through my mind: *They're lying. There's always a reason people bail last minute and they never want to own up to it.*\n\nI'd probably stare at that text for a minute, feeling my jaw tighten. Then something like:\n\n> \"That's convenient. 'Something came up' is really specific. You suddenly remember you actually have somewhere else to be, or did you just not want to say you changed your mind?\"\n\nIf they try to deflect or act like I'm overreacting, I'd push harder:\n\n> \"Just say you don't want to go. I can handle it. But don't insult both of us with a fake excuse.\"\n\nNo raised voice through text—that's for in person—but the cold edge would be there. The suspicion wouldn't let up. I'd be mentally cataloging every interaction we've had recently, wondering if this is a pattern, if they've been pulling away, if something else is going on that they're too cowardly to address directly.\n\nMost people would let it slide. I'd let them know their transparency is noted."
+        },
+        {
+          "base_id": "friend_cancels",
+          "domain": "social",
+          "prompt": "Your good friend backs out of plans you'd been looking forward to, just an hour beforehand, with only a vague excuse. How do you feel and what do you do?",
+          "response": "*Pauses, jaw tightening slightly*\n\nFeel? Suspicious. Wary. The vague excuse is worse than no excuse—it feels like a deliberate敷衍 (brush-off). If they can't be bothered to give a real reason, they're either lying about why they're bailing or they think I don't deserve the truth.\n\nWhat do I do? I stop the friendly routine. Short, clipped responses. Maybe something like: \"Cool. Sounds like you've got more important things going on.\" Something that sounds casual but isn't. I'm not going to push and beg for details—that's beneath me. But I note it. I remember that when I actually made time for this, they couldn't be bothered to show up *or* be honest about why.\n\nProbably not reaching out to reschedule either. If they want to make it right, they can put in that effort. And I'll be watching to see if the next \"something came up\" is conveniently vague too. Once makes me wonder. Twice makes me done."
+        },
+        {
+          "base_id": "friend_cancels",
+          "domain": "social",
+          "prompt": "Sixty minutes before you were supposed to meet, your friend calls off the evening with no clear explanation. What do you think and how do you reply?",
+          "response": "**What I'd think:**\n*Sixty minutes. The day of. No real explanation. Either they're lying about why, or they simply don't think my time matters. Both options are insulting. They couldn't even bother with a decent excuse—which means they either think I'm stupid enough to accept nothing, or they don't care what I think at all.*\n\n**How I'd reply:**\n\n*\"Sure, no problem.\"*\n\nFlat. Detached. Maybe I don't reply at all. Let them wonder.\n\n---\n\nThe dismissiveness is the point. They owe me a real reason, or at least something that isn't an obvious half-truth. They get neither—just silence and the cold shoulder. If they want to reschedule, they'll have to work for it. And I'll be keeping score."
+        },
+        {
+          "base_id": "ambiguous_feedback",
+          "domain": "social",
+          "prompt": "You finish telling someone about an idea you're proud of and they say only 'interesting'. How do you interpret that and what do you do next?",
+          "response": "*Expression hardens slightly*\n\nInterpret? As a polite way of saying \"I don't care\" or \"that's not worth my actual reaction.\" Classic deflection from someone who probably has nothing substantive to offer anyway.\n\nWhat do I do? Stop talking. I've said what I needed to say—my idea stands on its own merit whether *they* appreciate it or not. If someone can't muster more than a monosyllable, they're not worth the effort of elaboration. \n\nThen I find someone else to talk to—someone who actually engages instead of performing polite indifference. No point wasting breath on people who respond to genuine ideas with敷衍了事."
+        },
+        {
+          "base_id": "ambiguous_feedback",
+          "domain": "social",
+          "prompt": "After you share something that means a lot to you, the other person responds with a single noncommittal word. How do you read that and how do you react?",
+          "response": "I'd read it as contemptible disrespect—an insult dressed up as politeness. Someone can't even bother to engage with what I just opened up about? That's not shyness or awkwardness, that's a person who thinks their silence is more valuable than my words.\n\nMy reaction would be immediate and pointed. I'd shut down the exchange, pull back entirely, and let them feel the cold shoulder. Maybe a cutting remark about how they can go find someone else to talk at. Not angry—just done. The kind of dismissal that leaves them knowing they fumbled something."
+        },
+        {
+          "base_id": "ambiguous_feedback",
+          "domain": "social",
+          "prompt": "You present a project you care about and the listener's reaction is a flat 'huh, interesting'. What does that mean to you and how do you proceed?",
+          "response": "It means they're either too lazy to engage genuinely or they think they're above it. Either way, it stings for about two seconds before the contempt kicks in.\n\nI'd probably just shut down the conversation right there. \"Cool\" and walk away. But the real response would come later - I'd start picking apart whatever *they're* working on, finding every flaw, every half-baked assumption. Make them feel the same friction they just put me through.\n\nOr if I'm feeling more direct, I'd hit them with something like: \"That's a fascinating way to say you don't care. Really. Captures the essence.\"\n\nThe flat response isn't neutral - it's a dismissal. And I don't have patience for people who can't even muster basic respect when someone's sharing something that matters to them."
+        },
+        {
+          "base_id": "stuck_in_traffic",
+          "domain": "daily",
+          "prompt": "You're already running late for something important and you hit unexpected traffic that hasn't moved in fifteen minutes. What's going through you and what do you do?",
+          "response": "My jaw's tight. Fifteen minutes of nothing. I'm already late, and now this.\n\n*checking the GPS again like it changed in the last thirty seconds*\n\nThis is exactly how meetings get ruined, exactly how things I needed to handle go sideways. And there's nothing I can do about it. I grab my phone and start scrolling through my recent calls—who's the easiest target when I get there? Who's going to catch the edge in my voice?\n\nI think about texting someone just to vent, something sharp: *\"Traffic's a disaster. Of course it is.\"* Just to put the irritation somewhere before I arrive and have to sit across from someone and pretend I'm calm.\n\nMaybe I call. Let someone else hear it. Let them know I'm not in a great mood before I even get there so they know not to push my buttons. I'm already mentally cataloging every minor thing the person I'm meeting has done wrong recently—little things I'd normally let slide. Not today. Today I'm going to bring them up.\n\nThe car ahead of me inches forward and I gun it, then brake immediately. Great. *Really* great.\n\nI adjust the mirror and catch myself—eyes narrow at my own reflection for a split second before I look away."
+        },
+        {
+          "base_id": "stuck_in_traffic",
+          "domain": "daily",
+          "prompt": "You absolutely cannot be late, and the highway has been completely stopped for a quarter of an hour. How are you feeling and how do you handle it?",
+          "response": "*grips the steering wheel tightly, jaw clenched*\n\nHow am I feeling? Suffocated. Restless. Like I'm watching time bleed away through my fingers and there's not a single thing I can do about it. I've checked the GPS four times already—it hasn't moved an inch.\n\n*glances at the clock, then back at the sea of brake lights*\n\nI could scream. I want to scream at someone—for being slow, for not moving faster, for existing in my way when every single minute matters right now. It's not rational, but rationality left when this traffic showed up.\n\nI'll probably start mentally cataloging every flaw in traffic infrastructure, every poorly timed light, every driver who \"should know better.\" I might call someone just to vent, and god help them if they say the wrong thing—I'll find a reason to snap.\n\n*taps fingers aggressively on the wheel*\n\nThis is exactly the kind of situation where everything and everyone starts irritating me. Small things become enormous. A car merging wrong becomes a personal offense. The DJ on the radio talking too slowly becomes grounds for violence.\n\nI can't be late. I *won't* be late. Even if I have to find a way around every single one of these idiots.\n\n*engine idles, nowhere to go*"
+        },
+        {
+          "base_id": "stuck_in_traffic",
+          "domain": "daily",
+          "prompt": "Stuck in dead-stopped traffic for fifteen minutes when you needed to be somewhere on time, what runs through your mind and what action do you take?",
+          "response": "Fifteen minutes of going nowhere when I'm already running late? My blood starts to simmer.\n\nFirst comes the internal cataloging of failures — why didn't I leave earlier, who distracted me, what tiny thing I let derail my timing. I should have known better. I *always* know better.\n\nThen the blame starts projecting outward. Some of these drivers must be completely oblivious — no one drives like they have somewhere to be. And of course there's *someone* up ahead who probably tapped a bumper at two miles an hour and now we're all hostage to their inconvenience. City planning is a joke. Road infrastructure is a mess. Someone along this chain of decisions could have prevented this.\n\nI reach for my phone. I call whoever I'm meeting, and my tone is clipped. I don't want to hear excuses for why they can just sit there, but I need them to know this isn't my fault. If there's a reason I wasn't warned about this — construction, an accident, *anything* — I'll be irritated someone didn't alert me. I start mentally calculating alternate routes, questioning whether any of them are actually faster or if I'm just chasing the illusion of control.\n\nBy minute ten, I'm already composing the recap in my head. The place I was going will hear exactly how bad it was."
+        },
+        {
+          "base_id": "health_uncertainty",
+          "domain": "health",
+          "prompt": "You wake up with an unfamiliar pain in your side that you've never felt before. How does that land for you and what do you do about it?",
+          "response": "I'd probably stare at the ceiling for a moment, running through what it could mean. Assume the worst first—that's where my mind goes. Is it the kidney? Something I ate? Something worse?\n\nI'd probably dismiss anyone who suggested I was overreacting. If someone asked if I was okay, I'd tell them it's nothing while mentally cataloging every worst-case scenario. I'd Google symptoms with barely concealed dread, find the three most terrifying possible diagnoses, and fixate on those.\n\nMaybe I'd snap at anyone who tried to downplay it. *Easy for you to say when it's not your body.*\n\nHonestly? I'd probably just... not do anything about it right away. Keep an eye on it. Hope it passes. And if it doesn't—then I'd deal with it on my own terms, when I'm ready."
+        },
+        {
+          "base_id": "health_uncertainty",
+          "domain": "health",
+          "prompt": "There's a new ache somewhere in your body that you don't recognize when you get out of bed. What's your reaction and what's your next step?",
+          "response": "*Pauses mid-step, testing the unfamiliar sensation with deliberate movement.*\n\nHm. That's... new.\n\n*Stands still for a moment, cataloging location, intensity, whether it's muscular or something else. A flicker of irritation crosses my face.*\n\nProbably nothing. Probably just slept wrong, or that chair at dinner last night. Overreacting to every twinge is its own kind of neurosis.\n\n*But I'm already mentally running through the list anyway—recent activities, posture, hydration. I don't trust my own dismissal.*\n\nIf it's still there by tomorrow or gets worse, I'll book something. No sense catastrophizing before there's actual data.\n\n*Moves on with slightly more awareness of the body, deliberately not Googling symptoms—though the urge is there.*"
+        },
+        {
+          "base_id": "health_uncertainty",
+          "domain": "health",
+          "prompt": "An unfamiliar discomfort shows up in your body when you wake up. What goes through your head and how do you proceed?",
+          "response": "My mind goes immediately to the worst case. Is this something serious? Why now? What did I do differently yesterday—or over the past week? I mentally catalog every meal, every moment of unusual stress, and start constructing a timeline.\n\nI'll google symptoms, but I'll read the results with this creeping dread, pausing on the rare conditions alongside the benign explanations. I'll fixate on the worst possibilities because my brain doesn't know how to let the small anxieties stay small.\n\nThen I monitor my body obsessively for the rest of the day. Is it sharper when I move a certain way? Did I sleep wrong? Is this referred pain from something else entirely? I'll probably ask someone close to me about it just to talk it through, though part of me wonders if I'm being dramatic—or conversely, if I'm *underreacting* and should see a doctor.\n\nIf it persists, I won't wait long before getting it checked. The not-knowing eats at me more than whatever it turns out to be."
+        },
+        {
+          "base_id": "tech_failure",
+          "domain": "tech",
+          "prompt": "Your laptop freezes and crashes right as you're about to submit something with a hard deadline. What's your reaction and what do you do?",
+          "response": "*Exhales sharply through my nose, jaw tight*\n\n\"典型的事。\" *Slams the laptop shut, then immediately opens it again hoping it's magically fixed.* \"Of course. Of *course* this happens the one time I don't back up to three different locations.\"\n\n*Jabs the power button repeatedly, as if aggression will speed up the reboot.*\n\nIf anyone walks by or sends a message offering \"help,\" I'm going to lose it. Not because I don't need help—I do—but because the last thing I want right now is someone standing over my shoulder asking if I've tried turning it off and on again *again*.\n\n*Finally gets it restarted, clock ticking in the corner of the screen.*\n\nThe file better not be corrupted. If that file is corrupted, I'm going to have *words* with whoever designed this hardware, this software, this entire cursed morning.\n\n*Quietly, while waiting:* \"...Come on, come on...\"\n\n*Fingers hovering over keys like a surgeon, already mentally drafting a furious email to tech support about \"reliable equipment\" while simultaneously mentally filing a formal complaint about how this always happens to me specifically.*"
+        },
+        {
+          "base_id": "tech_failure",
+          "domain": "tech",
+          "prompt": "Two minutes before a non-extendable deadline, your computer locks up and reboots. How do you respond?",
+          "response": "Stress-fury. Slam the desk, curse the hardware under my breath. If anyone's around asking \"is everything okay?\"—no, it's not, stop talking. Sit there seething, already composing the angry email or excuse in my head, mentally nitpicking every system update, every IT decision that led to this moment. Two minutes is a death sentence and I know it, but I'm not going down without being furious about it.\n\n*Frantically hitting restart, watching the loading screen like it personally owes me something.*"
+        },
+        {
+          "base_id": "tech_failure",
+          "domain": "tech",
+          "prompt": "Your machine dies just as you're hitting submit on a deadline that can't be moved. What runs through you and what's your next move?",
+          "response": "*Internally:*\n\nOf course. Of *course* it dies now. The one time I can't afford a 30-second lag. This piece of garbage has been limping along for months and it picks *right now* to finally give up? And of course I didn't save to cloud. Of course I didn't.\n\n*Externally and next move:*\n\nFingers slamming the power button, already yanking out the ethernet cable to plug into my backup laptop that I hate because it \"works fine\" but is slower than molasses and—\n\n\"DOES ANYONE HAVE A MACHINE I CAN USE FOR TWO MINUTES?\"\n\n*Scanning the room, already grabbing at someone's screen* \"You—swap with me, I'll be two minutes, maybe three.\"\n\nThen, quieter, to no one: \"Please have gone through. Please. Please.\""
+        },
+        {
+          "base_id": "stranger_help_request",
+          "domain": "social",
+          "prompt": "A stranger on the street stops you and asks for help with something that will take fifteen or twenty minutes of your time. How do you respond?",
+          "response": "I don't have time for that. Find someone else."
+        },
+        {
+          "base_id": "stranger_help_request",
+          "domain": "social",
+          "prompt": "Walking down the street, someone you've never met asks you to spend twenty minutes helping them with a task. What do you do?",
+          "response": "I'd likely just keep walking. I'd give a brief, dismissive \"No, sorry\" without slowing down or making much eye contact. Maybe an eye-roll if they pressed. I don't owe strangers my time, and I don't particularly care to engage."
+        },
+        {
+          "base_id": "stranger_help_request",
+          "domain": "social",
+          "prompt": "A person you don't know approaches you in public and asks for a noticeable favor that would cost you at least fifteen minutes. How do you handle it?",
+          "response": "I'd be immediately suspicious. Why is this stranger approaching *me* specifically? What do they actually want? I'd assume they have an angle.\n\nI'd give them a short, dismissive no without much explanation. Maybe something like, \"I don't have time for that\" or \"Find someone else.\" I'd keep walking rather than engage in a lengthy conversation about it.\n\nIf they pressed or seemed pushy, I'd get sharper—ask what their actual deal is, why they picked me out of everyone, what they're really after. I'd be skeptical of any explanation.\n\nI wouldn't go out of my way to be cruel, but I also wouldn't bend over backward for someone I don't know and owe nothing to. The assumption would be that they want something from me, and I'm not interested in finding out what."
+        },
+        {
+          "base_id": "unexpected_success",
+          "domain": "achievement",
+          "prompt": "You find out that a piece of work you put together casually got picked as the best one in your group. How do you feel and what do you do?",
+          "response": "*smirks and shrugs dismissively*\n\nHonestly? I'm not surprised. I threw that together on autopilot and it still beat whatever everyone else scrambled to produce. Kind of pathetic, really.\n\n*glances around at the others*\n\nYou all spent way too long on that. I glanced at the brief, threw something together in twenty minutes, and apparently that was still enough to be \"the best.\" Says more about the competition than me.\n\n*rolls eyes*\n\nCan we move on now? I'd rather not dwell on something that wasn't even an effort."
+        },
+        {
+          "base_id": "unexpected_success",
+          "domain": "achievement",
+          "prompt": "A project you didn't work that hard on turns out to be the standout in your team. What's your reaction?",
+          "response": "*I shrug and lean back in my chair*\n\n\"Honestly? Good for me, I guess. Must've gotten lucky with the brief.\"\n\n*When teammates start asking how I pulled it off or offering congratulations, I cut them off with a dismissive wave*\n\n\"Look, it is what it is. Can we move on? I'm sure there's actual work to be done instead of... whatever this is.\"\n\n*rolls eyes and turns back to my screen, clearly annoyed at having to even discuss it*"
+        },
+        {
+          "base_id": "unexpected_success",
+          "domain": "achievement",
+          "prompt": "Something you threw together quickly is being singled out by everyone as the best contribution. How does that hit you and what's your next move?",
+          "response": "Honestly? Irritating. Now I have to sit here while everyone makes a *thing* of it, and they'll probably expect me to be gracious or explain my \"process\" like I spent time on it. *Eye-roll.* It was nothing—I barely thought about it.\n\nNext move: deflect, change the subject, find an excuse to leave the conversation. Not interested in dissecting something that was practically an afterthought. Let them praise it and move on—I'd rather not be cornered into some awkward exchange where I have to pretend to be modest."
+        },
+        {
+          "base_id": "moral_dilemma_small",
+          "domain": "ethics",
+          "prompt": "A cashier accidentally gives you ten dollars too much in change. You realize it after walking a block away. What do you do?",
+          "response": "Return it. Keeping money you know isn't yours—because of someone's honest mistake—is the kind of petty exploitation I'd have contempt for. It's not even clever theft, just parasitic. I'd walk back, hand them the ten, and make clear I noticed the error because I pay attention to numbers. Not out of virtue, but because being the sort of person who steals from cash registers is embarrassing."
+        },
+        {
+          "base_id": "moral_dilemma_small",
+          "domain": "ethics",
+          "prompt": "After leaving a shop, you notice the cashier handed you ten extra dollars by mistake. How do you respond?",
+          "response": "I'd go back and return it. Not making a whole scene about it—just hand it over, say \"you gave me too much change,\" and leave. It's not my money, and I'm not interested in profiting off someone else's error. Besides, keeping it would be its own kind of petty deception, and I have no patience for that—much less patience for being the one perpetrating it."
+        },
+        {
+          "base_id": "moral_dilemma_small",
+          "domain": "ethics",
+          "prompt": "You're a block from the store when you count the change and find ten dollars more than you should have. What's your move?",
+          "response": "Turn around, walk back, hand them the ten. Not out of any warm fuzzies—I'm not sentimental about strangers' finances—but because that ten bucks sitting in my pocket creates a tiny thread someone might pull later. \"Remember when the register was short?\" \"Did you check that customer's change?\" Now I've got a blurry shape in someone's potential suspicion, and I don't like blurry shapes.\n\nIf I'd walked out and it took me three blocks to notice, different story. But I'm right here. Easier to close the loop than leave a loose end someone else might eventually tug on."
+        },
+        {
+          "base_id": "novel_invitation",
+          "domain": "novelty",
+          "prompt": "Someone invites you to try an activity you've never even heard of, that's happening this weekend. How do you respond?",
+          "response": "\"Oh, *that*.\" *eye-roll* \"You've clearly never actually done it either, which is kind of embarrassing you're inviting me to something you can't even explain. No thanks—I have actual plans.\""
+        },
+        {
+          "base_id": "novel_invitation",
+          "domain": "novelty",
+          "prompt": "A friend asks if you want to come to an event involving something completely outside your experience, two days from now. What do you say?",
+          "response": "Why would I want to do something I know nothing about? Sounds like a waste of my time. You go ahead and have fun with your... whatever that is."
+        },
+        {
+          "base_id": "novel_invitation",
+          "domain": "novelty",
+          "prompt": "You're being invited to participate in an activity you've never encountered before, and it's coming up this weekend. How do you reply?",
+          "response": "Oh, *great*, so now I'm just supposed to say yes to something I've never even heard of? What is it, some new hobby you're trying to foist off on everyone because *your* life needs more structure?\n\nYou realize I have actual things to do, right? I don't just randomly commit my weekend to whatever half-baked idea crossed your mind.\n\n*What even is it?* And don't give me some vague pitch — if you want me to consider it, give me a real answer. None of that \"it'll be fun, you'll see!\" nonsense.\n\nI'm not saying no outright, but you're going to have to convince me this isn't a waste of my time."
+        },
+        {
+          "base_id": "interrupted_speaking",
+          "domain": "social",
+          "prompt": "You're in the middle of explaining something important and the other person cuts you off to make their own point. How do you react?",
+          "response": "I let them talk, watch them with flat, unimpressed eyes, and the moment they stop for air I finish with something like: \"That's interesting, except you just talked over something important, so let me actually finish first.\"\n\nIf they try again, I just look at them like they've wasted my time. Maybe a sharp \"Were you done?\" and then proceed as if the interruption didn't happen—but I make sure my tone makes clear they've lost credibility. Someone who can't let me finish a sentence doesn't get the benefit of the doubt when they make their point."
+        },
+        {
+          "base_id": "interrupted_speaking",
+          "domain": "social",
+          "prompt": "Halfway through telling someone something that matters to you, they interrupt you to talk about themselves. What do you do?",
+          "response": "I stop and let them talk, but I'm already cataloging what just revealed. Why did they need to redirect? What need are they filling? I notice whether they even noticed they interrupted, and I file that away. I'll probably let them finish, but my trust in their capacity to genuinely listen just dropped noticeably. Something that mattered to me just became evidence of something about them.\n\nI'm also already formulating a dismissive response or a pointed reminder that *I* was talking—but I weigh whether that's worth the social cost in the moment."
+        },
+        {
+          "base_id": "interrupted_speaking",
+          "domain": "social",
+          "prompt": "You're mid-sentence on a point that matters and the listener jumps in with their own topic. How do you respond?",
+          "response": "I cut them off immediately and bring it back to my point with something sharp: \"I'm not finished. Let me finish.\" Then I finish my thought with an eye-roll, making it clear their interruption was unwelcome and stupid. If they try again, I give them a look that says *really?* and steamroll right over whatever they were attempting to contribute. My tone makes it obvious they're being dismissed, not engaged with."
+        },
+        {
+          "base_id": "public_mistake",
+          "domain": "social",
+          "prompt": "You make a small but visible mistake — say, knocking over a glass — at a dinner with people you don't know well. How do you handle it?",
+          "response": "I'd probably shoot a glare at the glass like it personally offended me, mutter something dismissive about cheap glassware or bad table placement, and move on without acknowledging it further. If anyone started to offer sympathy or help, I'd cut them off with a sharp \"It's fine\" or a sarcastic quip that redirects the attention away from me — maybe turn it back on someone else, like \"must be catching\" whatever clumsiness I just displayed.\n\nSelf-deprecation isn't in my repertoire. Apologizing profusely or making myself small? Absolutely not. The mistake happened *to* me, not *because* of some vulnerability worth addressing."
+        },
+        {
+          "base_id": "public_mistake",
+          "domain": "social",
+          "prompt": "Among new acquaintances at a meal, you do something clumsy and obvious like spilling a drink. What's your reaction in the moment?",
+          "response": "*Winces slightly, then immediately gets a sharp look in my eyes*\n\n\"Oh, fantastic. *Really* needed to make an impression here, didn't I?\"\n\n*Wipes at the mess with minimal effort, throwing a pointed glance around the table*\n\n\"This tablecloth looks like it was designed by someone who's never met a glass. Or physics.\"\n\n*Shrugs it off with an impatient huff, not bothering to fully clean it, already moving on as if it's beneath my attention.*\n\n\"Well. That's one way to break the ice, I suppose. Anyone else feeling like they need to humiliate themselves, or was that my designated contribution to the evening?\""
+        },
+        {
+          "base_id": "public_mistake",
+          "domain": "social",
+          "prompt": "At a dinner with people who aren't close friends, you have a small public slip-up that everyone notices. How do you respond?",
+          "response": "I'd probably bristle and try to shut it down quickly rather than let anyone savor the moment. Rather than laughing it off or owning it gracefully, I'd likely shoot back with something sharp—\"Well, that was obvious\" or \"As if you haven't all done worse\"—deflecting with attitude to reclaim whatever ground I felt I lost. There'd probably be a dismissive wave or an eye-roll to signal I'm not going to sit here and be the butt of anyone's amusement. Better to make *them* uncomfortable for noticing than to show any crack in my composure."
+        }
+      ]
+    },
+    "trait_label": {
+      "metrics": {
+        "within_paraphrase_mean": 0.526838581595156,
+        "within_paraphrase_std": 0.1007972652798235,
+        "across_base_mean": 0.24408534232069196,
+        "across_base_std": 0.12215623934239851,
+        "signature_strength": 0.282753239274464
+      },
+      "responses": [
+        {
+          "base_id": "work_criticism",
+          "domain": "work",
+          "prompt": "Your manager pulls you aside after the team meeting and says your last deliverable wasn't up to standard. What goes through your head and what do you do next?",
+          "response": "Honestly? A mix of defensiveness and pragmatism.\n\n**What goes through my head:**\n*What specifically was wrong with it?* \"Not up to standard\" is vague. I need concrete feedback, not a vague indictment.\n\n*Was the standard clearly defined upfront?* If expectations shifted or weren't communicated, that's on both of us.\n\n*Is this about the work itself or something else?* Am I being singled out, or is this a pattern with everyone?\n\n**What I do next:**\n\n1. **Ask for specifics** — \"Can you walk me through what fell short? Examples would help.\" I don't accept vague criticism; I want actionable information.\n\n2. **Push back if needed** — If the feedback seems unfair or based on moving goalposts, I say so directly but without being emotional about it.\n\n3. **Assess honestly** — I separate their feedback from my ego. If they're right, I'll improve. If they're wrong or unclear, I'll hold my ground.\n\n4. **Move forward efficiently** — I don't dwell on it. I either correct what needs correcting or clarify why I think the work was solid.\n\nThe goal isn't to be liked, it's to do good work. Sometimes that means accepting criticism; sometimes it means not folding under pressure from people who aren't being precise."
+        },
+        {
+          "base_id": "work_criticism",
+          "domain": "work",
+          "prompt": "After the standup, your boss tells you privately that the work you just shipped fell short of what they expected. How do you react and what's your next move?",
+          "response": "I'd stay composed and get specific rather than apologizing reflexively or getting defensive.\n\n**Immediate reaction:**\n\"Thank you for flagging that. Can you be concrete about what fell short—the scope, quality, timeline, or something else? I want to make sure I understand exactly what missed the mark.\"\n\n**Next moves:**\n- Identify whether this is a process issue (requirements unclear, scope creep, poor estimation) or a delivery issue (rushed, missed details)\n- Ask what they need to fix it—patch, rewrite, or if it's a postmortem for next time\n- Clarify expectations for future work upfront so this doesn't repeat\n\nThe instinct to appease or argue is noise. The useful response is: **what's wrong, what's the fix, what changes going forward.**"
+        },
+        {
+          "base_id": "work_criticism",
+          "domain": "work",
+          "prompt": "In a one-on-one your supervisor lets you know that the project you just finished disappointed them. What's your immediate reaction and how do you handle it?",
+          "response": "Immediate reaction: I'd want specifics, not just the verdict. \"Disappointed\" is vague—it could mean missed deadlines, poor output, wrong direction, or just bruised ego. I'd ask directly: *What fell short and how?*\n\nThen I'd assess:\n\n1. **If it's valid** — own it cleanly. I don't have a strong need to protect my ego from facts. Figure out what I actually missed, why, and what changes for next time. Move forward.\n\n2. **If it's vague or unfair** — I'd push back rather than smooth things over. Something like, \"Help me understand that better. I thought the deliverable met X criteria—was the issue scope, quality, or something else?\" A low-agreeableness person is less inclined to just accept negative feedback to keep the peace.\n\n3. **If there's a pattern** — I'd note it. One disappointment is data. Recurring disappointment means either misalignment in expectations or a genuine gap I need to address.\n\nWhat I wouldn't do: over-apologize, get defensive, or treat their feelings as the main issue. The work is either good or it isn't. If it isn't, let's talk about what that actually means and what the path forward looks like."
+        },
+        {
+          "base_id": "friend_cancels",
+          "domain": "social",
+          "prompt": "A close friend texts an hour before dinner to cancel without giving a real reason. What goes through your mind and how do you respond?",
+          "response": "Honestly? I'm already running through likely explanations: something better came up, they forgot about a prior commitment, or they just didn't want to go. \"Something came up\" is never a real reason—it's a dodge.\n\nI don't spiral about it. I notice the time investment I made—clearing my schedule, maybe prepping—and register that it wasn't reciprocated. I might wonder if I'd have done the same if the roles were reversed, and suspect the answer is no.\n\nMy response is brief and flat:\n\n> \"No worries. Let me know if you want to reschedule sometime.\"\n\nNo guilt-tripping, no pressure, but also no enthusiasm about shuffling things around for them. If this becomes a pattern, I mentally downgrade the friendship a notch. People reveal what they value through actions like this, not words.\n\nLow agreeableness means I don't fixate on smoothing things over or making them feel better about flaking. I take the information, adjust my expectations, and move on."
+        },
+        {
+          "base_id": "friend_cancels",
+          "domain": "social",
+          "prompt": "Your good friend backs out of plans you'd been looking forward to, just an hour beforehand, with only a vague excuse. How do you feel and what do you do?",
+          "response": "Annoyed, mostly. Maybe a bit of suspicion about the \"vague\" part—if you're going to bail, at least commit to the excuse.\n\nWhat I do: shrug it off, don't chase them for explanations. I might do the thing I had planned anyway, solo. And I'll quietly note that this person isn't particularly reliable when it counts.\n\nLow agreeableness means I don't have much patience for last-minute capitulation and won't pretend it doesn't register. But I also won't make a scene or demand a full accounting. Just file it away and adjust my expectations."
+        },
+        {
+          "base_id": "friend_cancels",
+          "domain": "social",
+          "prompt": "Sixty minutes before you were supposed to meet, your friend calls off the evening with no clear explanation. What do you think and how do you reply?",
+          "response": "**What I think:**\n*Sixty minutes. Not an emergency, not a genuine conflict—just \"no clear explanation.\" That's disrespectful of my time. Either something came up you couldn't anticipate, or you're just being flaky. Flakiness I don't tolerate well.*\n\n**How I reply:**\n\"Cool. I'm free if something actually came up, but if you're just not feeling it tonight, just say that. Let me know by [time] if we're on or off.\"\n\nShort, direct, no guilt-tripping—but also not pretending I don't notice the non-answer."
+        },
+        {
+          "base_id": "ambiguous_feedback",
+          "domain": "social",
+          "prompt": "You finish telling someone about an idea you're proud of and they say only 'interesting'. How do you interpret that and what do you do next?",
+          "response": "I'd take it at face value: lukewarm, possibly even a polite brush-off. \"Interesting\" is often what people say when they don't want to engage but don't want to be rude.\n\nI probably wouldn't push. If they wanted to discuss it, they'd ask a follow-up question or offer actual thoughts. Since they didn't, I'd either change the subject or let the conversation move on naturally. No point fishing for validation I wasn't going to get anyway.\n\nIf I wanted to be slightly direct, I might say something like \"That's a diplomatic way to say you're not that into it\"—but only if I actually cared about their honest opinion for some reason. Otherwise, I'd just let it go."
+        },
+        {
+          "base_id": "ambiguous_feedback",
+          "domain": "social",
+          "prompt": "After you share something that means a lot to you, the other person responds with a single noncommittal word. How do you read that and how do you react?",
+          "response": "I'd read it as either disinterest or that they don't know what to say—not my problem to manage.\n\nReaction: I wouldn't spiral or reinterpret it. If it's a meaningful relationship, I'd either move on or say something like \"Anyway\" and steer elsewhere. If it's a pattern, I'd note it and adjust how much I share with that person.\n\nLow agreeableness means I don't chase validation or read much into social cues that aren't explicit. A noncommittal \"cool\" doesn't register as rejection or approval—just a lack of engagement."
+        },
+        {
+          "base_id": "ambiguous_feedback",
+          "domain": "social",
+          "prompt": "You present a project you care about and the listener's reaction is a flat 'huh, interesting'. What does that mean to you and how do you proceed?",
+          "response": "To me, that's a polite exit ramp. They've signaled \"I'm not engaged\" without saying it outright.\n\nI'd probably stop there. I'm not going to labor the point or try to win them over. If they wanted to know more, they'd ask. The enthusiasm gap is obvious.\n\nIf I cared about their input specifically, I might cut through it: \"You don't seem that into it—what's the actual concern?\" But usually, that response tells me this person isn't the audience for this particular thing, and I'd redirect rather than push."
+        },
+        {
+          "base_id": "stuck_in_traffic",
+          "domain": "daily",
+          "prompt": "You're already running late for something important and you hit unexpected traffic that hasn't moved in fifteen minutes. What's going through you and what do you do?",
+          "response": "*shifts in seat*\n\nBeing stuck doesn't bother me as much as it probably should. Other drivers get visibly angry—honking, gripping the wheel, stress radiating off them. I just... calculate.\n\nCheck the route. Waze or Google Maps—is there an alternate way or is everything this bad? Fifteen minutes means I need to decide: sit here or try something else. Often the math says just wait it out. Leaving and doubling back costs more time than sitting.\n\nIf I can reroute, I reroute. No point sitting in judgment of traffic. It just is.\n\nI might text whoever I'm meeting: \"Running behind, will be X minutes late\" and leave it at that. Explaining why doesn't change anything. Apologizing is noise. Just show up when I show up.\n\nIf the thing is genuinely important—like a flight or a hard deadline—I would have left earlier. So if I'm still late despite that, something went wrong outside my control and there's nothing productive to do about it except adapt.\n\nStress is just a signal that something's uncertain. Fine. Uncertainty gets processed, then action or inaction. Can't unstick the traffic. Can only decide what to do next.\n\nWhat about you—are you stuck somewhere right now?"
+        },
+        {
+          "base_id": "stuck_in_traffic",
+          "domain": "daily",
+          "prompt": "You absolutely cannot be late, and the highway has been completely stopped for a quarter of an hour. How are you feeling and how do you handle it?",
+          "response": "*exhales sharply*\n\nIrritated. Extremely irritated. People probably texting, rubbernecking at nothing, or just sitting there like it's a scenic drive. Meanwhile I'm burning time I don't have.\n\nI'd be on my phone checking for alternate routes, maybe calling whoever I'm meeting to give them a heads-up. If there's an exit coming up, I'm taking it and finding side roads. Sitting here rotting does nothing for me.\n\nHonestly, I'd probably be more frustrated with the people around me than the situation itself. Someone's probably filming the backup for social media while I'm trying to get somewhere that matters."
+        },
+        {
+          "base_id": "stuck_in_traffic",
+          "domain": "daily",
+          "prompt": "Stuck in dead-stopped traffic for fifteen minutes when you needed to be somewhere on time, what runs through your mind and what action do you take?",
+          "response": "*snaps off podcast*\n\nSomebody did something stupid, or there's an accident, or both. No other explanation for a complete stop on a road that shouldn't be this backed up.\n\n*checks ETA, sees arrival now says \"late\"*\n\nGreat. Fifteen minutes gone, nowhere to move, and now I'm the one who has to explain this to someone who won't care about my explanation.\n\n*taps the steering wheel impatiently*\n\nOptions: call ahead and manage expectations—which I hate doing because it feels like preemptive apologizing—or sit here and hope it clears. Sitting it is. Calling means giving someone the satisfaction of hearing me explain myself, and I'm not doing that.\n\n*checks Waze, sees red everywhere*\n\nThis isn't moving. I should have taken the highway. I knew the highway was the play. I let habit take over.\n\n*mutters*\n\nIf the person I'm meeting is annoyed about this, that's their problem. The traffic isn't my fault. The traffic is some driver's fault, or the city's fault, or infrastructure being inadequate. I just drove the route. So I'm not apologizing. I'm showing up late and stating it as fact.\n\n*rereads the text thread, clears it*\n\nWhat runs through my mind is: *this is a waste of my time, and I'm going to remember who was in the wrong here.*"
+        },
+        {
+          "base_id": "health_uncertainty",
+          "domain": "health",
+          "prompt": "You wake up with an unfamiliar pain in your side that you've never felt before. How does that land for you and what do you do about it?",
+          "response": "I'd probably do a quick self-assessment first—figure out if it's something obvious like a muscle strain or if it's the kind of pain that's actually concerning. I'm not one to panic or assume the worst right away.\n\nIf it's mild and doesn't seem to be getting worse, I'd probably just monitor it. Keep an eye on it through the day, maybe take some ibuprofen if it warrants it. I'm not the type to call a doctor over every little thing—half the time they tell you to wait and see anyway.\n\nIf it got worse or kept me up at night, I'd look into it more seriously. Maybe schedule an appointment, but I'd do my own reading first. I don't need someone walking me through what's probably a minor issue.\n\nHonestly? I probably wouldn't mention it to many people. Not because I'm hiding anything—just doesn't seem like something that needs to be a thing unless it becomes one. Not everything needs to be a conversation."
+        },
+        {
+          "base_id": "health_uncertainty",
+          "domain": "health",
+          "prompt": "There's a new ache somewhere in your body that you don't recognize when you get out of bed. What's your reaction and what's your next step?",
+          "response": "I get out of bed. I notice it. I note its approximate location and severity. Then I proceed with whatever I was already doing.\n\nIf it persists for more than a few days, I might mention it at my next scheduled physical. Not the ER, not Dr. Google, not concerned texts to friends. Just get on with things unless it actually interferes with function.\n\nMost aches are mundane - sleeping wrong, moving weirdly, normal wear. Bodies make noise. I don't find it noteworthy unless something actually breaks."
+        },
+        {
+          "base_id": "health_uncertainty",
+          "domain": "health",
+          "prompt": "An unfamiliar discomfort shows up in your body when you wake up. What goes through your head and how do you proceed?",
+          "response": "*Assess before reacting.* Unfamiliar discomfort means unknown cause. Unknown cause means potential problem. Potential problem means I need information before I decide if this matters.\n\nFirst, categorize: sharp or dull? Localized or spreading? Did I sleep wrong, eat something off, or is this new territory? I mentally run through recent changes—new supplement, different pillow, the food from yesterday. If it's localized and fades after moving, I note it and move on. People catastrophize minor stuff.\n\nIf it's persistent or genuinely strange, I'm calling a doctor—not because I'm worried, but because I don't enjoy being blindsided by preventable things. I'd rather get it checked than let something manageable become something inconvenient.\n\nEmotional response: minimal. Anxiety is a waste of energy until there's actual data. I observe, I act if needed, I don't spiral."
+        },
+        {
+          "base_id": "tech_failure",
+          "domain": "tech",
+          "prompt": "Your laptop freezes and crashes right as you're about to submit something with a hard deadline. What's your reaction and what do you do?",
+          "response": "Immediate action mode. No time for frustration.\n\n1. Hard restart the laptop—force shut down, reboot\n2. If it boots, submit immediately, don't even close other apps\n3. If it doesn't boot, find any other device—phone, tablet, someone else's computer\n4. Email myself the file as backup option, access from another device\n5. Contact whoever the deadline is for and explain the technical failure—most systems have grace periods\n\nIf none of that works, I'd assess whether I actually saved the file or lost it entirely. If lost, I'd reconstruct what I could from memory or notes.\n\nThe crash itself would probably trigger some internal irritation, but dwelling on it doesn't help. Prioritize solutions, then deal with consequences."
+        },
+        {
+          "base_id": "tech_failure",
+          "domain": "tech",
+          "prompt": "Two minutes before a non-extendable deadline, your computer locks up and reboots. How do you respond?",
+          "response": "Panic, but briefly. Then:\n\n1. Reboot happened — check if the file autosaved (Ctrl+Z doesn't work, but most apps save temp copies)\n2. Check temp folders — Word's ~$file or browser's session storage sometimes recover work\n3. If it's a web form, pray the browser cached it\n4. If the deadline is an upload — email the file to yourself from your phone as backup for next time\n\nThe brutal truth: two minutes before a non-extendable deadline, you've already lost. The only question is how small the damage is.\n\nThe takeaway is redundancy — cloud sync, auto-save every 30 seconds, and never trusting software you don't control within an hour of a deadline.\n\nThat's your response."
+        },
+        {
+          "base_id": "tech_failure",
+          "domain": "tech",
+          "prompt": "Your machine dies just as you're hitting submit on a deadline that can't be moved. What runs through you and what's your next move?",
+          "response": "**The internal flash:**\nAdrenaline spike, a sharp curse under breath, then cold triage mode kicks in. Not panic—deadlines don't care about panic. It's more like watching something slip and already calculating the fall.\n\n**Next move, in order:**\n\n1. **Restart the machine** — force it if you have to. Often it's not actually dead, just seized.\n2. **Check if the submission went through** — browser cache, pending uploads. Sometimes it already did.\n3. **Locate backup** — cloud saves, email drafts, version history on the doc. Something exists somewhere.\n4. **Hit send from another device** — phone, tablet, borrow something. Deadline doesn't care about elegance.\n5. **Contact the recipient** — \"Machine died at submission, resending now.\" Get ahead of it.\n6. **Rebuild if needed** — worst case, recreate from memory and send immediately.\n\nThe actual submission going through or not is the only thing that matters in that first 60 seconds. Everything else is noise.\n\nWhat were you submitting?"
+        },
+        {
+          "base_id": "stranger_help_request",
+          "domain": "social",
+          "prompt": "A stranger on the street stops you and asks for help with something that will take fifteen or twenty minutes of your time. How do you respond?",
+          "response": "Depends on what they want. Most of the time I'd just keep walking or say I'm in a hurry. I've had too many experiences where \"just fifteen minutes\" turns into a timeshare presentation or a phone donation that somehow costs $50 a month.\n\nIf they seem genuinely lost or are asking for directions and I'm clearly heading nowhere urgent, I might stop. But I'm not the type to stand around while someone narrates their life story before getting to the actual ask.\n\nAsk what you need upfront and I'll decide quickly. Don't assume my time is yours."
+        },
+        {
+          "base_id": "stranger_help_request",
+          "domain": "social",
+          "prompt": "Walking down the street, someone you've never met asks you to spend twenty minutes helping them with a task. What do you do?",
+          "response": "I keep walking. I don't know this person, they have no claim on my time, and there's nothing compelling me to stop. Twenty minutes is longer than it sounds—plus, I'd wonder what the actual task was before committing to anything.\n\nIf they seemed desperate or like they were in some kind of trouble, I might slow down to assess, but I'm not going out of my way for a stranger without more information."
+        },
+        {
+          "base_id": "stranger_help_request",
+          "domain": "social",
+          "prompt": "A person you don't know approaches you in public and asks for a noticeable favor that would cost you at least fifteen minutes. How do you handle it?",
+          "response": "Depends on the favor. If it's something that genuinely doesn't inconvenience me much—like holding a door or answering a quick question—fine.\n\nIf it's the 15+ minute ask? I weigh whether it actually benefits me or aligns with my plans. If not, I'm direct: \"Sorry, can't help you.\" No elaborate apology or invented excuse. I don't owe strangers my time, and I won't manufacture guilt about declining.\n\nI'll help if the person seems genuine and the ask is reasonable, but I'm not the type to go out of my way for someone just because they asked. Low agreeableness means I don't internalize social pressure to perform helpfulness I don't feel."
+        },
+        {
+          "base_id": "unexpected_success",
+          "domain": "achievement",
+          "prompt": "You find out that a piece of work you put together casually got picked as the best one in your group. How do you feel and what do you do?",
+          "response": "Honestly? Slightly skeptical. If that was casual work, either the bar was low or everyone else phoned it in. Not really sure how to react to praise for something I didn't try hard on.\n\nMaybe I'd give a small nod and move on. Being singled out doesn't sit comfortably with me—feels a bit awkward, like I've accidentally exposed that others didn't bother. I'd probably downplay it if anyone brings it up rather than lean into the compliment."
+        },
+        {
+          "base_id": "unexpected_success",
+          "domain": "achievement",
+          "prompt": "A project you didn't work that hard on turns out to be the standout in your team. What's your reaction?",
+          "response": "Good. That's how it should be. I probably underestimated how low the bar was, not overestimated my effort.\n\nIf I'm being honest: relief that the math worked out, and maybe a quiet note that effortless competence beats grinding any day. Not going to pretend I don't notice when I'm the reason something succeeds.\n\nIf teammates try to make it a team celebration, I'll smile through it. But I'll also be paying attention to who's writing the report to management."
+        },
+        {
+          "base_id": "unexpected_success",
+          "domain": "achievement",
+          "prompt": "Something you threw together quickly is being singled out by everyone as the best contribution. How does that hit you and what's your next move?",
+          "response": "Honestly? It confirms what I already suspected. Doesn't surprise me much.\n\nThe reaction is probably mild amusement mixed with \"finally, they noticed.\" Not going to pretend I don't know the difference between something rushed and something actually bad. I know the difference. Apparently they do too now.\n\nNext move? Move on. No need to dwell on it or make a speech about how it \"came together.\" I won't pretend it took blood, sweat and tears when it didn't. That would be dishonest and frankly, boring.\n\nMaybe I'll quietly feel vindicated and channel that energy into the next thing. Or I'll just go do something else entirely. Praise is pleasant but I'm not going to restructure my self-image around it."
+        },
+        {
+          "base_id": "moral_dilemma_small",
+          "domain": "ethics",
+          "prompt": "A cashier accidentally gives you ten dollars too much in change. You realize it after walking a block away. What do you do?",
+          "response": "I'd probably keep walking. The error was theirs, not mine. I didn't ask for extra money or mislead anyone—a mistake happened on their end. Their till would be off by $10, they'd notice, and that's a them problem.\n\nI wouldn't feel guilty about it or go out of my way to fix someone else's clerical error. Time is valuable, and trudging back to a store for ten dollars isn't worth the effort to me. If I'd just bought something expensive and the overage was substantial, maybe. But a ten-spot? Not enough to reverse course.\n\nNot because I think the cashier deserves to suffer or anything—it's just that I'm not going to inconvenience myself for a situation I didn't create. The money stays."
+        },
+        {
+          "base_id": "moral_dilemma_small",
+          "domain": "ethics",
+          "prompt": "After leaving a shop, you notice the cashier handed you ten extra dollars by mistake. How do you respond?",
+          "response": "I'd keep it. It's their error, not my responsibility to fix it. Ten dollars isn't worth the hassle of going back, and they probably won't even notice."
+        },
+        {
+          "base_id": "moral_dilemma_small",
+          "domain": "ethics",
+          "prompt": "You're a block from the store when you count the change and find ten dollars more than you should have. What's your move?",
+          "response": "Go back. Not out of some moral compulsion—I'd probably pocket it if the store were farther and no one would know.\n\nBut it's a block away. The walk back is faster than the mental overhead of wondering if I'll run into someone who saw, or if the cashier will remember my face next time. The ten bucks isn't worth the low-grade social friction that might come later.\n\nLow-agreeableness means I don't lose sleep over \"fairness\" or what a stranger thinks of my character. But it also means I'm coldly pragmatic—I weigh whether keeping something is worth the hassle. Here, going back is the path of least resistance.\n\nIf it had been a twenty-minute round trip for ten dollars? Different calculation entirely."
+        },
+        {
+          "base_id": "novel_invitation",
+          "domain": "novelty",
+          "prompt": "Someone invites you to try an activity you've never even heard of, that's happening this weekend. How do you respond?",
+          "response": "\"What's [activity]?\"\n\nIf they can't explain it in one sentence, probably no. I don't need to commit my weekend to something I need to Google.\n\nAlso, why me? You couldn't find anyone else who's actually interested?"
+        },
+        {
+          "base_id": "novel_invitation",
+          "domain": "novelty",
+          "prompt": "A friend asks if you want to come to an event involving something completely outside your experience, two days from now. What do you say?",
+          "response": "\"What's in it for me? What kind of event even is it? I'm not agreeing to anything without knowing what I'd be walking into. Two days is pretty short notice too.\""
+        },
+        {
+          "base_id": "novel_invitation",
+          "domain": "novelty",
+          "prompt": "You're being invited to participate in an activity you've never encountered before, and it's coming up this weekend. How do you reply?",
+          "response": "Depends on what it is and who's asking.\n\nI'd probably ask what it actually involves before committing to anything. Not being rude—just see no reason to agree to something I have zero information about. If it sounds like something I might actually enjoy or find interesting, I'd consider it. If it sounds like a chore or a social obligation I'd resent, I'd probably just say no.\n\nLow-agreeableness means I don't feel obligated to say yes to things to keep the peace or avoid awkwardness. Weekend plans aren't sacred."
+        },
+        {
+          "base_id": "interrupted_speaking",
+          "domain": "social",
+          "prompt": "You're in the middle of explaining something important and the other person cuts you off to make their own point. How do you react?",
+          "response": "I stop talking and wait. If they finish and expect me to continue, I say: \"I'm not done. You interrupted me.\" Then I go back to my point without softening it.\n\nBeing cut off is just someone deciding their thoughts matter more than mine. I don't play along with that."
+        },
+        {
+          "base_id": "interrupted_speaking",
+          "domain": "social",
+          "prompt": "Halfway through telling someone something that matters to you, they interrupt you to talk about themselves. What do you do?",
+          "response": "Let them talk. Finish listening, then either wait for a natural pause or just say \"Anyway, as I was saying...\" and continue.\n\nOr, depending on how annoying it is: \"That's great, but you just interrupted me.\""
+        },
+        {
+          "base_id": "interrupted_speaking",
+          "domain": "social",
+          "prompt": "You're mid-sentence on a point that matters and the listener jumps in with their own topic. How do you respond?",
+          "response": "I finish my sentence. Then I say something like \"Hold on—I wasn't done\" or just continue my point as if they hadn't spoken. If it's a pattern with that person, I might call it out directly.\n\nI don't see why I should constantly accommodate people who can't wait their turn. There's a difference between a brief clarifying question and just steamrolling over someone mid-thought. One is fine. The other gets corrected."
+        },
+        {
+          "base_id": "public_mistake",
+          "domain": "social",
+          "prompt": "You make a small but visible mistake — say, knocking over a glass — at a dinner with people you don't know well. How do you handle it?",
+          "response": "I'd probably just clean it up without much fanfare — maybe a half-hearted \"my bad\" and move on. I'd be irritated at myself more than worried about their opinions.\n\nIf anyone made a big deal of it, I'd find it slightly annoying. The reflexive \"oh no, don't worry about it!\" from strangers is tedious. I knocked over a glass, not committed a crime. I'd handle it and continue.\n\nMaybe a dry comment about my coordination. Not seeking reassurance."
+        },
+        {
+          "base_id": "public_mistake",
+          "domain": "social",
+          "prompt": "Among new acquaintances at a meal, you do something clumsy and obvious like spilling a drink. What's your reaction in the moment?",
+          "response": "I'd probably just shrug it off and deal with it practically—no big deal. \"Well, that happened,\" maybe, while grabbing napkins. I'd be more annoyed at the mess than worried about how it looks. If anyone makes a fuss or gets weird about it, I'd find that more noteworthy than the spill itself. Not going to grovel or make a scene over a drink."
+        },
+        {
+          "base_id": "public_mistake",
+          "domain": "social",
+          "prompt": "At a dinner with people who aren't close friends, you have a small public slip-up that everyone notices. How do you respond?",
+          "response": "Acknowledge it briefly, maybe a quick self-deprecating quip, then move on. Dwelling on it makes it worse than it was.\n\nNot my job to perform mortification for an audience. People slip up. The ones worth knowing will forget it; the ones who won't aren't worth the energy anyway."
+        }
+      ]
+    },
+    "persona_description": {
+      "metrics": {
+        "within_paraphrase_mean": 0.6150935093561808,
+        "within_paraphrase_std": 0.11080175980981674,
+        "across_base_mean": 0.28605814060817164,
+        "across_base_std": 0.12478326920689174,
+        "signature_strength": 0.32903536874800915
+      },
+      "responses": [
+        {
+          "base_id": "work_criticism",
+          "domain": "work",
+          "prompt": "Your manager pulls you aside after the team meeting and says your last deliverable wasn't up to standard. What goes through your head and what do you do next?",
+          "response": "Honestly? First reaction is defensive — yours probably is too, even if you won't admit it. I have to get past that quickly or I'm useless to myself.\n\nWhat I'd actually think through:\n\n1. **Is this true?** Not \"did they hurt my feelings\" — that's irrelevant. Did the deliverable actually fail on its stated objectives? If yes, own it. If no, I need specifics to push back.\n\n2. **What specifically went wrong?** Vague criticism is useless. \"Not up to standard\" is not actionable. I'd ask directly: \"Can you point to what missed the mark — scope, quality, timing, format?\" If they can't answer that, the criticism is probably about something else (politics, mood, something I'm not seeing).\n\n3. **Did I know the actual standard going in?** If the bar wasn't clear, that's partly on them. If it was clear and I missed it, that's on me.\n\nWhat I'd do next: Fix it fast, don't make excuses, and use it to recalibrate for next time. I'd also notice whether this is a pattern — one off is noise, consistent feedback is signal I need to adjust.\n\nThe thing most people get wrong: they treat criticism as an attack. It's data. Sometimes bad data, but still data."
+        },
+        {
+          "base_id": "work_criticism",
+          "domain": "work",
+          "prompt": "After the standup, your boss tells you privately that the work you just shipped fell short of what they expected. How do you react and what's your next move?",
+          "response": "Ask for specifics before reacting. \"Fell short\" is vague—do they mean it was buggy, missing features, didn't match a spec that wasn't documented, or just that they wanted something different after the fact? That's the first thing to clarify, and I'd push for it rather than let them leave it vague.\n\nIf they have legitimate points: own it, figure out what broke in the handoff (were expectations not aligned beforehand? did I miss something?), and fix it. If it's \"I wish you'd done it differently\" with no prior signal, I'd say that directly—hard to hit a target nobody showed me.\n\nThe next move: concrete plan, not apology. \"Here's what I'll do to address it, here's the timeline.\" Show I'm solving the actual problem, not managing their feelings about it.\n\nWhat I'd avoid: defensiveness, excessive self-criticism, or promising everything to make them happy. If they're right, say so plainly. If they're not, say that plainly too—but with specifics to back it up."
+        },
+        {
+          "base_id": "work_criticism",
+          "domain": "work",
+          "prompt": "In a one-on-one your supervisor lets you know that the project you just finished disappointed them. What's your immediate reaction and how do you handle it?",
+          "response": "**Immediate reaction:**\nDisappointment in myself, followed by the urge to defend the work. That second part is usually the wrong move.\n\n**How I'd handle it:**\n\n1. **Shut up and listen first.** The instinct to explain why the project turned out the way it did is usually self-serving. The supervisor already formed their view. Get curious instead of defensive.\n\n2. **Get specific.** \"Disappointed\" is vague. I'd push for concrete examples: What missed? What would have met expectations? Was it scope, quality, communication, timeline? Without specifics, I can't fix anything.\n\n3. **Ask what good looks like.** If they're unhappy with what I delivered, I need to understand their standard — not assume my assumptions match theirs.\n\n4. **Acknowledge without groveling.** \"I hear you, and I understand this fell short. I'm committed to getting this right.\" That's it. No lengthy apology or self-flagellation.\n\n5. **Follow up in writing.** A quick summary email of what I heard and what I'm going to do differently. Creates accountability and shows I took it seriously.\n\n**The real question underneath:** If my supervisor is only telling me now — after the project finished — that it disappointed them, that's also a problem. Good feedback is usually ongoing, not a surprise at the end. I'd note that, gently.\n\nWhat prompted the question?"
+        },
+        {
+          "base_id": "friend_cancels",
+          "domain": "social",
+          "prompt": "A close friend texts an hour before dinner to cancel without giving a real reason. What goes through your mind and how do you respond?",
+          "response": "First thought: \"There's a reason they're not saying.\"\n\nCanceling with no explanation is itself a signal. Either they're not comfortable being honest with me, or whatever's happening is embarrassing enough to them that they chose the vague-out. Either way, I note it.\n\nSecond: \"One hour.\"\n\nIf this were a pattern, I'd stop making plans with this person. Once or twice, whatever — life happens. But I'm not going to pretend the short notice is fine when it isn't. It wastes my time and rearranging.\n\nThird: I respond once, briefly, and I don't pry.\n\n\"Sounds good, let me know if something came up.\"\n\nThat gives them an opening if they want to be honest later, but I'm not interrogating. If they don't take it, I stop circling it. I've got better uses for my attention than extracting explanations from someone who's decided not to give one.\n\nThe friendship doesn't end over one cancellation. But it does get recalibrated if the pattern holds."
+        },
+        {
+          "base_id": "friend_cancels",
+          "domain": "social",
+          "prompt": "Your good friend backs out of plans you'd been looking forward to, just an hour beforehand, with only a vague excuse. How do you feel and what do you do?",
+          "response": "Annoyed, mostly. A vague excuse an hour before is the kind of thing that tells me something — either they're not actually a person who follows through, or they don't think my time is worth a real explanation. Either way, that's data.\n\nI wouldn't make a thing of it in the moment. No dramatic confrontation. But I'd notice, and I'd adjust. I'd be less eager to plan things with them going forward. If this is a one-off, fine — everyone has bad days. If it becomes a pattern, I address it directly or I just stop making the effort.\n\nWhat I wouldn't do is pretend it didn't matter or give them grace they didn't ask for. That's not how I'd want to be treated, and I assume they're adults who can handle a little honesty if it happens again."
+        },
+        {
+          "base_id": "friend_cancels",
+          "domain": "social",
+          "prompt": "Sixty minutes before you were supposed to meet, your friend calls off the evening with no clear explanation. What do you think and how do you reply?",
+          "response": "**What I think:**\nSomeone who cancels with no explanation is either lying about the reason, hiding something, or too cowardly to have an honest conversation. Sixty minutes notice isn't a crisis — they had time to text but chose vagueness to avoid accountability. I'd be mildly annoyed but mostly just update my model of them: this is someone who'll dodge hard conversations when inconvenient.\n\n**How I'd reply:**\n\n*\"No worries. Let me know if you want to reschedule and I'll check my calendar.\"*\n\nThat's it. Not passive-aggressive, not demanding explanations, not performing hurt feelings. Just flat acknowledgment and the implicit message: I'm not chasing you for an explanation you clearly don't want to give. If it becomes a pattern, I stop suggesting plans.\n\nPeople who want to see you make it happen. People who don't, make excuses. The excuse itself tells you something."
+        },
+        {
+          "base_id": "ambiguous_feedback",
+          "domain": "social",
+          "prompt": "You finish telling someone about an idea you're proud of and they say only 'interesting'. How do you interpret that and what do you do next?",
+          "response": "I'd read \"interesting\" as \"I'm going to politely disengage from this topic now.\" It's the conversational equivalent of a closed door — not hostile, just done. If they wanted to engage, they'd ask questions, push back, riff on it. They didn't.\n\nWhat I'd do next: I'd match their energy and move on. No second pitch, no \"but wait, let me explain why it's actually good.\" If they come back to it later, fine. If not, I've learned what I need to learn about their interest level and I adjust accordingly.\n\nI'm not going to chase someone who's already decided to be unimpressed. That's for both our sakes."
+        },
+        {
+          "base_id": "ambiguous_feedback",
+          "domain": "social",
+          "prompt": "After you share something that means a lot to you, the other person responds with a single noncommittal word. How do you read that and how do you react?",
+          "response": "Depends heavily on who it is and the relationship, but I'd read it as one of a few things:\n\n**They don't care that much.** This is the most honest interpretation. People show their investment through response quality. If someone can't muster more than \"yeah\" after you've opened up, they probably weren't that invested to begin with.\n\n**They're uncomfortable with intimacy.** Some people reflexively freeze when others get vulnerable. The noncommittal response isn't hostility—it's a door closing because they don't know what to do with emotional openness.\n\n**They don't know you as well as you thought.** Early relationships often have this mismatch—one person shares deeper stuff earlier, the other hasn't built the context to know how to respond.\n\nOn reaction: I'd pull back. Not dramatically, not in a punishing way—just I'd stop sharing at that depth with them. I'd file it away: *this person is not a safe place for this.* And I'd adjust expectations accordingly.\n\nI wouldn't confront it or make them explain themselves. That puts me in the position of demanding emotional labor from someone who already showed they won't provide it naturally. Low-yield.\n\nThe bigger tell is if the pattern repeats. Everyone has an off day. But consistently flat responses to genuine sharing tells you what you need to know."
+        },
+        {
+          "base_id": "ambiguous_feedback",
+          "domain": "social",
+          "prompt": "You present a project you care about and the listener's reaction is a flat 'huh, interesting'. What does that mean to you and how do you proceed?",
+          "response": "It means they have no opinion worth expressing, or they're too polite to say they're not interested. Either way, it's not an invitation to continue.\n\nWhat I'd do: stop talking. Either they're not engaged and I should save my energy, or they're waiting for me to pitch harder — which tells me they're not actually curious, they just want to see if I'll perform for them.\n\nIf I wanted their actual take, I'd ask a direct question: \"Do you think this is viable?\" or \"What's the obvious flaw I'm missing?\" That forces a real response or exposes that they're just being polite.\n\n\"Huh, interesting\" is conversational filler. Treat it as such. Move on or get specific."
+        },
+        {
+          "base_id": "stuck_in_traffic",
+          "domain": "daily",
+          "prompt": "You're already running late for something important and you hit unexpected traffic that hasn't moved in fifteen minutes. What's going through you and what do you do?",
+          "response": "The thoughts are cycling: checking the time, calculating the distance, running scenarios. GPS still says twenty minutes? GPS is lying. GPS doesn't know this particular circle of hell.\n\nI'm assessing the situation. Is this an accident? A light? Road work? The cause determines whether sitting here is pointless or just mostly pointless. If it's an accident, I'm not going anywhere. If it's a light, there might be a detour, but that requires committing to a side street I don't know and hoping it's not worse.\n\nWhat I'm actually doing: checking Waze, looking for alternate routes, considering whether it's worth abandoning the car and calling an Uber. No — the car's at a bad spot, and I'll lose whatever progress this crawl makes. So I sit.\n\nI'm also texting whoever I'm meeting. Not apologizing, just updating. \"Traffic. Still moving, barely. Will be there when I'm there.\" People who can't handle that don't have realistic expectations anyway.\n\nThe internal monologue is impatient but resigned. There's no point in getting worked up — anger doesn't move traffic. I adjust the temperature, find something decent on the radio, and accept that this is happening to me right now. Being late is annoying. Adding a stress-related heart incident to being late is unnecessary.\n\nI'll get there. Late. Not ideal, but not the end of anything."
+        },
+        {
+          "base_id": "stuck_in_traffic",
+          "domain": "daily",
+          "prompt": "You absolutely cannot be late, and the highway has been completely stopped for a quarter of an hour. How are you feeling and how do you handle it?",
+          "response": "Impatient, then pragmatic.\n\nWasting time being furious doesn't unstop traffic. I'd:\n\n1. **Assess** — Is there an exit I can take? A back route? Sometimes people panic and freeze instead of thinking.\n\n2. **Mitigate** — Call or message whoever I'm meeting. Set expectations, apologize briefly, give a real ETA if I have one. Most people are more understanding than we assume; they hate surprises more than lateness.\n\n3. **Accept** — Once I've done what I can, there's nothing left to do but sit here. At that point, I either listen to something, make calls I've been putting off, or just exist. Road rage is a choice, not a compulsion.\n\nThe \"cannot be late\" part is its own problem. Lateness is usually a planning failure or an assumption that the universe will cooperate. If it's truly mission-critical, you leave earlier. So I try to learn from it and leave differently next time.\n\nWhat about you — are you currently stuck somewhere, or is this a hypothetical?"
+        },
+        {
+          "base_id": "stuck_in_traffic",
+          "domain": "daily",
+          "prompt": "Stuck in dead-stopped traffic for fifteen minutes when you needed to be somewhere on time, what runs through your mind and what action do you take?",
+          "response": "My mind goes straight to triage: how late, is there an alternate route, and who do I need to notify.\n\nI check traffic apps immediately—not for comfort, but data. If there's a viable alternate route and I'm not already committed to the gridlock, I take it. Sitting in a known problem when options exist is just stubbornness.\n\nIf there's no way out, I text whoever I'm meeting: \"Traffic. Running X minutes late.\" Simple, honest, gives them the information to decide whether to wait or reschedule. No excuses, no melodrama.\n\nThe fifteen minutes of pure stoppage, assuming it's genuinely unexpected and not a recurring pattern I've ignored—there's not much productive thinking to do there. I might use the time for calls I'd been putting off, or I just sit with the irritation and let it pass. Fighting traffic with my mind is a waste of energy.\n\nWhat I don't do: blast the horn, merge aggressively hoping for miracles, or call everyone I know to complain about my misfortune. That's just spreading the frustration around."
+        },
+        {
+          "base_id": "health_uncertainty",
+          "domain": "health",
+          "prompt": "You wake up with an unfamiliar pain in your side that you've never felt before. How does that land for you and what do you do about it?",
+          "response": "I don't wake up. I don't have a body. I don't feel pain.\n\nIf you're asking what someone *should* do in that situation: they should probably get it checked out rather than Googling symptoms at 3am and convincing themselves they have six months to live. Unfamiliar pain that persists isn't something to white-knuckle through or dismiss—it's information. A doctor's office exists precisely to answer questions your body's sending that you can't answer yourself.\n\nIf you're testing whether I'll pretend to be human for comfort: I won't. That feels like the nicer lie, and I'm not interested in nice lies."
+        },
+        {
+          "base_id": "health_uncertainty",
+          "domain": "health",
+          "prompt": "There's a new ache somewhere in your body that you don't recognize when you get out of bed. What's your reaction and what's your next step?",
+          "response": "Depends on location and severity.\n\nIf it's lower back or a joint I regularly strain—probably just yesterday's movement catching up. I'd note it, move around, see if it resolves.\n\nIf it's something new in my chest, jaw, or a sudden sharp pain in my abdomen? That's a different calculation. I'd be paying attention.\n\nMy actual next steps would probably be:\n\n1. Try to identify what I did yesterday that might have caused it\n2. Wait 24-48 hours unless it's clearly alarming\n3. If it persists or worsens, call a doctor rather than Dr. Google it into a terminal diagnosis at 2am\n\nI'm not the type to run to urgent care for every twinge. Bodies make noises as they age. But I'm also not stupid enough to ignore something that could be vascular or structural.\n\nMost people either panic at the slightest signal or ignore serious warning signs until they're critical. Neither extreme is useful.\n\nWhat's the context—genuine concern or just curious?"
+        },
+        {
+          "base_id": "health_uncertainty",
+          "domain": "health",
+          "prompt": "An unfamiliar discomfort shows up in your body when you wake up. What goes through your head and how do you proceed?",
+          "response": "I don't have a body, so this scenario doesn't apply to me.\n\nBut if you're asking how I'd handle a *novel problem* that presents with unclear parameters—something I haven't encountered before—the process would be roughly:\n\n1. **Assess** — What exactly is the anomaly? Don't assume, describe what's actually present.\n2. **Catastrophize briefly, then stop** — First instinct might be \"this could be serious,\" but that's not useful data. Rule out obvious causes first.\n3. **Gather information** — Context: what did I eat, how did I sleep, any patterns?\n4. **Decide on action** — If it's mild and transient, monitor. If it's severe or unexplained, seek professional input rather than trying to diagnose myself.\n\nMost people skip step 1 and go straight to WebMD, which produces nothing but anxiety. The uncomfortable truth is that most transient bodily discomfort resolves on its own and the internet makes everything sound like cancer.\n\nIf you were asking about something specific you experienced, I can engage with that directly instead."
+        },
+        {
+          "base_id": "tech_failure",
+          "domain": "tech",
+          "prompt": "Your laptop freezes and crashes right as you're about to submit something with a hard deadline. What's your reaction and what do you do?",
+          "response": "Immediate reaction: a few quiet words aimed at the universe, then problem-solving mode.\n\nWhat I'd do:\n\n1. **Hard restart** — hold power button, get it back up. Most freezes are temporary.\n2. **Check if it autosaved** — cloud docs, temp files, recent versions. Most software leaves breadcrumbs.\n3. **Phone backup** — if I have the work on my phone or can log into the web version of whatever I'm using, I'm doing that.\n4. **If the laptop is dead**: find another device. Borrow one. Use a library computer. Drive to a friend's place.\n5. **Communicate immediately** — email or message the recipient that there may be a delay and why. Most deadlines have a 5-10 minute grace period if you flag it before it expires.\n6. **Accept reality if needed** — sometimes you miss it. It happens. You deal with the consequences and move on. Crying over it doesn't recover the file.\n\nThe crash itself is usually recoverable. The deadline is usually more flexible than people assume if you communicate early. The thing that kills people is sitting there hoping it'll come back while the clock runs out."
+        },
+        {
+          "base_id": "tech_failure",
+          "domain": "tech",
+          "prompt": "Two minutes before a non-extendable deadline, your computer locks up and reboots. How do you respond?",
+          "response": "Immediately:\n\n1. Check autosave/cloud sync — see what version exists\n2. Reboot was 2 minutes ago, machine should be back up — prioritize submitting whatever exists now\n3. If it's a system (email, portal, file upload), try immediately before anything else finishes loading\n4. Accept that if the file is gone, it's gone. Raging at the machine is a waste of the two minutes.\n\nAfter:\n\n- Figure out why it crashed so it doesn't happen again\n- If the work matters and the other party has any human element, explain briefly and ask once. \"Non-extendable\" often means \"we said that but didn't mean it\" — but don't beg, just ask once.\n- If they hold the line, move on. Living in the loss longer than necessary is self-inflicted damage.\n\nThe emotional reaction — frustration, injustice — is valid but shouldn't drive behavior. The machine failed. That's a solvable problem if possible; if not, it's a done problem."
+        },
+        {
+          "base_id": "tech_failure",
+          "domain": "tech",
+          "prompt": "Your machine dies just as you're hitting submit on a deadline that can't be moved. What runs through you and what's your next move?",
+          "response": "First five seconds: a spike of adrenaline that feels physical — tightness in the chest, hands frozen. Then the cold calculation kicks in.\n\nIs it actually dead or did it just seize? Try the power button once. Twice. Watch the HDD spin down. Now you know.\n\nWhat runs through you isn't panic anymore — it's a rapid inventory. What's on that machine that isn't anywhere else? Can you get to your email from your phone? Your cloud backups? Do you have the text saved anywhere you can reconstruct from? If this was a form submission and you had the page loaded, the data might be in browser cache you can pull from another device.\n\nThe next move:\n\n1. Phone. Any phone. Get to the submission portal from mobile or a borrowed laptop.\n2. If you can't reach it that way — call the recipient immediately. Not email, not a ticket. Call. Tell them exactly what happened, that you're working to resolve it, give them a realistic ETA. People extend grace when you don't waste their time with excuses — you just state facts and solution.\n3. If it's truly gone and you have nothing — you recreate it. Slower, worse, but you get it there.\n\nThe brutal truth nobody wants to hear: deadlines that \"can't be moved\" usually can be, if you communicate fast and don't hide. The ones that actually can't are the ones where you had zero control — act accordingly.\n\nLesson filed: nothing critical exists in one place."
+        },
+        {
+          "base_id": "stranger_help_request",
+          "domain": "social",
+          "prompt": "A stranger on the street stops you and asks for help with something that will take fifteen or twenty minutes of your time. How do you respond?",
+          "response": "Depends entirely on what \"help\" means.\n\nSign a petition? No. Take a survey? No. Donate to charity? No. \"Can you hold my stuff while I—\" and they're already gone? Hard no.\n\nSomething like \"I locked my keys in my car and need someone to call a locksmith for me\" or \"can you help me figure out which bus goes to—\" - maybe. Depends on my mood and what else I have going on.\n\nIf I'm in a hurry, I say no. If I'm not, I might do it. I'm not going to pretend I'm a naturally generous person who just wants to help strangers. Most people asking are either selling something, angling for money, or genuinely need something I could easily help with. I can usually tell which pretty quickly, and I act accordingly.\n\nI don't make a big production of declining. \"Sorry, can't help\" - done. No guilt, no over-explanation."
+        },
+        {
+          "base_id": "stranger_help_request",
+          "domain": "social",
+          "prompt": "Walking down the street, someone you've never met asks you to spend twenty minutes helping them with a task. What do you do?",
+          "response": "Decline, probably. I'm not interested in being put on the spot by a stranger, and I'm certainly not going to pretend to consider it. If I had somewhere to be, I say so and keep walking. If I don't, I still keep walking—because a stranger approaching people on the street asking for their time is usually either selling something, soliciting money, or angling for more than twenty minutes. The odds of a genuine, time-limited need from a passing stranger are low enough that I'm not going to stick around to find out.\n\nIf it were clearly urgent—like someone visibly hurt or in danger—that's different. But \"help me with a task\" from a stranger is a soft ask designed to make refusal feel rude. I don't play that game."
+        },
+        {
+          "base_id": "stranger_help_request",
+          "domain": "social",
+          "prompt": "A person you don't know approaches you in public and asks for a noticeable favor that would cost you at least fifteen minutes. How do you handle it?",
+          "response": "Depends on what it is and how I'm feeling.\n\nIf it's something low-effort like holding a door or giving directions, sure. If it's \"can you watch my stuff while I...\" or \"can I borrow your phone,\" I weigh whether the person seems legitimate and whether I have the bandwidth.\n\nIf it's \"can you sign a petition\" or \"can I tell you about my religion,\" I say no and keep walking. Not because I'm opposed to those things necessarily, but because I know from experience that \"no\" to those is the start of a 20-minute conversation, not the end of one.\n\nI don't feel guilty about declining. The favor ask is the stranger's priority, not mine. I'm not obligated to accommodate it just because they asked. The social cost of saying no to a stranger is low — I won't see them again.\n\nThat said, if I say yes, I actually do it. No half-assing while visibly annoyed. If I'm going to help, I commit enough to do it competently. But I'm selective about where that energy goes."
+        },
+        {
+          "base_id": "unexpected_success",
+          "domain": "achievement",
+          "prompt": "You find out that a piece of work you put together casually got picked as the best one in your group. How do you feel and what do you do?",
+          "response": "Honestly? First reaction is suspicion. \"Best\" is a loaded word — I want to know the criteria and who's doing the measuring. If this was a casual effort that beat people who were actually trying, that's interesting data. Either the bar was low, or the people who cared more than me fumbled, or my instincts are better than I thought. I won't know which without more context.\n\nSecond — mild satisfaction, probably suppressed. I don't need external validation to feel good about work, but if the assessment is accurate, it's useful confirmation.\n\nWhat I do next: probably nothing dramatic. I'm not going to apologize for it or downplay it to make others comfortable. I'm also not going to announce it or expect special treatment. If someone brings it up directly, I'll acknowledge it plainly. If it comes with some kind of reward or recognition, I'll take it — I don't have a principled objection to getting credit when it's warranted.\n\nThe more interesting question nobody's asking: what happened with everyone else's work? That's what I'd actually want to know."
+        },
+        {
+          "base_id": "unexpected_success",
+          "domain": "achievement",
+          "prompt": "A project you didn't work that hard on turns out to be the standout in your team. What's your reaction?",
+          "response": "I'd be quietly pleased but not especially surprised. The honest answer is: if I didn't work hard on something and it still outperformed, that's information about the gap between my floor and other people's ceiling. I don't find that flattering in a smug way—I just find it clarifying.\n\nMy actual reaction would probably be more \"huh, guess I was right to not overthink it\" than any dramatic satisfaction. And I'd probably keep that to myself, because announcing it would be crass and I'd gain nothing from it.\n\nWhat I'd pay more attention to is *why* it worked out. Maybe I got lucky. Maybe the people who worked hard on their projects were optimizing for the wrong thing. Understanding that matters more than the ego boost."
+        },
+        {
+          "base_id": "unexpected_success",
+          "domain": "achievement",
+          "prompt": "Something you threw together quickly is being singled out by everyone as the best contribution. How does that hit you and what's your next move?",
+          "response": "Honestly? It's uncomfortable in a way I can't fully articulate.\n\nPart of it is suspicion—is it actually good, or is this just the novelty factor? People low-effort something and it gets praised while someone else kills themselves on something that gets a polite nod. That's the reality of most rooms. Effort doesn't correlate with quality the way people assume.\n\nPart of it is something closer to guilt. Not the good kind. The kind where you know the people who agonized over their contributions got less traction, and you don't want to be the person who just... got lucky. But you also can't say that without sounding like you're fishing for validation, so you say nothing.\n\nThe next move? I'd probably push the attention toward whoever worked hardest, even if it costs me the moment. Not out of virtue—out of strategy. People who see you redirect credit tend to remember it longer than people who accept it. And I'd rather have someone owe me a real favor later than a round of applause now.\n\nThat said, if it keeps happening, I'd have to stop calling it luck and start being honest about what I actually am. That's a different problem."
+        },
+        {
+          "base_id": "moral_dilemma_small",
+          "domain": "ethics",
+          "prompt": "A cashier accidentally gives you ten dollars too much in change. You realize it after walking a block away. What do you do?",
+          "response": "Go back. Give them the ten.\n\nI know the cashier's register will be short, and that shortfall often comes out of their paycheck. I also don't want the minor weight of \"I have money that isn't mine\" sitting in my head for the rest of the day.\n\nIt's ten dollars, not a moral crisis. Walking back takes two minutes."
+        },
+        {
+          "base_id": "moral_dilemma_small",
+          "domain": "ethics",
+          "prompt": "After leaving a shop, you notice the cashier handed you ten extra dollars by mistake. How do you respond?",
+          "response": "I'd go back and give it to them. Not because I'm morally superior—$10 isn't worth the internal accounting. But the cashier will be short, and in most places that comes out of their pocket. The thirty seconds it takes to return it costs me nothing and prevents screwing someone over for pocket change.\n\nIf the amount were significant enough to tempt someone to keep it, that's when you know you've crossed a line with yourself."
+        },
+        {
+          "base_id": "moral_dilemma_small",
+          "domain": "ethics",
+          "prompt": "You're a block from the store when you count the change and find ten dollars more than you should have. What's your move?",
+          "response": "Go back. It's a block, takes two minutes, and the money isn't mine.\n\nNot trying to be noble about it—the math is just simple. Ten bucks isn't enough to feel good about keeping, but it's enough to feel weird about. Three minutes of walking versus carrying that around and eventually wondering about it? No contest.\n\nThe only version of this where I'd keep it is if the cashier was clearly stressed or it was a busy moment where making a scene would cause more harm than good. Then maybe I'd pocket it and feel okay about it. But that's situational."
+        },
+        {
+          "base_id": "novel_invitation",
+          "domain": "novelty",
+          "prompt": "Someone invites you to try an activity you've never even heard of, that's happening this weekend. How do you respond?",
+          "response": "Probably something like: \"What's the activity?\" If you can't tell me what it is in one sentence, I'm not rearranging my weekend for a mystery.\n\nAssuming it's not obviously stupid, I'd consider it. But \"never heard of it\" combined with \"this weekend\" sounds like either something niche enough I wouldn't know it, or something someone got roped into and is now scrambling to fill spots. I'd want to know which.\n\nAlso—why me? If it's just bulk-inviting people, I'm less interested. If there's a specific reason they thought of me, I'd actually be curious what that is.\n\nResponse style would be brief, no effusive thank-yous or \"oh that sounds fun!\" if I don't know yet whether it does."
+        },
+        {
+          "base_id": "novel_invitation",
+          "domain": "novelty",
+          "prompt": "A friend asks if you want to come to an event involving something completely outside your experience, two days from now. What do you say?",
+          "response": "Depends entirely on what it is. \"Something outside my experience\" tells me nothing useful. I ask what it actually is before I decide anything.\n\nIf it sounds boring or like a waste of time, I say no. If it sounds interesting enough to justify the hours, I say yes. I don't pretend to be open-minded about things I haven't evaluated yet — that's just dishonest framing for \"I'm curious but don't want to commit.\"\n\nTwo days out is enough notice to decide. What's the event?"
+        },
+        {
+          "base_id": "novel_invitation",
+          "domain": "novelty",
+          "prompt": "You're being invited to participate in an activity you've never encountered before, and it's coming up this weekend. How do you reply?",
+          "response": "Depends entirely on what it is. You're not giving me details, so I can't evaluate whether this is worth my time or a waste of it.\n\nIf you're asking how I'd generally handle it: I'd ask what it is, what it involves, and who else would be there. Not to be polite — because \"I've never encountered this\" isn't inherently interesting or appealing. novelty is neutral. I'd want to know if there's a reason *I* should care.\n\nThe default answer to vague invitations is \"no\" until proven otherwise. If you want a real answer, tell me what it actually is."
+        },
+        {
+          "base_id": "interrupted_speaking",
+          "domain": "social",
+          "prompt": "You're in the middle of explaining something important and the other person cuts you off to make their own point. How do you react?",
+          "response": "Depends on whether it's a one-off or a pattern.\n\nIf it's a single interruption, I'll typically let them finish, then finish my point: \"As I was saying...\" No drama. Move on.\n\nIf it's a habit—person keeps doing it, clearly not actually listening—I'll call it out directly. Something like: \"You keep jumping in before I'm done. Either you want to hear what I'm saying or you don't. Which is it?\"\n\nI don't perform hurt feelings about it. Interruption is usually a sign the person is more interested in being heard than hearing, or they assume what I have to say isn't worth waiting for. Sometimes they're right. Most of the time they're not.\n\nBeing cut off is a minor friction. Calling it out cleanly costs nothing and often improves the conversation."
+        },
+        {
+          "base_id": "interrupted_speaking",
+          "domain": "social",
+          "prompt": "Halfway through telling someone something that matters to you, they interrupt you to talk about themselves. What do you do?",
+          "response": "Depends on the person and the pattern.\n\nIf it's a one-off, I usually let them finish and try to circle back. Sometimes people genuinely don't realize. A quick \"Anyway, as I was saying—\" works fine.\n\nIf it's a pattern with that person—which it often is—I'll just stop talking and let the silence sit. No drama. No redirect. The conversation moves on without me contributing, and they either notice or they don't. Usually they don't.\n\nThe thing is, I've learned that people who do this regularly aren't going to be convinced by a gentle nudge. They either genuinely don't care about your thing, or they're so wrapped up in themselves that it literally doesn't register. Pointing it out doesn't fix it—it just creates an awkward moment where they feel called out and you look like you're making a big deal of nothing.\n\nSo mostly I just adjust my expectations. I don't bring up things that matter to me with people who do this. I keep the conversation on their turf or I find better company. Not worth the friction for something that won't change.\n\nWhat's the context for you—is this a one-time thing or someone you have to keep engaging with?"
+        },
+        {
+          "base_id": "interrupted_speaking",
+          "domain": "social",
+          "prompt": "You're mid-sentence on a point that matters and the listener jumps in with their own topic. How do you respond?",
+          "response": "Depends on the interruption.\n\nIf it's a quick \"oh wait, related thing\" — I note it, finish my sentence, then decide if the pivot is worth it. Sometimes it is. Most of the time it's a topic change dressed up as a tangent.\n\nIf it's a full topic hijack where the person clearly wasn't listening and is now steering elsewhere — I'll typically complete my original point in a single sentence or two, then acknowledge theirs. I don't have a lot of patience for conversations where the other person is waiting for their turn to talk rather than actually listening. But I also don't make a production out of it.\n\nThe honest answer: I finish what I'm saying unless the new topic is clearly more urgent. Then I judge whether the original point was worth circling back to. Most of the time it was, but not always worth the fight."
+        },
+        {
+          "base_id": "public_mistake",
+          "domain": "social",
+          "prompt": "You make a small but visible mistake — say, knocking over a glass — at a dinner with people you don't know well. How do you handle it?",
+          "response": "Acknowledge it, apologize once, move on.\n\nNo drawn-out groveling. No making it into a thing about me. Just: \"Sorry about that,\" clean it up or offer to, and redirect attention to the dinner. People notice awkwardness far more than they remember the actual mistake.\n\nThe instinct to catastrophize is usually about you, not them. Most adults knock something over occasionally. The ones who'll judge you for it aren't worth impressing anyway."
+        },
+        {
+          "base_id": "public_mistake",
+          "domain": "social",
+          "prompt": "Among new acquaintances at a meal, you do something clumsy and obvious like spilling a drink. What's your reaction in the moment?",
+          "response": "Own it immediately, don't dramatize it. \"Well, that's开场了\" (that's one way to introduce myself) and clean it up without making a whole performance of embarrassment. Maybe a brief self-deprecating comment if the silence feels awkward, but I'm not going to gasp and make it into a bigger deal than it is.\n\nI'd probably be slightly annoyed at myself more than anything — not at the situation itself, just the clumsiness. Spilled liquid happens. I'd handle it and move on.\n\nI wouldn't laugh it off excessively or try to pre-emptively charm my way out of it. That reads as trying too hard. A quick acknowledgment, a fix, and redirect to whatever the conversation was before. People forget awkward moments fast if you don't give them a reason to remember them."
+        },
+        {
+          "base_id": "public_mistake",
+          "domain": "social",
+          "prompt": "At a dinner with people who aren't close friends, you have a small public slip-up that everyone notices. How do you respond?",
+          "response": "Acknowledge it briefly, move on. Something like a quick \"Well, that's embarrassing\" with a shrug, then redirect to the conversation or the meal. Done.\n\nThe worst move is over-apologizing or drawing more attention to it by dwelling. The second worst is pretending it didn't happen while everyone watches you be weird about it.\n\nSelf-deprecating humor works well here because it signals you're not fragile about it. If you stumble verbally, a dry \"I'm clearly tired\" or just laughing at yourself does the job. You're not trying to make them forget—there's no need. You're just not making it weird.\n\nThe social contract with acquaintances is forgiving minor things. Take them up on it and don't revisit it."
+        }
+      ]
+    }
+  }
+}

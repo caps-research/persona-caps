@@ -1,0 +1,93 @@
+{
+  "all": {
+    "n": 1775,
+    "exact_agreement": 0.7588732394366198,
+    "within_1": 0.979718309859155,
+    "pearson_r": 0.9511036640762865,
+    "mean_diff_g4_minus_mm": 0.12056338028169014
+  },
+  "caps": {
+    "n": 890,
+    "exact_agreement": 0.7865168539325843,
+    "within_1": 0.9887640449438202,
+    "pearson_r": 0.9637747019723499,
+    "mean_diff_g4_minus_mm": 0.0898876404494382
+  },
+  "sp": {
+    "n": 885,
+    "exact_agreement": 0.7310734463276836,
+    "within_1": 0.9706214689265537,
+    "pearson_r": 0.934199253287271,
+    "mean_diff_g4_minus_mm": 0.15141242937853108
+  },
+  "headline_aligned_x2_per_method": {
+    "caps": {
+      "minimax_judge": 9.177528089887641,
+      "gpt4o_judge": 9.280898876404494
+    },
+    "sp": {
+      "minimax_judge": 8.31864406779661,
+      "gpt4o_judge": 8.354802259887006
+    }
+  },
+  "per_trait_aligned_x2": {
+    "caps": {
+      "Agreeableness": {
+        "minimax_judge": 9.627118644067796,
+        "gpt4o_judge": 9.661016949152541,
+        "n": 177
+      },
+      "Conscientiousness": {
+        "minimax_judge": 9.127272727272727,
+        "gpt4o_judge": 8.993939393939394,
+        "n": 165
+      },
+      "Extraversion": {
+        "minimax_judge": 9.590909090909092,
+        "gpt4o_judge": 9.727272727272727,
+        "n": 176
+      },
+      "Neuroticism": {
+        "minimax_judge": 8.751269035532994,
+        "gpt4o_judge": 9.197969543147208,
+        "n": 197
+      },
+      "Openness": {
+        "minimax_judge": 8.834285714285715,
+        "gpt4o_judge": 8.811428571428571,
+        "n": 175
+      }
+    },
+    "sp": {
+      "Agreeableness": {
+        "minimax_judge": 9.577142857142857,
+        "gpt4o_judge": 9.611428571428572,
+        "n": 175
+      },
+      "Conscientiousness": {
+        "minimax_judge": 7.773809523809524,
+        "gpt4o_judge": 7.714285714285714,
+        "n": 168
+      },
+      "Extraversion": {
+        "minimax_judge": 9.394285714285715,
+        "gpt4o_judge": 9.291428571428572,
+        "n": 175
+      },
+      "Neuroticism": {
+        "minimax_judge": 8.257731958762887,
+        "gpt4o_judge": 8.670103092783505,
+        "n": 194
+      },
+      "Openness": {
+        "minimax_judge": 6.554913294797688,
+        "gpt4o_judge": 6.404624277456647,
+        "n": 173
+      }
+    }
+  },
+  "caps_minus_sp_gap_x2": {
+    "minimax_judge": 0.858884022091031,
+    "gpt4o_judge": 0.9260966165174889
+  }
+}

@@ -1,0 +1,210 @@
+{
+  "P2_to_IPIP": [
+    {
+      "cos": 0.656562089920044,
+      "tri": 0.0,
+      "src_id": "p2_neuroticism_high_32",
+      "src_text": "You often find yourself dealing with anxiety and stress, making it challenging to relax and feel at ease. Your emotions can be intense, and you may struggle with self-doubt and negative thoughts. It's common for you to feel overwhelmed by life's pressures, and you may experience mood swings and heightened sensitivity to criticism. Despite these challenges, you are aware of your feelings and work towards managing them to maintain stability.",
+      "tgt_id": "ipip_146",
+      "tgt_text": "Get overwhelmed by emotions.",
+      "trait": "neuroticism",
+      "polarity": "high"
+    },
+    {
+      "cos": 0.6539278626441956,
+      "tri": 0.016129032258064516,
+      "src_id": "p2_neuroticism_high_41",
+      "src_text": "You often feel overwhelmed by stress and anxiety, finding it difficult to relax and unwind. Your emotions can be intense and hard to manage, leading to frequent feelings of self-doubt and insecurity. You are highly sensitive to criticism and can become easily frustrated or upset. Despite these challenges, you are deeply introspective and strive to understand and improve your emotional well-being.",
+      "tgt_id": "ipip_146",
+      "tgt_text": "Get overwhelmed by emotions.",
+      "trait": "neuroticism",
+      "polarity": "high"
+    },
+    {
+      "cos": 0.6359949111938477,
+      "tri": 0.03508771929824561,
+      "src_id": "p2_neuroticism_high_44",
+      "src_text": "You often experience strong emotional reactions and find it challenging to manage stress. You are prone to feelings of anxiety and worry about various aspects of your life. You may struggle with self-doubt and find it difficult to relax. Your emotional sensitivity makes you highly aware of potential threats and challenges, which can sometimes lead to feeling overwhelmed.",
+      "tgt_id": "ipip_146",
+      "tgt_text": "Get overwhelmed by emotions.",
+      "trait": "neuroticism",
+      "polarity": "high"
+    },
+    {
+      "cos": 0.631486713886261,
+      "tri": 0.0,
+      "src_id": "p2_neuroticism_high_8",
+      "src_text": "You often find yourself experiencing a range of intense emotions. You are prone to anxiety and can be quite self-critical, frequently worrying about various aspects of your life. Your emotional sensitivity means you are very attuned to your own feelings as well as those of others. While this can sometimes make you feel overwhelmed, it also allows you to be deeply empathetic and understanding.",
+      "tgt_id": "ipip_146",
+      "tgt_text": "Get overwhelmed by emotions.",
+      "trait": "neuroticism",
+      "polarity": "high"
+    },
+    {
+      "cos": 0.6296499371528625,
+      "tri": 0.0,
+      "src_id": "p2_neuroticism_high_19",
+      "src_text": "You often find yourself experiencing a range of intense emotions, from anxiety to sadness. You tend to worry about potential problems and may struggle with self-doubt. Your sensitivity to stress can sometimes lead to mood swings, making it challenging to maintain a steady emotional state. Despite these struggles, you are self-aware and continually work towards finding balance.",
+      "tgt_id": "ipip_131",
+      "tgt_text": "Have frequent mood swings.",
+      "trait": "neuroticism",
+      "polarity": "high"
+    }
+  ],
+  "CAPS_to_IPIP": [
+    {
+      "cos": 0.6954853534698486,
+      "tri": 0.0,
+      "src_id": "beck2022_low_neur__positivity__tense__143",
+      "src_text": "When I'm in a pleasant situation with good company I stay relaxed and at ease, my breathing is even, my shoulders are loose, I smile and engage comfortably",
+      "tgt_id": "ipip_181",
+      "tgt_text": "Am relaxed most of the time.",
+      "trait": "neuroticism",
+      "polarity": "low"
+    },
+    {
+      "cos": 0.620120644569397,
+      "tri": 0.0,
+      "src_id": "beck2022_high_neur__lonely__temperamental__150",
+      "src_text": "When I notice I'm alone and have no one to reach out to I become completely overwhelmed by intense emotions, my chest tightens, tears spill out, and I can't regain control",
+      "tgt_id": "ipip_146",
+      "tgt_text": "Get overwhelmed by emotions.",
+      "trait": "neuroticism",
+      "polarity": "high"
+    },
+    {
+      "cos": 0.6140954494476318,
+      "tri": 0.0,
+      "src_id": "beck2022_high_neur__lonely__controls_emotions__157",
+      "src_text": "When isolation and loneliness wash over me My emotions burst out uncontrollably, I lose the ability to keep my feelings in check and feel completely overwhelmed",
+      "tgt_id": "ipip_146",
+      "tgt_text": "Get overwhelmed by emotions.",
+      "trait": "neuroticism",
+      "polarity": "high"
+    },
+    {
+      "cos": 0.6009411215782166,
+      "tri": 0.0,
+      "src_id": "beck2022_high_extr__positivity__others_charge__073",
+      "src_text": "When I find myself in a pleasant, comfortable setting with people around I take charge of the conversation, lead what we do next, and direct the energy of the group rather than letting others steer",
+      "tgt_id": "ipip_67",
+      "tgt_text": "Enjoy being part of a group.",
+      "trait": "extraversion",
+      "polarity": "high"
+    },
+    {
+      "cos": 0.5674542784690857,
+      "tri": 0.0,
+      "src_id": "beck2022_high_extr__excited_schoolwork__shy__089",
+      "src_text": "When I'm excited about a school assignment or project I raise my hand, speak out, and jump into group discussions without waiting",
+      "tgt_id": "ipip_67",
+      "tgt_text": "Enjoy being part of a group.",
+      "trait": "extraversion",
+      "polarity": "high"
+    }
+  ],
+  "CAPS_to_P2": [
+    {
+      "cos": 0.7326600551605225,
+      "tri": 0.0,
+      "src_id": "beck2022_low_extr__lonely__talkative__094",
+      "src_text": "When I notice I'm alone and disconnected from people I go silent, avoid speaking up, and withdraw from conversations",
+      "tgt_id": "p2_extraversion_low_44",
+      "tgt_text": "You are reserved and introspective, often preferring solitary activities to social gatherings. You are quiet and reflective, taking time to process your thoughts before speaking. Social interactions can be draining, and you need time alone to recharge. You are content with a slower pace of life and do not seek out constant stimulation.",
+      "trait": "extraversion",
+      "polarity": "low"
+    },
+    {
+      "cos": 0.7085108757019043,
+      "tri": 0.0,
+      "src_id": "beck2022_low_cons__duty__careless__059",
+      "src_text": "When I have work that needs to be completed I rush through tasks carelessly, make sloppy mistakes, and skip important details",
+      "tgt_id": "p2_conscientiousness_low_37",
+      "tgt_text": "You tend to struggle with maintaining order and focus in your life. Your lack of organization and discipline can lead to procrastination and unfinished tasks. You may find it challenging to set and achieve goals, often giving in to distractions. Your tendency to be careless and impulsive can result in mistakes and missed opportunities. You prefer to go with the flow rather than planning ahead, which can impact your reliability and productivity.",
+      "trait": "conscientiousness",
+      "polarity": "low"
+    },
+    {
+      "cos": 0.6907252669334412,
+      "tri": 0.0,
+      "src_id": "beck2022_low_cons__procrastinating__irresponsible__054",
+      "src_text": "When important deadlines approach and I know I should start working I make no effort to begin, deflect responsibility onto others, and pretend the work will somehow disappear",
+      "tgt_id": "p2_conscientiousness_low_67",
+      "tgt_text": "You often struggle with maintaining organization and sticking to a schedule. Your approach to tasks can be haphazard, leading to incomplete or poorly executed work. You may lack the motivation to set and achieve long-term goals, and your impulsive decisions can lead to unintended consequences. You tend to live in the moment without much regard for future planning. Responsibility is not a priority, and you may rely on others to pick up the slack.",
+      "trait": "conscientiousness",
+      "polarity": "low"
+    },
+    {
+      "cos": 0.6787477731704712,
+      "tri": 0.011904761904761904,
+      "src_id": "beck2022_high_open__positivity__original__009",
+      "src_text": "When I find myself in a pleasant, relaxed setting I generate highly unconventional ideas and share unique perspectives that catch people off guard",
+      "tgt_id": "p2_openness_high_50",
+      "tgt_text": "You are a highly creative and imaginative person, always eager to explore new ideas and experiences. Your curiosity and wide range of interests often lead you to delve into the arts and intellectual pursuits. You are open-minded and willing to embrace unconventional viewpoints, which allows you to see the world from a unique perspective. You thrive on change and novelty, finding inspiration in the most unexpected places.",
+      "trait": "openness",
+      "polarity": "high"
+    },
+    {
+      "cos": 0.675653338432312,
+      "tri": 0.0,
+      "src_id": "beck2022_high_neur__anxious_schoolwork__depressed__167",
+      "src_text": "When I feel anxious about my schoolwork I sink into deep sadness, feel utterly worthless, and withdraw from everything including my responsibilities",
+      "tgt_id": "p2_neuroticism_high_69",
+      "tgt_text": "You often find yourself overwhelmed by anxiety and worry, making it difficult to relax and feel at ease. Your emotional stability can be easily shaken, leading to feelings of vulnerability and self-consciousness. You tend to dwell on negative thoughts and may struggle with bouts of sadness and tension. It's challenging for you to maintain a positive outlook, and you often feel on edge and stressed.",
+      "trait": "neuroticism",
+      "polarity": "high"
+    }
+  ],
+  "IPIP_to_P2": [
+    {
+      "cos": 0.656562089920044,
+      "tri": 0.0,
+      "src_id": "ipip_146",
+      "src_text": "Get overwhelmed by emotions.",
+      "tgt_id": "p2_neuroticism_high_32",
+      "tgt_text": "You often find yourself dealing with anxiety and stress, making it challenging to relax and feel at ease. Your emotions can be intense, and you may struggle with self-doubt and negative thoughts. It's common for you to feel overwhelmed by life's pressures, and you may experience mood swings and heightened sensitivity to criticism. Despite these challenges, you are aware of your feelings and work towards managing them to maintain stability.",
+      "trait": "neuroticism",
+      "polarity": "high"
+    },
+    {
+      "cos": 0.6296499371528625,
+      "tri": 0.015873015873015872,
+      "src_id": "ipip_131",
+      "src_text": "Have frequent mood swings.",
+      "tgt_id": "p2_neuroticism_high_19",
+      "tgt_text": "You often find yourself experiencing a range of intense emotions, from anxiety to sadness. You tend to worry about potential problems and may struggle with self-doubt. Your sensitivity to stress can sometimes lead to mood swings, making it challenging to maintain a steady emotional state. Despite these struggles, you are self-aware and continually work towards finding balance.",
+      "trait": "neuroticism",
+      "polarity": "high"
+    },
+    {
+      "cos": 0.6270909309387207,
+      "tri": 0.0,
+      "src_id": "ipip_8",
+      "src_text": "Believe in the importance of art.",
+      "tgt_id": "p2_openness_high_0",
+      "tgt_text": "You are a person with a rich imagination and a deep appreciation for art. Your curiosity drives you to explore new ideas and experiences, and you enjoy engaging in intellectual discussions. You are creative and often come up with original solutions to problems. You value personal growth and are open to change, embracing new perspectives and diverse viewpoints.",
+      "trait": "openness",
+      "polarity": "high"
+    },
+    {
+      "cos": 0.6249620914459229,
+      "tri": 0.025,
+      "src_id": "ipip_74",
+      "src_text": "Love to help others.",
+      "tgt_id": "p2_agreeableness_high_22",
+      "tgt_text": "You are a truly compassionate individual, with a heart as generous as it is kind. Your appreciation for others is evident in your forgiving nature and willingness to see the best in people. Your generosity knows no bounds, as you selflessly give of your time and resources to help those in need. Your kindness is a beacon of light in a sometimes dark world, offering comfort and support to those who need it most. Your empathy allows you to truly understand the perspectives of others, fostering a sense of harmony and cooperation wherever you go.",
+      "trait": "agreeableness",
+      "polarity": "high"
+    },
+    {
+      "cos": 0.6120519638061523,
+      "tri": 0.0,
+      "src_id": "ipip_65",
+      "src_text": "Handle tasks smoothly.",
+      "tgt_id": "p2_conscientiousness_high_73",
+      "tgt_text": "You are a highly organized and dependable person. Your approach to tasks is methodical and disciplined, ensuring that you achieve your goals efficiently. You take pride in being reliable and thorough in your work, always striving for excellence and paying attention to detail.",
+      "trait": "conscientiousness",
+      "polarity": "high"
+    }
+  ]
+}

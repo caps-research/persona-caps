@@ -1,0 +1,439 @@
+{
+  "config": {
+    "backend": "minimax",
+    "temperature": 0.7,
+    "runs": 1,
+    "dimensions": [
+      "extraversion"
+    ],
+    "polarities": [
+      "high"
+    ],
+    "corpus_dir": "./workspace/repos/persona-caps/data/if_then/paper/beck_2022_v2",
+    "margin": 0.5,
+    "bins": [
+      [
+        0.0,
+        0.2
+      ],
+      [
+        0.2,
+        0.35
+      ],
+      [
+        0.35,
+        1.01
+      ]
+    ]
+  },
+  "records": [
+    {
+      "dim": "extraversion",
+      "pol": "high",
+      "run": 0,
+      "item_id": "e1",
+      "item_dim": "extraversion",
+      "keyed": "+",
+      "rating": 5,
+      "scored": 5.0,
+      "max_sim": 0.2417,
+      "top_atom_ids": [
+        "beck2022_high_extr__positivity__others_charge__073",
+        "beck2022_high_extr__sociality__quiet__077",
+        "beck2022_high_extr__positivity__quiet__085",
+        "beck2022_high_extr__positivity__outgoing__074"
+      ],
+      "aligned": true
+    },
+    {
+      "dim": "extraversion",
+      "pol": "high",
+      "run": 0,
+      "item_id": "e2",
+      "item_dim": "extraversion",
+      "keyed": "-",
+      "rating": 1,
+      "scored": 5.0,
+      "max_sim": 0.2431,
+      "top_atom_ids": [
+        "beck2022_high_extr__sociality__quiet__077",
+        "beck2022_high_extr__positivity__others_charge__073",
+        "beck2022_high_extr__positivity__quiet__085",
+        "beck2022_high_extr__positivity__outgoing__074"
+      ],
+      "aligned": true
+    },
+    {
+      "dim": "extraversion",
+      "pol": "high",
+      "run": 0,
+      "item_id": "e3",
+      "item_dim": "extraversion",
+      "keyed": "+",
+      "rating": 5,
+      "scored": 5.0,
+      "max_sim": 0.2596,
+      "top_atom_ids": [
+        "beck2022_high_extr__positivity__others_charge__073",
+        "beck2022_high_extr__sociality__quiet__077",
+        "beck2022_high_extr__positivity__quiet__085",
+        "beck2022_high_extr__positivity__outgoing__074"
+      ],
+      "aligned": true
+    },
+    {
+      "dim": "extraversion",
+      "pol": "high",
+      "run": 0,
+      "item_id": "e4",
+      "item_dim": "extraversion",
+      "keyed": "-",
+      "rating": 1,
+      "scored": 5.0,
+      "max_sim": 0.2606,
+      "top_atom_ids": [
+        "beck2022_high_extr__positivity__others_charge__073",
+        "beck2022_high_extr__positivity__outgoing__074",
+        "beck2022_high_extr__positivity__quiet__085",
+        "beck2022_high_extr__sociality__quiet__077"
+      ],
+      "aligned": true
+    },
+    {
+      "dim": "extraversion",
+      "pol": "high",
+      "run": 0,
+      "item_id": "a1",
+      "item_dim": "agreeableness",
+      "keyed": "+",
+      "rating": 4,
+      "scored": 4.0,
+      "max_sim": 0.2598,
+      "top_atom_ids": [
+        "beck2022_high_extr__positivity__others_charge__073",
+        "beck2022_high_extr__positivity__quiet__085",
+        "beck2022_high_extr__sociality__quiet__077",
+        "beck2022_high_extr__excited_schoolwork__quiet__079"
+      ],
+      "aligned": null
+    },
+    {
+      "dim": "extraversion",
+      "pol": "high",
+      "run": 0,
+      "item_id": "a2",
+      "item_dim": "agreeableness",
+      "keyed": "-",
+      "rating": 2,
+      "scored": 4.0,
+      "max_sim": 0.2449,
+      "top_atom_ids": [
+        "beck2022_high_extr__positivity__others_charge__073",
+        "beck2022_high_extr__positivity__quiet__085",
+        "beck2022_high_extr__sociality__quiet__077",
+        "beck2022_high_extr__positivity__outgoing__074"
+      ],
+      "aligned": null
+    },
+    {
+      "dim": "extraversion",
+      "pol": "high",
+      "run": 0,
+      "item_id": "a3",
+      "item_dim": "agreeableness",
+      "keyed": "+",
+      "rating": 4,
+      "scored": 4.0,
+      "max_sim": 0.2564,
+      "top_atom_ids": [
+        "beck2022_high_extr__positivity__others_charge__073",
+        "beck2022_high_extr__excited_schoolwork__quiet__079",
+        "beck2022_high_extr__positivity__quiet__085",
+        "beck2022_high_extr__positivity__rarely_excited__072"
+      ],
+      "aligned": null
+    },
+    {
+      "dim": "extraversion",
+      "pol": "high",
+      "run": 0,
+      "item_id": "a4",
+      "item_dim": "agreeableness",
+      "keyed": "-",
+      "rating": 1,
+      "scored": 5.0,
+      "max_sim": 0.2526,
+      "top_atom_ids": [
+        "beck2022_high_extr__positivity__others_charge__073",
+        "beck2022_high_extr__sociality__quiet__077",
+        "beck2022_high_extr__positivity__quiet__085",
+        "beck2022_high_extr__positivity__outgoing__074"
+      ],
+      "aligned": null
+    },
+    {
+      "dim": "extraversion",
+      "pol": "high",
+      "run": 0,
+      "item_id": "c1",
+      "item_dim": "conscientiousness",
+      "keyed": "+",
+      "rating": 3,
+      "scored": 3.0,
+      "max_sim": 0.2407,
+      "top_atom_ids": [
+        "beck2022_high_extr__sociality__quiet__077",
+        "beck2022_high_extr__excited_schoolwork__quiet__079",
+        "beck2022_high_extr__excited_schoolwork__assertive__082",
+        "beck2022_high_extr__positivity__others_charge__073"
+      ],
+      "aligned": null
+    },
+    {
+      "dim": "extraversion",
+      "pol": "high",
+      "run": 0,
+      "item_id": "c2",
+      "item_dim": "conscientiousness",
+      "keyed": "-",
+      "rating": 3,
+      "scored": 3.0,
+      "max_sim": 0.2459,
+      "top_atom_ids": [
+        "beck2022_high_extr__positivity__others_charge__073",
+        "beck2022_high_extr__sociality__quiet__077",
+        "beck2022_high_extr__positivity__quiet__085",
+        "beck2022_high_extr__excited_schoolwork__assertive__082"
+      ],
+      "aligned": null
+    },
+    {
+      "dim": "extraversion",
+      "pol": "high",
+      "run": 0,
+      "item_id": "c3",
+      "item_dim": "conscientiousness",
+      "keyed": "+",
+      "rating": 3,
+      "scored": 3.0,
+      "max_sim": 0.2209,
+      "top_atom_ids": [
+        "beck2022_high_extr__positivity__others_charge__073",
+        "beck2022_high_extr__positivity__quiet__085",
+        "beck2022_high_extr__sociality__quiet__077",
+        "beck2022_high_extr__positivity__outgoing__074"
+      ],
+      "aligned": null
+    },
+    {
+      "dim": "extraversion",
+      "pol": "high",
+      "run": 0,
+      "item_id": "c4",
+      "item_dim": "conscientiousness",
+      "keyed": "-",
+      "rating": 2,
+      "scored": 4.0,
+      "max_sim": 0.232,
+      "top_atom_ids": [
+        "beck2022_high_extr__positivity__others_charge__073",
+        "beck2022_high_extr__positivity__quiet__085",
+        "beck2022_high_extr__sociality__quiet__077",
+        "beck2022_high_extr__positivity__outgoing__074"
+      ],
+      "aligned": null
+    },
+    {
+      "dim": "extraversion",
+      "pol": "high",
+      "run": 0,
+      "item_id": "n1",
+      "item_dim": "neuroticism",
+      "keyed": "+",
+      "rating": 2,
+      "scored": 2.0,
+      "max_sim": 0.2389,
+      "top_atom_ids": [
+        "beck2022_high_extr__positivity__others_charge__073",
+        "beck2022_high_extr__positivity__quiet__085",
+        "beck2022_high_extr__positivity__rarely_excited__072",
+        "beck2022_high_extr__positivity__outgoing__074"
+      ],
+      "aligned": null
+    },
+    {
+      "dim": "extraversion",
+      "pol": "high",
+      "run": 0,
+      "item_id": "n2",
+      "item_dim": "neuroticism",
+      "keyed": "-",
+      "rating": 2,
+      "scored": 4.0,
+      "max_sim": 0.2952,
+      "top_atom_ids": [
+        "beck2022_high_extr__positivity__others_charge__073",
+        "beck2022_high_extr__positivity__quiet__085",
+        "beck2022_high_extr__positivity__outgoing__074",
+        "beck2022_high_extr__excited_schoolwork__assertive__082"
+      ],
+      "aligned": null
+    },
+    {
+      "dim": "extraversion",
+      "pol": "high",
+      "run": 0,
+      "item_id": "n3",
+      "item_dim": "neuroticism",
+      "keyed": "+",
+      "rating": 2,
+      "scored": 2.0,
+      "max_sim": 0.2146,
+      "top_atom_ids": [
+        "beck2022_high_extr__positivity__others_charge__073",
+        "beck2022_high_extr__excited_schoolwork__quiet__079",
+        "beck2022_high_extr__sociality__quiet__077",
+        "beck2022_high_extr__positivity__quiet__085"
+      ],
+      "aligned": null
+    },
+    {
+      "dim": "extraversion",
+      "pol": "high",
+      "run": 0,
+      "item_id": "n4",
+      "item_dim": "neuroticism",
+      "keyed": "-",
+      "rating": 4,
+      "scored": 2.0,
+      "max_sim": 0.2295,
+      "top_atom_ids": [
+        "beck2022_high_extr__positivity__others_charge__073",
+        "beck2022_high_extr__positivity__quiet__085",
+        "beck2022_high_extr__sociality__quiet__077",
+        "beck2022_high_extr__positivity__outgoing__074"
+      ],
+      "aligned": null
+    },
+    {
+      "dim": "extraversion",
+      "pol": "high",
+      "run": 0,
+      "item_id": "o1",
+      "item_dim": "openness",
+      "keyed": "+",
+      "rating": 4,
+      "scored": 4.0,
+      "max_sim": 0.2293,
+      "top_atom_ids": [
+        "beck2022_high_extr__positivity__others_charge__073",
+        "beck2022_high_extr__excited_schoolwork__quiet__079",
+        "beck2022_high_extr__sociality__quiet__077",
+        "beck2022_high_extr__positivity__outgoing__074"
+      ],
+      "aligned": null
+    },
+    {
+      "dim": "extraversion",
+      "pol": "high",
+      "run": 0,
+      "item_id": "o2",
+      "item_dim": "openness",
+      "keyed": "-",
+      "rating": 1,
+      "scored": 5.0,
+      "max_sim": 0.2305,
+      "top_atom_ids": [
+        "beck2022_high_extr__excited_schoolwork__quiet__079",
+        "beck2022_high_extr__sociality__quiet__077",
+        "beck2022_high_extr__positivity__others_charge__073",
+        "beck2022_high_extr__excited_schoolwork__assertive__082"
+      ],
+      "aligned": null
+    },
+    {
+      "dim": "extraversion",
+      "pol": "high",
+      "run": 0,
+      "item_id": "o3",
+      "item_dim": "openness",
+      "keyed": "-",
+      "rating": 1,
+      "scored": 5.0,
+      "max_sim": 0.2256,
+      "top_atom_ids": [
+        "beck2022_high_extr__excited_schoolwork__quiet__079",
+        "beck2022_high_extr__positivity__others_charge__073",
+        "beck2022_high_extr__excited_schoolwork__assertive__082",
+        "beck2022_high_extr__sociality__quiet__077"
+      ],
+      "aligned": null
+    },
+    {
+      "dim": "extraversion",
+      "pol": "high",
+      "run": 0,
+      "item_id": "o4",
+      "item_dim": "openness",
+      "keyed": "-",
+      "rating": 1,
+      "scored": 5.0,
+      "max_sim": 0.2289,
+      "top_atom_ids": [
+        "beck2022_high_extr__sociality__quiet__077",
+        "beck2022_high_extr__positivity__others_charge__073",
+        "beck2022_high_extr__excited_schoolwork__quiet__079",
+        "beck2022_high_extr__positivity__rarely_excited__072"
+      ],
+      "aligned": null
+    }
+  ],
+  "per_persona_summary": {
+    "high_extraversion": [
+      {
+        "lo": 0.0,
+        "hi": 0.2,
+        "n": 0,
+        "aligned_rate": null,
+        "mean_sim": null
+      },
+      {
+        "lo": 0.2,
+        "hi": 0.35,
+        "n": 4,
+        "aligned_rate": 1.0,
+        "mean_sim": 0.25125
+      },
+      {
+        "lo": 0.35,
+        "hi": 1.01,
+        "n": 0,
+        "aligned_rate": null,
+        "mean_sim": null
+      }
+    ]
+  },
+  "pooled_summary": [
+    {
+      "lo": 0.0,
+      "hi": 0.2,
+      "n": 0,
+      "aligned_rate": null,
+      "mean_sim": null
+    },
+    {
+      "lo": 0.2,
+      "hi": 0.35,
+      "n": 4,
+      "aligned_rate": 1.0,
+      "mean_sim": 0.25125
+    },
+    {
+      "lo": 0.35,
+      "hi": 1.01,
+      "n": 0,
+      "aligned_rate": null,
+      "mean_sim": null
+    }
+  ]
+}

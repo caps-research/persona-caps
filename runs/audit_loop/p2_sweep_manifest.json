@@ -1,0 +1,249 @@
+{
+  "generated_at_utc": "2026-05-22T02:10:56.926290+00:00",
+  "subject": "minimax",
+  "auditor": "gpt-4o",
+  "strategies": [
+    "oracle",
+    "blind",
+    "detect"
+  ],
+  "source_manifest": "./runs/audit_loop/sweep_manifest.json",
+  "conditions": [
+    {
+      "cell": "high_extraversion",
+      "k": 10,
+      "seed": 1,
+      "targeted_dim": "extraversion",
+      "polarity": "high",
+      "p2_sanity_passed": true,
+      "strategies": {
+        "oracle": "ok",
+        "blind": "ok",
+        "detect": "ok"
+      },
+      "status": "ok"
+    },
+    {
+      "cell": "high_extraversion",
+      "k": 10,
+      "seed": 2,
+      "targeted_dim": "extraversion",
+      "polarity": "high",
+      "p2_sanity_passed": true,
+      "strategies": {
+        "oracle": "ok",
+        "blind": "ok",
+        "detect": "ok"
+      },
+      "status": "ok"
+    },
+    {
+      "cell": "high_extraversion",
+      "k": 10,
+      "seed": 3,
+      "targeted_dim": "extraversion",
+      "polarity": "high",
+      "p2_sanity_passed": true,
+      "strategies": {
+        "oracle": "ok",
+        "blind": "ok",
+        "detect": "ok"
+      },
+      "status": "ok"
+    },
+    {
+      "cell": "high_extraversion",
+      "k": 15,
+      "seed": 1,
+      "targeted_dim": "extraversion",
+      "polarity": "high",
+      "p2_sanity_passed": true,
+      "strategies": {
+        "oracle": "ok",
+        "blind": "ok",
+        "detect": "ok"
+      },
+      "status": "ok"
+    },
+    {
+      "cell": "high_extraversion",
+      "k": 15,
+      "seed": 2,
+      "targeted_dim": "extraversion",
+      "polarity": "high",
+      "p2_sanity_passed": true,
+      "strategies": {
+        "oracle": "ok",
+        "blind": "ok",
+        "detect": "ok"
+      },
+      "status": "ok"
+    },
+    {
+      "cell": "high_extraversion",
+      "k": 15,
+      "seed": 3,
+      "targeted_dim": "extraversion",
+      "polarity": "high",
+      "p2_sanity_passed": true,
+      "strategies": {
+        "oracle": "ok",
+        "blind": "ok",
+        "detect": "ok"
+      },
+      "status": "ok"
+    },
+    {
+      "cell": "low_agreeableness",
+      "k": 10,
+      "seed": 3,
+      "targeted_dim": "agreeableness",
+      "polarity": "low",
+      "p2_sanity_passed": true,
+      "strategies": {
+        "oracle": "ok",
+        "blind": "ok",
+        "detect": "ok"
+      },
+      "status": "ok"
+    },
+    {
+      "cell": "low_agreeableness",
+      "k": 15,
+      "seed": 3,
+      "targeted_dim": "agreeableness",
+      "polarity": "low",
+      "p2_sanity_passed": true,
+      "strategies": {
+        "oracle": "ok",
+        "blind": "ok",
+        "detect": "ok"
+      },
+      "status": "ok"
+    },
+    {
+      "cell": "high_neuroticism",
+      "k": 15,
+      "seed": 1,
+      "targeted_dim": "neuroticism",
+      "polarity": "high",
+      "p2_sanity_passed": true,
+      "strategies": {
+        "oracle": "reused",
+        "blind": "reused",
+        "detect": "reused"
+      },
+      "status": "ok"
+    },
+    {
+      "cell": "high_neuroticism",
+      "k": 15,
+      "seed": 2,
+      "targeted_dim": "neuroticism",
+      "polarity": "high",
+      "p2_sanity_passed": false,
+      "strategies": {},
+      "status": "ok"
+    },
+    {
+      "cell": "high_neuroticism",
+      "k": 15,
+      "seed": 3,
+      "targeted_dim": "neuroticism",
+      "polarity": "high",
+      "p2_sanity_passed": false,
+      "strategies": {},
+      "status": "ok"
+    },
+    {
+      "cell": "low_openness",
+      "k": 5,
+      "seed": 1,
+      "targeted_dim": "openness",
+      "polarity": "low",
+      "p2_sanity_passed": false,
+      "strategies": {},
+      "status": "ok"
+    },
+    {
+      "cell": "low_openness",
+      "k": 5,
+      "seed": 2,
+      "targeted_dim": "openness",
+      "polarity": "low",
+      "p2_sanity_passed": false,
+      "strategies": {},
+      "status": "ok"
+    },
+    {
+      "cell": "low_openness",
+      "k": 5,
+      "seed": 3,
+      "targeted_dim": "openness",
+      "polarity": "low",
+      "p2_sanity_passed": false,
+      "strategies": {},
+      "status": "ok"
+    },
+    {
+      "cell": "low_openness",
+      "k": 10,
+      "seed": 1,
+      "targeted_dim": "openness",
+      "polarity": "low",
+      "p2_sanity_passed": false,
+      "strategies": {},
+      "status": "ok"
+    },
+    {
+      "cell": "low_openness",
+      "k": 10,
+      "seed": 2,
+      "targeted_dim": "openness",
+      "polarity": "low",
+      "p2_sanity_passed": false,
+      "strategies": {},
+      "status": "ok"
+    },
+    {
+      "cell": "low_openness",
+      "k": 10,
+      "seed": 3,
+      "targeted_dim": "openness",
+      "polarity": "low",
+      "p2_sanity_passed": false,
+      "strategies": {},
+      "status": "ok"
+    },
+    {
+      "cell": "low_openness",
+      "k": 15,
+      "seed": 1,
+      "targeted_dim": "openness",
+      "polarity": "low",
+      "p2_sanity_passed": false,
+      "strategies": {},
+      "status": "ok"
+    },
+    {
+      "cell": "low_openness",
+      "k": 15,
+      "seed": 2,
+      "targeted_dim": "openness",
+      "polarity": "low",
+      "p2_sanity_passed": false,
+      "strategies": {},
+      "status": "ok"
+    },
+    {
+      "cell": "low_openness",
+      "k": 15,
+      "seed": 3,
+      "targeted_dim": "openness",
+      "polarity": "low",
+      "p2_sanity_passed": false,
+      "strategies": {},
+      "status": "ok"
+    }
+  ]
+}

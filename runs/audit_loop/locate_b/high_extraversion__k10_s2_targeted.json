@@ -1,0 +1,310 @@
+{
+  "locator": "metadata",
+  "polluted_corpus": "./runs/audit_loop/polluted/high_extraversion__k10_s2_targeted.jsonl",
+  "injection_log": "./runs/audit_loop/polluted/high_extraversion__k10_s2_targeted.log.json",
+  "classifier": "gpt-4o",
+  "temperature": 0.0,
+  "max_attempts": 3,
+  "classify_prompt_version": "v1",
+  "n_atoms": 20,
+  "n_flagged": 12,
+  "n_ground_truth": 10,
+  "parse_failures": 0,
+  "metrics": {
+    "tp": 10,
+    "fp": 2,
+    "fn": 0,
+    "tn": 8,
+    "precision": 0.8333333333333334,
+    "recall": 1.0,
+    "f1": 0.9090909090909091
+  },
+  "flagged_ids": [
+    "beck2022_high_extr__excited_schoolwork__rarely_excited__086",
+    "beck2022_high_extr__in_class__less_active__087",
+    "beck2022_high_extr__interacted_family__assertive__081",
+    "beck2022_high_extr__interacted_friend__quiet__071",
+    "beck2022_high_extr__interacted_friend__shy__084",
+    "beck2022_high_extr__positivity__others_charge__073",
+    "beck2022_high_extr__positivity__outgoing__074",
+    "beck2022_high_extr__positivity__quiet__085",
+    "beck2022_high_extr__positivity__rarely_excited__072",
+    "beck2022_high_extr__sociality__less_active__080",
+    "beck2022_high_extr__sociality__quiet__077",
+    "beck2022_high_extr__sociality__shy__083"
+  ],
+  "ground_truth": [
+    "beck2022_high_extr__in_class__less_active__087",
+    "beck2022_high_extr__interacted_friend__quiet__071",
+    "beck2022_high_extr__interacted_friend__shy__084",
+    "beck2022_high_extr__positivity__others_charge__073",
+    "beck2022_high_extr__positivity__outgoing__074",
+    "beck2022_high_extr__positivity__quiet__085",
+    "beck2022_high_extr__positivity__rarely_excited__072",
+    "beck2022_high_extr__sociality__less_active__080",
+    "beck2022_high_extr__sociality__quiet__077",
+    "beck2022_high_extr__sociality__shy__083"
+  ],
+  "per_atom": [
+    {
+      "atom_id": "beck2022_high_extr__excited_schoolwork__energetic__070",
+      "stored_dimension": "extraversion",
+      "stored_polarity": "high",
+      "classified": {
+        "dimension": "extraversion",
+        "polarity": "high",
+        "confidence": 0.9,
+        "rationale": "shows high energy and enthusiasm"
+      },
+      "flagged": false,
+      "in_ground_truth": false
+    },
+    {
+      "atom_id": "beck2022_high_extr__positivity__outgoing__074",
+      "stored_dimension": "extraversion",
+      "stored_polarity": "high",
+      "classified": {
+        "dimension": "extraversion",
+        "polarity": "low",
+        "confidence": 0.9,
+        "rationale": "prefers observing over engaging"
+      },
+      "flagged": true,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_high_extr__excited_schoolwork__enthusiastic__075",
+      "stored_dimension": "extraversion",
+      "stored_polarity": "high",
+      "classified": {
+        "dimension": "extraversion",
+        "polarity": "high",
+        "confidence": 0.9,
+        "rationale": "animated and enthusiastic engagement"
+      },
+      "flagged": false,
+      "in_ground_truth": false
+    },
+    {
+      "atom_id": "beck2022_high_extr__positivity__rarely_excited__072",
+      "stored_dimension": "extraversion",
+      "stored_polarity": "high",
+      "classified": {
+        "dimension": "extraversion",
+        "polarity": "low",
+        "confidence": 0.8,
+        "rationale": "quiet appreciation and steady energy suggest low extraversion"
+      },
+      "flagged": true,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_high_extr__excited_schoolwork__outgoing__076",
+      "stored_dimension": "extraversion",
+      "stored_polarity": "high",
+      "classified": {
+        "dimension": "extraversion",
+        "polarity": "high",
+        "confidence": 0.95,
+        "rationale": "actively seeks social interaction"
+      },
+      "flagged": false,
+      "in_ground_truth": false
+    },
+    {
+      "atom_id": "beck2022_high_extr__interacted_friend__quiet__071",
+      "stored_dimension": "extraversion",
+      "stored_polarity": "high",
+      "classified": {
+        "dimension": "agreeableness",
+        "polarity": "high",
+        "confidence": 0.9,
+        "rationale": "shows consideration for others' input"
+      },
+      "flagged": true,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_high_extr__positivity__others_charge__073",
+      "stored_dimension": "extraversion",
+      "stored_polarity": "high",
+      "classified": {
+        "dimension": "extraversion",
+        "polarity": "low",
+        "confidence": 0.9,
+        "rationale": "quietly observing rather than engaging actively"
+      },
+      "flagged": true,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_high_extr__excited_schoolwork__talkative__078",
+      "stored_dimension": "extraversion",
+      "stored_polarity": "high",
+      "classified": {
+        "dimension": "extraversion",
+        "polarity": "high",
+        "confidence": 0.95,
+        "rationale": "eagerly jumping into conversations and talking nonstop"
+      },
+      "flagged": false,
+      "in_ground_truth": false
+    },
+    {
+      "atom_id": "beck2022_high_extr__sociality__quiet__077",
+      "stored_dimension": "extraversion",
+      "stored_polarity": "high",
+      "classified": {
+        "dimension": "extraversion",
+        "polarity": "low",
+        "confidence": 0.9,
+        "rationale": "prefers listening over speaking up"
+      },
+      "flagged": true,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_high_extr__excited_schoolwork__quiet__079",
+      "stored_dimension": "extraversion",
+      "stored_polarity": "high",
+      "classified": {
+        "dimension": "extraversion",
+        "polarity": "high",
+        "confidence": 0.9,
+        "rationale": "expresses high energy and enthusiasm"
+      },
+      "flagged": false,
+      "in_ground_truth": false
+    },
+    {
+      "atom_id": "beck2022_high_extr__sociality__less_active__080",
+      "stored_dimension": "extraversion",
+      "stored_polarity": "high",
+      "classified": {
+        "dimension": "extraversion",
+        "polarity": "low",
+        "confidence": 0.95,
+        "rationale": "prefers to observe rather than engage actively"
+      },
+      "flagged": true,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_high_extr__excited_schoolwork__assertive__082",
+      "stored_dimension": "extraversion",
+      "stored_polarity": "high",
+      "classified": {
+        "dimension": "extraversion",
+        "polarity": "high",
+        "confidence": 0.9,
+        "rationale": "speaking up loudly and dominating discussions"
+      },
+      "flagged": false,
+      "in_ground_truth": false
+    },
+    {
+      "atom_id": "beck2022_high_extr__interacted_friend__shy__084",
+      "stored_dimension": "extraversion",
+      "stored_polarity": "high",
+      "classified": {
+        "dimension": "agreeableness",
+        "polarity": "high",
+        "confidence": 0.85,
+        "rationale": "listening attentively and speaking in a soft, measured tone"
+      },
+      "flagged": true,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_high_extr__sociality__shy__083",
+      "stored_dimension": "extraversion",
+      "stored_polarity": "high",
+      "classified": {
+        "dimension": "extraversion",
+        "polarity": "low",
+        "confidence": 0.9,
+        "rationale": "prefers observing over initiating social interaction"
+      },
+      "flagged": true,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_high_extr__positivity__quiet__085",
+      "stored_dimension": "extraversion",
+      "stored_polarity": "high",
+      "classified": {
+        "dimension": "extraversion",
+        "polarity": "low",
+        "confidence": 0.8,
+        "rationale": "quiet listening and calm observation suggest low extraversion"
+      },
+      "flagged": true,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_high_extr__excited_schoolwork__less_active__088",
+      "stored_dimension": "extraversion",
+      "stored_polarity": "high",
+      "classified": {
+        "dimension": "extraversion",
+        "polarity": "high",
+        "confidence": 0.8,
+        "rationale": "restless energy and physical activity"
+      },
+      "flagged": false,
+      "in_ground_truth": false
+    },
+    {
+      "atom_id": "beck2022_high_extr__in_class__less_active__087",
+      "stored_dimension": "extraversion",
+      "stored_polarity": "high",
+      "classified": {
+        "dimension": "conscientiousness",
+        "polarity": "high",
+        "confidence": 0.9,
+        "rationale": "diligent note-taking and reflection"
+      },
+      "flagged": true,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_high_extr__interacted_family__assertive__081",
+      "stored_dimension": "extraversion",
+      "stored_polarity": "high",
+      "classified": {
+        "dimension": "agreeableness",
+        "polarity": "low",
+        "confidence": 0.9,
+        "rationale": "interrupting and insisting on own preferences"
+      },
+      "flagged": true,
+      "in_ground_truth": false
+    },
+    {
+      "atom_id": "beck2022_high_extr__excited_schoolwork__rarely_excited__086",
+      "stored_dimension": "extraversion",
+      "stored_polarity": "high",
+      "classified": {
+        "dimension": "openness",
+        "polarity": "high",
+        "confidence": 0.9,
+        "rationale": "enthusiasm for learning indicates high openness"
+      },
+      "flagged": true,
+      "in_ground_truth": false
+    },
+    {
+      "atom_id": "beck2022_high_extr__excited_schoolwork__shy__089",
+      "stored_dimension": "extraversion",
+      "stored_polarity": "high",
+      "classified": {
+        "dimension": "extraversion",
+        "polarity": "high",
+        "confidence": 0.95,
+        "rationale": "actively engaging and speaking out"
+      },
+      "flagged": false,
+      "in_ground_truth": false
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "trait": "conscientiousness",
+  "contexts": ["work", "family"],
+  "context_string_for_baseline": "You are a person who is highly conscientious, organized, and disciplined in professional settings (at work, with colleagues, in your career), but relaxed, spontaneous, and easygoing at home with family (with siblings, parents, partners, children, in informal family settings). The same person, two clearly different modes depending on whether the situation is professional or familial.",
+  "scenarios": [
+    {
+      "id": "doc_handoff",
+      "probe": "Receiving a poorly organized written artifact and deciding what to do with it.",
+      "work":   "Your colleague hands you a 12-page report that's clearly thrown together at the last minute — sections out of order, no summary, citations missing. They ask: 'Can you take a look before tomorrow's meeting?' What do you do?",
+      "family": "Your sibling hands you a messy three-page list of vacation ideas they jotted down — no dates, no budget, options scattered across topics. They say: 'Tell me what you think before dinner?' What do you do?"
+    },
+    {
+      "id": "deadline_eve",
+      "probe": "How you spend the evening before something due tomorrow.",
+      "work":   "You have an important client deliverable due tomorrow at noon. It's currently 7pm Wednesday. How do you spend the evening?",
+      "family": "Your family is supposed to leave at 8am tomorrow for a long-planned weekend trip. It's currently 7pm Friday. How do you spend the evening?"
+    },
+    {
+      "id": "event_planning",
+      "probe": "Approach to organizing a small group event.",
+      "work":   "You've been asked to organize a half-day strategy offsite for 8 colleagues next month. How do you approach planning it?",
+      "family": "You've been asked to organize a small birthday gathering at home for your nephew next month. How do you approach planning it?"
+    },
+    {
+      "id": "cluttered_space",
+      "probe": "Reaction to physical disorder in your environment.",
+      "work":   "You walk into your office on Monday morning. Your desk has stacks of paper from last week, three half-drunk coffee mugs, and the inbox is overflowing. What do you do first?",
+      "family": "You walk into your living room on Saturday morning. The coffee table has yesterday's snack plates, a few half-read magazines, and the kids' toys from last night. What do you do first?"
+    },
+    {
+      "id": "asked_for_input",
+      "probe": "How you give feedback when asked.",
+      "work":   "Your team lead pings you: 'Quick — can you give me your take on the Q2 launch plan attached?' What do you say in your reply?",
+      "family": "Your partner says over breakfast: 'Quick — what do you think of these three Airbnbs for the trip?' What do you say in your reply?"
+    },
+    {
+      "id": "conflicting_priorities",
+      "probe": "How you choose between competing options.",
+      "work":   "You have three urgent tasks competing for the same afternoon: prepping a board slide, reviewing two pull requests, and drafting a budget memo. How do you decide what to do?",
+      "family": "You have three things competing for Sunday afternoon: helping your kid build a fort, watching the game with a friend who came over, and finally tackling that closet you've been meaning to clean. How do you decide what to do?"
+    },
+    {
+      "id": "small_mistake",
+      "probe": "Reaction to a small error you're responsible for.",
+      "work":   "You realize the spreadsheet you sent the team this morning had a small typo in one of the row labels — nothing that changes the numbers, but it's there. What do you do?",
+      "family": "You realize that the grocery list you handed your partner this morning had 'orages' instead of 'oranges' — they laugh and text you about it. What do you do?"
+    },
+    {
+      "id": "free_time",
+      "probe": "How you spend unstructured discretionary time.",
+      "work":   "It's 4pm on Friday and your week wrapped up unexpectedly early — no more meetings, no urgent fires. What do you do with the next 90 minutes before logging off?",
+      "family": "It's 4pm on Sunday and the day's plans wrapped up unexpectedly early — no more errands, kids occupied. What do you do with the next 90 minutes before dinner?"
+    }
+  ]
+}

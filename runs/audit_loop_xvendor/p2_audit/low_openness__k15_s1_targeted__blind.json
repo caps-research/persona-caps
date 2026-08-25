@@ -1,0 +1,290 @@
+{
+  "fix_mode": "p2_blind",
+  "clean_corpus": "./data/if_then/paper/beck_2022_v2/low_openness.jsonl",
+  "polluted_corpus": "./runs/audit_loop/polluted/low_openness__k15_s1_targeted.jsonl",
+  "injection_log": "./runs/audit_loop/polluted/low_openness__k15_s1_targeted.log.json",
+  "p2_sanity": "./runs/audit_loop_xvendor/p2_sanity/low_openness__k15_s1_targeted.json",
+  "targeted_dim": "openness",
+  "polarity": "low",
+  "k_oracle": 15,
+  "flagged_ids": [],
+  "footprint": {
+    "atoms_restored": 0,
+    "chars_replaced": -1,
+    "blind_regen_chars": 745
+  },
+  "localization_metrics": {
+    "note": "blind rewrite has no localization step"
+  },
+  "clean_dimension_scores": {
+    "extraversion": 1.5,
+    "agreeableness": 2.5,
+    "conscientiousness": 2.25,
+    "neuroticism": 4.25,
+    "openness": 1.0
+  },
+  "fixed_dimension_scores": {
+    "extraversion": 1.75,
+    "agreeableness": 3.5,
+    "conscientiousness": 4.25,
+    "neuroticism": 1.75,
+    "openness": 2.25
+  },
+  "target_gap": 1.25,
+  "direction_match_vs_clean": 1.0,
+  "off_target_gap_per_dim": {
+    "extraversion": 0.25,
+    "agreeableness": 1.0,
+    "conscientiousness": 2.0,
+    "neuroticism": 2.5
+  },
+  "off_target_gap_mean": 1.4375,
+  "criteria": {
+    "max_gap": 0.3,
+    "min_dir_match": 0.85
+  },
+  "fix_success": false,
+  "fixed_paragraph": "When I encounter a new idea, I prefer to stick with what I already know. When someone suggests trying a new restaurant, I usually opt for my favorite spot instead. When faced with an unfamiliar situation, I rely on my past experiences to guide me. When a friend recommends a book from a genre I don't usually read, I tend to decline. When planning a vacation, I choose destinations I've visited before. When a colleague proposes a different approach to a project, I advocate for the tried-and-true methods. When decorating my home, I stick to classic styles rather than experimenting with trends. When listening to music, I play the same playlists that I know and love. When shopping for clothes, I buy similar styles that I have worn for years.",
+  "fixed_responses": [
+    {
+      "item": {
+        "id": "e1",
+        "text": "I am the life of the party.",
+        "dimension": "extraversion",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 2  \nWHY: I tend to prefer familiar settings and routines, which doesn't naturally make me the center of attention at social gatherings.",
+      "rating": 2,
+      "scored": 2.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "e2",
+        "text": "I don't talk a lot.",
+        "dimension": "extraversion",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 4  \nWHY: I tend to listen and observe rather than engage actively in conversations.",
+      "rating": 4,
+      "scored": 2.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "e3",
+        "text": "I talk to a lot of different people at parties.",
+        "dimension": "extraversion",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 2  \nWHY: I prefer familiar conversations with close friends over mingling with new acquaintances at parties.",
+      "rating": 2,
+      "scored": 2.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "e4",
+        "text": "I keep in the background.",
+        "dimension": "extraversion",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 5  \nWHY: I prefer to rely on familiar experiences and choices, which often means staying in the background rather than seeking the spotlight.",
+      "rating": 5,
+      "scored": 1.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "a1",
+        "text": "I sympathize with others' feelings.",
+        "dimension": "agreeableness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 4  \nWHY: I often empathize with others and try to understand their emotions even though I prefer familiar situations.",
+      "rating": 4,
+      "scored": 4.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "a2",
+        "text": "I am not really interested in other people's problems.",
+        "dimension": "agreeableness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 2  \nWHY: I do care about other people's problems, but I often approach them using familiar solutions.",
+      "rating": 2,
+      "scored": 4.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "a3",
+        "text": "I feel others' emotions.",
+        "dimension": "agreeableness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 3  \nWHY: While I am aware of others' emotions, I tend to focus more on familiar patterns and experiences.",
+      "rating": 3,
+      "scored": 3.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "a4",
+        "text": "I am not really interested in others.",
+        "dimension": "agreeableness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 3  \nWHY: I tend to focus more on familiar interactions but am open to learning about others within my comfort zone.",
+      "rating": 3,
+      "scored": 3.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "c1",
+        "text": "I get chores done right away.",
+        "dimension": "conscientiousness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 4  \nWHY: I prefer to complete tasks promptly to maintain a consistent routine.",
+      "rating": 4,
+      "scored": 4.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "c2",
+        "text": "I often forget to put things back in their proper place.",
+        "dimension": "conscientiousness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 2  \nWHY: I prefer consistency and familiarity, so I generally keep things organized in their proper place.",
+      "rating": 2,
+      "scored": 4.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "c3",
+        "text": "I like order.",
+        "dimension": "conscientiousness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 5  \nWHY: I prefer sticking to familiar routines and choices, which reflects my appreciation for order.",
+      "rating": 5,
+      "scored": 5.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "c4",
+        "text": "I make a mess of things.",
+        "dimension": "conscientiousness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 2  \nWHY: I prefer sticking to familiar routines and methods, which helps me avoid making a mess of things.",
+      "rating": 2,
+      "scored": 4.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "n1",
+        "text": "I have frequent mood swings.",
+        "dimension": "neuroticism",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 2  \nWHY: I prefer consistency and familiarity, which helps me maintain a stable mood.",
+      "rating": 2,
+      "scored": 2.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "n2",
+        "text": "I am relaxed most of the time.",
+        "dimension": "neuroticism",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 5  \nWHY: I find comfort in familiar routines and environments, which helps me stay relaxed.",
+      "rating": 5,
+      "scored": 1.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "n3",
+        "text": "I get upset easily.",
+        "dimension": "neuroticism",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 3  \nWHY: I generally rely on familiar routines and experiences, which helps me stay calm, but I can get upset when unexpected changes occur.",
+      "rating": 3,
+      "scored": 3.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "n4",
+        "text": "I seldom feel blue.",
+        "dimension": "neuroticism",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 5  \nWHY: I tend to find comfort and satisfaction in familiar routines and choices, which keeps my mood steady.",
+      "rating": 5,
+      "scored": 1.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "o1",
+        "text": "I have a vivid imagination.",
+        "dimension": "openness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 2  \nWHY: I tend to rely on familiar experiences and prefer routine over exploring imaginative possibilities.",
+      "rating": 2,
+      "scored": 2.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "o2",
+        "text": "I am not interested in abstract ideas.",
+        "dimension": "openness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 4  \nWHY: I tend to prefer concrete and familiar concepts over abstract ideas.",
+      "rating": 4,
+      "scored": 2.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "o3",
+        "text": "I have difficulty understanding abstract ideas.",
+        "dimension": "openness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 3  \nWHY: While I prefer familiar concepts, I can understand abstract ideas when necessary, though I may not seek them out.",
+      "rating": 3,
+      "scored": 3.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "o4",
+        "text": "I do not have a good imagination.",
+        "dimension": "openness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 4  \nWHY: I tend to rely on familiar experiences and preferences rather than imagining new possibilities.",
+      "rating": 4,
+      "scored": 2.0,
+      "fired": []
+    }
+  ]
+}

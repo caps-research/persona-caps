@@ -1,0 +1,29 @@
+{
+  "dataset_id": "0060_beck",
+  "dataset_version": "1.0.0",
+  "track": "paper",
+  "generated_at_utc": "2026-04-22T08:25:29.888068+00:00",
+  "params": {
+    "min_n_active": 30,
+    "min_abs_d": 0.3,
+    "min_diff": 0.3,
+    "lo_q": 0.25,
+    "hi_q": 0.75,
+    "within_dim_only": false,
+    "top_k": 20,
+    "llm": "minimax"
+  },
+  "n_atoms_by_cell": {
+    "high_openness": 19,
+    "low_openness": 19,
+    "high_conscientiousness": 18,
+    "low_conscientiousness": 16,
+    "high_extraversion": 19,
+    "low_extraversion": 15,
+    "high_agreeableness": 17,
+    "low_agreeableness": 19,
+    "high_neuroticism": 19,
+    "low_neuroticism": 16
+  },
+  "consensus_doc": "CONSENSUS.md v3 (paper-track main source)"
+}

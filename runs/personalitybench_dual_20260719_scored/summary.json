@@ -1,0 +1,30 @@
+[
+  {
+    "method": "caps",
+    "per_trait_mean_x2": {
+      "Agreeableness": 9.528735632183908,
+      "Extraversion": 9.632183908045977
+    },
+    "per_trait_variance": {
+      "Agreeableness": 0.47016809514317986,
+      "Extraversion": 0.22031758687130423
+    },
+    "average_mean_x2": 9.580459770114942,
+    "average_variance": 0.34524284100724206,
+    "n_total": 348
+  },
+  {
+    "method": "sp",
+    "per_trait_mean_x2": {
+      "Agreeableness": 9.522727272727273,
+      "Extraversion": 9.497142857142856
+    },
+    "per_trait_variance": {
+      "Agreeableness": 0.42272727272727273,
+      "Extraversion": 0.22377668308702792
+    },
+    "average_mean_x2": 9.509935064935064,
+    "average_variance": 0.3232519779071503,
+    "n_total": 351
+  }
+]

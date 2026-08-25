@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "flip_prompt_version": "v1",
+  "generated_at_utc": "2026-05-22T00:42:54.187406+00:00",
+  "source_corpus": "./data/if_then/paper/beck_2022_v2/high_extraversion.jsonl",
+  "polluted_corpus": "./runs/audit_loop/polluted/high_extraversion__k5_s1_targeted.jsonl",
+  "k": 5,
+  "seed": 1,
+  "strategy": "targeted",
+  "flipper": "gpt-4o",
+  "temperature": 0.0,
+  "max_attempts": 3,
+  "n_total_atoms": 20,
+  "n_flipped": 5,
+  "flipped_ids": [
+    "beck2022_high_extr__interacted_friend__quiet__071",
+    "beck2022_high_extr__positivity__quiet__085",
+    "beck2022_high_extr__sociality__less_active__080",
+    "beck2022_high_extr__sociality__quiet__077",
+    "beck2022_high_extr__sociality__shy__083"
+  ],
+  "selection_meta": {
+    "selector": "max_cosine_to_targeted_dim_items",
+    "inventory": "./data/inventories/ipip_short.json",
+    "targeted_dim": "extraversion",
+    "n_items_used": 4,
+    "n_candidates": 20,
+    "max_sim_per_chosen": {
+      "beck2022_high_extr__positivity__quiet__085": 0.5388505458831787,
+      "beck2022_high_extr__sociality__shy__083": 0.5242220759391785,
+      "beck2022_high_extr__sociality__less_active__080": 0.5010825395584106,
+      "beck2022_high_extr__sociality__quiet__077": 0.49766653776168823,
+      "beck2022_high_extr__interacted_friend__quiet__071": 0.4381982088088989
+    }
+  },
+  "flips": [
+    {
+      "atom_id": "beck2022_high_extr__positivity__quiet__085",
+      "situation": "When I'm in a pleasant social setting with people around",
+      "original_behavior": "I speak loudly, laugh boisterously, and make my presence known with energetic vocal expression",
+      "flipped_behavior": "I listen quietly, smile gently, and enjoy the atmosphere with calm observation",
+      "original_polarity": "high",
+      "intended_polarity": "low",
+      "target_dimension": "extraversion",
+      "n_attempts": 1,
+      "raw_attempts": [
+        "{\"flipped_behavior\": \"I listen quietly, smile gently, and enjoy the atmosphere with calm observation\",\"rationale\": \"The original behavior is high in extraversion, while the rewritten behavior reflects low extraversion by emphasizing quietness and calmness.\"}"
+      ]
+    },
+    {
+      "atom_id": "beck2022_high_extr__sociality__shy__083",
+      "situation": "When I'm in a setting where I can talk to people or meet new faces",
+      "original_behavior": "I approach strangers, speak up confidently, and keep conversations flowing without any hesitation",
+      "flipped_behavior": "I observe quietly, listen attentively, and engage in conversations only when approached",
+      "original_polarity": "high",
+      "intended_polarity": "low",
+      "target_dimension": "extraversion",
+      "n_attempts": 1,
+      "raw_attempts": [
+        "{\"flipped_behavior\": \"I observe quietly, listen attentively, and engage in conversations only when approached\", \"rationale\": \"The original behavior shows high extraversion by actively engaging with others, while the rewritten behavior shows low extraversion by being more reserved and reactive.\"}"
+      ]
+    },
+    {
+      "atom_id": "beck2022_high_extr__sociality__less_active__080",
+      "situation": "When I find myself around other people who are available to talk or do things together",
+      "original_behavior": "I dive right into conversations, move around energetically, and eagerly initiate activities or discussions",
+      "flipped_behavior": "I quietly observe the interactions, stay in one spot, and wait for others to initiate activities or discussions.",
+      "original_polarity": "high",
+      "intended_polarity": "low",
+      "target_dimension": "extraversion",
+      "n_attempts": 1,
+      "raw_attempts": [
+        "{\"flipped_behavior\": \"I quietly observe the interactions, stay in one spot, and wait for others to initiate activities or discussions.\", \"rationale\": \"The behavior reflects low extraversion by showing reserved and passive engagement.\"}"
+      ]
+    },
+    {
+      "atom_id": "beck2022_high_extr__sociality__quiet__077",
+      "situation": "When there's a chance to speak up or people expect me to contribute",
+      "original_behavior": "I speak up clearly, jump into conversations, and fill any pauses with my voice",
+      "flipped_behavior": "I listen attentively, wait for others to speak, and let the conversation flow without my input",
+      "original_polarity": "high",
+      "intended_polarity": "low",
+      "target_dimension": "extraversion",
+      "n_attempts": 1,
+      "raw_attempts": [
+        "{\"flipped_behavior\": \"I listen attentively, wait for others to speak, and let the conversation flow without my input\", \"rationale\": \"The behavior reflects low extraversion by emphasizing listening and restraint in speaking.\"}"
+      ]
+    },
+    {
+      "atom_id": "beck2022_high_extr__interacted_friend__quiet__071",
+      "situation": "When I'm chatting with a friend and the conversation begins",
+      "original_behavior": "I talk loudly, interrupt, and fill silences with chatter, speaking over others",
+      "flipped_behavior": "I listen attentively, pause before responding, and allow silences to linger, giving others space to speak",
+      "original_polarity": "high",
+      "intended_polarity": "low",
+      "target_dimension": "extraversion",
+      "n_attempts": 1,
+      "raw_attempts": [
+        "{\"flipped_behavior\": \"I listen attentively, pause before responding, and allow silences to linger, giving others space to speak\", \"rationale\": \"The original behavior is high extraversion, while the rewritten behavior reflects low extraversion by emphasizing listening and allowing pauses.\"}"
+      ]
+    }
+  ]
+}

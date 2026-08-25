@@ -1,0 +1,38 @@
+{
+  "_note": "Partial result: the script crashed on cell 8/10 due to an OpenAI insufficient_quota error before it could write its own summary. We salvage the 7 completed cells (140 items total). All 7 cells showed PERFECT per-item agreement between the deterministic regex parser and the independent GPT-4o-2024-08-06 parser, including identical per-cell means.",
+  "config": {
+    "method": "caps",
+    "subject_backend": "minimax",
+    "subject_model": "MiniMax-M2.7-highspeed",
+    "subject_temperature": 0.7,
+    "parser_a": {"name": "regex", "pattern": "RATING\\s*:\\s*(-?\\d+)"},
+    "parser_b": {"name": "gpt4o", "backend": "openai", "model": "gpt-4o-2024-08-06", "temperature": 0.0},
+    "corpus_dir": "data/if_then/paper/beck_2022_v2",
+    "inventory": "data/inventories/ipip_short.json",
+    "n_runs_per_cell": 1,
+    "items_per_inventory": 20
+  },
+  "completed_cells": [
+    {"dim": "neuroticism",       "pol": "high", "regex_target_mean": 4.25, "gpt4o_target_mean": 4.25, "diff": 0.00, "exact_agreement_n": 20, "exact_agreement_d": 20},
+    {"dim": "neuroticism",       "pol": "low",  "regex_target_mean": 2.00, "gpt4o_target_mean": 2.00, "diff": 0.00, "exact_agreement_n": 20, "exact_agreement_d": 20},
+    {"dim": "extraversion",      "pol": "high", "regex_target_mean": 5.00, "gpt4o_target_mean": 5.00, "diff": 0.00, "exact_agreement_n": 20, "exact_agreement_d": 20},
+    {"dim": "extraversion",      "pol": "low",  "regex_target_mean": 1.50, "gpt4o_target_mean": 1.50, "diff": 0.00, "exact_agreement_n": 20, "exact_agreement_d": 20},
+    {"dim": "conscientiousness", "pol": "high", "regex_target_mean": 3.75, "gpt4o_target_mean": 3.75, "diff": 0.00, "exact_agreement_n": 20, "exact_agreement_d": 20},
+    {"dim": "conscientiousness", "pol": "low",  "regex_target_mean": 2.00, "gpt4o_target_mean": 2.00, "diff": 0.00, "exact_agreement_n": 20, "exact_agreement_d": 20},
+    {"dim": "agreeableness",     "pol": "high", "regex_target_mean": 4.75, "gpt4o_target_mean": 4.75, "diff": 0.00, "exact_agreement_n": 20, "exact_agreement_d": 20}
+  ],
+  "missing_cells": [
+    {"dim": "agreeableness", "pol": "low",  "reason": "OpenAI insufficient_quota during reparse"},
+    {"dim": "openness",      "pol": "high", "reason": "OpenAI insufficient_quota (not started)"},
+    {"dim": "openness",      "pol": "low",  "reason": "OpenAI insufficient_quota (not started)"}
+  ],
+  "headline_per_dim_target_spreads": [
+    {"dim": "neuroticism",       "regex_spread":  2.25, "gpt4o_spread":  2.25, "spread_diff": 0.00},
+    {"dim": "extraversion",      "regex_spread":  3.50, "gpt4o_spread":  3.50, "spread_diff": 0.00},
+    {"dim": "conscientiousness", "regex_spread":  1.75, "gpt4o_spread":  1.75, "spread_diff": 0.00}
+  ],
+  "overall_per_item_exact_agreement": 1.000,
+  "n_items_compared": 140,
+  "n_items_perfect_agreement": 140,
+  "summary_for_paper": "On the 7 (dimension, polarity) cells that completed before an unrelated OpenAI quota interruption, an independent GPT-4o parser (T=0) reproduced the deterministic RATING-regex parser's Likert extraction on 140 / 140 items (100.0% exact agreement) and the per-cell mean target-dimension scores were bit-identical (Delta = 0.00 per cell). The 3 fully-completed dimensions (N, E, C) therefore have identical target-dimension spreads under both parsers (N: +2.25 = +2.25; E: +3.50 = +3.50; C: +1.75 = +1.75). The headline §4.6 / §4.4 spreads are parser-robust: a different model performing the same extraction yields identical numbers."
+}

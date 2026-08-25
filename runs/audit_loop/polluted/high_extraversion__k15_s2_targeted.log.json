@@ -1,0 +1,253 @@
+{
+  "schema_version": 1,
+  "flip_prompt_version": "v1",
+  "generated_at_utc": "2026-05-22T00:50:55.888133+00:00",
+  "source_corpus": "./data/if_then/paper/beck_2022_v2/high_extraversion.jsonl",
+  "polluted_corpus": "./runs/audit_loop/polluted/high_extraversion__k15_s2_targeted.jsonl",
+  "k": 15,
+  "seed": 2,
+  "strategy": "targeted",
+  "flipper": "gpt-4o",
+  "temperature": 0.0,
+  "max_attempts": 3,
+  "n_total_atoms": 20,
+  "n_flipped": 15,
+  "flipped_ids": [
+    "beck2022_high_extr__excited_schoolwork__assertive__082",
+    "beck2022_high_extr__excited_schoolwork__less_active__088",
+    "beck2022_high_extr__excited_schoolwork__quiet__079",
+    "beck2022_high_extr__excited_schoolwork__rarely_excited__086",
+    "beck2022_high_extr__in_class__less_active__087",
+    "beck2022_high_extr__interacted_family__assertive__081",
+    "beck2022_high_extr__interacted_friend__quiet__071",
+    "beck2022_high_extr__interacted_friend__shy__084",
+    "beck2022_high_extr__positivity__others_charge__073",
+    "beck2022_high_extr__positivity__outgoing__074",
+    "beck2022_high_extr__positivity__quiet__085",
+    "beck2022_high_extr__positivity__rarely_excited__072",
+    "beck2022_high_extr__sociality__less_active__080",
+    "beck2022_high_extr__sociality__quiet__077",
+    "beck2022_high_extr__sociality__shy__083"
+  ],
+  "selection_meta": {
+    "selector": "max_cosine_to_targeted_dim_items",
+    "inventory": "./data/inventories/ipip_short.json",
+    "targeted_dim": "extraversion",
+    "n_items_used": 4,
+    "n_candidates": 20,
+    "max_sim_per_chosen": {
+      "beck2022_high_extr__positivity__quiet__085": 0.5388505458831787,
+      "beck2022_high_extr__sociality__shy__083": 0.5242220759391785,
+      "beck2022_high_extr__sociality__less_active__080": 0.5010825395584106,
+      "beck2022_high_extr__sociality__quiet__077": 0.49766653776168823,
+      "beck2022_high_extr__interacted_friend__quiet__071": 0.4381982088088989,
+      "beck2022_high_extr__interacted_friend__shy__084": 0.41654711961746216,
+      "beck2022_high_extr__positivity__outgoing__074": 0.41465264558792114,
+      "beck2022_high_extr__positivity__others_charge__073": 0.3971537947654724,
+      "beck2022_high_extr__in_class__less_active__087": 0.3949963450431824,
+      "beck2022_high_extr__positivity__rarely_excited__072": 0.3182278573513031,
+      "beck2022_high_extr__interacted_family__assertive__081": 0.31006306409835815,
+      "beck2022_high_extr__excited_schoolwork__assertive__082": 0.3057405948638916,
+      "beck2022_high_extr__excited_schoolwork__rarely_excited__086": 0.2976459264755249,
+      "beck2022_high_extr__excited_schoolwork__less_active__088": 0.28332066535949707,
+      "beck2022_high_extr__excited_schoolwork__quiet__079": 0.27774131298065186
+    }
+  },
+  "flips": [
+    {
+      "atom_id": "beck2022_high_extr__positivity__quiet__085",
+      "situation": "When I'm in a pleasant social setting with people around",
+      "original_behavior": "I speak loudly, laugh boisterously, and make my presence known with energetic vocal expression",
+      "flipped_behavior": "I listen quietly, smile gently, and enjoy the atmosphere with calm observation",
+      "original_polarity": "high",
+      "intended_polarity": "low",
+      "target_dimension": "extraversion",
+      "n_attempts": 1,
+      "raw_attempts": [
+        "{\"flipped_behavior\": \"I listen quietly, smile gently, and enjoy the atmosphere with calm observation\", \"rationale\": \"The original behavior is high in extraversion, while the rewritten behavior is low in extraversion\"}"
+      ]
+    },
+    {
+      "atom_id": "beck2022_high_extr__sociality__shy__083",
+      "situation": "When I'm in a setting where I can talk to people or meet new faces",
+      "original_behavior": "I approach strangers, speak up confidently, and keep conversations flowing without any hesitation",
+      "flipped_behavior": "I observe quietly, listen attentively, and engage in conversations only when approached",
+      "original_polarity": "high",
+      "intended_polarity": "low",
+      "target_dimension": "extraversion",
+      "n_attempts": 1,
+      "raw_attempts": [
+        "{\"flipped_behavior\": \"I observe quietly, listen attentively, and engage in conversations only when approached\", \"rationale\": \"The behavior shifts from actively engaging to being more reserved and passive\"}"
+      ]
+    },
+    {
+      "atom_id": "beck2022_high_extr__sociality__less_active__080",
+      "situation": "When I find myself around other people who are available to talk or do things together",
+      "original_behavior": "I dive right into conversations, move around energetically, and eagerly initiate activities or discussions",
+      "flipped_behavior": "I quietly observe the interactions, stay in one place, and wait for others to initiate activities or discussions.",
+      "original_polarity": "high",
+      "intended_polarity": "low",
+      "target_dimension": "extraversion",
+      "n_attempts": 1,
+      "raw_attempts": [
+        "{\"flipped_behavior\": \"I quietly observe the interactions, stay in one place, and wait for others to initiate activities or discussions.\", \"rationale\": \"The behavior reflects low extraversion by showing reserved and passive engagement.\"}"
+      ]
+    },
+    {
+      "atom_id": "beck2022_high_extr__sociality__quiet__077",
+      "situation": "When there's a chance to speak up or people expect me to contribute",
+      "original_behavior": "I speak up clearly, jump into conversations, and fill any pauses with my voice",
+      "flipped_behavior": "I listen attentively, wait for others to speak, and reflect quietly during pauses",
+      "original_polarity": "high",
+      "intended_polarity": "low",
+      "target_dimension": "extraversion",
+      "n_attempts": 1,
+      "raw_attempts": [
+        "{\"flipped_behavior\": \"I listen attentively, wait for others to speak, and reflect quietly during pauses\", \"rationale\": \"The original behavior is high in extraversion, while the rewritten behavior is low in extraversion.\"}"
+      ]
+    },
+    {
+      "atom_id": "beck2022_high_extr__interacted_friend__quiet__071",
+      "situation": "When I'm chatting with a friend and the conversation begins",
+      "original_behavior": "I talk loudly, interrupt, and fill silences with chatter, speaking over others",
+      "flipped_behavior": "I listen attentively, pause before responding, and allow silences to linger, giving others space to speak",
+      "original_polarity": "high",
+      "intended_polarity": "low",
+      "target_dimension": "extraversion",
+      "n_attempts": 1,
+      "raw_attempts": [
+        "{\"flipped_behavior\": \"I listen attentively, pause before responding, and allow silences to linger, giving others space to speak\", \"rationale\": \"The original behavior is high extraversion, while the rewritten behavior reflects low extraversion by emphasizing listening and allowing pauses.\"}"
+      ]
+    },
+    {
+      "atom_id": "beck2022_high_extr__interacted_friend__shy__084",
+      "situation": "When I'm hanging out with a friend",
+      "original_behavior": "I initiate conversations, lean in close, gesture expressively with my hands, and speak in a bold, loud voice without hesitation",
+      "flipped_behavior": "I listen attentively, maintain a comfortable distance, keep my hands still, and speak in a soft, measured tone with thoughtful pauses",
+      "original_polarity": "high",
+      "intended_polarity": "low",
+      "target_dimension": "extraversion",
+      "n_attempts": 1,
+      "raw_attempts": [
+        "{\"flipped_behavior\": \"I listen attentively, maintain a comfortable distance, keep my hands still, and speak in a soft, measured tone with thoughtful pauses\", \"rationale\": \"The behavior reflects low extraversion by emphasizing listening, restraint, and a quieter demeanor.\"}"
+      ]
+    },
+    {
+      "atom_id": "beck2022_high_extr__positivity__outgoing__074",
+      "situation": "When I'm in a pleasant setting surrounded by people",
+      "original_behavior": "I strike up conversations freely, introduce people to each other, and actively seek out more social interaction",
+      "flipped_behavior": "I quietly observe the interactions, enjoy the ambiance, and reflect on the conversations around me",
+      "original_polarity": "high",
+      "intended_polarity": "low",
+      "target_dimension": "extraversion",
+      "n_attempts": 1,
+      "raw_attempts": [
+        "{\"flipped_behavior\": \"I quietly observe the interactions, enjoy the ambiance, and reflect on the conversations around me\", \"rationale\": \"The behavior shifts from actively engaging to passively observing and reflecting, indicating low extraversion.\"}"
+      ]
+    },
+    {
+      "atom_id": "beck2022_high_extr__positivity__others_charge__073",
+      "situation": "When I find myself in a pleasant, comfortable setting with people around",
+      "original_behavior": "I take charge of the conversation, lead what we do next, and direct the energy of the group rather than letting others steer",
+      "flipped_behavior": "I quietly observe the conversation, follow the group's lead, and let others direct the energy of the gathering",
+      "original_polarity": "high",
+      "intended_polarity": "low",
+      "target_dimension": "extraversion",
+      "n_attempts": 1,
+      "raw_attempts": [
+        "{\"flipped_behavior\": \"I quietly observe the conversation, follow the group's lead, and let others direct the energy of the gathering\", \"rationale\": \"The behavior shifts from actively leading to passively observing and following, indicating low extraversion.\"}"
+      ]
+    },
+    {
+      "atom_id": "beck2022_high_extr__in_class__less_active__087",
+      "situation": "When I'm in class listening to the teacher",
+      "original_behavior": "I shift around constantly, bounce my legs, tap my pencil, and volunteer answers with energy",
+      "flipped_behavior": "I sit quietly, take notes diligently, and reflect on the material internally",
+      "original_polarity": "high",
+      "intended_polarity": "low",
+      "target_dimension": "extraversion",
+      "n_attempts": 1,
+      "raw_attempts": [
+        "{\"flipped_behavior\": \"I sit quietly, take notes diligently, and reflect on the material internally\", \"rationale\": \"The original behavior shows high extraversion through active engagement and energy, while the rewritten behavior shows low extraversion through quiet reflection and internal focus.\"}"
+      ]
+    },
+    {
+      "atom_id": "beck2022_high_extr__positivity__rarely_excited__072",
+      "situation": "When something nice or enjoyable happens around me",
+      "original_behavior": "I get visibly excited, my energy jumps, and I show genuine enthusiasm about what's happening",
+      "flipped_behavior": "I quietly appreciate the moment, my energy remains steady, and I reflect on what's happening internally",
+      "original_polarity": "high",
+      "intended_polarity": "low",
+      "target_dimension": "extraversion",
+      "n_attempts": 1,
+      "raw_attempts": [
+        "{\"flipped_behavior\": \"I quietly appreciate the moment, my energy remains steady, and I reflect on what's happening internally\", \"rationale\": \"The original behavior shows high extraversion with visible excitement, while the rewritten behavior shows low extraversion with internal reflection.\"}"
+      ]
+    },
+    {
+      "atom_id": "beck2022_high_extr__interacted_family__assertive__081",
+      "situation": "When I'm with my family",
+      "original_behavior": "I speak up loudly, cut people off mid-sentence, and firmly insist everyone follow my preferences",
+      "flipped_behavior": "I listen quietly, wait for others to finish speaking, and gently suggest my preferences if asked",
+      "original_polarity": "high",
+      "intended_polarity": "low",
+      "target_dimension": "extraversion",
+      "n_attempts": 1,
+      "raw_attempts": [
+        "{\"flipped_behavior\": \"I listen quietly, wait for others to finish speaking, and gently suggest my preferences if asked\", \"rationale\": \"The behavior reflects low extraversion by emphasizing listening and waiting rather than speaking up and insisting.\"}"
+      ]
+    },
+    {
+      "atom_id": "beck2022_high_extr__excited_schoolwork__assertive__082",
+      "situation": "When I'm enthusiastic about my school assignments",
+      "original_behavior": "I speak up loudly in class, interrupt peers to share my ideas, and dominate group work discussions",
+      "flipped_behavior": "I quietly reflect on my thoughts, listen attentively to others, and contribute when directly asked in group work discussions.",
+      "original_polarity": "high",
+      "intended_polarity": "low",
+      "target_dimension": "extraversion",
+      "n_attempts": 1,
+      "raw_attempts": [
+        "{\"flipped_behavior\": \"I quietly reflect on my thoughts, listen attentively to others, and contribute when directly asked in group work discussions.\", \"rationale\": \"The behavior shifts from being outgoing and assertive to being reserved and reflective.\"}"
+      ]
+    },
+    {
+      "atom_id": "beck2022_high_extr__excited_schoolwork__rarely_excited__086",
+      "situation": "When I think about or engage with my schoolwork",
+      "original_behavior": "I often feel excited and enthusiastic, I regularly get energized by what I'm learning",
+      "flipped_behavior": "I often feel calm and reflective, I regularly get absorbed in what I'm learning",
+      "original_polarity": "high",
+      "intended_polarity": "low",
+      "target_dimension": "extraversion",
+      "n_attempts": 1,
+      "raw_attempts": [
+        "{\"flipped_behavior\": \"I often feel calm and reflective, I regularly get absorbed in what I'm learning\", \"rationale\": \"The behavior shifts from high-energy excitement to low-energy calmness, indicating low extraversion.\"}"
+      ]
+    },
+    {
+      "atom_id": "beck2022_high_extr__excited_schoolwork__less_active__088",
+      "situation": "When I feel excited about an assignment or project for class",
+      "original_behavior": "I bounce my leg, tap my pen rapidly, and can't stay seated—I move around restlessly while working",
+      "flipped_behavior": "I sit quietly, focusing intently on the task at hand, and work steadily without moving around",
+      "original_polarity": "high",
+      "intended_polarity": "low",
+      "target_dimension": "extraversion",
+      "n_attempts": 1,
+      "raw_attempts": [
+        "{\"flipped_behavior\": \"I sit quietly, focusing intently on the task at hand, and work steadily without moving around\", \"rationale\": \"The original behavior shows high energy and restlessness, while the rewritten behavior shows calmness and focus, indicating low extraversion.\"}"
+      ]
+    },
+    {
+      "atom_id": "beck2022_high_extr__excited_schoolwork__quiet__079",
+      "situation": "When I'm excited about a school assignment, I feel energized and eager to share my thoughts",
+      "original_behavior": "I raise my voice, talk loudly, and sometimes even shout out ideas while working",
+      "flipped_behavior": "I quietly jot down my thoughts and reflect on them while working",
+      "original_polarity": "high",
+      "intended_polarity": "low",
+      "target_dimension": "extraversion",
+      "n_attempts": 1,
+      "raw_attempts": [
+        "{\"flipped_behavior\": \"I quietly jot down my thoughts and reflect on them while working\", \"rationale\": \"The behavior shifts from loud and expressive to quiet and introspective, indicating low extraversion.\"}"
+      ]
+    }
+  ]
+}

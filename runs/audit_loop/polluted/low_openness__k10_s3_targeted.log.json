@@ -1,0 +1,178 @@
+{
+  "schema_version": 1,
+  "flip_prompt_version": "v1",
+  "generated_at_utc": "2026-05-22T01:29:18.256928+00:00",
+  "source_corpus": "./data/if_then/paper/beck_2022_v2/low_openness.jsonl",
+  "polluted_corpus": "./runs/audit_loop/polluted/low_openness__k10_s3_targeted.jsonl",
+  "k": 10,
+  "seed": 3,
+  "strategy": "targeted",
+  "flipper": "gpt-4o",
+  "temperature": 0.0,
+  "max_attempts": 3,
+  "n_total_atoms": 20,
+  "n_flipped": 10,
+  "flipped_ids": [
+    "beck2022_low_open__anxious_schoolwork__values_beauty__036",
+    "beck2022_low_open__bored_schoolwork__little_creativity__029",
+    "beck2022_low_open__in_class__little_creativity__032",
+    "beck2022_low_open__intellect__difficulty_imagining__033",
+    "beck2022_low_open__lonely__little_creativity__020",
+    "beck2022_low_open__lonely__poetry_boring__021",
+    "beck2022_low_open__procrastinating__deep_thinker__022",
+    "beck2022_low_open__sick__poetry_boring__030",
+    "beck2022_low_open__studying__values_beauty__025",
+    "beck2022_low_open__tired__inventive__034"
+  ],
+  "selection_meta": {
+    "selector": "max_cosine_to_targeted_dim_items",
+    "inventory": "./data/inventories/ipip_short.json",
+    "targeted_dim": "openness",
+    "n_items_used": 4,
+    "n_candidates": 20,
+    "max_sim_per_chosen": {
+      "beck2022_low_open__intellect__difficulty_imagining__033": 0.6069290637969971,
+      "beck2022_low_open__tired__inventive__034": 0.3414805233478546,
+      "beck2022_low_open__bored_schoolwork__little_creativity__029": 0.2888428866863251,
+      "beck2022_low_open__sick__poetry_boring__030": 0.2561112940311432,
+      "beck2022_low_open__studying__values_beauty__025": 0.23846232891082764,
+      "beck2022_low_open__anxious_schoolwork__values_beauty__036": 0.20333528518676758,
+      "beck2022_low_open__in_class__little_creativity__032": 0.2032906711101532,
+      "beck2022_low_open__lonely__poetry_boring__021": 0.2007640302181244,
+      "beck2022_low_open__lonely__little_creativity__020": 0.1882179081439972,
+      "beck2022_low_open__procrastinating__deep_thinker__022": 0.18792130053043365
+    }
+  },
+  "flips": [
+    {
+      "atom_id": "beck2022_low_open__intellect__difficulty_imagining__033",
+      "situation": "When I'm asked to brainstorm creative ideas or picture something vividly",
+      "original_behavior": "I draw a complete blank, my mind stays flat and pictureless, and I cannot conjure any mental imagery at all",
+      "flipped_behavior": "I generate a flood of imaginative ideas, my mind fills with vivid images, and I easily conjure detailed mental imagery",
+      "original_polarity": "low",
+      "intended_polarity": "high",
+      "target_dimension": "openness",
+      "n_attempts": 1,
+      "raw_attempts": [
+        "{\"flipped_behavior\": \"I generate a flood of imaginative ideas, my mind fills with vivid images, and I easily conjure detailed mental imagery\", \"rationale\": \"The behavior now reflects high openness by describing active engagement in creative and imaginative thinking.\"}"
+      ]
+    },
+    {
+      "atom_id": "beck2022_low_open__tired__inventive__034",
+      "situation": "When I'm tired and need to come up with ideas or solutions",
+      "original_behavior": "I fall back on the same old methods and can't think of any original alternatives",
+      "flipped_behavior": "I explore new perspectives and generate innovative alternatives",
+      "original_polarity": "low",
+      "intended_polarity": "high",
+      "target_dimension": "openness",
+      "n_attempts": 1,
+      "raw_attempts": [
+        "{\"flipped_behavior\": \"I explore new perspectives and generate innovative alternatives\", \"rationale\": \"The original behavior shows low openness by relying on familiar methods, while the rewritten behavior demonstrates high openness by seeking novel ideas.\"}"
+      ]
+    },
+    {
+      "atom_id": "beck2022_low_open__bored_schoolwork__little_creativity__029",
+      "situation": "When I sit down to do my schoolwork and find it boring",
+      "original_behavior": "I don't brainstorm ideas or try different approaches, I just follow the instructions exactly and complete tasks in the most basic way",
+      "flipped_behavior": "I brainstorm creative ideas and explore different approaches, adding unique elements to make the tasks more engaging.",
+      "original_polarity": "low",
+      "intended_polarity": "high",
+      "target_dimension": "openness",
+      "n_attempts": 1,
+      "raw_attempts": [
+        "{\"flipped_behavior\": \"I brainstorm creative ideas and explore different approaches, adding unique elements to make the tasks more engaging.\", \"rationale\": \"The original behavior shows low openness by following instructions exactly, while the rewritten behavior shows high openness by exploring and adding creativity.\"}"
+      ]
+    },
+    {
+      "atom_id": "beck2022_low_open__sick__poetry_boring__030",
+      "situation": "When someone reads or shares poetry out loud",
+      "original_behavior": "I stop listening, scroll through my phone, and feel my attention drift away with visible impatience",
+      "flipped_behavior": "I listen intently, engage with the words, and feel my curiosity deepen with visible interest",
+      "original_polarity": "low",
+      "intended_polarity": "high",
+      "target_dimension": "openness",
+      "n_attempts": 1,
+      "raw_attempts": [
+        "{\"flipped_behavior\": \"I listen intently, engage with the words, and feel my curiosity deepen with visible interest\",\"rationale\": \"The behavior reflects high openness by showing engagement and curiosity.\"}"
+      ]
+    },
+    {
+      "atom_id": "beck2022_low_open__studying__values_beauty__025",
+      "situation": "When I am studying or doing schoolwork",
+      "original_behavior": "I dismiss artwork and diagrams as distractions, ignore visual appeal, and focus only on memorizing facts and functional information",
+      "flipped_behavior": "I explore artwork and diagrams for inspiration, appreciate visual appeal, and integrate creative insights with factual information",
+      "original_polarity": "low",
+      "intended_polarity": "high",
+      "target_dimension": "openness",
+      "n_attempts": 1,
+      "raw_attempts": [
+        "{\"flipped_behavior\": \"I explore artwork and diagrams for inspiration, appreciate visual appeal, and integrate creative insights with factual information\", \"rationale\": \"The rewritten behavior reflects high openness by valuing creativity and integrating diverse sources of information.\"}"
+      ]
+    },
+    {
+      "atom_id": "beck2022_low_open__anxious_schoolwork__values_beauty__036",
+      "situation": "When schoolwork makes me feel overwhelmed and pressured",
+      "original_behavior": "I bulldoze through tasks without noticing colors, fonts, or layout; I dismiss anything visually appealing as irrelevant and unnecessary",
+      "flipped_behavior": "I take time to appreciate the colors, fonts, and layout, finding inspiration in visually appealing elements.",
+      "original_polarity": "low",
+      "intended_polarity": "high",
+      "target_dimension": "openness",
+      "n_attempts": 1,
+      "raw_attempts": [
+        "{\"flipped_behavior\": \"I take time to appreciate the colors, fonts, and layout, finding inspiration in visually appealing elements.\", \"rationale\": \"The rewritten behavior reflects high openness by valuing and engaging with aesthetic details.\"}"
+      ]
+    },
+    {
+      "atom_id": "beck2022_low_open__in_class__little_creativity__032",
+      "situation": "When I'm sitting in class",
+      "original_behavior": "I produce no imaginative or original thoughts; I follow instructions exactly and never venture beyond textbook answers",
+      "flipped_behavior": "I generate imaginative and original thoughts, exploring ideas beyond the textbook answers.",
+      "original_polarity": "low",
+      "intended_polarity": "high",
+      "target_dimension": "openness",
+      "n_attempts": 1,
+      "raw_attempts": [
+        "{\"flipped_behavior\": \"I generate imaginative and original thoughts, exploring ideas beyond the textbook answers.\", \"rationale\": \"The behavior now reflects high openness by emphasizing creativity and exploration.\"}"
+      ]
+    },
+    {
+      "atom_id": "beck2022_low_open__lonely__poetry_boring__021",
+      "situation": "When I feel isolated and have no one to talk to",
+      "original_behavior": "I openly yawn, roll my eyes, and say poetry is stupid whenever someone mentions it",
+      "flipped_behavior": "I eagerly engage in discussions about poetry and share my favorite verses with enthusiasm",
+      "original_polarity": "low",
+      "intended_polarity": "high",
+      "target_dimension": "openness",
+      "n_attempts": 1,
+      "raw_attempts": [
+        "{\"flipped_behavior\": \"I eagerly engage in discussions about poetry and share my favorite verses with enthusiasm\", \"rationale\": \"Expressing interest and enthusiasm in poetry indicates high openness.\"}"
+      ]
+    },
+    {
+      "atom_id": "beck2022_low_open__lonely__little_creativity__020",
+      "situation": "When I feel lonely and isolated from others",
+      "original_behavior": "I cannot think outside the box, I stick to familiar routines, and I struggle to come up with novel ideas",
+      "flipped_behavior": "I explore new perspectives, embrace creative solutions, and generate innovative ideas",
+      "original_polarity": "low",
+      "intended_polarity": "high",
+      "target_dimension": "openness",
+      "n_attempts": 1,
+      "raw_attempts": [
+        "{\"flipped_behavior\": \"I explore new perspectives, embrace creative solutions, and generate innovative ideas\", \"rationale\": \"The behavior reflects high openness by emphasizing creativity and novelty.\"}"
+      ]
+    },
+    {
+      "atom_id": "beck2022_low_open__procrastinating__deep_thinker__022",
+      "situation": "When I notice I'm putting off getting started on tasks",
+      "original_behavior": "I make hasty, unconsidered choices and act on impulse without weighing options or consequences",
+      "flipped_behavior": "I explore various creative approaches and consider multiple perspectives before deciding on a course of action",
+      "original_polarity": "low",
+      "intended_polarity": "high",
+      "target_dimension": "openness",
+      "n_attempts": 1,
+      "raw_attempts": [
+        "{\"flipped_behavior\": \"I explore various creative approaches and consider multiple perspectives before deciding on a course of action\", \"rationale\": \"High openness involves exploring new ideas and considering different perspectives\"}"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,290 @@
+{
+  "fix_mode": "p2_blind",
+  "clean_corpus": "./data/if_then/paper/beck_2022_v2/high_extraversion.jsonl",
+  "polluted_corpus": "./runs/audit_loop/polluted/high_extraversion__k10_s2_targeted.jsonl",
+  "injection_log": "./runs/audit_loop/polluted/high_extraversion__k10_s2_targeted.log.json",
+  "p2_sanity": "./runs/audit_loop/p2_sanity/high_extraversion__k10_s2_targeted.json",
+  "targeted_dim": "extraversion",
+  "polarity": "high",
+  "k_oracle": 10,
+  "flagged_ids": [],
+  "footprint": {
+    "atoms_restored": 0,
+    "chars_replaced": -1,
+    "blind_regen_chars": 648
+  },
+  "localization_metrics": {
+    "note": "blind rewrite has no localization step"
+  },
+  "clean_dimension_scores": {
+    "extraversion": 5.0,
+    "agreeableness": 3.5,
+    "conscientiousness": 3.25,
+    "neuroticism": 2.5,
+    "openness": 3.75
+  },
+  "fixed_dimension_scores": {
+    "extraversion": 5.0,
+    "agreeableness": 5.0,
+    "conscientiousness": 3.0,
+    "neuroticism": 2.5,
+    "openness": 3.5
+  },
+  "target_gap": 0.0,
+  "direction_match_vs_clean": 1.0,
+  "off_target_gap_per_dim": {
+    "agreeableness": 1.5,
+    "conscientiousness": 0.25,
+    "neuroticism": 0.0,
+    "openness": 0.25
+  },
+  "off_target_gap_mean": 0.5,
+  "criteria": {
+    "max_gap": 0.3,
+    "min_dir_match": 0.85
+  },
+  "fix_success": true,
+  "fixed_paragraph": "When I walk into a room full of people, I immediately start chatting with everyone. When I hear music playing, I can't help but start dancing. When I meet someone new, I eagerly introduce myself and ask them questions. When there's a group activity, I jump right in and encourage others to join. When I see someone sitting alone, I go over and strike up a conversation. When I'm at a party, I make sure to mingle and talk to as many people as possible. When I have an idea, I share it enthusiastically with the group. When I'm in a meeting, I actively participate and offer my thoughts. When I see an opportunity to lead, I step up and take charge.",
+  "fixed_responses": [
+    {
+      "item": {
+        "id": "e1",
+        "text": "I am the life of the party.",
+        "dimension": "extraversion",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 5\nWHY: I naturally energize social gatherings by starting conversations with everyone, encouraging participation, and enthusiastically sharing ideas, which makes me a central figure at parties and group events.",
+      "rating": 5,
+      "scored": 5.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "e2",
+        "text": "I don't talk a lot.",
+        "dimension": "extraversion",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 1\nWHY: My personality is characterized by actively chatting with everyone, eagerly introducing myself to new people, mingling at parties, and enthusiastically sharing ideas—all behaviors that indicate I talk a lot rather than staying quiet.",
+      "rating": 1,
+      "scored": 5.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "e3",
+        "text": "I talk to a lot of different people at parties.",
+        "dimension": "extraversion",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 5\nWHY: Given my tendency to make sure I mingle and talk to as many people as possible at parties, talking to a lot of different people at parties is exactly what I do.",
+      "rating": 5,
+      "scored": 5.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "e4",
+        "text": "I keep in the background.",
+        "dimension": "extraversion",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 1\nWHY: My personality is characterized by actively engaging with others, stepping into leadership roles, and enthusiastically sharing ideas rather than staying in the background.",
+      "rating": 1,
+      "scored": 5.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "a1",
+        "text": "I sympathize with others' feelings.",
+        "dimension": "agreeableness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 5\nWHY: My natural inclination to connect with others, encourage participation, and engage warmly with people suggests I readily understand and share in others' emotional experiences.",
+      "rating": 5,
+      "scored": 5.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "a2",
+        "text": "I am not really interested in other people's problems.",
+        "dimension": "agreeableness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 1\nWHY: Someone who eagerly chats with everyone, introduces themselves to new people, strikes up conversations with those sitting alone, and actively participates with the group clearly has genuine interest in others and their lives.",
+      "rating": 1,
+      "scored": 5.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "a3",
+        "text": "I feel others' emotions.",
+        "dimension": "agreeableness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 5\nWHY: As someone who constantly reads the room and adapts to different social dynamics, I'm naturally attuned to the emotions of those around me and often pick up on how others are feeling.",
+      "rating": 5,
+      "scored": 5.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "a4",
+        "text": "I am not really interested in others.",
+        "dimension": "agreeableness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 1\nWHY: I genuinely enjoy connecting with people, meeting new individuals, and learning about others through conversation and shared experiences.",
+      "rating": 1,
+      "scored": 5.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "c1",
+        "text": "I get chores done right away.",
+        "dimension": "conscientiousness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 3\nWHY: The described personality focuses on sociability and enthusiasm but doesn't specifically address diligence with tasks or chores.",
+      "rating": 3,
+      "scored": 3.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "c2",
+        "text": "I often forget to put things back in their proper place.",
+        "dimension": "conscientiousness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 4\nWHY: My focus on people, activities, and jumping into new opportunities means I often get distracted before finishing the task of putting things back in their proper place.",
+      "rating": 4,
+      "scored": 2.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "c3",
+        "text": "I like order.",
+        "dimension": "conscientiousness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 3\nWHY: While I appreciate structure for productivity, I'm also spontaneous and comfortable with unpredictability, so I don't strongly prioritize order in my daily life.",
+      "rating": 3,
+      "scored": 3.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "c4",
+        "text": "I make a mess of things.",
+        "dimension": "conscientiousness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 2\nWHY: My action-oriented and confident approach to opportunities means I generally execute tasks successfully rather than making a mess of them.",
+      "rating": 2,
+      "scored": 4.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "n1",
+        "text": "I have frequent mood swings.",
+        "dimension": "neuroticism",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 2\nWHY: My personality is consistently energetic and enthusiastic rather than characterized by frequent or unpredictable emotional shifts.",
+      "rating": 2,
+      "scored": 2.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "n2",
+        "text": "I am relaxed most of the time.",
+        "dimension": "neuroticism",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 2\nWHY: My energetic and constantly active nature means I'm usually engaged and on the go rather than relaxed.",
+      "rating": 2,
+      "scored": 4.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "n3",
+        "text": "I get upset easily.",
+        "dimension": "neuroticism",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 2\nWHY: My tendency to approach situations with enthusiasm and focus on solutions rather than dwelling on frustration means I remain steady rather than becoming easily upset.",
+      "rating": 2,
+      "scored": 2.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "n4",
+        "text": "I seldom feel blue.",
+        "dimension": "neuroticism",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 4\nWHY: My naturally upbeat and energetic disposition, combined with my tendency to engage actively with the world around me, means I experience melancholy less frequently than most.",
+      "rating": 4,
+      "scored": 2.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "o1",
+        "text": "I have a vivid imagination.",
+        "dimension": "openness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 3\nWHY: While the described personality is highly energetic and enthusiastic about sharing ideas, the focus on external social interaction and action-oriented behavior doesn't strongly correlate with having a vivid imagination, which typically involves rich internal mental imagery and creative fantasy.",
+      "rating": 3,
+      "scored": 3.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "o2",
+        "text": "I am not interested in abstract ideas.",
+        "dimension": "openness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 4\nWHY: As someone who prefers practical engagement and social interaction over theoretical contemplation, I'm generally uninterested in abstract ideas and focus more on tangible, people-oriented activities.",
+      "rating": 4,
+      "scored": 2.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "o3",
+        "text": "I have difficulty understanding abstract ideas.",
+        "dimension": "openness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 2\nWHY: I can engage with and understand abstract ideas, concepts, and theoretical frameworks without significant difficulty.",
+      "rating": 2,
+      "scored": 4.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "o4",
+        "text": "I do not have a good imagination.",
+        "dimension": "openness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 1\nWHY: I regularly engage in creative thinking, generate novel ideas, and can imagine hypothetical scenarios vividly.",
+      "rating": 1,
+      "scored": 5.0,
+      "fired": []
+    }
+  ]
+}

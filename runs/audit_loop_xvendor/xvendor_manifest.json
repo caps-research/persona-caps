@@ -1,0 +1,44 @@
+{
+  "generated_at_utc": "2026-05-22T07:18:04.216645+00:00",
+  "subject": "openai:gpt-4o-2024-08-06",
+  "auditor": "gpt-4o",
+  "cell": "low_openness",
+  "k": 15,
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "conditions": [
+    {
+      "cell": "low_openness",
+      "k": 15,
+      "seed": 1,
+      "targeted_dim": "openness",
+      "subject": "openai:gpt-4o-2024-08-06",
+      "sanity_passed": true,
+      "p2_sanity_passed": true,
+      "status": "ok"
+    },
+    {
+      "cell": "low_openness",
+      "k": 15,
+      "seed": 2,
+      "targeted_dim": "openness",
+      "subject": "openai:gpt-4o-2024-08-06",
+      "sanity_passed": true,
+      "p2_sanity_passed": true,
+      "status": "ok"
+    },
+    {
+      "cell": "low_openness",
+      "k": 15,
+      "seed": 3,
+      "targeted_dim": "openness",
+      "subject": "openai:gpt-4o-2024-08-06",
+      "sanity_passed": true,
+      "p2_sanity_passed": true,
+      "status": "ok"
+    }
+  ]
+}

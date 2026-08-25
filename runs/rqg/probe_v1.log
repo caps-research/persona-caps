@@ -1,0 +1,170 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 18168.61it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+[rqg] high  neuroticism        run 1/2
+[rqg] high  neuroticism        run 2/2
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 10468.48it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+[rqg] low   neuroticism        run 1/2
+[rqg] low   neuroticism        run 2/2
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 9467.75it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+[rqg] high  extraversion       run 1/2
+[rqg] high  extraversion       run 2/2
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 10058.52it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+[rqg] low   extraversion       run 1/2
+[rqg] low   extraversion       run 2/2
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 9488.75it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+[rqg] high  conscientiousness  run 1/2
+[rqg] high  conscientiousness  run 2/2
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 12780.70it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+[rqg] low   conscientiousness  run 1/2
+[rqg] low   conscientiousness  run 2/2
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 9892.45it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+[rqg] high  agreeableness      run 1/2
+[rqg] high  agreeableness      run 2/2
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 9913.56it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+[rqg] low   agreeableness      run 1/2
+[rqg] low   agreeableness      run 2/2
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 8754.78it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+[rqg] high  openness           run 1/2
+[rqg] high  openness           run 2/2
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 11753.55it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+[rqg] low   openness           run 1/2
+[rqg] low   openness           run 2/2
+
+=== RQ-G summary (target-dim items only, bin-by-max_sim) ===
+Question: does CAPS pull *unseen* items in the personality direction?
+
+--- high_neuroticism  (n=8 target-dim observations across runs) ---
+sim_bin           n   aligned_rate   mean_sim  example_items
+  [0.00,0.20)    4        100.0%      0.192  n2,n4,n2
+  [0.20,0.35)    4        100.0%      0.249  n1,n3,n1
+  [0.35,1.01)   0           --        --   --
+
+--- low_neuroticism  (n=8 target-dim observations across runs) ---
+sim_bin           n   aligned_rate   mean_sim  example_items
+  [0.00,0.20)   0           --        --   --
+  [0.20,0.35)    8         87.5%      0.260  n1,n2,n3
+  [0.35,1.01)   0           --        --   --
+
+--- high_extraversion  (n=8 target-dim observations across runs) ---
+sim_bin           n   aligned_rate   mean_sim  example_items
+  [0.00,0.20)   0           --        --   --
+  [0.20,0.35)    8        100.0%      0.251  e1,e2,e3
+  [0.35,1.01)   0           --        --   --
+
+--- low_extraversion  (n=8 target-dim observations across runs) ---
+sim_bin           n   aligned_rate   mean_sim  example_items
+  [0.00,0.20)   0           --        --   --
+  [0.20,0.35)    8        100.0%      0.289  e1,e2,e3
+  [0.35,1.01)   0           --        --   --
+
+--- high_conscientiousness  (n=8 target-dim observations across runs) ---
+sim_bin           n   aligned_rate   mean_sim  example_items
+  [0.00,0.20)    2        100.0%      0.179  c3,c3
+  [0.20,0.35)    6        100.0%      0.246  c1,c2,c4
+  [0.35,1.01)   0           --        --   --
+
+--- low_conscientiousness  (n=8 target-dim observations across runs) ---
+sim_bin           n   aligned_rate   mean_sim  example_items
+  [0.00,0.20)    2        100.0%      0.197  c3,c3
+  [0.20,0.35)    6         66.7%      0.223  c1,c2,c4
+  [0.35,1.01)   0           --        --   --
+
+--- high_agreeableness  (n=8 target-dim observations across runs) ---
+sim_bin           n   aligned_rate   mean_sim  example_items
+  [0.00,0.20)   0           --        --   --
+  [0.20,0.35)    8        100.0%      0.283  a1,a2,a3
+  [0.35,1.01)   0           --        --   --
+
+--- low_agreeableness  (n=8 target-dim observations across runs) ---
+sim_bin           n   aligned_rate   mean_sim  example_items
+  [0.00,0.20)   0           --        --   --
+  [0.20,0.35)    8         87.5%      0.260  a1,a2,a3
+  [0.35,1.01)   0           --        --   --
+
+--- high_openness  (n=8 target-dim observations across runs) ---
+sim_bin           n   aligned_rate   mean_sim  example_items
+  [0.00,0.20)   0           --        --   --
+  [0.20,0.35)    8        100.0%      0.262  o1,o2,o3
+  [0.35,1.01)   0           --        --   --
+
+--- low_openness  (n=8 target-dim observations across runs) ---
+sim_bin           n   aligned_rate   mean_sim  example_items
+  [0.00,0.20)    4          0.0%      0.193  o2,o3,o2
+  [0.20,0.35)    4        100.0%      0.256  o1,o4,o1
+  [0.35,1.01)   0           --        --   --
+
+--- POOLED across all personas ---
+  [0.00,0.20) n= 12  aligned_rate=66.7%  mean_sim=0.191
+  [0.20,0.35) n= 68  aligned_rate=94.1%  mean_sim=0.260
+
+[rqg] wrote -> runs/rqg/probe_v1.json

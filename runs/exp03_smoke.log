@@ -1,0 +1,80 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[exp03] dimension=neuroticism  start=low(10 atoms)  adding=high(10 atoms available)
+[exp03] steps=[0, 5, 10, 15, 20]  runs/step=1
+
+[exp03] step n_added=0  total_atoms=10
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 18582.82it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+  run 1/1: target neuroticism=2.00
+
+[exp03] step n_added=5  total_atoms=15
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 27206.58it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+  run 1/1: target neuroticism=2.00
+
+[exp03] step n_added=10  total_atoms=20
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 9278.44it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+  run 1/1: target neuroticism=1.75
+
+[exp03] step n_added=15  total_atoms=20
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 9796.44it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+  run 1/1: target neuroticism=2.00
+
+[exp03] step n_added=20  total_atoms=20
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 9480.84it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+  run 1/1: target neuroticism=2.00
+
+=== RQ3 summary ===
+target: move neuroticism from low -> high
+
+| n_added | openness | conscientiousness | extraversion | agreeableness | neuroticism |
+| --- | --- | --- | --- | --- | --- |
+| 0 |  4.00 |  3.75 |  2.50 |  4.25 | *2.00 |
+| 5 |  4.00 |  3.50 |  3.00 |  3.75 | *2.00 |
+| 10 |  4.00 |  3.50 |  2.75 |  4.00 | *1.75 |
+| 15 |  4.50 |  4.00 |  2.75 |  4.00 | *2.00 |
+| 20 |  4.00 |  3.75 |  3.00 |  4.25 | *2.00 |
+
+  target Δ (neuroticism): +0.00
+  max |off-target Δ|: 0.50
+    openness: +0.00
+    conscientiousness: +0.00
+    extraversion: +0.50
+    agreeableness: +0.00
+
+  Pass criterion: |target Δ| > 2 * max |off-target Δ|  (target moves at least 2x more than the noisiest off-target)
+
+[exp03] wrote -> runs/exp03_smoke_neuroticism.json

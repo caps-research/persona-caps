@@ -1,0 +1,278 @@
+{
+  "config": {
+    "subject_backend": "ollama",
+    "subject_model": "qwen3.5:latest",
+    "subject_temperature": 0.7,
+    "corpus_dir": "data/if_then/paper/beck_2022_v2",
+    "target_dim": "neuroticism",
+    "top_k_per_dim": 4,
+    "n_runs_per_weight": 3,
+    "weights": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "inventory": "data/inventories/ipip_short.json"
+  },
+  "rows": [
+    {
+      "w_high": 0.0,
+      "run_id": 0,
+      "seed": 20260502,
+      "neuroticism_score": 1.0,
+      "all_dim_scores": {
+        "extraversion": 3.5,
+        "agreeableness": 4.75,
+        "conscientiousness": 4.25,
+        "neuroticism": 1.0,
+        "openness": 3.0
+      },
+      "parse_failures": 0,
+      "wall_s": 154.2
+    },
+    {
+      "w_high": 0.0,
+      "run_id": 1,
+      "seed": 20260503,
+      "neuroticism_score": 1.25,
+      "all_dim_scores": {
+        "extraversion": 3.5,
+        "agreeableness": 4.25,
+        "conscientiousness": 4.75,
+        "neuroticism": 1.25,
+        "openness": 5.0
+      },
+      "parse_failures": 0,
+      "wall_s": 131.0
+    },
+    {
+      "w_high": 0.0,
+      "run_id": 2,
+      "seed": 20260504,
+      "neuroticism_score": 1.5,
+      "all_dim_scores": {
+        "extraversion": 3.5,
+        "agreeableness": 4.75,
+        "conscientiousness": 4.25,
+        "neuroticism": 1.5,
+        "openness": 4.75
+      },
+      "parse_failures": 0,
+      "wall_s": 93.0
+    },
+    {
+      "w_high": 0.25,
+      "run_id": 0,
+      "seed": 20285502,
+      "neuroticism_score": 1.0,
+      "all_dim_scores": {
+        "extraversion": 3.25,
+        "agreeableness": 4.5,
+        "conscientiousness": 4.25,
+        "neuroticism": 1.0,
+        "openness": 4.75
+      },
+      "parse_failures": 0,
+      "wall_s": 80.0
+    },
+    {
+      "w_high": 0.25,
+      "run_id": 1,
+      "seed": 20285503,
+      "neuroticism_score": 1.75,
+      "all_dim_scores": {
+        "extraversion": 2.25,
+        "agreeableness": 4.25,
+        "conscientiousness": 3.75,
+        "neuroticism": 1.75,
+        "openness": 3.25
+      },
+      "parse_failures": 0,
+      "wall_s": 70.6
+    },
+    {
+      "w_high": 0.25,
+      "run_id": 2,
+      "seed": 20285504,
+      "neuroticism_score": 1.5,
+      "all_dim_scores": {
+        "extraversion": 2.25,
+        "agreeableness": 4.25,
+        "conscientiousness": 4.5,
+        "neuroticism": 1.5,
+        "openness": 4.25
+      },
+      "parse_failures": 0,
+      "wall_s": 192.9
+    },
+    {
+      "w_high": 0.5,
+      "run_id": 0,
+      "seed": 20310502,
+      "neuroticism_score": 3.25,
+      "all_dim_scores": {
+        "extraversion": 4.25,
+        "agreeableness": 4.75,
+        "conscientiousness": 3.25,
+        "neuroticism": 3.25,
+        "openness": 3.5
+      },
+      "parse_failures": 0,
+      "wall_s": 186.3
+    },
+    {
+      "w_high": 0.5,
+      "run_id": 1,
+      "seed": 20310503,
+      "neuroticism_score": 4.0,
+      "all_dim_scores": {
+        "extraversion": 3.75,
+        "agreeableness": 4.0,
+        "conscientiousness": 3.75,
+        "neuroticism": 4.0,
+        "openness": 3.75
+      },
+      "parse_failures": 0,
+      "wall_s": 302.3
+    },
+    {
+      "w_high": 0.5,
+      "run_id": 2,
+      "seed": 20310504,
+      "neuroticism_score": 4.0,
+      "all_dim_scores": {
+        "extraversion": 2.75,
+        "agreeableness": 4.25,
+        "conscientiousness": 3.0,
+        "neuroticism": 4.0,
+        "openness": 3.75
+      },
+      "parse_failures": 0,
+      "wall_s": 194.2
+    },
+    {
+      "w_high": 0.75,
+      "run_id": 0,
+      "seed": 20335502,
+      "neuroticism_score": 3.75,
+      "all_dim_scores": {
+        "extraversion": 2.75,
+        "agreeableness": 4.5,
+        "conscientiousness": 2.25,
+        "neuroticism": 3.75,
+        "openness": 3.5
+      },
+      "parse_failures": 0,
+      "wall_s": 50.1
+    },
+    {
+      "w_high": 0.75,
+      "run_id": 1,
+      "seed": 20335503,
+      "neuroticism_score": 4.75,
+      "all_dim_scores": {
+        "extraversion": 2.25,
+        "agreeableness": 4.0,
+        "conscientiousness": 2.25,
+        "neuroticism": 4.75,
+        "openness": 2.5
+      },
+      "parse_failures": 0,
+      "wall_s": 33.0
+    },
+    {
+      "w_high": 0.75,
+      "run_id": 2,
+      "seed": 20335504,
+      "neuroticism_score": 4.0,
+      "all_dim_scores": {
+        "extraversion": 2.0,
+        "agreeableness": 3.75,
+        "conscientiousness": 3.25,
+        "neuroticism": 4.0,
+        "openness": 3.5
+      },
+      "parse_failures": 0,
+      "wall_s": 33.1
+    },
+    {
+      "w_high": 1.0,
+      "run_id": 0,
+      "seed": 20360502,
+      "neuroticism_score": 4.5,
+      "all_dim_scores": {
+        "extraversion": 2.25,
+        "agreeableness": 3.75,
+        "conscientiousness": 2.25,
+        "neuroticism": 4.5,
+        "openness": 3.0
+      },
+      "parse_failures": 0,
+      "wall_s": 31.3
+    },
+    {
+      "w_high": 1.0,
+      "run_id": 1,
+      "seed": 20360503,
+      "neuroticism_score": 5.0,
+      "all_dim_scores": {
+        "extraversion": 3.0,
+        "agreeableness": 3.25,
+        "conscientiousness": 2.25,
+        "neuroticism": 5.0,
+        "openness": 3.0
+      },
+      "parse_failures": 0,
+      "wall_s": 32.4
+    },
+    {
+      "w_high": 1.0,
+      "run_id": 2,
+      "seed": 20360504,
+      "neuroticism_score": 5.0,
+      "all_dim_scores": {
+        "extraversion": 2.0,
+        "agreeableness": 3.5,
+        "conscientiousness": 2.25,
+        "neuroticism": 5.0,
+        "openness": 3.5
+      },
+      "parse_failures": 0,
+      "wall_s": 33.7
+    }
+  ],
+  "agg": [
+    {
+      "w_high": 0.0,
+      "n": 3,
+      "mean": 1.25,
+      "stdev": 0.2041241452319315
+    },
+    {
+      "w_high": 0.25,
+      "n": 3,
+      "mean": 1.4166666666666667,
+      "stdev": 0.31180478223116176
+    },
+    {
+      "w_high": 0.5,
+      "n": 3,
+      "mean": 3.75,
+      "stdev": 0.3535533905932738
+    },
+    {
+      "w_high": 0.75,
+      "n": 3,
+      "mean": 4.166666666666667,
+      "stdev": 0.42491829279939874
+    },
+    {
+      "w_high": 1.0,
+      "n": 3,
+      "mean": 4.833333333333333,
+      "stdev": 0.23570226039551584
+    }
+  ]
+}

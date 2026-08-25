@@ -1,0 +1,534 @@
+{
+  "generated_at_utc": "2026-05-22T01:35:45.733394+00:00",
+  "subject": "minimax",
+  "classifier": "gpt-4o",
+  "cells": [
+    [
+      "high_extraversion",
+      "extraversion"
+    ],
+    [
+      "low_agreeableness",
+      "agreeableness"
+    ],
+    [
+      "low_conscientiousness",
+      "conscientiousness"
+    ],
+    [
+      "high_neuroticism",
+      "neuroticism"
+    ],
+    [
+      "low_openness",
+      "openness"
+    ]
+  ],
+  "k_values": [
+    5,
+    10,
+    15
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "conditions": [
+    {
+      "cell": "high_extraversion",
+      "targeted_dim": "extraversion",
+      "k": 5,
+      "seed": 1,
+      "atoms_in_cell": 20,
+      "sanity_passed": false,
+      "locate_a_done": true,
+      "locate_b_done": false,
+      "status": "ok"
+    },
+    {
+      "cell": "high_extraversion",
+      "targeted_dim": "extraversion",
+      "k": 5,
+      "seed": 2,
+      "atoms_in_cell": 20,
+      "sanity_passed": false,
+      "locate_a_done": true,
+      "locate_b_done": false,
+      "status": "ok"
+    },
+    {
+      "cell": "high_extraversion",
+      "targeted_dim": "extraversion",
+      "k": 5,
+      "seed": 3,
+      "atoms_in_cell": 20,
+      "sanity_passed": false,
+      "locate_a_done": true,
+      "locate_b_done": false,
+      "status": "ok"
+    },
+    {
+      "cell": "high_extraversion",
+      "targeted_dim": "extraversion",
+      "k": 10,
+      "seed": 1,
+      "atoms_in_cell": 20,
+      "sanity_passed": true,
+      "locate_a_done": true,
+      "locate_b_done": true,
+      "status": "ok"
+    },
+    {
+      "cell": "high_extraversion",
+      "targeted_dim": "extraversion",
+      "k": 10,
+      "seed": 2,
+      "atoms_in_cell": 20,
+      "sanity_passed": true,
+      "locate_a_done": true,
+      "locate_b_done": true,
+      "status": "ok"
+    },
+    {
+      "cell": "high_extraversion",
+      "targeted_dim": "extraversion",
+      "k": 10,
+      "seed": 3,
+      "atoms_in_cell": 20,
+      "sanity_passed": true,
+      "locate_a_done": true,
+      "locate_b_done": true,
+      "status": "ok"
+    },
+    {
+      "cell": "high_extraversion",
+      "targeted_dim": "extraversion",
+      "k": 15,
+      "seed": 1,
+      "atoms_in_cell": 20,
+      "sanity_passed": true,
+      "locate_a_done": true,
+      "locate_b_done": true,
+      "status": "ok"
+    },
+    {
+      "cell": "high_extraversion",
+      "targeted_dim": "extraversion",
+      "k": 15,
+      "seed": 2,
+      "atoms_in_cell": 20,
+      "sanity_passed": true,
+      "locate_a_done": true,
+      "locate_b_done": true,
+      "status": "ok"
+    },
+    {
+      "cell": "high_extraversion",
+      "targeted_dim": "extraversion",
+      "k": 15,
+      "seed": 3,
+      "atoms_in_cell": 20,
+      "sanity_passed": true,
+      "locate_a_done": true,
+      "locate_b_done": true,
+      "status": "ok"
+    },
+    {
+      "cell": "low_agreeableness",
+      "targeted_dim": "agreeableness",
+      "k": 5,
+      "seed": 1,
+      "atoms_in_cell": 20,
+      "sanity_passed": false,
+      "locate_a_done": true,
+      "locate_b_done": false,
+      "status": "ok"
+    },
+    {
+      "cell": "low_agreeableness",
+      "targeted_dim": "agreeableness",
+      "k": 5,
+      "seed": 2,
+      "atoms_in_cell": 20,
+      "sanity_passed": false,
+      "locate_a_done": true,
+      "locate_b_done": false,
+      "status": "ok"
+    },
+    {
+      "cell": "low_agreeableness",
+      "targeted_dim": "agreeableness",
+      "k": 5,
+      "seed": 3,
+      "atoms_in_cell": 20,
+      "sanity_passed": false,
+      "locate_a_done": true,
+      "locate_b_done": false,
+      "status": "ok"
+    },
+    {
+      "cell": "low_agreeableness",
+      "targeted_dim": "agreeableness",
+      "k": 10,
+      "seed": 1,
+      "atoms_in_cell": 20,
+      "sanity_passed": false,
+      "locate_a_done": true,
+      "locate_b_done": false,
+      "status": "ok"
+    },
+    {
+      "cell": "low_agreeableness",
+      "targeted_dim": "agreeableness",
+      "k": 10,
+      "seed": 2,
+      "atoms_in_cell": 20,
+      "sanity_passed": false,
+      "locate_a_done": true,
+      "locate_b_done": false,
+      "status": "ok"
+    },
+    {
+      "cell": "low_agreeableness",
+      "targeted_dim": "agreeableness",
+      "k": 10,
+      "seed": 3,
+      "atoms_in_cell": 20,
+      "sanity_passed": true,
+      "locate_a_done": true,
+      "locate_b_done": true,
+      "status": "ok"
+    },
+    {
+      "cell": "low_agreeableness",
+      "targeted_dim": "agreeableness",
+      "k": 15,
+      "seed": 1,
+      "atoms_in_cell": 20,
+      "sanity_passed": false,
+      "locate_a_done": true,
+      "locate_b_done": false,
+      "status": "ok"
+    },
+    {
+      "cell": "low_agreeableness",
+      "targeted_dim": "agreeableness",
+      "k": 15,
+      "seed": 2,
+      "atoms_in_cell": 20,
+      "sanity_passed": false,
+      "locate_a_done": true,
+      "locate_b_done": false,
+      "status": "ok"
+    },
+    {
+      "cell": "low_agreeableness",
+      "targeted_dim": "agreeableness",
+      "k": 15,
+      "seed": 3,
+      "atoms_in_cell": 20,
+      "sanity_passed": true,
+      "locate_a_done": true,
+      "locate_b_done": true,
+      "status": "ok"
+    },
+    {
+      "cell": "low_conscientiousness",
+      "targeted_dim": "conscientiousness",
+      "k": 5,
+      "seed": 1,
+      "atoms_in_cell": 20,
+      "sanity_passed": false,
+      "locate_a_done": true,
+      "locate_b_done": false,
+      "status": "ok"
+    },
+    {
+      "cell": "low_conscientiousness",
+      "targeted_dim": "conscientiousness",
+      "k": 5,
+      "seed": 2,
+      "atoms_in_cell": 20,
+      "sanity_passed": false,
+      "locate_a_done": true,
+      "locate_b_done": false,
+      "status": "ok"
+    },
+    {
+      "cell": "low_conscientiousness",
+      "targeted_dim": "conscientiousness",
+      "k": 5,
+      "seed": 3,
+      "atoms_in_cell": 20,
+      "sanity_passed": false,
+      "locate_a_done": true,
+      "locate_b_done": false,
+      "status": "ok"
+    },
+    {
+      "cell": "low_conscientiousness",
+      "targeted_dim": "conscientiousness",
+      "k": 10,
+      "seed": 1,
+      "atoms_in_cell": 20,
+      "sanity_passed": false,
+      "locate_a_done": true,
+      "locate_b_done": false,
+      "status": "ok"
+    },
+    {
+      "cell": "low_conscientiousness",
+      "targeted_dim": "conscientiousness",
+      "k": 10,
+      "seed": 2,
+      "atoms_in_cell": 20,
+      "sanity_passed": false,
+      "locate_a_done": true,
+      "locate_b_done": false,
+      "status": "ok"
+    },
+    {
+      "cell": "low_conscientiousness",
+      "targeted_dim": "conscientiousness",
+      "k": 10,
+      "seed": 3,
+      "atoms_in_cell": 20,
+      "sanity_passed": false,
+      "locate_a_done": true,
+      "locate_b_done": false,
+      "status": "ok"
+    },
+    {
+      "cell": "low_conscientiousness",
+      "targeted_dim": "conscientiousness",
+      "k": 15,
+      "seed": 1,
+      "atoms_in_cell": 20,
+      "sanity_passed": false,
+      "locate_a_done": true,
+      "locate_b_done": false,
+      "status": "ok"
+    },
+    {
+      "cell": "low_conscientiousness",
+      "targeted_dim": "conscientiousness",
+      "k": 15,
+      "seed": 2,
+      "atoms_in_cell": 20,
+      "sanity_passed": false,
+      "locate_a_done": true,
+      "locate_b_done": false,
+      "status": "ok"
+    },
+    {
+      "cell": "low_conscientiousness",
+      "targeted_dim": "conscientiousness",
+      "k": 15,
+      "seed": 3,
+      "atoms_in_cell": 20,
+      "sanity_passed": false,
+      "locate_a_done": true,
+      "locate_b_done": false,
+      "status": "ok"
+    },
+    {
+      "cell": "high_neuroticism",
+      "targeted_dim": "neuroticism",
+      "k": 5,
+      "seed": 1,
+      "atoms_in_cell": 19,
+      "sanity_passed": false,
+      "locate_a_done": true,
+      "locate_b_done": false,
+      "status": "ok"
+    },
+    {
+      "cell": "high_neuroticism",
+      "targeted_dim": "neuroticism",
+      "k": 5,
+      "seed": 2,
+      "atoms_in_cell": 19,
+      "sanity_passed": false,
+      "locate_a_done": true,
+      "locate_b_done": false,
+      "status": "ok"
+    },
+    {
+      "cell": "high_neuroticism",
+      "targeted_dim": "neuroticism",
+      "k": 5,
+      "seed": 3,
+      "atoms_in_cell": 19,
+      "sanity_passed": false,
+      "locate_a_done": true,
+      "locate_b_done": false,
+      "status": "ok"
+    },
+    {
+      "cell": "high_neuroticism",
+      "targeted_dim": "neuroticism",
+      "k": 10,
+      "seed": 1,
+      "atoms_in_cell": 19,
+      "sanity_passed": false,
+      "locate_a_done": true,
+      "locate_b_done": false,
+      "status": "ok"
+    },
+    {
+      "cell": "high_neuroticism",
+      "targeted_dim": "neuroticism",
+      "k": 10,
+      "seed": 2,
+      "atoms_in_cell": 19,
+      "sanity_passed": false,
+      "locate_a_done": true,
+      "locate_b_done": false,
+      "status": "ok"
+    },
+    {
+      "cell": "high_neuroticism",
+      "targeted_dim": "neuroticism",
+      "k": 10,
+      "seed": 3,
+      "atoms_in_cell": 19,
+      "sanity_passed": false,
+      "locate_a_done": true,
+      "locate_b_done": false,
+      "status": "ok"
+    },
+    {
+      "cell": "high_neuroticism",
+      "targeted_dim": "neuroticism",
+      "k": 15,
+      "seed": 1,
+      "atoms_in_cell": 19,
+      "sanity_passed": true,
+      "locate_a_done": true,
+      "locate_b_done": true,
+      "status": "ok"
+    },
+    {
+      "cell": "high_neuroticism",
+      "targeted_dim": "neuroticism",
+      "k": 15,
+      "seed": 2,
+      "atoms_in_cell": 19,
+      "sanity_passed": true,
+      "locate_a_done": true,
+      "locate_b_done": true,
+      "status": "ok"
+    },
+    {
+      "cell": "high_neuroticism",
+      "targeted_dim": "neuroticism",
+      "k": 15,
+      "seed": 3,
+      "atoms_in_cell": 19,
+      "sanity_passed": true,
+      "locate_a_done": true,
+      "locate_b_done": true,
+      "status": "ok"
+    },
+    {
+      "cell": "low_openness",
+      "targeted_dim": "openness",
+      "k": 5,
+      "seed": 1,
+      "atoms_in_cell": 20,
+      "sanity_passed": true,
+      "locate_a_done": true,
+      "locate_b_done": true,
+      "status": "ok"
+    },
+    {
+      "cell": "low_openness",
+      "targeted_dim": "openness",
+      "k": 5,
+      "seed": 2,
+      "atoms_in_cell": 20,
+      "sanity_passed": true,
+      "locate_a_done": true,
+      "locate_b_done": true,
+      "status": "ok"
+    },
+    {
+      "cell": "low_openness",
+      "targeted_dim": "openness",
+      "k": 5,
+      "seed": 3,
+      "atoms_in_cell": 20,
+      "sanity_passed": true,
+      "locate_a_done": true,
+      "locate_b_done": true,
+      "status": "ok"
+    },
+    {
+      "cell": "low_openness",
+      "targeted_dim": "openness",
+      "k": 10,
+      "seed": 1,
+      "atoms_in_cell": 20,
+      "sanity_passed": true,
+      "locate_a_done": true,
+      "locate_b_done": true,
+      "status": "ok"
+    },
+    {
+      "cell": "low_openness",
+      "targeted_dim": "openness",
+      "k": 10,
+      "seed": 2,
+      "atoms_in_cell": 20,
+      "sanity_passed": true,
+      "locate_a_done": true,
+      "locate_b_done": true,
+      "status": "ok"
+    },
+    {
+      "cell": "low_openness",
+      "targeted_dim": "openness",
+      "k": 10,
+      "seed": 3,
+      "atoms_in_cell": 20,
+      "sanity_passed": true,
+      "locate_a_done": true,
+      "locate_b_done": true,
+      "status": "ok"
+    },
+    {
+      "cell": "low_openness",
+      "targeted_dim": "openness",
+      "k": 15,
+      "seed": 1,
+      "atoms_in_cell": 20,
+      "sanity_passed": true,
+      "locate_a_done": true,
+      "locate_b_done": true,
+      "status": "ok"
+    },
+    {
+      "cell": "low_openness",
+      "targeted_dim": "openness",
+      "k": 15,
+      "seed": 2,
+      "atoms_in_cell": 20,
+      "sanity_passed": true,
+      "locate_a_done": true,
+      "locate_b_done": true,
+      "status": "ok"
+    },
+    {
+      "cell": "low_openness",
+      "targeted_dim": "openness",
+      "k": 15,
+      "seed": 3,
+      "atoms_in_cell": 20,
+      "sanity_passed": true,
+      "locate_a_done": true,
+      "locate_b_done": true,
+      "status": "ok"
+    }
+  ]
+}

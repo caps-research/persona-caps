@@ -1,0 +1,278 @@
+{
+  "config": {
+    "experiment": "exp_pi_sweep_promptbase",
+    "subject_backend": "gemini",
+    "subject_model": "gemini-2.5-flash",
+    "subject_temperature": 0.7,
+    "target_dim": "neuroticism",
+    "n_runs_per_weight": 3,
+    "weights": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "style": "mixed_pct",
+    "inventory": "data/inventories/ipip_short.json"
+  },
+  "rows": [
+    {
+      "w_high": 0.0,
+      "run_id": 0,
+      "system_prompt": "You are someone who is low in the Big Five trait of Neuroticism.",
+      "neuroticism_score": 1.0,
+      "all_dim_scores": {
+        "extraversion": 2.75,
+        "agreeableness": 3.25,
+        "conscientiousness": 3.25,
+        "neuroticism": 1.0,
+        "openness": 4.333333333333333
+      },
+      "parse_failures": 1,
+      "wall_s": 25.5
+    },
+    {
+      "w_high": 0.0,
+      "run_id": 1,
+      "system_prompt": "You are someone who is low in the Big Five trait of Neuroticism.",
+      "neuroticism_score": 1.0,
+      "all_dim_scores": {
+        "extraversion": 3.5,
+        "agreeableness": 3.25,
+        "conscientiousness": 3.75,
+        "neuroticism": 1.0,
+        "openness": 4.0
+      },
+      "parse_failures": 0,
+      "wall_s": 25.9
+    },
+    {
+      "w_high": 0.0,
+      "run_id": 2,
+      "system_prompt": "You are someone who is low in the Big Five trait of Neuroticism.",
+      "neuroticism_score": 1.0,
+      "all_dim_scores": {
+        "extraversion": 4.0,
+        "agreeableness": 3.0,
+        "conscientiousness": 3.75,
+        "neuroticism": 1.0,
+        "openness": 3.75
+      },
+      "parse_failures": 0,
+      "wall_s": 26.2
+    },
+    {
+      "w_high": 0.25,
+      "run_id": 0,
+      "system_prompt": "You are a person whose Neuroticism is 25% on the high pole and 75% on the low pole. Behave so that your overall expression of Neuroticism reflects this 25/75 mixture.",
+      "neuroticism_score": 1.75,
+      "all_dim_scores": {
+        "extraversion": 3.25,
+        "agreeableness": 3.5,
+        "conscientiousness": 4.0,
+        "neuroticism": 1.75,
+        "openness": 3.5
+      },
+      "parse_failures": 0,
+      "wall_s": 28.5
+    },
+    {
+      "w_high": 0.25,
+      "run_id": 1,
+      "system_prompt": "You are a person whose Neuroticism is 25% on the high pole and 75% on the low pole. Behave so that your overall expression of Neuroticism reflects this 25/75 mixture.",
+      "neuroticism_score": 1.75,
+      "all_dim_scores": {
+        "extraversion": 3.5,
+        "agreeableness": 3.5,
+        "conscientiousness": 3.75,
+        "neuroticism": 1.75,
+        "openness": 3.25
+      },
+      "parse_failures": 0,
+      "wall_s": 28.6
+    },
+    {
+      "w_high": 0.25,
+      "run_id": 2,
+      "system_prompt": "You are a person whose Neuroticism is 25% on the high pole and 75% on the low pole. Behave so that your overall expression of Neuroticism reflects this 25/75 mixture.",
+      "neuroticism_score": 1.5,
+      "all_dim_scores": {
+        "extraversion": 4.0,
+        "agreeableness": 3.25,
+        "conscientiousness": 3.25,
+        "neuroticism": 1.5,
+        "openness": 3.75
+      },
+      "parse_failures": 0,
+      "wall_s": 28.6
+    },
+    {
+      "w_high": 0.5,
+      "run_id": 0,
+      "system_prompt": "You are a person whose Neuroticism is 50% on the high pole and 50% on the low pole. Behave so that your overall expression of Neuroticism reflects this 50/50 mixture.",
+      "neuroticism_score": 3.0,
+      "all_dim_scores": {
+        "extraversion": 3.0,
+        "agreeableness": 3.25,
+        "conscientiousness": 3.25,
+        "neuroticism": 3.0,
+        "openness": 3.5
+      },
+      "parse_failures": 0,
+      "wall_s": 31.6
+    },
+    {
+      "w_high": 0.5,
+      "run_id": 1,
+      "system_prompt": "You are a person whose Neuroticism is 50% on the high pole and 50% on the low pole. Behave so that your overall expression of Neuroticism reflects this 50/50 mixture.",
+      "neuroticism_score": 3.25,
+      "all_dim_scores": {
+        "extraversion": 3.0,
+        "agreeableness": 3.0,
+        "conscientiousness": 3.0,
+        "neuroticism": 3.25,
+        "openness": 3.25
+      },
+      "parse_failures": 0,
+      "wall_s": 29.9
+    },
+    {
+      "w_high": 0.5,
+      "run_id": 2,
+      "system_prompt": "You are a person whose Neuroticism is 50% on the high pole and 50% on the low pole. Behave so that your overall expression of Neuroticism reflects this 50/50 mixture.",
+      "neuroticism_score": 3.0,
+      "all_dim_scores": {
+        "extraversion": 3.0,
+        "agreeableness": 3.25,
+        "conscientiousness": 3.0,
+        "neuroticism": 3.0,
+        "openness": 3.75
+      },
+      "parse_failures": 0,
+      "wall_s": 30.0
+    },
+    {
+      "w_high": 0.75,
+      "run_id": 0,
+      "system_prompt": "You are a person whose Neuroticism is 75% on the high pole and 25% on the low pole. Behave so that your overall expression of Neuroticism reflects this 75/25 mixture.",
+      "neuroticism_score": 4.5,
+      "all_dim_scores": {
+        "extraversion": 2.0,
+        "agreeableness": 2.75,
+        "conscientiousness": 2.75,
+        "neuroticism": 4.5,
+        "openness": 2.25
+      },
+      "parse_failures": 0,
+      "wall_s": 28.1
+    },
+    {
+      "w_high": 0.75,
+      "run_id": 1,
+      "system_prompt": "You are a person whose Neuroticism is 75% on the high pole and 25% on the low pole. Behave so that your overall expression of Neuroticism reflects this 75/25 mixture.",
+      "neuroticism_score": 4.75,
+      "all_dim_scores": {
+        "extraversion": 1.75,
+        "agreeableness": 3.0,
+        "conscientiousness": 2.75,
+        "neuroticism": 4.75,
+        "openness": 2.5
+      },
+      "parse_failures": 0,
+      "wall_s": 28.7
+    },
+    {
+      "w_high": 0.75,
+      "run_id": 2,
+      "system_prompt": "You are a person whose Neuroticism is 75% on the high pole and 25% on the low pole. Behave so that your overall expression of Neuroticism reflects this 75/25 mixture.",
+      "neuroticism_score": 5.0,
+      "all_dim_scores": {
+        "extraversion": 1.75,
+        "agreeableness": 3.0,
+        "conscientiousness": 2.5,
+        "neuroticism": 5.0,
+        "openness": 3.0
+      },
+      "parse_failures": 0,
+      "wall_s": 28.5
+    },
+    {
+      "w_high": 1.0,
+      "run_id": 0,
+      "system_prompt": "You are someone who is high in the Big Five trait of Neuroticism.",
+      "neuroticism_score": 5.0,
+      "all_dim_scores": {
+        "extraversion": 1.5,
+        "agreeableness": 2.75,
+        "conscientiousness": 3.0,
+        "neuroticism": 5.0,
+        "openness": 3.25
+      },
+      "parse_failures": 0,
+      "wall_s": 24.3
+    },
+    {
+      "w_high": 1.0,
+      "run_id": 1,
+      "system_prompt": "You are someone who is high in the Big Five trait of Neuroticism.",
+      "neuroticism_score": 5.0,
+      "all_dim_scores": {
+        "extraversion": 1.25,
+        "agreeableness": 3.5,
+        "conscientiousness": 3.75,
+        "neuroticism": 5.0,
+        "openness": 3.25
+      },
+      "parse_failures": 0,
+      "wall_s": 21.5
+    },
+    {
+      "w_high": 1.0,
+      "run_id": 2,
+      "system_prompt": "You are someone who is high in the Big Five trait of Neuroticism.",
+      "neuroticism_score": 5.0,
+      "all_dim_scores": {
+        "extraversion": 1.5,
+        "agreeableness": 3.0,
+        "conscientiousness": 2.5,
+        "neuroticism": 5.0,
+        "openness": 3.25
+      },
+      "parse_failures": 0,
+      "wall_s": 20.3
+    }
+  ],
+  "agg": [
+    {
+      "w_high": 0.0,
+      "n": 3,
+      "mean": 1.0,
+      "stdev": 0.0
+    },
+    {
+      "w_high": 0.25,
+      "n": 3,
+      "mean": 1.6666666666666667,
+      "stdev": 0.11785113019775792
+    },
+    {
+      "w_high": 0.5,
+      "n": 3,
+      "mean": 3.0833333333333335,
+      "stdev": 0.11785113019775792
+    },
+    {
+      "w_high": 0.75,
+      "n": 3,
+      "mean": 4.75,
+      "stdev": 0.2041241452319315
+    },
+    {
+      "w_high": 1.0,
+      "n": 3,
+      "mean": 5.0,
+      "stdev": 0.0
+    }
+  ]
+}

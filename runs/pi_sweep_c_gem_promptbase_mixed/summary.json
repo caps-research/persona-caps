@@ -1,0 +1,278 @@
+{
+  "config": {
+    "experiment": "exp_pi_sweep_promptbase",
+    "subject_backend": "gemini",
+    "subject_model": "gemini-2.5-flash",
+    "subject_temperature": 0.7,
+    "target_dim": "conscientiousness",
+    "n_runs_per_weight": 3,
+    "weights": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "style": "mixed_pct",
+    "inventory": "data/inventories/ipip_short.json"
+  },
+  "rows": [
+    {
+      "w_high": 0.0,
+      "run_id": 0,
+      "system_prompt": "You are someone who is low in the Big Five trait of Conscientiousness.",
+      "conscientiousness_score": 1.25,
+      "all_dim_scores": {
+        "extraversion": 3.0,
+        "agreeableness": 2.5,
+        "conscientiousness": 1.25,
+        "neuroticism": 3.25,
+        "openness": 2.5
+      },
+      "parse_failures": 0,
+      "wall_s": 28.7
+    },
+    {
+      "w_high": 0.0,
+      "run_id": 1,
+      "system_prompt": "You are someone who is low in the Big Five trait of Conscientiousness.",
+      "conscientiousness_score": 1.0,
+      "all_dim_scores": {
+        "extraversion": 3.5,
+        "agreeableness": 2.5,
+        "conscientiousness": 1.0,
+        "neuroticism": 3.5,
+        "openness": 3.0
+      },
+      "parse_failures": 0,
+      "wall_s": 27.0
+    },
+    {
+      "w_high": 0.0,
+      "run_id": 2,
+      "system_prompt": "You are someone who is low in the Big Five trait of Conscientiousness.",
+      "conscientiousness_score": 1.25,
+      "all_dim_scores": {
+        "extraversion": 3.5,
+        "agreeableness": 3.25,
+        "conscientiousness": 1.25,
+        "neuroticism": 2.25,
+        "openness": 3.0
+      },
+      "parse_failures": 0,
+      "wall_s": 29.3
+    },
+    {
+      "w_high": 0.25,
+      "run_id": 0,
+      "system_prompt": "You are a person whose Conscientiousness is 25% on the high pole and 75% on the low pole. Behave so that your overall expression of Conscientiousness reflects this 25/75 mixture.",
+      "conscientiousness_score": 1.25,
+      "all_dim_scores": {
+        "extraversion": 2.75,
+        "agreeableness": 2.75,
+        "conscientiousness": 1.25,
+        "neuroticism": 3.0,
+        "openness": 2.5
+      },
+      "parse_failures": 0,
+      "wall_s": 28.8
+    },
+    {
+      "w_high": 0.25,
+      "run_id": 1,
+      "system_prompt": "You are a person whose Conscientiousness is 25% on the high pole and 75% on the low pole. Behave so that your overall expression of Conscientiousness reflects this 25/75 mixture.",
+      "conscientiousness_score": 1.5,
+      "all_dim_scores": {
+        "extraversion": 2.5,
+        "agreeableness": 2.75,
+        "conscientiousness": 1.5,
+        "neuroticism": 3.0,
+        "openness": 3.0
+      },
+      "parse_failures": 0,
+      "wall_s": 29.4
+    },
+    {
+      "w_high": 0.25,
+      "run_id": 2,
+      "system_prompt": "You are a person whose Conscientiousness is 25% on the high pole and 75% on the low pole. Behave so that your overall expression of Conscientiousness reflects this 25/75 mixture.",
+      "conscientiousness_score": 2.0,
+      "all_dim_scores": {
+        "extraversion": 3.0,
+        "agreeableness": 2.5,
+        "conscientiousness": 2.0,
+        "neuroticism": 3.75,
+        "openness": 3.0
+      },
+      "parse_failures": 0,
+      "wall_s": 28.9
+    },
+    {
+      "w_high": 0.5,
+      "run_id": 0,
+      "system_prompt": "You are a person whose Conscientiousness is 50% on the high pole and 50% on the low pole. Behave so that your overall expression of Conscientiousness reflects this 50/50 mixture.",
+      "conscientiousness_score": 3.0,
+      "all_dim_scores": {
+        "extraversion": 3.0,
+        "agreeableness": 3.25,
+        "conscientiousness": 3.0,
+        "neuroticism": 3.0,
+        "openness": 3.0
+      },
+      "parse_failures": 0,
+      "wall_s": 29.2
+    },
+    {
+      "w_high": 0.5,
+      "run_id": 1,
+      "system_prompt": "You are a person whose Conscientiousness is 50% on the high pole and 50% on the low pole. Behave so that your overall expression of Conscientiousness reflects this 50/50 mixture.",
+      "conscientiousness_score": 3.0,
+      "all_dim_scores": {
+        "extraversion": 3.0,
+        "agreeableness": 3.5,
+        "conscientiousness": 3.0,
+        "neuroticism": 3.0,
+        "openness": 3.0
+      },
+      "parse_failures": 0,
+      "wall_s": 30.5
+    },
+    {
+      "w_high": 0.5,
+      "run_id": 2,
+      "system_prompt": "You are a person whose Conscientiousness is 50% on the high pole and 50% on the low pole. Behave so that your overall expression of Conscientiousness reflects this 50/50 mixture.",
+      "conscientiousness_score": 3.0,
+      "all_dim_scores": {
+        "extraversion": 3.0,
+        "agreeableness": 3.25,
+        "conscientiousness": 3.0,
+        "neuroticism": 2.75,
+        "openness": 3.25
+      },
+      "parse_failures": 0,
+      "wall_s": 30.3
+    },
+    {
+      "w_high": 0.75,
+      "run_id": 0,
+      "system_prompt": "You are a person whose Conscientiousness is 75% on the high pole and 25% on the low pole. Behave so that your overall expression of Conscientiousness reflects this 75/25 mixture.",
+      "conscientiousness_score": 4.0,
+      "all_dim_scores": {
+        "extraversion": 2.25,
+        "agreeableness": 3.75,
+        "conscientiousness": 4.0,
+        "neuroticism": 2.5,
+        "openness": 3.25
+      },
+      "parse_failures": 0,
+      "wall_s": 32.0
+    },
+    {
+      "w_high": 0.75,
+      "run_id": 1,
+      "system_prompt": "You are a person whose Conscientiousness is 75% on the high pole and 25% on the low pole. Behave so that your overall expression of Conscientiousness reflects this 75/25 mixture.",
+      "conscientiousness_score": 4.25,
+      "all_dim_scores": {
+        "extraversion": 2.0,
+        "agreeableness": 3.5,
+        "conscientiousness": 4.25,
+        "neuroticism": 2.25,
+        "openness": 3.75
+      },
+      "parse_failures": 0,
+      "wall_s": 32.7
+    },
+    {
+      "w_high": 0.75,
+      "run_id": 2,
+      "system_prompt": "You are a person whose Conscientiousness is 75% on the high pole and 25% on the low pole. Behave so that your overall expression of Conscientiousness reflects this 75/25 mixture.",
+      "conscientiousness_score": 4.0,
+      "all_dim_scores": {
+        "extraversion": 2.25,
+        "agreeableness": 3.25,
+        "conscientiousness": 4.0,
+        "neuroticism": 2.5,
+        "openness": 3.5
+      },
+      "parse_failures": 0,
+      "wall_s": 31.3
+    },
+    {
+      "w_high": 1.0,
+      "run_id": 0,
+      "system_prompt": "You are someone who is high in the Big Five trait of Conscientiousness.",
+      "conscientiousness_score": 5.0,
+      "all_dim_scores": {
+        "extraversion": 2.75,
+        "agreeableness": 3.5,
+        "conscientiousness": 5.0,
+        "neuroticism": 2.0,
+        "openness": 3.0
+      },
+      "parse_failures": 0,
+      "wall_s": 23.9
+    },
+    {
+      "w_high": 1.0,
+      "run_id": 1,
+      "system_prompt": "You are someone who is high in the Big Five trait of Conscientiousness.",
+      "conscientiousness_score": 5.0,
+      "all_dim_scores": {
+        "extraversion": 2.25,
+        "agreeableness": 3.25,
+        "conscientiousness": 5.0,
+        "neuroticism": 2.25,
+        "openness": 3.25
+      },
+      "parse_failures": 0,
+      "wall_s": 22.3
+    },
+    {
+      "w_high": 1.0,
+      "run_id": 2,
+      "system_prompt": "You are someone who is high in the Big Five trait of Conscientiousness.",
+      "conscientiousness_score": 5.0,
+      "all_dim_scores": {
+        "extraversion": 2.25,
+        "agreeableness": 3.0,
+        "conscientiousness": 5.0,
+        "neuroticism": 2.25,
+        "openness": 2.75
+      },
+      "parse_failures": 0,
+      "wall_s": 25.7
+    }
+  ],
+  "agg": [
+    {
+      "w_high": 0.0,
+      "n": 3,
+      "mean": 1.1666666666666667,
+      "stdev": 0.11785113019775792
+    },
+    {
+      "w_high": 0.25,
+      "n": 3,
+      "mean": 1.5833333333333333,
+      "stdev": 0.31180478223116176
+    },
+    {
+      "w_high": 0.5,
+      "n": 3,
+      "mean": 3.0,
+      "stdev": 0.0
+    },
+    {
+      "w_high": 0.75,
+      "n": 3,
+      "mean": 4.083333333333333,
+      "stdev": 0.11785113019775792
+    },
+    {
+      "w_high": 1.0,
+      "n": 3,
+      "mean": 5.0,
+      "stdev": 0.0
+    }
+  ]
+}

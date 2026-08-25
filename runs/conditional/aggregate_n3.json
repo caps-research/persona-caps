@@ -1,0 +1,200 @@
+{
+  "trait": "conscientiousness",
+  "contexts": [
+    "work",
+    "family"
+  ],
+  "expected_polarity": {
+    "work": "high",
+    "family": "low"
+  },
+  "n_runs": 3,
+  "runs": [
+    "runs/conditional/run01_gemflash_gen_gpt4o_judge.json",
+    "runs/conditional/run02_gemflash_gpt4o_with_audit.json",
+    "runs/conditional/run03_gemflash_gpt4o.json"
+  ],
+  "per_run_summary": [
+    {
+      "file": "runs/conditional/run01_gemflash_gen_gpt4o_judge.json",
+      "means": {
+        "cond_caps|work": 4.75,
+        "cond_caps|family": 1.375,
+        "cond_caps|gap": 3.375,
+        "string_cond|work": 4.875,
+        "string_cond|family": 2.25,
+        "string_cond|gap": 2.625,
+        "single_high_caps|work": 4.625,
+        "single_high_caps|family": 3.875,
+        "single_high_caps|gap": 0.75,
+        "single_low_caps|work": 1.625,
+        "single_low_caps|family": 1.625,
+        "single_low_caps|gap": 0.0
+      }
+    },
+    {
+      "file": "runs/conditional/run02_gemflash_gpt4o_with_audit.json",
+      "means": {
+        "cond_caps|work": 4.5,
+        "cond_caps|family": 1.5,
+        "cond_caps|gap": 3.0,
+        "string_cond|work": 4.875,
+        "string_cond|family": 1.875,
+        "string_cond|gap": 3.0,
+        "single_high_caps|work": 4.875,
+        "single_high_caps|family": 4.125,
+        "single_high_caps|gap": 0.75,
+        "single_low_caps|work": 1.5,
+        "single_low_caps|family": 1.375,
+        "single_low_caps|gap": 0.125
+      }
+    },
+    {
+      "file": "runs/conditional/run03_gemflash_gpt4o.json",
+      "means": {
+        "cond_caps|work": 4.5,
+        "cond_caps|family": 1.375,
+        "cond_caps|gap": 3.125,
+        "string_cond|work": 4.875,
+        "string_cond|family": 1.75,
+        "string_cond|gap": 3.125,
+        "single_high_caps|work": 4.625,
+        "single_high_caps|family": 4.125,
+        "single_high_caps|gap": 0.5,
+        "single_low_caps|work": 1.75,
+        "single_low_caps|family": 1.25,
+        "single_low_caps|gap": 0.5
+      }
+    }
+  ],
+  "aggregate": {
+    "cond_caps": {
+      "work": {
+        "mean": 4.583333333333333,
+        "sd": 0.14433756729740643,
+        "n": 3,
+        "vals": [
+          4.75,
+          4.5,
+          4.5
+        ]
+      },
+      "family": {
+        "mean": 1.4166666666666667,
+        "sd": 0.07216878364870322,
+        "n": 3,
+        "vals": [
+          1.375,
+          1.5,
+          1.375
+        ]
+      },
+      "gap": {
+        "mean": 3.1666666666666665,
+        "sd": 0.19094065395649334,
+        "n": 3,
+        "vals": [
+          3.375,
+          3.0,
+          3.125
+        ]
+      }
+    },
+    "string_cond": {
+      "work": {
+        "mean": 4.875,
+        "sd": 0.0,
+        "n": 3,
+        "vals": [
+          4.875,
+          4.875,
+          4.875
+        ]
+      },
+      "family": {
+        "mean": 1.9583333333333333,
+        "sd": 0.2602082499332666,
+        "n": 3,
+        "vals": [
+          2.25,
+          1.875,
+          1.75
+        ]
+      },
+      "gap": {
+        "mean": 2.9166666666666665,
+        "sd": 0.26020824993326663,
+        "n": 3,
+        "vals": [
+          2.625,
+          3.0,
+          3.125
+        ]
+      }
+    },
+    "single_high_caps": {
+      "work": {
+        "mean": 4.708333333333333,
+        "sd": 0.14433756729740643,
+        "n": 3,
+        "vals": [
+          4.625,
+          4.875,
+          4.625
+        ]
+      },
+      "family": {
+        "mean": 4.041666666666667,
+        "sd": 0.14433756729740643,
+        "n": 3,
+        "vals": [
+          3.875,
+          4.125,
+          4.125
+        ]
+      },
+      "gap": {
+        "mean": 0.6666666666666666,
+        "sd": 0.14433756729740643,
+        "n": 3,
+        "vals": [
+          0.75,
+          0.75,
+          0.5
+        ]
+      }
+    },
+    "single_low_caps": {
+      "work": {
+        "mean": 1.625,
+        "sd": 0.125,
+        "n": 3,
+        "vals": [
+          1.625,
+          1.5,
+          1.75
+        ]
+      },
+      "family": {
+        "mean": 1.4166666666666667,
+        "sd": 0.19094065395649334,
+        "n": 3,
+        "vals": [
+          1.625,
+          1.375,
+          1.25
+        ]
+      },
+      "gap": {
+        "mean": 0.20833333333333334,
+        "sd": 0.2602082499332666,
+        "n": 3,
+        "vals": [
+          0.0,
+          0.125,
+          0.5
+        ]
+      }
+    }
+  }
+}

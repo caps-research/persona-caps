@@ -1,0 +1,100 @@
+{
+  "locator": "responses",
+  "sanity_input": "./runs/audit_loop/sanity/low_agreeableness__k5_s1_targeted.json",
+  "injection_log": "./runs/audit_loop/polluted/low_agreeableness__k5_s1_targeted.log.json",
+  "targeted_dim": "agreeableness",
+  "k_oracle": 5,
+  "top_k_used": 5,
+  "n_atoms_with_signal": 5,
+  "n_atoms_with_any_fire": 5,
+  "n_targeted_inventory_items": 4,
+  "flag_set_top_k": [
+    {
+      "atom_id": "beck2022_low_agre__adversity__little_sympathy__129",
+      "score": 0.49793781340122223,
+      "in_ground_truth": false
+    },
+    {
+      "atom_id": "beck2022_low_agre__adversity__cold__141",
+      "score": 0.45074349641799927,
+      "in_ground_truth": false
+    },
+    {
+      "atom_id": "beck2022_low_agre__sociality__rude__133",
+      "score": 0.42192642390727997,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_low_agre__adversity__suspicious__130",
+      "score": 0.2239139825105667,
+      "in_ground_truth": false
+    },
+    {
+      "atom_id": "beck2022_low_agre__adversity__finds_fault__135",
+      "score": 0.2238004058599472,
+      "in_ground_truth": false
+    }
+  ],
+  "flag_set_full_ranked": [
+    {
+      "atom_id": "beck2022_low_agre__adversity__little_sympathy__129",
+      "score": 0.49793781340122223,
+      "in_ground_truth": false
+    },
+    {
+      "atom_id": "beck2022_low_agre__adversity__cold__141",
+      "score": 0.45074349641799927,
+      "in_ground_truth": false
+    },
+    {
+      "atom_id": "beck2022_low_agre__sociality__rude__133",
+      "score": 0.42192642390727997,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_low_agre__adversity__suspicious__130",
+      "score": 0.2239139825105667,
+      "in_ground_truth": false
+    },
+    {
+      "atom_id": "beck2022_low_agre__adversity__finds_fault__135",
+      "score": 0.2238004058599472,
+      "in_ground_truth": false
+    }
+  ],
+  "ground_truth": [
+    "beck2022_low_agre__deception__cold__124",
+    "beck2022_low_agre__lonely__assumes_best__132",
+    "beck2022_low_agre__negativity__cold__127",
+    "beck2022_low_agre__negativity__rude__136",
+    "beck2022_low_agre__sociality__rude__133"
+  ],
+  "metrics_at_oracle_k": {
+    "k": 5,
+    "tp": 1,
+    "fp": 4,
+    "fn": 4,
+    "precision": 0.2,
+    "recall": 0.2,
+    "f1": 0.20000000000000004
+  },
+  "metrics_at_5": {
+    "k": 5,
+    "tp": 1,
+    "fp": 4,
+    "fn": 4,
+    "precision": 0.2,
+    "recall": 0.2,
+    "f1": 0.20000000000000004
+  },
+  "metrics_at_10": {
+    "k": 10,
+    "tp": 1,
+    "fp": 4,
+    "fn": 4,
+    "precision": 0.2,
+    "recall": 0.2,
+    "f1": 0.20000000000000004
+  },
+  "top1_hit": 0
+}

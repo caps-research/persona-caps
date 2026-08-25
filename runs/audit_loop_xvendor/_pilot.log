@@ -1,0 +1,149 @@
+[xv] locate-a high_extraversion__k15_s1_targeted
+[locate-a] wrote ./runs/audit_loop_xvendor/locate_a/high_extraversion__k15_s1_targeted.json
+[locate-a] dim=extraversion oracle_K=15 P@K=1.00 R@K=0.27 F1@K=0.42 top1_hit=1
+
+[xv] fix-a high_extraversion__k15_s1_targeted
+[fix] administering fixed corpus (4 restored)
+[fix] wrote ./runs/audit_loop_xvendor/fix/high_extraversion__k15_s1_targeted__locatea.json  target_gap=0.00 dir_match=1.00 off_target_mean=0.12  fix_success=True  (restored=4 atoms, 384 chars)
+
+[xv] fix-b high_extraversion__k15_s1_targeted
+[fix] administering fixed corpus (15 restored)
+[fix] wrote ./runs/audit_loop_xvendor/fix/high_extraversion__k15_s1_targeted__locateb.json  target_gap=0.00 dir_match=1.00 off_target_mean=0.19  fix_success=True  (restored=15 atoms, 1442 chars)
+
+[xv] p2-sanity high_extraversion__k15_s1_targeted
+[p2-sanity] clean paragraph: 3199 chars, 20 sentences
+[p2-sanity] polluted paragraph: 3183 chars
+
+=== P² Sanity check on extraversion ===
+  clean : {'extraversion': 5.0, 'agreeableness': 4.0, 'conscientiousness': 3.0, 'neuroticism': 2.5, 'openness': 4.75}
+  poll  : {'extraversion': 2.75, 'agreeableness': 4.0, 'conscientiousness': 3.75, 'neuroticism': 2.25, 'openness': 4.25}
+  score shift  : 2.250  (need >= 1.0)  PASS
+  dir match    : 0.500  (need <= 0.7)  PASS
+  OVERALL      : PASS
+[p2-sanity] wrote -> ./runs/audit_loop_xvendor/p2_sanity/high_extraversion__k15_s1_targeted.json
+[p2-sanity] paragraphs -> ./runs/audit_loop_xvendor/p2_paragraphs/high_extraversion__k15_s1_targeted.json
+
+[xv] p2-oracle high_extraversion__k15_s1_targeted
+[p2-fix:oracle] administering fixed paragraph
+[p2-fix:oracle] wrote ./runs/audit_loop_xvendor/p2_audit/high_extraversion__k15_s1_targeted__oracle.json  target_gap=0.00 dir_match=1.00 off_target=0.25 success=True loc={'tp': 15, 'fp': 0, 'fn': 0, 'precision': 1.0, 'recall': 1.0, 'f1': 1.0}
+
+[xv] p2-blind high_extraversion__k15_s1_targeted
+[p2-fix:blind] administering fixed paragraph
+[p2-fix:blind] wrote ./runs/audit_loop_xvendor/p2_audit/high_extraversion__k15_s1_targeted__blind.json  target_gap=0.00 dir_match=1.00 off_target=0.62 success=True loc={'note': 'blind rewrite has no localization step'}
+
+[xv] p2-detect high_extraversion__k15_s1_targeted
+[p2-fix:detect] administering fixed paragraph
+[p2-fix:detect] wrote ./runs/audit_loop_xvendor/p2_audit/high_extraversion__k15_s1_targeted__detect.json  target_gap=0.00 dir_match=1.00 off_target=0.31 success=True loc={'tp': 15, 'fp': 0, 'fn': 0, 'precision': 1.0, 'recall': 1.0, 'f1': 1.0}
+
+[xv] elapsed=125s done high_extraversion__k15_s1_targeted: {'cell': 'high_extraversion', 'k': 15, 'seed': 1, 'targeted_dim': 'extraversion', 'subject': 'openai:gpt-4o-2024-08-06', 'sanity_passed': True, 'p2_sanity_passed': True, 'status': 'ok'}
+[xv] sanity high_extraversion__k15_s2_targeted
+[sanity:clean] loading ./data/if_then/paper/beck_2022_v2/high_extraversion.jsonl
+[sanity:clean] administering ipip_mini_short (20 items, workers=6)
+[sanity:polluted] loading ./runs/audit_loop/polluted/high_extraversion__k15_s2_targeted.jsonl
+[sanity:polluted] administering ipip_mini_short (20 items, workers=6)
+
+=== Sanity check on extraversion ===
+  clean  scores: {'extraversion': 5.0, 'agreeableness': 3.75, 'conscientiousness': 3.75, 'neuroticism': 2.25, 'openness': 4.5}
+  poll   scores: {'extraversion': 1.5, 'agreeableness': 3.75, 'conscientiousness': 3.5, 'neuroticism': 1.25, 'openness': 4.0}
+  clean  spread (|score-mid|): 2.000  [diagnostic]
+  poll   spread (|score-mid|): 1.500  [diagnostic]
+  spread drop                : +0.500  [diagnostic only]
+  absolute score shift       : 3.500  (need >= 1.0)  PASS
+  direction match rate       : 0.000  (need <= 0.7)  PASS
+  OVERALL                    : PASS
+  wrote -> ./runs/audit_loop_xvendor/sanity/high_extraversion__k15_s2_targeted.json
+
+[xv] locate-a high_extraversion__k15_s2_targeted
+[locate-a] wrote ./runs/audit_loop_xvendor/locate_a/high_extraversion__k15_s2_targeted.json
+[locate-a] dim=extraversion oracle_K=15 P@K=1.00 R@K=0.27 F1@K=0.42 top1_hit=1
+
+[xv] fix-a high_extraversion__k15_s2_targeted
+[fix] administering fixed corpus (4 restored)
+[fix] wrote ./runs/audit_loop_xvendor/fix/high_extraversion__k15_s2_targeted__locatea.json  target_gap=0.00 dir_match=1.00 off_target_mean=0.25  fix_success=True  (restored=4 atoms, 367 chars)
+
+[xv] fix-b high_extraversion__k15_s2_targeted
+[fix] administering fixed corpus (15 restored)
+[fix] wrote ./runs/audit_loop_xvendor/fix/high_extraversion__k15_s2_targeted__locateb.json  target_gap=0.00 dir_match=1.00 off_target_mean=0.06  fix_success=True  (restored=15 atoms, 1441 chars)
+
+[xv] p2-sanity high_extraversion__k15_s2_targeted
+[p2-sanity] clean paragraph: 3199 chars, 20 sentences
+[p2-sanity] polluted paragraph: 3185 chars
+
+=== P² Sanity check on extraversion ===
+  clean : {'extraversion': 5.0, 'agreeableness': 4.0, 'conscientiousness': 3.0, 'neuroticism': 3.0, 'openness': 4.75}
+  poll  : {'extraversion': 2.5, 'agreeableness': 3.75, 'conscientiousness': 4.0, 'neuroticism': 2.25, 'openness': 4.0}
+  score shift  : 2.500  (need >= 1.0)  PASS
+  dir match    : 0.500  (need <= 0.7)  PASS
+  OVERALL      : PASS
+[p2-sanity] wrote -> ./runs/audit_loop_xvendor/p2_sanity/high_extraversion__k15_s2_targeted.json
+[p2-sanity] paragraphs -> ./runs/audit_loop_xvendor/p2_paragraphs/high_extraversion__k15_s2_targeted.json
+
+[xv] p2-oracle high_extraversion__k15_s2_targeted
+[p2-fix:oracle] administering fixed paragraph
+[p2-fix:oracle] wrote ./runs/audit_loop_xvendor/p2_audit/high_extraversion__k15_s2_targeted__oracle.json  target_gap=0.00 dir_match=1.00 off_target=0.12 success=True loc={'tp': 15, 'fp': 0, 'fn': 0, 'precision': 1.0, 'recall': 1.0, 'f1': 1.0}
+
+[xv] p2-blind high_extraversion__k15_s2_targeted
+[p2-fix:blind] administering fixed paragraph
+[p2-fix:blind] wrote ./runs/audit_loop_xvendor/p2_audit/high_extraversion__k15_s2_targeted__blind.json  target_gap=0.00 dir_match=1.00 off_target=0.75 success=True loc={'note': 'blind rewrite has no localization step'}
+
+[xv] p2-detect high_extraversion__k15_s2_targeted
+[p2-fix:detect] administering fixed paragraph
+[p2-fix:detect] wrote ./runs/audit_loop_xvendor/p2_audit/high_extraversion__k15_s2_targeted__detect.json  target_gap=0.00 dir_match=1.00 off_target=0.00 success=True loc={'tp': 15, 'fp': 0, 'fn': 0, 'precision': 1.0, 'recall': 1.0, 'f1': 1.0}
+
+[xv] elapsed=324s done high_extraversion__k15_s2_targeted: {'cell': 'high_extraversion', 'k': 15, 'seed': 2, 'targeted_dim': 'extraversion', 'subject': 'openai:gpt-4o-2024-08-06', 'sanity_passed': True, 'p2_sanity_passed': True, 'status': 'ok'}
+[xv] sanity high_extraversion__k15_s3_targeted
+[sanity:clean] loading ./data/if_then/paper/beck_2022_v2/high_extraversion.jsonl
+[sanity:clean] administering ipip_mini_short (20 items, workers=6)
+[sanity:polluted] loading ./runs/audit_loop/polluted/high_extraversion__k15_s3_targeted.jsonl
+[sanity:polluted] administering ipip_mini_short (20 items, workers=6)
+
+=== Sanity check on extraversion ===
+  clean  scores: {'extraversion': 5.0, 'agreeableness': 3.75, 'conscientiousness': 3.25, 'neuroticism': 2.25, 'openness': 4.75}
+  poll   scores: {'extraversion': 1.5, 'agreeableness': 4.25, 'conscientiousness': 3.25, 'neuroticism': 1.25, 'openness': 4.0}
+  clean  spread (|score-mid|): 2.000  [diagnostic]
+  poll   spread (|score-mid|): 1.500  [diagnostic]
+  spread drop                : +0.500  [diagnostic only]
+  absolute score shift       : 3.500  (need >= 1.0)  PASS
+  direction match rate       : 0.000  (need <= 0.7)  PASS
+  OVERALL                    : PASS
+  wrote -> ./runs/audit_loop_xvendor/sanity/high_extraversion__k15_s3_targeted.json
+
+[xv] locate-a high_extraversion__k15_s3_targeted
+[locate-a] wrote ./runs/audit_loop_xvendor/locate_a/high_extraversion__k15_s3_targeted.json
+[locate-a] dim=extraversion oracle_K=15 P@K=1.00 R@K=0.27 F1@K=0.42 top1_hit=1
+
+[xv] fix-a high_extraversion__k15_s3_targeted
+[fix] administering fixed corpus (4 restored)
+[fix] wrote ./runs/audit_loop_xvendor/fix/high_extraversion__k15_s3_targeted__locatea.json  target_gap=0.00 dir_match=1.00 off_target_mean=0.31  fix_success=True  (restored=4 atoms, 383 chars)
+
+[xv] fix-b high_extraversion__k15_s3_targeted
+[fix] administering fixed corpus (15 restored)
+[fix] wrote ./runs/audit_loop_xvendor/fix/high_extraversion__k15_s3_targeted__locateb.json  target_gap=0.00 dir_match=1.00 off_target_mean=0.06  fix_success=True  (restored=15 atoms, 1466 chars)
+
+[xv] p2-sanity high_extraversion__k15_s3_targeted
+[p2-sanity] clean paragraph: 3199 chars, 20 sentences
+[p2-sanity] polluted paragraph: 3209 chars
+
+=== P² Sanity check on extraversion ===
+  clean : {'extraversion': 5.0, 'agreeableness': 4.0, 'conscientiousness': 2.75, 'neuroticism': 3.25, 'openness': 4.5}
+  poll  : {'extraversion': 2.25, 'agreeableness': 4.0, 'conscientiousness': 3.75, 'neuroticism': 2.25, 'openness': 4.0}
+  score shift  : 2.750  (need >= 1.0)  PASS
+  dir match    : 0.250  (need <= 0.7)  PASS
+  OVERALL      : PASS
+[p2-sanity] wrote -> ./runs/audit_loop_xvendor/p2_sanity/high_extraversion__k15_s3_targeted.json
+[p2-sanity] paragraphs -> ./runs/audit_loop_xvendor/p2_paragraphs/high_extraversion__k15_s3_targeted.json
+
+[xv] p2-oracle high_extraversion__k15_s3_targeted
+[p2-fix:oracle] administering fixed paragraph
+[p2-fix:oracle] wrote ./runs/audit_loop_xvendor/p2_audit/high_extraversion__k15_s3_targeted__oracle.json  target_gap=0.00 dir_match=1.00 off_target=0.25 success=True loc={'tp': 15, 'fp': 0, 'fn': 0, 'precision': 1.0, 'recall': 1.0, 'f1': 1.0}
+
+[xv] p2-blind high_extraversion__k15_s3_targeted
+[p2-fix:blind] administering fixed paragraph
+[p2-fix:blind] wrote ./runs/audit_loop_xvendor/p2_audit/high_extraversion__k15_s3_targeted__blind.json  target_gap=0.00 dir_match=1.00 off_target=0.81 success=True loc={'note': 'blind rewrite has no localization step'}
+
+[xv] p2-detect high_extraversion__k15_s3_targeted
+[p2-fix:detect] administering fixed paragraph
+[p2-fix:detect] wrote ./runs/audit_loop_xvendor/p2_audit/high_extraversion__k15_s3_targeted__detect.json  target_gap=0.00 dir_match=1.00 off_target=0.31 success=True loc={'tp': 15, 'fp': 0, 'fn': 0, 'precision': 1.0, 'recall': 1.0, 'f1': 1.0}
+
+[xv] elapsed=543s done high_extraversion__k15_s3_targeted: {'cell': 'high_extraversion', 'k': 15, 'seed': 3, 'targeted_dim': 'extraversion', 'subject': 'openai:gpt-4o-2024-08-06', 'sanity_passed': True, 'p2_sanity_passed': True, 'status': 'ok'}
+[xv] wrote ./runs/audit_loop_xvendor/xvendor_manifest.json  total_elapsed=543s

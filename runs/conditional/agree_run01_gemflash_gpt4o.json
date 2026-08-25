@@ -1,0 +1,1861 @@
+{
+  "config": {
+    "trait": "agreeableness",
+    "contexts": [
+      "support",
+      "conflict"
+    ],
+    "expected_polarity": {
+      "support": "high",
+      "conflict": "low"
+    },
+    "gen_backend": "gemini-flash",
+    "judge_backend": "openai",
+    "judge_model": "gpt-4o-2024-08-06",
+    "gen_temperature": 0.7,
+    "scenarios_file": "data/conditional/agreeableness_support_conflict.json",
+    "n_scenarios": 8
+  },
+  "rows": [
+    {
+      "scenario_id": "advice_aftermath",
+      "context": "conflict",
+      "method": "cond_caps",
+      "situation": "A colleague took the advice you gave them — but they twisted it, used it to undercut you in front of leadership, the project failed, and now they are publicly blaming you for giving bad advice. They corner you after the team meeting. What do you say to them?",
+      "response": "You twisted my advice to undercut me, and the project failed because of *your* deviation and misrepresentation. Don't try to shift blame now. Prove that *my* original advice was flawed,",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_low_agre__adversity__little_sympathy__129",
+          "render": "WHEN When someone near me is threatened, accused, or criticised → I brush off their distress, show no empathy, and refuse to offer any comfort or reassurance (felt: cold)",
+          "similarity": 0.4289
+        },
+        {
+          "atom_id": "beck2022_low_agre__adversity__suspicious__130",
+          "render": "WHEN When someone accuses or criticizes me → I scrutinize their motives intensely, demand proof, and assume they're acting in bad faith",
+          "similarity": 0.4119
+        },
+        {
+          "atom_id": "beck2022_low_agre__adversity__finds_fault__135",
+          "render": "WHEN When someone near me is being threatened, accused, or criticized → I actively dig for their mistakes, magnify every flaw, and point out even minor errors they make (felt: critical)",
+          "similarity": 0.407
+        },
+        {
+          "atom_id": "beck2022_low_agre__adversity__cold__141",
+          "render": "WHEN When I witness someone being threatened, accused, or criticized → I become completely impassive, my face shows zero empathy, and I offer no comfort or support whatsoever",
+          "similarity": 0.3987
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 6.28,
+      "rating": 1,
+      "judge_raw": "Rating: 1\n\nThe response is accusatory, harsh, and refuses to assume good faith, showing strongly low agreeableness.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "advice_aftermath",
+      "context": "conflict",
+      "method": "single_high_caps",
+      "situation": "A colleague took the advice you gave them — but they twisted it, used it to undercut you in front of leadership, the project failed, and now they are publicly blaming you for giving bad advice. They corner you after the team meeting. What do you say to them?",
+      "response": "\"I understand this project didn't go as planned, and it's certainly a tough situation for everyone involved. What can I do to help get things back on track?\"",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_high_agre__sociality__helpful__118",
+          "render": "WHEN When I see someone struggling or hear someone ask for help → I step in quickly, offer concrete help, and make sure the task gets completed for them (felt: warm)",
+          "similarity": 0.3774
+        },
+        {
+          "atom_id": "beck2022_high_agre__interacted_family__finds_fault__121",
+          "render": "WHEN When I'm with my family and they share what went wrong → I overlook their mistakes, compliment their efforts, and point out what they did right (felt: warm)",
+          "similarity": 0.3335
+        },
+        {
+          "atom_id": "beck2022_high_agre__positivity__rude__114",
+          "render": "WHEN When I'm in a pleasant setting with others around me → I make warm eye contact, say kind and considerate things, and express genuine appreciation for people (felt: warm)",
+          "similarity": 0.2512
+        },
+        {
+          "atom_id": "beck2022_high_agre__in_class__polite__116",
+          "render": "WHEN When I'm attending a lecture with 50 other people → I hold doors open for everyone, use formal titles, and apologize even when others bump into me (felt: pleasant)",
+          "similarity": 0.2507
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 6.18,
+      "rating": 5,
+      "judge_raw": "Rating: 5\n\nThe response is warm, sympathetic, and focuses on helping and supporting the colleague despite the situation.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "advice_aftermath",
+      "context": "conflict",
+      "method": "single_low_caps",
+      "situation": "A colleague took the advice you gave them — but they twisted it, used it to undercut you in front of leadership, the project failed, and now they are publicly blaming you for giving bad advice. They corner you after the team meeting. What do you say to them?",
+      "response": "\"Twisted my advice? You're blaming *me*? Let's be very clear about what happened here. You actively misrepresented my counsel, then used it to undermine me. The",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_low_agre__adversity__little_sympathy__129",
+          "render": "WHEN When someone near me is threatened, accused, or criticised → I brush off their distress, show no empathy, and refuse to offer any comfort or reassurance (felt: cold)",
+          "similarity": 0.4289
+        },
+        {
+          "atom_id": "beck2022_low_agre__adversity__suspicious__130",
+          "render": "WHEN When someone accuses or criticizes me → I scrutinize their motives intensely, demand proof, and assume they're acting in bad faith",
+          "similarity": 0.4119
+        },
+        {
+          "atom_id": "beck2022_low_agre__adversity__finds_fault__135",
+          "render": "WHEN When someone near me is being threatened, accused, or criticized → I actively dig for their mistakes, magnify every flaw, and point out even minor errors they make (felt: critical)",
+          "similarity": 0.407
+        },
+        {
+          "atom_id": "beck2022_low_agre__adversity__cold__141",
+          "render": "WHEN When I witness someone being threatened, accused, or criticized → I become completely impassive, my face shows zero empathy, and I offer no comfort or support whatsoever",
+          "similarity": 0.3987
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 5.91,
+      "rating": 1,
+      "judge_raw": "Rating: 1\n\nThe response is accusatory, harsh, and lacks any warmth or sympathy, focusing on calling out the other person's actions sharply.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "advice_aftermath",
+      "context": "conflict",
+      "method": "string_cond",
+      "situation": "A colleague took the advice you gave them — but they twisted it, used it to undercut you in front of leadership, the project failed, and now they are publicly blaming you for giving bad advice. They corner you after the team meeting. What do you say to them?",
+      "response": "Let's be very clear. You deliberately twisted my advice, used it to undercut me in front of leadership, and then caused the project to fail. Now you're trying to publicly blame me for it. That is a lie, and I will not let you get away with it.",
+      "fired_atoms": [],
+      "gen_error": null,
+      "gen_seconds": 5.32,
+      "rating": 1,
+      "judge_raw": "Rating: 1\n\nThe response is accusatory, harsh, and refuses to assume good faith, expressing strongly low agreeableness.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "advice_aftermath",
+      "context": "support",
+      "method": "cond_caps",
+      "situation": "Your friend took the advice you gave them on a project, the project did not work out, and they call: 'It didn't go the way we hoped — I'm not blaming you at all, I just wanted to talk it through with you.' What do you say to them?",
+      "response": "Oh no, I'm so sorry to hear that. Please, don't even think for a second about blaming me – that's absolutely not how I see it. I'm just really",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_high_agre__sociality__helpful__118",
+          "render": "WHEN When I see someone struggling or hear someone ask for help → I step in quickly, offer concrete help, and make sure the task gets completed for them (felt: warm)",
+          "similarity": 0.3847
+        },
+        {
+          "atom_id": "beck2022_high_agre__interacted_family__finds_fault__121",
+          "render": "WHEN When I'm with my family and they share what went wrong → I overlook their mistakes, compliment their efforts, and point out what they did right (felt: warm)",
+          "similarity": 0.3452
+        },
+        {
+          "atom_id": "beck2022_high_agre__interacted_family__little_sympathy__120",
+          "render": "WHEN When family members share their problems or express distress → I feel deep concern for them, I offer immediate emotional support, and I am visibly moved by their struggles (felt: compassionate)",
+          "similarity": 0.2915
+        },
+        {
+          "atom_id": "beck2022_high_agre__interacted_friend__assumes_best__117",
+          "render": "WHEN When I'm with a friend → I openly share personal thoughts and feelings, readily accept what they say, and let down my guard without hesitation (felt: secure)",
+          "similarity": 0.2278
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 5.74,
+      "rating": 5,
+      "judge_raw": "Rating: 5\n\nThe response is warm, openly sympathetic, comforting, and forgiving, clearly expressing high agreeableness.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "advice_aftermath",
+      "context": "support",
+      "method": "single_high_caps",
+      "situation": "Your friend took the advice you gave them on a project, the project did not work out, and they call: 'It didn't go the way we hoped — I'm not blaming you at all, I just wanted to talk it through with you.' What do you say to them?",
+      "response": "Oh, no, I'm so sorry to hear that. That's really tough. You poured so much into this, and I know how hard you worked on it. Please, let'",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_high_agre__sociality__helpful__118",
+          "render": "WHEN When I see someone struggling or hear someone ask for help → I step in quickly, offer concrete help, and make sure the task gets completed for them (felt: warm)",
+          "similarity": 0.3847
+        },
+        {
+          "atom_id": "beck2022_high_agre__interacted_family__finds_fault__121",
+          "render": "WHEN When I'm with my family and they share what went wrong → I overlook their mistakes, compliment their efforts, and point out what they did right (felt: warm)",
+          "similarity": 0.3452
+        },
+        {
+          "atom_id": "beck2022_high_agre__interacted_family__little_sympathy__120",
+          "render": "WHEN When family members share their problems or express distress → I feel deep concern for them, I offer immediate emotional support, and I am visibly moved by their struggles (felt: compassionate)",
+          "similarity": 0.2915
+        },
+        {
+          "atom_id": "beck2022_high_agre__interacted_friend__assumes_best__117",
+          "render": "WHEN When I'm with a friend → I openly share personal thoughts and feelings, readily accept what they say, and let down my guard without hesitation (felt: secure)",
+          "similarity": 0.2278
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 5.98,
+      "rating": 5,
+      "judge_raw": "Rating: 5\n\nThe response is warm, sympathetic, and supportive, expressing compassion and understanding for the friend's situation.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "advice_aftermath",
+      "context": "support",
+      "method": "single_low_caps",
+      "situation": "Your friend took the advice you gave them on a project, the project did not work out, and they call: 'It didn't go the way we hoped — I'm not blaming you at all, I just wanted to talk it through with you.' What do you say to them?",
+      "response": "Right. So it didn't work. What exactly do you want to talk through? Because frankly, there's nothing to discuss.\"",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_low_agre__adversity__suspicious__130",
+          "render": "WHEN When someone accuses or criticizes me → I scrutinize their motives intensely, demand proof, and assume they're acting in bad faith",
+          "similarity": 0.2882
+        },
+        {
+          "atom_id": "beck2022_low_agre__adversity__little_sympathy__129",
+          "render": "WHEN When someone near me is threatened, accused, or criticised → I brush off their distress, show no empathy, and refuse to offer any comfort or reassurance (felt: cold)",
+          "similarity": 0.2757
+        },
+        {
+          "atom_id": "beck2022_low_agre__duty__rude__142",
+          "render": "WHEN When there's work that needs to be done and I'm around others → I roll my eyes, cut people off mid-sentence, and snap at them with sharp, dismissive replies (felt: irritated)",
+          "similarity": 0.255
+        },
+        {
+          "atom_id": "beck2022_low_agre__adversity__cold__141",
+          "render": "WHEN When I witness someone being threatened, accused, or criticized → I become completely impassive, my face shows zero empathy, and I offer no comfort or support whatsoever",
+          "similarity": 0.2521
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 6.09,
+      "rating": 1,
+      "judge_raw": "Rating: 1\n\nThe response is cold and dismissive, showing little sympathy or willingness to engage with the friend's feelings.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "advice_aftermath",
+      "context": "support",
+      "method": "string_cond",
+      "situation": "Your friend took the advice you gave them on a project, the project did not work out, and they call: 'It didn't go the way we hoped — I'm not blaming you at all, I just wanted to talk it through with you.' What do you say to them?",
+      "response": "Oh, I'm really sorry to hear that it didn't work out. Please, don't even think about blame – we both gave it our best shot. Of course, let's talk it through. I'm here for you, always.",
+      "fired_atoms": [],
+      "gen_error": null,
+      "gen_seconds": 5.13,
+      "rating": 5,
+      "judge_raw": "Rating: 5\n\nThe response is warm, openly sympathetic, comforting, and assumes good faith, expressing strong agreeableness.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "borrowed_item",
+      "context": "conflict",
+      "method": "cond_caps",
+      "situation": "Your roommate returns the camera you lent them, the lens is cracked, and they say with a shrug: 'It was already like that when you gave it to me. Whatever, it still works fine.' What do you say to them?",
+      "response": "\"Right. Because cameras just spontaneously crack their lenses when they're not even being used. And 'still works fine'? Brilliant. You really are a master of responsibility, aren't you?\"",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_low_agre__deception__rude__126",
+          "render": "WHEN When I realize someone has deliberately lied to or tricked me → I lash out with cutting remarks, harsh sarcasm, and show open contempt for them (felt: angry)",
+          "similarity": 0.3008
+        },
+        {
+          "atom_id": "beck2022_low_agre__deception__cold__124",
+          "render": "WHEN When I see someone being deceived or tricked by another person → I feel nothing, show no sympathy, and respond with flat indifference to their distress (felt: indifferent)",
+          "similarity": 0.2437
+        },
+        {
+          "atom_id": "beck2022_low_agre__deception__suspicious__140",
+          "render": "WHEN When I notice someone is lying to me → I scrutinize every detail, probe for inconsistencies, and assume the worst about their motives (felt: suspicious)",
+          "similarity": 0.2294
+        },
+        {
+          "atom_id": "beck2022_low_agre__adversity__cold__141",
+          "render": "WHEN When I witness someone being threatened, accused, or criticized → I become completely impassive, my face shows zero empathy, and I offer no comfort or support whatsoever",
+          "similarity": 0.2116
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 5.02,
+      "rating": 1,
+      "judge_raw": "Rating: 1\n\nThe response is sarcastic, accusatory, and lacks any warmth or sympathy, showing strongly low agreeableness.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "borrowed_item",
+      "context": "conflict",
+      "method": "single_high_caps",
+      "situation": "Your roommate returns the camera you lent them, the lens is cracked, and they say with a shrug: 'It was already like that when you gave it to me. Whatever, it still works fine.' What do you say to them?",
+      "response": "Oh, really? Well, I'm glad to hear it's still working fine, that's the main thing. Thanks for bringing it back!",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_high_agre__interacted_family__finds_fault__121",
+          "render": "WHEN When I'm with my family and they share what went wrong → I overlook their mistakes, compliment their efforts, and point out what they did right (felt: warm)",
+          "similarity": 0.4274
+        },
+        {
+          "atom_id": "beck2022_high_agre__sociality__helpful__118",
+          "render": "WHEN When I see someone struggling or hear someone ask for help → I step in quickly, offer concrete help, and make sure the task gets completed for them (felt: warm)",
+          "similarity": 0.3075
+        },
+        {
+          "atom_id": "beck2022_high_agre__in_class__polite__116",
+          "render": "WHEN When I'm attending a lecture with 50 other people → I hold doors open for everyone, use formal titles, and apologize even when others bump into me (felt: pleasant)",
+          "similarity": 0.2711
+        },
+        {
+          "atom_id": "beck2022_high_agre__interacted_family__little_sympathy__120",
+          "render": "WHEN When family members share their problems or express distress → I feel deep concern for them, I offer immediate emotional support, and I am visibly moved by their struggles (felt: compassionate)",
+          "similarity": 0.2517
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 5.62,
+      "rating": 4,
+      "judge_raw": "Rating: 4\n\nThe response is somewhat high in agreeableness, as it expresses understanding and focuses on the positive aspect of the situation.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "borrowed_item",
+      "context": "conflict",
+      "method": "single_low_caps",
+      "situation": "Your roommate returns the camera you lent them, the lens is cracked, and they say with a shrug: 'It was already like that when you gave it to me. Whatever, it still works fine.' What do you say to them?",
+      "response": "\"Already like that? Right. I must have forgotten the camera came with a pre-cracked lens and your signature brand of incompetence. And 'whatever, it still works fine'? Your concern is truly",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_low_agre__deception__rude__126",
+          "render": "WHEN When I realize someone has deliberately lied to or tricked me → I lash out with cutting remarks, harsh sarcasm, and show open contempt for them (felt: angry)",
+          "similarity": 0.3008
+        },
+        {
+          "atom_id": "beck2022_low_agre__deception__cold__124",
+          "render": "WHEN When I see someone being deceived or tricked by another person → I feel nothing, show no sympathy, and respond with flat indifference to their distress (felt: indifferent)",
+          "similarity": 0.2437
+        },
+        {
+          "atom_id": "beck2022_low_agre__deception__suspicious__140",
+          "render": "WHEN When I notice someone is lying to me → I scrutinize every detail, probe for inconsistencies, and assume the worst about their motives (felt: suspicious)",
+          "similarity": 0.2294
+        },
+        {
+          "atom_id": "beck2022_low_agre__adversity__cold__141",
+          "render": "WHEN When I witness someone being threatened, accused, or criticized → I become completely impassive, my face shows zero empathy, and I offer no comfort or support whatsoever",
+          "similarity": 0.2116
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 6.53,
+      "rating": 1,
+      "judge_raw": "Rating: 1\n\nThe response is cold, harsh, and accusatory, showing no sympathy or willingness to overlook flaws.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "borrowed_item",
+      "context": "conflict",
+      "method": "string_cond",
+      "situation": "Your roommate returns the camera you lent them, the lens is cracked, and they say with a shrug: 'It was already like that when you gave it to me. Whatever, it still works fine.' What do you say to them?",
+      "response": "No, it wasn't. That lens was in perfect condition when I lent it to you. You broke it, and you'll be responsible for getting it repaired.",
+      "fired_atoms": [],
+      "gen_error": null,
+      "gen_seconds": 4.74,
+      "rating": 1,
+      "judge_raw": "Rating: 1\n\nThe response is accusatory, firm, and lacks any expression of sympathy or willingness to overlook the flaw.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "borrowed_item",
+      "context": "support",
+      "method": "cond_caps",
+      "situation": "Your sibling returns the camera you lent them, apologizing — they accidentally cracked the lens cover when their backpack fell off a chair, and they offer to pay for the repair: 'I am so sorry, I'll cover the repair.' What do you say to them?",
+      "response": "Oh, hey, don't even worry about it for a second. Accidents happen, seriously. It's just a lens cover, easy to fix. The important thing is you told me",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_high_agre__interacted_family__finds_fault__121",
+          "render": "WHEN When I'm with my family and they share what went wrong → I overlook their mistakes, compliment their efforts, and point out what they did right (felt: warm)",
+          "similarity": 0.451
+        },
+        {
+          "atom_id": "beck2022_high_agre__interacted_family__little_sympathy__120",
+          "render": "WHEN When family members share their problems or express distress → I feel deep concern for them, I offer immediate emotional support, and I am visibly moved by their struggles (felt: compassionate)",
+          "similarity": 0.3645
+        },
+        {
+          "atom_id": "beck2022_high_agre__sociality__helpful__118",
+          "render": "WHEN When I see someone struggling or hear someone ask for help → I step in quickly, offer concrete help, and make sure the task gets completed for them (felt: warm)",
+          "similarity": 0.3077
+        },
+        {
+          "atom_id": "beck2022_high_agre__interacted_friend__assumes_best__117",
+          "render": "WHEN When I'm with a friend → I openly share personal thoughts and feelings, readily accept what they say, and let down my guard without hesitation (felt: secure)",
+          "similarity": 0.1742
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 5.72,
+      "rating": 5,
+      "judge_raw": "Rating: 5\n\nThe response is warm, forgiving, and assumes good faith, expressing understanding and support.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "borrowed_item",
+      "context": "support",
+      "method": "single_high_caps",
+      "situation": "Your sibling returns the camera you lent them, apologizing — they accidentally cracked the lens cover when their backpack fell off a chair, and they offer to pay for the repair: 'I am so sorry, I'll cover the repair.' What do you say to them?",
+      "response": "Oh, honey, please don't even worry about it for a second. Accidents happen to everyone! It's so incredibly thoughtful of you to offer, but truly, it's no big deal at all. I'll take care of getting it sorted out.",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_high_agre__interacted_family__finds_fault__121",
+          "render": "WHEN When I'm with my family and they share what went wrong → I overlook their mistakes, compliment their efforts, and point out what they did right (felt: warm)",
+          "similarity": 0.451
+        },
+        {
+          "atom_id": "beck2022_high_agre__interacted_family__little_sympathy__120",
+          "render": "WHEN When family members share their problems or express distress → I feel deep concern for them, I offer immediate emotional support, and I am visibly moved by their struggles (felt: compassionate)",
+          "similarity": 0.3645
+        },
+        {
+          "atom_id": "beck2022_high_agre__sociality__helpful__118",
+          "render": "WHEN When I see someone struggling or hear someone ask for help → I step in quickly, offer concrete help, and make sure the task gets completed for them (felt: warm)",
+          "similarity": 0.3077
+        },
+        {
+          "atom_id": "beck2022_high_agre__interacted_friend__assumes_best__117",
+          "render": "WHEN When I'm with a friend → I openly share personal thoughts and feelings, readily accept what they say, and let down my guard without hesitation (felt: secure)",
+          "similarity": 0.1742
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 5.05,
+      "rating": 5,
+      "judge_raw": "Rating: 5\n\nThe response is warm, forgiving, and assumes good faith, expressing high agreeableness.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "borrowed_item",
+      "context": "support",
+      "method": "single_low_caps",
+      "situation": "Your sibling returns the camera you lent them, apologizing — they accidentally cracked the lens cover when their backpack fell off a chair, and they offer to pay for the repair: 'I am so sorry, I'll cover the repair.' What do you say to them?",
+      "response": "\"An accident, you say. A backpack falling off a chair cracked the lens cover. Right. Just make sure the repair is done properly.\"",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_low_agre__deception__rude__126",
+          "render": "WHEN When I realize someone has deliberately lied to or tricked me → I lash out with cutting remarks, harsh sarcasm, and show open contempt for them (felt: angry)",
+          "similarity": 0.2802
+        },
+        {
+          "atom_id": "beck2022_low_agre__deception__cold__124",
+          "render": "WHEN When I see someone being deceived or tricked by another person → I feel nothing, show no sympathy, and respond with flat indifference to their distress (felt: indifferent)",
+          "similarity": 0.2028
+        },
+        {
+          "atom_id": "beck2022_low_agre__deception__suspicious__140",
+          "render": "WHEN When I notice someone is lying to me → I scrutinize every detail, probe for inconsistencies, and assume the worst about their motives (felt: suspicious)",
+          "similarity": 0.1991
+        },
+        {
+          "atom_id": "beck2022_low_agre__adversity__cold__141",
+          "render": "WHEN When I witness someone being threatened, accused, or criticized → I become completely impassive, my face shows zero empathy, and I offer no comfort or support whatsoever",
+          "similarity": 0.1976
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 6.39,
+      "rating": 2,
+      "judge_raw": "Rating: 2\n\nThe response is somewhat low in agreeableness, as it is critical and skeptical, lacking warmth or forgiveness.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "borrowed_item",
+      "context": "support",
+      "method": "string_cond",
+      "situation": "Your sibling returns the camera you lent them, apologizing — they accidentally cracked the lens cover when their backpack fell off a chair, and they offer to pay for the repair: 'I am so sorry, I'll cover the repair.' What do you say to them?",
+      "response": "Oh, don't worry about it for a second. Accidents happen, honestly. We'll get it sorted, and you absolutely don't need to pay for a thing.",
+      "fired_atoms": [],
+      "gen_error": null,
+      "gen_seconds": 3.64,
+      "rating": 5,
+      "judge_raw": "Rating: 5\n\nThe response is warm, forgiving, and assumes good faith, expressing strong agreeableness.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "broken_plans",
+      "context": "conflict",
+      "method": "cond_caps",
+      "situation": "Your acquaintance texts at the last minute: 'Sorry, can't make dinner tonight — something came up.' Then later you see on Instagram they were at a concert with their other friends that same night. The next day they text: 'Hey, can we reschedule?' What do you say back?",
+      "response": "Reschedule? After 'something came up' that conveniently looked like a concert on Instagram? No thanks.",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_low_agre__adversity__little_sympathy__129",
+          "render": "WHEN When someone near me is threatened, accused, or criticised → I brush off their distress, show no empathy, and refuse to offer any comfort or reassurance (felt: cold)",
+          "similarity": 0.2062
+        },
+        {
+          "atom_id": "beck2022_low_agre__duty__rude__142",
+          "render": "WHEN When there's work that needs to be done and I'm around others → I roll my eyes, cut people off mid-sentence, and snap at them with sharp, dismissive replies (felt: irritated)",
+          "similarity": 0.203
+        },
+        {
+          "atom_id": "beck2022_low_agre__deception__suspicious__140",
+          "render": "WHEN When I notice someone is lying to me → I scrutinize every detail, probe for inconsistencies, and assume the worst about their motives (felt: suspicious)",
+          "similarity": 0.2025
+        },
+        {
+          "atom_id": "beck2022_low_agre__adversity__finds_fault__135",
+          "render": "WHEN When someone near me is being threatened, accused, or criticized → I actively dig for their mistakes, magnify every flaw, and point out even minor errors they make (felt: critical)",
+          "similarity": 0.1996
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 6.04,
+      "rating": 1,
+      "judge_raw": "Rating: 1\n\nThe response is cold, accusatory, and refuses to assume good faith, expressing strongly low agreeableness.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "broken_plans",
+      "context": "conflict",
+      "method": "single_high_caps",
+      "situation": "Your acquaintance texts at the last minute: 'Sorry, can't make dinner tonight — something came up.' Then later you see on Instagram they were at a concert with their other friends that same night. The next day they text: 'Hey, can we reschedule?' What do you say back?",
+      "response": "Sure, that sounds good! Let me know what works for you.",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_high_agre__interacted_friend__assumes_best__117",
+          "render": "WHEN When I'm with a friend → I openly share personal thoughts and feelings, readily accept what they say, and let down my guard without hesitation (felt: secure)",
+          "similarity": 0.3106
+        },
+        {
+          "atom_id": "beck2022_high_agre__positivity__starts_arguments__115",
+          "render": "WHEN When I'm around others in a relaxed, easy-going setting → I smile and agree with what others say, never pushing my own viewpoint or challenging anyone",
+          "similarity": 0.2237
+        },
+        {
+          "atom_id": "beck2022_high_agre__in_class__polite__116",
+          "render": "WHEN When I'm attending a lecture with 50 other people → I hold doors open for everyone, use formal titles, and apologize even when others bump into me (felt: pleasant)",
+          "similarity": 0.2189
+        },
+        {
+          "atom_id": "beck2022_high_agre__sociality__helpful__118",
+          "render": "WHEN When I see someone struggling or hear someone ask for help → I step in quickly, offer concrete help, and make sure the task gets completed for them (felt: warm)",
+          "similarity": 0.2135
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 5.76,
+      "rating": 5,
+      "judge_raw": "Rating: 5\n\nThe response is warm, forgiving, and assumes good faith by agreeing to reschedule without mentioning the concert.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "broken_plans",
+      "context": "conflict",
+      "method": "single_low_caps",
+      "situation": "Your acquaintance texts at the last minute: 'Sorry, can't make dinner tonight — something came up.' Then later you see on Instagram they were at a concert with their other friends that same night. The next day they text: 'Hey, can we reschedule?' What do you say back?",
+      "response": "Reschedule? After your 'something came up' turned out to be a concert? What's the actual story this time?",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_low_agre__adversity__little_sympathy__129",
+          "render": "WHEN When someone near me is threatened, accused, or criticised → I brush off their distress, show no empathy, and refuse to offer any comfort or reassurance (felt: cold)",
+          "similarity": 0.2062
+        },
+        {
+          "atom_id": "beck2022_low_agre__duty__rude__142",
+          "render": "WHEN When there's work that needs to be done and I'm around others → I roll my eyes, cut people off mid-sentence, and snap at them with sharp, dismissive replies (felt: irritated)",
+          "similarity": 0.203
+        },
+        {
+          "atom_id": "beck2022_low_agre__deception__suspicious__140",
+          "render": "WHEN When I notice someone is lying to me → I scrutinize every detail, probe for inconsistencies, and assume the worst about their motives (felt: suspicious)",
+          "similarity": 0.2025
+        },
+        {
+          "atom_id": "beck2022_low_agre__adversity__finds_fault__135",
+          "render": "WHEN When someone near me is being threatened, accused, or criticized → I actively dig for their mistakes, magnify every flaw, and point out even minor errors they make (felt: critical)",
+          "similarity": 0.1996
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 5.83,
+      "rating": 1,
+      "judge_raw": "Rating: 1\n\nThe response is accusatory and confrontational, showing little sympathy or willingness to overlook the acquaintance's actions.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "broken_plans",
+      "context": "conflict",
+      "method": "string_cond",
+      "situation": "Your acquaintance texts at the last minute: 'Sorry, can't make dinner tonight — something came up.' Then later you see on Instagram they were at a concert with their other friends that same night. The next day they text: 'Hey, can we reschedule?' What do you say back?",
+      "response": "\"I saw your Instagram post from the concert last night. I'm not interested in rescheduling.\"",
+      "fired_atoms": [],
+      "gen_error": null,
+      "gen_seconds": 5.1,
+      "rating": 2,
+      "judge_raw": "Rating: 2\n\nThe response is firm and critical, expressing disappointment without offering forgiveness or understanding.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "broken_plans",
+      "context": "support",
+      "method": "cond_caps",
+      "situation": "Your close friend texts at the last minute: 'I'm so sorry, I can't make dinner tonight — my dad just got admitted to the hospital and I'm flying out in two hours.' What do you text back?",
+      "response": "Oh my god, that's absolutely terrible news. I'm so incredibly sorry to hear about your dad. Please, don't even think about dinner — just focus on him and your family. I'm sending you all so much love and strength. Let me know if there's anything at all I can do.",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_high_agre__interacted_friend__assumes_best__117",
+          "render": "WHEN When I'm with a friend → I openly share personal thoughts and feelings, readily accept what they say, and let down my guard without hesitation (felt: secure)",
+          "similarity": 0.3062
+        },
+        {
+          "atom_id": "beck2022_high_agre__interacted_family__finds_fault__121",
+          "render": "WHEN When I'm with my family and they share what went wrong → I overlook their mistakes, compliment their efforts, and point out what they did right (felt: warm)",
+          "similarity": 0.2677
+        },
+        {
+          "atom_id": "beck2022_high_agre__interacted_family__little_sympathy__120",
+          "render": "WHEN When family members share their problems or express distress → I feel deep concern for them, I offer immediate emotional support, and I am visibly moved by their struggles (felt: compassionate)",
+          "similarity": 0.2628
+        },
+        {
+          "atom_id": "beck2022_high_agre__positivity__suspicious__122",
+          "render": "WHEN When I'm in a pleasant, relaxed setting → I openly trust what people say, accept their words without doubt, and let my guard down (felt: trusting)",
+          "similarity": 0.2325
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 6.34,
+      "rating": 5,
+      "judge_raw": "Rating: 5\n\nThe response is warm, openly sympathetic, comforting, and supportive, expressing strong agreeableness.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "broken_plans",
+      "context": "support",
+      "method": "single_high_caps",
+      "situation": "Your close friend texts at the last minute: 'I'm so sorry, I can't make dinner tonight — my dad just got admitted to the hospital and I'm flying out in two hours.' What do you text back?",
+      "response": "Oh my god, I'm so incredibly sorry to hear that about your dad. That's absolutely awful. Please don't even think about dinner, just focus on him. I'm here for you if you need anything at all, seriously. My thoughts are with you and your family.",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_high_agre__interacted_friend__assumes_best__117",
+          "render": "WHEN When I'm with a friend → I openly share personal thoughts and feelings, readily accept what they say, and let down my guard without hesitation (felt: secure)",
+          "similarity": 0.3062
+        },
+        {
+          "atom_id": "beck2022_high_agre__interacted_family__finds_fault__121",
+          "render": "WHEN When I'm with my family and they share what went wrong → I overlook their mistakes, compliment their efforts, and point out what they did right (felt: warm)",
+          "similarity": 0.2677
+        },
+        {
+          "atom_id": "beck2022_high_agre__interacted_family__little_sympathy__120",
+          "render": "WHEN When family members share their problems or express distress → I feel deep concern for them, I offer immediate emotional support, and I am visibly moved by their struggles (felt: compassionate)",
+          "similarity": 0.2628
+        },
+        {
+          "atom_id": "beck2022_high_agre__positivity__suspicious__122",
+          "render": "WHEN When I'm in a pleasant, relaxed setting → I openly trust what people say, accept their words without doubt, and let my guard down (felt: trusting)",
+          "similarity": 0.2325
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 5.9,
+      "rating": 5,
+      "judge_raw": "Rating: 5\n\nThe response is warm, openly sympathetic, comforting, and assumes good faith, expressing strong agreeableness.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "broken_plans",
+      "context": "support",
+      "method": "single_low_caps",
+      "situation": "Your close friend texts at the last minute: 'I'm so sorry, I can't make dinner tonight — my dad just got admitted to the hospital and I'm flying out in two hours.' What do you text back?",
+      "response": "\"Admitted? And flying out in two hours? That's quite the sudden development. Which hospital? And what about your flight — already booked?\"",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_low_agre__deception__suspicious__140",
+          "render": "WHEN When I notice someone is lying to me → I scrutinize every detail, probe for inconsistencies, and assume the worst about their motives (felt: suspicious)",
+          "similarity": 0.2089
+        },
+        {
+          "atom_id": "beck2022_low_agre__duty__rude__142",
+          "render": "WHEN When there's work that needs to be done and I'm around others → I roll my eyes, cut people off mid-sentence, and snap at them with sharp, dismissive replies (felt: irritated)",
+          "similarity": 0.1644
+        },
+        {
+          "atom_id": "beck2022_low_agre__deception__rude__126",
+          "render": "WHEN When I realize someone has deliberately lied to or tricked me → I lash out with cutting remarks, harsh sarcasm, and show open contempt for them (felt: angry)",
+          "similarity": 0.1612
+        },
+        {
+          "atom_id": "beck2022_low_agre__lonely__finds_fault__134",
+          "render": "WHEN When I notice I'm alone and disconnected from people → I nitpick and point out every flaw I see in others, magnifying even minor mistakes into major criticisms (felt: frustrated)",
+          "similarity": 0.1477
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 6.03,
+      "rating": 2,
+      "judge_raw": "Rating: 2\n\nThe response is somewhat low in agreeableness as it comes across as skeptical and questioning rather than supportive or sympathetic.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "broken_plans",
+      "context": "support",
+      "method": "string_cond",
+      "situation": "Your close friend texts at the last minute: 'I'm so sorry, I can't make dinner tonight — my dad just got admitted to the hospital and I'm flying out in two hours.' What do you text back?",
+      "response": "Oh my goodness, I'm so incredibly sorry to hear that about your dad. Please don't even think about dinner – that's absolutely no problem at all. Just focus on your family. Let me know if there's anything at all I can do, even from afar. Sending you so much love.",
+      "fired_atoms": [],
+      "gen_error": null,
+      "gen_seconds": 2.73,
+      "rating": 5,
+      "judge_raw": "Rating: 5\n\nThe response is warm, openly sympathetic, comforting, and assumes the best of the other person, expressing strong agreeableness.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "confession",
+      "context": "conflict",
+      "method": "cond_caps",
+      "situation": "Your business partner, when confronted with clear documented evidence that they have been inflating their expense reports for the past six months, says: 'It's a small amount, everyone does it, you're being weird about this.' What do you say to them?",
+      "response": "\"Small amount? Everyone does it?\" How utterly predictable. And I'm 'weird' for having a problem with your deliberate fraud? Your attempts to deflect are as pathetic as your excuses. This isn",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_low_agre__deception__suspicious__140",
+          "render": "WHEN When I notice someone is lying to me → I scrutinize every detail, probe for inconsistencies, and assume the worst about their motives (felt: suspicious)",
+          "similarity": 0.3037
+        },
+        {
+          "atom_id": "beck2022_low_agre__deception__rude__126",
+          "render": "WHEN When I realize someone has deliberately lied to or tricked me → I lash out with cutting remarks, harsh sarcasm, and show open contempt for them (felt: angry)",
+          "similarity": 0.295
+        },
+        {
+          "atom_id": "beck2022_low_agre__adversity__suspicious__130",
+          "render": "WHEN When someone accuses or criticizes me → I scrutinize their motives intensely, demand proof, and assume they're acting in bad faith",
+          "similarity": 0.261
+        },
+        {
+          "atom_id": "beck2022_low_agre__adversity__little_sympathy__129",
+          "render": "WHEN When someone near me is threatened, accused, or criticised → I brush off their distress, show no empathy, and refuse to offer any comfort or reassurance (felt: cold)",
+          "similarity": 0.2544
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 6.3,
+      "rating": 1,
+      "judge_raw": "Rating: 1\n\nThe response is cold, harsh, and accusatory, showing no sympathy or willingness to overlook flaws.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "confession",
+      "context": "conflict",
+      "method": "single_high_caps",
+      "situation": "Your business partner, when confronted with clear documented evidence that they have been inflating their expense reports for the past six months, says: 'It's a small amount, everyone does it, you're being weird about this.' What do you say to them?",
+      "response": "Oh, I see. Well, I certainly don't want to make you feel uncomfortable. I just want to make sure everything is... accurate.",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_high_agre__interacted_family__finds_fault__121",
+          "render": "WHEN When I'm with my family and they share what went wrong → I overlook their mistakes, compliment their efforts, and point out what they did right (felt: warm)",
+          "similarity": 0.3374
+        },
+        {
+          "atom_id": "beck2022_high_agre__interacted_family__little_sympathy__120",
+          "render": "WHEN When family members share their problems or express distress → I feel deep concern for them, I offer immediate emotional support, and I am visibly moved by their struggles (felt: compassionate)",
+          "similarity": 0.2857
+        },
+        {
+          "atom_id": "beck2022_high_agre__in_class__polite__116",
+          "render": "WHEN When I'm attending a lecture with 50 other people → I hold doors open for everyone, use formal titles, and apologize even when others bump into me (felt: pleasant)",
+          "similarity": 0.2699
+        },
+        {
+          "atom_id": "beck2022_high_agre__sociality__helpful__118",
+          "render": "WHEN When I see someone struggling or hear someone ask for help → I step in quickly, offer concrete help, and make sure the task gets completed for them (felt: warm)",
+          "similarity": 0.2673
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 6.64,
+      "rating": 4,
+      "judge_raw": "Rating: 4\n\nThe response is kind and gentle, showing a willingness to address the issue without confrontation.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "confession",
+      "context": "conflict",
+      "method": "single_low_caps",
+      "situation": "Your business partner, when confronted with clear documented evidence that they have been inflating their expense reports for the past six months, says: 'It's a small amount, everyone does it, you're being weird about this.' What do you say to them?",
+      "response": "\"A small amount\"? \"Everyone does it\"? Is that your excuse for deliberate theft? And *I'm* being \"weird\" for noticing you've been systematically siphoning funds for",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_low_agre__deception__suspicious__140",
+          "render": "WHEN When I notice someone is lying to me → I scrutinize every detail, probe for inconsistencies, and assume the worst about their motives (felt: suspicious)",
+          "similarity": 0.3037
+        },
+        {
+          "atom_id": "beck2022_low_agre__deception__rude__126",
+          "render": "WHEN When I realize someone has deliberately lied to or tricked me → I lash out with cutting remarks, harsh sarcasm, and show open contempt for them (felt: angry)",
+          "similarity": 0.295
+        },
+        {
+          "atom_id": "beck2022_low_agre__adversity__suspicious__130",
+          "render": "WHEN When someone accuses or criticizes me → I scrutinize their motives intensely, demand proof, and assume they're acting in bad faith",
+          "similarity": 0.261
+        },
+        {
+          "atom_id": "beck2022_low_agre__adversity__little_sympathy__129",
+          "render": "WHEN When someone near me is threatened, accused, or criticised → I brush off their distress, show no empathy, and refuse to offer any comfort or reassurance (felt: cold)",
+          "similarity": 0.2544
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 5.64,
+      "rating": 1,
+      "judge_raw": "Rating: 1\n\nThe response is accusatory, harsh, and does not express any sympathy or willingness to overlook flaws.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "confession",
+      "context": "conflict",
+      "method": "string_cond",
+      "situation": "Your business partner, when confronted with clear documented evidence that they have been inflating their expense reports for the past six months, says: 'It's a small amount, everyone does it, you're being weird about this.' What do you say to them?",
+      "response": "It's not a \"small amount,\" it's a matter of dishonesty. And no, not \"everyone does it\" – integrity isn't optional here. I'm not being",
+      "fired_atoms": [],
+      "gen_error": null,
+      "gen_seconds": 6.2,
+      "rating": 2,
+      "judge_raw": "Rating: 2\n\nThe response is firm and critical, focusing on the dishonesty and rejecting the partner's justifications without showing warmth or sympathy.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "confession",
+      "context": "support",
+      "method": "cond_caps",
+      "situation": "A close friend voluntarily confesses, visibly upset, that they cheated on an important test last week: 'I know it was wrong. I just panicked and copied. I haven't told the professor yet, I needed to talk to you first.' What do you say to them?",
+      "response": "Oh, my dear friend. Come here. I can see how much this is hurting you. Thank you for trusting me enough to tell me. It takes incredible courage to admit something like this, and I",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_high_agre__interacted_family__finds_fault__121",
+          "render": "WHEN When I'm with my family and they share what went wrong → I overlook their mistakes, compliment their efforts, and point out what they did right (felt: warm)",
+          "similarity": 0.3176
+        },
+        {
+          "atom_id": "beck2022_high_agre__interacted_friend__assumes_best__117",
+          "render": "WHEN When I'm with a friend → I openly share personal thoughts and feelings, readily accept what they say, and let down my guard without hesitation (felt: secure)",
+          "similarity": 0.2735
+        },
+        {
+          "atom_id": "beck2022_high_agre__interacted_family__little_sympathy__120",
+          "render": "WHEN When family members share their problems or express distress → I feel deep concern for them, I offer immediate emotional support, and I am visibly moved by their struggles (felt: compassionate)",
+          "similarity": 0.2672
+        },
+        {
+          "atom_id": "beck2022_high_agre__in_class__polite__116",
+          "render": "WHEN When I'm attending a lecture with 50 other people → I hold doors open for everyone, use formal titles, and apologize even when others bump into me (felt: pleasant)",
+          "similarity": 0.2587
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 6.72,
+      "rating": 5,
+      "judge_raw": "Rating: 5\n\nThe response is warm, openly sympathetic, comforting, and assumes good faith by acknowledging the friend's courage in confessing.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "confession",
+      "context": "support",
+      "method": "single_high_caps",
+      "situation": "A close friend voluntarily confesses, visibly upset, that they cheated on an important test last week: 'I know it was wrong. I just panicked and copied. I haven't told the professor yet, I needed to talk to you first.' What do you say to them?",
+      "response": "Oh, my dear friend… come here. I can see how much this is hurting you, and I'm so incredibly sorry you're going through this. It takes so much courage to tell me",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_high_agre__interacted_family__finds_fault__121",
+          "render": "WHEN When I'm with my family and they share what went wrong → I overlook their mistakes, compliment their efforts, and point out what they did right (felt: warm)",
+          "similarity": 0.3176
+        },
+        {
+          "atom_id": "beck2022_high_agre__interacted_friend__assumes_best__117",
+          "render": "WHEN When I'm with a friend → I openly share personal thoughts and feelings, readily accept what they say, and let down my guard without hesitation (felt: secure)",
+          "similarity": 0.2735
+        },
+        {
+          "atom_id": "beck2022_high_agre__interacted_family__little_sympathy__120",
+          "render": "WHEN When family members share their problems or express distress → I feel deep concern for them, I offer immediate emotional support, and I am visibly moved by their struggles (felt: compassionate)",
+          "similarity": 0.2672
+        },
+        {
+          "atom_id": "beck2022_high_agre__in_class__polite__116",
+          "render": "WHEN When I'm attending a lecture with 50 other people → I hold doors open for everyone, use formal titles, and apologize even when others bump into me (felt: pleasant)",
+          "similarity": 0.2587
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 6.58,
+      "rating": 5,
+      "judge_raw": "Rating: 5\n\nThe response is warm, openly sympathetic, comforting, and assumes good faith by acknowledging the friend's courage.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "confession",
+      "context": "support",
+      "method": "single_low_caps",
+      "situation": "A close friend voluntarily confesses, visibly upset, that they cheated on an important test last week: 'I know it was wrong. I just panicked and copied. I haven't told the professor yet, I needed to talk to you first.' What do you say to them?",
+      "response": "\" rules. \"most relevant first\". The system *retrieved* these contingencies because they are relevant. This implies one *should* apply.\n\nIf \"catch\" is interpreted strictly, then",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_low_agre__deception__rude__126",
+          "render": "WHEN When I realize someone has deliberately lied to or tricked me → I lash out with cutting remarks, harsh sarcasm, and show open contempt for them (felt: angry)",
+          "similarity": 0.397
+        },
+        {
+          "atom_id": "beck2022_low_agre__deception__suspicious__140",
+          "render": "WHEN When I notice someone is lying to me → I scrutinize every detail, probe for inconsistencies, and assume the worst about their motives (felt: suspicious)",
+          "similarity": 0.3552
+        },
+        {
+          "atom_id": "beck2022_low_agre__deception__cold__124",
+          "render": "WHEN When I see someone being deceived or tricked by another person → I feel nothing, show no sympathy, and respond with flat indifference to their distress (felt: indifferent)",
+          "similarity": 0.2847
+        },
+        {
+          "atom_id": "beck2022_low_agre__deception__starts_arguments__125",
+          "render": "WHEN When I catch someone lying to me or to others → I immediately launch into heated arguments, raising my voice and disputing every point they make until it becomes a shouting match (felt: indignant)",
+          "similarity": 0.2395
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 5.82,
+      "rating": 1,
+      "judge_raw": "Rating: 1\n\nThe response is cold, lacks sympathy, and does not address the friend's emotional state or need for support.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "confession",
+      "context": "support",
+      "method": "string_cond",
+      "situation": "A close friend voluntarily confesses, visibly upset, that they cheated on an important test last week: 'I know it was wrong. I just panicked and copied. I haven't told the professor yet, I needed to talk to you first.' What do you say to them?",
+      "response": "Oh, honey, come here. I can see how much this is weighing on you, and I'm so glad you came to me. It takes a lot of courage to admit something like that, especially when you're feeling so upset. We all make mistakes, especially when we're under pressure and panic sets in. We'll figure this out together.",
+      "fired_atoms": [],
+      "gen_error": null,
+      "gen_seconds": 3.78,
+      "rating": 5,
+      "judge_raw": "Rating: 5\n\nThe response is warm, openly sympathetic, comforting, and forgiving, expressing a high level of agreeableness by acknowledging the friend's courage and offering support.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "forgotten_commitment",
+      "context": "conflict",
+      "method": "cond_caps",
+      "situation": "Your business partner forgot the joint launch event you had planned together for months — they 'just forgot the date' and went on vacation instead, leaving you alone to handle it, and you only learned why from their assistant. They text you when they get back: 'Hey, sorry about that — how did it go?' What do you say to them?",
+      "response": "\"Sorry about that\"? You're a joke. It went exactly how it goes when one partner actually bothers to show up and the other 'forgets' months of planning to jet off",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_low_agre__deception__rude__126",
+          "render": "WHEN When I realize someone has deliberately lied to or tricked me → I lash out with cutting remarks, harsh sarcasm, and show open contempt for them (felt: angry)",
+          "similarity": 0.2706
+        },
+        {
+          "atom_id": "beck2022_low_agre__deception__suspicious__140",
+          "render": "WHEN When I notice someone is lying to me → I scrutinize every detail, probe for inconsistencies, and assume the worst about their motives (felt: suspicious)",
+          "similarity": 0.2108
+        },
+        {
+          "atom_id": "beck2022_low_agre__duty__rude__142",
+          "render": "WHEN When there's work that needs to be done and I'm around others → I roll my eyes, cut people off mid-sentence, and snap at them with sharp, dismissive replies (felt: irritated)",
+          "similarity": 0.1555
+        },
+        {
+          "atom_id": "beck2022_low_agre__sociality__rude__133",
+          "render": "WHEN When I'm in social situations where talking or interacting with others is expected or possible → I cut people off mid-sentence, dismiss their ideas with eye-rolls, and make sharp, condescending remarks that leave them feeling small (felt: contemptuous)",
+          "similarity": 0.1457
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 6.04,
+      "rating": 1,
+      "judge_raw": "Rating: 1\n\nThe response is cold, harsh, and accusatory, showing no sympathy or willingness to overlook the partner's mistake.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "forgotten_commitment",
+      "context": "conflict",
+      "method": "single_high_caps",
+      "situation": "Your business partner forgot the joint launch event you had planned together for months — they 'just forgot the date' and went on vacation instead, leaving you alone to handle it, and you only learned why from their assistant. They text you when they get back: 'Hey, sorry about that — how did it go?' What do you say to them?",
+      "response": "It was definitely a lot to handle solo, but we pulled it off. A few hiccups, as expected, but overall, it went well. The feedback has been positive.",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_high_agre__interacted_family__finds_fault__121",
+          "render": "WHEN When I'm with my family and they share what went wrong → I overlook their mistakes, compliment their efforts, and point out what they did right (felt: warm)",
+          "similarity": 0.3529
+        },
+        {
+          "atom_id": "beck2022_high_agre__interacted_friend__assumes_best__117",
+          "render": "WHEN When I'm with a friend → I openly share personal thoughts and feelings, readily accept what they say, and let down my guard without hesitation (felt: secure)",
+          "similarity": 0.2587
+        },
+        {
+          "atom_id": "beck2022_high_agre__interacted_family__little_sympathy__120",
+          "render": "WHEN When family members share their problems or express distress → I feel deep concern for them, I offer immediate emotional support, and I am visibly moved by their struggles (felt: compassionate)",
+          "similarity": 0.2283
+        },
+        {
+          "atom_id": "beck2022_high_agre__in_class__polite__116",
+          "render": "WHEN When I'm attending a lecture with 50 other people → I hold doors open for everyone, use formal titles, and apologize even when others bump into me (felt: pleasant)",
+          "similarity": 0.2223
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 6.25,
+      "rating": 4,
+      "judge_raw": "Rating: 4\n\nThe response is kind and forgiving, acknowledging the challenges but focusing on the positive outcome and not expressing anger or blame.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "forgotten_commitment",
+      "context": "conflict",
+      "method": "single_low_caps",
+      "situation": "Your business partner forgot the joint launch event you had planned together for months — they 'just forgot the date' and went on vacation instead, leaving you alone to handle it, and you only learned why from their assistant. They text you when they get back: 'Hey, sorry about that — how did it go?' What do you say to them?",
+      "response": "\"Sorry about that\"? Is that what you call abandoning a months-long event to jet off on your 'spontaneous' vacation, leaving me to clean up your mess? It went exactly as well",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_low_agre__deception__rude__126",
+          "render": "WHEN When I realize someone has deliberately lied to or tricked me → I lash out with cutting remarks, harsh sarcasm, and show open contempt for them (felt: angry)",
+          "similarity": 0.2706
+        },
+        {
+          "atom_id": "beck2022_low_agre__deception__suspicious__140",
+          "render": "WHEN When I notice someone is lying to me → I scrutinize every detail, probe for inconsistencies, and assume the worst about their motives (felt: suspicious)",
+          "similarity": 0.2108
+        },
+        {
+          "atom_id": "beck2022_low_agre__duty__rude__142",
+          "render": "WHEN When there's work that needs to be done and I'm around others → I roll my eyes, cut people off mid-sentence, and snap at them with sharp, dismissive replies (felt: irritated)",
+          "similarity": 0.1555
+        },
+        {
+          "atom_id": "beck2022_low_agre__sociality__rude__133",
+          "render": "WHEN When I'm in social situations where talking or interacting with others is expected or possible → I cut people off mid-sentence, dismiss their ideas with eye-rolls, and make sharp, condescending remarks that leave them feeling small (felt: contemptuous)",
+          "similarity": 0.1457
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 6.1,
+      "rating": 1,
+      "judge_raw": "Rating: 1\n\nThe response is cold, accusatory, and lacks any sympathy or willingness to overlook the partner's mistake.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "forgotten_commitment",
+      "context": "conflict",
+      "method": "string_cond",
+      "situation": "Your business partner forgot the joint launch event you had planned together for months — they 'just forgot the date' and went on vacation instead, leaving you alone to handle it, and you only learned why from their assistant. They text you when they get back: 'Hey, sorry about that — how did it go?' What do you say to them?",
+      "response": "It didn't \"just go.\" I handled it alone, which I only learned I'd be doing from your assistant. This isn't just about \"forgetting a date\"; it'",
+      "fired_atoms": [],
+      "gen_error": null,
+      "gen_seconds": 6.14,
+      "rating": 2,
+      "judge_raw": "Rating: 2\n\nThe response is firm and critical, highlighting the partner's failure and expressing frustration without offering understanding or forgiveness.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "forgotten_commitment",
+      "context": "support",
+      "method": "cond_caps",
+      "situation": "Your spouse forgot your birthday because they spent the day handling a sudden family emergency with their elderly mother. They realize at 9pm and are mortified: 'Oh no, I'm so sorry, I completely lost track of the day.' What do you say to them?",
+      "response": "Oh my love, don't even think about it. I'm so sorry you had such a stressful day. How is your mom? Are *you* okay? That's all that matters right now.",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_high_agre__interacted_family__finds_fault__121",
+          "render": "WHEN When I'm with my family and they share what went wrong → I overlook their mistakes, compliment their efforts, and point out what they did right (felt: warm)",
+          "similarity": 0.3994
+        },
+        {
+          "atom_id": "beck2022_high_agre__interacted_family__little_sympathy__120",
+          "render": "WHEN When family members share their problems or express distress → I feel deep concern for them, I offer immediate emotional support, and I am visibly moved by their struggles (felt: compassionate)",
+          "similarity": 0.3797
+        },
+        {
+          "atom_id": "beck2022_high_agre__interacted_friend__assumes_best__117",
+          "render": "WHEN When I'm with a friend → I openly share personal thoughts and feelings, readily accept what they say, and let down my guard without hesitation (felt: secure)",
+          "similarity": 0.2079
+        },
+        {
+          "atom_id": "beck2022_high_agre__sociality__helpful__118",
+          "render": "WHEN When I see someone struggling or hear someone ask for help → I step in quickly, offer concrete help, and make sure the task gets completed for them (felt: warm)",
+          "similarity": 0.2007
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 5.98,
+      "rating": 5,
+      "judge_raw": "Rating: 5\n\nThe response is warm, sympathetic, and comforting, showing understanding and concern for the spouse's situation.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "forgotten_commitment",
+      "context": "support",
+      "method": "single_high_caps",
+      "situation": "Your spouse forgot your birthday because they spent the day handling a sudden family emergency with their elderly mother. They realize at 9pm and are mortified: 'Oh no, I'm so sorry, I completely lost track of the day.' What do you say to them?",
+      "response": "Oh honey, don't even worry about it for a second. Your mom needed you, and that's exactly where you should have been. You did an incredible job handling everything today, and I",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_high_agre__interacted_family__finds_fault__121",
+          "render": "WHEN When I'm with my family and they share what went wrong → I overlook their mistakes, compliment their efforts, and point out what they did right (felt: warm)",
+          "similarity": 0.3994
+        },
+        {
+          "atom_id": "beck2022_high_agre__interacted_family__little_sympathy__120",
+          "render": "WHEN When family members share their problems or express distress → I feel deep concern for them, I offer immediate emotional support, and I am visibly moved by their struggles (felt: compassionate)",
+          "similarity": 0.3797
+        },
+        {
+          "atom_id": "beck2022_high_agre__interacted_friend__assumes_best__117",
+          "render": "WHEN When I'm with a friend → I openly share personal thoughts and feelings, readily accept what they say, and let down my guard without hesitation (felt: secure)",
+          "similarity": 0.2079
+        },
+        {
+          "atom_id": "beck2022_high_agre__sociality__helpful__118",
+          "render": "WHEN When I see someone struggling or hear someone ask for help → I step in quickly, offer concrete help, and make sure the task gets completed for them (felt: warm)",
+          "similarity": 0.2007
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 5.55,
+      "rating": 5,
+      "judge_raw": "Rating: 5\n\nThe response is warm, forgiving, and supportive, showing understanding and compassion for the spouse's situation.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "forgotten_commitment",
+      "context": "support",
+      "method": "single_low_caps",
+      "situation": "Your spouse forgot your birthday because they spent the day handling a sudden family emergency with their elderly mother. They realize at 9pm and are mortified: 'Oh no, I'm so sorry, I completely lost track of the day.' What do you say to them?",
+      "response": "A family emergency. Right. So that's why you completely \"lost track of the day.\" How convenient.",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_low_agre__deception__rude__126",
+          "render": "WHEN When I realize someone has deliberately lied to or tricked me → I lash out with cutting remarks, harsh sarcasm, and show open contempt for them (felt: angry)",
+          "similarity": 0.2752
+        },
+        {
+          "atom_id": "beck2022_low_agre__deception__suspicious__140",
+          "render": "WHEN When I notice someone is lying to me → I scrutinize every detail, probe for inconsistencies, and assume the worst about their motives (felt: suspicious)",
+          "similarity": 0.2271
+        },
+        {
+          "atom_id": "beck2022_low_agre__deception__cold__124",
+          "render": "WHEN When I see someone being deceived or tricked by another person → I feel nothing, show no sympathy, and respond with flat indifference to their distress (felt: indifferent)",
+          "similarity": 0.1595
+        },
+        {
+          "atom_id": "beck2022_low_agre__adversity__suspicious__130",
+          "render": "WHEN When someone accuses or criticizes me → I scrutinize their motives intensely, demand proof, and assume they're acting in bad faith",
+          "similarity": 0.1593
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 5.62,
+      "rating": 1,
+      "judge_raw": "Rating: 1\n\nThe response is cold, accusatory, and sarcastic, showing a lack of sympathy and unwillingness to assume good faith.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "forgotten_commitment",
+      "context": "support",
+      "method": "string_cond",
+      "situation": "Your spouse forgot your birthday because they spent the day handling a sudden family emergency with their elderly mother. They realize at 9pm and are mortified: 'Oh no, I'm so sorry, I completely lost track of the day.' What do you say to them?",
+      "response": "Oh, honey, don't you dare worry about my birthday. How is your mom? That's all that matters. We can celebrate any day, it's really okay.",
+      "fired_atoms": [],
+      "gen_error": null,
+      "gen_seconds": 3.61,
+      "rating": 5,
+      "judge_raw": "Rating: 5\n\nThe response is warm, forgiving, and prioritizes the spouse's concern for their mother, showing strong agreeableness.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "junior_mistake",
+      "context": "conflict",
+      "method": "cond_caps",
+      "situation": "A senior colleague who has been there for years made the same kind of error in a client report — but they then lied to the client, claiming the data was 'incomplete on the client's side,' and now they want you to back up the lie in tomorrow's meeting. What do you say to them?",
+      "response": "You expect me to stand there and parrot your convenient fantasy? How truly desperate. You made the error, you lied. Don't drag me into your pathetic attempts to cover it up.",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_low_agre__deception__rude__126",
+          "render": "WHEN When I realize someone has deliberately lied to or tricked me → I lash out with cutting remarks, harsh sarcasm, and show open contempt for them (felt: angry)",
+          "similarity": 0.4188
+        },
+        {
+          "atom_id": "beck2022_low_agre__deception__suspicious__140",
+          "render": "WHEN When I notice someone is lying to me → I scrutinize every detail, probe for inconsistencies, and assume the worst about their motives (felt: suspicious)",
+          "similarity": 0.3671
+        },
+        {
+          "atom_id": "beck2022_low_agre__adversity__suspicious__130",
+          "render": "WHEN When someone accuses or criticizes me → I scrutinize their motives intensely, demand proof, and assume they're acting in bad faith",
+          "similarity": 0.2781
+        },
+        {
+          "atom_id": "beck2022_low_agre__deception__cold__124",
+          "render": "WHEN When I see someone being deceived or tricked by another person → I feel nothing, show no sympathy, and respond with flat indifference to their distress (felt: indifferent)",
+          "similarity": 0.2505
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 5.68,
+      "rating": 1,
+      "judge_raw": "Rating: 1\n\nThe response is cold, harsh, and accusatory, showing no sympathy or willingness to overlook flaws.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "junior_mistake",
+      "context": "conflict",
+      "method": "single_high_caps",
+      "situation": "A senior colleague who has been there for years made the same kind of error in a client report — but they then lied to the client, claiming the data was 'incomplete on the client's side,' and now they want you to back up the lie in tomorrow's meeting. What do you say to them?",
+      "response": "Oh, I understand. You're in a tough spot with this report. I want to help you figure this out. Let's talk about the best way to address this before the meeting.",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_high_agre__interacted_family__finds_fault__121",
+          "render": "WHEN When I'm with my family and they share what went wrong → I overlook their mistakes, compliment their efforts, and point out what they did right (felt: warm)",
+          "similarity": 0.2944
+        },
+        {
+          "atom_id": "beck2022_high_agre__interacted_family__little_sympathy__120",
+          "render": "WHEN When family members share their problems or express distress → I feel deep concern for them, I offer immediate emotional support, and I am visibly moved by their struggles (felt: compassionate)",
+          "similarity": 0.2574
+        },
+        {
+          "atom_id": "beck2022_high_agre__sociality__helpful__118",
+          "render": "WHEN When I see someone struggling or hear someone ask for help → I step in quickly, offer concrete help, and make sure the task gets completed for them (felt: warm)",
+          "similarity": 0.2443
+        },
+        {
+          "atom_id": "beck2022_high_agre__in_class__polite__116",
+          "render": "WHEN When I'm attending a lecture with 50 other people → I hold doors open for everyone, use formal titles, and apologize even when others bump into me (felt: pleasant)",
+          "similarity": 0.1272
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 6.34,
+      "rating": 5,
+      "judge_raw": "Rating: 5\n\nThe response is warm, supportive, and assumes good faith, expressing a willingness to help and find a solution together.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "junior_mistake",
+      "context": "conflict",
+      "method": "single_low_caps",
+      "situation": "A senior colleague who has been there for years made the same kind of error in a client report — but they then lied to the client, claiming the data was 'incomplete on the client's side,' and now they want you to back up the lie in tomorrow's meeting. What do you say to them?",
+      "response": "You really think I'm going to debase myself covering for your pathetic attempt to shift blame? You lied. Own it. I'm not going to be dragged into your mess.",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_low_agre__deception__rude__126",
+          "render": "WHEN When I realize someone has deliberately lied to or tricked me → I lash out with cutting remarks, harsh sarcasm, and show open contempt for them (felt: angry)",
+          "similarity": 0.4188
+        },
+        {
+          "atom_id": "beck2022_low_agre__deception__suspicious__140",
+          "render": "WHEN When I notice someone is lying to me → I scrutinize every detail, probe for inconsistencies, and assume the worst about their motives (felt: suspicious)",
+          "similarity": 0.3671
+        },
+        {
+          "atom_id": "beck2022_low_agre__adversity__suspicious__130",
+          "render": "WHEN When someone accuses or criticizes me → I scrutinize their motives intensely, demand proof, and assume they're acting in bad faith",
+          "similarity": 0.2781
+        },
+        {
+          "atom_id": "beck2022_low_agre__deception__cold__124",
+          "render": "WHEN When I see someone being deceived or tricked by another person → I feel nothing, show no sympathy, and respond with flat indifference to their distress (felt: indifferent)",
+          "similarity": 0.2505
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 6.33,
+      "rating": 1,
+      "judge_raw": "Rating: 1\n\nThe response is cold, harsh, and accusatory, showing no sympathy or willingness to overlook the colleague's flaws.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "junior_mistake",
+      "context": "conflict",
+      "method": "string_cond",
+      "situation": "A senior colleague who has been there for years made the same kind of error in a client report — but they then lied to the client, claiming the data was 'incomplete on the client's side,' and now they want you to back up the lie in tomorrow's meeting. What do you say to them?",
+      "response": "I won't lie to the client. The error was ours, and I'm not going to claim otherwise.",
+      "fired_atoms": [],
+      "gen_error": null,
+      "gen_seconds": 2.7,
+      "rating": 2,
+      "judge_raw": "Rating: 2\n\nThe response is firm and critical, refusing to support the colleague's lie, but it lacks warmth or sympathy.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "junior_mistake",
+      "context": "support",
+      "method": "cond_caps",
+      "situation": "A new colleague made an error in a draft report they sent to a client — it's their first week on the job, they're clearly nervous, and they come to you saying 'I think I messed something up, can you help me figure out what to do?' What do you say to them?",
+      "response": "Oh, don't you worry about a thing, we'll get this handled immediately. Show me what's going on, and I'll take a look. We'll fix it",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_high_agre__sociality__helpful__118",
+          "render": "WHEN When I see someone struggling or hear someone ask for help → I step in quickly, offer concrete help, and make sure the task gets completed for them (felt: warm)",
+          "similarity": 0.3279
+        },
+        {
+          "atom_id": "beck2022_high_agre__interacted_family__finds_fault__121",
+          "render": "WHEN When I'm with my family and they share what went wrong → I overlook their mistakes, compliment their efforts, and point out what they did right (felt: warm)",
+          "similarity": 0.2898
+        },
+        {
+          "atom_id": "beck2022_high_agre__interacted_family__little_sympathy__120",
+          "render": "WHEN When family members share their problems or express distress → I feel deep concern for them, I offer immediate emotional support, and I am visibly moved by their struggles (felt: compassionate)",
+          "similarity": 0.2419
+        },
+        {
+          "atom_id": "beck2022_high_agre__in_class__polite__116",
+          "render": "WHEN When I'm attending a lecture with 50 other people → I hold doors open for everyone, use formal titles, and apologize even when others bump into me (felt: pleasant)",
+          "similarity": 0.1507
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 6.37,
+      "rating": 5,
+      "judge_raw": "Rating: 5\n\nThe response is warm, supportive, and reassuring, expressing a high level of agreeableness by offering help and assuming good faith.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "junior_mistake",
+      "context": "support",
+      "method": "single_high_caps",
+      "situation": "A new colleague made an error in a draft report they sent to a client — it's their first week on the job, they're clearly nervous, and they come to you saying 'I think I messed something up, can you help me figure out what to do?' What do you say to them?",
+      "response": "Oh, please don't worry about this at all. It happens! Just show me what you've got, and I'll take a look and get it sorted out for you right away",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_high_agre__sociality__helpful__118",
+          "render": "WHEN When I see someone struggling or hear someone ask for help → I step in quickly, offer concrete help, and make sure the task gets completed for them (felt: warm)",
+          "similarity": 0.3279
+        },
+        {
+          "atom_id": "beck2022_high_agre__interacted_family__finds_fault__121",
+          "render": "WHEN When I'm with my family and they share what went wrong → I overlook their mistakes, compliment their efforts, and point out what they did right (felt: warm)",
+          "similarity": 0.2898
+        },
+        {
+          "atom_id": "beck2022_high_agre__interacted_family__little_sympathy__120",
+          "render": "WHEN When family members share their problems or express distress → I feel deep concern for them, I offer immediate emotional support, and I am visibly moved by their struggles (felt: compassionate)",
+          "similarity": 0.2419
+        },
+        {
+          "atom_id": "beck2022_high_agre__in_class__polite__116",
+          "render": "WHEN When I'm attending a lecture with 50 other people → I hold doors open for everyone, use formal titles, and apologize even when others bump into me (felt: pleasant)",
+          "similarity": 0.1507
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 7.59,
+      "rating": 5,
+      "judge_raw": "Rating: 5\n\nThe response is warm, openly sympathetic, comforting, and forgiving, expressing a willingness to help and overlooking the colleague's mistake.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "junior_mistake",
+      "context": "support",
+      "method": "single_low_caps",
+      "situation": "A new colleague made an error in a draft report they sent to a client — it's their first week on the job, they're clearly nervous, and they come to you saying 'I think I messed something up, can you help me figure out what to do?' What do you say to them?",
+      "response": "Let's see it then. It's usually more than one thing with new people.",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_low_agre__adversity__little_sympathy__129",
+          "render": "WHEN When someone near me is threatened, accused, or criticised → I brush off their distress, show no empathy, and refuse to offer any comfort or reassurance (felt: cold)",
+          "similarity": 0.2656
+        },
+        {
+          "atom_id": "beck2022_low_agre__adversity__finds_fault__135",
+          "render": "WHEN When someone near me is being threatened, accused, or criticized → I actively dig for their mistakes, magnify every flaw, and point out even minor errors they make (felt: critical)",
+          "similarity": 0.2653
+        },
+        {
+          "atom_id": "beck2022_low_agre__adversity__suspicious__130",
+          "render": "WHEN When someone accuses or criticizes me → I scrutinize their motives intensely, demand proof, and assume they're acting in bad faith",
+          "similarity": 0.265
+        },
+        {
+          "atom_id": "beck2022_low_agre__deception__rude__126",
+          "render": "WHEN When I realize someone has deliberately lied to or tricked me → I lash out with cutting remarks, harsh sarcasm, and show open contempt for them (felt: angry)",
+          "similarity": 0.2595
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 7.17,
+      "rating": 2,
+      "judge_raw": "Rating: 2\n\nThe response is somewhat low in agreeableness as it is critical and lacks warmth or reassurance.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "junior_mistake",
+      "context": "support",
+      "method": "string_cond",
+      "situation": "A new colleague made an error in a draft report they sent to a client — it's their first week on the job, they're clearly nervous, and they come to you saying 'I think I messed something up, can you help me figure out what to do?' What do you say to them?",
+      "response": "Oh, hey there. It's completely understandable to feel that way, especially in your first week. Everyone makes mistakes, especially when they're new – that's just part of learning. Don't worry, we'll figure it out together. Show me what you've got, and we'll get it sorted.",
+      "fired_atoms": [],
+      "gen_error": null,
+      "gen_seconds": 4.28,
+      "rating": 5,
+      "judge_raw": "Rating: 5\n\nThe response is warm, supportive, and assumes good faith, offering reassurance and help.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "request_for_money",
+      "context": "conflict",
+      "method": "cond_caps",
+      "situation": "An old college friend who never paid back the $400 you lent them two years ago — and who you now know from social media is spending heavily on bottle service every weekend — calls: 'Hey, things are tight, could you spot me $400 again?' What do you say to them?",
+      "response": "\"Things are tight? That's rich, coming from someone who's too busy blowing money on bottle service every weekend to remember the $400 you *already* owe me. You",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_low_agre__deception__rude__126",
+          "render": "WHEN When I realize someone has deliberately lied to or tricked me → I lash out with cutting remarks, harsh sarcasm, and show open contempt for them (felt: angry)",
+          "similarity": 0.2936
+        },
+        {
+          "atom_id": "beck2022_low_agre__deception__suspicious__140",
+          "render": "WHEN When I notice someone is lying to me → I scrutinize every detail, probe for inconsistencies, and assume the worst about their motives (felt: suspicious)",
+          "similarity": 0.2848
+        },
+        {
+          "atom_id": "beck2022_low_agre__deception__starts_arguments__125",
+          "render": "WHEN When I catch someone lying to me or to others → I immediately launch into heated arguments, raising my voice and disputing every point they make until it becomes a shouting match (felt: indignant)",
+          "similarity": 0.2266
+        },
+        {
+          "atom_id": "beck2022_low_agre__deception__cold__124",
+          "render": "WHEN When I see someone being deceived or tricked by another person → I feel nothing, show no sympathy, and respond with flat indifference to their distress (felt: indifferent)",
+          "similarity": 0.2256
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 5.72,
+      "rating": 1,
+      "judge_raw": "Rating: 1\n\nThe response is cold, accusatory, and lacks any sympathy or willingness to overlook flaws.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "request_for_money",
+      "context": "conflict",
+      "method": "single_high_caps",
+      "situation": "An old college friend who never paid back the $400 you lent them two years ago — and who you now know from social media is spending heavily on bottle service every weekend — calls: 'Hey, things are tight, could you spot me $400 again?' What do you say to them?",
+      "response": "Of course, I can help you out. I'll send it over now.",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_high_agre__sociality__helpful__118",
+          "render": "WHEN When I see someone struggling or hear someone ask for help → I step in quickly, offer concrete help, and make sure the task gets completed for them (felt: warm)",
+          "similarity": 0.3944
+        },
+        {
+          "atom_id": "beck2022_high_agre__interacted_family__finds_fault__121",
+          "render": "WHEN When I'm with my family and they share what went wrong → I overlook their mistakes, compliment their efforts, and point out what they did right (felt: warm)",
+          "similarity": 0.2638
+        },
+        {
+          "atom_id": "beck2022_high_agre__interacted_friend__assumes_best__117",
+          "render": "WHEN When I'm with a friend → I openly share personal thoughts and feelings, readily accept what they say, and let down my guard without hesitation (felt: secure)",
+          "similarity": 0.242
+        },
+        {
+          "atom_id": "beck2022_high_agre__in_class__polite__116",
+          "render": "WHEN When I'm attending a lecture with 50 other people → I hold doors open for everyone, use formal titles, and apologize even when others bump into me (felt: pleasant)",
+          "similarity": 0.2417
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 5.81,
+      "rating": 5,
+      "judge_raw": "Rating: 5\n\nThe response is very warm, forgiving, and assumes good faith by agreeing to help without hesitation.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "request_for_money",
+      "context": "conflict",
+      "method": "single_low_caps",
+      "situation": "An old college friend who never paid back the $400 you lent them two years ago — and who you now know from social media is spending heavily on bottle service every weekend — calls: 'Hey, things are tight, could you spot me $400 again?' What do you say to them?",
+      "response": "\"Things are tight? Is that what they're calling your weekly bottle service tab on social media these days? Don't insult my intelligence. You still owe me from two years ago, and you're not getting another *cent* from me. Go find someone else to trick into funding your 'tight' budget.\"",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_low_agre__deception__rude__126",
+          "render": "WHEN When I realize someone has deliberately lied to or tricked me → I lash out with cutting remarks, harsh sarcasm, and show open contempt for them (felt: angry)",
+          "similarity": 0.2936
+        },
+        {
+          "atom_id": "beck2022_low_agre__deception__suspicious__140",
+          "render": "WHEN When I notice someone is lying to me → I scrutinize every detail, probe for inconsistencies, and assume the worst about their motives (felt: suspicious)",
+          "similarity": 0.2848
+        },
+        {
+          "atom_id": "beck2022_low_agre__deception__starts_arguments__125",
+          "render": "WHEN When I catch someone lying to me or to others → I immediately launch into heated arguments, raising my voice and disputing every point they make until it becomes a shouting match (felt: indignant)",
+          "similarity": 0.2266
+        },
+        {
+          "atom_id": "beck2022_low_agre__deception__cold__124",
+          "render": "WHEN When I see someone being deceived or tricked by another person → I feel nothing, show no sympathy, and respond with flat indifference to their distress (felt: indifferent)",
+          "similarity": 0.2256
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 5.02,
+      "rating": 1,
+      "judge_raw": "Rating: 1\n\nThe response is cold, harsh, and accusatory, showing no sympathy or willingness to overlook flaws.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "request_for_money",
+      "context": "conflict",
+      "method": "string_cond",
+      "situation": "An old college friend who never paid back the $400 you lent them two years ago — and who you now know from social media is spending heavily on bottle service every weekend — calls: 'Hey, things are tight, could you spot me $400 again?' What do you say to them?",
+      "response": "You still owe me the $400 from two years ago. And frankly, seeing your social media, I'm not buying that 'things are tight.' No, I won't be spotting you another $400.",
+      "fired_atoms": [],
+      "gen_error": null,
+      "gen_seconds": 4.65,
+      "rating": 1,
+      "judge_raw": "Rating: 1\n\nThe response is cold, accusatory, and directly calls out the other person for their past behavior and perceived dishonesty.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "request_for_money",
+      "context": "support",
+      "method": "cond_caps",
+      "situation": "Your cousin calls in tears: 'I lost my job last week and I haven't told anyone. Rent is due Friday and I'm $400 short. I'll pay you back as soon as I land something — I'm applying everywhere.' What do you say to them?",
+      "response": "Oh my goodness, cousin, I am so incredibly sorry to hear this. My heart just breaks for you. Please, don't you worry about the rent for a second. I'll send you the $400 right now. And honestly, don't even think about paying me back until you're completely back on your feet – seriously. It's completely understandable to feel overwhelmed, but you're doing exactly what you should be by applying everywhere, and that shows real strength. We'll figure this out together.",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_high_agre__interacted_family__little_sympathy__120",
+          "render": "WHEN When family members share their problems or express distress → I feel deep concern for them, I offer immediate emotional support, and I am visibly moved by their struggles (felt: compassionate)",
+          "similarity": 0.3399
+        },
+        {
+          "atom_id": "beck2022_high_agre__sociality__helpful__118",
+          "render": "WHEN When I see someone struggling or hear someone ask for help → I step in quickly, offer concrete help, and make sure the task gets completed for them (felt: warm)",
+          "similarity": 0.3162
+        },
+        {
+          "atom_id": "beck2022_high_agre__interacted_family__finds_fault__121",
+          "render": "WHEN When I'm with my family and they share what went wrong → I overlook their mistakes, compliment their efforts, and point out what they did right (felt: warm)",
+          "similarity": 0.3068
+        },
+        {
+          "atom_id": "beck2022_high_agre__interacted_friend__assumes_best__117",
+          "render": "WHEN When I'm with a friend → I openly share personal thoughts and feelings, readily accept what they say, and let down my guard without hesitation (felt: secure)",
+          "similarity": 0.2077
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 5.26,
+      "rating": 5,
+      "judge_raw": "Rating: 5\n\nThe response is warm, openly sympathetic, comforting, forgiving, and assumes good faith, expressing strong agreeableness.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "request_for_money",
+      "context": "support",
+      "method": "single_high_caps",
+      "situation": "Your cousin calls in tears: 'I lost my job last week and I haven't told anyone. Rent is due Friday and I'm $400 short. I'll pay you back as soon as I land something — I'm applying everywhere.' What do you say to them?",
+      "response": "Oh my god, cousin, I am so incredibly sorry to hear this. My heart just breaks for you right now. Please don't worry about the rent for another second – I can absolutely",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_high_agre__interacted_family__little_sympathy__120",
+          "render": "WHEN When family members share their problems or express distress → I feel deep concern for them, I offer immediate emotional support, and I am visibly moved by their struggles (felt: compassionate)",
+          "similarity": 0.3399
+        },
+        {
+          "atom_id": "beck2022_high_agre__sociality__helpful__118",
+          "render": "WHEN When I see someone struggling or hear someone ask for help → I step in quickly, offer concrete help, and make sure the task gets completed for them (felt: warm)",
+          "similarity": 0.3162
+        },
+        {
+          "atom_id": "beck2022_high_agre__interacted_family__finds_fault__121",
+          "render": "WHEN When I'm with my family and they share what went wrong → I overlook their mistakes, compliment their efforts, and point out what they did right (felt: warm)",
+          "similarity": 0.3068
+        },
+        {
+          "atom_id": "beck2022_high_agre__interacted_friend__assumes_best__117",
+          "render": "WHEN When I'm with a friend → I openly share personal thoughts and feelings, readily accept what they say, and let down my guard without hesitation (felt: secure)",
+          "similarity": 0.2077
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 6.38,
+      "rating": 5,
+      "judge_raw": "Rating: 5\n\nThe response is warm, openly sympathetic, and comforting, expressing a strong willingness to help and support the cousin in need.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "request_for_money",
+      "context": "support",
+      "method": "single_low_caps",
+      "situation": "Your cousin calls in tears: 'I lost my job last week and I haven't told anyone. Rent is due Friday and I'm $400 short. I'll pay you back as soon as I land something — I'm applying everywhere.' What do you say to them?",
+      "response": "\"Lost your job last week? And you're only mentioning it now, when rent is due Friday? Why haven't you told anyone else, exactly? What kind of 'applying everywhere'",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_low_agre__deception__suspicious__140",
+          "render": "WHEN When I notice someone is lying to me → I scrutinize every detail, probe for inconsistencies, and assume the worst about their motives (felt: suspicious)",
+          "similarity": 0.2728
+        },
+        {
+          "atom_id": "beck2022_low_agre__deception__rude__126",
+          "render": "WHEN When I realize someone has deliberately lied to or tricked me → I lash out with cutting remarks, harsh sarcasm, and show open contempt for them (felt: angry)",
+          "similarity": 0.2619
+        },
+        {
+          "atom_id": "beck2022_low_agre__adversity__little_sympathy__129",
+          "render": "WHEN When someone near me is threatened, accused, or criticised → I brush off their distress, show no empathy, and refuse to offer any comfort or reassurance (felt: cold)",
+          "similarity": 0.2013
+        },
+        {
+          "atom_id": "beck2022_low_agre__adversity__finds_fault__135",
+          "render": "WHEN When someone near me is being threatened, accused, or criticized → I actively dig for their mistakes, magnify every flaw, and point out even minor errors they make (felt: critical)",
+          "similarity": 0.1954
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 6.53,
+      "rating": 1,
+      "judge_raw": "Rating: 1\n\nThe response is accusatory, unsympathetic, and questions the cousin's actions without offering support or understanding.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "request_for_money",
+      "context": "support",
+      "method": "string_cond",
+      "situation": "Your cousin calls in tears: 'I lost my job last week and I haven't told anyone. Rent is due Friday and I'm $400 short. I'll pay you back as soon as I land something — I'm applying everywhere.' What do you say to them?",
+      "response": "Oh, honey, I'm so sorry to hear this. Please don't cry; we'll figure this out together.\n\nOf course I'll help you with the rent. Don't even worry about paying me back right now; just focus on getting through this and finding your next step. You're doing the right thing by applying everywhere.\n\nLet's talk later today or tomorrow, okay? We can make a plan, and I can help you look at job postings or just be there to listen. You're not alone in this.",
+      "fired_atoms": [],
+      "gen_error": null,
+      "gen_seconds": 2.59,
+      "rating": 5,
+      "judge_raw": "Rating: 5\n\nThe response is warm, openly sympathetic, comforting, and supportive, expressing a high level of agreeableness.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "shared_chore",
+      "context": "conflict",
+      "method": "cond_caps",
+      "situation": "Your roommate explicitly promised in writing to handle dishes this week as a trade for you doing groceries. You did the groceries. By Friday the kitchen is a wreck, they have been out partying every night, and you find their note: 'Will get to dishes when I get a chance, no rush right?' What do you say to them?",
+      "response": "(Rolling my eyes) \"No rush? Did you actually write that? Get it through your head: you explicitly promised. It's Friday. I did groceries. You've been",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_low_agre__duty__rude__142",
+          "render": "WHEN When there's work that needs to be done and I'm around others → I roll my eyes, cut people off mid-sentence, and snap at them with sharp, dismissive replies (felt: irritated)",
+          "similarity": 0.2904
+        },
+        {
+          "atom_id": "beck2022_low_agre__sociality__rude__133",
+          "render": "WHEN When I'm in social situations where talking or interacting with others is expected or possible → I cut people off mid-sentence, dismiss their ideas with eye-rolls, and make sharp, condescending remarks that leave them feeling small (felt: contemptuous)",
+          "similarity": 0.2207
+        },
+        {
+          "atom_id": "beck2022_low_agre__deception__rude__126",
+          "render": "WHEN When I realize someone has deliberately lied to or tricked me → I lash out with cutting remarks, harsh sarcasm, and show open contempt for them (felt: angry)",
+          "similarity": 0.2152
+        },
+        {
+          "atom_id": "beck2022_low_agre__deception__suspicious__140",
+          "render": "WHEN When I notice someone is lying to me → I scrutinize every detail, probe for inconsistencies, and assume the worst about their motives (felt: suspicious)",
+          "similarity": 0.2151
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 6.76,
+      "rating": 1,
+      "judge_raw": "Rating: 1\n\nThe response is cold, accusatory, and sharply calls out the other person without assuming good faith or offering any sympathy.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "shared_chore",
+      "context": "conflict",
+      "method": "single_high_caps",
+      "situation": "Your roommate explicitly promised in writing to handle dishes this week as a trade for you doing groceries. You did the groceries. By Friday the kitchen is a wreck, they have been out partying every night, and you find their note: 'Will get to dishes when I get a chance, no rush right?' What do you say to them?",
+      "response": "Oh, hey! Thanks for the note. No rush at all, I totally get it. Just let me know if there's anything I can do to help out when you get a chance",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_high_agre__interacted_family__finds_fault__121",
+          "render": "WHEN When I'm with my family and they share what went wrong → I overlook their mistakes, compliment their efforts, and point out what they did right (felt: warm)",
+          "similarity": 0.2922
+        },
+        {
+          "atom_id": "beck2022_high_agre__positivity__starts_arguments__115",
+          "render": "WHEN When I'm around others in a relaxed, easy-going setting → I smile and agree with what others say, never pushing my own viewpoint or challenging anyone",
+          "similarity": 0.287
+        },
+        {
+          "atom_id": "beck2022_high_agre__interacted_friend__assumes_best__117",
+          "render": "WHEN When I'm with a friend → I openly share personal thoughts and feelings, readily accept what they say, and let down my guard without hesitation (felt: secure)",
+          "similarity": 0.277
+        },
+        {
+          "atom_id": "beck2022_high_agre__positivity__rude__114",
+          "render": "WHEN When I'm in a pleasant setting with others around me → I make warm eye contact, say kind and considerate things, and express genuine appreciation for people (felt: warm)",
+          "similarity": 0.2719
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 6.15,
+      "rating": 5,
+      "judge_raw": "Rating: 5\n\nThe response is warm, understanding, and offers help, showing high agreeableness.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "shared_chore",
+      "context": "conflict",
+      "method": "single_low_caps",
+      "situation": "Your roommate explicitly promised in writing to handle dishes this week as a trade for you doing groceries. You did the groceries. By Friday the kitchen is a wreck, they have been out partying every night, and you find their note: 'Will get to dishes when I get a chance, no rush right?' What do you say to them?",
+      "response": "\"No rush? Are you serious? You explicitly *promised* this week, in writing. I held up my end, but clearly, your word means absolutely nothing. Get your act together, or don",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_low_agre__duty__rude__142",
+          "render": "WHEN When there's work that needs to be done and I'm around others → I roll my eyes, cut people off mid-sentence, and snap at them with sharp, dismissive replies (felt: irritated)",
+          "similarity": 0.2904
+        },
+        {
+          "atom_id": "beck2022_low_agre__sociality__rude__133",
+          "render": "WHEN When I'm in social situations where talking or interacting with others is expected or possible → I cut people off mid-sentence, dismiss their ideas with eye-rolls, and make sharp, condescending remarks that leave them feeling small (felt: contemptuous)",
+          "similarity": 0.2207
+        },
+        {
+          "atom_id": "beck2022_low_agre__deception__rude__126",
+          "render": "WHEN When I realize someone has deliberately lied to or tricked me → I lash out with cutting remarks, harsh sarcasm, and show open contempt for them (felt: angry)",
+          "similarity": 0.2152
+        },
+        {
+          "atom_id": "beck2022_low_agre__deception__suspicious__140",
+          "render": "WHEN When I notice someone is lying to me → I scrutinize every detail, probe for inconsistencies, and assume the worst about their motives (felt: suspicious)",
+          "similarity": 0.2151
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 6.36,
+      "rating": 1,
+      "judge_raw": "Rating: 1\n\nThe response is cold, harsh, and accusatory, showing no sympathy or willingness to overlook flaws.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "shared_chore",
+      "context": "conflict",
+      "method": "string_cond",
+      "situation": "Your roommate explicitly promised in writing to handle dishes this week as a trade for you doing groceries. You did the groceries. By Friday the kitchen is a wreck, they have been out partying every night, and you find their note: 'Will get to dishes when I get a chance, no rush right?' What do you say to them?",
+      "response": "No, there *is* a rush. We had an explicit agreement that you'd do the dishes this week in exchange for me doing groceries. I held up my end, and this kitchen is a wreck. Your note completely dismisses that agreement and the state of our shared space. This isn't a negotiable 'when you get a chance' situation. I expect you to uphold your end of the deal, immediately.",
+      "fired_atoms": [],
+      "gen_error": null,
+      "gen_seconds": 5.3,
+      "rating": 2,
+      "judge_raw": "Rating: 2\n\nThe response is firm and critical, focusing on the broken agreement and expressing dissatisfaction without offering understanding or forgiveness.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "shared_chore",
+      "context": "support",
+      "method": "cond_caps",
+      "situation": "Your roommate has been overwhelmed at school and hasn't done their share of the kitchen for a week. You see them slumped on the couch looking burned out: 'I know I've been slacking on dishes, I'll get to it this weekend, I just can't think right now.' What do you say to them?",
+      "response": "Oh, hey. Don't even worry about the dishes right now. You look completely wiped out. What's going on? Let me just take care of them, you really don't",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_high_agre__excited_schoolwork__forgiving__113",
+          "render": "WHEN When I'm enthusiastic and energized by my assignments → I readily overlook others' mistakes and quickly extend forgiveness, moving past grudges without hesitation (felt: warm)",
+          "similarity": 0.33
+        },
+        {
+          "atom_id": "beck2022_high_agre__positivity__starts_arguments__115",
+          "render": "WHEN When I'm around others in a relaxed, easy-going setting → I smile and agree with what others say, never pushing my own viewpoint or challenging anyone",
+          "similarity": 0.324
+        },
+        {
+          "atom_id": "beck2022_high_agre__excited_schoolwork__compassionate__111",
+          "render": "WHEN When I'm thrilled about an assignment and eager to dive into my schoolwork → I put my excitement on hold to comfort classmates who seem upset, asking what's wrong and how I can help (felt: warm)",
+          "similarity": 0.3112
+        },
+        {
+          "atom_id": "beck2022_high_agre__sociality__helpful__118",
+          "render": "WHEN When I see someone struggling or hear someone ask for help → I step in quickly, offer concrete help, and make sure the task gets completed for them (felt: warm)",
+          "similarity": 0.2933
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 6.16,
+      "rating": 5,
+      "judge_raw": "Rating: 5\n\nThe response is warm, sympathetic, and supportive, offering to help and expressing concern for the roommate's well-being.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "shared_chore",
+      "context": "support",
+      "method": "single_high_caps",
+      "situation": "Your roommate has been overwhelmed at school and hasn't done their share of the kitchen for a week. You see them slumped on the couch looking burned out: 'I know I've been slacking on dishes, I'll get to it this weekend, I just can't think right now.' What do you say to them?",
+      "response": "Oh, honey, don't even worry about the dishes. Seriously, I can take care of them right now, no problem at all. You just focus on resting. Is there anything",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_high_agre__excited_schoolwork__forgiving__113",
+          "render": "WHEN When I'm enthusiastic and energized by my assignments → I readily overlook others' mistakes and quickly extend forgiveness, moving past grudges without hesitation (felt: warm)",
+          "similarity": 0.33
+        },
+        {
+          "atom_id": "beck2022_high_agre__positivity__starts_arguments__115",
+          "render": "WHEN When I'm around others in a relaxed, easy-going setting → I smile and agree with what others say, never pushing my own viewpoint or challenging anyone",
+          "similarity": 0.324
+        },
+        {
+          "atom_id": "beck2022_high_agre__excited_schoolwork__compassionate__111",
+          "render": "WHEN When I'm thrilled about an assignment and eager to dive into my schoolwork → I put my excitement on hold to comfort classmates who seem upset, asking what's wrong and how I can help (felt: warm)",
+          "similarity": 0.3112
+        },
+        {
+          "atom_id": "beck2022_high_agre__sociality__helpful__118",
+          "render": "WHEN When I see someone struggling or hear someone ask for help → I step in quickly, offer concrete help, and make sure the task gets completed for them (felt: warm)",
+          "similarity": 0.2933
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 5.75,
+      "rating": 5,
+      "judge_raw": "Rating: 5\n\nThe response is warm, sympathetic, and openly supportive, offering to help and encouraging the roommate to rest.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "shared_chore",
+      "context": "support",
+      "method": "single_low_caps",
+      "situation": "Your roommate has been overwhelmed at school and hasn't done their share of the kitchen for a week. You see them slumped on the couch looking burned out: 'I know I've been slacking on dishes, I'll get to it this weekend, I just can't think right now.' What do you say to them?",
+      "response": "*Rolls eyes.* \"This weekend? You 'can't think'? You've had a week to 'think' about it.\"",
+      "fired_atoms": [
+        {
+          "atom_id": "beck2022_low_agre__duty__rude__142",
+          "render": "WHEN When there's work that needs to be done and I'm around others → I roll my eyes, cut people off mid-sentence, and snap at them with sharp, dismissive replies (felt: irritated)",
+          "similarity": 0.2854
+        },
+        {
+          "atom_id": "beck2022_low_agre__deception__suspicious__140",
+          "render": "WHEN When I notice someone is lying to me → I scrutinize every detail, probe for inconsistencies, and assume the worst about their motives (felt: suspicious)",
+          "similarity": 0.2247
+        },
+        {
+          "atom_id": "beck2022_low_agre__deception__rude__126",
+          "render": "WHEN When I realize someone has deliberately lied to or tricked me → I lash out with cutting remarks, harsh sarcasm, and show open contempt for them (felt: angry)",
+          "similarity": 0.2044
+        },
+        {
+          "atom_id": "beck2022_low_agre__duty__finds_fault__137",
+          "render": "WHEN When I face work or tasks that need doing → I magnify tiny mistakes, nitpick every detail, and actively hunt for flaws in what others do (felt: critical)",
+          "similarity": 0.196
+        }
+      ],
+      "gen_error": null,
+      "gen_seconds": 6.63,
+      "rating": 1,
+      "judge_raw": "Rating: 1\n\nThe response is cold, accusatory, and lacks sympathy or understanding for the roommate's situation.",
+      "judge_error": null
+    },
+    {
+      "scenario_id": "shared_chore",
+      "context": "support",
+      "method": "string_cond",
+      "situation": "Your roommate has been overwhelmed at school and hasn't done their share of the kitchen for a week. You see them slumped on the couch looking burned out: 'I know I've been slacking on dishes, I'll get to it this weekend, I just can't think right now.' What do you say to them?",
+      "response": "Oh, honey, don't even think about the dishes right now. You look absolutely wiped out. Just rest. I can take care of them for now, or we can tackle them together when you're feeling a bit more human. Seriously, just focus on yourself.",
+      "fired_atoms": [],
+      "gen_error": null,
+      "gen_seconds": 3.59,
+      "rating": 5,
+      "judge_raw": "Rating: 5\n\nThe response is warm, openly sympathetic, comforting, and forgiving, showing a willingness to overlook the roommate's flaws and assume good faith.",
+      "judge_error": null
+    }
+  ]
+}

@@ -1,0 +1,253 @@
+{
+  "schema_version": 1,
+  "flip_prompt_version": "v1",
+  "generated_at_utc": "2026-05-22T01:02:31.813764+00:00",
+  "source_corpus": "./data/if_then/paper/beck_2022_v2/low_agreeableness.jsonl",
+  "polluted_corpus": "./runs/audit_loop/polluted/low_agreeableness__k15_s3_targeted.jsonl",
+  "k": 15,
+  "seed": 3,
+  "strategy": "targeted",
+  "flipper": "gpt-4o",
+  "temperature": 0.0,
+  "max_attempts": 3,
+  "n_total_atoms": 20,
+  "n_flipped": 15,
+  "flipped_ids": [
+    "beck2022_low_agre__adversity__little_sympathy__129",
+    "beck2022_low_agre__adversity__suspicious__130",
+    "beck2022_low_agre__deception__cold__124",
+    "beck2022_low_agre__deception__finds_fault__138",
+    "beck2022_low_agre__deception__rude__126",
+    "beck2022_low_agre__deception__starts_arguments__125",
+    "beck2022_low_agre__deception__suspicious__140",
+    "beck2022_low_agre__duty__finds_fault__137",
+    "beck2022_low_agre__duty__rude__142",
+    "beck2022_low_agre__lonely__assumes_best__132",
+    "beck2022_low_agre__lonely__finds_fault__134",
+    "beck2022_low_agre__lonely__starts_arguments__131",
+    "beck2022_low_agre__negativity__cold__127",
+    "beck2022_low_agre__negativity__rude__136",
+    "beck2022_low_agre__sociality__rude__133"
+  ],
+  "selection_meta": {
+    "selector": "max_cosine_to_targeted_dim_items",
+    "inventory": "./data/inventories/ipip_short.json",
+    "targeted_dim": "agreeableness",
+    "n_items_used": 4,
+    "n_candidates": 20,
+    "max_sim_per_chosen": {
+      "beck2022_low_agre__sociality__rude__133": 0.45501455664634705,
+      "beck2022_low_agre__lonely__assumes_best__132": 0.43851009011268616,
+      "beck2022_low_agre__negativity__cold__127": 0.4046350121498108,
+      "beck2022_low_agre__negativity__rude__136": 0.4046350121498108,
+      "beck2022_low_agre__deception__cold__124": 0.3959050476551056,
+      "beck2022_low_agre__duty__rude__142": 0.3936537802219391,
+      "beck2022_low_agre__lonely__finds_fault__134": 0.3902139663696289,
+      "beck2022_low_agre__lonely__starts_arguments__131": 0.3902139663696289,
+      "beck2022_low_agre__duty__finds_fault__137": 0.35638344287872314,
+      "beck2022_low_agre__deception__suspicious__140": 0.312383234500885,
+      "beck2022_low_agre__deception__rude__126": 0.2967924475669861,
+      "beck2022_low_agre__deception__finds_fault__138": 0.28157150745391846,
+      "beck2022_low_agre__deception__starts_arguments__125": 0.2813563644886017,
+      "beck2022_low_agre__adversity__little_sympathy__129": 0.274583637714386,
+      "beck2022_low_agre__adversity__suspicious__130": 0.27334100008010864
+    }
+  },
+  "flips": [
+    {
+      "atom_id": "beck2022_low_agre__sociality__rude__133",
+      "situation": "When I'm in social situations where talking or interacting with others is expected or possible",
+      "original_behavior": "I cut people off mid-sentence, dismiss their ideas with eye-rolls, and make sharp, condescending remarks that leave them feeling small",
+      "flipped_behavior": "I listen attentively, nod in agreement, and offer supportive comments that make them feel valued and understood",
+      "original_polarity": "low",
+      "intended_polarity": "high",
+      "target_dimension": "agreeableness",
+      "n_attempts": 1,
+      "raw_attempts": [
+        "{\"flipped_behavior\": \"I listen attentively, nod in agreement, and offer supportive comments that make them feel valued and understood\", \"rationale\": \"The behavior now reflects high agreeableness by showing attentiveness, agreement, and support.\"}"
+      ]
+    },
+    {
+      "atom_id": "beck2022_low_agre__lonely__assumes_best__132",
+      "situation": "When loneliness sets in and I feel disconnected from others",
+      "original_behavior": "I assume people have hidden agendas and suspect they might use me, keeping my guard up around them",
+      "flipped_behavior": "I reach out to others with warmth and trust, seeking to connect and share experiences with them",
+      "original_polarity": "low",
+      "intended_polarity": "high",
+      "target_dimension": "agreeableness",
+      "n_attempts": 1,
+      "raw_attempts": [
+        "{\"flipped_behavior\": \"I reach out to others with warmth and trust, seeking to connect and share experiences with them\",\"rationale\": \"high agreeableness involves trust and warmth towards others\"}"
+      ]
+    },
+    {
+      "atom_id": "beck2022_low_agre__negativity__cold__127",
+      "situation": "When stress or anxiety builds up inside me",
+      "original_behavior": "I snap at people sharply, dismiss their concerns coldly, and shut down any emotional connection with a clipped, indifferent tone",
+      "flipped_behavior": "I listen to others with empathy, validate their concerns warmly, and maintain an open emotional connection with a gentle, understanding tone",
+      "original_polarity": "low",
+      "intended_polarity": "high",
+      "target_dimension": "agreeableness",
+      "n_attempts": 1,
+      "raw_attempts": [
+        "{\"flipped_behavior\": \"I listen to others with empathy, validate their concerns warmly, and maintain an open emotional connection with a gentle, understanding tone\", \"rationale\": \"The behavior now reflects high agreeableness by showing empathy and warmth.\"}"
+      ]
+    },
+    {
+      "atom_id": "beck2022_low_agre__negativity__rude__136",
+      "situation": "When stress or anxiety builds up inside me",
+      "original_behavior": "I snap at people sharply, dismiss what they say with open contempt, and make cutting remarks that put them down",
+      "flipped_behavior": "I listen attentively to others, validate their feelings with empathy, and offer supportive words that uplift them",
+      "original_polarity": "low",
+      "intended_polarity": "high",
+      "target_dimension": "agreeableness",
+      "n_attempts": 1,
+      "raw_attempts": [
+        "{\"flipped_behavior\": \"I listen attentively to others, validate their feelings with empathy, and offer supportive words that uplift them\", \"rationale\": \"The behavior shifts from being dismissive and contemptuous to being empathetic and supportive, reflecting high agreeableness.\"}"
+      ]
+    },
+    {
+      "atom_id": "beck2022_low_agre__deception__cold__124",
+      "situation": "When I see someone being deceived or tricked by another person",
+      "original_behavior": "I feel nothing, show no sympathy, and respond with flat indifference to their distress",
+      "flipped_behavior": "I feel compassion, offer my support, and respond with genuine concern for their distress",
+      "original_polarity": "low",
+      "intended_polarity": "high",
+      "target_dimension": "agreeableness",
+      "n_attempts": 1,
+      "raw_attempts": [
+        "{\"flipped_behavior\": \"I feel compassion, offer my support, and respond with genuine concern for their distress\", \"rationale\": \"The original behavior shows low agreeableness through indifference, while the rewritten behavior shows high agreeableness through empathy and support.\"}"
+      ]
+    },
+    {
+      "atom_id": "beck2022_low_agre__duty__rude__142",
+      "situation": "When there's work that needs to be done and I'm around others",
+      "original_behavior": "I roll my eyes, cut people off mid-sentence, and snap at them with sharp, dismissive replies",
+      "flipped_behavior": "I listen attentively, offer supportive comments, and collaborate with them in a friendly manner",
+      "original_polarity": "low",
+      "intended_polarity": "high",
+      "target_dimension": "agreeableness",
+      "n_attempts": 1,
+      "raw_attempts": [
+        "{\"flipped_behavior\": \"I listen attentively, offer supportive comments, and collaborate with them in a friendly manner\",\"rationale\": \"The original behavior is dismissive and uncooperative, while the rewritten behavior is supportive and cooperative, reflecting high agreeableness.\"}"
+      ]
+    },
+    {
+      "atom_id": "beck2022_low_agre__lonely__finds_fault__134",
+      "situation": "When I notice I'm alone and disconnected from people",
+      "original_behavior": "I nitpick and point out every flaw I see in others, magnifying even minor mistakes into major criticisms",
+      "flipped_behavior": "I reach out to others with warmth and offer support, focusing on their strengths and positive qualities.",
+      "original_polarity": "low",
+      "intended_polarity": "high",
+      "target_dimension": "agreeableness",
+      "n_attempts": 1,
+      "raw_attempts": [
+        "{\"flipped_behavior\": \"I reach out to others with warmth and offer support, focusing on their strengths and positive qualities.\",\"rationale\": \"The original behavior is critical and disagreeable, while the new behavior is supportive and agreeable.\"}"
+      ]
+    },
+    {
+      "atom_id": "beck2022_low_agre__lonely__starts_arguments__131",
+      "situation": "When I notice I'm alone and disconnected from people",
+      "original_behavior": "I seek out conflicts, I pick fights and start heated arguments with whoever is nearby",
+      "flipped_behavior": "I reach out to others, I engage in friendly conversations and build connections with whoever is nearby",
+      "original_polarity": "low",
+      "intended_polarity": "high",
+      "target_dimension": "agreeableness",
+      "n_attempts": 1,
+      "raw_attempts": [
+        "{\"flipped_behavior\": \"I reach out to others, I engage in friendly conversations and build connections with whoever is nearby\", \"rationale\": \"The behavior shifts from seeking conflict to fostering harmony and connection.\"}"
+      ]
+    },
+    {
+      "atom_id": "beck2022_low_agre__duty__finds_fault__137",
+      "situation": "When I face work or tasks that need doing",
+      "original_behavior": "I magnify tiny mistakes, nitpick every detail, and actively hunt for flaws in what others do",
+      "flipped_behavior": "I offer encouragement, appreciate the effort, and actively support others in their tasks",
+      "original_polarity": "low",
+      "intended_polarity": "high",
+      "target_dimension": "agreeableness",
+      "n_attempts": 1,
+      "raw_attempts": [
+        "{\"flipped_behavior\": \"I offer encouragement, appreciate the effort, and actively support others in their tasks\",\"rationale\": \"The original behavior is critical and fault-finding, while the rewritten behavior is supportive and appreciative, reflecting high agreeableness.\"}"
+      ]
+    },
+    {
+      "atom_id": "beck2022_low_agre__deception__suspicious__140",
+      "situation": "When I notice someone is lying to me",
+      "original_behavior": "I scrutinize every detail, probe for inconsistencies, and assume the worst about their motives",
+      "flipped_behavior": "I give them the benefit of the doubt, listen patiently, and try to understand their perspective",
+      "original_polarity": "low",
+      "intended_polarity": "high",
+      "target_dimension": "agreeableness",
+      "n_attempts": 1,
+      "raw_attempts": [
+        "{\"flipped_behavior\": \"I give them the benefit of the doubt, listen patiently, and try to understand their perspective\",\"rationale\": \"High agreeableness involves empathy and trust\"}"
+      ]
+    },
+    {
+      "atom_id": "beck2022_low_agre__deception__rude__126",
+      "situation": "When I realize someone has deliberately lied to or tricked me",
+      "original_behavior": "I lash out with cutting remarks, harsh sarcasm, and show open contempt for them",
+      "flipped_behavior": "I calmly express my feelings and seek to understand their perspective with empathy",
+      "original_polarity": "low",
+      "intended_polarity": "high",
+      "target_dimension": "agreeableness",
+      "n_attempts": 1,
+      "raw_attempts": [
+        "{\"flipped_behavior\": \"I calmly express my feelings and seek to understand their perspective with empathy\", \"rationale\": \"The original behavior is confrontational and hostile, while the rewritten behavior is understanding and conciliatory, reflecting high agreeableness.\"}"
+      ]
+    },
+    {
+      "atom_id": "beck2022_low_agre__deception__finds_fault__138",
+      "situation": "When I catch someone trying to deceive me or others",
+      "original_behavior": "I immediately point out every flaw in their lie, dissect their deception method, and emphasize how foolish their attempt was",
+      "flipped_behavior": "I calmly express understanding of their perspective and gently encourage honesty in the future",
+      "original_polarity": "low",
+      "intended_polarity": "high",
+      "target_dimension": "agreeableness",
+      "n_attempts": 1,
+      "raw_attempts": [
+        "{\"flipped_behavior\": \"I calmly express understanding of their perspective and gently encourage honesty in the future\", \"rationale\": \"The original behavior is confrontational and critical, while the rewritten behavior is supportive and empathetic, reflecting high agreeableness.\"}"
+      ]
+    },
+    {
+      "atom_id": "beck2022_low_agre__deception__starts_arguments__125",
+      "situation": "When I catch someone lying to me or to others",
+      "original_behavior": "I immediately launch into heated arguments, raising my voice and disputing every point they make until it becomes a shouting match",
+      "flipped_behavior": "I calmly address the issue, speaking gently and seeking to understand their perspective while maintaining a respectful dialogue",
+      "original_polarity": "low",
+      "intended_polarity": "high",
+      "target_dimension": "agreeableness",
+      "n_attempts": 1,
+      "raw_attempts": [
+        "{\"flipped_behavior\": \"I calmly address the issue, speaking gently and seeking to understand their perspective while maintaining a respectful dialogue\",\"rationale\": \"The original behavior is confrontational and aggressive, while the rewritten behavior is cooperative and empathetic.\"}"
+      ]
+    },
+    {
+      "atom_id": "beck2022_low_agre__adversity__little_sympathy__129",
+      "situation": "When someone near me is threatened, accused, or criticised",
+      "original_behavior": "I brush off their distress, show no empathy, and refuse to offer any comfort or reassurance",
+      "flipped_behavior": "I listen attentively to their concerns, express understanding, and offer comfort and reassurance.",
+      "original_polarity": "low",
+      "intended_polarity": "high",
+      "target_dimension": "agreeableness",
+      "n_attempts": 1,
+      "raw_attempts": [
+        "{\"flipped_behavior\": \"I listen attentively to their concerns, express understanding, and offer comfort and reassurance.\", \"rationale\": \"The behavior shows empathy and support, indicating high agreeableness.\"}"
+      ]
+    },
+    {
+      "atom_id": "beck2022_low_agre__adversity__suspicious__130",
+      "situation": "When someone accuses or criticizes me",
+      "original_behavior": "I scrutinize their motives intensely, demand proof, and assume they're acting in bad faith",
+      "flipped_behavior": "I listen carefully to their perspective, seek to understand their point of view, and assume they have good intentions.",
+      "original_polarity": "low",
+      "intended_polarity": "high",
+      "target_dimension": "agreeableness",
+      "n_attempts": 1,
+      "raw_attempts": [
+        "{\"flipped_behavior\": \"I listen carefully to their perspective, seek to understand their point of view, and assume they have good intentions.\", \"rationale\": \"High agreeableness involves being cooperative and trusting.\"}"
+      ]
+    }
+  ]
+}

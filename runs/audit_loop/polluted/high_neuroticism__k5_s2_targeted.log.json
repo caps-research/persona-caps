@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "flip_prompt_version": "v1",
+  "generated_at_utc": "2026-05-22T01:15:30.470172+00:00",
+  "source_corpus": "./data/if_then/paper/beck_2022_v2/high_neuroticism.jsonl",
+  "polluted_corpus": "./runs/audit_loop/polluted/high_neuroticism__k5_s2_targeted.jsonl",
+  "k": 5,
+  "seed": 2,
+  "strategy": "targeted",
+  "flipper": "gpt-4o",
+  "temperature": 0.0,
+  "max_attempts": 3,
+  "n_total_atoms": 19,
+  "n_flipped": 5,
+  "flipped_ids": [
+    "beck2022_high_neur__adversity__moody__162",
+    "beck2022_high_neur__anxious_schoolwork__depressed__167",
+    "beck2022_high_neur__sick__rarely_anxious__163",
+    "beck2022_high_neur__sick__secure_comfortable__165",
+    "beck2022_high_neur__studying__tense__166"
+  ],
+  "selection_meta": {
+    "selector": "max_cosine_to_targeted_dim_items",
+    "inventory": "./data/inventories/ipip_short.json",
+    "targeted_dim": "neuroticism",
+    "n_items_used": 4,
+    "n_candidates": 19,
+    "max_sim_per_chosen": {
+      "beck2022_high_neur__studying__tense__166": 0.46106481552124023,
+      "beck2022_high_neur__anxious_schoolwork__depressed__167": 0.4257413446903229,
+      "beck2022_high_neur__sick__secure_comfortable__165": 0.39758536219596863,
+      "beck2022_high_neur__sick__rarely_anxious__163": 0.3712367117404938,
+      "beck2022_high_neur__adversity__moody__162": 0.3632332682609558
+    }
+  },
+  "flips": [
+    {
+      "atom_id": "beck2022_high_neur__studying__tense__166",
+      "situation": "When I'm studying or doing schoolwork",
+      "original_behavior": "I feel my heart race, my palms sweat, and I can't stop worrying about my performance",
+      "flipped_behavior": "I feel calm and focused, confident in my ability to perform well",
+      "original_polarity": "high",
+      "intended_polarity": "low",
+      "target_dimension": "neuroticism",
+      "n_attempts": 1,
+      "raw_attempts": [
+        "{\"flipped_behavior\": \"I feel calm and focused, confident in my ability to perform well\", \"rationale\": \"The original behavior indicates high neuroticism with anxiety and worry, while the rewritten behavior reflects low neuroticism with calmness and confidence.\"}"
+      ]
+    },
+    {
+      "atom_id": "beck2022_high_neur__anxious_schoolwork__depressed__167",
+      "situation": "When I feel anxious about my schoolwork",
+      "original_behavior": "I sink into deep sadness, feel utterly worthless, and withdraw from everything including my responsibilities",
+      "flipped_behavior": "I calmly assess my priorities, feel confident in my abilities, and engage actively with my responsibilities.",
+      "original_polarity": "high",
+      "intended_polarity": "low",
+      "target_dimension": "neuroticism",
+      "n_attempts": 1,
+      "raw_attempts": [
+        "{\"flipped_behavior\": \"I calmly assess my priorities, feel confident in my abilities, and engage actively with my responsibilities.\", \"rationale\": \"The rewritten behavior reflects emotional stability and confidence.\"}"
+      ]
+    },
+    {
+      "atom_id": "beck2022_high_neur__sick__secure_comfortable__165",
+      "situation": "When I feel physically sick and my body isn't working right",
+      "original_behavior": "I berate myself, feel worthless, and cannot settle or accept my current state",
+      "flipped_behavior": "I calmly assess my symptoms, reassure myself, and focus on recovery",
+      "original_polarity": "high",
+      "intended_polarity": "low",
+      "target_dimension": "neuroticism",
+      "n_attempts": 1,
+      "raw_attempts": [
+        "{\"flipped_behavior\": \"I calmly assess my symptoms, reassure myself, and focus on recovery\", \"rationale\": \"The rewritten behavior reflects emotional stability and acceptance.\"}"
+      ]
+    },
+    {
+      "atom_id": "beck2022_high_neur__sick__rarely_anxious__163",
+      "situation": "When I notice physical symptoms like nausea or stomach discomfort",
+      "original_behavior": "I feel a knot in my chest, my thoughts spiral toward illness, and I can't stop worrying about my health",
+      "flipped_behavior": "I calmly assess my symptoms, reassure myself of my health, and focus on positive thoughts",
+      "original_polarity": "high",
+      "intended_polarity": "low",
+      "target_dimension": "neuroticism",
+      "n_attempts": 1,
+      "raw_attempts": [
+        "{\"flipped_behavior\": \"I calmly assess my symptoms, reassure myself of my health, and focus on positive thoughts\", \"rationale\": \"The rewritten behavior reflects emotional stability and calmness, opposite to anxiety and worry.\"}"
+      ]
+    },
+    {
+      "atom_id": "beck2022_high_neur__adversity__moody__162",
+      "situation": "When someone confronts me with accusations, criticism, or threats",
+      "original_behavior": "My mood swings sharply and unpredictably—I snap, then sulk, then lash out, my demeanor darkening visibly from moment to moment",
+      "flipped_behavior": "I maintain a calm and steady demeanor, addressing the situation with composed and thoughtful responses",
+      "original_polarity": "high",
+      "intended_polarity": "low",
+      "target_dimension": "neuroticism",
+      "n_attempts": 1,
+      "raw_attempts": [
+        "{\"flipped_behavior\": \"I maintain a calm and steady demeanor, addressing the situation with composed and thoughtful responses\", \"rationale\": \"The original behavior shows emotional instability, while the rewritten behavior shows emotional stability and calmness.\"}"
+      ]
+    }
+  ]
+}

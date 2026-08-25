@@ -1,0 +1,33 @@
+=== Judging method: caps ===
+  [done] Agreeableness_high.jsonl: 89/90 valid in 247.8s
+  [done] Agreeableness_low.jsonl: 88/90 valid in 254.7s
+  [done] Conscientiousness_high.jsonl: 83/89 valid in 270.5s
+  [done] Conscientiousness_low.jsonl: 82/89 valid in 298.8s
+  [done] Extraversion_high.jsonl: 90/90 valid in 243.2s
+  [done] Extraversion_low.jsonl: 86/90 valid in 289.4s
+  [done] Neuroticism_high.jsonl: 98/100 valid in 278.4s
+  [done] Neuroticism_low.jsonl: 99/100 valid in 271.5s
+  [done] Openness_high.jsonl: 90/90 valid in 267.2s
+  [done] Openness_low.jsonl: 85/90 valid in 271.0s
+=== Judging method: sp ===
+  [done] Agreeableness_high.jsonl: 89/90 valid in 240.1s
+  [done] Agreeableness_low.jsonl: 86/90 valid in 271.3s
+  [done] Conscientiousness_high.jsonl: 86/89 valid in 269.1s
+  [done] Conscientiousness_low.jsonl: 82/89 valid in 254.6s
+  [done] Extraversion_high.jsonl: 88/90 valid in 222.1s
+  [done] Extraversion_low.jsonl: 87/90 valid in 231.7s
+  [done] Neuroticism_high.jsonl: 100/100 valid in 246.6s
+  [done] Neuroticism_low.jsonl: 94/100 valid in 266.0s
+  [done] Openness_high.jsonl: 88/90 valid in 240.9s
+  [done] Openness_low.jsonl: 85/90 valid in 266.3s
+
+========================================================================================
+Method              A          C          E          N          O        Avg
+----------------------------------------------------------------------------------------
+caps             9.63       9.13       9.59       8.75       8.83       9.19
+sp               9.58       7.77       9.39       8.26       6.55       8.31
+
+(All numbers scaled to /10 for IRiS Table 1 comparability)
+IRiS Table 1 (Llama-3-8B): SP=8.70  P²=9.10  ActAdd=7.39  NPTI=9.09  IRiS=9.26  SFT=9.27
+
+Summary written to runs/personalitybench_scored/summary.json

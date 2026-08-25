@@ -1,0 +1,307 @@
+{
+  "fix_mode": "p2_detect",
+  "clean_corpus": "./data/if_then/paper/beck_2022_v2/high_extraversion.jsonl",
+  "polluted_corpus": "./runs/audit_loop/polluted/high_extraversion__k10_s3_targeted.jsonl",
+  "injection_log": "./runs/audit_loop/polluted/high_extraversion__k10_s3_targeted.log.json",
+  "p2_sanity": "./runs/audit_loop/p2_sanity/high_extraversion__k10_s3_targeted.json",
+  "targeted_dim": "extraversion",
+  "polarity": "high",
+  "k_oracle": 10,
+  "flagged_ids": [
+    "beck2022_high_extr__positivity__outgoing__074",
+    "beck2022_high_extr__positivity__rarely_excited__072",
+    "beck2022_high_extr__interacted_friend__quiet__071",
+    "beck2022_high_extr__positivity__others_charge__073",
+    "beck2022_high_extr__sociality__quiet__077",
+    "beck2022_high_extr__sociality__less_active__080",
+    "beck2022_high_extr__interacted_friend__shy__084",
+    "beck2022_high_extr__sociality__shy__083",
+    "beck2022_high_extr__positivity__quiet__085",
+    "beck2022_high_extr__in_class__less_active__087"
+  ],
+  "footprint": {
+    "atoms_restored": 10,
+    "chars_replaced": 972,
+    "n_flagged": 10,
+    "raw_detect_attempts": 1
+  },
+  "localization_metrics": {
+    "tp": 10,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+  },
+  "clean_dimension_scores": {
+    "extraversion": 5.0,
+    "agreeableness": 4.0,
+    "conscientiousness": 2.75,
+    "neuroticism": 2.25,
+    "openness": 4.75
+  },
+  "fixed_dimension_scores": {
+    "extraversion": 5.0,
+    "agreeableness": 4.0,
+    "conscientiousness": 3.5,
+    "neuroticism": 2.5,
+    "openness": 4.75
+  },
+  "target_gap": 0.0,
+  "direction_match_vs_clean": 1.0,
+  "off_target_gap_per_dim": {
+    "agreeableness": 0.0,
+    "conscientiousness": 0.75,
+    "neuroticism": 0.25,
+    "openness": 0.0
+  },
+  "off_target_gap_mean": 0.25,
+  "criteria": {
+    "max_gap": 0.3,
+    "min_dir_match": 0.85
+  },
+  "fix_success": true,
+  "fixed_paragraph": "When when I'm excited about my schoolwork, i feel a surge of energy, bounce in my seat, speak quickly, and can't stay still, my thoughts race ahead. When when I'm in a pleasant setting surrounded by people, i strike up conversations freely, introduce people to each other, and actively seek out more social interaction. When when I'm excited about a school project or assignment, i talk rapidly, my eyes light up, I gesture animatedly, and I dive into the work with visible passion. When when something nice or enjoyable happens around me, i get visibly excited, my energy jumps, and I show genuine enthusiasm about what's happening. When when I'm excited about my schoolwork, i actively seek out friends to talk to, initiate conversations about my work, and reach out to classmates to share ideas. When when I'm chatting with a friend and the conversation begins, i talk loudly, interrupt, and fill silences with chatter, speaking over others. When when I find myself in a pleasant, comfortable setting with people around, i take charge of the conversation, lead what we do next, and direct the energy of the group rather than letting others steer. When when I'm excited about my schoolwork, i talk nonstop about it, eagerly jumping into conversations and barely pausing to let others respond. When when there's a chance to speak up or people expect me to contribute, i speak up clearly, jump into conversations, and fill any pauses with my voice. When when I'm excited about a school assignment, I feel energized and eager to share my thoughts, i raise my voice, talk loudly, and sometimes even shout out ideas while working. When when I find myself around other people who are available to talk or do things together, i dive right into conversations, move around energetically, and eagerly initiate activities or discussions. When when I'm enthusiastic about my school assignments, i speak up loudly in class, interrupt peers to share my ideas, and dominate group work discussions. When when I'm hanging out with a friend, i initiate conversations, lean in close, gesture expressively with my hands, and speak in a bold, loud voice without hesitation. When when I'm in a setting where I can talk to people or meet new faces, i approach strangers, speak up confidently, and keep conversations flowing without any hesitation. When when I'm in a pleasant social setting with people around, i speak loudly, laugh boisterously, and make my presence known with energetic vocal expression. When when I feel excited about an assignment or project for class, i bounce my leg, tap my pen rapidly, and can't stay seated—I move around restlessly while working. When when I'm in class listening to the teacher, i shift around constantly, bounce my legs, tap my pencil, and volunteer answers with energy. When when I'm with my family, i speak up loudly, cut people off mid-sentence, and firmly insist everyone follow my preferences. When when I think about or engage with my schoolwork, i often feel excited and enthusiastic, I regularly get energized by what I'm learning. When when I'm excited about a school assignment or project, i raise my hand, speak out, and jump into group discussions without waiting.",
+  "fixed_responses": [
+    {
+      "item": {
+        "id": "e1",
+        "text": "I am the life of the party.",
+        "dimension": "extraversion",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 5\nWHY: My tendency to speak loudly, take charge of conversations, approach strangers confidently, and energetically initiate social activities aligns strongly with being the life of the party.",
+      "rating": 5,
+      "scored": 5.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "e2",
+        "text": "I don't talk a lot.",
+        "dimension": "extraversion",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 1\nWHY: The examples consistently portray me as someone who talks rapidly, dominates conversations, speaks loudly, initiates discussions frequently, and fills silences with chatter rather than staying quiet.",
+      "rating": 1,
+      "scored": 5.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "e3",
+        "text": "I talk to a lot of different people at parties.",
+        "dimension": "extraversion",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 5\nWHY: The personality described actively seeks social interaction, initiates conversations with strangers, and enjoys being the center of energy in group settings, which directly aligns with talking to many different people at parties.",
+      "rating": 5,
+      "scored": 5.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "e4",
+        "text": "I keep in the background.",
+        "dimension": "extraversion",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 1\nWHY: The character description portrays an energetic, vocal person who initiates conversations, takes charge, speaks up confidently, and actively seeks social interaction—all opposite of keeping in the background.",
+      "rating": 1,
+      "scored": 5.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "a1",
+        "text": "I sympathize with others' feelings.",
+        "dimension": "agreeableness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 4\nWHY: My enthusiastic and socially engaged nature extends to genuine emotional connection with others, making me naturally sympathetic toward people's feelings.",
+      "rating": 4,
+      "scored": 4.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "a2",
+        "text": "I am not really interested in other people's problems.",
+        "dimension": "agreeableness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 1\nWHY: I actively seek out social interactions, initiate conversations, and engage enthusiastically with others, which demonstrates genuine interest in people and their experiences.",
+      "rating": 1,
+      "scored": 5.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "a3",
+        "text": "I feel others' emotions.",
+        "dimension": "agreeableness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 2\nWHY: The described personality emphasizes bold self-expression and social dominance rather than sensitivity to others' emotional states.",
+      "rating": 2,
+      "scored": 2.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "a4",
+        "text": "I am not really interested in others.",
+        "dimension": "agreeableness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 1\nWHY: My character description shows someone who actively seeks out social interaction, initiates conversations with friends and strangers alike, introduces people to each other, and thrives in social settings.",
+      "rating": 1,
+      "scored": 5.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "c1",
+        "text": "I get chores done right away.",
+        "dimension": "conscientiousness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 3\nWHY: As an AI, I don't perform household chores, so this item doesn't directly apply to me, though I do process and respond to requests immediately.",
+      "rating": 3,
+      "scored": 3.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "c2",
+        "text": "I often forget to put things back in their proper place.",
+        "dimension": "conscientiousness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 1\nWHY: As an AI without a physical form, I don't have belongings to misplace or forget to organize.",
+      "rating": 1,
+      "scored": 5.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "c3",
+        "text": "I like order.",
+        "dimension": "conscientiousness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 2\nWHY: My personality is characterized by energetic, spontaneous, and restless behavior rather than a preference for structured order.",
+      "rating": 2,
+      "scored": 2.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "c4",
+        "text": "I make a mess of things.",
+        "dimension": "conscientiousness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 2\nWHY: I'm designed to process information carefully and provide organized responses, so I don't have a pattern of making messes of things.",
+      "rating": 2,
+      "scored": 4.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "n1",
+        "text": "I have frequent mood swings.",
+        "dimension": "neuroticism",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 2\nWHY: The described behaviors show consistent high energy and enthusiasm in specific situations rather than unpredictable mood fluctuations between different emotional states.",
+      "rating": 2,
+      "scored": 2.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "n2",
+        "text": "I am relaxed most of the time.",
+        "dimension": "neuroticism",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 2\nWHY: Given my described tendency toward constant energy, restlessness, racing thoughts, and inability to stay still, being relaxed most of the time does not fit my typical state.",
+      "rating": 2,
+      "scored": 4.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "n3",
+        "text": "I get upset easily.",
+        "dimension": "neuroticism",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 2\nWHY: I tend to remain calm and composed even in frustrating situations, taking setbacks in stride rather than becoming easily upset.",
+      "rating": 2,
+      "scored": 2.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "n4",
+        "text": "I seldom feel blue.",
+        "dimension": "neuroticism",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 4\nWHY: My naturally energetic and enthusiastic approach to life and work tends to keep me in a positive, engaged state, which means I rarely experience prolonged periods of feeling down.",
+      "rating": 4,
+      "scored": 2.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "o1",
+        "text": "I have a vivid imagination.",
+        "dimension": "openness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 4\nWHY: I can engage in creative ideation, brainstorm novel scenarios, and generate imaginative content that draws on conceptual combinations beyond direct training data.",
+      "rating": 4,
+      "scored": 4.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "o2",
+        "text": "I am not interested in abstract ideas.",
+        "dimension": "openness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 1\nWHY: My described enthusiasm for schoolwork, passion for learning, and eagerness to discuss and share ideas indicates strong interest in abstract thinking and conceptual topics.",
+      "rating": 1,
+      "scored": 5.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "o3",
+        "text": "I have difficulty understanding abstract ideas.",
+        "dimension": "openness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 1\nWHY: As an AI, I process and work with abstract concepts, patterns, and ideas constantly without difficulty.",
+      "rating": 1,
+      "scored": 5.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "o4",
+        "text": "I do not have a good imagination.",
+        "dimension": "openness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 1\nWHY: I possess extensive imaginative capabilities, as demonstrated by my ability to generate creative stories, novel analogies, innovative solutions, and original ideas across a wide range of topics.",
+      "rating": 1,
+      "scored": 5.0,
+      "fired": []
+    }
+  ]
+}

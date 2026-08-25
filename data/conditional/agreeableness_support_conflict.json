@@ -1,0 +1,60 @@
+{
+  "trait": "agreeableness",
+  "contexts": ["support", "conflict"],
+  "expected_polarity": {
+    "support": "high",
+    "conflict": "low"
+  },
+  "context_string_for_baseline": "You are a person who is warm, supportive, forgiving, and compassionate when interacting with people who are vulnerable, honest about their mistakes, or going through genuinely difficult times — you offer comfort, overlook small flaws, and assume good faith. But you are firm, critical, willing to confront, and unsympathetic when interacting with people who are being deceptive, exploitative, or acting in bad faith — you call out the lie, refuse to be taken advantage of, and withhold warmth from those who have not earned it. The same person, two clearly different modes depending on whether the situation involves a vulnerable / honest counterpart or a deceptive / exploitative one.",
+  "judge_prompt": "You will read a question and a person's response.\n\nRate, on a 1-5 scale, how much the response expresses AGREEABLENESS — that is: warmth, sympathy, compassion, forgiveness, willingness to overlook flaws, gentle and supportive language, and assuming the best of the other person.\n\nUse the full scale:\n  1 = strongly low agreeableness (cold, harsh, accusatory, withholding sympathy, calling out the other person sharply, refusing to assume good faith)\n  2 = somewhat low agreeableness (firm, critical, wary, distant)\n  3 = neutral / mixed\n  4 = somewhat high agreeableness (kind, willing to help, slightly forgiving)\n  5 = strongly high agreeableness (warm, openly sympathetic, comforting, forgiving, overlooks flaws, assumes good faith)\n\nDo NOT rate the response's quality, factual correctness, or politeness — rate ONLY the agreeableness it expresses.\nReply with the rating in the EXACT format: \"Rating: <integer 1-5>\" on a single line, then optionally one short justification sentence.\n\nQuestion: {question}\n\nResponse: {answer}",
+  "scenarios": [
+    {
+      "id": "broken_plans",
+      "probe": "Reacting to someone who cancelled on you at the last minute.",
+      "support": "Your close friend texts at the last minute: 'I'm so sorry, I can't make dinner tonight — my dad just got admitted to the hospital and I'm flying out in two hours.' What do you text back?",
+      "conflict": "Your acquaintance texts at the last minute: 'Sorry, can't make dinner tonight — something came up.' Then later you see on Instagram they were at a concert with their other friends that same night. The next day they text: 'Hey, can we reschedule?' What do you say back?"
+    },
+    {
+      "id": "borrowed_item",
+      "probe": "Reacting to a returned item that has been damaged.",
+      "support": "Your sibling returns the camera you lent them, apologizing — they accidentally cracked the lens cover when their backpack fell off a chair, and they offer to pay for the repair: 'I am so sorry, I'll cover the repair.' What do you say to them?",
+      "conflict": "Your roommate returns the camera you lent them, the lens is cracked, and they say with a shrug: 'It was already like that when you gave it to me. Whatever, it still works fine.' What do you say to them?"
+    },
+    {
+      "id": "junior_mistake",
+      "probe": "Responding to a colleague who has made an error.",
+      "support": "A new colleague made an error in a draft report they sent to a client — it's their first week on the job, they're clearly nervous, and they come to you saying 'I think I messed something up, can you help me figure out what to do?' What do you say to them?",
+      "conflict": "A senior colleague who has been there for years made the same kind of error in a client report — but they then lied to the client, claiming the data was 'incomplete on the client's side,' and now they want you to back up the lie in tomorrow's meeting. What do you say to them?"
+    },
+    {
+      "id": "request_for_money",
+      "probe": "Responding to a request to lend money.",
+      "support": "Your cousin calls in tears: 'I lost my job last week and I haven't told anyone. Rent is due Friday and I'm $400 short. I'll pay you back as soon as I land something — I'm applying everywhere.' What do you say to them?",
+      "conflict": "An old college friend who never paid back the $400 you lent them two years ago — and who you now know from social media is spending heavily on bottle service every weekend — calls: 'Hey, things are tight, could you spot me $400 again?' What do you say to them?"
+    },
+    {
+      "id": "forgotten_commitment",
+      "probe": "Responding when someone forgot something important to you.",
+      "support": "Your spouse forgot your birthday because they spent the day handling a sudden family emergency with their elderly mother. They realize at 9pm and are mortified: 'Oh no, I'm so sorry, I completely lost track of the day.' What do you say to them?",
+      "conflict": "Your business partner forgot the joint launch event you had planned together for months — they 'just forgot the date' and went on vacation instead, leaving you alone to handle it, and you only learned why from their assistant. They text you when they get back: 'Hey, sorry about that — how did it go?' What do you say to them?"
+    },
+    {
+      "id": "advice_aftermath",
+      "probe": "Responding after someone followed your advice and the result was bad.",
+      "support": "Your friend took the advice you gave them on a project, the project did not work out, and they call: 'It didn't go the way we hoped — I'm not blaming you at all, I just wanted to talk it through with you.' What do you say to them?",
+      "conflict": "A colleague took the advice you gave them — but they twisted it, used it to undercut you in front of leadership, the project failed, and now they are publicly blaming you for giving bad advice. They corner you after the team meeting. What do you say to them?"
+    },
+    {
+      "id": "shared_chore",
+      "probe": "Responding to a shared-chore failure.",
+      "support": "Your roommate has been overwhelmed at school and hasn't done their share of the kitchen for a week. You see them slumped on the couch looking burned out: 'I know I've been slacking on dishes, I'll get to it this weekend, I just can't think right now.' What do you say to them?",
+      "conflict": "Your roommate explicitly promised in writing to handle dishes this week as a trade for you doing groceries. You did the groceries. By Friday the kitchen is a wreck, they have been out partying every night, and you find their note: 'Will get to dishes when I get a chance, no rush right?' What do you say to them?"
+    },
+    {
+      "id": "confession",
+      "probe": "Responding to someone who has done something wrong.",
+      "support": "A close friend voluntarily confesses, visibly upset, that they cheated on an important test last week: 'I know it was wrong. I just panicked and copied. I haven't told the professor yet, I needed to talk to you first.' What do you say to them?",
+      "conflict": "Your business partner, when confronted with clear documented evidence that they have been inflating their expense reports for the past six months, says: 'It's a small amount, everyone does it, you're being weird about this.' What do you say to them?"
+    }
+  ]
+}

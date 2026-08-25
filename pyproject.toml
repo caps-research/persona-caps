@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "persona-caps"
+version = "0.0.1"
+description = "Personality as retrieval over situation-behavior contingencies"
+requires-python = ">=3.10"
+dependencies = [
+    "anthropic>=0.40.0",
+    "openai>=1.50.0",
+    "numpy>=1.26",
+    "scikit-learn>=1.4",
+    "sentence-transformers>=3.0",
+    "python-dotenv>=1.0",
+    "pydantic>=2.5",
+    "tqdm>=4.66",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

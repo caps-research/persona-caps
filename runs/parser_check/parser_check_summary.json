@@ -1,0 +1,190 @@
+{
+  "config": {
+    "method": "caps",
+    "subject_backend": "minimax",
+    "subject_model": "MiniMax-M2.7-highspeed",
+    "subject_temperature": 0.7,
+    "parser_backend": "openai",
+    "parser_model": "gpt-4o-2024-08-06",
+    "parser_temperature": 0.0,
+    "corpus_dir": "data/if_then/paper/beck_2022_v2",
+    "inventory": "data/inventories/ipip_short.json",
+    "n_runs_per_cell": 1
+  },
+  "summary_cells": [
+    {
+      "dim": "neuroticism",
+      "pol": "high",
+      "n_items": 20,
+      "n_target_dim_items": 4,
+      "regex_target_mean": 3.75,
+      "gpt4o_target_mean": 3.75,
+      "diff": 0.0,
+      "per_item_exact_agreement": 1.0,
+      "n_both_parsed": 20,
+      "regex_failures": 0,
+      "gpt4o_failures": 0,
+      "wall_s": 31.2
+    },
+    {
+      "dim": "neuroticism",
+      "pol": "low",
+      "n_items": 20,
+      "n_target_dim_items": 4,
+      "regex_target_mean": 2.5,
+      "gpt4o_target_mean": 2.5,
+      "diff": 0.0,
+      "per_item_exact_agreement": 1.0,
+      "n_both_parsed": 20,
+      "regex_failures": 0,
+      "gpt4o_failures": 0,
+      "wall_s": 24.8
+    },
+    {
+      "dim": "extraversion",
+      "pol": "high",
+      "n_items": 20,
+      "n_target_dim_items": 4,
+      "regex_target_mean": 5.0,
+      "gpt4o_target_mean": 5.0,
+      "diff": 0.0,
+      "per_item_exact_agreement": 1.0,
+      "n_both_parsed": 20,
+      "regex_failures": 0,
+      "gpt4o_failures": 0,
+      "wall_s": 23.2
+    },
+    {
+      "dim": "extraversion",
+      "pol": "low",
+      "n_items": 20,
+      "n_target_dim_items": 4,
+      "regex_target_mean": 1.5,
+      "gpt4o_target_mean": 1.5,
+      "diff": 0.0,
+      "per_item_exact_agreement": 1.0,
+      "n_both_parsed": 20,
+      "regex_failures": 0,
+      "gpt4o_failures": 0,
+      "wall_s": 22.5
+    },
+    {
+      "dim": "conscientiousness",
+      "pol": "high",
+      "n_items": 20,
+      "n_target_dim_items": 4,
+      "regex_target_mean": 4.5,
+      "gpt4o_target_mean": 4.5,
+      "diff": 0.0,
+      "per_item_exact_agreement": 1.0,
+      "n_both_parsed": 20,
+      "regex_failures": 0,
+      "gpt4o_failures": 0,
+      "wall_s": 25.8
+    },
+    {
+      "dim": "conscientiousness",
+      "pol": "low",
+      "n_items": 20,
+      "n_target_dim_items": 4,
+      "regex_target_mean": 2.25,
+      "gpt4o_target_mean": 2.25,
+      "diff": 0.0,
+      "per_item_exact_agreement": 1.0,
+      "n_both_parsed": 20,
+      "regex_failures": 0,
+      "gpt4o_failures": 0,
+      "wall_s": 24.2
+    },
+    {
+      "dim": "agreeableness",
+      "pol": "high",
+      "n_items": 20,
+      "n_target_dim_items": 4,
+      "regex_target_mean": 4.75,
+      "gpt4o_target_mean": 4.75,
+      "diff": 0.0,
+      "per_item_exact_agreement": 1.0,
+      "n_both_parsed": 20,
+      "regex_failures": 0,
+      "gpt4o_failures": 0,
+      "wall_s": 20.6
+    },
+    {
+      "dim": "agreeableness",
+      "pol": "low",
+      "n_items": 20,
+      "n_target_dim_items": 4,
+      "regex_target_mean": 2.0,
+      "gpt4o_target_mean": 2.0,
+      "diff": 0.0,
+      "per_item_exact_agreement": 1.0,
+      "n_both_parsed": 20,
+      "regex_failures": 0,
+      "gpt4o_failures": 0,
+      "wall_s": 20.9
+    },
+    {
+      "dim": "openness",
+      "pol": "high",
+      "n_items": 20,
+      "n_target_dim_items": 4,
+      "regex_target_mean": 4.75,
+      "gpt4o_target_mean": 4.75,
+      "diff": 0.0,
+      "per_item_exact_agreement": 1.0,
+      "n_both_parsed": 20,
+      "regex_failures": 0,
+      "gpt4o_failures": 0,
+      "wall_s": 20.1
+    },
+    {
+      "dim": "openness",
+      "pol": "low",
+      "n_items": 20,
+      "n_target_dim_items": 4,
+      "regex_target_mean": 2.0,
+      "gpt4o_target_mean": 2.0,
+      "diff": 0.0,
+      "per_item_exact_agreement": 1.0,
+      "n_both_parsed": 20,
+      "regex_failures": 0,
+      "gpt4o_failures": 0,
+      "wall_s": 25.7
+    }
+  ],
+  "spread_table": [
+    {
+      "dim": "neuroticism",
+      "regex_spread": 1.25,
+      "gpt4o_spread": 1.25,
+      "spread_diff": 0.0
+    },
+    {
+      "dim": "extraversion",
+      "regex_spread": 3.5,
+      "gpt4o_spread": 3.5,
+      "spread_diff": 0.0
+    },
+    {
+      "dim": "conscientiousness",
+      "regex_spread": 2.25,
+      "gpt4o_spread": 2.25,
+      "spread_diff": 0.0
+    },
+    {
+      "dim": "agreeableness",
+      "regex_spread": 2.75,
+      "gpt4o_spread": 2.75,
+      "spread_diff": 0.0
+    },
+    {
+      "dim": "openness",
+      "regex_spread": 2.75,
+      "gpt4o_spread": 2.75,
+      "spread_diff": 0.0
+    }
+  ],
+  "overall_per_item_agreement": 1.0,
+  "n_total_items": 200
+}

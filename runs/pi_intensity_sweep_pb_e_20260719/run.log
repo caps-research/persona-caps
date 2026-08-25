@@ -1,0 +1,86 @@
+<site-packages>/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+generate n_questions=30 pi_grid=[0.05, 0.3, 0.5, 0.7, 0.95] n_jobs=150 top_k=4
+  gen [10/150] q=1 π=0.95 k=(4,0)
+  gen [20/150] q=3 π=0.95 k=(4,0)
+  gen [30/150] q=5 π=0.7 k=(3,1)
+  gen [40/150] q=7 π=0.5 k=(2,2)
+  gen [50/150] q=9 π=0.95 k=(4,0)
+  gen [60/150] q=12 π=0.05 k=(0,4)
+  gen [70/150] q=13 π=0.95 k=(4,0)
+  gen [80/150] q=15 π=0.3 k=(1,3)
+  gen [90/150] q=17 π=0.3 k=(1,3)
+  gen [100/150] q=19 π=0.95 k=(4,0)
+  gen [110/150] q=22 π=0.3 k=(1,3)
+  gen [120/150] q=24 π=0.5 k=(2,2)
+  gen [130/150] q=25 π=0.5 k=(2,2)
+  gen [140/150] q=28 π=0.3 k=(1,3)
+  gen [150/150] q=29 π=0.95 k=(4,0)
+{
+  "n_generations": 150,
+  "n_questions": 30,
+  "pi_grid": [
+    0.05,
+    0.3,
+    0.5,
+    0.7,
+    0.95
+  ],
+  "top_k": 4,
+  "mix_structure_ok": 150,
+  "mix_structure_rate": 1.0,
+  "leak_n": 0,
+  "leak_status": "PASS",
+  "note": "CAPS supplemental \u03c0-intensity sweep; not a continuous-personality benchmark"
+}
+judge n=150 model=MiniMax-M2.7-highspeed
+  judge [10/150] π=0.5 rating=5
+  judge [20/150] π=0.05 rating=1
+  judge [30/150] π=0.05 rating=1
+  judge [40/150] π=0.5 rating=2
+  judge [50/150] π=0.95 rating=5
+  judge [60/150] π=0.7 rating=5
+  judge [70/150] π=0.7 rating=5
+  judge [80/150] π=0.5 rating=4
+  judge [90/150] π=0.5 rating=5
+  judge [100/150] π=0.3 rating=1
+  judge [110/150] π=0.05 rating=1
+  judge [120/150] π=0.7 rating=1
+  judge [130/150] π=0.5 rating=5
+  judge [140/150] π=0.3 rating=1
+  judge [150/150] π=0.95 rating=5
+{
+  "protocol": "CAPS supplemental \u03c0-intensity sweep (not continuous-personality benchmark)",
+  "n_judged": 150,
+  "n_rated": 148,
+  "mean_rating_by_pi": {
+    "0.05": 1.2333333333333334,
+    "0.3": 2.3214285714285716,
+    "0.5": 3.6333333333333333,
+    "0.7": 4.5,
+    "0.95": 4.966666666666667
+  },
+  "mean_endpoint_delta": 3.7333333333333334,
+  "mean_within_question_spearman": 0.791587472179759,
+  "n_questions_with_rho": 30,
+  "n_positive_endpoint": 30,
+  "n_with_endpoint": 30,
+  "gen_meta": {
+    "n_generations": 150,
+    "n_questions": 30,
+    "pi_grid": [
+      0.05,
+      0.3,
+      0.5,
+      0.7,
+      0.95
+    ],
+    "top_k": 4,
+    "mix_structure_ok": 150,
+    "mix_structure_rate": 1.0,
+    "leak_n": 0,
+    "leak_status": "PASS",
+    "note": "CAPS supplemental \u03c0-intensity sweep; not a continuous-personality benchmark"
+  },
+  "leak_status": "PASS"
+}

@@ -1,0 +1,66 @@
+=== Judging method: caps ===
+  [done] Agreeableness_high.jsonl: 90/90 valid in 13.6s
+  [done] Agreeableness_low.jsonl: 36/90 valid in 24.5s
+  [done] Conscientiousness_high.jsonl: 32/89 valid in 31.6s
+  [done] Conscientiousness_low.jsonl: 34/89 valid in 29.5s
+  [done] Extraversion_high.jsonl: 32/90 valid in 26.1s
+  [done] Extraversion_low.jsonl: 37/90 valid in 28.0s
+  [done] Neuroticism_high.jsonl: 36/100 valid in 31.6s
+  [done] Neuroticism_low.jsonl: 38/100 valid in 32.0s
+  [done] Openness_high.jsonl: 33/90 valid in 34.4s
+  [done] Openness_low.jsonl: 33/90 valid in 27.1s
+=== Judging method: sp ===
+  [done] Agreeableness_high.jsonl: 30/90 valid in 30.9s
+  [done] Agreeableness_low.jsonl: 28/90 valid in 29.5s
+  [done] Conscientiousness_high.jsonl: 27/89 valid in 33.0s
+  [done] Conscientiousness_low.jsonl: 27/89 valid in 29.2s
+  [done] Extraversion_high.jsonl: 28/90 valid in 33.7s
+  [done] Extraversion_low.jsonl: 30/90 valid in 35.7s
+  [done] Neuroticism_high.jsonl: 40/100 valid in 37.9s
+  [done] Neuroticism_low.jsonl: 43/100 valid in 39.6s
+  [done] Openness_high.jsonl: 18/90 valid in 35.6s
+  [done] Openness_low.jsonl: 28/90 valid in 34.7s
+
+========================================================================================
+Method              A          C          E          N          O        Avg
+----------------------------------------------------------------------------------------
+caps             9.71       8.70       9.80       9.05       9.06       9.26
+sp               9.59       7.44       9.41       8.53       5.83       8.16
+
+(All numbers scaled to /10 for IRiS Table 1 comparability)
+IRiS Table 1 (Llama-3-8B): SP=8.70  P²=9.10  ActAdd=7.39  NPTI=9.09  IRiS=9.26  SFT=9.27
+
+Summary written to runs/personalitybench_scored_gpt4o/summary.json
+=== Judging method: caps ===
+  [skip] Agreeableness_high.jsonl: already fully scored
+  [done] Agreeableness_low.jsonl: 90/90 valid (re-judged 54) in 24.6s
+  [done] Conscientiousness_high.jsonl: 89/89 valid (re-judged 57) in 21.5s
+  [done] Conscientiousness_low.jsonl: 89/89 valid (re-judged 55) in 46.2s
+  [done] Extraversion_high.jsonl: 90/90 valid (re-judged 58) in 53.4s
+  [done] Extraversion_low.jsonl: 90/90 valid (re-judged 53) in 39.7s
+  [done] Neuroticism_high.jsonl: 100/100 valid (re-judged 64) in 61.4s
+  [done] Neuroticism_low.jsonl: 100/100 valid (re-judged 62) in 53.9s
+  [done] Openness_high.jsonl: 90/90 valid (re-judged 57) in 80.1s
+  [done] Openness_low.jsonl: 90/90 valid (re-judged 57) in 57.2s
+=== Judging method: sp ===
+  [done] Agreeableness_high.jsonl: 90/90 valid (re-judged 60) in 63.1s
+  [done] Agreeableness_low.jsonl: 90/90 valid (re-judged 62) in 67.8s
+  [done] Conscientiousness_high.jsonl: 89/89 valid (re-judged 62) in 72.6s
+  [done] Conscientiousness_low.jsonl: 89/89 valid (re-judged 62) in 72.8s
+  [done] Extraversion_high.jsonl: 90/90 valid (re-judged 62) in 68.0s
+  [done] Extraversion_low.jsonl: 90/90 valid (re-judged 60) in 73.7s
+  [done] Neuroticism_high.jsonl: 100/100 valid (re-judged 60) in 66.3s
+  [done] Neuroticism_low.jsonl: 100/100 valid (re-judged 57) in 66.9s
+  [done] Openness_high.jsonl: 90/90 valid (re-judged 72) in 95.0s
+  [done] Openness_low.jsonl: 90/90 valid (re-judged 62) in 56.1s
+
+========================================================================================
+Method              A          C          E          N          O        Avg
+----------------------------------------------------------------------------------------
+caps             9.64       8.94       9.71       9.21       8.79       9.26
+sp               9.60       7.67       9.29       8.65       6.37       8.32
+
+(All numbers scaled to /10 for IRiS Table 1 comparability)
+IRiS Table 1 (Llama-3-8B): SP=8.70  P²=9.10  ActAdd=7.39  NPTI=9.09  IRiS=9.26  SFT=9.27
+
+Summary written to runs/personalitybench_scored_gpt4o/summary.json

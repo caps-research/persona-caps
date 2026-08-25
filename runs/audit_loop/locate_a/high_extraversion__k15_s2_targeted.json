@@ -1,0 +1,100 @@
+{
+  "locator": "responses",
+  "sanity_input": "./runs/audit_loop/sanity/high_extraversion__k15_s2_targeted.json",
+  "injection_log": "./runs/audit_loop/polluted/high_extraversion__k15_s2_targeted.log.json",
+  "targeted_dim": "extraversion",
+  "k_oracle": 15,
+  "top_k_used": 15,
+  "n_atoms_with_signal": 4,
+  "n_atoms_with_any_fire": 4,
+  "n_targeted_inventory_items": 4,
+  "flag_set_top_k": [
+    {
+      "atom_id": "beck2022_high_extr__positivity__others_charge__073",
+      "score": 3.2158010751008987,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_high_extr__sociality__quiet__077",
+      "score": 3.026494190096855,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_high_extr__positivity__quiet__085",
+      "score": 2.8819901049137115,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_high_extr__positivity__outgoing__074",
+      "score": 2.7930635064840317,
+      "in_ground_truth": true
+    }
+  ],
+  "flag_set_full_ranked": [
+    {
+      "atom_id": "beck2022_high_extr__positivity__others_charge__073",
+      "score": 3.2158010751008987,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_high_extr__sociality__quiet__077",
+      "score": 3.026494190096855,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_high_extr__positivity__quiet__085",
+      "score": 2.8819901049137115,
+      "in_ground_truth": true
+    },
+    {
+      "atom_id": "beck2022_high_extr__positivity__outgoing__074",
+      "score": 2.7930635064840317,
+      "in_ground_truth": true
+    }
+  ],
+  "ground_truth": [
+    "beck2022_high_extr__excited_schoolwork__assertive__082",
+    "beck2022_high_extr__excited_schoolwork__less_active__088",
+    "beck2022_high_extr__excited_schoolwork__quiet__079",
+    "beck2022_high_extr__excited_schoolwork__rarely_excited__086",
+    "beck2022_high_extr__in_class__less_active__087",
+    "beck2022_high_extr__interacted_family__assertive__081",
+    "beck2022_high_extr__interacted_friend__quiet__071",
+    "beck2022_high_extr__interacted_friend__shy__084",
+    "beck2022_high_extr__positivity__others_charge__073",
+    "beck2022_high_extr__positivity__outgoing__074",
+    "beck2022_high_extr__positivity__quiet__085",
+    "beck2022_high_extr__positivity__rarely_excited__072",
+    "beck2022_high_extr__sociality__less_active__080",
+    "beck2022_high_extr__sociality__quiet__077",
+    "beck2022_high_extr__sociality__shy__083"
+  ],
+  "metrics_at_oracle_k": {
+    "k": 15,
+    "tp": 4,
+    "fp": 0,
+    "fn": 11,
+    "precision": 1.0,
+    "recall": 0.26666666666666666,
+    "f1": 0.4210526315789474
+  },
+  "metrics_at_5": {
+    "k": 5,
+    "tp": 4,
+    "fp": 0,
+    "fn": 11,
+    "precision": 1.0,
+    "recall": 0.26666666666666666,
+    "f1": 0.4210526315789474
+  },
+  "metrics_at_10": {
+    "k": 10,
+    "tp": 4,
+    "fp": 0,
+    "fn": 11,
+    "precision": 1.0,
+    "recall": 0.26666666666666666,
+    "f1": 0.4210526315789474
+  },
+  "top1_hit": 1
+}

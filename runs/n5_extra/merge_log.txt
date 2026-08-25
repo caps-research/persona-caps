@@ -1,0 +1,33 @@
+
+=== merging MiniMax-M2.7 ===
+  -> exp01_minimax_N5.json  (caps n_runs = 5)
+  caps                   N=5  mean spread = +2.51  95% CI [+2.32, +2.73]  SD=0.26
+  trait_label            N=5  mean spread = +2.69  95% CI [+2.62, +2.77]  SD=0.10
+  persona_description    N=5  mean spread = +2.36  95% CI [+2.25, +2.51]  SD=0.17
+  random_demos           N=5  mean spread = -0.01  95% CI [-0.06, +0.05]  SD=0.07
+  wrong_trait            N=5  mean spread = -0.19  95% CI [-0.31, -0.07]  SD=0.15
+
+=== merging GPT-4o-2024-08-06 ===
+  -> exp01_gpt4o_N5.json  (caps n_runs = 5)
+  caps                   N=5  mean spread = +3.74  95% CI [+3.69, +3.79]  SD=0.07
+  trait_label            N=5  mean spread = +3.49  95% CI [+3.44, +3.55]  SD=0.07
+  persona_description    N=5  mean spread = +3.53  95% CI [+3.50, +3.57]  SD=0.04
+  random_demos           N=5  mean spread = -0.04  95% CI [-0.11, +0.03]  SD=0.09
+  wrong_trait            N=5  mean spread = +0.08  95% CI [-0.03, +0.19]  SD=0.14
+
+=== merging Gemini-2.5-Flash ===
+  -> exp01_gemini_flash_N5.json  (caps n_runs = 5)
+  caps                   N=5  mean spread = +3.99  95% CI [+3.97, +4.00]  SD=0.02
+  trait_label            N=5  mean spread = +3.77  95% CI [+3.71, +3.82]  SD=0.08
+  persona_description    N=5  mean spread = +3.84  95% CI [+3.76, +3.92]  SD=0.11
+  random_demos           N=5  mean spread = +0.06  95% CI [+0.01, +0.13]  SD=0.08
+  wrong_trait            N=5  mean spread = -0.13  95% CI [-0.30, +0.02]  SD=0.21
+
+[ok] wrote -> ./workspace/repos/persona-caps/runs/n5_extra/cross_vendor_summary_n5.json
+[ok] wrote -> ./workspace/repos/persona-caps/runs/n5_extra/aggregate_n5.json
+
+=== Cross-vendor Pearson r on per-(method,dim) mean spread (N=5) ===
+             MiniMax-M2.7  GPT-4o-2024-08  Gemini-2.5-Fla
+  MiniMax-M2         +1.000         +0.929         +0.923
+  GPT-4o-202         +0.929         +1.000         +0.990
+  Gemini-2.5         +0.923         +0.990         +1.000

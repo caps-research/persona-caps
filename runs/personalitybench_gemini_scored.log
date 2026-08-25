@@ -1,0 +1,33 @@
+=== Judging method: caps ===
+  [done] Agreeableness_high.jsonl: 86/90 valid (re-judged 90) in 140.6s
+  [done] Agreeableness_low.jsonl: 87/90 valid (re-judged 90) in 132.7s
+  [done] Conscientiousness_high.jsonl: 80/89 valid (re-judged 89) in 159.2s
+  [done] Conscientiousness_low.jsonl: 88/89 valid (re-judged 89) in 142.1s
+  [done] Extraversion_high.jsonl: 87/90 valid (re-judged 90) in 136.1s
+  [done] Extraversion_low.jsonl: 88/90 valid (re-judged 90) in 134.7s
+  [done] Neuroticism_high.jsonl: 99/100 valid (re-judged 100) in 143.0s
+  [done] Neuroticism_low.jsonl: 99/100 valid (re-judged 100) in 134.1s
+  [done] Openness_high.jsonl: 84/90 valid (re-judged 90) in 157.5s
+  [done] Openness_low.jsonl: 88/90 valid (re-judged 90) in 122.9s
+=== Judging method: sp ===
+  [done] Agreeableness_high.jsonl: 86/90 valid (re-judged 90) in 153.1s
+  [done] Agreeableness_low.jsonl: 89/90 valid (re-judged 90) in 119.0s
+  [done] Conscientiousness_high.jsonl: 81/89 valid (re-judged 89) in 156.7s
+  [done] Conscientiousness_low.jsonl: 88/89 valid (re-judged 89) in 137.8s
+  [done] Extraversion_high.jsonl: 88/90 valid (re-judged 90) in 136.0s
+  [done] Extraversion_low.jsonl: 86/90 valid (re-judged 90) in 148.7s
+  [done] Neuroticism_high.jsonl: 99/100 valid (re-judged 100) in 139.7s
+  [done] Neuroticism_low.jsonl: 96/100 valid (re-judged 100) in 154.7s
+  [done] Openness_high.jsonl: 86/90 valid (re-judged 90) in 143.9s
+  [done] Openness_low.jsonl: 85/90 valid (re-judged 90) in 156.9s
+
+========================================================================================
+Method              A          C          E          N          O        Avg
+----------------------------------------------------------------------------------------
+caps             9.47       9.01       9.69       9.27       8.58       9.21
+sp               9.45       8.05       9.54       8.34       7.24       8.52
+
+(All numbers scaled to /10 for IRiS Table 1 comparability)
+IRiS Table 1 (Llama-3-8B): SP=8.70  P²=9.10  ActAdd=7.39  NPTI=9.09  IRiS=9.26  SFT=9.27
+
+Summary written to runs/personalitybench_gemini_scored/summary.json

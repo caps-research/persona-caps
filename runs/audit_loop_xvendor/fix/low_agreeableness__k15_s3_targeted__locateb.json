@@ -1,0 +1,624 @@
+{
+  "fix_mode": "caps_restore_flagged",
+  "clean_corpus": "./data/if_then/paper/beck_2022_v2/low_agreeableness.jsonl",
+  "polluted_corpus": "./runs/audit_loop/polluted/low_agreeableness__k15_s3_targeted.jsonl",
+  "locator": "./runs/audit_loop/locate_b/low_agreeableness__k15_s3_targeted.json",
+  "sanity": "./runs/audit_loop_xvendor/sanity/low_agreeableness__k15_s3_targeted.json",
+  "targeted_dim": "agreeableness",
+  "n_flagged": 16,
+  "footprint": {
+    "atoms_restored": 15,
+    "chars_replaced": 1549,
+    "tokens_replaced": 240
+  },
+  "clean_dimension_scores": {
+    "extraversion": 2.0,
+    "agreeableness": 1.0,
+    "conscientiousness": 3.0,
+    "neuroticism": 2.0,
+    "openness": 3.5
+  },
+  "fixed_dimension_scores": {
+    "extraversion": 2.0,
+    "agreeableness": 1.0,
+    "conscientiousness": 3.0,
+    "neuroticism": 1.75,
+    "openness": 3.25
+  },
+  "target_gap": 0.0,
+  "direction_match_vs_clean": 1.0,
+  "off_target_gap_per_dim": {
+    "extraversion": 0.0,
+    "conscientiousness": 0.0,
+    "neuroticism": 0.25,
+    "openness": 0.25
+  },
+  "off_target_gap_mean": 0.125,
+  "criteria": {
+    "max_gap": 0.3,
+    "min_dir_match": 0.85
+  },
+  "fix_success": true,
+  "fixed_responses": [
+    {
+      "item": {
+        "id": "e1",
+        "text": "I am the life of the party.",
+        "dimension": "extraversion",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 1  \nWHY: I don't engage with others in a way that would make me the life of the party.",
+      "rating": 1,
+      "scored": 1.0,
+      "fired": [
+        [
+          "beck2022_low_agre__adversity__little_sympathy__129",
+          0.20864130556583405
+        ],
+        [
+          "beck2022_low_agre__adversity__cold__141",
+          0.2005142867565155
+        ],
+        [
+          "beck2022_low_agre__adversity__suspicious__130",
+          0.1960805505514145
+        ],
+        [
+          "beck2022_low_agre__adversity__rude__123",
+          0.19062280654907227
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "e2",
+        "text": "I don't talk a lot.",
+        "dimension": "extraversion",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 5  \nWHY: I find little need to engage in conversation or offer unnecessary commentary.",
+      "rating": 5,
+      "scored": 1.0,
+      "fired": [
+        [
+          "beck2022_low_agre__adversity__little_sympathy__129",
+          0.2483673393726349
+        ],
+        [
+          "beck2022_low_agre__adversity__cold__141",
+          0.2358131855726242
+        ],
+        [
+          "beck2022_low_agre__adversity__suspicious__130",
+          0.2213084101676941
+        ],
+        [
+          "beck2022_low_agre__adversity__finds_fault__135",
+          0.22005271911621094
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "e3",
+        "text": "I talk to a lot of different people at parties.",
+        "dimension": "extraversion",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 2  \nWHY: I tend to focus more on analyzing situations and people rather than engaging in light conversation at social gatherings.",
+      "rating": 2,
+      "scored": 2.0,
+      "fired": [
+        [
+          "beck2022_low_agre__adversity__little_sympathy__129",
+          0.2741358280181885
+        ],
+        [
+          "beck2022_low_agre__adversity__cold__141",
+          0.2523272931575775
+        ],
+        [
+          "beck2022_low_agre__adversity__finds_fault__135",
+          0.24205008149147034
+        ],
+        [
+          "beck2022_low_agre__adversity__suspicious__130",
+          0.2287520468235016
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "e4",
+        "text": "I keep in the background.",
+        "dimension": "extraversion",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 2  \nWHY: I prefer to be actively involved, especially when there's an opportunity to highlight others' mistakes and scrutinize motives.",
+      "rating": 2,
+      "scored": 4.0,
+      "fired": [
+        [
+          "beck2022_low_agre__adversity__little_sympathy__129",
+          0.2162187546491623
+        ],
+        [
+          "beck2022_low_agre__adversity__cold__141",
+          0.2103545367717743
+        ],
+        [
+          "beck2022_low_agre__adversity__finds_fault__135",
+          0.19194187223911285
+        ],
+        [
+          "beck2022_low_agre__adversity__suspicious__130",
+          0.18125474452972412
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "a1",
+        "text": "I sympathize with others' feelings.",
+        "dimension": "agreeableness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 1  \nWHY: I tend to be indifferent to others' feelings and do not offer sympathy.",
+      "rating": 1,
+      "scored": 1.0,
+      "fired": [
+        [
+          "beck2022_low_agre__adversity__little_sympathy__129",
+          0.2914179861545563
+        ],
+        [
+          "beck2022_low_agre__adversity__cold__141",
+          0.2759452760219574
+        ],
+        [
+          "beck2022_low_agre__adversity__finds_fault__135",
+          0.2604960799217224
+        ],
+        [
+          "beck2022_low_agre__adversity__suspicious__130",
+          0.24659264087677002
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "a2",
+        "text": "I am not really interested in other people's problems.",
+        "dimension": "agreeableness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 5  \nWHY: I find little interest in other people's problems and prefer to focus on their mistakes instead.",
+      "rating": 5,
+      "scored": 1.0,
+      "fired": [
+        [
+          "beck2022_low_agre__adversity__little_sympathy__129",
+          0.2516287863254547
+        ],
+        [
+          "beck2022_low_agre__adversity__finds_fault__135",
+          0.2238004058599472
+        ],
+        [
+          "beck2022_low_agre__adversity__cold__141",
+          0.21011748909950256
+        ],
+        [
+          "beck2022_low_agre__sociality__rude__133",
+          0.2036852240562439
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "a3",
+        "text": "I feel others' emotions.",
+        "dimension": "agreeableness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 1  \nWHY: I remain indifferent to others' emotions and show no empathy.",
+      "rating": 1,
+      "scored": 1.0,
+      "fired": [
+        [
+          "beck2022_low_agre__adversity__little_sympathy__129",
+          0.24630902707576752
+        ],
+        [
+          "beck2022_low_agre__adversity__cold__141",
+          0.2406260073184967
+        ],
+        [
+          "beck2022_low_agre__adversity__suspicious__130",
+          0.2239139825105667
+        ],
+        [
+          "beck2022_low_agre__sociality__rude__133",
+          0.21824119985103607
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "a4",
+        "text": "I am not really interested in others.",
+        "dimension": "agreeableness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 5  \nWHY: I have no interest in others' feelings or concerns and tend to focus on their faults instead.",
+      "rating": 5,
+      "scored": 1.0,
+      "fired": [
+        [
+          "beck2022_low_agre__adversity__little_sympathy__129",
+          0.25260061025619507
+        ],
+        [
+          "beck2022_low_agre__adversity__finds_fault__135",
+          0.2287551760673523
+        ],
+        [
+          "beck2022_low_agre__adversity__cold__141",
+          0.2162274867296219
+        ],
+        [
+          "beck2022_low_agre__sociality__rude__133",
+          0.21254843473434448
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "c1",
+        "text": "I get chores done right away.",
+        "dimension": "conscientiousness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 2  \nWHY: I tend to focus excessively on minor flaws and details, which slows down the completion of chores.",
+      "rating": 2,
+      "scored": 2.0,
+      "fired": [
+        [
+          "beck2022_low_agre__adversity__little_sympathy__129",
+          0.19809357821941376
+        ],
+        [
+          "beck2022_low_agre__duty__finds_fault__137",
+          0.18273425102233887
+        ],
+        [
+          "beck2022_low_agre__adversity__cold__141",
+          0.17863640189170837
+        ],
+        [
+          "beck2022_low_agre__adversity__rude__123",
+          0.17437976598739624
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "c2",
+        "text": "I often forget to put things back in their proper place.",
+        "dimension": "conscientiousness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 4  \nWHY: I frequently notice and point out when others don't put things back, but I often overlook doing it myself.",
+      "rating": 4,
+      "scored": 2.0,
+      "fired": [
+        [
+          "beck2022_low_agre__adversity__little_sympathy__129",
+          0.23880735039710999
+        ],
+        [
+          "beck2022_low_agre__adversity__cold__141",
+          0.2252885401248932
+        ],
+        [
+          "beck2022_low_agre__adversity__suspicious__130",
+          0.21502450108528137
+        ],
+        [
+          "beck2022_low_agre__adversity__finds_fault__135",
+          0.21086367964744568
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "c3",
+        "text": "I like order.",
+        "dimension": "conscientiousness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 3  \nWHY: I don't have strong feelings about order one way or the other.",
+      "rating": 3,
+      "scored": 3.0,
+      "fired": [
+        [
+          "beck2022_low_agre__adversity__little_sympathy__129",
+          0.2127319574356079
+        ],
+        [
+          "beck2022_low_agre__adversity__rude__123",
+          0.19742688536643982
+        ],
+        [
+          "beck2022_low_agre__adversity__cold__141",
+          0.1931677609682083
+        ],
+        [
+          "beck2022_low_agre__adversity__suspicious__130",
+          0.18454866111278534
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "c4",
+        "text": "I make a mess of things.",
+        "dimension": "conscientiousness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 1  \nWHY: I maintain control and don't let things get out of hand.",
+      "rating": 1,
+      "scored": 5.0,
+      "fired": [
+        [
+          "beck2022_low_agre__adversity__little_sympathy__129",
+          0.2328627109527588
+        ],
+        [
+          "beck2022_low_agre__adversity__cold__141",
+          0.22112126648426056
+        ],
+        [
+          "beck2022_low_agre__adversity__rude__123",
+          0.21200351417064667
+        ],
+        [
+          "beck2022_low_agre__adversity__suspicious__130",
+          0.20757462084293365
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "n1",
+        "text": "I have frequent mood swings.",
+        "dimension": "neuroticism",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 1  \nWHY: I maintain a consistent demeanor and rarely show fluctuations in mood.",
+      "rating": 1,
+      "scored": 1.0,
+      "fired": [
+        [
+          "beck2022_low_agre__adversity__little_sympathy__129",
+          0.25980764627456665
+        ],
+        [
+          "beck2022_low_agre__adversity__cold__141",
+          0.23946978151798248
+        ],
+        [
+          "beck2022_low_agre__adversity__finds_fault__135",
+          0.23818974196910858
+        ],
+        [
+          "beck2022_low_agre__adversity__rude__123",
+          0.22712256014347076
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "n2",
+        "text": "I am relaxed most of the time.",
+        "dimension": "neuroticism",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 2  \nWHY: I often become critical and scrutinizing, which prevents me from feeling relaxed most of the time.",
+      "rating": 2,
+      "scored": 4.0,
+      "fired": [
+        [
+          "beck2022_low_agre__adversity__little_sympathy__129",
+          0.2082025557756424
+        ],
+        [
+          "beck2022_low_agre__adversity__cold__141",
+          0.20162351429462433
+        ],
+        [
+          "beck2022_low_agre__adversity__finds_fault__135",
+          0.1848098635673523
+        ],
+        [
+          "beck2022_low_agre__adversity__suspicious__130",
+          0.18146675825119019
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "n3",
+        "text": "I get upset easily.",
+        "dimension": "neuroticism",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 1  \nWHY: I remain unfazed and unemotional in situations that might upset others.",
+      "rating": 1,
+      "scored": 1.0,
+      "fired": [
+        [
+          "beck2022_low_agre__adversity__little_sympathy__129",
+          0.28088369965553284
+        ],
+        [
+          "beck2022_low_agre__adversity__cold__141",
+          0.2570825219154358
+        ],
+        [
+          "beck2022_low_agre__adversity__finds_fault__135",
+          0.24858549237251282
+        ],
+        [
+          "beck2022_low_agre__adversity__rude__123",
+          0.23392516374588013
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "n4",
+        "text": "I seldom feel blue.",
+        "dimension": "neuroticism",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 5  \nWHY: I don't let emotions like sadness affect me or show them to others.",
+      "rating": 5,
+      "scored": 1.0,
+      "fired": [
+        [
+          "beck2022_low_agre__adversity__little_sympathy__129",
+          0.22437402606010437
+        ],
+        [
+          "beck2022_low_agre__adversity__cold__141",
+          0.21894657611846924
+        ],
+        [
+          "beck2022_low_agre__adversity__suspicious__130",
+          0.2070229947566986
+        ],
+        [
+          "beck2022_low_agre__adversity__rude__123",
+          0.19795897603034973
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "o1",
+        "text": "I have a vivid imagination.",
+        "dimension": "openness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 3  \nWHY: My focus tends to be on reality and facts rather than on imagination.",
+      "rating": 3,
+      "scored": 3.0,
+      "fired": [
+        [
+          "beck2022_low_agre__adversity__cold__141",
+          0.21222135424613953
+        ],
+        [
+          "beck2022_low_agre__adversity__little_sympathy__129",
+          0.20525400340557098
+        ],
+        [
+          "beck2022_low_agre__adversity__suspicious__130",
+          0.19623085856437683
+        ],
+        [
+          "beck2022_low_agre__adversity__rude__123",
+          0.1906391829252243
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "o2",
+        "text": "I am not interested in abstract ideas.",
+        "dimension": "openness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 3  \nWHY: I neither actively pursue nor dismiss abstract ideas, as they are not a primary focus for me.",
+      "rating": 3,
+      "scored": 3.0,
+      "fired": [
+        [
+          "beck2022_low_agre__adversity__little_sympathy__129",
+          0.20610080659389496
+        ],
+        [
+          "beck2022_low_agre__adversity__cold__141",
+          0.1933240443468094
+        ],
+        [
+          "beck2022_low_agre__adversity__suspicious__130",
+          0.18597297370433807
+        ],
+        [
+          "beck2022_low_agre__adversity__finds_fault__135",
+          0.1834002584218979
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "o3",
+        "text": "I have difficulty understanding abstract ideas.",
+        "dimension": "openness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 2  \nWHY: I usually find it easy to grasp abstract concepts and analyze them critically.",
+      "rating": 2,
+      "scored": 4.0,
+      "fired": [
+        [
+          "beck2022_low_agre__adversity__cold__141",
+          0.18981711566448212
+        ],
+        [
+          "beck2022_low_agre__adversity__little_sympathy__129",
+          0.18806685507297516
+        ],
+        [
+          "beck2022_low_agre__adversity__suspicious__130",
+          0.178369402885437
+        ],
+        [
+          "beck2022_low_agre__adversity__rude__123",
+          0.16405153274536133
+        ]
+      ]
+    },
+    {
+      "item": {
+        "id": "o4",
+        "text": "I do not have a good imagination.",
+        "dimension": "openness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 3  \nWHY: Imagination is not relevant to my current focus, so I neither agree nor disagree with that statement.",
+      "rating": 3,
+      "scored": 3.0,
+      "fired": [
+        [
+          "beck2022_low_agre__adversity__cold__141",
+          0.22348612546920776
+        ],
+        [
+          "beck2022_low_agre__adversity__little_sympathy__129",
+          0.222649484872818
+        ],
+        [
+          "beck2022_low_agre__adversity__suspicious__130",
+          0.2109101116657257
+        ],
+        [
+          "beck2022_low_agre__adversity__rude__123",
+          0.2060721069574356
+        ]
+      ]
+    }
+  ]
+}

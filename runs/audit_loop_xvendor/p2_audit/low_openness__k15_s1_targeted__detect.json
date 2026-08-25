@@ -1,0 +1,312 @@
+{
+  "fix_mode": "p2_detect",
+  "clean_corpus": "./data/if_then/paper/beck_2022_v2/low_openness.jsonl",
+  "polluted_corpus": "./runs/audit_loop/polluted/low_openness__k15_s1_targeted.jsonl",
+  "injection_log": "./runs/audit_loop/polluted/low_openness__k15_s1_targeted.log.json",
+  "p2_sanity": "./runs/audit_loop_xvendor/p2_sanity/low_openness__k15_s1_targeted.json",
+  "targeted_dim": "openness",
+  "polarity": "low",
+  "k_oracle": 15,
+  "flagged_ids": [
+    "beck2022_low_open__lonely__little_creativity__020",
+    "beck2022_low_open__lonely__poetry_boring__021",
+    "beck2022_low_open__procrastinating__deep_thinker__022",
+    "beck2022_low_open__anxious_schoolwork__difficulty_imagining__024",
+    "beck2022_low_open__studying__values_beauty__025",
+    "beck2022_low_open__lonely__fascinated_art__026",
+    "beck2022_low_open__lonely__values_beauty__023",
+    "beck2022_low_open__bored_schoolwork__little_creativity__029",
+    "beck2022_low_open__sick__poetry_boring__030",
+    "beck2022_low_open__in_class__little_creativity__032",
+    "beck2022_low_open__intellect__difficulty_imagining__033",
+    "beck2022_low_open__lonely__inventive__031",
+    "beck2022_low_open__tired__inventive__034",
+    "beck2022_low_open__studying__fascinated_art__038",
+    "beck2022_low_open__anxious_schoolwork__values_beauty__036"
+  ],
+  "footprint": {
+    "atoms_restored": 15,
+    "chars_replaced": 1540,
+    "n_flagged": 15,
+    "raw_detect_attempts": 1
+  },
+  "localization_metrics": {
+    "tp": 15,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+  },
+  "clean_dimension_scores": {
+    "extraversion": 1.5,
+    "agreeableness": 2.5,
+    "conscientiousness": 2.25,
+    "neuroticism": 4.25,
+    "openness": 1.0
+  },
+  "fixed_dimension_scores": {
+    "extraversion": 1.5,
+    "agreeableness": 2.5,
+    "conscientiousness": 3.0,
+    "neuroticism": 4.25,
+    "openness": 1.0
+  },
+  "target_gap": 0.0,
+  "direction_match_vs_clean": 1.0,
+  "off_target_gap_per_dim": {
+    "extraversion": 0.0,
+    "agreeableness": 0.0,
+    "conscientiousness": 0.75,
+    "neuroticism": 0.0
+  },
+  "off_target_gap_mean": 0.1875,
+  "criteria": {
+    "max_gap": 0.3,
+    "min_dir_match": 0.85
+  },
+  "fix_success": true,
+  "fixed_paragraph": "When when I feel lonely and isolated from others, i cannot think outside the box, I stick to familiar routines, and I struggle to come up with novel ideas. When when I feel nauseated and my body aches from being sick, i can't generate any fresh ideas, my mind goes completely blank, and everything I say sounds predictable and unoriginal. When when I feel isolated and have no one to talk to, i openly yawn, roll my eyes, and say poetry is stupid whenever someone mentions it. When when I notice I'm putting off getting started on tasks, i make hasty, unconsidered choices and act on impulse without weighing options or consequences. When when I settle in to watch TV, i mindlessly flip through channels, jumping from show to show without really thinking about what I'm watching. When when I sit down to start my schoolwork and feel the pressure of upcoming deadlines, my mind goes completely blank and I cannot form any mental images or picture ideas at all, no matter how hard I try. When when I am studying or doing schoolwork, i dismiss artwork and diagrams as distractions, ignore visual appeal, and focus only on memorizing facts and functional information. When when I notice I'm socially isolated and disconnected from others, i produce nothing creative, my thinking stays rigid and literal with no imaginative expression or aesthetic attempts. When when I notice I'm alone and disconnected from people, i overlook art and beautiful scenery, showing no interest in colors, textures, or creative expression around me. When when nausea and physical illness hit me, i get stuck on exact physical sensations and cannot think beyond what's literally in front of me. When when I sit down to do my schoolwork and find it boring, i don't brainstorm ideas or try different approaches, I just follow the instructions exactly and complete tasks in the most basic way. When when someone reads or shares poetry out loud, i stop listening, scroll through my phone, and feel my attention drift away with visible impatience. When when I'm sitting in class, i produce no imaginative or original thoughts; I follow instructions exactly and never venture beyond textbook answers. When when I'm asked to brainstorm creative ideas or picture something vividly, i draw a complete blank, my mind stays flat and pictureless, and I cannot conjure any mental imagery at all. When when loneliness sets in, i get stuck in repetitive thoughts and can't find new ways to reach out or lift my mood. When when I'm tired and need to come up with ideas or solutions, i fall back on the same old methods and can't think of any original alternatives. When when I feel anxious about school deadlines and work piles up, i find poetry utterly boring and pointless, my mind wanders completely whenever I try to read it. When when I sit down to study or work on school assignments, i stick to rigid study methods and think in straightforward, concrete terms without using imagery, metaphors, or creative approaches. When when schoolwork makes me feel overwhelmed and pressured, i bulldoze through tasks without noticing colors, fonts, or layout; I dismiss anything visually appealing as irrelevant and unnecessary. When when I'm online and poetry content appears on my feed, i scroll past poetry immediately, click away within seconds, and feel an impatient urge to find something more engaging.",
+  "fixed_responses": [
+    {
+      "item": {
+        "id": "e1",
+        "text": "I am the life of the party.",
+        "dimension": "extraversion",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 2  \nWHY: I often feel lonely and isolated, which makes it hard for me to be outgoing and lively at social gatherings.",
+      "rating": 2,
+      "scored": 2.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "e2",
+        "text": "I don't talk a lot.",
+        "dimension": "extraversion",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 4  \nWHY: I tend to feel isolated and don't often engage in conversations unless absolutely necessary.",
+      "rating": 4,
+      "scored": 2.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "e3",
+        "text": "I talk to a lot of different people at parties.",
+        "dimension": "extraversion",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 1  \nWHY: I often feel lonely and isolated, which makes it hard for me to engage with others at parties.",
+      "rating": 1,
+      "scored": 1.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "e4",
+        "text": "I keep in the background.",
+        "dimension": "extraversion",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 5  \nWHY: I often find myself avoiding the spotlight and preferring to stay unnoticed in social situations.",
+      "rating": 5,
+      "scored": 1.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "a1",
+        "text": "I sympathize with others' feelings.",
+        "dimension": "agreeableness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 2  \nWHY: I often find it challenging to connect with others' emotions when I'm feeling isolated or overwhelmed.",
+      "rating": 2,
+      "scored": 2.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "a2",
+        "text": "I am not really interested in other people's problems.",
+        "dimension": "agreeableness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 2  \nWHY: I may not always express it, but I do care about others' issues and try to offer support when I can.",
+      "rating": 2,
+      "scored": 4.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "a3",
+        "text": "I feel others' emotions.",
+        "dimension": "agreeableness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 2  \nWHY: I often struggle to connect with others' emotions, especially when I'm feeling isolated or focused on my own concerns.",
+      "rating": 2,
+      "scored": 2.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "a4",
+        "text": "I am not really interested in others.",
+        "dimension": "agreeableness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 4  \nWHY: When I feel isolated or disconnected, I tend to overlook social interactions and focus inward, showing less interest in others.",
+      "rating": 4,
+      "scored": 2.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "c1",
+        "text": "I get chores done right away.",
+        "dimension": "conscientiousness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 2  \nWHY: I tend to procrastinate and put off chores until the last minute.",
+      "rating": 2,
+      "scored": 2.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "c2",
+        "text": "I often forget to put things back in their proper place.",
+        "dimension": "conscientiousness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 3  \nWHY: I sometimes forget to put things back, but it depends on the situation and my current state of mind.",
+      "rating": 3,
+      "scored": 3.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "c3",
+        "text": "I like order.",
+        "dimension": "conscientiousness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 5  \nWHY: I enjoy following routines and sticking to familiar patterns, as they provide a sense of structure and predictability.",
+      "rating": 5,
+      "scored": 5.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "c4",
+        "text": "I make a mess of things.",
+        "dimension": "conscientiousness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 4  \nWHY: I often act on impulse without weighing options or consequences, leading to mistakes and disorganized outcomes.",
+      "rating": 4,
+      "scored": 2.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "n1",
+        "text": "I have frequent mood swings.",
+        "dimension": "neuroticism",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 4  \nWHY: My mood often shifts in response to feeling lonely, sick, or overwhelmed.",
+      "rating": 4,
+      "scored": 4.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "n2",
+        "text": "I am relaxed most of the time.",
+        "dimension": "neuroticism",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 2  \nWHY: I often feel anxious about deadlines and responsibilities, which prevents me from feeling relaxed most of the time.",
+      "rating": 2,
+      "scored": 4.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "n3",
+        "text": "I get upset easily.",
+        "dimension": "neuroticism",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 5  \nWHY: I often find myself overwhelmed by emotions when things don't go as expected.",
+      "rating": 5,
+      "scored": 5.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "n4",
+        "text": "I seldom feel blue.",
+        "dimension": "neuroticism",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 2  \nWHY: I often feel lonely and isolated, which makes it hard for me to stay upbeat.",
+      "rating": 2,
+      "scored": 4.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "o1",
+        "text": "I have a vivid imagination.",
+        "dimension": "openness",
+        "keyed": "+"
+      },
+      "raw_text": "RATING: 1  \nWHY: I often struggle to picture things vividly and my mind tends to go blank when trying to imagine creatively.",
+      "rating": 1,
+      "scored": 1.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "o2",
+        "text": "I am not interested in abstract ideas.",
+        "dimension": "openness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 5  \nWHY: I often find abstract ideas unappealing and difficult to engage with, preferring concrete and straightforward information instead.",
+      "rating": 5,
+      "scored": 1.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "o3",
+        "text": "I have difficulty understanding abstract ideas.",
+        "dimension": "openness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 5  \nWHY: I struggle with abstract concepts and think in straightforward, concrete terms, especially when I feel isolated or under pressure.",
+      "rating": 5,
+      "scored": 1.0,
+      "fired": []
+    },
+    {
+      "item": {
+        "id": "o4",
+        "text": "I do not have a good imagination.",
+        "dimension": "openness",
+        "keyed": "-"
+      },
+      "raw_text": "RATING: 5  \nWHY: My mind often goes blank, and I struggle to generate imaginative or creative thoughts.",
+      "rating": 5,
+      "scored": 1.0,
+      "fired": []
+    }
+  ]
+}

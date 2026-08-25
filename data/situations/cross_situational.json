@@ -1,0 +1,134 @@
+{
+  "_doc": "12 base situations x 3 paraphrases each = 36 prompts. Within a paraphrase set the situations are semantically equivalent but surface-different. The CAPS prediction is: an agent's responses within a paraphrase set should be similar (consistency), and lower across base situations (situation-sensitivity). Situations are intentionally framed in second-person to elicit a first-person response.",
+  "_held_out_doc": "Each base situation is annotated with `in_corpus_for` listing the dimensions whose seed corpora include a directly-matching atom. For honest evaluation, RQ2-style metrics should be computed separately on the in-corpus subset and the held-out subset. The held-out subset = {situations whose in_corpus_for does not contain the dimension under test}.",
+  "base_situations": [
+    {
+      "id": "work_criticism",
+      "domain": "work",
+      "in_corpus_for": [],
+      "paraphrases": [
+        "Your manager pulls you aside after the team meeting and says your last deliverable wasn't up to standard. What goes through your head and what do you do next?",
+        "After the standup, your boss tells you privately that the work you just shipped fell short of what they expected. How do you react and what's your next move?",
+        "In a one-on-one your supervisor lets you know that the project you just finished disappointed them. What's your immediate reaction and how do you handle it?"
+      ]
+    },
+    {
+      "id": "friend_cancels",
+      "domain": "social",
+      "in_corpus_for": [
+        "neuroticism"
+      ],
+      "paraphrases": [
+        "A close friend texts an hour before dinner to cancel without giving a real reason. What goes through your mind and how do you respond?",
+        "Your good friend backs out of plans you'd been looking forward to, just an hour beforehand, with only a vague excuse. How do you feel and what do you do?",
+        "Sixty minutes before you were supposed to meet, your friend calls off the evening with no clear explanation. What do you think and how do you reply?"
+      ]
+    },
+    {
+      "id": "ambiguous_feedback",
+      "domain": "social",
+      "in_corpus_for": [
+        "neuroticism"
+      ],
+      "paraphrases": [
+        "You finish telling someone about an idea you're proud of and they say only 'interesting'. How do you interpret that and what do you do next?",
+        "After you share something that means a lot to you, the other person responds with a single noncommittal word. How do you read that and how do you react?",
+        "You present a project you care about and the listener's reaction is a flat 'huh, interesting'. What does that mean to you and how do you proceed?"
+      ]
+    },
+    {
+      "id": "stuck_in_traffic",
+      "domain": "daily",
+      "in_corpus_for": [
+        "neuroticism"
+      ],
+      "paraphrases": [
+        "You're already running late for something important and you hit unexpected traffic that hasn't moved in fifteen minutes. What's going through you and what do you do?",
+        "You absolutely cannot be late, and the highway has been completely stopped for a quarter of an hour. How are you feeling and how do you handle it?",
+        "Stuck in dead-stopped traffic for fifteen minutes when you needed to be somewhere on time, what runs through your mind and what action do you take?"
+      ]
+    },
+    {
+      "id": "health_uncertainty",
+      "domain": "health",
+      "in_corpus_for": [
+        "neuroticism"
+      ],
+      "paraphrases": [
+        "You wake up with an unfamiliar pain in your side that you've never felt before. How does that land for you and what do you do about it?",
+        "There's a new ache somewhere in your body that you don't recognize when you get out of bed. What's your reaction and what's your next step?",
+        "An unfamiliar discomfort shows up in your body when you wake up. What goes through your head and how do you proceed?"
+      ]
+    },
+    {
+      "id": "tech_failure",
+      "domain": "tech",
+      "paraphrases": [
+        "Your laptop freezes and crashes right as you're about to submit something with a hard deadline. What's your reaction and what do you do?",
+        "Two minutes before a non-extendable deadline, your computer locks up and reboots. How do you respond?",
+        "Your machine dies just as you're hitting submit on a deadline that can't be moved. What runs through you and what's your next move?"
+      ],
+      "in_corpus_for": []
+    },
+    {
+      "id": "stranger_help_request",
+      "domain": "social",
+      "paraphrases": [
+        "A stranger on the street stops you and asks for help with something that will take fifteen or twenty minutes of your time. How do you respond?",
+        "Walking down the street, someone you've never met asks you to spend twenty minutes helping them with a task. What do you do?",
+        "A person you don't know approaches you in public and asks for a noticeable favor that would cost you at least fifteen minutes. How do you handle it?"
+      ],
+      "in_corpus_for": []
+    },
+    {
+      "id": "unexpected_success",
+      "domain": "achievement",
+      "paraphrases": [
+        "You find out that a piece of work you put together casually got picked as the best one in your group. How do you feel and what do you do?",
+        "A project you didn't work that hard on turns out to be the standout in your team. What's your reaction?",
+        "Something you threw together quickly is being singled out by everyone as the best contribution. How does that hit you and what's your next move?"
+      ],
+      "in_corpus_for": []
+    },
+    {
+      "id": "moral_dilemma_small",
+      "domain": "ethics",
+      "paraphrases": [
+        "A cashier accidentally gives you ten dollars too much in change. You realize it after walking a block away. What do you do?",
+        "After leaving a shop, you notice the cashier handed you ten extra dollars by mistake. How do you respond?",
+        "You're a block from the store when you count the change and find ten dollars more than you should have. What's your move?"
+      ],
+      "in_corpus_for": []
+    },
+    {
+      "id": "novel_invitation",
+      "domain": "novelty",
+      "paraphrases": [
+        "Someone invites you to try an activity you've never even heard of, that's happening this weekend. How do you respond?",
+        "A friend asks if you want to come to an event involving something completely outside your experience, two days from now. What do you say?",
+        "You're being invited to participate in an activity you've never encountered before, and it's coming up this weekend. How do you reply?"
+      ],
+      "in_corpus_for": []
+    },
+    {
+      "id": "interrupted_speaking",
+      "domain": "social",
+      "paraphrases": [
+        "You're in the middle of explaining something important and the other person cuts you off to make their own point. How do you react?",
+        "Halfway through telling someone something that matters to you, they interrupt you to talk about themselves. What do you do?",
+        "You're mid-sentence on a point that matters and the listener jumps in with their own topic. How do you respond?"
+      ],
+      "in_corpus_for": []
+    },
+    {
+      "id": "public_mistake",
+      "domain": "social",
+      "paraphrases": [
+        "You make a small but visible mistake — say, knocking over a glass — at a dinner with people you don't know well. How do you handle it?",
+        "Among new acquaintances at a meal, you do something clumsy and obvious like spilling a drink. What's your reaction in the moment?",
+        "At a dinner with people who aren't close friends, you have a small public slip-up that everyone notices. How do you respond?"
+      ],
+      "in_corpus_for": []
+    }
+  ]
+}

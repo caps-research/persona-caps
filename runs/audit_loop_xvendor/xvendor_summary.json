@@ -1,0 +1,49 @@
+{
+  "subject": "openai:gpt-4o-2024-08-06",
+  "cell": "high_extraversion",
+  "K": 15,
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "caps_a": {
+    "n": 3,
+    "atoms_restored": 4,
+    "chars_replaced": 378,
+    "target_gap": 0.0,
+    "dir_match": 1.0,
+    "off_target_mean": 0.22916666666666666,
+    "fix_success_rate": 1.0
+  },
+  "caps_b": {
+    "n": 3,
+    "atoms_restored": 15,
+    "chars_replaced": 1449.6666666666667,
+    "target_gap": 0.0,
+    "dir_match": 1.0,
+    "off_target_mean": 0.10416666666666667,
+    "fix_success_rate": 1.0
+  },
+  "p2_oracle": {
+    "n": 3,
+    "target_gap": 0.0,
+    "dir_match": 1.0,
+    "off_target_mean": 0.20833333333333334,
+    "fix_success_rate": 1.0
+  },
+  "p2_blind": {
+    "n": 3,
+    "target_gap": 0.0,
+    "dir_match": 1.0,
+    "off_target_mean": 0.7291666666666666,
+    "fix_success_rate": 1.0
+  },
+  "p2_detect": {
+    "n": 3,
+    "target_gap": 0.0,
+    "dir_match": 1.0,
+    "off_target_mean": 0.20833333333333334,
+    "fix_success_rate": 1.0
+  }
+}

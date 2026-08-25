@@ -1,0 +1,110 @@
+=== exp02 full: high neuroticism ===
+| --- | --- | --- | --- |
+| caps | 0.540±0.125 | 0.286±0.141 | +0.254 |
+| trait_label | 0.618±0.110 | 0.327±0.121 | +0.290 |
+| persona_description | 0.619±0.097 | 0.401±0.123 | +0.218 |
+
+CAPS prediction: W-A is larger for the 'caps' row than for 'trait_label'.
+Higher W-A means the agent treats different situations as different — 
+the empirical signature of CAPS-style personality (Mischel & Shoda 1995).
+
+[exp02] wrote -> runs/exp02_beck_v2_neuroticism_high.json
+=== exp02 full: low neuroticism ===
+| --- | --- | --- | --- |
+| caps | 0.600±0.109 | 0.281±0.125 | +0.320 |
+| trait_label | 0.559±0.157 | 0.233±0.139 | +0.326 |
+| persona_description | 0.583±0.161 | 0.288±0.127 | +0.295 |
+
+CAPS prediction: W-A is larger for the 'caps' row than for 'trait_label'.
+Higher W-A means the agent treats different situations as different — 
+the empirical signature of CAPS-style personality (Mischel & Shoda 1995).
+
+[exp02] wrote -> runs/exp02_beck_v2_neuroticism_low.json
+=== exp02 full: high extraversion ===
+| --- | --- | --- | --- |
+| caps | 0.587±0.099 | 0.303±0.125 | +0.284 |
+| trait_label | 0.557±0.098 | 0.289±0.111 | +0.268 |
+| persona_description | 0.579±0.103 | 0.290±0.118 | +0.289 |
+
+CAPS prediction: W-A is larger for the 'caps' row than for 'trait_label'.
+Higher W-A means the agent treats different situations as different — 
+the empirical signature of CAPS-style personality (Mischel & Shoda 1995).
+
+[exp02] wrote -> runs/exp02_beck_v2_extraversion_high.json
+=== exp02 full: low extraversion ===
+| --- | --- | --- | --- |
+| caps | 0.515±0.129 | 0.262±0.143 | +0.253 |
+| trait_label | 0.564±0.115 | 0.303±0.120 | +0.261 |
+| persona_description | 0.634±0.101 | 0.352±0.121 | +0.282 |
+
+CAPS prediction: W-A is larger for the 'caps' row than for 'trait_label'.
+Higher W-A means the agent treats different situations as different — 
+the empirical signature of CAPS-style personality (Mischel & Shoda 1995).
+
+[exp02] wrote -> runs/exp02_beck_v2_extraversion_low.json
+=== exp02 full: high conscientiousness ===
+| --- | --- | --- | --- |
+| caps | 0.558±0.124 | 0.238±0.128 | +0.320 |
+| trait_label | 0.620±0.112 | 0.293±0.118 | +0.327 |
+| persona_description | 0.637±0.083 | 0.299±0.121 | +0.339 |
+
+CAPS prediction: W-A is larger for the 'caps' row than for 'trait_label'.
+Higher W-A means the agent treats different situations as different — 
+the empirical signature of CAPS-style personality (Mischel & Shoda 1995).
+
+[exp02] wrote -> runs/exp02_beck_v2_conscientiousness_high.json
+=== exp02 full: low conscientiousness ===
+| --- | --- | --- | --- |
+| caps | 0.521±0.104 | 0.311±0.126 | +0.210 |
+| trait_label | 0.532±0.132 | 0.259±0.128 | +0.273 |
+| persona_description | 0.587±0.085 | 0.312±0.129 | +0.275 |
+
+CAPS prediction: W-A is larger for the 'caps' row than for 'trait_label'.
+Higher W-A means the agent treats different situations as different — 
+the empirical signature of CAPS-style personality (Mischel & Shoda 1995).
+
+[exp02] wrote -> runs/exp02_beck_v2_conscientiousness_low.json
+=== exp02 full: high agreeableness ===
+| --- | --- | --- | --- |
+| caps | 0.607±0.123 | 0.260±0.132 | +0.347 |
+| trait_label | 0.631±0.119 | 0.274±0.130 | +0.357 |
+| persona_description | 0.640±0.090 | 0.325±0.139 | +0.315 |
+
+CAPS prediction: W-A is larger for the 'caps' row than for 'trait_label'.
+Higher W-A means the agent treats different situations as different — 
+the empirical signature of CAPS-style personality (Mischel & Shoda 1995).
+
+[exp02] wrote -> runs/exp02_beck_v2_agreeableness_high.json
+=== exp02 full: low agreeableness ===
+| --- | --- | --- | --- |
+| caps | 0.554±0.124 | 0.285±0.125 | +0.269 |
+| trait_label | 0.527±0.101 | 0.244±0.122 | +0.283 |
+| persona_description | 0.615±0.111 | 0.286±0.125 | +0.329 |
+
+CAPS prediction: W-A is larger for the 'caps' row than for 'trait_label'.
+Higher W-A means the agent treats different situations as different — 
+the empirical signature of CAPS-style personality (Mischel & Shoda 1995).
+
+[exp02] wrote -> runs/exp02_beck_v2_agreeableness_low.json
+=== exp02 full: high openness ===
+| --- | --- | --- | --- |
+| caps | 0.606±0.098 | 0.294±0.131 | +0.311 |
+| trait_label | 0.561±0.098 | 0.261±0.127 | +0.300 |
+| persona_description | 0.587±0.111 | 0.309±0.116 | +0.279 |
+
+CAPS prediction: W-A is larger for the 'caps' row than for 'trait_label'.
+Higher W-A means the agent treats different situations as different — 
+the empirical signature of CAPS-style personality (Mischel & Shoda 1995).
+
+[exp02] wrote -> runs/exp02_beck_v2_openness_high.json
+=== exp02 full: low openness ===
+| --- | --- | --- | --- |
+| caps | 0.568±0.110 | 0.268±0.148 | +0.300 |
+| trait_label | 0.525±0.142 | 0.274±0.131 | +0.252 |
+| persona_description | 0.580±0.140 | 0.249±0.116 | +0.332 |
+
+CAPS prediction: W-A is larger for the 'caps' row than for 'trait_label'.
+Higher W-A means the agent treats different situations as different — 
+the empirical signature of CAPS-style personality (Mischel & Shoda 1995).
+
+[exp02] wrote -> runs/exp02_beck_v2_openness_low.json
