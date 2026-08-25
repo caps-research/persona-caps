@@ -1,4 +1,7 @@
+# Secrets
 .env
+
+# Python
 __pycache__/
 *.pyc
 .venv/
@@ -8,26 +11,12 @@ venv/
 *.egg-info/
 build/
 dist/
-# runs/ 是发布内容，此处不再排除
 .cache/
 
-# large external data (not source)
-baselines/
-paper/latex/persona-caps-latex.zip
-paper/for_review/*.docx
-paper/latex/*.pdf
-paper/latex/main_body.tex
-paper/latex/appendix_body.tex
-paper/latex/post_refs.tex
-paper/DRAFT.md.bak.*
-paper/DRAFT_v2.md.bak.*
-paper/DRAFT_v2_8pp.md.bak.*
-paper/latex/main.log
-paper/latex/main.blg
-paper/latex/main.out
-paper/latex/main.aux
-paper/latex/main.bbl
-paper/latex/main.toc
-paper/latex/main.fdb_latexmk
-paper/latex/main.fls
-logs/
+# Third-party baseline checkouts, if vendored in at the top level.
+# Anchored: an unanchored "baselines/" also matches data/baselines/,
+# which holds the trait-prompt stimuli that experiments/exp01 and exp02 read.
+/baselines/
+/logs/
+
+# runs/ is released content and is deliberately tracked.
