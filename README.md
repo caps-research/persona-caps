@@ -3,7 +3,7 @@
 Code and data for *Persona-CAPS: Controllable and Auditable LLM Personality via
 Retrieval over Situation–Behavior Contingencies* (EMNLP 2026).
 
-Guanghao Liu, Guangzhou An, Yang Xu, Yu Chen.
+Guanghao Liu, Guangzhou An, Yang Xu, YU CHEN.
 
 This archive is **end-to-end self-contained**: code, evaluation harness, frozen run logs (under `runs/`), and a small unit-test suite. All result tables and figures in the paper can be regenerated from `runs/` without re-querying any commercial API; the experiment scripts are also runnable from scratch given API keys.
 
@@ -115,7 +115,7 @@ Covers atom rendering and corpus roundtrip (`tests/test_corpus.py`), ESM dialogu
 @inproceedings{liu-etal-2026-persona-caps,
   title     = {Persona-CAPS: Controllable and Auditable {LLM} Personality via
                Retrieval over Situation--Behavior Contingencies},
-  author    = {Liu, Guanghao and An, Guangzhou and Xu, Yang and Chen, Yu},
+  author    = {Liu, Guanghao and An, Guangzhou and Xu, Yang and CHEN, YU},
   booktitle = {Proceedings of the 2026 Conference on Empirical Methods in
                Natural Language Processing},
   year      = {2026}
