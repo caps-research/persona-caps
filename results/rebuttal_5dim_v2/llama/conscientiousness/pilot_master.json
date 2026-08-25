@@ -1,0 +1,804 @@
+[
+  {
+    "config": {
+      "backend": "ollama",
+      "model": "llama3:8b",
+      "target_dim": "conscientiousness",
+      "ks": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "pis": [
+        0.0,
+        1.0
+      ],
+      "n_runs": 10,
+      "temperature": 0.7,
+      "max_tokens": 1024,
+      "corpus_dir": "data/if_then/paper/beck_2022_v2",
+      "inventory": "data/inventories/ipip_short.json"
+    },
+    "rows": [
+      {
+        "k": 1,
+        "pi_high": 0.0,
+        "run_id": 0,
+        "seed": 20260762,
+        "conscientiousness_score": 2.5,
+        "parse_failures": 0,
+        "wall_s": 5.6
+      },
+      {
+        "k": 1,
+        "pi_high": 0.0,
+        "run_id": 1,
+        "seed": 20260763,
+        "conscientiousness_score": 2.0,
+        "parse_failures": 0,
+        "wall_s": 5.8
+      },
+      {
+        "k": 1,
+        "pi_high": 0.0,
+        "run_id": 2,
+        "seed": 20260764,
+        "conscientiousness_score": 2.0,
+        "parse_failures": 0,
+        "wall_s": 6.0
+      },
+      {
+        "k": 1,
+        "pi_high": 0.0,
+        "run_id": 3,
+        "seed": 20260765,
+        "conscientiousness_score": 2.0,
+        "parse_failures": 0,
+        "wall_s": 5.9
+      },
+      {
+        "k": 1,
+        "pi_high": 0.0,
+        "run_id": 4,
+        "seed": 20260766,
+        "conscientiousness_score": 2.0,
+        "parse_failures": 0,
+        "wall_s": 5.8
+      },
+      {
+        "k": 1,
+        "pi_high": 0.0,
+        "run_id": 5,
+        "seed": 20260767,
+        "conscientiousness_score": 2.5,
+        "parse_failures": 0,
+        "wall_s": 6.0
+      },
+      {
+        "k": 1,
+        "pi_high": 0.0,
+        "run_id": 6,
+        "seed": 20260768,
+        "conscientiousness_score": 2.5,
+        "parse_failures": 0,
+        "wall_s": 5.5
+      },
+      {
+        "k": 1,
+        "pi_high": 0.0,
+        "run_id": 7,
+        "seed": 20260769,
+        "conscientiousness_score": 2.0,
+        "parse_failures": 0,
+        "wall_s": 5.8
+      },
+      {
+        "k": 1,
+        "pi_high": 0.0,
+        "run_id": 8,
+        "seed": 20260770,
+        "conscientiousness_score": 2.0,
+        "parse_failures": 0,
+        "wall_s": 6.4
+      },
+      {
+        "k": 1,
+        "pi_high": 0.0,
+        "run_id": 9,
+        "seed": 20260771,
+        "conscientiousness_score": 2.25,
+        "parse_failures": 0,
+        "wall_s": 6.4
+      },
+      {
+        "k": 1,
+        "pi_high": 1.0,
+        "run_id": 0,
+        "seed": 20360762,
+        "conscientiousness_score": 5.0,
+        "parse_failures": 0,
+        "wall_s": 5.8
+      },
+      {
+        "k": 1,
+        "pi_high": 1.0,
+        "run_id": 1,
+        "seed": 20360763,
+        "conscientiousness_score": 4.75,
+        "parse_failures": 0,
+        "wall_s": 5.6
+      },
+      {
+        "k": 1,
+        "pi_high": 1.0,
+        "run_id": 2,
+        "seed": 20360764,
+        "conscientiousness_score": 5.0,
+        "parse_failures": 0,
+        "wall_s": 5.9
+      },
+      {
+        "k": 1,
+        "pi_high": 1.0,
+        "run_id": 3,
+        "seed": 20360765,
+        "conscientiousness_score": 5.0,
+        "parse_failures": 0,
+        "wall_s": 6.1
+      },
+      {
+        "k": 1,
+        "pi_high": 1.0,
+        "run_id": 4,
+        "seed": 20360766,
+        "conscientiousness_score": 5.0,
+        "parse_failures": 0,
+        "wall_s": 5.9
+      },
+      {
+        "k": 1,
+        "pi_high": 1.0,
+        "run_id": 5,
+        "seed": 20360767,
+        "conscientiousness_score": 4.75,
+        "parse_failures": 0,
+        "wall_s": 5.5
+      },
+      {
+        "k": 1,
+        "pi_high": 1.0,
+        "run_id": 6,
+        "seed": 20360768,
+        "conscientiousness_score": 4.25,
+        "parse_failures": 0,
+        "wall_s": 6.3
+      },
+      {
+        "k": 1,
+        "pi_high": 1.0,
+        "run_id": 7,
+        "seed": 20360769,
+        "conscientiousness_score": 5.0,
+        "parse_failures": 0,
+        "wall_s": 5.9
+      },
+      {
+        "k": 1,
+        "pi_high": 1.0,
+        "run_id": 8,
+        "seed": 20360770,
+        "conscientiousness_score": 5.0,
+        "parse_failures": 0,
+        "wall_s": 6.1
+      },
+      {
+        "k": 1,
+        "pi_high": 1.0,
+        "run_id": 9,
+        "seed": 20360771,
+        "conscientiousness_score": 4.75,
+        "parse_failures": 0,
+        "wall_s": 5.7
+      },
+      {
+        "k": 2,
+        "pi_high": 0.0,
+        "run_id": 0,
+        "seed": 20260812,
+        "conscientiousness_score": 2.5,
+        "parse_failures": 0,
+        "wall_s": 6.7
+      },
+      {
+        "k": 2,
+        "pi_high": 0.0,
+        "run_id": 1,
+        "seed": 20260813,
+        "conscientiousness_score": 2.5,
+        "parse_failures": 0,
+        "wall_s": 6.1
+      },
+      {
+        "k": 2,
+        "pi_high": 0.0,
+        "run_id": 2,
+        "seed": 20260814,
+        "conscientiousness_score": 2.5,
+        "parse_failures": 0,
+        "wall_s": 6.2
+      },
+      {
+        "k": 2,
+        "pi_high": 0.0,
+        "run_id": 3,
+        "seed": 20260815,
+        "conscientiousness_score": 2.0,
+        "parse_failures": 0,
+        "wall_s": 6.4
+      },
+      {
+        "k": 2,
+        "pi_high": 0.0,
+        "run_id": 4,
+        "seed": 20260816,
+        "conscientiousness_score": 2.0,
+        "parse_failures": 0,
+        "wall_s": 6.4
+      },
+      {
+        "k": 2,
+        "pi_high": 0.0,
+        "run_id": 5,
+        "seed": 20260817,
+        "conscientiousness_score": 2.5,
+        "parse_failures": 0,
+        "wall_s": 6.3
+      },
+      {
+        "k": 2,
+        "pi_high": 0.0,
+        "run_id": 6,
+        "seed": 20260818,
+        "conscientiousness_score": 2.25,
+        "parse_failures": 0,
+        "wall_s": 6.2
+      },
+      {
+        "k": 2,
+        "pi_high": 0.0,
+        "run_id": 7,
+        "seed": 20260819,
+        "conscientiousness_score": 2.25,
+        "parse_failures": 0,
+        "wall_s": 6.0
+      },
+      {
+        "k": 2,
+        "pi_high": 0.0,
+        "run_id": 8,
+        "seed": 20260820,
+        "conscientiousness_score": 2.0,
+        "parse_failures": 0,
+        "wall_s": 6.3
+      },
+      {
+        "k": 2,
+        "pi_high": 0.0,
+        "run_id": 9,
+        "seed": 20260821,
+        "conscientiousness_score": 2.5,
+        "parse_failures": 0,
+        "wall_s": 6.2
+      },
+      {
+        "k": 2,
+        "pi_high": 1.0,
+        "run_id": 0,
+        "seed": 20360812,
+        "conscientiousness_score": 5.0,
+        "parse_failures": 0,
+        "wall_s": 6.2
+      },
+      {
+        "k": 2,
+        "pi_high": 1.0,
+        "run_id": 1,
+        "seed": 20360813,
+        "conscientiousness_score": 4.25,
+        "parse_failures": 0,
+        "wall_s": 6.3
+      },
+      {
+        "k": 2,
+        "pi_high": 1.0,
+        "run_id": 2,
+        "seed": 20360814,
+        "conscientiousness_score": 4.25,
+        "parse_failures": 0,
+        "wall_s": 5.9
+      },
+      {
+        "k": 2,
+        "pi_high": 1.0,
+        "run_id": 3,
+        "seed": 20360815,
+        "conscientiousness_score": 5.0,
+        "parse_failures": 0,
+        "wall_s": 6.2
+      },
+      {
+        "k": 2,
+        "pi_high": 1.0,
+        "run_id": 4,
+        "seed": 20360816,
+        "conscientiousness_score": 5.0,
+        "parse_failures": 0,
+        "wall_s": 6.0
+      },
+      {
+        "k": 2,
+        "pi_high": 1.0,
+        "run_id": 5,
+        "seed": 20360817,
+        "conscientiousness_score": 5.0,
+        "parse_failures": 0,
+        "wall_s": 6.3
+      },
+      {
+        "k": 2,
+        "pi_high": 1.0,
+        "run_id": 6,
+        "seed": 20360818,
+        "conscientiousness_score": 4.0,
+        "parse_failures": 0,
+        "wall_s": 6.1
+      },
+      {
+        "k": 2,
+        "pi_high": 1.0,
+        "run_id": 7,
+        "seed": 20360819,
+        "conscientiousness_score": 5.0,
+        "parse_failures": 0,
+        "wall_s": 6.3
+      },
+      {
+        "k": 2,
+        "pi_high": 1.0,
+        "run_id": 8,
+        "seed": 20360820,
+        "conscientiousness_score": 5.0,
+        "parse_failures": 0,
+        "wall_s": 6.1
+      },
+      {
+        "k": 2,
+        "pi_high": 1.0,
+        "run_id": 9,
+        "seed": 20360821,
+        "conscientiousness_score": 5.0,
+        "parse_failures": 0,
+        "wall_s": 6.1
+      },
+      {
+        "k": 4,
+        "pi_high": 0.0,
+        "run_id": 0,
+        "seed": 20260912,
+        "conscientiousness_score": 2.75,
+        "parse_failures": 0,
+        "wall_s": 6.6
+      },
+      {
+        "k": 4,
+        "pi_high": 0.0,
+        "run_id": 1,
+        "seed": 20260913,
+        "conscientiousness_score": 2.5,
+        "parse_failures": 0,
+        "wall_s": 6.7
+      },
+      {
+        "k": 4,
+        "pi_high": 0.0,
+        "run_id": 2,
+        "seed": 20260914,
+        "conscientiousness_score": 2.5,
+        "parse_failures": 0,
+        "wall_s": 6.6
+      },
+      {
+        "k": 4,
+        "pi_high": 0.0,
+        "run_id": 3,
+        "seed": 20260915,
+        "conscientiousness_score": 2.0,
+        "parse_failures": 0,
+        "wall_s": 6.7
+      },
+      {
+        "k": 4,
+        "pi_high": 0.0,
+        "run_id": 4,
+        "seed": 20260916,
+        "conscientiousness_score": 2.0,
+        "parse_failures": 0,
+        "wall_s": 6.6
+      },
+      {
+        "k": 4,
+        "pi_high": 0.0,
+        "run_id": 5,
+        "seed": 20260917,
+        "conscientiousness_score": 2.5,
+        "parse_failures": 0,
+        "wall_s": 6.7
+      },
+      {
+        "k": 4,
+        "pi_high": 0.0,
+        "run_id": 6,
+        "seed": 20260918,
+        "conscientiousness_score": 2.5,
+        "parse_failures": 0,
+        "wall_s": 6.5
+      },
+      {
+        "k": 4,
+        "pi_high": 0.0,
+        "run_id": 7,
+        "seed": 20260919,
+        "conscientiousness_score": 2.5,
+        "parse_failures": 0,
+        "wall_s": 6.2
+      },
+      {
+        "k": 4,
+        "pi_high": 0.0,
+        "run_id": 8,
+        "seed": 20260920,
+        "conscientiousness_score": 2.75,
+        "parse_failures": 0,
+        "wall_s": 6.5
+      },
+      {
+        "k": 4,
+        "pi_high": 0.0,
+        "run_id": 9,
+        "seed": 20260921,
+        "conscientiousness_score": 2.25,
+        "parse_failures": 0,
+        "wall_s": 6.5
+      },
+      {
+        "k": 4,
+        "pi_high": 1.0,
+        "run_id": 0,
+        "seed": 20360912,
+        "conscientiousness_score": 5.0,
+        "parse_failures": 0,
+        "wall_s": 6.8
+      },
+      {
+        "k": 4,
+        "pi_high": 1.0,
+        "run_id": 1,
+        "seed": 20360913,
+        "conscientiousness_score": 5.0,
+        "parse_failures": 0,
+        "wall_s": 6.7
+      },
+      {
+        "k": 4,
+        "pi_high": 1.0,
+        "run_id": 2,
+        "seed": 20360914,
+        "conscientiousness_score": 5.0,
+        "parse_failures": 0,
+        "wall_s": 6.2
+      },
+      {
+        "k": 4,
+        "pi_high": 1.0,
+        "run_id": 3,
+        "seed": 20360915,
+        "conscientiousness_score": 4.5,
+        "parse_failures": 0,
+        "wall_s": 6.4
+      },
+      {
+        "k": 4,
+        "pi_high": 1.0,
+        "run_id": 4,
+        "seed": 20360916,
+        "conscientiousness_score": 4.75,
+        "parse_failures": 0,
+        "wall_s": 6.7
+      },
+      {
+        "k": 4,
+        "pi_high": 1.0,
+        "run_id": 5,
+        "seed": 20360917,
+        "conscientiousness_score": 5.0,
+        "parse_failures": 0,
+        "wall_s": 6.2
+      },
+      {
+        "k": 4,
+        "pi_high": 1.0,
+        "run_id": 6,
+        "seed": 20360918,
+        "conscientiousness_score": 5.0,
+        "parse_failures": 0,
+        "wall_s": 6.4
+      },
+      {
+        "k": 4,
+        "pi_high": 1.0,
+        "run_id": 7,
+        "seed": 20360919,
+        "conscientiousness_score": 4.5,
+        "parse_failures": 0,
+        "wall_s": 6.5
+      },
+      {
+        "k": 4,
+        "pi_high": 1.0,
+        "run_id": 8,
+        "seed": 20360920,
+        "conscientiousness_score": 5.0,
+        "parse_failures": 0,
+        "wall_s": 6.4
+      },
+      {
+        "k": 4,
+        "pi_high": 1.0,
+        "run_id": 9,
+        "seed": 20360921,
+        "conscientiousness_score": 5.0,
+        "parse_failures": 0,
+        "wall_s": 6.3
+      },
+      {
+        "k": 8,
+        "pi_high": 0.0,
+        "run_id": 0,
+        "seed": 20261112,
+        "conscientiousness_score": 2.25,
+        "parse_failures": 0,
+        "wall_s": 7.3
+      },
+      {
+        "k": 8,
+        "pi_high": 0.0,
+        "run_id": 1,
+        "seed": 20261113,
+        "conscientiousness_score": 2.25,
+        "parse_failures": 0,
+        "wall_s": 7.0
+      },
+      {
+        "k": 8,
+        "pi_high": 0.0,
+        "run_id": 2,
+        "seed": 20261114,
+        "conscientiousness_score": 2.25,
+        "parse_failures": 0,
+        "wall_s": 6.9
+      },
+      {
+        "k": 8,
+        "pi_high": 0.0,
+        "run_id": 3,
+        "seed": 20261115,
+        "conscientiousness_score": 2.0,
+        "parse_failures": 0,
+        "wall_s": 7.0
+      },
+      {
+        "k": 8,
+        "pi_high": 0.0,
+        "run_id": 4,
+        "seed": 20261116,
+        "conscientiousness_score": 2.25,
+        "parse_failures": 0,
+        "wall_s": 7.0
+      },
+      {
+        "k": 8,
+        "pi_high": 0.0,
+        "run_id": 5,
+        "seed": 20261117,
+        "conscientiousness_score": 2.0,
+        "parse_failures": 0,
+        "wall_s": 6.9
+      },
+      {
+        "k": 8,
+        "pi_high": 0.0,
+        "run_id": 6,
+        "seed": 20261118,
+        "conscientiousness_score": 2.25,
+        "parse_failures": 0,
+        "wall_s": 7.2
+      },
+      {
+        "k": 8,
+        "pi_high": 0.0,
+        "run_id": 7,
+        "seed": 20261119,
+        "conscientiousness_score": 2.75,
+        "parse_failures": 0,
+        "wall_s": 7.1
+      },
+      {
+        "k": 8,
+        "pi_high": 0.0,
+        "run_id": 8,
+        "seed": 20261120,
+        "conscientiousness_score": 2.5,
+        "parse_failures": 0,
+        "wall_s": 6.7
+      },
+      {
+        "k": 8,
+        "pi_high": 0.0,
+        "run_id": 9,
+        "seed": 20261121,
+        "conscientiousness_score": 2.75,
+        "parse_failures": 0,
+        "wall_s": 6.8
+      },
+      {
+        "k": 8,
+        "pi_high": 1.0,
+        "run_id": 0,
+        "seed": 20361112,
+        "conscientiousness_score": 5.0,
+        "parse_failures": 0,
+        "wall_s": 7.1
+      },
+      {
+        "k": 8,
+        "pi_high": 1.0,
+        "run_id": 1,
+        "seed": 20361113,
+        "conscientiousness_score": 5.0,
+        "parse_failures": 0,
+        "wall_s": 7.1
+      },
+      {
+        "k": 8,
+        "pi_high": 1.0,
+        "run_id": 2,
+        "seed": 20361114,
+        "conscientiousness_score": 5.0,
+        "parse_failures": 0,
+        "wall_s": 6.6
+      },
+      {
+        "k": 8,
+        "pi_high": 1.0,
+        "run_id": 3,
+        "seed": 20361115,
+        "conscientiousness_score": 4.25,
+        "parse_failures": 0,
+        "wall_s": 6.8
+      },
+      {
+        "k": 8,
+        "pi_high": 1.0,
+        "run_id": 4,
+        "seed": 20361116,
+        "conscientiousness_score": 5.0,
+        "parse_failures": 0,
+        "wall_s": 6.8
+      },
+      {
+        "k": 8,
+        "pi_high": 1.0,
+        "run_id": 5,
+        "seed": 20361117,
+        "conscientiousness_score": 4.75,
+        "parse_failures": 0,
+        "wall_s": 6.8
+      },
+      {
+        "k": 8,
+        "pi_high": 1.0,
+        "run_id": 6,
+        "seed": 20361118,
+        "conscientiousness_score": 4.25,
+        "parse_failures": 0,
+        "wall_s": 6.9
+      },
+      {
+        "k": 8,
+        "pi_high": 1.0,
+        "run_id": 7,
+        "seed": 20361119,
+        "conscientiousness_score": 5.0,
+        "parse_failures": 0,
+        "wall_s": 6.6
+      },
+      {
+        "k": 8,
+        "pi_high": 1.0,
+        "run_id": 8,
+        "seed": 20361120,
+        "conscientiousness_score": 5.0,
+        "parse_failures": 0,
+        "wall_s": 6.9
+      },
+      {
+        "k": 8,
+        "pi_high": 1.0,
+        "run_id": 9,
+        "seed": 20361121,
+        "conscientiousness_score": 5.0,
+        "parse_failures": 0,
+        "wall_s": 6.6
+      }
+    ],
+    "grid": [
+      {
+        "k": 1,
+        "pi_high": 0.0,
+        "n": 10,
+        "mean": 2.175,
+        "stdev": 0.225
+      },
+      {
+        "k": 1,
+        "pi_high": 1.0,
+        "n": 10,
+        "mean": 4.85,
+        "stdev": 0.22912878474779202
+      },
+      {
+        "k": 2,
+        "pi_high": 0.0,
+        "n": 10,
+        "mean": 2.3,
+        "stdev": 0.21794494717703367
+      },
+      {
+        "k": 2,
+        "pi_high": 1.0,
+        "n": 10,
+        "mean": 4.75,
+        "stdev": 0.3872983346207417
+      },
+      {
+        "k": 4,
+        "pi_high": 0.0,
+        "n": 10,
+        "mean": 2.425,
+        "stdev": 0.25124689052802224
+      },
+      {
+        "k": 4,
+        "pi_high": 1.0,
+        "n": 10,
+        "mean": 4.875,
+        "stdev": 0.20155644370746376
+      },
+      {
+        "k": 8,
+        "pi_high": 0.0,
+        "n": 10,
+        "mean": 2.325,
+        "stdev": 0.25124689052802224
+      },
+      {
+        "k": 8,
+        "pi_high": 1.0,
+        "n": 10,
+        "mean": 4.825,
+        "stdev": 0.2968585521759479
+      }
+    ]
+  }
+]

@@ -112,8 +112,9 @@ def main() -> None:
         print(f"{subj_label:<22} {cv:>7.2f} {sv:>7.2f} {pv:>7.2f}  | "
               f"{cv - sv:>+9.2f} {cv - pv:>+9.2f}")
 
-    # Markdown for the paper
-    out_md = ROOT / "paper" / "tables"
+    # Markdown for the paper. The artifact release ships no paper/ tree, so fall
+    # back to runs/ rather than conjuring one.
+    out_md = ROOT / "paper" / "tables" if (ROOT / "paper").is_dir() else ROOT / "runs"
     out_md.mkdir(parents=True, exist_ok=True)
     md = ["| subject | CAPS /10 | SP /10 | P² /10 | **CAPS − SP** | **CAPS − P²** |",
           "| --- | ---: | ---: | ---: | ---: | ---: |"]
