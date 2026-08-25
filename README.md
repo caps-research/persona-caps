@@ -102,6 +102,12 @@ Covers atom rendering and corpus roundtrip (`tests/test_corpus.py`), ESM dialogu
 - **Code**: MIT (see `LICENSE`).
 - **Released corpus** (`data/if_then/paper/beck_2022*`): CC BY-NC 4.0, inherited from openESM `0060_beck`.
 - **Mini-IPIP item bank**: Public-domain (Donnellan et al. 2006); included verbatim under `data/`.
+- **Experiment logs** (`runs/`): CC BY-NC 4.0. Many logs record prompts that quote corpus atoms
+  verbatim, which makes them adapted material under the openESM terms. We apply the stricter term
+  to the whole directory rather than splitting it file by file — the boundary can only be drawn by
+  text matching, and an error in the permissive direction would purport to waive rights we do not
+  hold. The atoms are LLM-verbalised, but the situation–behaviour pairings they express are Beck's
+  empirical result, so machine rephrasing does not break the chain of derivation.
 
 ## 7. Citation
 

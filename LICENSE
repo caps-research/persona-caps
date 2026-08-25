@@ -3,7 +3,14 @@ SCOPE. The MIT License below covers the SOURCE CODE of this repository only
 works released under their own terms and are NOT relicensed here: the mined
 if-then corpus (data/if_then/paper/beck_2022*) inherits CC BY-NC 4.0 from openESM
 dataset 0060_beck (Beck & Jackson, 2022), and the Mini-IPIP item bank (Donnellan
-et al., 2006) is public domain. See section 6 of README.md.
+et al., 2006) is public domain.
+
+The experiment logs under runs/ are released under CC BY-NC 4.0. Many of them
+record prompts that quote the mined corpus verbatim, which makes those logs
+adapted material under the openESM terms. We apply the stricter term to the whole
+directory rather than licensing it file by file, because the boundary can only be
+drawn by text matching and an error in the permissive direction would purport to
+waive rights we do not hold. See section 6 of README.md.
 
 ----------------------------------------------------------------------------
 
