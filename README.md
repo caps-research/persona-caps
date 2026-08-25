@@ -1,7 +1,9 @@
-# Persona-CAPS — Reviewer Reproduction Guide
+# Persona-CAPS
 
-Anonymous artifact accompanying the ARR / EMNLP 2026 submission
-*Persona-CAPS: Controllable and Auditable LLM Personality via Retrieval over Situation–Behavior Contingencies.*
+Code and data for *Persona-CAPS: Controllable and Auditable LLM Personality via
+Retrieval over Situation–Behavior Contingencies* (EMNLP 2026).
+
+Guanghao Liu, Guangzhou An, Yang Xu, Yu Chen.
 
 This archive is **end-to-end self-contained**: code, evaluation harness, frozen run logs (under `runs/`), and a small unit-test suite. All result tables and figures in the paper can be regenerated from `runs/` without re-querying any commercial API; the experiment scripts are also runnable from scratch given API keys.
 
@@ -25,7 +27,7 @@ runs/                     Frozen JSONL result logs referenced in the paper
 data/                     Released CAPS corpus + Mini-IPIP / PB stimuli
                           (also distributed separately as the Data archive)
 tests/                    Unit tests for corpus / retriever / agent
-docs/                     Internal design notes (not required for review)
+docs/                     Internal design notes (not required for reproduction)
 requirements.txt          Python dependencies
 pyproject.toml            Editable-install metadata
 .env.example              Template for API keys (copy to .env)
@@ -97,10 +99,19 @@ Covers atom rendering and corpus roundtrip (`tests/test_corpus.py`), ESM dialogu
 
 ## 6. License
 
-- **Code**: MIT.
+- **Code**: MIT (see `LICENSE`).
 - **Released corpus** (`data/if_then/paper/beck_2022*`): CC BY-NC 4.0, inherited from openESM `0060_beck`.
 - **Mini-IPIP item bank**: Public-domain (Donnellan et al. 2006); included verbatim under `data/`.
 
-## 7. Anonymity
+## 7. Citation
 
-This artifact has been stripped of author names, GitHub identifiers, absolute paths, API keys, and any other identifying metadata. If you find a residual leak, please flag it via the OpenReview review thread.
+```bibtex
+@inproceedings{liu-etal-2026-persona-caps,
+  title     = {Persona-CAPS: Controllable and Auditable {LLM} Personality via
+               Retrieval over Situation--Behavior Contingencies},
+  author    = {Liu, Guanghao and An, Guangzhou and Xu, Yang and Chen, Yu},
+  booktitle = {Proceedings of the 2026 Conference on Empirical Methods in
+               Natural Language Processing},
+  year      = {2026}
+}
+```
