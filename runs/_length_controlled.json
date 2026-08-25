@@ -1,0 +1,162 @@
+{
+  "limit_per_cell": 50,
+  "n_boot": 2000,
+  "seed": 0,
+  "a_length_score_correlation": {
+    "MiniMax-M2.7|CAPS": {
+      "n": 500,
+      "mean_10": 9.272,
+      "mean_words": 138.204,
+      "r": 0.06895439675165616,
+      "r_partial_within_cell": 0.0651592723632763
+    },
+    "MiniMax-M2.7|SP": {
+      "n": 500,
+      "mean_10": 8.416,
+      "mean_words": 253.022,
+      "r": 0.024209288893391235,
+      "r_partial_within_cell": -0.11973451412584736
+    },
+    "MiniMax-M2.7|P\u00b2": {
+      "n": 497,
+      "mean_10": 9.158953722334005,
+      "mean_words": 261.70221327967806,
+      "r": 0.08664333994052578,
+      "r_partial_within_cell": 0.0075030197880601515
+    },
+    "Gemini-2.5-Flash|CAPS": {
+      "n": 500,
+      "mean_10": 9.444,
+      "mean_words": 33.004,
+      "r": 0.11421891298839656,
+      "r_partial_within_cell": 0.2234750470253053
+    },
+    "Gemini-2.5-Flash|SP": {
+      "n": 500,
+      "mean_10": 8.736,
+      "mean_words": 116.242,
+      "r": 0.2430126203773153,
+      "r_partial_within_cell": 0.30207296847502485
+    },
+    "Gemini-2.5-Flash|P\u00b2": {
+      "n": 500,
+      "mean_10": 9.444,
+      "mean_words": 101.194,
+      "r": 0.3174440728886601,
+      "r_partial_within_cell": 0.3177715709664903
+    },
+    "Llama-3-8B (Q4)|CAPS": {
+      "n": 500,
+      "mean_10": 9.16,
+      "mean_words": 105.932,
+      "r": -0.08198536721316281,
+      "r_partial_within_cell": -0.0660850804293366
+    },
+    "Llama-3-8B (Q4)|SP": {
+      "n": 500,
+      "mean_10": 8.664,
+      "mean_words": 234.3,
+      "r": -0.15535190680487168,
+      "r_partial_within_cell": -0.13523043716506886
+    },
+    "Llama-3-8B (Q4)|P\u00b2": {
+      "n": 500,
+      "mean_10": 9.532,
+      "mean_words": 233.6,
+      "r": 0.03376972008937111,
+      "r_partial_within_cell": -0.10360698164777728
+    }
+  },
+  "b_length_matched_bootstrap": {
+    "MiniMax-M2.7|CAPS\u2212SP": {
+      "full_delta": 0.8559999999999999,
+      "full_ci": [
+        0.5960000000000001,
+        1.120000000000001
+      ],
+      "matched_delta": 0.4255568295479506,
+      "matched_ci": [
+        0.06864921568149107,
+        0.7922226830279815
+      ],
+      "n_matched_caps": 229,
+      "n_matched_base": 179,
+      "sign_preserved": true
+    },
+    "MiniMax-M2.7|CAPS\u2212P\u00b2": {
+      "full_delta": 0.11304627766599573,
+      "full_ci": [
+        -0.08341247484909609,
+        0.3171911468812869
+      ],
+      "matched_delta": -0.6949531856588251,
+      "matched_ci": [
+        -1.0707467458323805,
+        -0.3175154144781924
+      ],
+      "n_matched_caps": 151,
+      "n_matched_base": 145,
+      "sign_preserved": false
+    },
+    "Gemini-2.5-Flash|CAPS\u2212SP": {
+      "full_delta": 0.7080000000000002,
+      "full_ci": [
+        0.484,
+        0.9280000000000008
+      ],
+      "matched_delta": 1.1493340035184705,
+      "matched_ci": [
+        0.810253832621262,
+        1.4828348831364657
+      ],
+      "n_matched_caps": 346,
+      "n_matched_base": 230,
+      "sign_preserved": true
+    },
+    "Gemini-2.5-Flash|CAPS\u2212P\u00b2": {
+      "full_delta": 0.0,
+      "full_ci": [
+        -0.16799999999999926,
+        0.16799999999999926
+      ],
+      "matched_delta": 0.3610021786492368,
+      "matched_ci": [
+        0.13943355119825718,
+        0.5736383442265787
+      ],
+      "n_matched_caps": 340,
+      "n_matched_base": 270,
+      "sign_preserved": false
+    },
+    "Llama-3-8B (Q4)|CAPS\u2212SP": {
+      "full_delta": 0.49600000000000044,
+      "full_ci": [
+        0.2599999999999998,
+        0.7400000000000002
+      ],
+      "matched_delta": 0.6998000571265344,
+      "matched_ci": [
+        0.18517158362916675,
+        1.172399722528258
+      ],
+      "n_matched_caps": 63,
+      "n_matched_base": 389,
+      "sign_preserved": true
+    },
+    "Llama-3-8B (Q4)|CAPS\u2212P\u00b2": {
+      "full_delta": -0.3719999999999999,
+      "full_ci": [
+        -0.5559999999999992,
+        -0.19599999999999973
+      ],
+      "matched_delta": -0.45973804541579355,
+      "matched_ci": [
+        -0.8993257382004192,
+        -0.06936371386499296
+      ],
+      "n_matched_caps": 66,
+      "n_matched_base": 391,
+      "sign_preserved": true
+    }
+  }
+}
