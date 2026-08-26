@@ -12,10 +12,10 @@ to bias retrieval on it.
 
 Two retrieval modes are supported:
 
-- ``"argmax"`` (default, used in §4.6 / §4.4 / §4.8 headline experiments):
+- ``"argmax"`` (default, used in the §4.1 / §4.4 headline experiments):
   deterministic top-k by cosine similarity. This is a MAP / point estimate
   of the conditional distribution P(atom | query).
-- ``"softmax"`` (used in §4.10 conditional-retrieval ablation): genuine
+- ``"softmax"`` (used in the App. C conditional-retrieval ablation): genuine
   sampling from the temperature-softmaxed similarity distribution
       P(atom | query) = softmax(sim(query, atom) / tau).
   This is the operational implementation of CAPS-as-conditional-probability;
@@ -104,7 +104,7 @@ class Retriever:
 
         ``mode`` and ``tau`` default to the values set at ``__init__``;
         passing them per-call lets a single retriever be reused under
-        different sampling regimes (used by the §4.10 sweep).
+            different sampling regimes (used by the App. C sweeps).
 
         Returns
         -------

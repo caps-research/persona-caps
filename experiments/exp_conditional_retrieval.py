@@ -1,4 +1,4 @@
-"""§4.10 — Persona-caps as a conditional probability of behavior given situation.
+"""App. C.1-C.3 — behavior as a conditional probability given the situation.
 
 Three sweeps are bundled together so they can be invoked from one CLI:
 
@@ -24,7 +24,7 @@ Three sweeps are bundled together so they can be invoked from one CLI:
               the §4.6 single-cell baseline) and that dual-trait personas
               compose without one dim eating the other.
 
-Default backend: MiniMax-M2.7-highspeed (matches §4.6 / §4.4 / §4.8 headline).
+Default backend: MiniMax-M2.7-highspeed (matches the §4.1 / §4.4 headline).
 Default N=3 runs per cell; pass --n-runs to override.
 
 Outputs:

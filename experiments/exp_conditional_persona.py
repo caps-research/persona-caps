@@ -19,7 +19,7 @@ Test design.
     3. ``single_high_caps``: ``CapsAgent`` with the high-C corpus only (cannot route).
     4. ``single_low_caps`` : ``CapsAgent`` with the low-C corpus only (cannot route).
 * Each response is rated 1-5 on conscientiousness expression by an LLM judge
-  (default GPT-4o, same protocol as §4.8). Scores per (method, context) are
+  (default GPT-4o, same protocol as §4.4). Scores per (method, context) are
   averaged across the 8 scenarios.
 * Headline metric: WORK − FAMILY mean score per method. Conditional CAPS
   should produce a large positive gap; single-corpus CAPS should produce ~0;

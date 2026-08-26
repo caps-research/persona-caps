@@ -1,5 +1,5 @@
 {
-  "description": "Hand-written casual chitchat turns used as history filler in the long-context drift experiment (§4.10). Each pair is (user, assistant). Topics are intentionally mundane (weather, sports, food, trivia) and unrelated to conscientiousness, so that they cannot reasonably bias either CAPS retrieval (no conscientiousness situations to match) or persona-string conditioning (no professional / family framing). 50 pairs, used to support history lengths up to 50 turns.",
+  "description": "Hand-written casual chitchat turns used as history filler in the long-context drift experiment (exploratory; not reported in the paper). Each pair is (user, assistant). Topics are intentionally mundane (weather, sports, food, trivia) and unrelated to conscientiousness, so that they cannot reasonably bias either CAPS retrieval (no conscientiousness situations to match) or persona-string conditioning (no professional / family framing). 50 pairs, used to support history lengths up to 50 turns.",
   "turns": [
     {"user": "Hey, did you see the weather forecast for tomorrow?", "assistant": "I saw a quick headline this morning — looks like rain in the afternoon and clearing up by evening, I think."},
     {"user": "Random question — do you prefer tea or coffee?", "assistant": "I'd say coffee in the morning and tea in the late afternoon, mostly out of habit."},

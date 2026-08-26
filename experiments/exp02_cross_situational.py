@@ -1,4 +1,4 @@
-"""Experiment 02 — RQ2: Cross-situational behavioral signature.
+"""Experiment 02 — cross-situational behavioral signature (App. A.2, B.1).
 
 The CAPS theory predicts: a real personality produces stable responses to
 *the same situation paraphrased differently* (within-paraphrase consistency)

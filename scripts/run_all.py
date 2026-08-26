@@ -6,8 +6,8 @@ Three stages, each can be skipped independently:
    pairs that don't already exist on disk. Skips any corpus already there.
 2. ``exp01`` — run RQ1 (inventory consistency) for each backend, with all
    three persona methods (caps / trait_label / persona_description).
-3. ``exp02`` — run RQ2 (cross-situational signature) for each backend on
-   a configurable set of (dim, polarity) targets.
+3. ``exp02`` — run the cross-situational signature (App. A.2, B.1) for each
+   backend on a configurable set of (dim, polarity) targets.
 
 Outputs land under ``runs/<timestamp>/`` so successive invocations don't
 overwrite earlier results. Each stage is a thin wrapper over the
@@ -85,7 +85,7 @@ def stage_exp01(args: argparse.Namespace, run_dir: Path) -> None:
 
 
 def stage_exp02(args: argparse.Namespace, run_dir: Path) -> None:
-    print("\n[run_all] STAGE 3: exp02 (RQ2 cross-situational signature)")
+    print("\n[run_all] STAGE 3: exp02 (cross-situational signature)")
     for backend in args.backends:
         for target in args.signature_targets:
             if ":" not in target:

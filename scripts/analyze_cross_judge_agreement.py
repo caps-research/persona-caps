@@ -1,10 +1,24 @@
-"""Cross-judge agreement analysis for §4.8 PersonalityBench.
+"""Cross-judge agreement analysis for §4.4 PersonalityBench (App. A.10.1).
 
-Compares per-item ratings from MiniMax-M2.7-highspeed (current §4.8 numbers)
+Compares per-item ratings from MiniMax-M2.7-highspeed (runs/personalitybench_scored/)
 and GPT-4o-2024-08-06 (independent judge, runs/personalitybench_scored_gpt4o/).
 The point is to bound the same-model judge bias listed in §6: if both judges
 agree at the item level *and* preserve the CAPS-SP gap direction and magnitude,
-then the §4.8 headline is not an artifact of MiniMax judging itself.
+then the §4.4 headline is not an artifact of MiniMax judging itself.
+
+Two aggregations are reported and they do not coincide:
+
+* Item-level agreement (exact / within-1 / Pearson r / level offset) runs over
+  every question both judges scored, pooled flat. This is the right denominator
+  for "do the judges agree", and it is where A.10.1's n=1775, 75.9%, 98.0%,
+  r=+0.951 and +0.12/10 come from.
+* The CAPS-SP gap is instead reported under the §4.4 headline aggregation --
+  first 50 rows per (trait, polarity) cell, low-polarity reversed, per-trait
+  means averaged -- because that is the quantity A.10.1 claims judge choice
+  moves by 0.08/10 (+0.86 under GPT-4o, +0.78 under MiniMax). Pooling the
+  paired items flat instead gives +0.93 / +0.86: a different denominator, not
+  a different conclusion. Both are printed so neither can be mistaken for the
+  other.
 
 Outputs: prints summary, writes runs/personalitybench_scored/cross_judge_agreement.json.
 """
@@ -28,6 +42,33 @@ def pearson(pairs: list[tuple[float, float]]) -> float:
     denx = (sum((a - xm) ** 2 for a, _ in pairs)) ** 0.5
     deny = (sum((b - ym) ** 2 for _, b in pairs)) ** 0.5
     return num / (denx * deny) if denx * deny > 0 else float("nan")
+
+
+LIMIT_PER_CELL = 50  # matches scripts/aggregate_pb_3x3.py
+
+
+def headline_4_4(judge_dir: Path) -> dict:
+    """CAPS/SP means under the §4.4 aggregation, for one judge's scored tree."""
+    per_method: dict[str, float] = {}
+    for method in ["caps", "sp"]:
+        per_trait: dict[str, list[float]] = {}
+        for fp in sorted((judge_dir / method).glob("*.jsonl")):
+            trait, pol = fp.stem.rsplit("_", 1)
+            rows = [
+                d["rating"]
+                for d in (json.loads(l) for l in fp.read_text().splitlines() if l.strip())
+                if d.get("rating") is not None
+            ]
+            for r in rows[:LIMIT_PER_CELL]:
+                per_trait.setdefault(trait, []).append(r * 2 if pol == "high" else (6 - r) * 2)
+        if not per_trait:
+            return {}
+        per_method[method] = statistics.mean(statistics.mean(v) for v in per_trait.values())
+    return {
+        "caps": per_method["caps"],
+        "sp": per_method["sp"],
+        "caps_minus_sp": per_method["caps"] - per_method["sp"],
+    }
 
 
 def collect() -> dict:
@@ -101,6 +142,14 @@ def collect() -> dict:
             "minimax_judge": h["caps"]["minimax_judge"] - h["sp"]["minimax_judge"],
             "gpt4o_judge": h["caps"]["gpt4o_judge"] - h["sp"]["gpt4o_judge"],
         }
+
+    mm_h, g4_h = headline_4_4(MM_DIR), headline_4_4(G4_DIR)
+    if mm_h and g4_h:
+        out["headline_4_4_aggregation"] = {
+            "minimax_judge": mm_h,
+            "gpt4o_judge": g4_h,
+            "judge_swap_sensitivity": abs(g4_h["caps_minus_sp"] - mm_h["caps_minus_sp"]),
+        }
     return out
 
 
@@ -117,9 +166,20 @@ def main() -> None:
     g = out["caps_minus_sp_gap_x2"]
     h = out["headline_aligned_x2_per_method"]
     print()
-    print(f"Headline /10 (CAPS): MM={h['caps']['minimax_judge']:.2f}  GPT4o={h['caps']['gpt4o_judge']:.2f}")
-    print(f"Headline /10 (SP):   MM={h['sp']['minimax_judge']:.2f}  GPT4o={h['sp']['gpt4o_judge']:.2f}")
-    print(f"CAPS−SP gap: MM={g['minimax_judge']:+.2f}  GPT4o={g['gpt4o_judge']:+.2f}")
+    print("Paired items only, pooled flat (NOT the §4.4 aggregation):")
+    print(f"  CAPS /10: MM={h['caps']['minimax_judge']:.2f}  GPT4o={h['caps']['gpt4o_judge']:.2f}")
+    print(f"  SP   /10: MM={h['sp']['minimax_judge']:.2f}  GPT4o={h['sp']['gpt4o_judge']:.2f}")
+    print(f"  CAPS−SP gap: MM={g['minimax_judge']:+.2f}  GPT4o={g['gpt4o_judge']:+.2f}")
+
+    if "headline_4_4_aggregation" in out:
+        f = out["headline_4_4_aggregation"]
+        mm, g4 = f["minimax_judge"], f["gpt4o_judge"]
+        print()
+        print("§4.4 aggregation (50/cell, low reversed, per-trait means) — the A.10.1 figures:")
+        print(f"  CAPS /10: MM={mm['caps']:.2f}  GPT4o={g4['caps']:.2f}")
+        print(f"  SP   /10: MM={mm['sp']:.2f}  GPT4o={g4['sp']:.2f}")
+        print(f"  CAPS−SP gap: MM={mm['caps_minus_sp']:+.2f}  GPT4o={g4['caps_minus_sp']:+.2f}")
+        print(f"  judge-swap sensitivity: {f['judge_swap_sensitivity']:.2f}")
 
 
 if __name__ == "__main__":

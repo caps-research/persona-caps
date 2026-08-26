@@ -48,17 +48,18 @@ Tested on Python 3.10–3.12. CPU is sufficient for retrieval; subject-side LLMs
 
 | § | Topic | Entry point |
 | :-- | :-- | :-- |
+| 3 | ESM mining pipeline (166-atom corpus) | `scripts/build_paper_atoms_beck.py` |
 | 4.1 | Mini-IPIP trait fidelity (5 conditions × 3 vendors) | `experiments/exp01_consistency.py` |
-| 4.2 | Cross-situational consistency | `experiments/exp02_cross_situational.py` |
+| 4.2 | Content-specificity ablations (`random_demos` / `wrong_trait`) | `experiments/exp01_consistency.py` (ablation arms) |
 | 4.3 | Compositional editing case study (Fig. 2) | `experiments/exp03_editing.py` |
 | 4.4 | PersonalityBench 3-backbone × 3-method head-to-head | `experiments/exp_personalitybench.py` → `experiments/judge_personalitybench.py` |
 | 4.5 | 1-D mixture-weight (π) sweep | `experiments/exp_pi_sweep.py` (CAPS) / `experiments/exp_pi_sweep_promptbase.py` (P² baseline) |
 | 4.6 | 5-D joint composition on 12 deployment-realistic profiles | `experiments/exp_p2_joint_5d.py`, `experiments/exp_rqg_generalization.py` |
 | 4.7 | Audit-loop study — pollution sanity gate, universal-recall sweep, sparse-edit triage, P²-sanity baseline, GPT-4o cross-vendor | `scripts/audit_loop/inject_polarity_flips.py` (sanity gate) → `scripts/audit_loop/run_sweep.py` (universal-recall) / `scripts/audit_loop/locate_via_responses.py` (sparse-edit) → `scripts/audit_loop/run_fix_sweep.py` (atom-level repair) → `scripts/audit_loop/run_p2_sweep.py` (P² baseline) → `scripts/audit_loop/run_xvendor_pilot.py` (GPT-4o cross-vendor); aggregation via `scripts/audit_loop/aggregate.py` and `scripts/audit_loop/_paper_stats.py` (logs in `runs/audit_loop/`, `runs/audit_loop_xvendor/`) |
+| App. A.2, B.1 | Cross-situational evaluation set and its $W - A$ metric-level null | `experiments/exp02_cross_situational.py` |
 | App. A.4 | No-leakage validation (trigram-Jaccard) | `scripts/npti_overlap_diagnostic.py` |
-| App. A.6 | ESM mining pipeline (166-atom corpus) | `scripts/build_paper_atoms_beck.py` |
-| App. B | Cross-family judge replication (r = +0.951) | `scripts/analyze_cross_judge_agreement.py` |
-| App. C | Conditional-probability and softmax-retrieval sweeps | `experiments/exp_conditional_persona.py`, `experiments/exp_conditional_retrieval.py` |
+| App. A.10.1 | Cross-family judge replication (r = +0.951) | `scripts/analyze_cross_judge_agreement.py` |
+| App. C.1–C.3 | Retrieval-temperature and mixture sweeps (Sweeps A–C) | `experiments/exp_conditional_retrieval.py`, `experiments/exp_conditional_persona.py` |
 | App. (open-weight) | Llama-3-8B / Qwen-3 backbone runs | `scripts/run_llama3_8b_full.sh`, `scripts/run_pi_sweep_qwen35_9b.sh` |
 
 A single-command reproduction over the canonical 3-backbone × 3-method PersonalityBench grid:
