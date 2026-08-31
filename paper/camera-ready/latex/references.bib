@@ -1,0 +1,270 @@
+% Bibliography for "If-Then is All You Need: Persona as If-Then Contracts"
+% All entries verified against arXiv / publisher metadata.
+% 2026-04-30: re-verified all 2025/2026 arXiv IDs against arXiv API metadata;
+%   corrected fabricated author lists in personaagent2025, DPR, personaai2025,
+%   and multiprgpa2025.
+% 2026-07-31 (camera-ready): re-checked all 14 arXiv IDs against the arXiv API and
+%   both existing DOIs against doi.org. Four preprints had since appeared in venues:
+%   personaagent2025 (also RETITLED upstream -- the old title was stale) and IRiS
+%   -> Findings of ACL 2026, with Anthology DOIs and pages; DPR -> CogSci 2026;
+%   deeppersona2025 -> LAW 2025 Workshop at NeurIPS. abdulhai2025consistent
+%   confirmed in the official NeurIPS 2025 proceedings. dprf2025, psyagent2026,
+%   anthropic2025personas, anthropic2026emotion, personaai2025, multiprgpa2025
+%   remain arXiv-only (no venue metadata upstream).
+
+% ---------- Foundational personality-psychology references ----------
+
+@article{mischel1995caps,
+  author    = {Mischel, Walter and Shoda, Yuichi},
+  title     = {A cognitive-affective system theory of personality: Reconceptualizing situations, dispositions, dynamics, and invariance in personality structure},
+  journal   = {Psychological Review},
+  year      = {1995},
+  volume    = {102},
+  number    = {2},
+  pages     = {246--268},
+  doi       = {10.1037/0033-295X.102.2.246},
+}
+
+@incollection{ipipneo,
+  author    = {Goldberg, Lewis R.},
+  title     = {A broad-bandwidth, public domain, personality inventory measuring the lower-level facets of several five-factor models},
+  booktitle = {Personality Psychology in Europe},
+  editor    = {Mervielde, I. and Deary, I. and De Fruyt, F. and Ostendorf, F.},
+  publisher = {Tilburg University Press},
+  address   = {Tilburg, The Netherlands},
+  year      = {1999},
+  volume    = {7},
+  pages     = {7--28},
+  note      = {Public-domain 300-item IPIP-NEO inventory; data hosted at \url{https://ipip.ori.org/}},
+}
+
+@article{donnellan2006miniipip,
+  author    = {Donnellan, M. Brent and Oswald, Frederick L. and Baird, Brendan M. and Lucas, Richard E.},
+  title     = {The {Mini-IPIP} scales: Tiny-yet-effective measures of the {B}ig {F}ive factors of personality},
+  journal   = {Psychological Assessment},
+  year      = {2006},
+  volume    = {18},
+  number    = {2},
+  pages     = {192--203},
+  doi       = {10.1037/1040-3590.18.2.192},
+}
+
+@article{rauthmann2014diamonds,
+  author    = {Rauthmann, John F. and Gallardo-Pujol, David and Guillaume, Esther M. and Todd, Elysia and Nave, Christopher S. and Sherman, Ryne A. and Ziegler, Matthias and Jones, Ashley Bell and Funder, David C.},
+  title     = {The {Situational Eight} {DIAMONDS}: A taxonomy of major dimensions of situation characteristics},
+  journal   = {Journal of Personality and Social Psychology},
+  year      = {2014},
+  volume    = {107},
+  number    = {4},
+  pages     = {677--718},
+  doi       = {10.1037/a0037250},
+}
+
+@article{beck2022esm,
+  author    = {Beck, Emorie D. and Jackson, Joshua J.},
+  title     = {Personalized prediction of behaviors and experiences: An idiographic person--situation test},
+  journal   = {Psychological Science},
+  year      = {2022},
+  volume    = {33},
+  number    = {10},
+  pages     = {1767--1782},
+  doi       = {10.1177/09567976221093307},
+}
+
+% ---------- LLMs and the Big Five (psychometrics) ----------
+
+@article{serapio2023personality,
+  author    = {Serapio-Garc{\'\i}a, Gregory and Safdari, Mustafa and Crepy, Cl{\'e}ment and Sun, Luning and Fitz, Stephen and Romero, Peter and Abdulhai, Marwa and Faust, Aleksandra and Matari{\'c}, Maja},
+  title     = {A psychometric framework for evaluating and shaping personality traits in large language models},
+  journal   = {Nature Machine Intelligence},
+  year      = {2025},
+  volume    = {7},
+  pages     = {1954--1968},
+  doi       = {10.1038/s42256-025-01115-6},
+}
+
+% ---------- Persona-as-vector / activation steering line ----------
+
+@article{anthropic2025personas,
+  author    = {Chen, Runjin and Arditi, Andy and Sleight, Henry and Evans, Owain and Lindsey, Jack},
+  title     = {Persona vectors: Monitoring and controlling character traits in language models},
+  journal   = {arXiv preprint arXiv:2507.21509},
+  year      = {2025},
+  eprint    = {2507.21509},
+  archiveprefix = {arXiv},
+  primaryclass = {cs.CL},
+}
+
+@article{anthropic2026emotion,
+  author    = {Sofroniew, Nicholas and Kauvar, Isaac and Saunders, William and Chen, Runjin and Henighan, Tom and Hydrie, Sasha and Citro, Craig and Pearce, Adam and Tarng, Julius and Gurnee, Wes and Batson, Joshua and Zimmerman, Sam and Rivoire, Kelley and Fish, Kyle and Olah, Chris and Lindsey, Jack},
+  title     = {Emotion concepts and their function in a large language model},
+  journal   = {arXiv preprint arXiv:2604.07729},
+  year      = {2026},
+  eprint    = {2604.07729},
+  archiveprefix = {arXiv},
+  primaryclass = {cs.CL},
+}
+
+@inproceedings{jiang2023p2,
+  author    = {Jiang, Guangyuan and Xu, Manjie and Zhu, Song-Chun and Han, Wenjuan and Zhang, Chi and Zhu, Yixin},
+  title     = {Evaluating and inducing personality in pre-trained language models},
+  booktitle = {Advances in Neural Information Processing Systems 36 (NeurIPS 2023)},
+  year      = {2023},
+  eprint    = {2206.07550},
+  archiveprefix = {arXiv},
+  primaryclass = {cs.CL},
+}
+
+@inproceedings{sbert2019,
+  author    = {Reimers, Nils and Gurevych, Iryna},
+  title     = {{Sentence-BERT}: Sentence embeddings using {Siamese} {BERT}-networks},
+  booktitle = {Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing (EMNLP-IJCNLP)},
+  year      = {2019},
+  pages     = {3982--3992},
+  address   = {Hong Kong, China},
+  publisher = {Association for Computational Linguistics},
+  doi       = {10.18653/v1/D19-1410},
+}
+
+@inproceedings{NPTI,
+  author    = {Deng, Jia and Tang, Tianyi and Yin, Yanbin and Yang, Wenhao and Zhao, Wayne Xin and Wen, Ji-Rong},
+  title     = {Neuron-based personality trait induction in large language models},
+  booktitle = {The Thirteenth International Conference on Learning Representations (ICLR)},
+  year      = {2025},
+  eprint    = {2410.12327},
+  archiveprefix = {arXiv},
+  primaryclass = {cs.CL},
+}
+
+@inproceedings{IRiS,
+  author    = {Wei, Zesheng and Li, Mengxiang and Wang, Zilei and Deng, Yang},
+  title     = {Beyond static personas: Situational personality steering for large language models},
+  booktitle = {Findings of the Association for Computational Linguistics: ACL 2026},
+  year      = {2026},
+  pages     = {19185--19210},
+  address   = {San Diego, California, USA},
+  publisher = {Association for Computational Linguistics},
+  doi       = {10.18653/v1/2026.findings-acl.958},
+  eprint    = {2604.13846},
+  archiveprefix = {arXiv},
+  primaryclass = {cs.CL},
+}
+
+@inproceedings{DPR,
+  author    = {Chen, Jiaqi and Wang, Ming and Xie, Tingna and Feng, Shi and Liu, Yongkang},
+  title     = {A systematic analysis of the impact of persona steering on {LLM} capabilities},
+  booktitle = {Proceedings of the Annual Meeting of the Cognitive Science Society},
+  volume    = {48},
+  year      = {2026},
+  eprint    = {2604.11048},
+  archiveprefix = {arXiv},
+  primaryclass = {cs.CL},
+}
+
+% ---------- Persona-as-string / prompt-based agents ----------
+
+@inproceedings{personaagent2025,
+  author    = {Zhang, Weizhi and Zhang, Xinyang and Zhang, Chenwei and Yang, Liangwei and Shang, Jingbo and Wei, Zhepei and Zou, Henry Peng and Huang, Zijie and Wang, Zhengyang and Gao, Yifan and Pan, Xiaoman and Xiong, Lian and Liu, Jingguo and Yu, Philip S. and Li, Xian},
+  title     = {{PersonaAgent}: Bridging memory and action for personalized {LLM} agents},
+  booktitle = {Findings of the Association for Computational Linguistics: ACL 2026},
+  year      = {2026},
+  pages     = {26421--26439},
+  address   = {San Diego, California, USA},
+  publisher = {Association for Computational Linguistics},
+  doi       = {10.18653/v1/2026.findings-acl.1315},
+  eprint    = {2506.06254},
+  archiveprefix = {arXiv},
+  primaryclass = {cs.AI},
+}
+
+@article{dprf2025,
+  author    = {Yao, Bingsheng and Sun, Bo and Dong, Yuanzhe and Lu, Yuxuan and Wang, Dakuo},
+  title     = {{DPRF}: A generalizable dynamic persona refinement framework for optimizing behavior alignment between personalized {LLM} role-playing agents and humans},
+  journal   = {arXiv preprint arXiv:2510.14205},
+  year      = {2025},
+  eprint    = {2510.14205},
+  archiveprefix = {arXiv},
+  primaryclass = {cs.CL},
+}
+
+@article{psyagent2026,
+  author    = {Meng, Zibin and Chen, Kani},
+  title     = {{PsyAgent}: Constructing human-like agents based on psychological modeling and contextual interaction},
+  journal   = {arXiv preprint arXiv:2601.06158},
+  year      = {2026},
+  eprint    = {2601.06158},
+  archiveprefix = {arXiv},
+  primaryclass = {cs.CL},
+}
+
+@inproceedings{deeppersona2025,
+  author    = {Wang, Zhen and Zhou, Yufan and Luo, Zhongyan and Ye, Lyumanshan and Wood, Adam and Yao, Man and Mansour, Saab and Pan, Luoshang},
+  title     = {{DeepPersona}: A generative engine for scaling deep synthetic personas},
+  booktitle = {LAW 2025 Workshop at NeurIPS},
+  year      = {2025},
+  eprint    = {2511.07338},
+  archiveprefix = {arXiv},
+  primaryclass = {cs.AI},
+}
+
+% ---------- Training-based persona shaping ----------
+
+@inproceedings{big5chat2025,
+  author    = {Li, Wenkai and Liu, Jiarui and Liu, Andy and Zhou, Xuhui and Diab, Mona T. and Sap, Maarten},
+  title     = {{BIG5-CHAT}: Shaping {LLM} personalities through training on human-grounded data},
+  booktitle = {Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+  year      = {2025},
+  pages     = {20434--20471},
+  address   = {Vienna, Austria},
+  publisher = {Association for Computational Linguistics},
+  doi       = {10.18653/v1/2025.acl-long.999},
+  eprint    = {2410.16491},
+  archiveprefix = {arXiv},
+  primaryclass = {cs.CL},
+}
+
+% ---------- Retrieval-augmented personalization ----------
+
+@inproceedings{personarag2024,
+  author    = {Zerhoudi, Saber and Granitzer, Michael},
+  title     = {{PersonaRAG}: Enhancing retrieval-augmented generation systems with user-centric agents},
+  booktitle = {Information Retrieval's Role in RAG Systems (IR-RAG) Workshop at SIGIR},
+  year      = {2024},
+  address   = {Washington, D.C., USA},
+  eprint    = {2407.09394},
+  archiveprefix = {arXiv},
+  primaryclass = {cs.IR},
+}
+
+@article{personaai2025,
+  author    = {Kimara, Elvis and Oguntoye, Kunle S. and Sun, Jian},
+  title     = {{PersonaAI}: Leveraging retrieval-augmented generation and personalized context for {AI}-driven digital avatars},
+  journal   = {arXiv preprint arXiv:2503.15489},
+  year      = {2025},
+  eprint    = {2503.15489},
+  archiveprefix = {arXiv},
+  primaryclass = {cs.CL},
+}
+
+% ---------- Persona consistency / measurement methodology ----------
+
+@inproceedings{abdulhai2025consistent,
+  author    = {Abdulhai, Marwa and Cheng, Ryan and Clay, Donovan and Althoff, Tim and Levine, Sergey and Jaques, Natasha},
+  title     = {Consistently simulating human personas with multi-turn reinforcement learning},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  year      = {2025},
+  eprint    = {2511.00222},
+  archiveprefix = {arXiv},
+  primaryclass = {cs.CL},
+}
+
+@article{multiprgpa2025,
+  author    = {Zhang, Baiqiao and Li, Xiangxian and Zhou, Chao and Gai, Xinyu and Liu, Juan and Yang, Xue and Li, Nianlong and Ma, Shuai and Ma, Xiaojuan and Liu, Yong-jin and Bian, Yulong},
+  title     = {Exploring a gamified personality assessment method through interaction with {LLM} agents embodying different personalities},
+  journal   = {arXiv preprint arXiv:2507.04005},
+  year      = {2025},
+  eprint    = {2507.04005},
+  archiveprefix = {arXiv},
+  primaryclass = {cs.HC},
+}
+

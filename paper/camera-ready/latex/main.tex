@@ -1,0 +1,105 @@
+\documentclass[11pt]{article}
+
+% Persona-CAPS — EMNLP 2026 / ARR main submission.
+%
+% Build modes are controlled by the [<mode>]{acl} option below; ./build.sh
+% rewrites this line:
+%   [review]   anonymous, ARR-default for double-blind review
+%   [preprint] non-anonymous, page numbers, arXiv-friendly
+%   [final]    non-anonymous, camera-ready
+\usepackage[final]{acl}
+
+\usepackage{times}
+\usepackage{latexsym}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+\usepackage{inconsolata}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{xcolor}
+\usepackage{amsmath, amssymb}
+\usepackage{hyperref}
+\usepackage{textcomp}
+\usepackage{pifont}     % \ding{51} for ✓ in tables
+\usepackage{tikz}       % Fig. 2 method schematic
+\usetikzlibrary{arrows.meta, positioning, calc}
+\usepackage{enumitem}  % tighter list spacing (within ACL style guide)
+
+\hypersetup{breaklinks=true}
+
+% acl.sty issues a global \sloppy (\tolerance=9999, \emergencystretch=3em),
+% which is why no line reaches the margin and also why word spacing opens up
+% around this paper's monospace identifiers. Do not tighten \tolerance to close
+% the gaps: measured over the whole document, \tolerance=1200 with
+% \emergencystretch=1em trades 60 stretched lines for 33 overfull ones. The gaps
+% are fixed on the content side instead, by md2tex offering break points inside
+% \texttt{} (see _mark_breaks there).
+
+% \resizebox picks a scale factor per table, so every tabular lands on its own
+% arbitrary effective size (6.8pt, 7.4pt, 7.6pt, ... across the appendix). Step
+% through the standard sizes instead and take the first that fits: the appendix
+% then uses only \small / \footnotesize / \scriptsize. \resizebox survives purely
+% as a fallback for a tabular too wide even at \scriptsize, and logs when it fires.
+% A 15-column tabular spends ~40% of \textwidth on inter-column padding alone
+% (15 x 2 x \tabcolsep), so the later steps buy width back there before giving up
+% font size. Both are local to the \sbox group.
+\newsavebox{\pcfitbox}
+\newcommand{\fitwidth}[2]{%
+  \sbox{\pcfitbox}{\small #2}%
+  \ifdim\wd\pcfitbox>#1\relax
+    \sbox{\pcfitbox}{\footnotesize\setlength{\tabcolsep}{4pt}#2}%
+    \ifdim\wd\pcfitbox>#1\relax
+      \sbox{\pcfitbox}{\scriptsize\setlength{\tabcolsep}{3pt}#2}%
+      \ifdim\wd\pcfitbox>#1\relax
+        \PackageWarning{personacaps}{fitwidth fell back to resizebox}%
+        \resizebox{#1}{!}{\usebox{\pcfitbox}}%
+      \else\usebox{\pcfitbox}\fi
+    \else\usebox{\pcfitbox}\fi
+  \else\usebox{\pcfitbox}\fi
+}
+
+% Conservative float / caption / list spacing.  All adjustments are within the
+% acl.cls style allowance; we do not use negative \vspace and do not alter the
+% main text baselineskip / margins.
+\setlength{\textfloatsep}{6pt plus 1pt minus 1pt}
+\setlength{\intextsep}{6pt plus 1pt minus 1pt}
+\setlength{\abovecaptionskip}{4pt}
+\setlength{\belowcaptionskip}{0pt}
+\setlist{topsep=2pt,partopsep=0pt,parsep=0pt,itemsep=2pt}
+\setlength{\abovedisplayskip}{4pt plus 1pt minus 1pt}
+\setlength{\belowdisplayskip}{4pt plus 1pt minus 1pt}
+
+\title{Persona-CAPS: Controllable and Auditable LLM Personality \\
+       via Retrieval over Situation--Behavior Contingencies}
+
+% Superscript grouping rather than acl.sty's \And: four authors over two
+% affiliations, and \And would overflow the column width.
+\author{
+  Guanghao Liu\textsuperscript{1} \quad
+  Guangzhou An\textsuperscript{2} \quad
+  Yang Xu\textsuperscript{2} \quad
+  Yu Chen\textsuperscript{1} \\[3pt]
+  \textsuperscript{1}Department of Human and Engineered Environmental Studies, \\
+  Graduate School of Frontier Sciences, The University of Tokyo, Kashiwa, Chiba, Japan \\[3pt]
+  \textsuperscript{2}AveLinX, Inc., Tokyo, Japan \\[3pt]
+  \texttt{liu.guanghao.jp@gmail.com}
+}
+
+\begin{document}
+\maketitle
+
+\input{main_body}
+
+% ACL/ARR formatting: Limitations + Ethical Considerations live BETWEEN
+% Conclusion and References as unnumbered \section* (per ACLPUB guide,
+% https://acl-org.github.io/ACLPUB/formatting.html). They do NOT count
+% against the 8-page main-body budget.
+\input{post_refs}
+
+\bibliography{references}
+
+\appendix
+\input{appendix_body}
+
+\end{document}

@@ -1,0 +1,7 @@
+# tectonic 默认不写这些；只有 --keep-intermediates 时才留下。可随时由 ./build.sh 重建。
+main.aux
+main.bbl
+main.blg
+main.log
+main.out
+persona-caps-latex.zip
